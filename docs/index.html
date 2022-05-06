@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2022-05-05 10:10:33 -->
+<!-- RELEASE TIME : 2022-05-06 10:11:27 -->
 <html lang="zh-cn">
 
  <head>
@@ -282,9 +282,89 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>93b9132ed6b1bb28af57d8f1327866e4</td>
+       <td>CVE-2022-29535</td>
+       <td>2022-05-05 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>Zoho ManageEngine OPManager through 125588 allows SQL Injection via a few default reports.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-29535">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>696d2bc85108fd935960159dfe140705</td>
+       <td>CVE-2022-29175</td>
+       <td>2022-05-05 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>Vyper is a pythonic smart contract language for the ethereum virtual machine. Since version 0.3.2, decimals use the full range of the underlying int168 type. multiplication of 168 bit integers can wrap in 256-bit arithmetic, but safemul does not check for that. This has been patched in v0.3.4. There are no known workarounds for this issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-29175">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>510a8ee7f7c9e6b308c1333b4e667cde</td>
+       <td>CVE-2022-29173</td>
+       <td>2022-05-05 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>go-tuf is a Go implementation of The Update Framework (TUF). go-tuf does not correctly implement the client workflow for updating the metadata files for roles other than the root role. Specifically, checks for rollback attacks are not implemented correctly meaning an attacker can cause clients to install software that is older than the software which the client previously knew to be available, and may include software with known vulnerabilities. In more detail, the client code of go-tuf has several issues in regards to preventing rollback attacks: 1. It does not take into account the content of any previously trusted metadata, if available, before proceeding with updating roles other than the root role (i.e., steps 5.4.3.1 and 5.5.5 of the detailed client workflow). This means that any form of version verification done on the newly-downloaded metadata is made using the default value of zero, which always passes. 2. For both timestamp and snapshot roles, go-tuf saves these metadata files as trusted before verifying if the version of the metafiles they refer to is correct (i.e., steps 5.5.4 and 5.6.4 of the detailed client workflow). A fix is available in version 0.3.0 or newer. No workarounds are known for this issue apart from upgrading.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-29173">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>51712df3bba604391af5776b3fc6709b</td>
+       <td>CVE-2022-29172</td>
+       <td>2022-05-05 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>Auth0 is an authentication broker that supports both social and enterprise identity providers, including Active Directory, LDAP, Google Apps, and Salesforce. In versions before `11.33.0`, when the â€œadditional signup fieldsâ€? feature [is configured](https://github.com/auth0/lock#additional-sign-up-fields), a malicious actor can inject invalidated HTML code into these additional fields, which is then stored in the service `user_metdata` payload (using the `name` property). Verification emails, when applicable, are generated using this metadata. It is therefor possible for an actor to craft a malicious link by injecting HTML, which is then rendered as the recipient's name within the delivered email template. You are impacted by this vulnerability if you are using `auth0-lock` version `11.32.2` or lower and are using the â€œadditional signup fieldsâ€? feature in your application. Upgrade to version `11.33.0`.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-29172">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>4e7b8df445ae234d7d8c3c5757b52a1e</td>
+       <td>CVE-2022-29167</td>
+       <td>2022-05-05 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>Hawk is an HTTP authentication scheme providing mechanisms for making authenticated HTTP requests with partial cryptographic verification of the request and response, covering the HTTP method, request URI, host, and optionally the request payload. Hawk used a regular expression to parse `Host` HTTP header (`Hawk.utils.parseHost()`), which was subject to regular expression DoS attack - meaning each added character in the attacker's input increases the computation time exponentially. `parseHost()` was patched in `9.0.1` to use built-in `URL` class to parse hostname instead. `Hawk.authenticate()` accepts `options` argument. If that contains `host` and `port`, those would be used instead of a call to `utils.parseHost()`.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-29167">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>81d5c19718638a5b159b06ba234a41b9</td>
+       <td>CVE-2022-29166</td>
+       <td>2022-05-05 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>matrix-appservice-irc is a Node.js IRC bridge for Matrix. The vulnerability in node-irc allows an attacker to manipulate a Matrix user into executing IRC commands by having them reply to a maliciously crafted message. The vulnerability has been patched in matrix-appservice-irc 0.33.2. Refrain from replying to messages from untrusted participants in IRC-bridged Matrix rooms. There are no known workarounds for this issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-29166">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>779fcd4b9391ef286cdd79f0f4c360f9</td>
+       <td>CVE-2022-29176</td>
+       <td>2022-05-05 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>Rubygems is a package registry used to supply software for the Ruby language ecosystem. Due to a bug in the yank action, it was possible for any RubyGems.org user to remove and replace certain gems even if that user was not authorized to do so. To be vulnerable, a gem needed: one or more dashes in its name creation within 30 days OR no updates for over 100 days At present, we believe this vulnerability has not been exploited. RubyGems.org sends an email to all gem owners when a gem version is published or yanked. We have not received any support emails from gem owners indicating that their gem has been yanked without authorization. An audit of gem changes for the last 18 months did not find any examples of this vulnerability being used in a malicious way. A deeper audit for any possible use of this exploit is ongoing, and we will update this advisory once it is complete. Using Bundler in --frozen or --deployment mode in CI and during deploys, as the Bundler team has always recommended, will guarantee that your application does not silently switch to versions created using this exploit. To audit your application history for possible past exploits, review your Gemfile.lock and look for gems whose platform changed when the version number did not change. For example, gemname-3.1.2 updating to gemname-3.1.2-java could indicate a possible abuse of this vulnerability. RubyGems.org has been patched and is no longer vulnerable to this issue as of the 5th of May 2022.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-29176">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1b39278d6010497cf8547e23d41dd37f</td>
+       <td>CVE-2022-27411</td>
+       <td>2022-05-05 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>TOTOLINK N600R v5.3c.5507_B20171031 was discovered to contain a command injection vulnerability via the QUERY_STRING parameter in the "Main" function.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-27411">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6664ac330c40612a758f5077b2107c04</td>
+       <td>CVE-2022-27360</td>
+       <td>2022-05-05 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>SpringBlade v3.2.0 and below was discovered to contain a SQL injection vulnerability via the component customSqlSegment.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-27360">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7cfaa521bbef054460af9283f480be74</td>
+       <td>CVE-2022-27359</td>
+       <td>2022-05-05 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>Foxit PDF Reader v11.2.1.53537 was discovered to contain a NULL pointer dereference via the component FoxitPDFReader.exe. This vulnerability allows attackers to cause a Denial of Service (DoS) via a crafted PHP file.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-27359">详情</a></td>
+      </tr>
+
+      <tr>
        <td>99e33c7ed2b5fc7ce4adbf959d513b43</td>
        <td>CVE-2022-30292</td>
-       <td>2022-05-04 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-05-04 23:15:00</td>
        <td>thread_call in sqbaselib.cpp in SQUIRREL 3.2 lacks a certain sq_reservestack call.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-30292">详情</a></td>
       </tr>
@@ -292,7 +372,7 @@
       <tr>
        <td>f16a5ac4ead9c56934f8ca0f732eacae</td>
        <td>CVE-2022-30288</td>
-       <td>2022-05-04 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-05-04 23:15:00</td>
        <td>Agoo through 2.14.2 does not reject GraphQL fragment spreads that form cycles, leading to an application crash.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-30288">详情</a></td>
       </tr>
@@ -300,7 +380,7 @@
       <tr>
        <td>edd120d28612b9d1b942abf409e7469d</td>
        <td>CVE-2022-30284</td>
-       <td>2022-05-04 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-05-04 22:15:00</td>
        <td>In the python-libnmap package through 0.7.2 for Python, remote command execution can occur (if used in a client application that does not validate arguments).</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-30284">详情</a></td>
       </tr>
@@ -308,7 +388,7 @@
       <tr>
        <td>6018f0510b61ea9d651492d5eef6de8c</td>
        <td>CVE-2022-29155</td>
-       <td>2022-05-04 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-05-04 20:15:00</td>
        <td>In OpenLDAP 2.x before 2.5.12 and 2.6.x before 2.6.2, a SQL injection vulnerability exists in the experimental back-sql backend to slapd, via a SQL statement within an LDAP query. This can occur during an LDAP search operation when the search filter is processed, due to a lack of proper escaping.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-29155">详情</a></td>
       </tr>
@@ -316,7 +396,7 @@
       <tr>
        <td>5c226495b45f49208f66a17a56a0b84f</td>
        <td>CVE-2022-30241</td>
-       <td>2022-05-04 18:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-05-04 18:15:00</td>
        <td>The jquery.json-viewer library through 1.4.0 for Node.js does not properly escape characters such as < in a JSON object, as demonstrated by a SCRIPT element.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-30241">详情</a></td>
       </tr>
@@ -324,7 +404,7 @@
       <tr>
        <td>d02ccebe351e05f2fd2f8722944bcc86</td>
        <td>CVE-2022-29943</td>
-       <td>2022-05-04 18:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-05-04 18:15:00</td>
        <td>Talend Administration Center has a vulnerability that allows an authenticated user to use XML External Entity (XXE) processing to achieve read access as root on the remote filesystem. The issue is fixed for versions 8.0.x in TPS-5189, versions 7.3.x in TPS-5175, and versions 7.2.x in TPS-5201. Earlier versions of Talend Administration Center may also be impacted; users are encouraged to update to a supported version.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-29943">详情</a></td>
       </tr>
@@ -332,7 +412,7 @@
       <tr>
        <td>e2fd584bd4782e76af02b0078d66bff4</td>
        <td>CVE-2022-29942</td>
-       <td>2022-05-04 18:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-05-04 18:15:00</td>
        <td>Talend Administration Center has a vulnerability that allows an authenticated user to use the Service Registry 'Add' functionality to perform SSRF HTTP GET requests on URLs in the internal network. The issue is fixed for versions 8.0.x in TPS-5189, versions 7.3.x in TPS-5175, and versions 7.2.x in TPS-5201. Earlier versions of Talend Administration Center may also be impacted; users are encouraged to update to a supported version.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-29942">详情</a></td>
       </tr>
@@ -340,7 +420,7 @@
       <tr>
        <td>680249e272575e589c2da2d4ffaad92f</td>
        <td>CVE-2022-25786</td>
-       <td>2022-05-04 18:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-05-04 18:15:00</td>
        <td>Unprotected Alternate Channel vulnerability in debug console of GateManager allows system administrator to obtain sensitive information. This issue affects: GateManager all versions prior to 9.7.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-25786">详情</a></td>
       </tr>
@@ -348,7 +428,7 @@
       <tr>
        <td>125a77e81038ab3a94f78e584657ea7b</td>
        <td>CVE-2022-1584</td>
-       <td>2022-05-04 18:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-05-04 18:15:00</td>
        <td>Reflected XSS in GitHub repository microweber/microweber prior to 1.2.16. Executing JavaScript as the victim</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-1584">详情</a></td>
       </tr>
@@ -356,7 +436,7 @@
       <tr>
        <td>f39152b1d969e000b2adddd9e2c14cdf</td>
        <td>CVE-2022-23724</td>
-       <td>2022-05-04 17:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-05-04 17:15:00</td>
        <td>Use of static encryption key material allows forging an authentication token to other users within a tenant organization. MFA may be bypassed by redirecting an authentication flow to a target user. To exploit the vulnerability, must have compromised user credentials.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-23724">详情</a></td>
       </tr>
@@ -439,86 +519,6 @@
        <td>2022-05-03 21:15:00</td>
        <td>In aee daemon, there is a possible information disclosure due to a missing permission check. This could lead to local information disclosure with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS06296442; Issue ID: ALPS06296405.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-20102">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>995a75de9df89c0bd8b6ae6c5a26fff6</td>
-       <td>CVE-2022-24974</td>
-       <td>2022-05-02 23:15:00</td>
-       <td>Links may not be rewritten according to policy in some specially formatted emails.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-24974">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>de5192750eb8129618379a3318bbe034</td>
-       <td>CVE-2021-42532</td>
-       <td>2022-05-02 23:15:00</td>
-       <td>XMP Toolkit SDK version 2021.07 (and earlier) is affected by a stack-based buffer overflow vulnerability potentially resulting in arbitrary code execution in the context of the current user. Exploitation requires user interaction in that a victim must open a crafted file.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-42532">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b551dca329956fc577480234f15331d1</td>
-       <td>CVE-2021-42531</td>
-       <td>2022-05-02 23:15:00</td>
-       <td>XMP Toolkit SDK version 2021.07 (and earlier) is affected by a stack-based buffer overflow vulnerability potentially resulting in arbitrary code execution in the context of the current user. Exploitation requires user interaction in that a victim must open a crafted file.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-42531">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6b8130aa87738d77e0f8672295c70606</td>
-       <td>CVE-2021-42530</td>
-       <td>2022-05-02 23:15:00</td>
-       <td>XMP Toolkit SDK version 2021.07 (and earlier) is affected by a stack-based buffer overflow vulnerability potentially resulting in arbitrary code execution in the context of the current user. Exploitation requires user interaction in that a victim must open a crafted file.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-42530">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ecbf34561b63d8a812245da6d3ba33be</td>
-       <td>CVE-2021-42529</td>
-       <td>2022-05-02 23:15:00</td>
-       <td>XMP Toolkit SDK version 2021.07 (and earlier) is affected by a stack-based buffer overflow vulnerability potentially resulting in arbitrary code execution in the context of the current user. Exploitation requires user interaction in that a victim must open a crafted file.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-42529">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>29b69bb514a6e1e362520973696f3f4c</td>
-       <td>CVE-2021-42528</td>
-       <td>2022-05-02 23:15:00</td>
-       <td>XMP Toolkit 2021.07 (and earlier) is affected by a Null pointer dereference vulnerability when parsing a specially crafted file. An unauthenticated attacker could leverage this vulnerability to achieve an application denial-of-service in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-42528">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f0e724494127aa4a3404c9c164b189a6</td>
-       <td>CVE-2021-4138</td>
-       <td>2022-05-02 23:15:00</td>
-       <td>Improved Host header checks to reject requests not sent to a well-known local hostname or IP, or the server-specified hostname.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-4138">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>60897ffbf0daf203c754fb5f316c8066</td>
-       <td>CVE-2020-23621</td>
-       <td>2022-05-02 23:15:00</td>
-       <td>The Java Remote Management Interface of all versions of SVI MS Management System was discovered to contain a vulnerability due to insecure deserialization of user-supplied content, which can allow attackers to execute arbitrary code via a crafted serialized Java object.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2020-23621">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1d4854babb87c7719491aa52526b8ab6</td>
-       <td>CVE-2020-23620</td>
-       <td>2022-05-02 23:15:00</td>
-       <td>The Java Remote Management Interface of all versions of Orlansoft ERP was discovered to contain a vulnerability due to insecure deserialization of user-supplied content, which can allow attackers to execute arbitrary code via a crafted serialized Java object.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2020-23620">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>34b5c736395c603afe8ba1d449cc0d3c</td>
-       <td>CVE-2020-23618</td>
-       <td>2022-05-02 23:15:00</td>
-       <td>A reflected cross site scripting (XSS) vulnerability in Xtend Voice Logger 1.0 allows attackers to execute arbitrary web scripts or HTML, via the path of the error page.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2020-23618">详情</a></td>
       </tr>
 
      </tbody>
@@ -794,6 +794,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>3eea244977d3238701a463d78750e96c</td>
+       <td>CNNVD-202204-4640 (CVE-2022-29265)</td>
+       <td>2022-04-30 10:11:04</td>
+       <td>Apache NiFi 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202204-4640">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9bc4d14d499482d511dfcaaf1a5f6880</td>
+       <td>CNNVD-202204-4641 (CVE-2022-28323)</td>
+       <td>2022-04-30 10:11:03</td>
+       <td>MediaWiki 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202204-4641">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8238db9adfafe8c608a61c266304b687</td>
+       <td>CNNVD-202204-4642 (CVE-2021-42001)</td>
+       <td>2022-04-30 10:11:02</td>
+       <td>Desk 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202204-4642">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>803c5d0660a0c382f1ad504672fa61c4</td>
+       <td>CNNVD-202204-4643 (CVE-2021-41994)</td>
+       <td>2022-04-30 10:11:00</td>
+       <td>Ping Identity iOS App 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202204-4643">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>bc7511b2ec1635b7506a3de8c540413b</td>
+       <td>CNNVD-202204-4644 (CVE-2021-41992)</td>
+       <td>2022-04-30 10:10:59</td>
+       <td>Ping Identity Windows PingId 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202204-4644">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>639df03486e444a76ebad2b54272a689</td>
+       <td>CNNVD-202204-4645 (CVE-2021-41993)</td>
+       <td>2022-04-30 10:10:58</td>
+       <td>Ping Identity Android App 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202204-4645">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>647a8cbacfba4251295aac9520ad77ca</td>
+       <td>CNNVD-202204-4636 (CVE-2022-1114)</td>
+       <td>2022-04-29 10:11:09</td>
+       <td>Imagemagick Studio ImageMagick 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202204-4636">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ade32a9e7a4181b1b027ac349afefc8e</td>
+       <td>CNNVD-202204-4637 (CVE-2022-29856)</td>
+       <td>2022-04-29 10:11:08</td>
+       <td>Automation 360 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202204-4637">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2b1c56d31808a8256266f8b832fcf09a</td>
+       <td>CNNVD-202204-4638 (CVE-2022-0669)</td>
+       <td>2022-04-29 10:11:06</td>
+       <td>DPDK 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202204-4638">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1f24ce7ccc98631fa6fcdef49bd910a3</td>
+       <td>CNNVD-202204-4639 (CVE-2021-3839)</td>
+       <td>2022-04-29 10:11:05</td>
+       <td>DPDK 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202204-4639">详情</a></td>
+      </tr>
+
+      <tr>
        <td>c23d16700c1a66a823c9c867d9c6f324</td>
        <td>CNNVD-202204-4588 (CVE-2022-1514)</td>
        <td>2022-04-28 10:10:20</td>
@@ -951,86 +1031,6 @@
        <td>2022-04-27 10:11:52</td>
        <td>Nextcloud Android app 访问控制错误漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202204-4529">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>606dfc369a1d54e22aac4f1890c55f1e</td>
-       <td>CNNVD-202204-4421 (CVE-2021-3523)</td>
-       <td>2022-04-26 10:10:21</td>
-       <td>3Scale APICast 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202204-4421">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f48b3d6b05cc2e702247bd10ca1c43dd</td>
-       <td>CNNVD-202204-4422 (CVE-2022-28195)</td>
-       <td>2022-04-26 10:10:20</td>
-       <td>NVIDIA Jetson 输入验证错误漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202204-4422">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a1a697820ef3bea5590c95dee6183611</td>
-       <td>CNNVD-202204-4423 (CVE-2022-28194)</td>
-       <td>2022-04-26 10:10:19</td>
-       <td>NVIDIA Jetson  缓冲区错误漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202204-4423">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0ee9cf6aa5c54429cdd4280cc78962d1</td>
-       <td>CNNVD-202204-4424 (CVE-2022-28193)</td>
-       <td>2022-04-26 10:10:18</td>
-       <td>NVIDIA Jetson 缓冲区错误漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202204-4424">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>52e0f83ba2b941c6366d6714518e0481</td>
-       <td>CNNVD-202204-4425 (CVE-2022-0852)</td>
-       <td>2022-04-26 10:10:17</td>
-       <td>convert2rhel 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202204-4425">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>95c00cddcffc83e663a106aedafad4a0</td>
-       <td>CNNVD-202204-4426 (CVE-2022-0851)</td>
-       <td>2022-04-26 10:10:16</td>
-       <td>Red Hat convert2rhel 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202204-4426">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e2ac9375126508b9e5172d8d59003a3a</td>
-       <td>CNNVD-202204-4427 (CVE-2022-27888)</td>
-       <td>2022-04-26 10:10:15</td>
-       <td>Palantir 日志信息泄露漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202204-4427">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a1dfa302cb35df2c6fda7520860981d6</td>
-       <td>CNNVD-202204-4428 (CVE-2022-28059)</td>
-       <td>2022-04-26 10:10:13</td>
-       <td>Verydows 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202204-4428">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>940cd22da4a55abc5fd935ab6a49cef4</td>
-       <td>CNNVD-202204-4429 (CVE-2021-36895)</td>
-       <td>2022-04-26 10:10:12</td>
-       <td>WordPress plugin Tripetto 跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202204-4429">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>188f451e28701d061c0195a0d81108e3</td>
-       <td>CNNVD-202204-4430 (CVE-2022-23942)</td>
-       <td>2022-04-26 10:10:11</td>
-       <td>Apache Doris 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202204-4430">详情</a></td>
       </tr>
 
      </tbody>
@@ -1674,9 +1674,17 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>925ae0368082816501a390cdd59caa73</td>
+       <td>CVE-2020-14116</td>
+       <td>2022-05-05 20:41:35 <img src="imgs/new.gif" /></td>
+       <td>Xiaomi Mi Browser 安全漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=1a78583387ca47faadd112db6f2e0e03">详情</a></td>
+      </tr>
+
+      <tr>
        <td>1d218ad4489cd7dce32e931af37fc9e7</td>
        <td>CVE-2022-29531</td>
-       <td>2022-05-04 20:36:59 <img src="imgs/new.gif" /></td>
+       <td>2022-05-04 20:36:59</td>
        <td>MISP 跨站脚本漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=f8764d8b3b954528a652ed366479f6a8">详情</a></td>
       </tr>
@@ -1684,7 +1692,7 @@
       <tr>
        <td>ed4022e0da8f5f7662157e0d23471d27</td>
        <td>CVE-2021-41570</td>
-       <td>2022-05-04 20:36:34 <img src="imgs/new.gif" /></td>
+       <td>2022-05-04 20:36:34</td>
        <td>Veritas NetBackup 跨站脚本漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=ae87aacb93764f12a3b704a9f86f5af0">详情</a></td>
       </tr>
@@ -1903,14 +1911,6 @@
        <td>2022-04-29 20:23:04</td>
        <td>MISP 跨站脚本漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=079f96e0fc9d43d5b0d05a94c1e34375">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>67ebf7de2906011b9e5cb24efe79939a</td>
-       <td>CVE-2021-23873</td>
-       <td>2022-04-29 20:23:00</td>
-       <td>迈克菲 McAfee Total Protection 后置链接漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=74f4e61d3045427a919b3d80e6b10da7">详情</a></td>
       </tr>
 
      </tbody>
@@ -2186,6 +2186,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>6589819e80dd041170a53a776e07cc5f</td>
+       <td>CVE-2022-29821</td>
+       <td>2022-04-28 10:15:08 </td>
+       <td>In JetBrains Rider before 2022.1 local code execution via links in ReSharper Quick Documentation was possible</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-29821">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>066d078352b263b4af33565b5c0927f8</td>
+       <td>CVE-2022-29820</td>
+       <td>2022-04-28 10:15:08 </td>
+       <td>In JetBrains PyCharm before 2022.1 exposure of the debugger port to the internal network was possible</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-29820">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>746361da3b915bb613fc2a1098cf6f44</td>
+       <td>CVE-2022-29819</td>
+       <td>2022-04-28 10:15:08 </td>
+       <td>In JetBrains IntelliJ IDEA before 2022.1 local code execution via links in Quick Documentation was possible</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-29819">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1365bf135127efc82bdabce0ba4d69b0</td>
+       <td>CVE-2022-29818</td>
+       <td>2022-04-28 10:15:08 </td>
+       <td>In JetBrains IntelliJ IDEA before 2022.1 origin checks in the internal web server were flawed</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-29818">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>23894f627299eda6cc979286828b3cdc</td>
+       <td>CVE-2022-29817</td>
+       <td>2022-04-28 10:15:08 </td>
+       <td>In JetBrains IntelliJ IDEA before 2022.1 reflected XSS via error messages in internal web server was possible</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-29817">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e6cbecac1724dd3cba9d92d195c983c5</td>
+       <td>CVE-2022-29816</td>
+       <td>2022-04-28 10:15:08 </td>
+       <td>In JetBrains IntelliJ IDEA before 2022.1 HTML injection into IDE messages was possible</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-29816">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f9e504b0ec971061e9ca6c966f6d9679</td>
+       <td>CVE-2022-29815</td>
+       <td>2022-04-28 10:15:08 </td>
+       <td>In JetBrains IntelliJ IDEA before 2022.1 local code execution via workspace settings was possible</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-29815">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b33a351ad9ac38498d60bade9043f34e</td>
+       <td>CVE-2022-29814</td>
+       <td>2022-04-28 10:15:08 </td>
+       <td>In JetBrains IntelliJ IDEA before 2022.1 local code execution via HTML descriptions in custom JSON schemas was possible</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-29814">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>977002f2495556e3176b94c623c74d1d</td>
+       <td>CVE-2022-29813</td>
+       <td>2022-04-28 10:15:08 </td>
+       <td>In JetBrains IntelliJ IDEA before 2022.1 local code execution via custom Pandoc path was possible</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-29813">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d226037e7d8421adaf65db16a0bd3e42</td>
+       <td>CVE-2022-29812</td>
+       <td>2022-04-28 10:15:08 </td>
+       <td>In JetBrains IntelliJ IDEA before 2022.1 notification mechanisms about using Unicode directionality formatting characters were insufficient</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-29812">详情</a></td>
+      </tr>
+
+      <tr>
        <td>73501288bb7eb0f3cb4931def4a64135</td>
        <td>CVE-2022-29417</td>
        <td>2022-04-25 17:15:37 </td>
@@ -2343,86 +2423,6 @@
        <td>2022-04-19 21:15:18 </td>
        <td>Vulnerability in the Oracle Java SE, Oracle GraalVM Enterprise Edition product of Oracle Java SE (component: JNDI). Supported versions that are affected are Oracle Java SE: 7u331, 8u321, 11.0.14, 17.0.2, 18; Oracle GraalVM Enterprise Edition: 20.3.5, 21.3.1 and 22.0.0.2. Easily exploitable vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Oracle Java SE, Oracle GraalVM Enterprise Edition. Successful attacks of this vulnerability can result in unauthorized update, insert or delete access to some of Oracle Java SE, Oracle GraalVM Enterprise Edition accessible data. Note: This vulnerability applies to Java deployments, typically in clients running sandboxed Java Web Start applications or sandboxed Java applets, that load and run untrusted code (e.g., code that comes from the internet) and rely on the Java sandbox for security. This vulnerability can also be exploited by using APIs in the specified Component, e.g., through a web service which supplies data to the APIs. CVSS 3.1 Base Score 5.3 (Integrity impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N).</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-21496">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a83dd4e1cdeb670433d455df62816bf6</td>
-       <td>CVE-2022-21494</td>
-       <td>2022-04-19 21:15:18 </td>
-       <td>Vulnerability in the Oracle Solaris product of Oracle Systems (component: Kernel). The supported version that is affected is 11. Difficult to exploit vulnerability allows high privileged attacker with logon to the infrastructure where Oracle Solaris executes to compromise Oracle Solaris. Successful attacks require human interaction from a person other than the attacker. Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of Oracle Solaris. CVSS 3.1 Base Score 4.0 (Availability impacts). CVSS Vector: (CVSS:3.1/AV:L/AC:H/PR:H/UI:R/S:U/C:N/I:N/A:H).</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-21494">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>eebf4702f381494167181d3906f52ed7</td>
-       <td>CVE-2022-21493</td>
-       <td>2022-04-19 21:15:18 </td>
-       <td>Vulnerability in the Oracle Solaris product of Oracle Systems (component: Kernel). The supported version that is affected is 11. Easily exploitable vulnerability allows low privileged attacker with logon to the infrastructure where Oracle Solaris executes to compromise Oracle Solaris. Successful attacks require human interaction from a person other than the attacker and while the vulnerability is in Oracle Solaris, attacks may significantly impact additional products (scope change). Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of Oracle Solaris. CVSS 3.1 Base Score 5.9 (Availability impacts). CVSS Vector: (CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:C/C:N/I:N/A:H).</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-21493">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e8202091a5de2845c8aaeaa14e1e91d1</td>
-       <td>CVE-2022-21492</td>
-       <td>2022-04-19 21:15:18 </td>
-       <td>Vulnerability in the Oracle Business Intelligence Enterprise Edition product of Oracle Fusion Middleware (component: Analytics Server). The supported version that is affected is 5.9.0.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Business Intelligence Enterprise Edition. Successful attacks require human interaction from a person other than the attacker and while the vulnerability is in Oracle Business Intelligence Enterprise Edition, attacks may significantly impact additional products (scope change). Successful attacks of this vulnerability can result in unauthorized update, insert or delete access to some of Oracle Business Intelligence Enterprise Edition accessible data as well as unauthorized read access to a subset of Oracle Business Intelligence Enterprise Edition accessible data. CVSS 3.1 Base Score 6.1 (Confidentiality and Integrity impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N).</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-21492">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>38b9102884534f9723c0a70dcb7f0f64</td>
-       <td>CVE-2022-21491</td>
-       <td>2022-04-19 21:15:18 </td>
-       <td>Vulnerability in the Oracle VM VirtualBox product of Oracle Virtualization (component: Core). The supported version that is affected is Prior to 6.1.34. Easily exploitable vulnerability allows low privileged attacker with logon to the infrastructure where Oracle VM VirtualBox executes to compromise Oracle VM VirtualBox. Successful attacks of this vulnerability can result in takeover of Oracle VM VirtualBox. Note: This vulnerability applies to Windows systems only. CVSS 3.1 Base Score 7.8 (Confidentiality, Integrity and Availability impacts). CVSS Vector: (CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H).</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-21491">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>def49c8393442803d2c42231824a61cc</td>
-       <td>CVE-2022-21490</td>
-       <td>2022-04-19 21:15:18 </td>
-       <td>Vulnerability in the MySQL Cluster product of Oracle MySQL (component: Cluster: General). Supported versions that are affected are 7.4.35 and prior, 7.5.25 and prior, 7.6.21 and prior and 8.0.28 and prior. Difficult to exploit vulnerability allows high privileged attacker with access to the physical communication segment attached to the hardware where the MySQL Cluster executes to compromise MySQL Cluster. Successful attacks require human interaction from a person other than the attacker. Successful attacks of this vulnerability can result in takeover of MySQL Cluster. CVSS 3.1 Base Score 6.3 (Confidentiality, Integrity and Availability impacts). CVSS Vector: (CVSS:3.1/AV:A/AC:H/PR:H/UI:R/S:U/C:H/I:H/A:H).</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-21490">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0316e02e53f383c920b320852fc497f6</td>
-       <td>CVE-2022-21489</td>
-       <td>2022-04-19 21:15:18 </td>
-       <td>Vulnerability in the MySQL Cluster product of Oracle MySQL (component: Cluster: General). Supported versions that are affected are 7.4.35 and prior, 7.5.25 and prior, 7.6.21 and prior and 8.0.28 and prior. Difficult to exploit vulnerability allows high privileged attacker with access to the physical communication segment attached to the hardware where the MySQL Cluster executes to compromise MySQL Cluster. Successful attacks require human interaction from a person other than the attacker. Successful attacks of this vulnerability can result in takeover of MySQL Cluster. CVSS 3.1 Base Score 6.3 (Confidentiality, Integrity and Availability impacts). CVSS Vector: (CVSS:3.1/AV:A/AC:H/PR:H/UI:R/S:U/C:H/I:H/A:H).</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-21489">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>dbf72e1b707f242911ad4fc527d2a1bf</td>
-       <td>CVE-2022-25788</td>
-       <td>2022-04-19 21:15:18 </td>
-       <td>A maliciously crafted JT file in Autodesk AutoCAD 2022 may be used to write beyond the allocated buffer while parsing JT files. This vulnerability can be exploited to execute arbitrary code.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-25788">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>49ecb2d031f5126c5bd5366a7051ed6b</td>
-       <td>CVE-2022-21476</td>
-       <td>2022-04-19 21:15:17 </td>
-       <td>Vulnerability in the Oracle Java SE, Oracle GraalVM Enterprise Edition product of Oracle Java SE (component: Libraries). Supported versions that are affected are Oracle Java SE: 7u331, 8u321, 11.0.14, 17.0.2, 18; Oracle GraalVM Enterprise Edition: 20.3.5, 21.3.1 and 22.0.0.2. Easily exploitable vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Oracle Java SE, Oracle GraalVM Enterprise Edition. Successful attacks of this vulnerability can result in unauthorized access to critical data or complete access to all Oracle Java SE, Oracle GraalVM Enterprise Edition accessible data. Note: This vulnerability applies to Java deployments, typically in clients running sandboxed Java Web Start applications or sandboxed Java applets, that load and run untrusted code (e.g., code that comes from the internet) and rely on the Java sandbox for security. This vulnerability can also be exploited by using APIs in the specified Component, e.g., through a web service which supplies data to the APIs. CVSS 3.1 Base Score 7.5 (Confidentiality impacts). CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N).</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-21476">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f289648b0ddc87f2cf8896c56edba39c</td>
-       <td>CVE-2022-1329</td>
-       <td>2022-04-19 21:15:13 </td>
-       <td>The Elementor Website Builder plugin for WordPress is vulnerable to unauthorized execution of several AJAX actions due to a missing capability check in the ~/core/app/modules/onboarding/module.php file that make it possible for attackers to modify site data in addition to uploading malicious files that can be used to obtain remote code execution, in versions 3.6.0 to 3.6.2.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-1329">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5bacfe1a8346e0f6e0cd766e09a401cd</td>
-       <td>CVE-2022-25648</td>
-       <td>2022-04-19 17:15:11 </td>
-       <td>The package git before 1.11.0 are vulnerable to Command Injection via git argument injection. When calling the fetch(remote = 'origin', opts = {}) function, the remote parameter is passed to the git fetch subcommand in a way that additional flags can be set. The additional flags can be used to perform a command injection.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-25648">详情</a></td>
       </tr>
 
      </tbody>
