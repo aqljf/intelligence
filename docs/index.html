@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2022-05-13 10:10:26 -->
+<!-- RELEASE TIME : 2022-05-13 17:12:54 -->
 <html lang="zh-cn">
 
  <head>
@@ -282,6 +282,22 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>809b22f082ca02229f65e8b9afd3aabf</td>
+       <td>CVE-2022-29218</td>
+       <td>2022-05-13 01:15:00 <img src="imgs/new.gif" /></td>
+       <td>RubyGems is a package registry used to supply software for the Ruby language ecosystem. An ordering mistake in the code that accepts gem uploads allowed some gems (with platforms ending in numbers, like `arm64-darwin-21`) to be temporarily replaced in the CDN cache by a malicious package. The bug has been patched, and is believed to have never been exploited, based on an extensive review of logs and existing gems by rubygems. The easiest way to ensure that an application has not been exploited by this vulnerability is to verify all downloaded .gems checksums match the checksum recorded in the RubyGems.org database. RubyGems.org has been patched and is no longer vulnerable to this issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-29218">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>388f19843e2f1be38ba4207c89e911fa</td>
+       <td>CVE-2022-27134</td>
+       <td>2022-05-13 01:15:00 <img src="imgs/new.gif" /></td>
+       <td>EOSIO batdappboomx v327c04cf has an Access-control vulnerability in the `transfer` function of the smart contract which allows remote attackers to win the cryptocurrency without paying ticket fee via the `std::string memo` parameter.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-27134">详情</a></td>
+      </tr>
+
+      <tr>
        <td>1d92608ebbf85a7aeb102b3a406464c0</td>
        <td>CVE-2021-27777</td>
        <td>2022-05-12 22:15:00 <img src="imgs/new.gif" /></td>
@@ -503,22 +519,6 @@
        <td>2022-05-10 21:15:00</td>
        <td>Windows LDAP Remote Code Execution Vulnerability. This CVE ID is unique from CVE-2022-22012, CVE-2022-22013, CVE-2022-22014, CVE-2022-29128, CVE-2022-29129, CVE-2022-29130, CVE-2022-29131, CVE-2022-29137, CVE-2022-29139.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-29141">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d3e0a80fe9233602b47fbd61e7a3423e</td>
-       <td>CVE-2022-29140</td>
-       <td>2022-05-10 21:15:00</td>
-       <td>Windows Print Spooler Information Disclosure Vulnerability. This CVE ID is unique from CVE-2022-29114.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-29140">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6796429ff1b428411bf896243956fbf7</td>
-       <td>CVE-2022-29139</td>
-       <td>2022-05-10 21:15:00</td>
-       <td>Windows LDAP Remote Code Execution Vulnerability. This CVE ID is unique from CVE-2022-22012, CVE-2022-22013, CVE-2022-22014, CVE-2022-29128, CVE-2022-29129, CVE-2022-29130, CVE-2022-29131, CVE-2022-29137, CVE-2022-29141.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-29139">详情</a></td>
       </tr>
 
      </tbody>
@@ -1930,6 +1930,14 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>a3dd3abff7532117fb122a7884169302</td>
+       <td>CVE-2022-30138</td>
+       <td>2022-05-13 17:12:25 <img src="imgs/new.gif" /></td>
+       <td>Microsoft Windows Print Spooler权限提升漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/64787">详情</a></td>
+      </tr>
+
+      <tr>
        <td>c36e78932701f499a52d9702d148f385</td>
        <td>CVE-2022-29972</td>
        <td>2022-05-11 10:10:18</td>
@@ -2161,14 +2169,6 @@
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/64698">详情</a></td>
       </tr>
 
-      <tr>
-       <td>6683f2937c8bd4ceb2b97096299d7997</td>
-       <td>CVE-2022-23221</td>
-       <td>2022-05-10 10:10:03</td>
-       <td>H2Console代码注入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/64697">详情</a></td>
-      </tr>
-
      </tbody>
     </table>
    </div>
@@ -2215,6 +2215,86 @@
        <td>2022-05-04 17:15:08 </td>
        <td>A vulnerability in Cisco SD-WAN vManage Software could allow an authenticated, local attacker to view sensitive information on an affected system. This vulnerability is due to insufficient file system restrictions. An authenticated attacker with netadmin privileges could exploit this vulnerability by accessing the vshell of an affected system. A successful exploit could allow the attacker to read sensitive information on the underlying operating system.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-20734">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>585737c4cb414d4c7263356743ad4d0a</td>
+       <td>CVE-2022-20111</td>
+       <td>2022-05-03 21:15:09 </td>
+       <td>In ion, there is a possible use after free due to incorrect error handling. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS06366069; Issue ID: ALPS06366069.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-20111">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>be3c2a3dcb886347c449aa2e2d21f0cf</td>
+       <td>CVE-2022-20108</td>
+       <td>2022-05-03 21:15:09 </td>
+       <td>In voice service, there is a possible out of bounds write due to a stack-based buffer overflow. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: DTV03330702; Issue ID: DTV03330702.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-20108">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5e02ed51cee26c73665bbcc46ba10711</td>
+       <td>CVE-2022-20107</td>
+       <td>2022-05-03 21:15:09 </td>
+       <td>In subtitle service, there is a possible application crash due to an integer overflow. This could lead to local denial of service with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: DTV03330673; Issue ID: DTV03330673.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-20107">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>13a669e738ed84a93d0e17a7dd76f4fb</td>
+       <td>CVE-2022-20106</td>
+       <td>2022-05-03 21:15:09 </td>
+       <td>In MM service, there is a possible out of bounds write due to a heap-based buffer overflow. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: DTV03330460; Issue ID: DTV03330460.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-20106">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>863c16a76a4175f214e0afb33ad51cbc</td>
+       <td>CVE-2022-20105</td>
+       <td>2022-05-03 21:15:09 </td>
+       <td>In MM service, there is a possible out of bounds write due to a stack-based buffer overflow. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: DTV03330460; Issue ID: DTV03330460.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-20105">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>aed8238cabba90514b2736b1e447c124</td>
+       <td>CVE-2022-20104</td>
+       <td>2022-05-03 21:15:09 </td>
+       <td>In aee daemon, there is a possible information disclosure due to improper access control. This could lead to local information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS06419017; Issue ID: ALPS06284104.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-20104">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0b3fce72c14108cbc2f9da57dc50f917</td>
+       <td>CVE-2022-20103</td>
+       <td>2022-05-03 21:15:09 </td>
+       <td>In aee daemon, there is a possible information disclosure due to symbolic link following. This could lead to local information disclosure with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS06383944; Issue ID: ALPS06282684.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-20103">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d3d2568a2fc9c77689ee9c159ebbe766</td>
+       <td>CVE-2022-20102</td>
+       <td>2022-05-03 21:15:08 </td>
+       <td>In aee daemon, there is a possible information disclosure due to a missing permission check. This could lead to local information disclosure with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS06296442; Issue ID: ALPS06296405.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-20102">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ff125bdd53b37be5a61ea5a1c493b28c</td>
+       <td>CVE-2022-20110</td>
+       <td>2022-05-03 20:15:08 </td>
+       <td>In ion, there is a possible use after free due to a race condition. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS06399915; Issue ID: ALPS06399901.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-20110">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>41ade606eb400035d36fabe3432787bc</td>
+       <td>CVE-2022-20109</td>
+       <td>2022-05-03 20:15:08 </td>
+       <td>In ion, there is a possible use after free due to improper update of reference count. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS06399915; Issue ID: ALPS06399915.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-20109">详情</a></td>
       </tr>
 
       <tr>
@@ -2343,86 +2423,6 @@
        <td>2022-04-29 17:15:23 </td>
        <td>USU Oracle Optimization before 5.17.5 lacks Polkit authentication, which allows smartcollector users to achieve root access via pkexec. NOTE: this is not an Oracle Corporation product.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-29934">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ceae75f8b1514bc25b2e5f19292e6562</td>
-       <td>CVE-2022-29907</td>
-       <td>2022-04-29 04:15:10 </td>
-       <td>The Nimbus skin for MediaWiki through 1.37.2 (before 6f9c8fb868345701d9544a54d9752515aace39df) allows XSS in Advertise link messages.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-29907">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>668804498614ea8204ffff169b935b36</td>
-       <td>CVE-2022-29906</td>
-       <td>2022-04-29 04:15:10 </td>
-       <td>The admin API module in the QuizGame extension for MediaWiki through 1.37.2 (before 665e33a68f6fa1167df99c0aa18ed0157cdf9f66) omits a check for the quizadmin user.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-29906">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>bd560fd3fcda86485f47cc0139d7f861</td>
-       <td>CVE-2022-29905</td>
-       <td>2022-04-29 04:15:10 </td>
-       <td>The FanBoxes extension for MediaWiki through 1.37.2 (before 027ffb0b9d6fe0d823810cf03f5b562a212162d4) allows Special:UserBoxes CSRF.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-29905">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c2c7f110a73fb4719970bec09ab3254c</td>
-       <td>CVE-2022-29904</td>
-       <td>2022-04-29 04:15:10 </td>
-       <td>The SemanticDrilldown extension for MediaWiki through 1.37.2 (before e688bdba6434591b5dff689a45e4d53459954773) allows SQL injection with certain '-' and '_' constraints.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-29904">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f374825d67b87d6088da3acaf431d6c6</td>
-       <td>CVE-2022-29903</td>
-       <td>2022-04-29 04:15:10 </td>
-       <td>The Private Domains extension for MediaWiki through 1.37.2 (before 1ad65d4c1c199b375ea80988d99ab51ae068f766) allows CSRF for editing pages that store the extension's configuration. The attacker must trigger a POST request to Special:PrivateDomains.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-29903">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6589819e80dd041170a53a776e07cc5f</td>
-       <td>CVE-2022-29821</td>
-       <td>2022-04-28 10:15:08 </td>
-       <td>In JetBrains Rider before 2022.1 local code execution via links in ReSharper Quick Documentation was possible</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-29821">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>066d078352b263b4af33565b5c0927f8</td>
-       <td>CVE-2022-29820</td>
-       <td>2022-04-28 10:15:08 </td>
-       <td>In JetBrains PyCharm before 2022.1 exposure of the debugger port to the internal network was possible</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-29820">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>746361da3b915bb613fc2a1098cf6f44</td>
-       <td>CVE-2022-29819</td>
-       <td>2022-04-28 10:15:08 </td>
-       <td>In JetBrains IntelliJ IDEA before 2022.1 local code execution via links in Quick Documentation was possible</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-29819">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1365bf135127efc82bdabce0ba4d69b0</td>
-       <td>CVE-2022-29818</td>
-       <td>2022-04-28 10:15:08 </td>
-       <td>In JetBrains IntelliJ IDEA before 2022.1 origin checks in the internal web server were flawed</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-29818">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>23894f627299eda6cc979286828b3cdc</td>
-       <td>CVE-2022-29817</td>
-       <td>2022-04-28 10:15:08 </td>
-       <td>In JetBrains IntelliJ IDEA before 2022.1 reflected XSS via error messages in internal web server was possible</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-29817">详情</a></td>
       </tr>
 
      </tbody>
