@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2022-05-17 10:10:41 -->
+<!-- RELEASE TIME : 2022-05-18 10:12:32 -->
 <html lang="zh-cn">
 
  <head>
@@ -28,7 +28,7 @@
       <tr>
        <td>fb66abd7a3d6f14fee26094115b0cb07</td>
        <td></td>
-       <td>2022-05-16 16:37:44 <img src="imgs/new.gif" /></td>
+       <td>2022-05-16 16:37:44</td>
        <td>安全事件周报 (05.09-05.16)</td>
        <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=aa928e7483cd2f561a106bb5e8ce2c25">详情</a></td>
       </tr>
@@ -282,9 +282,89 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>21b93fb9a4eff49444a3840b224ffcc6</td>
+       <td>CVE-2022-29174</td>
+       <td>2022-05-17 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>countly-server is the server-side part of Countly, a product analytics solution. Prior to versions 22.03.7 and 21.11.4, a malicious actor who knows an account email address/username and full name specified in the database is capable of guessing the password reset token. The actor may use this information to reset the password and take over the account. The problem has been patched in Countly Server version 22.03.7 for servers using the new user interface and in 21.11.4 for servers using the old user interface.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-29174">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>59077770899ec95c97decb0969588ec1</td>
+       <td>CVE-2022-29162</td>
+       <td>2022-05-17 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>runc is a CLI tool for spawning and running containers on Linux according to the OCI specification. A bug was found in runc prior to version 1.1.2 where `runc exec --cap` created processes with non-empty inheritable Linux process capabilities, creating an atypical Linux environment and enabling programs with inheritable file capabilities to elevate those capabilities to the permitted set during execve(2). This bug did not affect the container security sandbox as the inheritable set never contained more capabilities than were included in the container's bounding set. This bug has been fixed in runc 1.1.2. This fix changes `runc exec --cap` behavior such that the additional capabilities granted to the process being executed (as specified via `--cap` arguments) do not include inheritable capabilities. In addition, `runc spec` is changed to not set any inheritable capabilities in the created example OCI spec (`config.json`) file.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-29162">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0d3af1f0fb4483349f4e6ec70a87105c</td>
+       <td>CVE-2022-28616</td>
+       <td>2022-05-17 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>A remote server-side request forgery (ssrf) vulnerability was discovered in HPE OneView version(s): Prior to 7.0. HPE has provided a software update to resolve this vulnerability in HPE OneView.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-28616">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>56561e7ef9a1f933af09903d146f2858</td>
+       <td>CVE-2022-1362</td>
+       <td>2022-05-17 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>The affected On-Premise cnMaestro is vulnerable inside a specific route where a user can upload a crafted package to the system. An attacker could abuse this user-controlled data to execute arbitrary commands on the server.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-1362">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8e7d148fd88025c1fc8314a9cb174e12</td>
+       <td>CVE-2022-1361</td>
+       <td>2022-05-17 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>The affected On-Premise cnMaestro is vulnerable to a pre-auth data exfiltration through improper neutralization of special elements used in an SQL command. This could allow an attacker to exfiltrate data about other user’s accounts and devices.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-1361">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ac1eb1791c38d28ef4cc063939116390</td>
+       <td>CVE-2022-1360</td>
+       <td>2022-05-17 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>The affected On-Premise cnMaestro is vulnerable to execution of code on the cnMaestro hosting server. This could allow a remote attacker to change server configuration settings.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-1360">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1c20de92291654e3792f6906d9d1f35a</td>
+       <td>CVE-2022-1359</td>
+       <td>2022-05-17 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>The affected On-Premise cnMaestro is vulnerable to an arbitrary file-write through improper limitation of a pathname to a restricted directory inside a specific route. If an attacker supplied path traversal charters (../) as part of a filename, the server will save the file where the attacker chooses. This could allow an attacker to write any data to any file in the server.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-1359">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>09c00d5d33a1d59527e2971d569f448a</td>
+       <td>CVE-2022-1358</td>
+       <td>2022-05-17 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>The affected On-Premise is vulnerable to data exfiltration through improper neutralization of special elements used in an SQL command. This could allow an attacker to exfiltrate and dump all data held in the cnMaestro database.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-1358">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1eddc049f1e1bece1c5f6587bf7f7712</td>
+       <td>CVE-2022-1357</td>
+       <td>2022-05-17 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>The affected On-Premise cnMaestro allows an unauthenticated attacker to access the cnMaestro server and execute arbitrary code in the privileges of the web server. This lack of validation could allow an attacker to append arbitrary data to the logger command.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-1357">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>de0ac2699ecdb78d3b11235f130137b0</td>
+       <td>CVE-2022-1356</td>
+       <td>2022-05-17 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>cnMaestro is vulnerable to a local privilege escalation. By default, a user does not have root privileges. However, a user can run scripts as sudo, which could allow an attacker to gain root privileges when running user scripts outside allowed commands.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-1356">详情</a></td>
+      </tr>
+
+      <tr>
        <td>94896b34c5887141e4185c163a56465f</td>
        <td>CVE-2022-23670</td>
-       <td>2022-05-16 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-05-16 21:15:00</td>
        <td>A remote authenticated information disclosure vulnerability was discovered in Aruba ClearPass Policy Manager version(s): 6.10.4 and below, 6.9.9 and below, 6.8.9-HF2 and below, 6.7.x and below. Aruba has released updates to ClearPass Policy Manager that address this security vulnerability.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-23670">详情</a></td>
       </tr>
@@ -292,7 +372,7 @@
       <tr>
        <td>8f3562663988a0da72b1de6771d723c6</td>
        <td>CVE-2022-23668</td>
-       <td>2022-05-16 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-05-16 21:15:00</td>
        <td>A remote authenticated server-side request forgery (ssrf) vulnerability was discovered in Aruba ClearPass Policy Manager version(s): 6.10.4 and below, 6.9.9 and below, 6.8.9-HF2 and below, 6.7.x and below. Aruba has released updates to ClearPass Policy Manage that address this security vulnerability.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-23668">详情</a></td>
       </tr>
@@ -300,7 +380,7 @@
       <tr>
        <td>a04ae74cc3e0e77a234479981c0a4d36</td>
        <td>CVE-2022-23667</td>
-       <td>2022-05-16 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-05-16 21:15:00</td>
        <td>A authenticated remote command injection vulnerability was discovered in Aruba ClearPass Policy Manager version(s): 6.10.4 and below, 6.9.9 and below, 6.8.9-HF2 and below, 6.7.x and below. Aruba has released updates to ClearPass Policy Manager that address this security vulnerability.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-23667">详情</a></td>
       </tr>
@@ -308,7 +388,7 @@
       <tr>
        <td>55ddc7b38e826c1cefb2c8c31528784d</td>
        <td>CVE-2022-1587</td>
-       <td>2022-05-16 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-05-16 21:15:00</td>
        <td>An out-of-bounds read vulnerability was discovered in the PCRE2 library in the get_recurse_data_length() function of the pcre2_jit_compile.c file. This issue affects recursions in JIT-compiled regular expressions caused by duplicate data transfers.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-1587">详情</a></td>
       </tr>
@@ -316,7 +396,7 @@
       <tr>
        <td>fa4b1428ac75cc9f3c500d91c9fb1d63</td>
        <td>CVE-2022-1586</td>
-       <td>2022-05-16 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-05-16 21:15:00</td>
        <td>An out-of-bounds read vulnerability was discovered in the PCRE2 library in the compile_xclass_matchingpath() function of the pcre2_jit_compile.c file. This involves a unicode property matching issue in JIT-compiled regular expressions. The issue occurs because the character was not fully read in case-less matching within JIT.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-1586">详情</a></td>
       </tr>
@@ -324,7 +404,7 @@
       <tr>
        <td>4925a87831b84d87d7f9d1efc8502982</td>
        <td>CVE-2022-23666</td>
-       <td>2022-05-16 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-05-16 20:15:00</td>
        <td>A authenticated remote command injection vulnerability was discovered in Aruba ClearPass Policy Manager version(s): 6.10.4 and below, 6.9.9 and below, 6.8.9-HF2 and below, 6.7.x and below. Aruba has released updates to ClearPass Policy Manager that address this security vulnerability.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-23666">详情</a></td>
       </tr>
@@ -332,7 +412,7 @@
       <tr>
        <td>8fd3f7122fde39348655bef93122a3c1</td>
        <td>CVE-2022-23665</td>
-       <td>2022-05-16 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-05-16 20:15:00</td>
        <td>A authenticated remote command injection vulnerability was discovered in Aruba ClearPass Policy Manager version(s): 6.10.4 and below, 6.9.9 and below, 6.8.9-HF2 and below, 6.7.x and below. Aruba has released updates to ClearPass Policy Manager that address this security vulnerability.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-23665">详情</a></td>
       </tr>
@@ -340,7 +420,7 @@
       <tr>
        <td>1d5a63efdf27db63a307e264c3976e3d</td>
        <td>CVE-2022-23664</td>
-       <td>2022-05-16 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-05-16 20:15:00</td>
        <td>A authenticated remote command injection vulnerability was discovered in Aruba ClearPass Policy Manager version(s): 6.10.4 and below, 6.9.9 and below, 6.8.9-HF2 and below, 6.7.x and below. Aruba has released updates to ClearPass Policy Manager that address this security vulnerability.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-23664">详情</a></td>
       </tr>
@@ -348,7 +428,7 @@
       <tr>
        <td>ddca93d780e0a88ee59260bcbac80798</td>
        <td>CVE-2022-23663</td>
-       <td>2022-05-16 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-05-16 20:15:00</td>
        <td>A authenticated remote command injection vulnerability was discovered in Aruba ClearPass Policy Manager version(s): 6.10.4 and below, 6.9.9 and below, 6.8.9-HF2 and below, 6.7.x and below. Aruba has released updates to ClearPass Policy Manager that address this security vulnerability.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-23663">详情</a></td>
       </tr>
@@ -356,7 +436,7 @@
       <tr>
        <td>f6b7fe2f1c6d6b41d8653f865f639260</td>
        <td>CVE-2022-23662</td>
-       <td>2022-05-16 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-05-16 20:15:00</td>
        <td>A authenticated remote command injection vulnerability was discovered in Aruba ClearPass Policy Manager version(s): 6.10.4 and below, 6.9.9 and below, 6.8.9-HF2 and below, 6.7.x and below. Aruba has released updates to ClearPass Policy Manager that address this security vulnerability.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-23662">详情</a></td>
       </tr>
@@ -439,86 +519,6 @@
        <td>2022-05-14 00:15:00</td>
        <td>OpenClinica is an open source software for Electronic Data Capture (EDC) and Clinical Data Management (CDM). OpenClinica prior to version 3.16 is vulnerable to path traversal in multiple endpoints, leading to arbitrary file read/write, and potential remote code execution. There are no known workarounds. This issue has been patched and users are recommended to upgrade.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-24830">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>427d652dd4dab25cff0c58d34a5c202b</td>
-       <td>CVE-2022-25865</td>
-       <td>2022-05-13 20:15:00</td>
-       <td>The package workspace-tools before 0.18.4 are vulnerable to Command Injection via git argument injection. When calling the fetchRemoteBranch(remote: string, remoteBranch: string, cwd: string) function, both the remote and remoteBranch parameters are passed to the git fetch subcommand in a way that additional flags can be set. The additional flags can be used to perform a command injection.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-25865">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ecf77dbde9dad7f883ed20c00c13dd39</td>
-       <td>CVE-2022-25862</td>
-       <td>2022-05-13 20:15:00</td>
-       <td>This affects the package sds from 0.0.0. The library could be tricked into adding or modifying properties of the Object.prototype by abusing the set function located in js/set.js. **Note:** This vulnerability derives from an incomplete fix to [CVE-2020-7618](https://security.snyk.io/vuln/SNYK-JS-SDS-564123)</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-25862">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a49e60b73b216acb52a77b9e37402b9c</td>
-       <td>CVE-2022-22282</td>
-       <td>2022-05-13 20:15:00</td>
-       <td>SonicWall SMA1000 series firmware 12.4.0, 12.4.1-02965 and earlier versions incorrectly restricts access to a resource using HTTP connections from an unauthorized actor leading to Improper Access Control vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-22282">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>faa90594943d9181e19cc73f811a3ad5</td>
-       <td>CVE-2022-22281</td>
-       <td>2022-05-13 20:15:00</td>
-       <td>A buffer overflow vulnerability in the SonicWall SSL-VPN NetExtender Windows Client (32 and 64 bit) in 10.2.322 and earlier versions, allows an attacker to potentially execute arbitrary code in the host windows operating system.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-22281">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b2ad9630a55c9aff2306f2b2fc252596</td>
-       <td>CVE-2022-21190</td>
-       <td>2022-05-13 20:15:00</td>
-       <td>This affects the package convict before 6.2.3. This is a bypass of [CVE-2022-22143](https://security.snyk.io/vuln/SNYK-JS-CONVICT-2340604). The [fix](https://github.com/mozilla/node-convict/commit/3b86be087d8f14681a9c889d45da7fe3ad9cd880) introduced, relies on the startsWith method and does not prevent the vulnerability: before splitting the path, it checks if it starts with __proto__ or this.constructor.prototype. To bypass this check it's possible to prepend the dangerous paths with any string value followed by a dot, like for example foo.__proto__ or foo.this.constructor.prototype.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-21190">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ff778ebce254d48658a0e09e3f268d12</td>
-       <td>CVE-2022-1702</td>
-       <td>2022-05-13 20:15:00</td>
-       <td>SonicWall SMA1000 series firmware 12.4.0, 12.4.1-02965 and earlier versions accept a user-controlled input that specifies a link to an external site and uses that link in a redirect which leads to Open redirection vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-1702">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c6c279433bb4039ae503c09713f5e921</td>
-       <td>CVE-2022-1701</td>
-       <td>2022-05-13 20:15:00</td>
-       <td>SonicWall SMA1000 series firmware 12.4.0, 12.4.1-02965 and earlier versions uses a shared and hard-coded encryption key to store data.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-1701">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>809b22f082ca02229f65e8b9afd3aabf</td>
-       <td>CVE-2022-29218</td>
-       <td>2022-05-13 01:15:00</td>
-       <td>RubyGems is a package registry used to supply software for the Ruby language ecosystem. An ordering mistake in the code that accepts gem uploads allowed some gems (with platforms ending in numbers, like `arm64-darwin-21`) to be temporarily replaced in the CDN cache by a malicious package. The bug has been patched, and is believed to have never been exploited, based on an extensive review of logs and existing gems by rubygems. The easiest way to ensure that an application has not been exploited by this vulnerability is to verify all downloaded .gems checksums match the checksum recorded in the RubyGems.org database. RubyGems.org has been patched and is no longer vulnerable to this issue.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-29218">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>388f19843e2f1be38ba4207c89e911fa</td>
-       <td>CVE-2022-27134</td>
-       <td>2022-05-13 01:15:00</td>
-       <td>EOSIO batdappboomx v327c04cf has an Access-control vulnerability in the `transfer` function of the smart contract which allows remote attackers to win the cryptocurrency without paying ticket fee via the `std::string memo` parameter.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-27134">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1d92608ebbf85a7aeb102b3a406464c0</td>
-       <td>CVE-2021-27777</td>
-       <td>2022-05-12 22:15:00</td>
-       <td>XML External Entity (XXE) injection vulnerabilities occur when poorly configured XML parsers process user supplied input without sufficient validation. Attackers can exploit this vulnerability to manipulate XML content and inject malicious external entity references.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-27777">详情</a></td>
       </tr>
 
      </tbody>
@@ -794,6 +794,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>f8971763e3bd6912dfd16ae74f90e149</td>
+       <td>CNNVD-202205-3530 (CVE-2022-23666)</td>
+       <td>2022-05-16 10:12:04</td>
+       <td>Aruba ClearPass Policy Manager 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202205-3530">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b41e09b3fd539fad6f4c669011049979</td>
+       <td>CNNVD-202205-3531 (CVE-2022-23665)</td>
+       <td>2022-05-16 10:12:03</td>
+       <td>Aruba ClearPass Policy Manager 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202205-3531">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>867834706e1ddc09a48c44d5d61fffe5</td>
+       <td>CNNVD-202205-3532 (CVE-2022-23664)</td>
+       <td>2022-05-16 10:12:02</td>
+       <td>Aruba ClearPass Policy Manager 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202205-3532">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a03505166265d6f81c38c971a73ba115</td>
+       <td>CNNVD-202205-3533 (CVE-2022-23663)</td>
+       <td>2022-05-16 10:12:01</td>
+       <td>Aruba ClearPass Policy Manager 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202205-3533">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d338ef8c80062f772951bfedbfed60b7</td>
+       <td>CNNVD-202205-3534 (CVE-2022-23661)</td>
+       <td>2022-05-16 10:12:00</td>
+       <td>Aruba ClearPass Policy Manager 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202205-3534">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>fc1e857e509d43c8452b07f80de3d78b</td>
+       <td>CNNVD-202205-3535 (CVE-2022-23657)</td>
+       <td>2022-05-16 10:11:59</td>
+       <td>Aruba ClearPass Policy Manager 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202205-3535">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6d7a945b49c80fd8c58007deeaab5aab</td>
+       <td>CNNVD-202205-3536 (CVE-2022-23662)</td>
+       <td>2022-05-16 10:11:57</td>
+       <td>Aruba ClearPass Policy Manager 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202205-3536">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f776d32fc592665ea80ed56b8ef05664</td>
+       <td>CNNVD-202205-3537 (CVE-2022-23658)</td>
+       <td>2022-05-16 10:11:56</td>
+       <td>Aruba ClearPass Policy Manager 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202205-3537">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2814f4bf2b71600a622c9a3603d1e046</td>
+       <td>CNNVD-202205-3538 (CVE-2022-23659)</td>
+       <td>2022-05-16 10:11:55</td>
+       <td>Aruba ClearPass Policy Manager 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202205-3538">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7ff18eb85a69124b492f07c4028cfa5e</td>
+       <td>CNNVD-202205-3539 (CVE-2022-23660)</td>
+       <td>2022-05-16 10:11:54</td>
+       <td>Aruba ClearPass Policy Manager 安全漏洞</td>
+       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202205-3539">详情</a></td>
+      </tr>
+
+      <tr>
        <td>e9031064656557f94b39821ee85bc8b2</td>
        <td>CNNVD-202205-3358 (CVE-2022-30708)</td>
        <td>2022-05-15 10:10:33</td>
@@ -951,86 +1031,6 @@
        <td>2022-05-12 10:12:57</td>
        <td>Microsoft Windows Print Spooler Components 缓冲区错误漏洞</td>
        <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202205-3208">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>dde96d2d257309f9612d440e12e5f743</td>
-       <td>CNNVD-202205-3042 (CVE-2022-21136)</td>
-       <td>2022-05-12 10:10:20</td>
-       <td>Intel Xeon Processors 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202205-3042">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2f6c33a0b9f9d17e2c6101f79487cbe4</td>
-       <td>CNNVD-202205-3043 (CVE-2021-33135)</td>
-       <td>2022-05-12 10:10:19</td>
-       <td>Intel Software Guard Extensions（SGX） 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202205-3043">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>828c04d94edcf2404babe7d3f8ae5949</td>
-       <td>CNNVD-202205-3044 (CVE-2022-22139)</td>
-       <td>2022-05-12 10:10:18</td>
-       <td>Intel Extreme Tuning Utility 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202205-3044">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c79d6574d076e6be1badfa0748893b85</td>
-       <td>CNNVD-202205-3045 (CVE-2021-33117)</td>
-       <td>2022-05-12 10:10:16</td>
-       <td>Intel 3rd Generation Xeon Scalable Processors 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202205-3045">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7b773f24b285bf05c9a05964f27b683d</td>
-       <td>CNNVD-202205-3046 (CVE-2022-21128)</td>
-       <td>2022-05-12 10:10:15</td>
-       <td>Intel Advisor software 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202205-3046">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f275ca480e8d715da2707db6795c0768</td>
-       <td>CNNVD-202205-3047 (CVE-2022-21237)</td>
-       <td>2022-05-12 10:10:14</td>
-       <td>Intel NUC 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202205-3047">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>bb42d1e3a5fd6d5de95e5aa01d1111a1</td>
-       <td>CNNVD-202205-3048 (CVE-2022-24297)</td>
-       <td>2022-05-12 10:10:13</td>
-       <td>Intel NUC 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202205-3048">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>746c5ea0cc6481f31062bfd784b958e7</td>
-       <td>CNNVD-202205-3049 (CVE-2022-24382)</td>
-       <td>2022-05-12 10:10:12</td>
-       <td>Intel NUC 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202205-3049">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>db6edc60d0c01815321c11cea2d571b2</td>
-       <td>CNNVD-202205-3050 (CVE-2021-26258)</td>
-       <td>2022-05-12 10:10:11</td>
-       <td>Intel Killer Control Center 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202205-3050">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>fd8faf922bee793861e362bbf186a317</td>
-       <td>CNNVD-202205-3051 (CVE-2021-33130)</td>
-       <td>2022-05-12 10:10:10</td>
-       <td>Intel RealSense ID Solution F450 安全漏洞</td>
-       <td><a target="_blank" href="http://www.cnnvd.org.cn/web/xxk/ldxqById.tag?CNNVD=CNNVD-202205-3051">详情</a></td>
       </tr>
 
      </tbody>
@@ -1674,9 +1674,49 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>2ff286fee0895e9673d49ed4f3dea7ec</td>
+       <td>CVE-2021-39027</td>
+       <td>2022-05-17 20:30:35 <img src="imgs/new.gif" /></td>
+       <td>IBM Guardium Data Encryption 安全漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=490c361bd4e04338ad3261aef0ac44d3">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>85e2260794b974d6a7db3157d45d6a4d</td>
+       <td>CVE-2022-27183</td>
+       <td>2022-05-17 20:30:30 <img src="imgs/new.gif" /></td>
+       <td>Splunk Enterprise 跨站脚本漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=ea3074fa9c8b44edb5fb5a0297309105">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>05fc875ab2a5143e8e63e584a8613524</td>
+       <td>CVE-2022-27784</td>
+       <td>2022-05-17 20:30:17 <img src="imgs/new.gif" /></td>
+       <td>Adobe After Effects 缓冲区错误漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=f782da893e774b9b822071731165864c">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>527516b0465eb41e42a329d45efa959f</td>
+       <td>CVE-2022-28272</td>
+       <td>2022-05-17 20:30:08 <img src="imgs/new.gif" /></td>
+       <td>Adobe Photoshop 缓冲区错误漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=1d7d70c3cbf7486d85eef0be711aa4c8">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5aa3479e95eda248319392d18af345b5</td>
+       <td>CVE-2022-28275</td>
+       <td>2022-05-17 20:29:58 <img src="imgs/new.gif" /></td>
+       <td>Adobe Photoshop 缓冲区错误漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=c729c643db5b4097ac14bd0308f1f021">详情</a></td>
+      </tr>
+
+      <tr>
        <td>0ca9df374bdd9d708980985e6cccf1f4</td>
        <td>CVE-2022-28163</td>
-       <td>2022-05-16 20:24:23 <img src="imgs/new.gif" /></td>
+       <td>2022-05-16 20:24:23</td>
        <td>Broadcom Brocade SANnav SQL注入漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=6e4d4ca1b84b44998cf519e85518c072">详情</a></td>
       </tr>
@@ -1684,7 +1724,7 @@
       <tr>
        <td>4b24083c1187822dae0067680238de39</td>
        <td>CVE-2022-23205</td>
-       <td>2022-05-16 20:24:19 <img src="imgs/new.gif" /></td>
+       <td>2022-05-16 20:24:19</td>
        <td>Adobe Photoshop 缓冲区错误漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=64b46846878848e3b778be2e598d7a97">详情</a></td>
       </tr>
@@ -1692,7 +1732,7 @@
       <tr>
        <td>2da2e34790b5303aa37a499a3e9471dc</td>
        <td>CVE-2022-24105</td>
-       <td>2022-05-16 20:24:14 <img src="imgs/new.gif" /></td>
+       <td>2022-05-16 20:24:14</td>
        <td>Adobe Photoshop 缓冲区错误漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=253eebada92c40bd821d1339a6dfc7d0">详情</a></td>
       </tr>
@@ -1700,7 +1740,7 @@
       <tr>
        <td>35eb54bf3f46c47f650fbd88890921e4</td>
        <td>CVE-2022-28270</td>
-       <td>2022-05-16 20:24:10 <img src="imgs/new.gif" /></td>
+       <td>2022-05-16 20:24:10</td>
        <td>Adobe Photoshop 缓冲区错误漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=12cac17565ec414aa2038bc467234e30">详情</a></td>
       </tr>
@@ -1708,7 +1748,7 @@
       <tr>
        <td>406a2f76e9aaa883568c2ca1c575d83c</td>
        <td>CVE-2022-27183</td>
-       <td>2022-05-16 20:24:05 <img src="imgs/new.gif" /></td>
+       <td>2022-05-16 20:24:05</td>
        <td>Splunk Enterprise 安全漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=ea3074fa9c8b44edb5fb5a0297309105">详情</a></td>
       </tr>
@@ -1716,7 +1756,7 @@
       <tr>
        <td>628f7b7550308ce9ec2f3bcd5720bfda</td>
        <td>CVE-2022-28274</td>
-       <td>2022-05-16 20:24:01 <img src="imgs/new.gif" /></td>
+       <td>2022-05-16 20:24:01</td>
        <td>Adobe Photoshop 缓冲区错误漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=a8761637b6de457e96da5b309ab48efe">详情</a></td>
       </tr>
@@ -1724,7 +1764,7 @@
       <tr>
        <td>2385f765f86d39a2768ef367996b2ccf</td>
        <td>CVE-2022-24099</td>
-       <td>2022-05-16 20:23:56 <img src="imgs/new.gif" /></td>
+       <td>2022-05-16 20:23:56</td>
        <td>Adobe Photoshop 缓冲区错误漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=09fda985c60743ebb9257a0a1564e603">详情</a></td>
       </tr>
@@ -1732,7 +1772,7 @@
       <tr>
        <td>926e11a8f72c86bbee4b44a402d29098</td>
        <td>CVE-2022-28277</td>
-       <td>2022-05-16 20:23:52 <img src="imgs/new.gif" /></td>
+       <td>2022-05-16 20:23:52</td>
        <td>Adobe Photoshop 缓冲区错误漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=021c175a02d344199fb350da4be056ed">详情</a></td>
       </tr>
@@ -1740,7 +1780,7 @@
       <tr>
        <td>0aa0a1052f9f1989e3d323f63e06f123</td>
        <td>CVE-2022-27784</td>
-       <td>2022-05-16 20:23:47 <img src="imgs/new.gif" /></td>
+       <td>2022-05-16 20:23:47</td>
        <td>Adobe After Effects 安全漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=f782da893e774b9b822071731165864c">详情</a></td>
       </tr>
@@ -1748,7 +1788,7 @@
       <tr>
        <td>58f240709a5301b53e923781184b23dd</td>
        <td>CVE-2022-29340</td>
-       <td>2022-05-16 20:23:43 <img src="imgs/new.gif" /></td>
+       <td>2022-05-16 20:23:43</td>
        <td>GPAC 安全漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=87d0b5302d12463bbaf235e6c1c485c7">详情</a></td>
       </tr>
@@ -1871,46 +1911,6 @@
        <td>2022-05-14 20:19:19</td>
        <td>Cisco Enterprise NFV Infrastructure Software 输入验证错误漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=88fedc54d65c4f5dac1a8f98f158126b">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>adbf9a0046f4e9b3929a5c1e786951e5</td>
-       <td>CVE-2022-0882</td>
-       <td>2022-05-14 20:19:15</td>
-       <td>Fuchsia kernel 信息泄露漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=b9fddd23a196442d843c0c83cd0c3a67">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ad34ba4bb1a8c8d105419e1d9ee21591</td>
-       <td>CVE-2022-20799</td>
-       <td>2022-05-14 20:19:11</td>
-       <td>Cisco Small Business RV Series Routers 命令注入漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=e79bad6811494915971ec1f294b0a3d8">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8b618051ed64fbcd178e736b0a41e0ec</td>
-       <td>CVE-2021-41959</td>
-       <td>2022-05-13 20:11:59</td>
-       <td>JerryScript Git 安全漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=a5f7181eeb5c48c9a9b82a516d86b846">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>15f2aaa220d9a5fb008fcbb44f0e617d</td>
-       <td>CVE-2021-22573</td>
-       <td>2022-05-13 20:11:55</td>
-       <td>Google google-oauth-java-client 数据伪造问题漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=c688982d12b1492aa9ec1270f1400102">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>27a967b55ae00f205af9f27f3f97e4ef</td>
-       <td>CVE-2022-28589</td>
-       <td>2022-05-13 20:11:46</td>
-       <td>Pixelimity 跨站脚本漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=1f547fc7db194f769ee591a962371f3b">详情</a></td>
       </tr>
 
      </tbody>
@@ -2194,6 +2194,30 @@
       </tr>
 
       <tr>
+       <td>e1ad89395d294cdbd77d30389029f4fb</td>
+       <td>CVE-2022-23066</td>
+       <td>2022-05-09 07:15:08 </td>
+       <td>In Solana rBPF versions 0.2.26 and 0.2.27 are affected by Incorrect Calculation which is caused by improper implementation of sdiv instruction. This can lead to the wrong execution path, resulting in huge loss in specific cases. For example, the result of a sdiv instruction may decide whether to transfer tokens or not. The vulnerability affects both integrity and may cause serious availability problems.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-23066">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>fda6f3d151528ff22717323b3905033a</td>
+       <td>CVE-2022-23802</td>
+       <td>2022-05-06 18:15:09 </td>
+       <td>Joomla Guru extension 5.2.5 is affected by: Insecure Permissions. The impact is: obtain sensitive information (remote). The component is: Access to private information and components, possibility to view other users' information. Information disclosure Access to private information and components, possibility to view other users' information.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-23802">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8d2e1a060e2d2bfb7dddb07a359b5567</td>
+       <td>CVE-2022-23205</td>
+       <td>2022-05-06 18:15:09 </td>
+       <td>Adobe Photoshop versions 22.5.6 (and earlier)and 23.2.2 (and earlier) are affected by an out-of-bounds write vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-23205">详情</a></td>
+      </tr>
+
+      <tr>
        <td>103768027988800851fb2e9cb336c8b4</td>
        <td>CVE-2021-36912</td>
        <td>2022-05-06 17:15:08 </td>
@@ -2239,6 +2263,22 @@
        <td>2022-05-04 17:15:08 </td>
        <td>A vulnerability in Cisco SD-WAN vManage Software could allow an authenticated, local attacker to view sensitive information on an affected system. This vulnerability is due to insufficient file system restrictions. An authenticated attacker with netadmin privileges could exploit this vulnerability by accessing the vshell of an affected system. A successful exploit could allow the attacker to read sensitive information on the underlying operating system.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-20734">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>98d0e3af3f632a90c0ffdd05b5b9bbdf</td>
+       <td>CVE-2022-23724</td>
+       <td>2022-05-04 17:15:08 </td>
+       <td>Use of static encryption key material allows forging an authentication token to other users within a tenant organization. MFA may be bypassed by redirecting an authentication flow to a target user. To exploit the vulnerability, must have compromised user credentials.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-23724">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>fe2c56d575f7f284c260818096208c67</td>
+       <td>CVE-2022-23443</td>
+       <td>2022-05-04 16:15:08 </td>
+       <td>An improper access control in Fortinet FortiSOAR before 7.2.0 allows unauthenticated attackers to access gateway API data via crafted HTTP GET requests.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-23443">详情</a></td>
       </tr>
 
       <tr>
@@ -2383,46 +2423,6 @@
        <td>2022-05-03 04:15:09 </td>
        <td>A vulnerability in the Snort rule evaluation function of Cisco Firepower Threat Defense (FTD) Software could allow an unauthenticated, remote attacker to cause a denial of service (DoS) condition on an affected device. The vulnerability is due to improper handling of the DNS reputation enforcement rule. An attacker could exploit this vulnerability by sending crafted UDP packets through an affected device to force a buildup of UDP connections. A successful exploit could allow the attacker to cause traffic that is going through the affected device to be dropped, resulting in a DoS condition. Note: This vulnerability only affects Cisco FTD devices that are running Snort 3.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-20767">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d9760d80734d7d88a3ce8b2de83e44a3</td>
-       <td>CVE-2022-20760</td>
-       <td>2022-05-03 04:15:09 </td>
-       <td>A vulnerability in the DNS inspection handler of Cisco Adaptive Security Appliance (ASA) Software and Firepower Threat Defense (FTD) Software could allow an unauthenticated, remote attacker to cause a denial of service condition (DoS) on an affected device. This vulnerability is due to a lack of proper processing of incoming requests. An attacker could exploit this vulnerability by sending crafted DNS requests at a high rate to an affected device. A successful exploit could allow the attacker to cause the device to stop responding, resulting in a DoS condition.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-20760">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6c0cbaeafe6a7b69cbf52fa1551e8fd4</td>
-       <td>CVE-2022-20744</td>
-       <td>2022-05-03 04:15:09 </td>
-       <td>A vulnerability in the input protection mechanisms of Cisco Firepower Management Center (FMC) Software could allow an authenticated, remote attacker to view data without proper authorization. This vulnerability exists because of a protection mechanism that relies on the existence or values of a specific input. An attacker could exploit this vulnerability by modifying this input to bypass the protection mechanism and sending a crafted request to an affected device. A successful exploit could allow the attacker to view data beyond the scope of their authorization.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-20744">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>195baafc135ed895b92e652d54e75df2</td>
-       <td>CVE-2022-20743</td>
-       <td>2022-05-03 04:15:09 </td>
-       <td>A vulnerability in the web management interface of Cisco Firepower Management Center (FMC) Software could allow an authenticated, remote attacker to bypass security protections and upload malicious files to the affected system. This vulnerability is due to improper validation of files uploaded to the web management interface of Cisco FMC Software. An attacker could exploit this vulnerability by uploading a maliciously crafted file to a device running affected software. A successful exploit could allow the attacker to store malicious files on the device, which they could access later to conduct additional attacks, including executing arbitrary code on the affected device with root privileges.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-20743">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>74e691fe2a7d5c08d6efbe911d1916a7</td>
-       <td>CVE-2022-20740</td>
-       <td>2022-05-03 04:15:09 </td>
-       <td>A vulnerability in the web-based management interface of Cisco Firepower Management Center (FMC) Software could allow an unauthenticated, remote attacker to conduct a cross-site scripting attack. This vulnerability is due to improper validation of user-supplied input to the web-based management interface. An attacker could exploit this vulnerability by convincing a user to click a link designed to pass malicious input to the interface. A successful exploit could allow the attacker to conduct cross-site scripting attacks and gain access to sensitive browser-based information.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-20740">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e58a61a1f6da1b226d5ac98b5ef06728</td>
-       <td>CVE-2022-20730</td>
-       <td>2022-05-03 04:15:09 </td>
-       <td>A vulnerability in the Security Intelligence feed feature of Cisco Firepower Threat Defense (FTD) Software could allow an unauthenticated, remote attacker to bypass the Security Intelligence DNS feed. This vulnerability is due to incorrect feed update processing. An attacker could exploit this vulnerability by sending traffic through an affected device that should be blocked by the affected device. A successful exploit could allow the attacker to bypass device controls and successfully send traffic to devices that are expected to be protected by the affected device.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-20730">详情</a></td>
       </tr>
 
      </tbody>
