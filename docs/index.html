@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2022-08-13 10:10:27 -->
+<!-- RELEASE TIME : 2022-08-14 10:10:27 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,7 +284,7 @@
       <tr>
        <td>dc3c007bfbe14e5fade3976ce5bc474e</td>
        <td>CVE-2022-35949</td>
-       <td>2022-08-12 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-08-12 23:15:00</td>
        <td>undici is an HTTP/1.1 client, written from scratch for Node.js.`undici` is vulnerable to SSRF (Server-side Request Forgery) when an application takes in **user input** into the `path/pathname` option of `undici.request`. If a user specifies a URL such as `http://127.0.0.1` or `//127.0.0.1` ```js const undici = require("undici") undici.request({origin: "http://example.com", pathname: "//127.0.0.1"}) ``` Instead of processing the request as `http://example.org//127.0.0.1` (or `http://example.org/http://127.0.0.1` when `http://127.0.0.1 is used`), it actually processes the request as `http://127.0.0.1/` and sends it to `http://127.0.0.1`. If a developer passes in user input into `path` parameter of `undici.request`, it can result in an _SSRF_ as they will assume that the hostname cannot change, when in actual fact it can change because the specified path parameter is combined with the base URL. This issue was fixed in `undici@5.8.1`. The best workaround is to validate user input before passing it to the `undici.request` call.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-35949">详情</a></td>
       </tr>
@@ -292,7 +292,7 @@
       <tr>
        <td>2a329f4d699fefdb076e921ccf18b032</td>
        <td>CVE-2022-35942</td>
-       <td>2022-08-12 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-08-12 23:15:00</td>
        <td>Improper input validation on the `contains` LoopBack filter may allow for arbitrary SQL injection. When the extended filter property `contains` is permitted to be interpreted by the Postgres connector, it is possible to inject arbitrary SQL which may affect the confidentiality and integrity of data stored on the connected database. A patch was released in version 5.5.1. This affects users who does any of the following: - Connect to the database via the DataSource with `allowExtendedProperties: true` setting OR - Uses the connector's CRUD methods directly OR - Uses the connector's other methods to interpret the LoopBack filter. Users who are unable to upgrade should do the following if applicable: - Remove `allowExtendedProperties: true` DataSource setting - Add `allowExtendedProperties: false` DataSource setting - When passing directly to the connector functions, manually sanitize the user input for the `contains` LoopBack filter beforehand.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-35942">详情</a></td>
       </tr>
@@ -300,7 +300,7 @@
       <tr>
        <td>baa76a0e244f09e5c74911872815e0ed</td>
        <td>CVE-2022-35956</td>
-       <td>2022-08-12 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-08-12 21:15:00</td>
        <td>This Rails gem adds two methods to the ActiveRecord::Base class that allow you to update many records on a single database hit, using a case sql statement for it. Before version 0.1.3 `update_by_case` gem used custom sql strings, and it was not sanitized, making it vulnerable to sql injection. Upgrade to version >= 0.1.3 that uses `Arel` instead to construct the resulting sql statement, with sanitized sql.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-35956">详情</a></td>
       </tr>
@@ -308,7 +308,7 @@
       <tr>
        <td>38447acf20ecf69a10529b688d471127</td>
        <td>CVE-2022-35953</td>
-       <td>2022-08-12 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-08-12 21:15:00</td>
        <td>BookWyrm is a social network for tracking your reading, talking about books, writing reviews, and discovering what to read next. Some links in BookWyrm may be vulnerable to tabnabbing, a form of phishing that gives attackers an opportunity to redirect a user to a malicious site. The issue was patched in version 0.4.5.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-35953">详情</a></td>
       </tr>
@@ -316,7 +316,7 @@
       <tr>
        <td>737c38ff532843f12a7604255f2d36ba</td>
        <td>CVE-2022-35943</td>
-       <td>2022-08-12 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-08-12 21:15:00</td>
        <td>Shield is an authentication and authorization framework for CodeIgniter 4. This vulnerability may allow [SameSite Attackers](https://canitakeyoursubdomain.name/) to bypass the [CodeIgniter4 CSRF protection](https://codeigniter4.github.io/userguide/libraries/security.html) mechanism with CodeIgniter Shield. For this attack to succeed, the attacker must have direct (or indirect, e.g., XSS) control over a subdomain site (e.g., `https://a.example.com/`) of the target site (e.g., `http://example.com/`). Upgrade to **CodeIgniter v4.2.3 or later** and **Shield v1.0.0-beta.2 or later**. As a workaround: set `Config\Security::$csrfProtection` to `'session,'`remove old session data right after login (immediately after ID and password match) and regenerate CSRF token right after login (immediately after ID and password match)</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-35943">详情</a></td>
       </tr>
@@ -324,7 +324,7 @@
       <tr>
        <td>5f0a9a90354d03296b0ded3d7625778c</td>
        <td>CVE-2022-38183</td>
-       <td>2022-08-12 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-08-12 20:15:00</td>
        <td>In Gitea before 1.16.9, it was possible for users to add existing issues to projects. Due to improper access controls, an attacker could assign any issue to any project in Gitea (there was no permission check for fetching the issue). As a result, the attacker would get access to private issue titles.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-38183">详情</a></td>
       </tr>
@@ -332,7 +332,7 @@
       <tr>
        <td>0b6eaa8841cd0d8942d84072c5674cff</td>
        <td>CVE-2022-37397</td>
-       <td>2022-08-12 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-08-12 20:15:00</td>
        <td>An issue was discovered in the YugabyteDB 2.6.1 when using LDAP-based authentication in YCQL with Microsoft’s Active Directory. When anonymous or unauthenticated LDAP binding is enabled, it allows bypass of authentication with an empty password.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-37397">详情</a></td>
       </tr>
@@ -340,7 +340,7 @@
       <tr>
        <td>d0348ff858b3d765010a5a1d1a8b8fbc</td>
        <td>CVE-2022-2804</td>
-       <td>2022-08-12 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-08-12 20:15:00</td>
        <td>A vulnerability was found in SourceCodester Zoo Management System. It has been classified as critical. Affected is an unknown function of the file /pages/apply_vacancy.php. The manipulation of the argument filename leads to unrestricted upload. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. VDB-206250 is the identifier assigned to this vulnerability.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-2804">详情</a></td>
       </tr>
@@ -348,7 +348,7 @@
       <tr>
        <td>59ab61ddcd507685fc042a46036ad7e2</td>
        <td>CVE-2022-2803</td>
-       <td>2022-08-12 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-08-12 20:15:00</td>
        <td>A vulnerability was found in SourceCodester Zoo Management System and classified as critical. This issue affects some unknown processing of the file /pages/animals.php. The manipulation of the argument class_id leads to sql injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-206249 was assigned to this vulnerability.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-2803">详情</a></td>
       </tr>
@@ -356,7 +356,7 @@
       <tr>
        <td>aabf1ba46a6846eb562845da719a6a80</td>
        <td>CVE-2022-2802</td>
-       <td>2022-08-12 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-08-12 20:15:00</td>
        <td>A vulnerability has been found in SourceCodester Gas Agency Management System and classified as critical. This vulnerability affects unknown code of the file gasmark/login.php. The manipulation of the argument username leads to sql injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-206248.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-2802">详情</a></td>
       </tr>
@@ -1674,9 +1674,89 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>1a3be092129664dc4c4abd0363ddbfe6</td>
+       <td>CVE-2022-26979</td>
+       <td>2022-08-13 20:25:04 <img src="imgs/new.gif" /></td>
+       <td>Foxit PDF Reader 代码问题漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=25ff93873e0d47b382d97f11f0944741">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8ec1d8c1b47965e03a9e59b243c054e9</td>
+       <td>CVE-2022-36831</td>
+       <td>2022-08-13 20:24:59 <img src="imgs/new.gif" /></td>
+       <td>SAMSUNG Mobile devices 路径遍历漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=aba3ed2c894a4547b37b40af3a82731f">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1a4e6e6db96febcaa676e427630d4911</td>
+       <td>CVE-2022-25168</td>
+       <td>2022-08-13 20:24:55 <img src="imgs/new.gif" /></td>
+       <td>Apache Hadoop 参数注入漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=db261b7ff8c94009b019c0fb6be49860">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6a94086d47e9c02f28079138819680bf</td>
+       <td>CVE-2022-31119</td>
+       <td>2022-08-13 20:24:49 <img src="imgs/new.gif" /></td>
+       <td>Nextcloud 日志信息泄露漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=501428172e6a4c6784713996043a6f95">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ac98c112444acb4ff75e158dfc679512</td>
+       <td>CVE-2022-27944</td>
+       <td>2022-08-13 20:24:45 <img src="imgs/new.gif" /></td>
+       <td>Foxit PDF Reader 代码问题漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=62ba8f06fc7e48009ad0f210f12c2d19">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9f13cab8e4b2b4ce677dd1741e6c1614</td>
+       <td>CVE-2022-32455</td>
+       <td>2022-08-13 20:24:40 <img src="imgs/new.gif" /></td>
+       <td>F5 BIG-IP 缓冲区错误漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=8c7081e33f0b46939f5b61e2affcca9b">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>23cd2b000e8337484c811a5862beb899</td>
+       <td>CVE-2022-31609</td>
+       <td>2022-08-13 20:24:35 <img src="imgs/new.gif" /></td>
+       <td>NVIDIA vGPU Software 安全漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=f65709b14cc240319538b4b308403c25">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b5cef26fadec53dacb233f48816ca9aa</td>
+       <td>CVE-2022-33968</td>
+       <td>2022-08-13 20:24:30 <img src="imgs/new.gif" /></td>
+       <td>F5 BIG-IP 缓冲区错误漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=a9435ad08d9646ceb95a9e2726170699">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9a6a6007cb8f264432fe05bed96a1b55</td>
+       <td>CVE-2022-31132</td>
+       <td>2022-08-13 20:24:26 <img src="imgs/new.gif" /></td>
+       <td>Nextcloud 代码问题漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=b179aaec6b1b476f9e27a669c20258b0">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1464f22551eddd9874341af5eaeb6102</td>
+       <td>CVE-2022-34655</td>
+       <td>2022-08-13 20:24:21 <img src="imgs/new.gif" /></td>
+       <td>F5 BIG-IP 安全漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=9f1cd01fae4c4523bf5e2ecc5c26a73a">详情</a></td>
+      </tr>
+
+      <tr>
        <td>4687f1d2bb8553a403d55b3c766d3913</td>
        <td>CVE-2022-36359</td>
-       <td>2022-08-12 20:30:58 <img src="imgs/new.gif" /></td>
+       <td>2022-08-12 20:30:58</td>
        <td>Django 其他漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=2528815973d6439191a84360dcb1215f">详情</a></td>
       </tr>
@@ -1684,7 +1764,7 @@
       <tr>
        <td>e80c45e2671bd1acaf1f85bff83b66b6</td>
        <td>CVE-2022-29154</td>
-       <td>2022-08-12 20:30:53 <img src="imgs/new.gif" /></td>
+       <td>2022-08-12 20:30:53</td>
        <td>rsync 其他漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=5edb5b9729854a349fecb4c0825754d0">详情</a></td>
       </tr>
@@ -1692,7 +1772,7 @@
       <tr>
        <td>93ed11ba554c7116a34a10f7d487c61a</td>
        <td>CVE-2022-27617</td>
-       <td>2022-08-12 20:30:48 <img src="imgs/new.gif" /></td>
+       <td>2022-08-12 20:30:48</td>
        <td>Synology Calendar 路径遍历漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=4eead74002f343c493ac7a8701e7bef7">详情</a></td>
       </tr>
@@ -1831,86 +1911,6 @@
        <td>2022-08-09 20:19:29</td>
        <td>Artica Pandora FMS 跨站脚本漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=3b80b17dac85414caa567d06b678df3e">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b4a4697115b12813f6309b2f320698b8</td>
-       <td>CVE-2022-26309</td>
-       <td>2022-08-09 20:19:25</td>
-       <td>Artica Pandora FMS 跨站请求伪造漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=1eecf14b13534fabbfffb7c12f37a4e0">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f4205fa94d0afb7e488a1eebc1e27d68</td>
-       <td>CVE-2022-26308</td>
-       <td>2022-08-09 20:19:20</td>
-       <td>Artica Pandora FMS 其他漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=634ce533f8e44a28a712b31b445d2f69">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0c7b1298de4e140b0ee65ae56557846b</td>
-       <td>CVE-2022-2260</td>
-       <td>2022-08-09 20:19:15</td>
-       <td>WordPress和WordPress plugin 跨站请求伪造漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=fde2d1b6f8c54b38a70d36d1a3bd1fa1">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7fd6806a6df0d6857bc6c3f36dc28e67</td>
-       <td>CVE-2021-21022</td>
-       <td>2022-08-08 20:14:47</td>
-       <td>Adobe Magento 授权问题漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=145e3e11aa3448928964b875079ce070">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f8a60edb6dcb6fa1bfd98547015bb88c</td>
-       <td>CVE-2022-23733</td>
-       <td>2022-08-08 20:14:42</td>
-       <td>GitHub Enterprise Server 安全漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=845cee3c0af74016b6067b2ea6ba2e6e">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5da59b2ff69b43f85b428ada1963a69d</td>
-       <td>CVE-2022-2215</td>
-       <td>2022-08-08 20:14:37</td>
-       <td>WordPress plugin GiveWP 跨站脚本漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=8012ee102ac94a93a3ffc26c0a21d730">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c442c6a6cb32741d1aea94ec347db766</td>
-       <td>CVE-2022-26308</td>
-       <td>2022-08-08 20:14:34</td>
-       <td>Artica Pandora FMS 安全漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=634ce533f8e44a28a712b31b445d2f69">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>acf5e6f478faedb1cbbd4d843bee5f3b</td>
-       <td>CVE-2022-26432</td>
-       <td>2022-08-08 20:14:29</td>
-       <td>多款 MediaTek 芯片安全漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=92ea999e18a14b748956bc48f1582d61">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d36eea7d963f6dbd98c7592bb3eaf9bb</td>
-       <td>CVE-2022-26309</td>
-       <td>2022-08-08 20:14:24</td>
-       <td>Artica Pandora FMS 安全漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=1eecf14b13534fabbfffb7c12f37a4e0">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>62c0045d78e63ee1075d3323e94b5fcf</td>
-       <td>CVE-2022-26434</td>
-       <td>2022-08-08 20:14:19</td>
-       <td>多款 MediaTek 芯片安全漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=cd8ec332d50147dd912861b72d44f839">详情</a></td>
       </tr>
 
      </tbody>
@@ -2194,6 +2194,14 @@
       </tr>
 
       <tr>
+       <td>e1d9ce0858205d2fd2336ae9e932a25e</td>
+       <td>CVE-2022-28129</td>
+       <td>2022-08-10 06:15:08 </td>
+       <td>Improper Input Validation vulnerability in HTTP/1.1 header parsing of Apache Traffic Server allows an attacker to send invalid headers. This issue affects Apache Traffic Server 8.0.0 to 9.1.2.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-28129">详情</a></td>
+      </tr>
+
+      <tr>
        <td>d10ee1ccdac562b83dbb078229f02911</td>
        <td>CVE-2022-30574</td>
        <td>2022-08-09 18:15:08 </td>
@@ -2218,11 +2226,43 @@
       </tr>
 
       <tr>
+       <td>f5b02523c971d2b32aefd695a1802875</td>
+       <td>CVE-2022-27944</td>
+       <td>2022-08-06 20:15:08 </td>
+       <td>Foxit PDF Reader before 12.0.1 and PDF Editor before 12.0.1 allow an exportXFAData NULL pointer dereference.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-27944">详情</a></td>
+      </tr>
+
+      <tr>
        <td>76e5ab192e2827e221ac248023b872d8</td>
        <td>CVE-2022-37451</td>
        <td>2022-08-06 18:15:08 </td>
        <td>Exim before 4.96 has an invalid free in pam_converse in auths/call_pam.c because store_free is not used after store_malloc.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-37451">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>dbe1d8a721f3e542bfeea3289cc0dc04</td>
+       <td>CVE-2022-28665</td>
+       <td>2022-08-05 22:15:11 </td>
+       <td>A memory corruption vulnerability exists in the httpd unescape functionality of FreshTomato 2022.1. A specially-crafted HTTP request can lead to memory corruption. An attacker can send a network request to trigger this vulnerability.The `freshtomato-arm` has a vulnerable URL-decoding feature that can lead to memory corruption.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-28665">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1d2794ca9d93fc346704d22d16d40580</td>
+       <td>CVE-2022-28664</td>
+       <td>2022-08-05 22:15:11 </td>
+       <td>A memory corruption vulnerability exists in the httpd unescape functionality of FreshTomato 2022.1. A specially-crafted HTTP request can lead to memory corruption. An attacker can send a network request to trigger this vulnerability.The `freshtomato-mips` has a vulnerable URL-decoding feature that can lead to memory corruption.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-28664">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9eebbeb17e95234f4d366e5082739c07</td>
+       <td>CVE-2022-27660</td>
+       <td>2022-08-05 22:15:11 </td>
+       <td>A denial of service vulnerability exists in the confctl_set_guest_wlan functionality of TCL LinkHub Mesh Wi-Fi MS1G_00_01.00_14. A specially-crafted network packet can lead to denial of service. An attacker can send packets to trigger this vulnerability.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-27660">详情</a></td>
       </tr>
 
       <tr>
@@ -2306,6 +2346,14 @@
       </tr>
 
       <tr>
+       <td>d4185542f90379d4e9252bccb6dd94e1</td>
+       <td>CVE-2022-28668</td>
+       <td>2022-08-03 16:15:08 </td>
+       <td>This vulnerability allows remote attackers to execute arbitrary code on affected installations of Sante DICOM Viewer Pro 11.9.2. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The specific flaw exists within the parsing of J2K files. The issue results from the lack of proper validation of user-supplied data, which can result in a write past the end of an allocated data structure. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-16679.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-28668">详情</a></td>
+      </tr>
+
+      <tr>
        <td>f9b8585c2c82b9bcb53498ac3df3d621</td>
        <td>CVE-2022-37394</td>
        <td>2022-08-03 07:15:07 </td>
@@ -2375,54 +2423,6 @@
        <td>2022-08-01 20:15:08 </td>
        <td>NextAuth.js is a complete open source authentication solution for Next.js applications. An information disclosure vulnerability in `next-auth` before `v4.10.2` and `v3.29.9` allows an attacker with log access privilege to obtain excessive information such as an identity provider's secret in the log (which is thrown during OAuth error handling) and use it to leverage further attacks on the system, like impersonating the client to ask for extensive permissions. This issue has been patched in `v4.10.2` and `v3.29.9` by moving the log for `provider` information to the debug level. In addition, we added a warning for having the `debug: true` option turned on in production. If for some reason you cannot upgrade, you can user the `logger` configuration option by sanitizing the logs.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-31186">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>333bd3687f776edf5771841aafb36668</td>
-       <td>CVE-2022-31185</td>
-       <td>2022-08-01 20:15:08 </td>
-       <td>mprweb is a hosting platform for the makedeb Package Repository. Email addresses were found to not have been hidden, even if a user had clicked the `Hide Email Address` checkbox on their account page, or during signup. This could lead to an account's email being leaked, which may be problematic if your email needs to remain private for any reason. Users hosting their own mprweb instance will need to upgrade to the latest commit to get this fixed. Users on the official instance will already have this issue fixed.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-31185">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>10c406921688987710be1bd229d94f5a</td>
-       <td>CVE-2022-31184</td>
-       <td>2022-08-01 20:15:08 </td>
-       <td>Discourse is the an open source discussion platform. In affected versions an email activation route can be abused to send mass spam emails. A fix has been included in the latest stable, beta and tests-passed versions of Discourse which rate limits emails. Users are advised to upgrade. Users unable to upgrade should manually rate limit email.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-31184">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b0b4dd8492df49b7173f311dd60fb4fb</td>
-       <td>CVE-2022-31183</td>
-       <td>2022-08-01 20:15:08 </td>
-       <td>fs2 is a compositional, streaming I/O library for Scala. When establishing a server-mode `TLSSocket` using `fs2-io` on Node.js, the parameter `requestCert = true` is ignored, peer certificate verification is skipped, and the connection proceeds. The vulnerability is limited to: 1. `fs2-io` running on Node.js. The JVM TLS implementation is completely independent. 2. `TLSSocket`s in server-mode. Client-mode `TLSSocket`s are implemented via a different API. 3. mTLS as enabled via `requestCert = true` in `TLSParameters`. The default setting is `false` for server-mode `TLSSocket`s. It was introduced with the initial Node.js implementation of fs2-io in 3.1.0. A patch is released in v3.2.11. The requestCert = true parameter is respected and the peer certificate is verified. If verification fails, a SSLException is raised. If using an unpatched version on Node.js, do not use a server-mode TLSSocket with requestCert = true to establish a mTLS connection.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-31183">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1e4c0edfd6ba74c47425993785633396</td>
-       <td>CVE-2022-31182</td>
-       <td>2022-08-01 20:15:08 </td>
-       <td>Discourse is the an open source discussion platform. In affected versions a maliciously crafted request for static assets could cause error responses to be cached by Discourse's default NGINX proxy configuration. A corrected NGINX configuration is included in the latest stable, beta and tests-passed versions of Discourse. Users are advised to upgrade. There are no known workarounds for this vulnerability.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-31182">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c874555152771fe76c136f932f27292b</td>
-       <td>CVE-2022-31181</td>
-       <td>2022-08-01 20:15:08 </td>
-       <td>PrestaShop is an Open Source e-commerce platform. In versions from 1.6.0.10 and before 1.7.8.7 PrestaShop is subject to an SQL injection vulnerability which can be chained to call PHP's Eval function on attacker input. The problem is fixed in version 1.7.8.7. Users are advised to upgrade. Users unable to upgrade may delete the MySQL Smarty cache feature.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-31181">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>253b87e29976845ac328573180446466</td>
-       <td>CVE-2022-31178</td>
-       <td>2022-08-01 19:15:08 </td>
-       <td>eLabFTW is an electronic lab notebook manager for research teams. A vulnerability was discovered which allows a logged in user to read a template without being authorized to do so. This vulnerability has been patched in 4.3.4. Users are advised to upgrade. There are no known workarounds for this issue.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-31178">详情</a></td>
       </tr>
 
      </tbody>
