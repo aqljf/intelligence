@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2022-09-28 10:12:16 -->
+<!-- RELEASE TIME : 2022-09-29 10:12:25 -->
 <html lang="zh-cn">
 
  <head>
@@ -28,7 +28,7 @@
       <tr>
        <td>b14656ab37fb9d2b46c6fd15982bbf47</td>
        <td>CVE-2022-3236</td>
-       <td>2022-09-27 14:54:41 <img src="imgs/new.gif" /></td>
+       <td>2022-09-27 14:54:41</td>
        <td>CVE-2022-3236：Sophos Firewall代码注入漏洞</td>
        <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=7dd2729178b6e52796bd57708b3266ed">详情</a></td>
       </tr>
@@ -282,9 +282,89 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>255dbca203290b353978517207f34729</td>
+       <td>CVE-2022-31629</td>
+       <td>2022-09-28 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>In PHP versions before 7.4.31, 8.0.24 and 8.1.11, the vulnerability enables network and same-site attackers to set a standard insecure cookie in the victim's browser which is treated as a `__Host-` or `__Secure-` cookie by PHP applications.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-31629">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7dfa5cc7169a2a806d3da18a68ee9817</td>
+       <td>CVE-2022-31628</td>
+       <td>2022-09-28 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>In PHP versions before 7.4.31, 8.0.24 and 8.1.11, the phar uncompressor code would recursively uncompress "quines" gzip files, resulting in an infinite loop.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-31628">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2fffcddef9e20dc750d78f83ea05eb5a</td>
+       <td>CVE-2022-39264</td>
+       <td>2022-09-28 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>nheko is a desktop client for the Matrix communication application. All versions below 0.10.2 are vulnerable homeservers inserting malicious secrets, which could lead to man-in-the-middle attacks. Users can upgrade to version 0.10.2 to protect against this issue. As a workaround, one may apply the patch manually, avoid doing verifications of one's own devices, and/or avoid pressing the request button in the settings menu.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-39264">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>215f0f9452396b8919583b3adcab4bb1</td>
+       <td>CVE-2022-40710</td>
+       <td>2022-09-28 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>A link following vulnerability in Trend Micro Deep Security 20 and Cloud One - Workload Security Agent for Windows could allow a local attacker to escalate privileges on affected installations. Please note: an attacker must first obtain the ability to execute low-privileged code on the target system in order to exploit this vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-40710">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b21a794c5cb4de90dd836fa821078cf6</td>
+       <td>CVE-2022-40709</td>
+       <td>2022-09-28 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>An Out-of-bounds read vulnerability in Trend Micro Deep Security 20 and Cloud One - Workload Security Agent for Windows could allow a local attacker to disclose sensitive information on affected installations. Please note: an attacker must first obtain the ability to execute low-privileged code on the target system in order to exploit these vulnerabilities. This vulnerability is similar to, but not identical to CVE-2022-40707 and 40708.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-40709">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8bf374baf98d675660c0a18fdda25a42</td>
+       <td>CVE-2022-40708</td>
+       <td>2022-09-28 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>An Out-of-bounds read vulnerability in Trend Micro Deep Security 20 and Cloud One - Workload Security Agent for Windows could allow a local attacker to disclose sensitive information on affected installations. Please note: an attacker must first obtain the ability to execute low-privileged code on the target system in order to exploit these vulnerabilities. This vulnerability is similar to, but not identical to CVE-2022-40707.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-40708">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>822216bd1e2a1db031132ea1ebb9f975</td>
+       <td>CVE-2022-40707</td>
+       <td>2022-09-28 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>An Out-of-bounds read vulnerability in Trend Micro Deep Security 20 and Cloud One - Workload Security Agent for Windows could allow a local attacker to disclose sensitive information on affected installations. Please note: an attacker must first obtain the ability to execute low-privileged code on the target system in order to exploit these vulnerabilities. This vulnerability is similar to, but not identical to CVE-2022-40708.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-40707">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>923375035fc201ae9cc6658321d05514</td>
+       <td>CVE-2022-39263</td>
+       <td>2022-09-28 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>`@next-auth/upstash-redis-adapter` is the Upstash Redis adapter for NextAuth.js, which provides authentication for Next.js. Applications that use `next-auth` Email Provider and `@next-auth/upstash-redis-adapter` before v3.0.2 are affected by this vulnerability. The Upstash Redis adapter implementation did not check for both the identifier (email) and the token, but only checking for the identifier when verifying the token in the email callback flow. An attacker who knows about the victim's email could easily sign in as the victim, given the attacker also knows about the verification token's expired duration. The vulnerability is patched in v3.0.2. A workaround is available. Using Advanced Initialization, developers can check the requests and compare the query's token and identifier before proceeding.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-39263">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d3a85aeb121f51d89d2f15afe37b127d</td>
+       <td>CVE-2022-39257</td>
+       <td>2022-09-28 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>Matrix iOS SDK allows developers to build iOS apps compatible with Matrix. Prior to version 0.23.19, an attacker cooperating with a malicious homeserver can construct messages appearing to have come from another person. Such messages will be marked with a grey shield on some platforms, but this may be missing in others. This attack is possible due to the matrix-ios-sdk implementing a too permissive key forwarding strategy. The default policy for accepting key forwards has been made more strict in the matrix-ios-sdk version 0.23.19. matrix-ios-sdk will now only accept forwarded keys in response to previously issued requests and only from own, verified devices. The SDK now sets a `trusted` flag on the decrypted message upon decryption, based on whether the key used to decrypt the message was received from a trusted source. Clients need to ensure that messages decrypted with a key with `trusted = false` are decorated appropriately (for example, by showing a warning for such messages). This attack requires coordination between a malicious home server and an attacker, so those who trust their home servers do not need a workaround.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-39257">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2bd62bd83c2212f37cf73e9bdce4dc4b</td>
+       <td>CVE-2022-39255</td>
+       <td>2022-09-28 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>Matrix iOS SDK allows developers to build iOS apps compatible with Matrix. Prior to version 0.23.19, an attacker cooperating with a malicious homeserver can construct messages that legitimately appear to have come from another person, without any indication such as a grey shield. Additionally, a sophisticated attacker cooperating with a malicious homeserver could employ this vulnerability to perform a targeted attack in order to send fake to-device messages appearing to originate from another user. This can allow, for example, to inject the key backup secret during a self-verification, to make a targeted device start using a malicious key backup spoofed by the homeserver. These attacks are possible due to a protocol confusion vulnerability that accepts to-device messages encrypted with Megolm instead of Olm. matrix-ios-sdk version 0.23.19 has been modified to only accept Olm-encrypted to-device messages. Out of caution, several other checks have been audited or added. This attack requires coordination between a malicious home server and an attacker, so those who trust their home servers do not need a workaround. To avoid malicious backup attacks, one should not verify one's new logins using emoji/QR verifications methods until patched.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-39255">详情</a></td>
+      </tr>
+
+      <tr>
        <td>e1dd99476094fed319759f344bcc8455</td>
        <td>CVE-2022-41604</td>
-       <td>2022-09-27 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-09-27 23:15:00</td>
        <td>Check Point ZoneAlarm Extreme Security before 15.8.211.19229 allows local users to escalate privileges. This occurs because of weak permissions for the %PROGRAMDATA%\CheckPoint\ZoneAlarm\Data\Updates directory, and a self-protection driver bypass that allows creation of a junction directory. This can be leveraged to perform an arbitrary file move as NT AUTHORITY\SYSTEM.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-41604">详情</a></td>
       </tr>
@@ -292,7 +372,7 @@
       <tr>
        <td>123786329666db5a6665e60ac42e8fa5</td>
        <td>CVE-2022-41571</td>
-       <td>2022-09-27 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-09-27 23:15:00</td>
        <td>An issue was discovered in EyesOfNetwork (EON) through 5.3.11. Local file inclusion can occur.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-41571">详情</a></td>
       </tr>
@@ -300,7 +380,7 @@
       <tr>
        <td>a5486dbcc5affb2f62d4417eef13d150</td>
        <td>CVE-2022-41570</td>
-       <td>2022-09-27 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-09-27 23:15:00</td>
        <td>An issue was discovered in EyesOfNetwork (EON) through 5.3.11. Unauthenticated SQL injection can occur.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-41570">详情</a></td>
       </tr>
@@ -308,7 +388,7 @@
       <tr>
        <td>480a64a5ad63f5fef6a1750714a11dac</td>
        <td>CVE-2022-40878</td>
-       <td>2022-09-27 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-09-27 23:15:00</td>
        <td>In Exam Reviewer Management System 1.0, an authenticated attacker can upload a web-shell php file in profile page to achieve Remote Code Execution (RCE).</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-40878">详情</a></td>
       </tr>
@@ -316,7 +396,7 @@
       <tr>
        <td>b5bf45321226310eb44ee39a1459c0a9</td>
        <td>CVE-2022-40877</td>
-       <td>2022-09-27 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-09-27 23:15:00</td>
        <td>Exam Reviewer Management System 1.0 is vulnerable to SQL Injection via the ‘id’ parameter.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-40877">详情</a></td>
       </tr>
@@ -324,7 +404,7 @@
       <tr>
        <td>aaebf66cda7fadc3fcc6139f1b1fdef2</td>
        <td>CVE-2022-40817</td>
-       <td>2022-09-27 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-09-27 23:15:00</td>
        <td>Zammad 5.2.1 has a fine-grained permission model that allows to configure read-only access to tickets. However, agents were still wrongly able to perform some operations on such tickets, like adding and removing links, tags. and related answers. This issue has been fixed in 5.2.2.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-40817">详情</a></td>
       </tr>
@@ -332,7 +412,7 @@
       <tr>
        <td>44efbf0070d60a4c9968ac5533b1437c</td>
        <td>CVE-2022-40816</td>
-       <td>2022-09-27 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-09-27 23:15:00</td>
        <td>Zammad 5.2.1 is vulnerable to Incorrect Access Control. Zammad's asset handling mechanism has logic to ensure that customer users are not able to see personal information of other users. This logic was not effective when used through a web socket connection, so that a logged-in attacker would be able to fetch personal data of other users by querying the Zammad API. This issue is fixed in , 5.2.2.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-40816">详情</a></td>
       </tr>
@@ -340,7 +420,7 @@
       <tr>
        <td>f8a61342ceb72c98b2b3de4e23a0aecd</td>
        <td>CVE-2022-40354</td>
-       <td>2022-09-27 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-09-27 23:15:00</td>
        <td>Online Tours & Travels Management System v1.0 was discovered to contain a SQL injection vulnerability via the id parameter at /admin/update_booking.php.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-40354">详情</a></td>
       </tr>
@@ -348,7 +428,7 @@
       <tr>
        <td>1f901bb42afb9f441107d7fe7287c8de</td>
        <td>CVE-2022-40353</td>
-       <td>2022-09-27 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-09-27 23:15:00</td>
        <td>Online Tours & Travels Management System v1.0 was discovered to contain a SQL injection vulnerability via the id parameter at /admin/up_booking.php.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-40353">详情</a></td>
       </tr>
@@ -356,7 +436,7 @@
       <tr>
        <td>a066206d97d81001e30af125d0f83fbf</td>
        <td>CVE-2022-40352</td>
-       <td>2022-09-27 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-09-27 23:15:00</td>
        <td>Online Tours & Travels Management System v1.0 was discovered to contain a SQL injection vulnerability via the id parameter at /admin/update_traveller.php.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-40352">详情</a></td>
       </tr>
@@ -439,86 +519,6 @@
        <td>2022-09-26 17:15:00</td>
        <td>Memory corruption due to use after free issue in kernel while processing ION handles in Snapdragon Auto, Snapdragon Compute, Snapdragon Connectivity, Snapdragon Consumer Electronics Connectivity, Snapdragon Consumer IOT, Snapdragon Industrial IOT, Snapdragon Mobile, Snapdragon Voice & Music, Snapdragon Wearables</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-22058">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9e0de119b905d4eea661688b2e508460</td>
-       <td>CVE-2022-41343</td>
-       <td>2022-09-25 19:15:00</td>
-       <td>registerFont in FontMetrics.php in Dompdf before 2.0.1 allows remote file inclusion because a URI validation failure does not halt font registration, as demonstrated by a @font-face rule.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-41343">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>289de032a051b20a491433bbd83a4a4c</td>
-       <td>CVE-2022-3297</td>
-       <td>2022-09-25 19:15:00</td>
-       <td>Use After Free in GitHub repository vim/vim prior to 9.0.0579.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-3297">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>128e156062561b3b7f45ba4988fa98cf</td>
-       <td>CVE-2022-3296</td>
-       <td>2022-09-25 17:15:00</td>
-       <td>Stack-based Buffer Overflow in GitHub repository vim/vim prior to 9.0.0577.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-3296">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>192e6e3cc6b74411bfcef1f4d43d81b0</td>
-       <td>CVE-2022-41340</td>
-       <td>2022-09-24 19:15:00</td>
-       <td>The secp256k1-js package before 1.1.0 for Node.js implements ECDSA without required r and s validation, leading to signature forgery.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-41340">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f0501b2b2399c06d78df974995eef314</td>
-       <td>CVE-2022-23464</td>
-       <td>2022-09-24 05:15:00</td>
-       <td>Nepxion Discovery is a solution for Spring Cloud. Discovery is vulnerable to a potential Server-Side Request Forgery (SSRF). RouterResourceImpl uses RestTemplate’s getForEntity to retrieve the contents of a URL containing user-controlled input, potentially resulting in Information Disclosure. There is no patch available for this issue at time of publication. There are no known workarounds.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-23464">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0fb37a34a8bb4ba68359ef38ecccc65e</td>
-       <td>CVE-2022-23463</td>
-       <td>2022-09-24 05:15:00</td>
-       <td>Nepxion Discovery is a solution for Spring Cloud. Discover is vulnerable to SpEL Injection in discovery-commons. DiscoveryExpressionResolver’s eval method is evaluating expression with a StandardEvaluationContext, allowing the expression to reach and interact with Java classes such as java.lang.Runtime, leading to Remote Code Execution. There is no patch available for this issue at time of publication. There are no known workarounds.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-23463">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c4375012df90a9f8fa2e4338b8acfadf</td>
-       <td>CVE-2022-23461</td>
-       <td>2022-09-24 03:15:00</td>
-       <td>Jodit Editor is a WYSIWYG editor written in pure TypeScript without the use of additional libraries. Jodit Editor is vulnerable to XSS attacks when pasting specially constructed input. This issue has not been fully patched. There are no known workarounds.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-23461">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>64e28b46475b9f0bd57233ddedaf29b6</td>
-       <td>CVE-2022-39242</td>
-       <td>2022-09-24 02:15:00</td>
-       <td>Frontier is an Ethereum compatibility layer for Substrate. Prior to commit d3beddc6911a559a3ecc9b3f08e153dbe37a8658, the worst case weight was always accounted as the block weight for all cases. In case of large EVM gas refunds, this can lead to block spamming attacks -- the adversary can construct blocks with transactions that have large amount of refunds or unused gases with reverts, and as a result inflate up the chain gas prices. The impact of this issue is limited in that the spamming attack would still be costly for any adversary, and it has no ability to alter any chain state. This issue has been patched in commit d3beddc6911a559a3ecc9b3f08e153dbe37a8658. There are no known workarounds.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-39242">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a0efecfdc418d9b0068a60c7c5ccb73e</td>
-       <td>CVE-2022-39240</td>
-       <td>2022-09-24 02:15:00</td>
-       <td>MyGraph is a permission management system. Versions prior to 1.0.4 are vulnerable to a storage XSS vulnerability leading to Remote Code Execution. This issue is patched in version 1.0.4. There is no known workaround.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-39240">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6815cb721582c54def379070fa2dcdc6</td>
-       <td>CVE-2022-36025</td>
-       <td>2022-09-24 02:15:00</td>
-       <td>Besu is a Java-based Ethereum client. In versions newer than 22.1.3 and prior to 22.7.1, Besu is subject to an Incorrect Conversion between Numeric Types. An error in 32 bit signed and unsigned types in the calculation of available gas in the CALL operations (including DELEGATECALL) results in incorrect gas being passed into called contracts and incorrect gas being returned after call execution. Where the amount of gas makes a difference in the success or failure, or if the gas is a negative 64 bit value, the execution will result in a different state root than expected, resulting in a consensus failure in networks with multiple EVM implementations. In networks with a single EVM implementation this can be used to execute with significantly more gas than then transaction requested, possibly exceeding gas limitations. This issue is patched in version 22.7.1. As a workaround, reverting to version 22.1.3 or earlier will prevent incorrect execution.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-36025">详情</a></td>
       </tr>
 
      </tbody>
@@ -1674,9 +1674,49 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>538aedfaf44dce1bcd82dda935839e4b</td>
+       <td>CVE-2022-40860</td>
+       <td>2022-09-28 20:28:28 <img src="imgs/new.gif" /></td>
+       <td>TENDACN AC15_FIRMWARE Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=a9c5cd9666cf4d099592302e86bb1987">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>feee4b12da7afc5bce51519989521db1</td>
+       <td>CVE-2022-40865</td>
+       <td>2022-09-28 20:28:18 <img src="imgs/new.gif" /></td>
+       <td>TENDACN Multiple product Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=c178043613b643b880cc6f171d6e7494">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e5bfd97115fcc9d933138e6fc1a49f0c</td>
+       <td>CVE-2022-40864</td>
+       <td>2022-09-28 20:28:13 <img src="imgs/new.gif" /></td>
+       <td>TENDACN Multiple product Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=8100afe33e674cccbb2ad41edc13e638">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ba1923865af32c200941c18f164781a8</td>
+       <td>CVE-2022-3256</td>
+       <td>2022-09-28 20:28:03 <img src="imgs/new.gif" /></td>
+       <td>VIM VIM Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=1d5b342b43cc4af593a379bd47b5df77">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0d100d6f3ccd9d7d381c95115d5d1a2f</td>
+       <td>CVE-2022-40851</td>
+       <td>2022-09-28 20:27:58 <img src="imgs/new.gif" /></td>
+       <td>TENDA AC15_FIRMWARE Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=c96e16009e5846dea3ead55a278ae896">详情</a></td>
+      </tr>
+
+      <tr>
        <td>2dd95729bd83a510e5d74c8c2ec6a3d3</td>
        <td>CVE-2022-35026</td>
-       <td>2022-09-27 20:27:45 <img src="imgs/new.gif" /></td>
+       <td>2022-09-27 20:27:45</td>
        <td>OTFCC_PROJECT OTFCC Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=69232cdadcf9432c9fe2c7b2567e9b74">详情</a></td>
       </tr>
@@ -1684,7 +1724,7 @@
       <tr>
        <td>da3df12e79c794d6fcd8a02149d6a70b</td>
        <td>CVE-2022-35029</td>
-       <td>2022-09-27 20:27:34 <img src="imgs/new.gif" /></td>
+       <td>2022-09-27 20:27:34</td>
        <td>OTFCC_PROJECT OTFCC Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=b97c1b1758224421878675c6bb28c6c9">详情</a></td>
       </tr>
@@ -1692,7 +1732,7 @@
       <tr>
        <td>ddb4632191ead80709880f99fc8220c9</td>
        <td>CVE-2022-35032</td>
-       <td>2022-09-27 20:27:20 <img src="imgs/new.gif" /></td>
+       <td>2022-09-27 20:27:20</td>
        <td>OTFCC_PROJECT OTFCC Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=c50a2e985768458c910a22b8afaa050d">详情</a></td>
       </tr>
@@ -1700,7 +1740,7 @@
       <tr>
        <td>403e7f8d780554f94a0e1b716060085b</td>
        <td>CVE-2022-35036</td>
-       <td>2022-09-27 20:27:04 <img src="imgs/new.gif" /></td>
+       <td>2022-09-27 20:27:04</td>
        <td>OTFCC_PROJECT OTFCC Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=bf9544f72fdf4dd6b74b70e4da90fca2">详情</a></td>
       </tr>
@@ -1873,46 +1913,6 @@
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=1a8be5ad99c4462bbd828177168c5d59">详情</a></td>
       </tr>
 
-      <tr>
-       <td>acfefae720b03eabdc29e9cacd654b64</td>
-       <td>CVE-2022-35196</td>
-       <td>2022-09-24 20:33:44</td>
-       <td>TestLink 安全漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=5d62cddc215e47789056c86f16a92fd1">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5f6f80e4b6c814ffe16a087a097517aa</td>
-       <td>CVE-2022-38916</td>
-       <td>2022-09-24 20:33:41</td>
-       <td>Pagekit 安全漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=35dc62159997400b958f635472dba94d">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0c3cb6445ef4c67ebfdea8ed64f81213</td>
-       <td>CVE-2022-37878</td>
-       <td>2022-09-24 20:33:34</td>
-       <td>Aruba Networks ClearPass Policy Manager 安全漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=83354ac2ecfb420e80645da8e1fb0324">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>76dac4ecfe54f3ba9a4b1210241a94f9</td>
-       <td>CVE-2022-37879</td>
-       <td>2022-09-24 20:33:28</td>
-       <td>Aruba Networks ClearPass Policy Manager 安全漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=fb0390f2b1c7418ba0bd875ef8d76e90">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>43ea164fd78cb10aa933594e61acfc4f</td>
-       <td>CVE-2022-37881</td>
-       <td>2022-09-24 20:33:23</td>
-       <td>Aruba Networks ClearPass Policy Manager 安全漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=8fb2736c49f84bd4829abe37680f5220">详情</a></td>
-      </tr>
-
      </tbody>
     </table>
    </div>
@@ -1930,9 +1930,129 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>971881e0cf69b84fe0af3b6f22c4da7e</td>
+       <td>CVE-2022-37254</td>
+       <td>2022-09-28 10:10:43 <img src="imgs/new.gif" /></td>
+       <td>DolphinPHP跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/70348">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>4c7220565ecb98ebd9dfe1527237d92a</td>
+       <td>CVE-2022-29805</td>
+       <td>2022-09-28 10:10:43 <img src="imgs/new.gif" /></td>
+       <td>Fishbowl Inventory不受信数据反序列化漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/70347">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a46284b1304ec3814a0c9ae4be9c7a30</td>
+       <td>CVE-2021-3639</td>
+       <td>2022-09-28 10:10:43 <img src="imgs/new.gif" /></td>
+       <td>mod_auth_mellon开放重定向漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/70346">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d408d8a2084f81c77d55a8facae9860e</td>
+       <td>CVE-2021-3442</td>
+       <td>2022-09-28 10:10:43 <img src="imgs/new.gif" /></td>
+       <td>Red Hat OpenShift API Management输入验证错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/70345">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1d71df2018f52df4a66d9cf2f1fc8a44</td>
+       <td>CVE-2022-1399</td>
+       <td>2022-09-28 10:10:43 <img src="imgs/new.gif" /></td>
+       <td>Device42 CMDB 参数注入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/70344">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f77eebf5cbee163de8da254aa7ebeb02</td>
+       <td>CVE-2022-2662</td>
+       <td>2022-09-28 10:10:43 <img src="imgs/new.gif" /></td>
+       <td>Sequi PortBloque S身份验证错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/70343">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c2db1c74c78238cead495ceceda0f0af</td>
+       <td>CVE-2022-36381</td>
+       <td>2022-09-28 10:10:43 <img src="imgs/new.gif" /></td>
+       <td>Nintendo Wi-Fi Network Adaptor WAP-001操作系统命令注入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/70342">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>24b568a13db0f052184891f6314e2257</td>
+       <td>CVE-2022-38186</td>
+       <td>2022-09-28 10:10:43 <img src="imgs/new.gif" /></td>
+       <td>Esri Portal for ArcGIS跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/70341">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e9c33fd3879a3164e1c943fa047869fc</td>
+       <td>CVE-2022-37459</td>
+       <td>2022-09-28 10:10:43 <img src="imgs/new.gif" /></td>
+       <td>Ampere Computing Ampere Altra和Ampere Altra Max任意代码执行漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/70340">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8fbf251bb967d047d8a1da9082e32b8d</td>
+       <td>CVE-2022-29549</td>
+       <td>2022-09-28 10:10:43 <img src="imgs/new.gif" /></td>
+       <td>Qualys Cloud Agent权限提升漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/70339">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5fed98eed1c32cb1fcbc64da0c7d5810</td>
+       <td>CVE-2022-2338</td>
+       <td>2022-09-28 10:10:43 <img src="imgs/new.gif" /></td>
+       <td>Softing Secure Integration Server信息泄露漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/70338">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6274d20054383036d79c1f78bad954c0</td>
+       <td>CVE-2022-23764</td>
+       <td>2022-09-28 10:10:43 <img src="imgs/new.gif" /></td>
+       <td>TERUTEN WebCube远程代码执行漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/70337">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>490d226fdeed26978ca2f6f65459334c</td>
+       <td>CVE-2020-14394</td>
+       <td>2022-09-28 10:10:43 <img src="imgs/new.gif" /></td>
+       <td>QEMU无限循环漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/70336">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>81da5fac54b47c7a55ce0ad20315f8c5</td>
+       <td>CVE-2022-35976</td>
+       <td>2022-09-28 10:10:43 <img src="imgs/new.gif" /></td>
+       <td>GitOps Tools Extension操作系统命令注入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/70335">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f5d13648b9d50670f1c66a71beffb6d9</td>
+       <td>CVE-2021-29118</td>
+       <td>2022-09-28 10:10:43 <img src="imgs/new.gif" /></td>
+       <td>Esri ArcReader越界读取漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/70334">详情</a></td>
+      </tr>
+
+      <tr>
        <td>49d22d5fae0421007e2a903229223f48</td>
        <td>CVE-2022-38415</td>
-       <td>2022-09-27 10:10:50 <img src="imgs/new.gif" /></td>
+       <td>2022-09-27 10:10:50</td>
        <td>Adobe InDesign堆缓冲区溢出漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/70293">详情</a></td>
       </tr>
@@ -1940,7 +2060,7 @@
       <tr>
        <td>2431b26ede8dfc1074d72433d63e680d</td>
        <td>CVE-2022-38417</td>
-       <td>2022-09-27 10:10:50 <img src="imgs/new.gif" /></td>
+       <td>2022-09-27 10:10:50</td>
        <td>Adobe InDesign越界读取漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/70292">详情</a></td>
       </tr>
@@ -1948,7 +2068,7 @@
       <tr>
        <td>ad7ae73416de67f44b47e8ca56ae4888</td>
        <td>CVE-2022-38416</td>
-       <td>2022-09-27 10:10:50 <img src="imgs/new.gif" /></td>
+       <td>2022-09-27 10:10:50</td>
        <td>Adobe InDesign越界读取漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/70291">详情</a></td>
       </tr>
@@ -1956,7 +2076,7 @@
       <tr>
        <td>4be9e7d9ca1a2c6bfdc34b043a881827</td>
        <td>CVE-2022-38414</td>
-       <td>2022-09-27 10:10:50 <img src="imgs/new.gif" /></td>
+       <td>2022-09-27 10:10:50</td>
        <td>Adobe InDesign堆缓冲区溢出漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/70290">详情</a></td>
       </tr>
@@ -1964,7 +2084,7 @@
       <tr>
        <td>6652fc60d898cabe4b877b4786ce5444</td>
        <td>CVE-2022-38413</td>
-       <td>2022-09-27 10:10:50 <img src="imgs/new.gif" /></td>
+       <td>2022-09-27 10:10:50</td>
        <td>Adobe InDesign堆缓冲区溢出漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/70289">详情</a></td>
       </tr>
@@ -1972,7 +2092,7 @@
       <tr>
        <td>6d29e62f85b7f029635d40ab340a9cd8</td>
        <td>CVE-2022-40757</td>
-       <td>2022-09-27 10:10:50 <img src="imgs/new.gif" /></td>
+       <td>2022-09-27 10:10:50</td>
        <td>SAMSUNG mTower缓冲区溢出漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/70288">详情</a></td>
       </tr>
@@ -1980,7 +2100,7 @@
       <tr>
        <td>35df21b1021fcacd7d89753285a21b37</td>
        <td>CVE-2022-40758</td>
-       <td>2022-09-27 10:10:50 <img src="imgs/new.gif" /></td>
+       <td>2022-09-27 10:10:50</td>
        <td>SAMSUNG mTower缓冲区溢出漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/70287">详情</a></td>
       </tr>
@@ -1988,7 +2108,7 @@
       <tr>
        <td>83c00bd2a2a3469ab8839d228780f53f</td>
        <td>CVE-2022-40759</td>
-       <td>2022-09-27 10:10:50 <img src="imgs/new.gif" /></td>
+       <td>2022-09-27 10:10:50</td>
        <td>SAMSUNG mTower空指针解引用漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/70286">详情</a></td>
       </tr>
@@ -1996,7 +2116,7 @@
       <tr>
        <td>2159e808dc2e99cc754417d15704e2df</td>
        <td>CVE-2022-40760</td>
-       <td>2022-09-27 10:10:50 <img src="imgs/new.gif" /></td>
+       <td>2022-09-27 10:10:50</td>
        <td>SAMSUNG mTower缓冲区溢出漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/70285">详情</a></td>
       </tr>
@@ -2004,7 +2124,7 @@
       <tr>
        <td>2d9959838ef9df2425a6a8089563c27b</td>
        <td>CVE-2022-40761</td>
-       <td>2022-09-27 10:10:50 <img src="imgs/new.gif" /></td>
+       <td>2022-09-27 10:10:50</td>
        <td>SAMSUNG mTower拒绝服务漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/70284">详情</a></td>
       </tr>
@@ -2012,7 +2132,7 @@
       <tr>
        <td>5ff0d226854b3caa64355d089cd9c893</td>
        <td>CVE-2022-40762</td>
-       <td>2022-09-27 10:10:50 <img src="imgs/new.gif" /></td>
+       <td>2022-09-27 10:10:50</td>
        <td>SAMSUNG mTower拒绝服务漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/70283">详情</a></td>
       </tr>
@@ -2020,7 +2140,7 @@
       <tr>
        <td>c2c000873fca8694310f69bce64ef5e5</td>
        <td>CVE-2022-35707</td>
-       <td>2022-09-27 10:10:50 <img src="imgs/new.gif" /></td>
+       <td>2022-09-27 10:10:50</td>
        <td>Adobe Bridge越界读取漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/70282">详情</a></td>
       </tr>
@@ -2028,7 +2148,7 @@
       <tr>
        <td>7a258dfbbf9aeaf5580322c34c871a41</td>
        <td>CVE-2022-35708</td>
-       <td>2022-09-27 10:10:50 <img src="imgs/new.gif" /></td>
+       <td>2022-09-27 10:10:50</td>
        <td>Adobe Bridge堆缓冲区溢出漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/70281">详情</a></td>
       </tr>
@@ -2036,7 +2156,7 @@
       <tr>
        <td>9ab59bd16c6066face11d0d953196ebf</td>
        <td>CVE-2022-35709</td>
-       <td>2022-09-27 10:10:50 <img src="imgs/new.gif" /></td>
+       <td>2022-09-27 10:10:50</td>
        <td>Adobe Bridge内存错误引用漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/70280">详情</a></td>
       </tr>
@@ -2044,129 +2164,9 @@
       <tr>
        <td>ceb15ac1876ee941baa00c3f5fa14eba</td>
        <td>CVE-2022-35706</td>
-       <td>2022-09-27 10:10:50 <img src="imgs/new.gif" /></td>
+       <td>2022-09-27 10:10:50</td>
        <td>Adobe Bridge堆缓冲区溢出漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/70279">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0bf5cd9832f9d38fd211b67d96cf606c</td>
-       <td>CVE-2022-30535</td>
-       <td>2022-09-26 10:10:57</td>
-       <td>F5 BIG-IP输入验证错误漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/70188">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>45c8d7bda2825fe8430db1f94fcd8c2a</td>
-       <td>CVE-2022-35245</td>
-       <td>2022-09-26 10:10:57</td>
-       <td>F5 BIG-IP空指针解引用漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/70187">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2500e9c1403f42d311918435788321ae</td>
-       <td>CVE-2022-34862</td>
-       <td>2022-09-26 10:10:57</td>
-       <td>F5 BIG-IP无限循环漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/70186">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f2df8d40a8644631eb1f4b0d317b34bd</td>
-       <td>CVE-2022-31659</td>
-       <td>2022-09-26 10:10:57</td>
-       <td>VMware Workspace ONE Access和Identity Manager SQL注入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/70185">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ce3c7c78d87a819b8956f6103a423103</td>
-       <td>CVE-2022-31665</td>
-       <td>2022-09-26 10:10:57</td>
-       <td>VMware Workspace ONE Access多款产品远程代码执行漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/70184">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3f7f4687ca0d8fd703ac910518dd763e</td>
-       <td>CVE-2022-31775</td>
-       <td>2022-09-26 10:10:57</td>
-       <td>IBM DataPower Gateway信息泄露漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/70183">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6c3847d46251e499e6ffba7441f780df</td>
-       <td>CVE-2022-22326</td>
-       <td>2022-09-26 10:10:57</td>
-       <td>IBM MQ Appliance信息泄露漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/70182">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b33d7f64c8904063f6319449f9323b47</td>
-       <td>CVE-2022-27618</td>
-       <td>2022-09-26 10:10:57</td>
-       <td>Synology Storage Analyzer路径遍历漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/70181">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4806cbcce86a092f6495c7ec7d6b7dee</td>
-       <td>CVE-2022-27616</td>
-       <td>2022-09-26 10:10:57</td>
-       <td>Synology DiskStation Manager操作系统命令注入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/70180">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0dbd1d546e14d96060817248cd978dee</td>
-       <td>CVE-2022-33730</td>
-       <td>2022-09-26 10:10:57</td>
-       <td>Samsung Mobile堆缓冲区溢出漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/70179">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e60cf6bda1ccb3afc8c91fe3f6f37597</td>
-       <td>CVE-2022-36832</td>
-       <td>2022-09-26 10:10:57</td>
-       <td>Samsung Mobile访问控制错误漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/70178">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5b647fe93dd8bea311bf3eb3c4853f4d</td>
-       <td>CVE-2022-33724</td>
-       <td>2022-09-26 10:10:57</td>
-       <td>Samsung Mobile信息泄露漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/70177">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5438fba430873a5e1dc158fbcf1a6aaa</td>
-       <td>CVE-2022-33718</td>
-       <td>2022-09-26 10:10:57</td>
-       <td>Samsung Mobile访问控制错误漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/70176">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>88eb359aa8760a11ce7f57cfa21ef67b</td>
-       <td>CVE-2022-36838</td>
-       <td>2022-09-26 10:10:57</td>
-       <td>Samsung Mobile信息泄露漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/70175">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9a415497e0ebe8c1ae4d1a9304b7ef33</td>
-       <td>CVE-2021-36667</td>
-       <td>2022-09-22 10:10:24</td>
-       <td>Druva操作系统命令注入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/70174">详情</a></td>
       </tr>
 
      </tbody>
@@ -2185,6 +2185,30 @@
        <th width="43%">TITLE</th>
        <th width="5%">URL</th>
       </tr>
+      <tr>
+       <td>7b8211e1645e38be630fe7f4c95d23a4</td>
+       <td>CVE-2022-40354</td>
+       <td>2022-09-27 23:15:16 </td>
+       <td>Online Tours &amp; Travels Management System v1.0 was discovered to contain a SQL injection vulnerability via the id parameter at /admin/update_booking.php.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-40354">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>4e77bd1da5e3139813ec7d5e3973c093</td>
+       <td>CVE-2022-40353</td>
+       <td>2022-09-27 23:15:16 </td>
+       <td>Online Tours &amp; Travels Management System v1.0 was discovered to contain a SQL injection vulnerability via the id parameter at /admin/up_booking.php.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-40353">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>56d31eb569f9e5f9ad1b565291e1b9ef</td>
+       <td>CVE-2022-40352</td>
+       <td>2022-09-27 23:15:16 </td>
+       <td>Online Tours &amp; Travels Management System v1.0 was discovered to contain a SQL injection vulnerability via the id parameter at /admin/update_traveller.php.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-40352">详情</a></td>
+      </tr>
+
       <tr>
        <td>d85923b83c84b6257fdcf44ff04ff857</td>
        <td>CVE-2022-40485</td>
@@ -2215,6 +2239,38 @@
        <td>2022-09-26 13:15:11 </td>
        <td>Wedding Planner v1.0 was discovered to contain a SQL injection vulnerability via the id parameter at /admin/select.php.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-40404">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>4b4b7c5c5f4e511786b240c76963aa10</td>
+       <td>CVE-2022-40359</td>
+       <td>2022-09-23 18:15:11 </td>
+       <td>Cross site scripting (XSS) vulnerability in kfm through 1.4.7 via crafted GET request to /kfm/index.php.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-40359">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b1bc574b950c33b2231ade611be973fe</td>
+       <td>CVE-2022-40358</td>
+       <td>2022-09-23 18:15:11 </td>
+       <td>An issue was discovered in AjaXplorer 4.2.3, allows attackers to cause cross site scripting vulnerabilities via a crafted svg file upload.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-40358">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a9b60a8be6def63524c69a2b5d5b7ca7</td>
+       <td>CVE-2022-40310</td>
+       <td>2022-09-23 15:15:14 </td>
+       <td>Authenticated (subscriber+) Race Condition vulnerability in Rate my Post &acirc;&euro;&ldquo; WP Rating System plugin &lt;= 3.3.4 at WordPress allows attackers to increase/decrease votes.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-40310">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>da2ce0d73c3a2eab1eb7ac69f896ea16</td>
+       <td>CVE-2022-40298</td>
+       <td>2022-09-23 00:15:10 </td>
+       <td>Crestron AirMedia for Windows before 5.5.1.84 has insecure inherited permissions, which leads to a privilege escalation vulnerability found in the AirMedia Windows Application, version 4.3.1.39. A low privileged user can initiate a repair of the system and gain a SYSTEM level shell.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-40298">详情</a></td>
       </tr>
 
       <tr>
@@ -2306,6 +2362,30 @@
       </tr>
 
       <tr>
+       <td>3d77aec6640f58df7719e1b2d2149473</td>
+       <td>CVE-2022-40262</td>
+       <td>2022-09-20 18:15:10 </td>
+       <td>A potential attacker can execute an arbitrary code at the time of the PEI phase and influence the subsequent boot stages. This can lead to the mitigations bypassing, physical memory contents disclosure, discovery of any secrets from any Virtual Machines (VMs) and bypassing memory isolation and confidential computing boundaries. Additionally, an attacker can build a payload which can be injected into the SMRAM memory. This issue affects: Module name: S3Resume2Pei SHA256: 7bb29f05534a8a1e010443213451425098faebd45948a4642db969b19d0253fc Module GUID: 89E549B0-7CFE-449D-9BA3-10D8B2312D71</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-40262">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>eafb791583ed5fda396c0820bd64917f</td>
+       <td>CVE-2022-40261</td>
+       <td>2022-09-20 18:15:10 </td>
+       <td>An attacker can exploit this vulnerability to elevate privileges from ring 0 to ring -2, execute arbitrary code in System Management Mode - an environment more privileged than operating system (OS) and completely isolated from it. Running arbitrary code in SMM additionally bypasses SMM-based SPI flash protections against modifications, which can help an attacker to install a firmware backdoor/implant into BIOS. Such a malicious firmware code in BIOS could persist across operating system re-installs. Additionally, this vulnerability potentially could be used by malicious actors to bypass security mechanisms provided by UEFI firmware (for example, Secure Boot and some types of memory isolation for hypervisors). This issue affects: Module name: OverClockSmiHandler SHA256: a204699576e1a48ce915d9d9423380c8e4c197003baf9d17e6504f0265f3039c Module GUID: 4698C2BD-A903-410E-AD1F-5EEF3A1AE422</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-40261">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>88da63305eecd29edd6a84063a304b11</td>
+       <td>CVE-2022-40250</td>
+       <td>2022-09-20 18:15:10 </td>
+       <td>An attacker can exploit this vulnerability to elevate privileges from ring 0 to ring -2, execute arbitrary code in System Management Mode - an environment more privileged than operating system (OS) and completely isolated from it. Running arbitrary code in SMM additionally bypasses SMM-based SPI flash protections against modifications, which can help an attacker to install a firmware backdoor/implant into BIOS. Such a malicious firmware code in BIOS could persist across operating system re-installs. Additionally, this vulnerability potentially could be used by malicious actors to bypass security mechanisms provided by UEFI firmware (for example, Secure Boot and some types of memory isolation for hypervisors). This issue affects: Module name: SmmSmbiosElog SHA256: 3a8acb4f9bddccb19ec3b22b22ad97963711550f76b27b606461cd5073a93b59 Module GUID: 8e61fd6b-7a8b-404f-b83f-aa90a47cabdf This issue affects: AMI Aptio 5.x. This issue affects: AMI Aptio 5.x.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-40250">详情</a></td>
+      </tr>
+
+      <tr>
        <td>1e008cce0bd999cc8916cd1a019b3921</td>
        <td>CVE-2022-38916</td>
        <td>2022-09-20 17:15:09 </td>
@@ -2343,86 +2423,6 @@
        <td>2022-09-19 16:15:11 </td>
        <td>The d8s-grammars for python, as distributed on PyPI, included a potential code-execution backdoor inserted by a third party. The backdoor is the democritus-strings package. The affected version is 0.1.0.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-38884">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>31af9bc97097eb99397f23a30b4b1c5d</td>
-       <td>CVE-2022-38883</td>
-       <td>2022-09-19 16:15:11 </td>
-       <td>The d8s-math for python, as distributed on PyPI, included a potential code-execution backdoor inserted by a third party. The backdoor is the democritus-strings package. The affected version is 0.1.0.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-38883">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ea6811aa72254be80a2051b7d5014f98</td>
-       <td>CVE-2022-38882</td>
-       <td>2022-09-19 16:15:11 </td>
-       <td>The d8s-json for python, as distributed on PyPI, included a potential code-execution backdoor inserted by a third party. The backdoor is the democritus-strings package. The affected version is 0.1.0.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-38882">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1f8b3136855e83cd9940d08af6ce54a1</td>
-       <td>CVE-2022-3036</td>
-       <td>2022-09-19 14:15:11 </td>
-       <td>The Gettext override translations WordPress plugin before 2.0.0 does not sanitise and escape some of its settings, which could allow high privilege users such as admin to perform Stored Cross-Site Scripting attacks even when the unfiltered_html capability is disallowed (for example in multisite setup)</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-3036">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e6865be387e247bf600797f7de10e002</td>
-       <td>CVE-2022-3021</td>
-       <td>2022-09-19 14:15:11 </td>
-       <td>The Slickr Flickr WordPress plugin through 2.8.1 does not sanitise and escape its settings, allowing high privilege users such as admin to perform cross-Site Scripting attacks even when the unfiltered_html capability is disallowed.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-3021">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a9bec44cffef09a48a8efa85e24baa2d</td>
-       <td>CVE-2022-35973</td>
-       <td>2022-09-16 21:15:09 </td>
-       <td>TensorFlow is an open source platform for machine learning. If `QuantizedMatMul` is given nonscalar input for: `min_a`, `max_a`, `min_b`, or `max_b` It gives a segfault that can be used to trigger a denial of service attack. We have patched the issue in GitHub commit aca766ac7693bf29ed0df55ad6bfcc78f35e7f48. The fix will be included in TensorFlow 2.10.0. We will also cherrypick this commit on TensorFlow 2.9.1, TensorFlow 2.8.1, and TensorFlow 2.7.2, as these are also affected and still in supported range. There are no known workarounds for this issue.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-35973">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c52ae2fd46bd407b51441e21d6f78e46</td>
-       <td>CVE-2022-35972</td>
-       <td>2022-09-16 21:15:09 </td>
-       <td>TensorFlow is an open source platform for machine learning. If `QuantizedBiasAdd` is given `min_input`, `max_input`, `min_bias`, `max_bias` tensors of a nonzero rank, it results in a segfault that can be used to trigger a denial of service attack. We have patched the issue in GitHub commit 785d67a78a1d533759fcd2f5e8d6ef778de849e0. The fix will be included in TensorFlow 2.10.0. We will also cherrypick this commit on TensorFlow 2.9.1, TensorFlow 2.8.1, and TensorFlow 2.7.2, as these are also affected and still in supported range. There are no known workarounds for this issue.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-35972">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0f31af5221dc884705a91e5f3eeab700</td>
-       <td>CVE-2022-35971</td>
-       <td>2022-09-16 21:15:09 </td>
-       <td>TensorFlow is an open source platform for machine learning. If `FakeQuantWithMinMaxVars` is given `min` or `max` tensors of a nonzero rank, it results in a `CHECK` fail that can be used to trigger a denial of service attack. We have patched the issue in GitHub commit 785d67a78a1d533759fcd2f5e8d6ef778de849e0. The fix will be included in TensorFlow 2.10.0. We will also cherrypick this commit on TensorFlow 2.9.1, TensorFlow 2.8.1, and TensorFlow 2.7.2, as these are also affected and still in supported range. There are no known workarounds for this issue.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-35971">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ca8272941cf5f20b78fe52807c52c842</td>
-       <td>CVE-2022-35970</td>
-       <td>2022-09-16 21:15:09 </td>
-       <td>TensorFlow is an open source platform for machine learning. If `QuantizedInstanceNorm` is given `x_min` or `x_max` tensors of a nonzero rank, it results in a segfault that can be used to trigger a denial of service attack. We have patched the issue in GitHub commit 785d67a78a1d533759fcd2f5e8d6ef778de849e0. The fix will be included in TensorFlow 2.10.0. We will also cherrypick this commit on TensorFlow 2.9.1, TensorFlow 2.8.1, and TensorFlow 2.7.2, as these are also affected and still in supported range. There are no known workarounds for this issue.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-35970">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2e67710251a9ea5bd46c15ae567a3b86</td>
-       <td>CVE-2022-35969</td>
-       <td>2022-09-16 21:15:09 </td>
-       <td>TensorFlow is an open source platform for machine learning. The implementation of `Conv2DBackpropInput` requires `input_sizes` to be 4-dimensional. Otherwise, it gives a `CHECK` failure which can be used to trigger a denial of service attack. We have patched the issue in GitHub commit 50156d547b9a1da0144d7babe665cf690305b33c. The fix will be included in TensorFlow 2.10.0. We will also cherrypick this commit on TensorFlow 2.9.1, TensorFlow 2.8.1, and TensorFlow 2.7.2, as these are also affected and still in supported range. There are no known workarounds for this issue.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-35969">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3fb52d0058b7919f6935bfba8caee9fb</td>
-       <td>CVE-2022-35968</td>
-       <td>2022-09-16 21:15:09 </td>
-       <td>TensorFlow is an open source platform for machine learning. The implementation of `AvgPoolGrad` does not fully validate the input `orig_input_shape`. This results in a `CHECK` failure which can be used to trigger a denial of service attack. We have patched the issue in GitHub commit 3a6ac52664c6c095aa2b114e742b0aa17fdce78f. The fix will be included in TensorFlow 2.10.0. We will also cherrypick this commit on TensorFlow 2.9.1, TensorFlow 2.8.1, and TensorFlow 2.7.2, as these are also affected and still in supported range. There are no known workarounds for this issue.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-35968">详情</a></td>
       </tr>
 
      </tbody>
