@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2022-10-02 10:11:44 -->
+<!-- RELEASE TIME : 2022-10-03 10:11:50 -->
 <html lang="zh-cn">
 
  <head>
@@ -282,9 +282,25 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>18fbd7dda7e6f731474cb89c4218e782</td>
+       <td>CVE-2022-42004</td>
+       <td>2022-10-02 05:15:00 <img src="imgs/new.gif" /></td>
+       <td>In FasterXML jackson-databind before 2.13.4, resource exhaustion can occur because of a lack of a check in BeanDeserializer._deserializeFromArray to prevent use of deeply nested arrays. An application is vulnerable only with certain customized choices for deserialization.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-42004">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>db40630b04a2d352b1666951237fd0b6</td>
+       <td>CVE-2022-42003</td>
+       <td>2022-10-02 05:15:00 <img src="imgs/new.gif" /></td>
+       <td>In FasterXML jackson-databind before 2.14.0-rc1, resource exhaustion can occur because of a lack of a check in primitive value deserializers to avoid deep wrapper array nesting, when the UNWRAP_SINGLE_VALUE_ARRAYS feature is enabled.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-42003">详情</a></td>
+      </tr>
+
+      <tr>
        <td>bb3249e1d3878f1b628618e771de69ae</td>
        <td>CVE-2022-42002</td>
-       <td>2022-10-01 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-10-01 00:15:00</td>
        <td>SonicJS through 0.6.0 allows file overwrite. It has the following mutations that are used for updating files: fileCreate and fileUpdate. Both of these mutations can be called without any authentication to overwrite any files on a SonicJS application, leading to Arbitrary File Write and Delete.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-42002">详情</a></td>
       </tr>
@@ -503,22 +519,6 @@
        <td>2022-09-28 21:15:00</td>
        <td>An Out-of-bounds read vulnerability in Trend Micro Deep Security 20 and Cloud One - Workload Security Agent for Windows could allow a local attacker to disclose sensitive information on affected installations. Please note: an attacker must first obtain the ability to execute low-privileged code on the target system in order to exploit these vulnerabilities. This vulnerability is similar to, but not identical to CVE-2022-40708.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-40707">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>923375035fc201ae9cc6658321d05514</td>
-       <td>CVE-2022-39263</td>
-       <td>2022-09-28 21:15:00</td>
-       <td>`@next-auth/upstash-redis-adapter` is the Upstash Redis adapter for NextAuth.js, which provides authentication for Next.js. Applications that use `next-auth` Email Provider and `@next-auth/upstash-redis-adapter` before v3.0.2 are affected by this vulnerability. The Upstash Redis adapter implementation did not check for both the identifier (email) and the token, but only checking for the identifier when verifying the token in the email callback flow. An attacker who knows about the victim's email could easily sign in as the victim, given the attacker also knows about the verification token's expired duration. The vulnerability is patched in v3.0.2. A workaround is available. Using Advanced Initialization, developers can check the requests and compare the query's token and identifier before proceeding.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-39263">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d3a85aeb121f51d89d2f15afe37b127d</td>
-       <td>CVE-2022-39257</td>
-       <td>2022-09-28 21:15:00</td>
-       <td>Matrix iOS SDK allows developers to build iOS apps compatible with Matrix. Prior to version 0.23.19, an attacker cooperating with a malicious homeserver can construct messages appearing to have come from another person. Such messages will be marked with a grey shield on some platforms, but this may be missing in others. This attack is possible due to the matrix-ios-sdk implementing a too permissive key forwarding strategy. The default policy for accepting key forwards has been made more strict in the matrix-ios-sdk version 0.23.19. matrix-ios-sdk will now only accept forwarded keys in response to previously issued requests and only from own, verified devices. The SDK now sets a `trusted` flag on the decrypted message upon decryption, based on whether the key used to decrypt the message was received from a trusted source. Clients need to ensure that messages decrypted with a key with `trusted = false` are decorated appropriately (for example, by showing a warning for such messages). This attack requires coordination between a malicious home server and an attacker, so those who trust their home servers do not need a workaround.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-39257">详情</a></td>
       </tr>
 
      </tbody>
@@ -1674,9 +1674,89 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>cbd311faab4570bcf0717b5899cfb07c</td>
+       <td>CVE-2020-15325</td>
+       <td>2022-10-02 20:29:51 <img src="imgs/new.gif" /></td>
+       <td>Zyxel CloudCNM SecuManager 安全漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=e49b6cd4022949418258932268eb2150">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>02317bab96842635046cec9e1865c220</td>
+       <td>CVE-2020-15328</td>
+       <td>2022-10-02 20:29:46 <img src="imgs/new.gif" /></td>
+       <td>Zyxel CloudCNM SecuManager 安全漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=86cb0b6e89064faebaad4b416e08e6a1">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e4904530eb6a679ec94bd93fee9394d8</td>
+       <td>CVE-2020-15331</td>
+       <td>2022-10-02 20:29:41 <img src="imgs/new.gif" /></td>
+       <td>Zyxel CloudCNM SecuManager 安全漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=7d2ba57f7e65434ba08f556c401110a9">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7150cd9c954320200f070dc5d65c7870</td>
+       <td>CVE-2020-15337</td>
+       <td>2022-10-02 20:29:36 <img src="imgs/new.gif" /></td>
+       <td>Zyxel CloudCNM SecuManager 安全漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=2c142b6f899444698cdb7a3392bb80fb">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3f50c029088d19c9f28ae841144e675f</td>
+       <td>CVE-2020-15327</td>
+       <td>2022-10-02 20:29:31 <img src="imgs/new.gif" /></td>
+       <td>Zyxel CloudCNM SecuManager 信任管理问题漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=14b7666c5fc2403ca8a96bb44b352083">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e33f53ec9c8edb4001ddf06dfe83bd2c</td>
+       <td>CVE-2020-15340</td>
+       <td>2022-10-02 20:29:25 <img src="imgs/new.gif" /></td>
+       <td>Zyxel CloudCNM SecuManager 安全漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=43d7d66ae7c243b2bc69c9adb4bc06f7">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>79c58d53c0bd7e0b6888bdc2fcafe55f</td>
+       <td>CVE-2022-40929</td>
+       <td>2022-10-02 20:29:20 <img src="imgs/new.gif" /></td>
+       <td>XXL-JOB 命令注入漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=706cca17239142679825f764a8b31cf3">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>aa6fba6d09cef8b348f0f894cca6467a</td>
+       <td>CVE-2020-15330</td>
+       <td>2022-10-02 20:29:15 <img src="imgs/new.gif" /></td>
+       <td>Zyxel CloudCNM SecuManager 安全漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=b7ea9b7a1777422a9fcd58227a8c81a3">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>685ce6f5fa68f5a829a41db2340d1628</td>
+       <td>CVE-2020-15343</td>
+       <td>2022-10-02 20:29:10 <img src="imgs/new.gif" /></td>
+       <td>Zyxel CloudCNM SecuManager 安全漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=d7dd57fc7f3347a6911b5136d65096fe">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>655fd0ac05f8f354cffa5c40a4fcb0b6</td>
+       <td>CVE-2020-15326</td>
+       <td>2022-10-02 20:29:05 <img src="imgs/new.gif" /></td>
+       <td>Zyxel CloudCNM SecuManager 信任管理问题漏洞</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=4929d5b9459f418f9fced3637b77ee73">详情</a></td>
+      </tr>
+
+      <tr>
        <td>fd6f6c5d897ca0bf8e862db327505c8b</td>
        <td>CVE-2022-35282</td>
-       <td>2022-10-01 20:33:33 <img src="imgs/new.gif" /></td>
+       <td>2022-10-01 20:33:33</td>
        <td>IBM WEBSPHERE_APPLICATION_SERVER Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=5a928094da5346b8a37174530a76fbf4">详情</a></td>
       </tr>
@@ -1684,7 +1764,7 @@
       <tr>
        <td>dda552a9dda8759535aa03dcff6dcadb</td>
        <td>CVE-2022-22387</td>
-       <td>2022-10-01 20:33:28 <img src="imgs/new.gif" /></td>
+       <td>2022-10-01 20:33:28</td>
        <td>IBM APPLICATION_GATEWAY Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=caaaa038d1844ea3bf7b92ab890c1b9d">详情</a></td>
       </tr>
@@ -1692,7 +1772,7 @@
       <tr>
        <td>8ba1b5424999b8027f5277bc79ede089</td>
        <td>CVE-2022-39835</td>
-       <td>2022-10-01 20:33:23 <img src="imgs/new.gif" /></td>
+       <td>2022-10-01 20:33:23</td>
        <td>Gajim 安全漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=4e844f321a7e4791be01ed2cc1873268">详情</a></td>
       </tr>
@@ -1700,7 +1780,7 @@
       <tr>
        <td>db90dc8afe77247105490350cadfdf76</td>
        <td>CVE-2022-36771</td>
-       <td>2022-10-01 20:33:18 <img src="imgs/new.gif" /></td>
+       <td>2022-10-01 20:33:18</td>
        <td>IBM QRADAR_USER_BEHAVIOR_ANALYTICS Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=993bc1e9e99349a9930d0183c98b2e14">详情</a></td>
       </tr>
@@ -1708,7 +1788,7 @@
       <tr>
        <td>3b4a0ee5c8bd6966634e340f0a2d2c13</td>
        <td>CVE-2022-35722</td>
-       <td>2022-10-01 20:33:13 <img src="imgs/new.gif" /></td>
+       <td>2022-10-01 20:33:13</td>
        <td>IBM JAZZ_FOR_SERVICE_MANAGEMENT Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=c51ac7f02198454dbd30f759bc3ff946">详情</a></td>
       </tr>
@@ -1716,7 +1796,7 @@
       <tr>
        <td>74f3446c7e7a7f93ccac4f1d43165676</td>
        <td>CVE-2022-2926</td>
-       <td>2022-10-01 20:33:07 <img src="imgs/new.gif" /></td>
+       <td>2022-10-01 20:33:07</td>
        <td>ADOBE DOWNLOAD_MANAGER Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=bc62b9589f194609a645921e8c926ff3">详情</a></td>
       </tr>
@@ -1724,7 +1804,7 @@
       <tr>
        <td>a96ccf0ccdcf79223773cc9cc9d1c68c</td>
        <td>CVE-2022-41571</td>
-       <td>2022-10-01 20:33:02 <img src="imgs/new.gif" /></td>
+       <td>2022-10-01 20:33:02</td>
        <td>EYESOFNETWORK EYESOFNETWORK Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=c6abb54599b1441a966879467227f9bf">详情</a></td>
       </tr>
@@ -1732,7 +1812,7 @@
       <tr>
        <td>85957199f2e7811e0746fffc73f013d0</td>
        <td>CVE-2022-41570</td>
-       <td>2022-10-01 20:32:57 <img src="imgs/new.gif" /></td>
+       <td>2022-10-01 20:32:57</td>
        <td>EYESOFNETWORK EYESOFNETWORK Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=8b48b85f5ef343e09d5a9a9bb347af75">详情</a></td>
       </tr>
@@ -1740,7 +1820,7 @@
       <tr>
        <td>e081c09493e687598464f149c84e518e</td>
        <td>CVE-2022-2853</td>
-       <td>2022-10-01 20:32:52 <img src="imgs/new.gif" /></td>
+       <td>2022-10-01 20:32:52</td>
        <td>Google Chrome 安全漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=3d9d70da9025498196f4aff7f178249d">详情</a></td>
       </tr>
@@ -1748,7 +1828,7 @@
       <tr>
        <td>45ffa38e1ac6cfb089d9ff5ff294e9b5</td>
        <td>CVE-2022-2852</td>
-       <td>2022-10-01 20:32:47 <img src="imgs/new.gif" /></td>
+       <td>2022-10-01 20:32:47</td>
        <td>Google Chrome 安全漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=4b32a1eee9834733a972b59d8394e86e">详情</a></td>
       </tr>
@@ -1831,86 +1911,6 @@
        <td>2022-09-29 20:31:00</td>
        <td>Canonical Ubuntu 安全漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=3ce313ab6c8341d2a5e98de2512ba7d0">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>bd297c4912edb8d10a3d8bbc851857ad</td>
-       <td>CVE-2022-40716</td>
-       <td>2022-09-29 20:30:55</td>
-       <td>HASHICORP CONSUL Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=9d179aaf5ad54c4f85166380ecd78ac5">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8a1b273090dd35d7255ef48eac77e21e</td>
-       <td>CVE-2022-2970</td>
-       <td>2022-09-29 20:30:50</td>
-       <td>Mz Automation Libiec61850 安全漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=8ddd7708812d407892100b428d2ec2aa">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>538aedfaf44dce1bcd82dda935839e4b</td>
-       <td>CVE-2022-40860</td>
-       <td>2022-09-28 20:28:28</td>
-       <td>TENDACN AC15_FIRMWARE Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=a9c5cd9666cf4d099592302e86bb1987">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>feee4b12da7afc5bce51519989521db1</td>
-       <td>CVE-2022-40865</td>
-       <td>2022-09-28 20:28:18</td>
-       <td>TENDACN Multiple product Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=c178043613b643b880cc6f171d6e7494">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e5bfd97115fcc9d933138e6fc1a49f0c</td>
-       <td>CVE-2022-40864</td>
-       <td>2022-09-28 20:28:13</td>
-       <td>TENDACN Multiple product Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=8100afe33e674cccbb2ad41edc13e638">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ba1923865af32c200941c18f164781a8</td>
-       <td>CVE-2022-3256</td>
-       <td>2022-09-28 20:28:03</td>
-       <td>VIM VIM Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=1d5b342b43cc4af593a379bd47b5df77">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0d100d6f3ccd9d7d381c95115d5d1a2f</td>
-       <td>CVE-2022-40851</td>
-       <td>2022-09-28 20:27:58</td>
-       <td>TENDA AC15_FIRMWARE Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=c96e16009e5846dea3ead55a278ae896">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2dd95729bd83a510e5d74c8c2ec6a3d3</td>
-       <td>CVE-2022-35026</td>
-       <td>2022-09-27 20:27:45</td>
-       <td>OTFCC_PROJECT OTFCC Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=69232cdadcf9432c9fe2c7b2567e9b74">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>da3df12e79c794d6fcd8a02149d6a70b</td>
-       <td>CVE-2022-35029</td>
-       <td>2022-09-27 20:27:34</td>
-       <td>OTFCC_PROJECT OTFCC Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=b97c1b1758224421878675c6bb28c6c9">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ddb4632191ead80709880f99fc8220c9</td>
-       <td>CVE-2022-35032</td>
-       <td>2022-09-27 20:27:20</td>
-       <td>OTFCC_PROJECT OTFCC Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=c50a2e985768458c910a22b8afaa050d">详情</a></td>
       </tr>
 
      </tbody>
