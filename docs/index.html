@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2022-11-06 10:11:01 -->
+<!-- RELEASE TIME : 2022-11-07 10:11:28 -->
 <html lang="zh-cn">
 
  <head>
@@ -282,9 +282,57 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>9f6721cb2f585266e1a02e0597afe718</td>
+       <td>CVE-2022-42919</td>
+       <td>2022-11-07 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>Python 3.9.x and 3.10.x through 3.10.8 on Linux allows local privilege escalation in a non-default configuration. The Python multiprocessing library, when used with the forkserver start method on Linux, allows pickles to be deserialized from any user in the same machine local network namespace, which in many system configurations means any user on the same machine. Pickles can execute arbitrary code. Thus, this allows for local user privilege escalation to the user that any forkserver process is running as. Setting multiprocessing.util.abstract_sockets_supported to False is a workaround. The forkserver start method for multiprocessing is not the default start method. This issue is Linux specific because only Linux supports abstract namespace sockets. CPython before 3.9 does not make use of Linux abstract namespace sockets by default. Support for users manually specifying an abstract namespace socket was added as a bugfix in 3.7.8 and 3.8.4, but users would need to make specific uncommon API calls in order to do that in CPython before 3.9.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-42919">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>746b7980bf81993aa6230afd47a7a6ef</td>
+       <td>CVE-2022-42905</td>
+       <td>2022-11-07 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>In wolfSSL before 5.5.2, if callback functions are enabled (via the WOLFSSL_CALLBACKS flag), then a malicious TLS 1.3 client or network attacker can trigger a buffer over-read on the heap of 5 bytes. (WOLFSSL_CALLBACKS is only intended for debugging.)</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-42905">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a4882078ec20ddf4f5fd27b3ef9b6f7b</td>
+       <td>CVE-2022-37710</td>
+       <td>2022-11-07 00:15:00 <img src="imgs/new.gif" /></td>
+       <td>Patterson Dental Eaglesoft 21 has AES-256 encryption but there are two ways to obtain a keyfile: (1) keybackup.data > License > Encryption Key or (2) Eaglesoft.Server.Configuration.data > DbEncryptKeyPrimary > Encryption Key. Applicable files are encrypted with keys and salt that are hardcoded into a DLL or EXE file.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-37710">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0c48493353291923e8bb8b64623798a4</td>
+       <td>CVE-2022-40284</td>
+       <td>2022-11-06 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>A buffer overflow was discovered in NTFS-3G before 2022.10.3. Crafted metadata in an NTFS image can cause code execution. A local attacker can exploit this if the ntfs-3g binary is setuid root. A physically proximate attacker can exploit this if NTFS-3G software is configured to execute upon attachment of an external storage device.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-40284">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e66179f04e1488a1b58d135de382b537</td>
+       <td>CVE-2022-44544</td>
+       <td>2022-11-06 17:15:00 <img src="imgs/new.gif" /></td>
+       <td>Mahara 21.04 before 21.04.7, 21.10 before 21.10.5, 22.04 before 22.04.3, and 22.10 before 22.10.0 potentially allow a PDF export to trigger a remote shell if the site is running on Ubuntu and the flag -dSAFER is not set with Ghostscript.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-44544">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1ff3c266a2049053faa83cf998be2e4f</td>
+       <td>CVE-2022-42707</td>
+       <td>2022-11-06 17:15:00 <img src="imgs/new.gif" /></td>
+       <td>In Mahara 21.04 before 21.04.7, 21.10 before 21.10.5, 22.04 before 22.04.3, and 22.10 before 22.10.0, embedded images are accessible without a sufficient permission check under certain conditions.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-42707">详情</a></td>
+      </tr>
+
+      <tr>
        <td>985affc373388280b14ec3e825905934</td>
        <td>CVE-2022-3869</td>
-       <td>2022-11-05 14:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-11-05 14:15:00</td>
        <td>Code Injection in GitHub repository froxlor/froxlor prior to 0.10.38.2.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-3869">详情</a></td>
       </tr>
@@ -292,7 +340,7 @@
       <tr>
        <td>105d84e21d57f683a7ef5cadfaccbed6</td>
        <td>CVE-2022-3868</td>
-       <td>2022-11-05 09:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-11-05 09:15:00</td>
        <td>A vulnerability classified as critical has been found in SourceCodester Sanitization Management System. Affected is an unknown function of the file /php-sms/classes/Master.php?f=save_quote. The manipulation of the argument id leads to sql injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-213012.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-3868">详情</a></td>
       </tr>
@@ -471,54 +519,6 @@
        <td>2022-11-02 22:15:00</td>
        <td>Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in AgentEasy Properties plugin <= 1.0.4 on WordPress.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-44576">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d61411498996034944c64fcc137165e0</td>
-       <td>CVE-2022-24945</td>
-       <td>2022-11-02 22:15:00</td>
-       <td>This CVE ID has been rejected or withdrawn by its CVE Numbering Authority.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-24945">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1f55a9306d0f574994d8d787886c3c9b</td>
-       <td>CVE-2022-3181</td>
-       <td>2022-11-02 21:15:00</td>
-       <td>An Improper Input Validation vulnerability exists in Trihedral VTScada version 12.0.38 and prior. A specifically malformed HTTP request could cause the affected VTScada to crash. Both local area network (LAN)-only and internet facing systems are affected.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-3181">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>596e7ebf3b8c343159dd83ba3fc67315</td>
-       <td>CVE-2022-43068</td>
-       <td>2022-11-02 20:15:00</td>
-       <td>Online Diagnostic Lab Management System v1.0 was discovered to contain a SQL injection vulnerability via the id parameter at /classes/Master.php?f=delete_reservation.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-43068">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2d9ca5b8fc279c2d34beffc57806b9c9</td>
-       <td>CVE-2022-43066</td>
-       <td>2022-11-02 20:15:00</td>
-       <td>Online Diagnostic Lab Management System v1.0 was discovered to contain a SQL injection vulnerability via the id parameter at /odlms/classes/Master.php?f=delete_message.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-43066">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8e0bcfc5d1b6675241d13a3e5f5a1992</td>
-       <td>CVE-2022-3845</td>
-       <td>2022-11-02 20:15:00</td>
-       <td>A vulnerability has been found in phpipam and classified as problematic. Affected by this vulnerability is an unknown functionality of the file app/admin/import-export/import-load-data.php of the component Import Preview Handler. The manipulation leads to cross site scripting. The attack can be launched remotely. Upgrading to version 1.5.0 is able to address this issue. The name of the patch is 22c797c3583001211fe7d31bccd3f1d4aeeb3bbc. It is recommended to upgrade the affected component. The associated identifier of this vulnerability is VDB-212863.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-3845">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b1e211cda9be486c0fe3ac932cc5caf7</td>
-       <td>CVE-2022-3844</td>
-       <td>2022-11-02 20:15:00</td>
-       <td>A vulnerability, which was classified as problematic, was found in Webmin. Affected is an unknown function of the file xterm/index.cgi. The manipulation leads to basic cross site scripting. It is possible to launch the attack remotely. The name of the patch is d3d33af3c0c3fd3a889c84e287a038b7a457d811. It is recommended to apply a patch to fix this issue. VDB-212862 is the identifier assigned to this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-3844">详情</a></td>
       </tr>
 
      </tbody>
@@ -1674,9 +1674,89 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>97d1c9bc00d6fea21ff666b9d871d136</td>
+       <td>CVE-2022-39262</td>
+       <td>2022-11-06 20:34:23 <img src="imgs/new.gif" /></td>
+       <td>GLPI-PROJECT GLPI Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=0e59fd4046fd48b79147492c5539fab3">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7b7be4aca632b8de04e0c270353954c7</td>
+       <td>CVE-2022-44623</td>
+       <td>2022-11-06 20:34:17 <img src="imgs/new.gif" /></td>
+       <td>JETBRAINS TEAMCITY Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=514d667470714c5794002aafaff392aa">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>4586c5853c132c12b6534a0e916ba8c6</td>
+       <td>CVE-2022-39323</td>
+       <td>2022-11-06 20:34:11 <img src="imgs/new.gif" /></td>
+       <td>GLPI-PROJECT GLPI Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=1470f2b0540f47de9599d8229c41781a">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0a9c9fcc7d5b2e018c53356f519b26ad</td>
+       <td>CVE-2022-39371</td>
+       <td>2022-11-06 20:34:05 <img src="imgs/new.gif" /></td>
+       <td>GLPI-PROJECT GLPI Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=544a9c1254bb4f39a85b5f99d7243471">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b80b559db73f0fad6338c08a906e8adb</td>
+       <td>CVE-2022-39375</td>
+       <td>2022-11-06 20:34:00 <img src="imgs/new.gif" /></td>
+       <td>GLPI-PROJECT GLPI Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=3394cf7ce36246cca2a77e7de45684c8">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f4bca4bbce4cc848db2138fa66e52f07</td>
+       <td>CVE-2022-38372</td>
+       <td>2022-11-06 20:33:54 <img src="imgs/new.gif" /></td>
+       <td>FORTINET FORTITESTER Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=72acd70ea5ec43f1880531f6b108bbcd">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>90091a41b4c8644f4b02cc506f5ed2cc</td>
+       <td>CVE-2022-39234</td>
+       <td>2022-11-06 20:33:43 <img src="imgs/new.gif" /></td>
+       <td>GLPI-PROJECT GLPI Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=961830b8e9864830b0e0aa0008efeab5">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b33dfac37e8abf0dfc4066365b0db66f</td>
+       <td>CVE-2022-39276</td>
+       <td>2022-11-06 20:33:38 <img src="imgs/new.gif" /></td>
+       <td>GLPI-PROJECT GLPI Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=16ee8bb3b0f5498298b4e40c29f6fe3d">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c41eee32e8b9f7e225331303d818d277</td>
+       <td>CVE-2022-44622</td>
+       <td>2022-11-06 20:33:32 <img src="imgs/new.gif" /></td>
+       <td>JETBRAINS TEAMCITY Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=2754abf36c56401c8cd634af98abd7fa">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9286863c930234e792990b7a38576dea</td>
+       <td>CVE-2022-44624</td>
+       <td>2022-11-06 20:33:27 <img src="imgs/new.gif" /></td>
+       <td>JETBRAINS TEAMCITY Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=ac81ef9de22443e589beee52a15c23d5">详情</a></td>
+      </tr>
+
+      <tr>
        <td>c461fa4d3abf6e16a57b9d6699f4788a</td>
        <td>CVE-2022-43995</td>
-       <td>2022-11-05 20:46:26 <img src="imgs/new.gif" /></td>
+       <td>2022-11-05 20:46:26</td>
        <td>SUDO_PROJECT SUDO Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=83dd304e6c6c451592c4747b6fd0d2f4">详情</a></td>
       </tr>
@@ -1684,7 +1764,7 @@
       <tr>
        <td>04775d72e2912820d8e99eeafed708c4</td>
        <td>CVE-2022-31777</td>
-       <td>2022-11-05 20:46:20 <img src="imgs/new.gif" /></td>
+       <td>2022-11-05 20:46:20</td>
        <td>APACHE SPARK Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=6195f2b05f3047309a1c7ff7af956b53">详情</a></td>
       </tr>
@@ -1692,7 +1772,7 @@
       <tr>
        <td>0422638d672eabfd5be2219b2315dbf9</td>
        <td>CVE-2022-3304</td>
-       <td>2022-11-05 20:46:15 <img src="imgs/new.gif" /></td>
+       <td>2022-11-05 20:46:15</td>
        <td>Google Chrome 安全漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=6061675981a44f15b34ac8966cb80bce">详情</a></td>
       </tr>
@@ -1700,7 +1780,7 @@
       <tr>
        <td>12868d8ac38fb0e663a4c7e6307b14d3</td>
        <td>CVE-2022-42319</td>
-       <td>2022-11-05 20:46:10 <img src="imgs/new.gif" /></td>
+       <td>2022-11-05 20:46:10</td>
        <td>XEN XEN Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=3b89d1607bfc4991b5626099227872e9">详情</a></td>
       </tr>
@@ -1708,7 +1788,7 @@
       <tr>
        <td>de59a80ee4c6e631aaaa2f6339529909</td>
        <td>CVE-2022-32867</td>
-       <td>2022-11-05 20:46:04 <img src="imgs/new.gif" /></td>
+       <td>2022-11-05 20:46:04</td>
        <td>Apple macOS 安全漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=47211d465aba46419f9e16bce2ba26a7">详情</a></td>
       </tr>
@@ -1716,7 +1796,7 @@
       <tr>
        <td>9ff7f4cb63aaf2c99a5ea4c29d0dfb9b</td>
        <td>CVE-2022-23738</td>
-       <td>2022-11-05 20:45:58 <img src="imgs/new.gif" /></td>
+       <td>2022-11-05 20:45:58</td>
        <td>GITHUB ENTERPRISE_SERVER Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=e9f8c279f79e414e99fe153bfe507abd">详情</a></td>
       </tr>
@@ -1724,7 +1804,7 @@
       <tr>
        <td>454881a87944ddf96f938ae81f230c7f</td>
        <td>CVE-2022-32879</td>
-       <td>2022-11-05 20:45:53 <img src="imgs/new.gif" /></td>
+       <td>2022-11-05 20:45:53</td>
        <td>Apple macOS 安全漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=99872291376b472aa677c48881268bf2">详情</a></td>
       </tr>
@@ -1732,7 +1812,7 @@
       <tr>
        <td>074fcc7c3296ffef0a6683817a50817e</td>
        <td>CVE-2022-42311</td>
-       <td>2022-11-05 20:45:48 <img src="imgs/new.gif" /></td>
+       <td>2022-11-05 20:45:48</td>
        <td>XEN XEN Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=a7e1ce48ed40405aa2014a196eed7266">详情</a></td>
       </tr>
@@ -1740,7 +1820,7 @@
       <tr>
        <td>ca789bb20475d9f94ec0997fb16be95c</td>
        <td>CVE-2022-32866</td>
-       <td>2022-11-05 20:45:43 <img src="imgs/new.gif" /></td>
+       <td>2022-11-05 20:45:43</td>
        <td>Apple macOS 安全漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=d2e410138ea64ba1b8b2bca56d450f68">详情</a></td>
       </tr>
@@ -1748,7 +1828,7 @@
       <tr>
        <td>e55f93b3cd6fa621fdaec7fc68992d37</td>
        <td>CVE-2022-32905</td>
-       <td>2022-11-05 20:45:37 <img src="imgs/new.gif" /></td>
+       <td>2022-11-05 20:45:37</td>
        <td>Apple macOS 安全漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=4802d99824f448668ac0cc3d1b71c9c4">详情</a></td>
       </tr>
@@ -1831,86 +1911,6 @@
        <td>2022-11-04 20:46:27</td>
        <td>THIMPRESS LEARNPRESS Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=5cedc54f0d2a40f4bad86e15276bb90b">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e5aa8c76ff24fbc80b4dde39882c261e</td>
-       <td>CVE-2022-3754</td>
-       <td>2022-11-03 22:07:57</td>
-       <td>PHPMYFAQ PHPMYFAQ Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=5a9f64473ea44a4ebbe336661a5237d0">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9516356fd4652a1b05457d09975046ae</td>
-       <td>CVE-2022-39329</td>
-       <td>2022-11-03 22:07:50</td>
-       <td>NEXTCLOUD Multiple product Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=70d9df1c391c4946b8926b9ac737163d">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6ffa1eb2c9cbdd8a841098bf0b1c41c3</td>
-       <td>CVE-2022-24669</td>
-       <td>2022-11-03 22:07:44</td>
-       <td>FORGEROCK ACCESS_MANAGEMENT Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=3a197ff05ab34dc0aa1e932b0462d313">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>791f45adfb03308afe5642bf21f3d834</td>
-       <td>CVE-2022-3379</td>
-       <td>2022-11-03 22:07:37</td>
-       <td>Horner Automation Cscape 缓冲区错误漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=882c230e9470421d9497b0a3e83d6a92">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ffed57b243834c117a9a7d8e6de1ab2c</td>
-       <td>CVE-2022-38744</td>
-       <td>2022-11-03 22:07:30</td>
-       <td>ROCKWELLAUTOMATION FACTORYTALK_ALARMS_AND_EVENTS Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=b50f1c8f57f34a0d94a0ec824f8a25bb">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f296eef19ab385470aee261ea3a74d78</td>
-       <td>CVE-2022-20776</td>
-       <td>2022-11-03 22:07:24</td>
-       <td>Cisco TelePresence Collaboration Endpoint Software和RoomOS Software 安全漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=5693be490d794e72a3dd9c88b7cf6237">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>055a9546e681870289f5235cfb856a57</td>
-       <td>CVE-2022-39365</td>
-       <td>2022-11-03 22:07:17</td>
-       <td>PIMCORE PIMCORE Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=a3d8fa3faf2d4ca48d38948b72f5468d">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>430747911879c90e708ac70635c549e0</td>
-       <td>CVE-2022-20953</td>
-       <td>2022-11-03 22:07:10</td>
-       <td>Cisco TelePresence Collaboration Endpoint Software和RoomOS Software 安全漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=ea1ca7982a9a4e2a91d7c9d6c330848f">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>70214de38ea92183e7df5060920b9add</td>
-       <td>CVE-2022-3378</td>
-       <td>2022-11-03 22:07:03</td>
-       <td>Horner Automation Cscape 缓冲区错误漏洞</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=80a1e56e35974f7ebadc32798bd6d351">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>272bc381a9e9a7246f77c61bf16efca6</td>
-       <td>CVE-2022-2882</td>
-       <td>2022-11-02 20:57:21</td>
-       <td>GITLAB GITLAB Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=b0ac427a555c4b17ad57993503aece5a">详情</a></td>
       </tr>
 
      </tbody>
@@ -2194,6 +2194,14 @@
       </tr>
 
       <tr>
+       <td>3e4b7ed393995edc7e78d8958562930d</td>
+       <td>CVE-2022-42442</td>
+       <td>2022-11-03 20:15:31 </td>
+       <td>&quot;IBM Robotic Process Automation for Cloud Pak 21.0.1, 21.0.2, 21.0.3, 21.0.4, and 21.0.5 is vulnerable to exposure of the first tenant owner e-mail address to users with access to the container platform. IBM X-Force ID: 238214.&quot;</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-42442">详情</a></td>
+      </tr>
+
+      <tr>
        <td>a167a6d9d664e648664e965d00ced234</td>
        <td>CVE-2022-3675</td>
        <td>2022-11-03 18:15:14 </td>
@@ -2386,43 +2394,35 @@
       </tr>
 
       <tr>
-       <td>156e95f2657bf23d42150f58c8b01d57</td>
-       <td>CVE-2022-3708</td>
-       <td>2022-10-28 19:15:10 </td>
-       <td>The Web Stories plugin for WordPress is vulnerable to Server-Side Request Forgery in versions up to, and including 1.24.0 due to insufficient validation of URLs supplied via the 'url' parameter found via the /v1/hotlink/proxy REST API Endpoint. This made it possible for authenticated users to make web requests to arbitrary locations originating from the web application and can be used to query and modify information from internal services.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-3708">详情</a></td>
+       <td>c8efb3757a9cff343f32cb54f5261291</td>
+       <td>CVE-2022-42327</td>
+       <td>2022-11-01 13:15:12 </td>
+       <td>x86: unintended memory sharing between guests On Intel systems that support the &quot;virtualize APIC accesses&quot; feature, a guest can read and write the global shared xAPIC page by moving the local APIC out of xAPIC mode. Access to this shared page bypasses the expected isolation that should exist between two guests.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-42327">详情</a></td>
       </tr>
 
       <tr>
-       <td>42774114f332a7faebbeeafa14527853</td>
-       <td>CVE-2022-3697</td>
-       <td>2022-10-28 16:15:16 </td>
-       <td>A flaw was found in Ansible in the amazon.aws collection when using the tower_callback parameter from the amazon.aws.ec2_instance module. This flaw allows an attacker to take advantage of this issue as the module is handling the parameter insecurely, leading to the password leaking in the logs.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-3697">详情</a></td>
+       <td>8ae9aabcb67aaeefb17b375d1fd9ba78</td>
+       <td>CVE-2022-42326</td>
+       <td>2022-11-01 13:15:12 </td>
+       <td>Xenstore: Guests can create arbitrary number of nodes via transactions T[his CNA information record relates to multiple CVEs; the text explains which aspects/vulnerabilities correspond to which CVE.] In case a node has been created in a transaction and it is later deleted in the same transaction, the transaction will be terminated with an error. As this error is encountered only when handling the deleted node at transaction finalization, the transaction will have been performed partially and without updating the accounting information. This will enable a malicious guest to create arbitrary number of nodes.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-42326">详情</a></td>
       </tr>
 
       <tr>
-       <td>3f37731a768c1db226931c059cb3037c</td>
-       <td>CVE-2022-3730</td>
-       <td>2022-10-28 08:15:13 </td>
-       <td>A vulnerability, which was classified as critical, was found in seccome Ehoney. Affected is an unknown function of the file /api/v1/attack/falco. The manipulation of the argument Payload leads to sql injection. It is possible to launch the attack remotely. The identifier of this vulnerability is VDB-212412.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-3730">详情</a></td>
+       <td>d085166742ad11f0a1216fb34bece45f</td>
+       <td>CVE-2022-42325</td>
+       <td>2022-11-01 13:15:12 </td>
+       <td>Xenstore: Guests can create arbitrary number of nodes via transactions T[his CNA information record relates to multiple CVEs; the text explains which aspects/vulnerabilities correspond to which CVE.] In case a node has been created in a transaction and it is later deleted in the same transaction, the transaction will be terminated with an error. As this error is encountered only when handling the deleted node at transaction finalization, the transaction will have been performed partially and without updating the accounting information. This will enable a malicious guest to create arbitrary number of nodes.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-42325">详情</a></td>
       </tr>
 
       <tr>
-       <td>d497279c000d4f8c29457ee0b96b9af1</td>
-       <td>CVE-2022-3729</td>
-       <td>2022-10-28 08:15:12 </td>
-       <td>A vulnerability, which was classified as critical, has been found in seccome Ehoney. This issue affects some unknown processing of the file /api/v1/attack. The manipulation of the argument AttackIP leads to sql injection. The attack may be initiated remotely. The associated identifier of this vulnerability is VDB-212411.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-3729">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b4268b6d4a265c6c58cf4bc70eeaa0fa</td>
-       <td>CVE-2022-37915</td>
-       <td>2022-10-28 02:15:17 </td>
-       <td>A vulnerability in the web-based management interface of Aruba EdgeConnect Enterprise Orchestrator could allow an unauthenticated remote attacker to run arbitrary commands on the underlying host. Successful exploitation of this vulnerability could allow an attacker to execute arbitrary commands on the underlying operating system leading to a complete system compromise of Aruba EdgeConnect Enterprise Orchestration with versions 9.1.x branch only, Any 9.1.x Orchestrator instantiated as a new machine with a release prior to 9.1.3.40197, Orchestrators upgraded to 9.1.x were not affected.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-37915">详情</a></td>
+       <td>57f0018fc38d59b940baecd648e33bd5</td>
+       <td>CVE-2022-42324</td>
+       <td>2022-11-01 13:15:12 </td>
+       <td>Oxenstored 32-&gt;31 bit integer truncation issues Integers in Ocaml are 63 or 31 bits of signed precision. The Ocaml Xenbus library takes a C uint32_t out of the ring and casts it directly to an Ocaml integer. In 64-bit Ocaml builds this is fine, but in 32-bit builds, it truncates off the most significant bit, and then creates unsigned/signed confusion in the remainder. This in turn can feed a negative value into logic not expecting a negative value, resulting in unexpected exceptions being thrown. The unexpected exception is not handled suitably, creating a busy-loop trying (and failing) to take the bad packet out of the xenstore ring.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-42324">详情</a></td>
       </tr>
 
      </tbody>
