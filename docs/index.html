@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2022-11-27 10:10:09 -->
+<!-- RELEASE TIME : 2022-11-28 10:10:09 -->
 <html lang="zh-cn">
 
  <head>
@@ -282,9 +282,73 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>d6ea0ad4ff66948f1b0955065612c912</td>
+       <td>CVE-2022-45934</td>
+       <td>2022-11-27 04:15:00 <img src="imgs/new.gif" /></td>
+       <td>An issue was discovered in the Linux kernel through 6.0.10. l2cap_config_req in net/bluetooth/l2cap_core.c has an integer wraparound via L2CAP_CONF_REQ packets.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45934">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>030a78d61b98e2f4d484a49f89449575</td>
+       <td>CVE-2022-43705</td>
+       <td>2022-11-27 04:15:00 <img src="imgs/new.gif" /></td>
+       <td>In Botan before 2.19.3, it is possible to forge OCSP responses due to a certificate verification error. This issue was introduced in Botan 1.11.34 (November 2016).</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-43705">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>190627df7e53eeeac90cbf3ac393b72d</td>
+       <td>CVE-2022-45933</td>
+       <td>2022-11-27 03:15:00 <img src="imgs/new.gif" /></td>
+       <td>KubeView through 0.1.31 allows attackers to obtain control of a Kubernetes cluster because api/scrape/kube-system does not require authentication, and retrieves certificate files that can be used for authentication as kube-admin. NOTE: the vendor's position is that KubeView was a "fun side project and a learning exercise," and not "very secure."</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45933">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ee472aef1d69746cd4f932344082ca56</td>
+       <td>CVE-2022-45932</td>
+       <td>2022-11-27 03:15:00 <img src="imgs/new.gif" /></td>
+       <td>A SQL injection issue was discovered in AAA in OpenDaylight (ODL) before 0.16.5. The aaa-idm-store-h2/src/main/java/org/opendaylight/aaa/datastore/h2/RoleStore.java deleteRole function is affected when the API interface /auth/v1/roles/ is used.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45932">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f62f6ab37f1b9920439669a23bb6e876</td>
+       <td>CVE-2022-45931</td>
+       <td>2022-11-27 03:15:00 <img src="imgs/new.gif" /></td>
+       <td>A SQL injection issue was discovered in AAA in OpenDaylight (ODL) before 0.16.5. The aaa-idm-store-h2/src/main/java/org/opendaylight/aaa/datastore/h2/UserStore.java deleteUser function is affected when the API interface /auth/v1/users/ is used.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45931">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>77971b53298a138b824d7083eac97e32</td>
+       <td>CVE-2022-45930</td>
+       <td>2022-11-27 03:15:00 <img src="imgs/new.gif" /></td>
+       <td>A SQL injection issue was discovered in AAA in OpenDaylight (ODL) before 0.16.5. The aaa-idm-store-h2/src/main/java/org/opendaylight/aaa/datastore/h2/DomainStore.java deleteDomain function is affected for the /auth/v1/domains/ API interface.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45930">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>44e49857354067f3d27ebe2045e96769</td>
+       <td>CVE-2022-45919</td>
+       <td>2022-11-27 02:15:00 <img src="imgs/new.gif" /></td>
+       <td>An issue was discovered in the Linux kernel through 6.0.10. In drivers/media/dvb-core/dvb_ca_en50221.c, a use-after-free can occur is there is a disconnect after an open, because of the lack of a wait_event.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45919">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f300e49b33e7c472f625353ad00a7bbe</td>
+       <td>CVE-2022-45914</td>
+       <td>2022-11-27 01:15:00 <img src="imgs/new.gif" /></td>
+       <td>The ESL (Electronic Shelf Label) protocol, as implemented by (for example) the OV80e934802 RF transceiver on the ETAG-2130-V4.3 20190629 board, does not use authentication, which allows attackers to change label values via 433 MHz RF signals, as demonstrated by disrupting the organization of a hospital storage unit, or changing retail pricing.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45914">详情</a></td>
+      </tr>
+
+      <tr>
        <td>898267e008aa8d6c290d4ef808dd68f9</td>
        <td>CVE-2022-24999</td>
-       <td>2022-11-26 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-11-26 22:15:00</td>
        <td>qs before 6.10.3, as used in Express before 4.17.3 and other products, allows attackers to cause a Node process hang for an Express application because an __ proto__ key can be used. In many typical Express use cases, an unauthenticated remote attacker can place the attack payload in the query string of the URL that is used to visit the application, such as a[__proto__]=b&a[__proto__]&a[length]=100000000. The fix was backported to qs 6.9.7, 6.8.3, 6.7.3, 6.6.1, 6.5.3, 6.4.1, 6.3.3, and 6.2.4 (and therefore Express 4.17.3, which has "deps: qs@6.9.7" in its release description, is not vulnerable).</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-24999">详情</a></td>
       </tr>
@@ -292,7 +356,7 @@
       <tr>
        <td>dc800bf2df937db046746b2633a5cab6</td>
        <td>CVE-2022-45909</td>
-       <td>2022-11-26 03:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-11-26 03:15:00</td>
        <td>drachtio-server 0.8.18 has a heap-based buffer over-read via a long Request-URI in an INVITE request.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45909">详情</a></td>
       </tr>
@@ -300,7 +364,7 @@
       <tr>
        <td>38d10ba91c2f14f153522131464a5d29</td>
        <td>CVE-2022-45908</td>
-       <td>2022-11-26 02:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-11-26 02:15:00</td>
        <td>In PaddlePaddle before 2.4, paddle.audio.functional.get_window is vulnerable to code injection because it calls eval on a user-supplied winstr. This may lead to arbitrary code execution.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45908">详情</a></td>
       </tr>
@@ -308,7 +372,7 @@
       <tr>
        <td>ce9bbabf73a9a44b015e47fbd1127d41</td>
        <td>CVE-2022-45907</td>
-       <td>2022-11-26 02:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-11-26 02:15:00</td>
        <td>In PyTorch before trunk/89695, torch.jit.annotations.parse_type_line can cause arbitrary code execution because eval is used unsafely.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45907">详情</a></td>
       </tr>
@@ -455,70 +519,6 @@
        <td>2022-11-24 09:15:00</td>
        <td>Improper Input Validation vulnerability in Mitsubishi Electric GOT2000 Series GT27 model FTP server versions 01.39.000 and prior, Mitsubishi Electric GOT2000 Series GT25 model FTP server versions 01.39.000 and prior and Mitsubishi Electric GOT2000 Series GT23 model FTP server versions 01.39.000 and prior allows a remote authenticated attacker to cause a Denial of Service condition by sending specially crafted command.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-40266">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>65e5d2804050d4b1bff103b8e2e044c9</td>
-       <td>CVE-2022-4136</td>
-       <td>2022-11-24 08:15:00</td>
-       <td>Dangerous method exposed which can lead to RCE in qmpass/leadshop v1.4.15 allows an attacker to control the target host by calling any function in leadshop.php via the GET method.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-4136">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1cb342ca399ab50f21fa55942afc1857</td>
-       <td>CVE-2022-44749</td>
-       <td>2022-11-24 07:15:00</td>
-       <td>A directory traversal vulnerability in the ZIP archive extraction routines of KNIME Analytics Platform 3.2.0 and above can result in arbitrary files being overwritten on the user's system. This vulnerability is also known as 'Zip-Slip'. An attacker can create a KNIME workflow that, when being opened by a user, can overwrite arbitrary files that the user has write access to. It's not necessary to execute the workflow, opening the workflow is sufficient. The user will notice that something is wrong because an error is being reported but only after the files have already been written. This can impact data integrity (file contents are changed) or cause errors in other software (vital files being corrupted). It can even lead to remote code execution if executable files are being replaced and subsequently executed by the user. In all cases the attacker has to know the location of files on the user's system, though.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-44749">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>13357974d898a8b6717d8bd907ba33ee</td>
-       <td>CVE-2022-45872</td>
-       <td>2022-11-23 22:15:00</td>
-       <td>iTerm2 before 3.4.18 mishandles a DECRQSS response.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45872">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7c46e2f672812a843c5e0205f35e4cf1</td>
-       <td>CVE-2022-45868</td>
-       <td>2022-11-23 21:15:00</td>
-       <td>The web-based admin console in H2 Database Engine through 2.1.214 can be started via the CLI with the argument -webAdminPassword, which allows the user to specify the password in cleartext for the web admin console. Consequently, a local user (or an attacker that has obtained local access through some means) would be able to discover the password by listing processes and their arguments. NOTE: the vendor states "This is not a vulnerability of H2 Console ... Passwords should never be passed on the command line and every qualified DBA or system administrator is expected to know that."</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45868">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d0f2654abc57480027ca12495ec166d8</td>
-       <td>CVE-2022-45280</td>
-       <td>2022-11-23 21:15:00</td>
-       <td>A cross-site scripting (XSS) vulnerability in the Url parameter in /login.php of EyouCMS v1.6.0 allows attackers to execute arbitrary web scripts or HTML via a crafted payload.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45280">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b0ddf24c6ab391752b425333944a1963</td>
-       <td>CVE-2022-45278</td>
-       <td>2022-11-23 21:15:00</td>
-       <td>Jizhicms v2.3.3 was discovered to contain a SQL injection vulnerability via the /index.php/admins/Fields/get_fields.html component.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45278">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0e0544e55cfaeaa275eb74c4cb501d42</td>
-       <td>CVE-2022-45276</td>
-       <td>2022-11-23 21:15:00</td>
-       <td>An issue in the /index/user/user_edit.html component of YJCMS v1.0.9 allows unauthenticated attackers to obtain the Administrator account password.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45276">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7c38ba5c9e9402fed5d518be634867a7</td>
-       <td>CVE-2022-44789</td>
-       <td>2022-11-23 21:15:00</td>
-       <td>A logical issue in O_getOwnPropertyDescriptor() in Artifex MuJS 1.0.0 through 1.3.1 allows an attacker to achieve Remote Code Execution through memory corruption, via the loading of a crafted JavaScript file.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-44789">详情</a></td>
       </tr>
 
      </tbody>
@@ -1674,9 +1674,41 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>e9677a6462c9bcfa6055b14307441b91</td>
+       <td>CVE-2022-45016</td>
+       <td>2022-11-27 20:17:12 <img src="imgs/new.gif" /></td>
+       <td>WBCE WBCE_CMS Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=e263850f5b454d469c5e1248a29c0089">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b6fa87c281ef3ddb0896813882e9e030</td>
+       <td>CVE-2022-38755</td>
+       <td>2022-11-27 20:17:01 <img src="imgs/new.gif" /></td>
+       <td>MICROFOCUS FILR Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=dde96418be8749d5bc52b7b107413548">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2b1006b005f40ade12b560c4375e968f</td>
+       <td>CVE-2022-45013</td>
+       <td>2022-11-27 20:16:50 <img src="imgs/new.gif" /></td>
+       <td>WBCE WBCE_CMS Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=84b091532c5640ad95a8ce6d73ad4262">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8558d0572a3f3bd9c487951243841c4b</td>
+       <td>CVE-2022-45471</td>
+       <td>2022-11-27 20:16:39 <img src="imgs/new.gif" /></td>
+       <td>JETBRAINS HUB Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=4a81119c3b6c4673ba36acf24143804c">详情</a></td>
+      </tr>
+
+      <tr>
        <td>1424eb9d4e8a44289c15a8819fc19382</td>
        <td>CVE-2022-44191</td>
-       <td>2022-11-26 20:21:12 <img src="imgs/new.gif" /></td>
+       <td>2022-11-26 20:21:12</td>
        <td>NETGEAR R7000P_FIRMWARE Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=b1b6009c77884a1bbcefb38818cf0520">详情</a></td>
       </tr>
@@ -1684,7 +1716,7 @@
       <tr>
        <td>abde27884b3ed4a766227a64da0b9762</td>
        <td>CVE-2022-44188</td>
-       <td>2022-11-26 20:21:08 <img src="imgs/new.gif" /></td>
+       <td>2022-11-26 20:21:08</td>
        <td>NETGEAR R7000P_FIRMWARE Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=ef277daf98d042f4850d25df225a5832">详情</a></td>
       </tr>
@@ -1692,7 +1724,7 @@
       <tr>
        <td>a81ae699d8460fbcd331b7fd4ffaefcc</td>
        <td>CVE-2022-44194</td>
-       <td>2022-11-26 20:20:56 <img src="imgs/new.gif" /></td>
+       <td>2022-11-26 20:20:56</td>
        <td>NETGEAR R7000P_FIRMWARE Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=de0fcefd1a2644e8b9953b160a94a8eb">详情</a></td>
       </tr>
@@ -1700,7 +1732,7 @@
       <tr>
        <td>73084271c570a666b7666830975bc2c0</td>
        <td>CVE-2022-44184</td>
-       <td>2022-11-26 20:20:51 <img src="imgs/new.gif" /></td>
+       <td>2022-11-26 20:20:51</td>
        <td>NETGEAR R7000P_FIRMWARE Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=c3523474500e4a72a63f9b9ec58d4d61">详情</a></td>
       </tr>
@@ -1708,7 +1740,7 @@
       <tr>
        <td>dc65b205d7e5509e28db2acaab355af3</td>
        <td>CVE-2022-44197</td>
-       <td>2022-11-26 20:20:45 <img src="imgs/new.gif" /></td>
+       <td>2022-11-26 20:20:45</td>
        <td>NETGEAR R7000P_FIRMWARE Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=8e46d33d5d3848d69af082d3140b2a5b">详情</a></td>
       </tr>
@@ -1716,7 +1748,7 @@
       <tr>
        <td>615e8304350aa712fce2455f80dbed3e</td>
        <td>CVE-2022-44808</td>
-       <td>2022-11-26 20:20:39 <img src="imgs/new.gif" /></td>
+       <td>2022-11-26 20:20:39</td>
        <td>DLINK DIR-823G_FIRMWARE Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=12b906e063364f8d90b4ff3890e966f9">详情</a></td>
       </tr>
@@ -1724,7 +1756,7 @@
       <tr>
        <td>eaa4d67ad604f3fc66fc7c3f885c91c2</td>
        <td>CVE-2022-3910</td>
-       <td>2022-11-26 20:20:34 <img src="imgs/new.gif" /></td>
+       <td>2022-11-26 20:20:34</td>
        <td>LINUX LINUX_KERNEL Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=e8de957664f143db8c37236f1d5bd41e">详情</a></td>
       </tr>
@@ -1732,7 +1764,7 @@
       <tr>
        <td>6f41ef89d4cd418ecf49601345de5adc</td>
        <td>CVE-2022-44200</td>
-       <td>2022-11-26 20:20:28 <img src="imgs/new.gif" /></td>
+       <td>2022-11-26 20:20:28</td>
        <td>NETGEAR R7000P_FIRMWARE Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=e5d8c58d0a45486f8fae4c3a27996370">详情</a></td>
       </tr>
@@ -1740,7 +1772,7 @@
       <tr>
        <td>6c468c5d8b75390fed54da9030be351c</td>
        <td>CVE-2022-44187</td>
-       <td>2022-11-26 20:20:17 <img src="imgs/new.gif" /></td>
+       <td>2022-11-26 20:20:17</td>
        <td>NETGEAR R7000P_FIRMWARE Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=5808275822474993b5b8578a8da0c079">详情</a></td>
       </tr>
@@ -1879,38 +1911,6 @@
        <td>2022-11-23 20:34:22</td>
        <td>DOLIBARR DOLIBARR_ERP\/CRM Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=c681ec8a69f840c58de426e59668e962">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0fe654f4a70c060fc39926805c65dcec</td>
-       <td>CVE-2022-43457</td>
-       <td>2022-11-23 20:34:16</td>
-       <td>DELTAWW DIAENERGIE Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=d7b3ce449f7a443697d16b0790344739">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>dd6c2b16b7fefaf4ea3775b9d5800915</td>
-       <td>CVE-2022-39316</td>
-       <td>2022-11-23 20:34:01</td>
-       <td>FREERDP FREERDP Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=be2ef3cc7a044765998fab4fb5946767">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c7a3049adf646e9dbaa6323e37c77f85</td>
-       <td>CVE-2022-39318</td>
-       <td>2022-11-23 20:33:46</td>
-       <td>FREERDP FREERDP Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=b8f7646817384e82a2bc7e6a271e0c02">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c9c512fc2a7f40254b44d8aa6fc76320</td>
-       <td>CVE-2022-43183</td>
-       <td>2022-11-23 20:33:34</td>
-       <td>XUXUELI XXL-JOB Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=3e19e20e100e4818a8537685a6ccbfb1">详情</a></td>
       </tr>
 
      </tbody>
@@ -2242,6 +2242,14 @@
       </tr>
 
       <tr>
+       <td>dca50ef08b169e546adff3aa5dd70952</td>
+       <td>CVE-2022-45369</td>
+       <td>2022-11-18 23:15:30 </td>
+       <td>Auth. (subscriber+) Broken Access Control vulnerability in Plugin for Google Reviews plugin &lt;= 2.2.2 on WordPress.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-45369">详情</a></td>
+      </tr>
+
+      <tr>
        <td>e9ec5a7c5ca09701e07b382c9a16eaec</td>
        <td>CVE-2022-45474</td>
        <td>2022-11-18 18:15:10 </td>
@@ -2415,14 +2423,6 @@
        <td>2022-11-14 23:15:12 </td>
        <td>Concrete CMS (formerly concrete5) below 8.5.10 and between 9.0.0 and 9.1.2 inadvertently disclose server-side sensitive information (secrets in environment variables and server information) when Debug Mode is left on in production.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-43691">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4f4f65cb6daee3c43caea57316535a19</td>
-       <td>CVE-2022-43690</td>
-       <td>2022-11-14 23:15:12 </td>
-       <td>Concrete CMS (formerly concrete5) below 8.5.10 and between 9.0.0 and 9.1.2 did not use strict comparison for the legacy_salt so that limited authentication bypass could occur if using this functionality. Remediate by updating to Concrete CMS 9.1.3+ or 8.5.10+.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-43690">详情</a></td>
       </tr>
 
      </tbody>
