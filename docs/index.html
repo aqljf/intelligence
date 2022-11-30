@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2022-11-29 10:10:10 -->
+<!-- RELEASE TIME : 2022-11-30 10:10:09 -->
 <html lang="zh-cn">
 
  <head>
@@ -26,9 +26,17 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>c2db08eeadf3aee68605a7ef55df86c0</td>
+       <td>CVE-2022-34721</td>
+       <td>2022-11-29 16:16:23 <img src="imgs/new.gif" /></td>
+       <td>CVE-2022-34721：Windows IKE协议扩展远程代码执行漏洞</td>
+       <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=a92e2b4e0c3a580ec6ffcc1e30a11925">详情</a></td>
+      </tr>
+
+      <tr>
        <td>4bd83f9bb8a0aa8f94e6c9333c158f1c</td>
        <td></td>
-       <td>2022-11-28 15:17:49 <img src="imgs/new.gif" /></td>
+       <td>2022-11-28 15:17:49</td>
        <td>安全事件周报 (11.21-11.27)</td>
        <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=35bcd60e848105ac6cfffcd7f70a5eec">详情</a></td>
       </tr>
@@ -257,14 +265,6 @@
        <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=efdb130a19974f3582f3495a0bb8aa8f">详情</a></td>
       </tr>
 
-      <tr>
-       <td>0717bc3ddc00f3b106713a8e81240e37</td>
-       <td></td>
-       <td>2022-09-05 14:53:34</td>
-       <td>安全事件周报 (08.29-09.04)</td>
-       <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=8c78896d6265cc0ff5e99999ab2d1155">详情</a></td>
-      </tr>
-
      </tbody>
     </table>
    </div>
@@ -282,9 +282,89 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>3979865db5e6775ec4fe898f358d5421</td>
+       <td>CVE-2022-4036</td>
+       <td>2022-11-29 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>The Appointment Hour Booking plugin for WordPress is vulnerable to CAPTCHA bypass in versions up to, and including, 1.3.72. This is due to the use of insufficiently strong hashing algorithm on the CAPTCHA secret that is also displayed to the user via a cookie.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-4036">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2e408e8723792c1083ce662add51f590</td>
+       <td>CVE-2022-4035</td>
+       <td>2022-11-29 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>The Appointment Hour Booking plugin for WordPress is vulnerable to iFrame Injection via the ‘email’ or general field parameters in versions up to, and including, 1.3.72 due to insufficient input sanitization and output escaping that makes injecting iFrame tags possible. This makes it possible for unauthenticated attackers to inject iFrames when submitting a booking that will execute whenever a user accesses the injected booking details page.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-4035">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6c1aab8b5ad0bfe4a4df1be3f1a29dac</td>
+       <td>CVE-2022-4034</td>
+       <td>2022-11-29 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>The Appointment Hour Booking Plugin for WordPress is vulnerable to CSV Injection in versions up to, and including, 1.3.72. This makes it possible for unauthenticated attackers to embed untrusted input into content during booking creation that may be exported as a CSV file when a site's administrator exports booking details. This can result in code execution when these files are downloaded and opened on a local system with a vulnerable configuration.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-4034">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a4901eebee370359222797206a996152</td>
+       <td>CVE-2022-4033</td>
+       <td>2022-11-29 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>The Quiz and Survey Master plugin for WordPress is vulnerable to input validation bypass via the 'question[id]' parameter in versions up to, and including, 8.0.4 due to insufficient input validation that allows attackers to inject content other than the specified value (i.e. a number, file path, etc..). This makes it possible attackers to submit values other than the intended input type.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-4033">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1d59dc5bd0dc0845326d885b56ab8136</td>
+       <td>CVE-2022-4032</td>
+       <td>2022-11-29 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>The Quiz and Survey Master plugin for WordPress is vulnerable to iFrame Injection via the 'question[id]' parameter in versions up to, and including, 8.0.4 due to insufficient input sanitization and output escaping that allowed iframe tags to be injected. This makes it possible for unauthenticated attackers to inject iFrames in pages that will execute whenever a user accesses an injected page.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-4032">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5b582866cad145906065b74b6c3c297d</td>
+       <td>CVE-2022-4031</td>
+       <td>2022-11-29 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>The Simple:Press plugin for WordPress is vulnerable to arbitrary file modifications in versions up to, and including, 6.8 via the 'file' parameter which does not properly restrict files to be edited in the context of the plugin. This makes it possible with attackers, with high-level permissions such as an administrator, to supply paths to arbitrary files on the server that can be modified outside of the intended scope of the plugin.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-4031">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>512bb6fe25389a9fb4b015fcbf46608c</td>
+       <td>CVE-2022-4030</td>
+       <td>2022-11-29 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>The Simple:Press plugin for WordPress is vulnerable to Path Traversal in versions up to, and including, 6.8 via the 'file' parameter which can be manipulated during user avatar deletion. This makes it possible with attackers, with minimal permissions such as a subscriber, to supply paths to arbitrary files on the server that will subsequently be deleted. This can be used to delete the wp-config.php file that can allow an attacker to configure the site and achieve remote code execution.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-4030">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>fde61064814fc8bd6b76b931c7d2ba85</td>
+       <td>CVE-2022-4029</td>
+       <td>2022-11-29 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>The Simple:Press plugin for WordPress is vulnerable to Reflected Cross-Site Scripting via the 'sforum_[md5 hash of the WordPress URL]' cookie value in versions up to, and including, 6.8 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that execute if they can successfully trick a user into performing an action such as clicking on a link. This would be highly complex to exploit as it would require the attacker to set the cookie a cookie for the targeted user.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-4029">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2aaf52540f0bdad664ce3650883eb352</td>
+       <td>CVE-2022-4028</td>
+       <td>2022-11-29 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>The Simple:Press plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'postitem' parameter manipulated during the profile-save action when modifying a profile signature in versions up to, and including, 6.8 due to insufficient input sanitization and output escaping that makes injecting object and embed tags possible. This makes it possible for authenticated attackers, with minimal permissions, such as a subscriber to inject arbitrary web scripts in pages when modifying a profile signature that will execute whenever a user accesses an injected page.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-4028">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>387081037d49421eefe0eb5ac15be315</td>
+       <td>CVE-2022-4027</td>
+       <td>2022-11-29 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>The Simple:Press plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'postitem' parameter manipulated during a forum response in versions up to, and including, 6.8 due to insufficient input sanitization and output escaping that makes injecting object and embed tags possible. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages when responding to forum threads that will execute whenever a user accesses an injected page.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-4027">详情</a></td>
+      </tr>
+
+      <tr>
        <td>5f276d9f723b7467574a63b55375831e</td>
        <td>CVE-2022-45224</td>
-       <td>2022-11-28 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-11-28 22:15:00</td>
        <td>Web-Based Student Clearance System v1.0 was discovered to contain a cross-site scripting (XSS) vulnerability in Admin/add-admin.php. This vulnerability allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the txtfullname parameter.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45224">详情</a></td>
       </tr>
@@ -292,7 +372,7 @@
       <tr>
        <td>ed499eab56037a2e26f62faca3c14e12</td>
        <td>CVE-2022-45223</td>
-       <td>2022-11-28 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-11-28 22:15:00</td>
        <td>Web-Based Student Clearance System v1.0 was discovered to contain a cross-site scripting (XSS) vulnerability in /Admin/add-student.php. This vulnerability allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the txtfullname parameter.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45223">详情</a></td>
       </tr>
@@ -300,7 +380,7 @@
       <tr>
        <td>e84f4f776ec5e450d615a94935c8e099</td>
        <td>CVE-2022-45221</td>
-       <td>2022-11-28 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-11-28 22:15:00</td>
        <td>Web-Based Student Clearance System v1.0 was discovered to contain a cross-site scripting (XSS) vulnerability in changepassword.php. This vulnerability allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the txtnew_password parameter.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45221">详情</a></td>
       </tr>
@@ -308,7 +388,7 @@
       <tr>
        <td>40510a89133694d3f560fa69e18b708d</td>
        <td>CVE-2022-45214</td>
-       <td>2022-11-28 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-11-28 22:15:00</td>
        <td>A cross-site scripting (XSS) vulnerability in Sanitization Management System v1.0.0 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the username parameter at /php-sms/classes/Login.php.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45214">详情</a></td>
       </tr>
@@ -316,7 +396,7 @@
       <tr>
        <td>4c0c907c4305d4da5da66115fb9fda1f</td>
        <td>CVE-2022-4129</td>
-       <td>2022-11-28 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-11-28 22:15:00</td>
        <td>A flaw was found in the Linux kernel's Layer 2 Tunneling Protocol (L2TP). A missing lock when clearing sk_user_data can lead to a race condition and NULL pointer dereference. A local user could use this flaw to potentially crash the system causing a denial of service.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-4129">详情</a></td>
       </tr>
@@ -324,7 +404,7 @@
       <tr>
        <td>a728a3eaac23767c8661456418d94e45</td>
        <td>CVE-2022-4128</td>
-       <td>2022-11-28 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-11-28 22:15:00</td>
        <td>A NULL pointer dereference issue was discovered in the Linux kernel in the MPTCP protocol when traversing the subflow list at disconnect time. A local user could use this flaw to potentially crash the system causing a denial of service.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-4128">详情</a></td>
       </tr>
@@ -332,7 +412,7 @@
       <tr>
        <td>03a9d117122989d0e3fc10fd46cb320e</td>
        <td>CVE-2022-4127</td>
-       <td>2022-11-28 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-11-28 22:15:00</td>
        <td>A NULL pointer dereference issue was discovered in the Linux kernel in io_files_update_with_index_alloc. A local user could use this flaw to potentially crash the system causing a denial of service.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-4127">详情</a></td>
       </tr>
@@ -340,7 +420,7 @@
       <tr>
        <td>82668f11094ca4a6d0adc90939ff8d13</td>
        <td>CVE-2022-38753</td>
-       <td>2022-11-28 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-11-28 22:15:00</td>
        <td>This update resolves a multi-factor authentication bypass attack</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-38753">详情</a></td>
       </tr>
@@ -348,7 +428,7 @@
       <tr>
        <td>37ee620e197d866843ba084780de0296</td>
        <td>CVE-2022-3088</td>
-       <td>2022-11-28 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-11-28 22:15:00</td>
        <td>UC-8100A-ME-T System Image: Versions v1.0 to v1.6, UC-2100 System Image: Versions v1.0 to v1.12, UC-2100-W System Image: Versions v1.0 to v 1.12, UC-3100 System Image: Versions v1.0 to v1.6, UC-5100 System Image: Versions v1.0 to v1.4, UC-8100 System Image: Versions v3.0 to v3.5, UC-8100-ME-T System Image: Versions v3.0 and v3.1, UC-8100A-ME-T System Image: Versions v1.0 to v1.6, UC-8200 System Image: v1.0 to v1.5, AIG-300 System Image: v1.0 to v1.4, UC-8410A with Debian 9 System Image: Versions v4.0.2 and v4.1.2, UC-8580 with Debian 9 System Image: Versions v2.0 and v2.1, UC-8540 with Debian 9 System Image: Versions v2.0 and v2.1, and DA-662C-16-LX (GLB) System Image: Versions v1.0.2 to v1.1.2 of Moxa's ARM-based computers have an execution with unnecessary privileges vulnerability, which could allow an attacker with user-level privileges to gain root privileges.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-3088">详情</a></td>
       </tr>
@@ -356,7 +436,7 @@
       <tr>
        <td>75dea61f3f71a4f8f790edf5357aba28</td>
        <td>CVE-2022-24190</td>
-       <td>2022-11-28 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2022-11-28 22:15:00</td>
        <td>The /device/acceptBind end-point for Ourphoto App version 1.4.1 does not require authentication or authorization. The user_token header is not implemented or present on this end-point. An attacker can send a request to bind their account to any users picture frame, then send a POST request to accept their own bind request, without the end-users approval or interaction.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-24190">详情</a></td>
       </tr>
@@ -439,86 +519,6 @@
        <td>2022-11-26 03:15:00</td>
        <td>drachtio-server 0.8.18 has a heap-based buffer over-read via a long Request-URI in an INVITE request.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45909">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>38d10ba91c2f14f153522131464a5d29</td>
-       <td>CVE-2022-45908</td>
-       <td>2022-11-26 02:15:00</td>
-       <td>In PaddlePaddle before 2.4, paddle.audio.functional.get_window is vulnerable to code injection because it calls eval on a user-supplied winstr. This may lead to arbitrary code execution.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45908">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ce9bbabf73a9a44b015e47fbd1127d41</td>
-       <td>CVE-2022-45907</td>
-       <td>2022-11-26 02:15:00</td>
-       <td>In PyTorch before trunk/89695, torch.jit.annotations.parse_type_line can cause arbitrary code execution because eval is used unsafely.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45907">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ca41768d15ea02ff5c30454127db656d</td>
-       <td>CVE-2022-45225</td>
-       <td>2022-11-25 20:15:00</td>
-       <td>Book Store Management System v1.0 was discovered to contain a cross-site scripting (XSS) vulnerability in /bsms_ci/index.php/book. This vulnerability allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the book_title parameter.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45225">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>cea95205608be72edbec30654ebe067d</td>
-       <td>CVE-2022-44844</td>
-       <td>2022-11-25 20:15:00</td>
-       <td>TOTOlink A7100RU V7.4cu.2313_B20191024 was discovered to contain a command injection vulnerability via the pass parameter in the setting/setOpenVpnCfg function.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-44844">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>fb6cc70e425d8c0058ec32dcbf939c2a</td>
-       <td>CVE-2022-44843</td>
-       <td>2022-11-25 20:15:00</td>
-       <td>TOTOlink A7100RU V7.4cu.2313_B20191024 was discovered to contain a command injection vulnerability via the port parameter in the setting/setOpenVpnClientCfg function.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-44843">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5b0e35dddc2e8832ecb4018640077edc</td>
-       <td>CVE-2022-39333</td>
-       <td>2022-11-25 20:15:00</td>
-       <td>Nexcloud desktop is the Desktop sync client for Nextcloud. An attacker can inject arbitrary HyperText Markup Language into the Desktop Client application. It is recommended that the Nextcloud Desktop client is upgraded to 3.6.1. There are no known workarounds for this issue.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-39333">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>331505343624d9928d869435c4dfff31</td>
-       <td>CVE-2022-39332</td>
-       <td>2022-11-25 20:15:00</td>
-       <td>Nexcloud desktop is the Desktop sync client for Nextcloud. An attacker can inject arbitrary HyperText Markup Language into the Desktop Client application via user status and information. It is recommended that the Nextcloud Desktop client is upgraded to 3.6.1. There are no known workarounds for this issue.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-39332">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0d4d62a608db8749c5ba84041e0096e9</td>
-       <td>CVE-2022-39325</td>
-       <td>2022-11-25 20:15:00</td>
-       <td>BaserCMS is a content management system with a japanese language focus. In affected versions there is a cross-site scripting vulnerability on the management system of baserCMS. This is a vulnerability that needs to be addressed when the management system is used by an unspecified number of users. Users of baserCMS are advised to upgrade as soon as possible. There are no known workarounds for this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-39325">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8cd11bd7ed2f7dbd8fda2d0082206269</td>
-       <td>CVE-2022-45152</td>
-       <td>2022-11-25 19:15:00</td>
-       <td>A blind Server-Side Request Forgery (SSRF) vulnerability was found in Moodle. This flaw exists due to insufficient validation of user-supplied input in LTI provider library. The library does not utilise Moodle's inbuilt cURL helper, which resulted in a blind SSRF risk. An attacker can send a specially crafted HTTP request and trick the application to initiate requests to arbitrary systems. This vulnerability allows a remote attacker to perform SSRF attacks.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45152">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8ddea1e296e6cbc7c14ebb545a22c885</td>
-       <td>CVE-2022-41954</td>
-       <td>2022-11-25 19:15:00</td>
-       <td>MPXJ is an open source library to read and write project plans from a variety of file formats and databases. On Unix-like operating systems (not Windows or macos), MPXJ's use of `File.createTempFile(..)` results in temporary files being created with the permissions `-rw-r--r--`. This means that any other user on the system can read the contents of this file. When MPXJ is reading a schedule file which requires the creation of a temporary file or directory, a knowledgeable local user could locate these transient files while they are in use and would then be able to read the schedule being processed by MPXJ. The problem has been patched, MPXJ version 10.14.1 and later includes the necessary changes. Users unable to upgrade may set `java.io.tmpdir` to a directory to which only the user running the application has access will prevent other users from accessing these temporary files.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-41954">详情</a></td>
       </tr>
 
      </tbody>
@@ -1049,6 +1049,14 @@
        <th width="43%">TITLE</th>
        <th width="5%">URL</th>
       </tr>
+      <tr>
+       <td>45ab4afdafe578698bcfccccd65d833e</td>
+       <td></td>
+       <td>yt</td>
+       <td>QiAnXinTI-SV-2020-0009 Microsoft Windows Type 1字体处理远程代码执行漏洞（ADV200006）通告</td>
+       <td><a target="_blank" href="wt">详情</a></td>
+      </tr>
+
       <tr>
        <td>6bd01daffa85191c80698354fc8e252f</td>
        <td></td>
@@ -1674,9 +1682,17 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>ca3fbe2a01075c5fe92ff6be9460a932</td>
+       <td>CVE-2022-44193</td>
+       <td>2022-11-29 20:11:32 <img src="imgs/new.gif" /></td>
+       <td>NETGEAR R7000P_FIRMWARE Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=b96875e703f84d27bcdf3070d61118c7">详情</a></td>
+      </tr>
+
+      <tr>
        <td>0b9809e23c22e6b13bfcd2021c169430</td>
        <td>CVE-2022-44196</td>
-       <td>2022-11-28 20:11:46 <img src="imgs/new.gif" /></td>
+       <td>2022-11-28 20:11:46</td>
        <td>NETGEAR R7000P_FIRMWARE Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=e71a78882bda4cd9b3e3288f5ffb0c0c">详情</a></td>
       </tr>
@@ -1684,7 +1700,7 @@
       <tr>
        <td>0ab0f23dde7dd7816c117a0b736512a0</td>
        <td>CVE-2022-44199</td>
-       <td>2022-11-28 20:11:28 <img src="imgs/new.gif" /></td>
+       <td>2022-11-28 20:11:28</td>
        <td>NETGEAR R7000P_FIRMWARE Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=ca8c788f13584b55af59404601c44f87">详情</a></td>
       </tr>
@@ -1692,7 +1708,7 @@
       <tr>
        <td>e01c7868a4b38dae078ba7651f8ee4bc</td>
        <td>CVE-2022-41952</td>
-       <td>2022-11-28 20:11:16 <img src="imgs/new.gif" /></td>
+       <td>2022-11-28 20:11:16</td>
        <td>MATRIX SYNAPSE Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=cb8b17c51e5b433ebaaf3921cfba83b8">详情</a></td>
       </tr>
@@ -1905,14 +1921,6 @@
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=d9774fa17b9a49528626750cbd95c848">详情</a></td>
       </tr>
 
-      <tr>
-       <td>10d605ff7b2c541198286bd33f8dd4c6</td>
-       <td>CVE-2022-4069</td>
-       <td>2022-11-24 20:24:37</td>
-       <td>LIBRENMS LIBRENMS Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=ab862a4c63fd4cacaee41bc7b6a8a016">详情</a></td>
-      </tr>
-
      </tbody>
     </table>
    </div>
@@ -1932,7 +1940,7 @@
       <tr>
        <td>91e41cb174f1a61682845eba43442a91</td>
        <td>CVE-2022-43074</td>
-       <td>2022-11-28 10:10:03 <img src="imgs/new.gif" /></td>
+       <td>2022-11-28 10:10:03</td>
        <td>AyaCMS任意文件上传漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/73090">详情</a></td>
       </tr>
@@ -1940,7 +1948,7 @@
       <tr>
        <td>0c95bb5ad48ee10635dfa9c12cc7a65d</td>
        <td>CVE-2022-45199</td>
-       <td>2022-11-28 10:10:03 <img src="imgs/new.gif" /></td>
+       <td>2022-11-28 10:10:03</td>
        <td>Pillow拒绝服务漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/73089">详情</a></td>
       </tr>
@@ -1948,7 +1956,7 @@
       <tr>
        <td>8215cdb05fc57833ca6fbc7f525563d1</td>
        <td>CVE-2022-43320</td>
-       <td>2022-11-28 10:10:03 <img src="imgs/new.gif" /></td>
+       <td>2022-11-28 10:10:03</td>
        <td>FeehiCMS跨站脚本漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/73088">详情</a></td>
       </tr>
@@ -1956,7 +1964,7 @@
       <tr>
        <td>470b4d17091119176cd856cf0cab7fca</td>
        <td>CVE-2022-43321</td>
-       <td>2022-11-28 10:10:03 <img src="imgs/new.gif" /></td>
+       <td>2022-11-28 10:10:03</td>
        <td>ShopWind跨站脚本漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/73087">详情</a></td>
       </tr>
@@ -1964,7 +1972,7 @@
       <tr>
        <td>4294f6afb1cabf23dc838d8048349c06</td>
        <td>CVE-2022-23044</td>
-       <td>2022-11-28 10:10:03 <img src="imgs/new.gif" /></td>
+       <td>2022-11-28 10:10:03</td>
        <td>Tiny File Manager跨站请求伪造漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/73086">详情</a></td>
       </tr>
@@ -1972,7 +1980,7 @@
       <tr>
        <td>bc54deff0ca8f2c0bb957b63a3eaea8e</td>
        <td>CVE-2022-37721</td>
-       <td>2022-11-28 10:10:03 <img src="imgs/new.gif" /></td>
+       <td>2022-11-28 10:10:03</td>
        <td>PyroCMS跨站脚本漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/73085">详情</a></td>
       </tr>
@@ -1980,7 +1988,7 @@
       <tr>
        <td>18b53261c3bbe3c9b8caa017900820b5</td>
        <td>CVE-2022-41712</td>
-       <td>2022-11-28 10:10:03 <img src="imgs/new.gif" /></td>
+       <td>2022-11-28 10:10:03</td>
        <td>Frappe任意文件读取漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/73084">详情</a></td>
       </tr>
@@ -1988,7 +1996,7 @@
       <tr>
        <td>8e99870d4e382ee202fd387cc4a7ae26</td>
        <td>CVE-2022-45218</td>
-       <td>2022-11-28 10:10:03 <img src="imgs/new.gif" /></td>
+       <td>2022-11-28 10:10:03</td>
        <td>Human Resource Management System跨站脚本漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/73083">详情</a></td>
       </tr>
@@ -1996,7 +2004,7 @@
       <tr>
        <td>88ba145bc216253196b46e8f3f20a26c</td>
        <td>CVE-2022-45931</td>
-       <td>2022-11-28 10:10:03 <img src="imgs/new.gif" /></td>
+       <td>2022-11-28 10:10:03</td>
        <td>Linux Kernel整数环绕漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/73082">详情</a></td>
       </tr>
@@ -2004,7 +2012,7 @@
       <tr>
        <td>6833ee15c88a6e12f2b95497848efb1c</td>
        <td>CVE-2022-44844</td>
-       <td>2022-11-28 10:10:03 <img src="imgs/new.gif" /></td>
+       <td>2022-11-28 10:10:03</td>
        <td>TOTOLINK A7100RU命令注入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/73081">详情</a></td>
       </tr>
@@ -2012,7 +2020,7 @@
       <tr>
        <td>7aa3dadda4281755810a34d6fda5ce09</td>
        <td>CVE-2022-44843</td>
-       <td>2022-11-28 10:10:03 <img src="imgs/new.gif" /></td>
+       <td>2022-11-28 10:10:03</td>
        <td>TOTOLINK A7100RU命令注入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/73080">详情</a></td>
       </tr>
@@ -2020,7 +2028,7 @@
       <tr>
        <td>f1b01d0ce13e1e3a2e2e4a8ab8246a4a</td>
        <td>CVE-2022-0698</td>
-       <td>2022-11-28 10:10:03 <img src="imgs/new.gif" /></td>
+       <td>2022-11-28 10:10:03</td>
        <td>Microweber跨站脚本漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/73079">详情</a></td>
       </tr>
@@ -2028,7 +2036,7 @@
       <tr>
        <td>981ab95830c89c9da36fc7d254b5d8bd</td>
        <td>CVE-2022-38767</td>
-       <td>2022-11-28 10:10:03 <img src="imgs/new.gif" /></td>
+       <td>2022-11-28 10:10:03</td>
        <td>Wind River VxWorks拒绝服务漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/73078">详情</a></td>
       </tr>
@@ -2036,7 +2044,7 @@
       <tr>
        <td>f519e8d584211d6977e55d7517fdf5be</td>
        <td>CVE-2022-45908</td>
-       <td>2022-11-28 10:10:03 <img src="imgs/new.gif" /></td>
+       <td>2022-11-28 10:10:03</td>
        <td>PaddlePaddle代码注入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/73077">详情</a></td>
       </tr>
@@ -2044,7 +2052,7 @@
       <tr>
        <td>f056f642ea6f8ab76ff10e86cc88f323</td>
        <td>CVE-2022-45907</td>
-       <td>2022-11-28 10:10:03 <img src="imgs/new.gif" /></td>
+       <td>2022-11-28 10:10:03</td>
        <td>PyTorch任意代码执行漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/73076">详情</a></td>
       </tr>
@@ -2199,6 +2207,46 @@
        <td>2022-11-26 02:15:10 </td>
        <td>In PyTorch before trunk/89695, torch.jit.annotations.parse_type_line can cause arbitrary code execution because eval is used unsafely.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-45907">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>753bfa088c764c17a2b1078aaeb81899</td>
+       <td>CVE-2022-45888</td>
+       <td>2022-11-25 04:15:09 </td>
+       <td>An issue was discovered in the Linux kernel through 6.0.9. drivers/char/xillybus/xillyusb.c has a race condition and use-after-free during physical removal of a USB device.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-45888">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b43c19672248581bb025b67338d91ff1</td>
+       <td>CVE-2022-45887</td>
+       <td>2022-11-25 04:15:09 </td>
+       <td>An issue was discovered in the Linux kernel through 6.0.9. drivers/media/usb/ttusb-dec/ttusb_dec.c has a memory leak because of the lack of a dvb_frontend_detach call.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-45887">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5d3fb323a4aa349842a0bf3b60f2b3dd</td>
+       <td>CVE-2022-45886</td>
+       <td>2022-11-25 04:15:09 </td>
+       <td>An issue was discovered in the Linux kernel through 6.0.9. drivers/media/dvb-core/dvb_net.c has a .disconnect versus dvb_device_open race condition that leads to a use-after-free.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-45886">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8538c717683de9e7f9801e39f736d7de</td>
+       <td>CVE-2022-45885</td>
+       <td>2022-11-25 04:15:09 </td>
+       <td>An issue was discovered in the Linux kernel through 6.0.9. drivers/media/dvb-core/dvb_frontend.c has a race condition that can cause a use-after-free when a device is disconnected.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-45885">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>246de51d88c434053c164b85c96f34d4</td>
+       <td>CVE-2022-45884</td>
+       <td>2022-11-25 04:15:09 </td>
+       <td>An issue was discovered in the Linux kernel through 6.0.9. drivers/media/dvb-core/dvbdev.c has a use-after-free, related to dvb_register_device dynamically allocating fops.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-45884">详情</a></td>
       </tr>
 
       <tr>
@@ -2383,46 +2431,6 @@
        <td>2022-11-15 20:15:14 </td>
        <td>A cross-site request forgery (CSRF) vulnerability in Jenkins Cluster Statistics Plugin 0.4.6 and earlier allows attackers to delete recorded Jenkins Cluster Statistics.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-45398">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d47e005093965aa92696b8658f39c6e8</td>
-       <td>CVE-2022-45397</td>
-       <td>2022-11-15 20:15:14 </td>
-       <td>Jenkins OSF Builder Suite : : XML Linter Plugin 1.0.2 and earlier does not configure its XML parser to prevent XML external entity (XXE) attacks.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-45397">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b5bce0a59936cf5bcefa75b9e5a77a07</td>
-       <td>CVE-2022-45387</td>
-       <td>2022-11-15 20:15:12 </td>
-       <td>Jenkins BART Plugin 1.0.3 and earlier does not escape the parsed content of build logs before rendering it on the Jenkins UI, resulting in a stored cross-site scripting (XSS) vulnerability.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-45387">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>db562bb3b029e85d5b4d43cc848f5156</td>
-       <td>CVE-2022-45383</td>
-       <td>2022-11-15 20:15:11 </td>
-       <td>An incorrect permission check in Jenkins Support Core Plugin 1206.v14049fa_b_d860 and earlier allows attackers with Support/DownloadBundle permission to download a previously created support bundle containing information limited to users with Overall/Administer permission.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-45383">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>77f3ab8c037978c37047d8035aafcd08</td>
-       <td>CVE-2022-3958</td>
-       <td>2022-11-15 15:15:13 </td>
-       <td>Cross-site Scripting (XSS) vulnerability in BlueSpiceUserSidebar extension of BlueSpice allows user with regular account and edit permissions to inject arbitrary HTML into the personal menu navigation of their own and other users. This allows for targeted attacks.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-3958">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3bac32293afec8cb78b398508684328c</td>
-       <td>CVE-2022-45402</td>
-       <td>2022-11-15 09:15:09 </td>
-       <td>In Apache Airflow versions prior to 2.4.3, there was an open redirect in the webserver's `/login` endpoint.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-45402">详情</a></td>
       </tr>
 
      </tbody>
