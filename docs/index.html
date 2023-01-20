@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-01-19 10:10:10 -->
+<!-- RELEASE TIME : 2023-01-20 10:10:10 -->
 <html lang="zh-cn">
 
  <head>
@@ -25,6 +25,22 @@
        <th width="43%">TITLE</th>
        <th width="5%">URL</th>
       </tr>
+      <tr>
+       <td>86918d8f318d68a2079e320a75c0220b</td>
+       <td></td>
+       <td>2023-01-19 16:24:18 <img src="imgs/new.gif" /></td>
+       <td>2023-01 补丁日: Oracle多个产品漏洞安全风险通告</td>
+       <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=001cb5ec0d56c817ed6202004b6ba384">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>29b3089137ef79c951aa6f60cb9b7122</td>
+       <td>CVE-2023-21839</td>
+       <td>2023-01-19 16:09:30 <img src="imgs/new.gif" /></td>
+       <td>CVE-2023-21839：Oracle WebLogic Server 远程代码执行漏洞通告</td>
+       <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=8a82885405a8b29597ace7f2f37ec64c">详情</a></td>
+      </tr>
+
       <tr>
        <td>4208fa511ff172ebf734affdd050796e</td>
        <td>CVE-2023-22602</td>
@@ -249,22 +265,6 @@
        <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=1214c386de967556929135fe0fc57a01">详情</a></td>
       </tr>
 
-      <tr>
-       <td>8c99d86ee570d5f7216e1bc9bdddf9bc</td>
-       <td>CVE-2022-27510</td>
-       <td>2022-11-14 15:34:10</td>
-       <td>CVE-2022-27510：Citrix Gateway/ADC身份认证绕过漏洞通告</td>
-       <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=cddbb41b204d770007e4108537e58395">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>68d7f15ea249630c9a95ff95be6610fa</td>
-       <td></td>
-       <td>2022-11-14 15:23:29</td>
-       <td>安全事件周报 (11.07-11.13)</td>
-       <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=acc9fb8d90b76d3ccf3b8bb9d0245f1a">详情</a></td>
-      </tr>
-
      </tbody>
     </table>
    </div>
@@ -282,6 +282,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>d9d61ab9a7bcf871a6b5c4fd92321b6d</td>
+       <td>CVE-2023-22745</td>
+       <td>2023-01-19 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>tpm2-tss is an open source software implementation of the Trusted Computing Group (TCG) Trusted Platform Module (TPM) 2 Software Stack (TSS2). In affected versions `Tss2_RC_SetHandler` and `Tss2_RC_Decode` both index into `layer_handler` with an 8 bit layer number, but the array only has `TPM2_ERROR_TSS2_RC_LAYER_COUNT` entries, so trying to add a handler for higher-numbered layers or decode a response code with such a layer number reads/writes past the end of the buffer. This Buffer overrun, could result in arbitrary code execution. An example attack would be a MiTM bus attack that returns 0xFFFFFFFF for the RC. Given the common use case of TPM modules an attacker must have local access to the target machine with local system privileges which allows access to the TPM system. Usually TPM access requires administrative privilege.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-22745">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>bd261db885cf92c38821ed5335abe43d</td>
+       <td>CVE-2022-46476</td>
+       <td>2023-01-19 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>D-Link DIR-859 A1 1.05 was discovered to contain a command injection vulnerability via the service= variable in the soapcgi_main function.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-46476">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f68fc8b16450228d73b75afc8b4d1808</td>
+       <td>CVE-2022-31901</td>
+       <td>2023-01-19 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>Buffer overflow in function Notepad_plus::addHotSpot in Notepad++ v8.4.3 and earlier allows attackers to crash the application via two crafted files.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-31901">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c50d718380c39982b6bc02ef49eafe6e</td>
+       <td>CVE-2023-22741</td>
+       <td>2023-01-19 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>Sofia-SIP is an open-source SIP User-Agent library, compliant with the IETF RFC3261 specification. In affected versions Sofia-SIP **lacks both message length and attributes length checks** when it handles STUN packets, leading to controllable heap-over-flow. For example, in stun_parse_attribute(), after we get the attribute's type and length value, the length will be used directly to copy from the heap, regardless of the message's left size. Since network users control the overflowed length, and the data is written to heap chunks later, attackers may achieve remote code execution by heap grooming or other exploitation methods. The bug was introduced 16 years ago in sofia-sip 1.12.4 (plus some patches through 12/21/2006) to in tree libs with git-svn-id: http://svn.freeswitch.org/svn/freeswitch/trunk@3774 d0543943-73ff-0310-b7d9-9358b9ac24b2. Users are advised to upgrade. There are no known workarounds for this vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-22741">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1ac676bdebdc9c4a69983e163dce748e</td>
+       <td>CVE-2023-0126</td>
+       <td>2023-01-19 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>Pre-authentication path traversal vulnerability in SMA1000 firmware version 12.4.2, which allows an unauthenticated attacker to access arbitrary files and directories stored outside the web root directory.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0126">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a07e6e904769a61a9abaf58022802d0b</td>
+       <td>CVE-2022-47766</td>
+       <td>2023-01-19 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>PopojiCMS v2.0.1 backend plugin function has a file upload vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-47766">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c42d2bc2849866494f5e19a47a2fcbdb</td>
+       <td>CVE-2022-46890</td>
+       <td>2023-01-19 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>Weak access control in NexusPHP before 1.7.33 allows a remote authenticated user to edit any post in the forum (this is caused by a lack of checks performed by the /forums.php?action=post page).</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-46890">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>075d413fe0af944a454726d0b0365faa</td>
+       <td>CVE-2022-46889</td>
+       <td>2023-01-19 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>A persistent cross-site scripting (XSS) vulnerability in NexusPHP before 1.7.33 allows remote authenticated attackers to permanently inject arbitrary web script or HTML via the title parameter used in /subtitles.php.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-46889">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c0490217a7e65f153b6417b556f0a311</td>
+       <td>CVE-2022-46888</td>
+       <td>2023-01-19 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>Multiple reflective cross-site scripting (XSS) vulnerabilities in NexusPHP before 1.7.33 allow remote attackers to inject arbitrary web script or HTML via the secret parameter in /login.php; q parameter in /user-ban-log.php; query parameter in /log.php; text parameter in /moresmiles.php; q parameter in myhr.php; or id parameter in /viewrequests.php.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-46888">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a48ff838f672b9c9a45902a5d0be62d3</td>
+       <td>CVE-2022-46887</td>
+       <td>2023-01-19 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>Multiple SQL injection vulnerabilities in NexusPHP before 1.7.33 allow remote attackers to execute arbitrary SQL commands via the conuser[] parameter in takeconfirm.php; the delcheater parameter in cheaterbox.php; or the usernw parameter in nowarn.php.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-46887">详情</a></td>
+      </tr>
+
+      <tr>
        <td>33a345443e47c691f9e775c178bc7b2d</td>
        <td>CVE-2022-3085</td>
        <td>2023-01-19 00:15:00 <img src="imgs/new.gif" /></td>
@@ -292,7 +372,7 @@
       <tr>
        <td>f2762e9b1967096af1ae384b74017f96</td>
        <td>CVE-2023-0290</td>
-       <td>2023-01-18 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-01-18 22:15:00</td>
        <td>Rapid7 Velociraptor did not properly sanitize the client ID parameter to the CreateCollection API, allowing a directory traversal in where the collection task could be written. It was possible to provide a client id of "../clients/server" to schedule the collection for the server (as a server artifact), but only require privileges to schedule collections on the client. Normally, to schedule an artifact on the server, the COLLECT_SERVER permission is required. This permission is normally only granted to "administrator" role. Due to this issue, it is sufficient to have the COLLECT_CLIENT privilege, which is normally granted to the "investigator" role. To exploit this vulnerability, the attacker must already have a Velociraptor user account at least "investigator" level, and be able to authenticate to the GUI and issue an API call to the backend. Typically, most users deploy Velociraptor with limited access to a trusted group, and most users will already be administrators within the GUI. This issue affects Velociraptor versions before 0.6.7-5. Version 0.6.7-5, released January 16, 2023, fixes the issue.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0290">详情</a></td>
       </tr>
@@ -300,7 +380,7 @@
       <tr>
        <td>86a195dba89007a10e3fd13e83d0c230</td>
        <td>CVE-2023-0164</td>
-       <td>2023-01-18 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-01-18 22:15:00</td>
        <td>OrangeScrum version 2.0.11 allows an authenticated external attacker to execute arbitrary commands on the server. This is possible because the application injects an attacker-controlled parameter into a system function.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0164">详情</a></td>
       </tr>
@@ -308,7 +388,7 @@
       <tr>
        <td>a7f02bde8abb1ecacfa0a60404cc2aec</td>
        <td>CVE-2022-45927</td>
-       <td>2023-01-18 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-01-18 22:15:00</td>
        <td>An issue was discovered in OpenText Content Suite Platform 22.1 (16.2.19.1803). The Java application server can be used to bypass the authentication of the QDS endpoints of the Content Server. These endpoints can be used to create objects and execute arbitrary code.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45927">详情</a></td>
       </tr>
@@ -316,7 +396,7 @@
       <tr>
        <td>4ab762eb9fd48f30590e76dc6e77a9e7</td>
        <td>CVE-2022-45923</td>
-       <td>2023-01-18 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-01-18 22:15:00</td>
        <td>An issue was discovered in OpenText Content Suite Platform 22.1 (16.2.19.1803). The Common Gateway Interface (CGI) program cs.exe allows an attacker to increase/decrease an arbitrary memory address by 1 and trigger a call to a method of a vftable with a vftable pointer value chosen by the attacker.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45923">详情</a></td>
       </tr>
@@ -324,7 +404,7 @@
       <tr>
        <td>ece289cd208e3f14d0db8117569cb2da</td>
        <td>CVE-2022-4235</td>
-       <td>2023-01-18 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-01-18 22:15:00</td>
        <td>RushBet version 2022.23.1-b490616d allows a remote attacker to steal customer accounts via use of a malicious application. This is possible because the application exposes an activity and does not properly validate the data it receives.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-4235">详情</a></td>
       </tr>
@@ -332,7 +412,7 @@
       <tr>
        <td>a020a0eb0a0f733891ebb4f83bfe41fb</td>
        <td>CVE-2023-0242</td>
-       <td>2023-01-18 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-01-18 21:15:00</td>
        <td>Rapid7 Velociraptor allows users to be created with different privileges on the server. Administrators are generally allowed to run any command on the server including writing arbitrary files. However, lower privilege users are generally forbidden from writing or modifying files on the server. The VQL copy() function applies permission checks for reading files but does not check for permission to write files. This allows a low privilege user (usually, users with the Velociraptor "investigator" role) to overwrite files on the server, including Velociraptor configuration files. To exploit this vulnerability, the attacker must already have a Velociraptor user account at a low privilege level (at least "analyst") and be able to log into the GUI and create a notebook where they can run the VQL query invoking the copy() VQL function. Typically, most users deploy Velociraptor with limited access to a trusted group (most users will be administrators within the GUI). This vulnerability is associated with program files https://github.Com/Velocidex/velociraptor/blob/master/vql/filesystem/copy.go https://github.Com/Velocidex/velociraptor/blob/master/vql/filesystem/copy.go and program routines copy(). This issue affects Velociraptor versions before 0.6.7-5. Version 0.6.7-5, released January 16, 2023, fixes the issue.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0242">详情</a></td>
       </tr>
@@ -340,7 +420,7 @@
       <tr>
        <td>7930df2b00c4d77a86095bb656f99a58</td>
        <td>CVE-2022-45928</td>
-       <td>2023-01-18 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-01-18 21:15:00</td>
        <td>A remote OScript execution issue was discovered in OpenText Content Suite Platform 22.1 (16.2.19.1803). Multiple endpoints allow the user to pass the parameter htmlFile, which is included in the HTML output rendering pipeline of a request. Because the Content Server evaluates and executes Oscript code in HTML files, it is possible for an attacker to execute Oscript code. The Oscript scripting language allows the attacker (for example) to manipulate files on the filesystem, create new network connections, or execute OS commands.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45928">详情</a></td>
       </tr>
@@ -348,7 +428,7 @@
       <tr>
        <td>175e6d7748eb404b288a4b84c514ed3c</td>
        <td>CVE-2022-45926</td>
-       <td>2023-01-18 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-01-18 21:15:00</td>
        <td>An issue was discovered in OpenText Content Suite Platform 22.1 (16.2.19.1803). The endpoint notify.localizeEmailTemplate allows a low-privilege user to evaluate webreports.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45926">详情</a></td>
       </tr>
@@ -356,7 +436,7 @@
       <tr>
        <td>e336d03ab76e5f536155141407786442</td>
        <td>CVE-2022-45925</td>
-       <td>2023-01-18 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-01-18 21:15:00</td>
        <td>An issue was discovered in OpenText Content Suite Platform 22.1 (16.2.19.1803). The action xmlexport accepts the parameter requestContext. If this parameter is present, the response includes most of the HTTP headers sent to the server and some of the CGI variables like remote_adde and server_name, which is an information disclosure.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45925">详情</a></td>
       </tr>
@@ -439,86 +519,6 @@
        <td>2023-01-17 21:15:00</td>
        <td>Deno is a runtime for JavaScript and TypeScript that uses V8 and is built in Rust. Multi-threaded programs were able to spoof interactive permission prompt by rewriting the prompt to suggest that program is waiting on user confirmation to unrelated action. A malicious program could clear the terminal screen after permission prompt was shown and write a generic message. This situation impacts users who use Web Worker API and relied on interactive permission prompt. The reproduction is very timing sensitive and can’t be reliably reproduced on every try. This problem can not be exploited on systems that do not attach an interactive prompt (for example headless servers). The problem has been fixed in Deno v1.29.3; it is recommended all users update to this version. Users are advised to upgrade. Users unable to upgrade may run with --no-prompt flag to disable interactive permission prompts.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-22499">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8668dac4924ba5665bbf362ec60d0c9e</td>
-       <td>CVE-2023-0327</td>
-       <td>2023-01-16 19:15:00</td>
-       <td>A vulnerability was found in saemorris TheRadSystem. It has been classified as problematic. Affected is an unknown function of the file users.php. The manipulation of the argument q leads to cross site scripting. It is possible to launch the attack remotely. VDB-218454 is the identifier assigned to this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0327">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d1466ec47847cf57682749eea4d60aae</td>
-       <td>CVE-2015-10057</td>
-       <td>2023-01-16 19:15:00</td>
-       <td>A vulnerability was found in Little Apps Little Software Stats. It has been declared as critical. Affected by this vulnerability is an unknown functionality of the file inc/class.securelogin.php of the component Password Reset Handler. The manipulation leads to improper access controls. Upgrading to version 0.2 is able to address this issue. The name of the patch is 07ba8273a9311d1383f3686ac7cb32f20770ab1e. It is recommended to upgrade the affected component. The identifier VDB-218401 was assigned to this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2015-10057">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>69c3f5574837e19a133bea1221416395</td>
-       <td>CVE-2015-10056</td>
-       <td>2023-01-16 19:15:00</td>
-       <td>A vulnerability was found in 2071174A vinylmap. It has been classified as critical. Affected is the function contact of the file recordstoreapp/views.py. The manipulation leads to sql injection. The name of the patch is b07b79a1e92cc62574ba0492cce000ef4a7bd25f. It is recommended to apply a patch to fix this issue. The identifier of this vulnerability is VDB-218400.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2015-10056">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ad24ab6f8d21d219d32cb4e476099fe8</td>
-       <td>CVE-2015-10055</td>
-       <td>2023-01-16 18:15:00</td>
-       <td>A vulnerability was found in PictureThisWebServer and classified as critical. This issue affects the function router.post of the file routes/user.js. The manipulation of the argument username/password leads to sql injection. The name of the patch is 68b9dc346e88b494df00d88c7d058e96820e1479. It is recommended to apply a patch to fix this issue. The associated identifier of this vulnerability is VDB-218399.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2015-10055">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a03e2490a28b9a4b1fd7b4ddd8180e00</td>
-       <td>CVE-2015-10054</td>
-       <td>2023-01-16 18:15:00</td>
-       <td>A vulnerability, which was classified as critical, was found in githuis P2Manage. This affects the function Execute of the file PTwoManage/Database.cs. The manipulation of the argument sql leads to sql injection. The name of the patch is 717380aba80002414f82d93c770035198b7858cc. It is recommended to apply a patch to fix this issue. The identifier VDB-218397 was assigned to this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2015-10054">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>976947523008ded9e09f99b6f71625c7</td>
-       <td>CVE-2014-125080</td>
-       <td>2023-01-16 18:15:00</td>
-       <td>A vulnerability has been found in frontaccounting faplanet and classified as critical. This vulnerability affects unknown code. The manipulation leads to path traversal. The name of the patch is a5dcd87f46080a624b1a9ad4b0dd035bbd24ac50. It is recommended to apply a patch to fix this issue. VDB-218398 is the identifier assigned to this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2014-125080">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>74b37f7e12df6604a1fbbd93463ca447</td>
-       <td>CVE-2022-47630</td>
-       <td>2023-01-16 16:15:00</td>
-       <td>Trusted Firmware-A through 2.8 has an out-of-bounds read in the X.509 parser for parsing boot certificates. This affects downstream use of get_ext and auth_nvctr. Attackers might be able to trigger dangerous read side effects or obtain sensitive information about microarchitectural state.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-47630">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>bc8906e8cfa91ad470d14d7228df0c78</td>
-       <td>CVE-2022-4658</td>
-       <td>2023-01-16 16:15:00</td>
-       <td>The RSSImport WordPress plugin through 4.6.1 does not validate and escape one of its shortcode attributes, which could allow users with a role as low as contributor to perform Stored Cross-Site Scripting attack.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-4658">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>cd9d9e1707600919a6b12ebf67475683</td>
-       <td>CVE-2022-4655</td>
-       <td>2023-01-16 16:15:00</td>
-       <td>The Welcart e-Commerce WordPress plugin before 2.8.9 does not validate and escapes one of its shortcode attributes, which could allow users with a role as low as a contributor to perform a Stored Cross-Site Scripting attack.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-4655">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d446cafa9825990c663725104f659b03</td>
-       <td>CVE-2022-4653</td>
-       <td>2023-01-16 16:15:00</td>
-       <td>The Greenshift WordPress plugin before 4.8.9 does not validate and escape one of its shortcode attributes, which could allow users with a role as low as contributor to perform Stored Cross-Site Scripting attack.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-4653">详情</a></td>
       </tr>
 
      </tbody>
@@ -1682,9 +1682,17 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>7612642948fb1fc99c44fd94daf14f98</td>
+       <td>CVE-2022-25717</td>
+       <td>2023-01-19 20:15:02 <img src="imgs/new.gif" /></td>
+       <td>QUALCOMM Multiple product Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=9bff7a3825f04fc2a89b1ee8687e30be">详情</a></td>
+      </tr>
+
+      <tr>
        <td>83e0bba345739ccbe9632bc7161f29c3</td>
        <td>CVE-2023-0132</td>
-       <td>2023-01-18 20:48:15 <img src="imgs/new.gif" /></td>
+       <td>2023-01-18 20:48:15</td>
        <td>GOOGLE CHROME Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=94e0fe3df6d04febaa02d2366f364258">详情</a></td>
       </tr>
@@ -1692,7 +1700,7 @@
       <tr>
        <td>ea34fd69ca9d3f3f2e7c88b04aa3f14a</td>
        <td>CVE-2022-43514</td>
-       <td>2023-01-18 20:47:52 <img src="imgs/new.gif" /></td>
+       <td>2023-01-18 20:47:52</td>
        <td>SIEMENS AUTOMATION_LICENSE_MANAGER Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=efb67e476eef427ab7aeefa1216d8b78">详情</a></td>
       </tr>
@@ -1700,7 +1708,7 @@
       <tr>
        <td>1ad459ad77bf2734a791660ca0e55745</td>
        <td>CVE-2023-0140</td>
-       <td>2023-01-18 20:47:45 <img src="imgs/new.gif" /></td>
+       <td>2023-01-18 20:47:45</td>
        <td>GOOGLE CHROME Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=5d41ef8e0d3f4e4e96502fbe1580e2d7">详情</a></td>
       </tr>
@@ -1708,7 +1716,7 @@
       <tr>
        <td>62f4e2902adf4c45f8d69216db81bb05</td>
        <td>CVE-2022-4338</td>
-       <td>2023-01-18 20:47:32 <img src="imgs/new.gif" /></td>
+       <td>2023-01-18 20:47:32</td>
        <td>OPENVSWITCH OPENVSWITCH Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=2d0f1a97facf401497a63053c3bf0023">详情</a></td>
       </tr>
@@ -1716,7 +1724,7 @@
       <tr>
        <td>a07c845d540178a402a1f645a46fa143</td>
        <td>CVE-2023-0135</td>
-       <td>2023-01-18 20:47:25 <img src="imgs/new.gif" /></td>
+       <td>2023-01-18 20:47:25</td>
        <td>GOOGLE CHROME Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=63e1da75c0c94ff48b755ea0c727e906">详情</a></td>
       </tr>
@@ -1911,14 +1919,6 @@
        <td>2023-01-15 20:39:42</td>
        <td>QUALCOMM Multiple product Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=c29ec17febf2447fa36c9456e38e705a">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>fb61968f6499fa7cb816f9dec69f5334</td>
-       <td>CVE-2023-22464</td>
-       <td>2023-01-14 20:44:10</td>
-       <td>VIEWVC VIEWVC Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=b531dd9aa8ab422daa37cf9cdcdda87a">详情</a></td>
       </tr>
 
      </tbody>
@@ -2194,6 +2194,14 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>905fcc7f096dde47a61a17a4a26f8e87</td>
+       <td>CVE-2023-22487</td>
+       <td>2023-01-11 20:15:08 </td>
+       <td>Flarum is a forum software for building communities. Using the mentions feature provided by the flarum/mentions extension, users can mention any post ID on the forum with the special `@&quot;&lt;username&gt;&quot;#p&lt;id&gt;` syntax. The following behavior never changes no matter if the actor should be able to read the mentioned post or not: A URL to the mentioned post is inserted into the actor post HTML, leaking its discussion ID and post number. The `mentionsPosts` relationship included in the `POST /api/posts` and `PATCH /api/posts/&lt;id&gt;` JSON responses leaks the full JSON:API payload of all mentioned posts without any access control. This includes the content, date, number and attributes added by other extensions. An attacker only needs the ability to create new posts on the forum to exploit the vulnerability. This works even if new posts require approval. If they have the ability to edit posts, the attack can be performed even more discreetly by using a single post to scan any size of database and hiding the attack post content afterward. The attack allows the leaking of all posts in the forum database, including posts awaiting approval, posts in tags the user has no access to, and private discussions created by other extensions like FriendsOfFlarum Byobu. This also includes non-comment posts like tag changes or renaming events. The discussion payload is not leaked but using the mention HTML payload it's possible to extract the discussion ID of all posts and combine all posts back together into their original discussions even if the discussion title remains unknown. All Flarum versions prior to 1.6.3 are affected. The vulnerability has been fixed and published as flarum/core v1.6.3. As a workaround, user can disable the mentions extension.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-22487">详情</a></td>
+      </tr>
+
+      <tr>
        <td>93bd8f810954446da0d4c59b86319a2c</td>
        <td>CVE-2023-22952</td>
        <td>2023-01-11 09:15:08 </td>
@@ -2255,6 +2263,38 @@
        <td>2023-01-10 22:15:19 </td>
        <td>3D Builder Remote Code Execution Vulnerability. This CVE ID is unique from CVE-2023-21781, CVE-2023-21782, CVE-2023-21783, CVE-2023-21784, CVE-2023-21785, CVE-2023-21786, CVE-2023-21787, CVE-2023-21788, CVE-2023-21789, CVE-2023-21790, CVE-2023-21791, CVE-2023-21792, CVE-2023-21793.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-21780">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>97977ae802947086e93e6bd4ae5ec3db</td>
+       <td>CVE-2023-21779</td>
+       <td>2023-01-10 22:15:19 </td>
+       <td>Visual Studio Code Remote Code Execution.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-21779">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>935a4b2407648882c3f54b799593475f</td>
+       <td>CVE-2023-21776</td>
+       <td>2023-01-10 22:15:19 </td>
+       <td>Windows Kernel Information Disclosure Vulnerability.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-21776">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1d27b52f5087ce17378535c27a78d685</td>
+       <td>CVE-2023-21774</td>
+       <td>2023-01-10 22:15:19 </td>
+       <td>Windows Kernel Elevation of Privilege Vulnerability. This CVE ID is unique from CVE-2023-21675, CVE-2023-21747, CVE-2023-21748, CVE-2023-21749, CVE-2023-21750, CVE-2023-21754, CVE-2023-21755, CVE-2023-21772, CVE-2023-21773.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-21774">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6b2f5f04c8c29c593974aeb421b984d1</td>
+       <td>CVE-2023-21773</td>
+       <td>2023-01-10 22:15:19 </td>
+       <td>Windows Kernel Elevation of Privilege Vulnerability. This CVE ID is unique from CVE-2023-21675, CVE-2023-21747, CVE-2023-21748, CVE-2023-21749, CVE-2023-21750, CVE-2023-21754, CVE-2023-21755, CVE-2023-21772, CVE-2023-21774.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-21773">详情</a></td>
       </tr>
 
       <tr>
@@ -2391,46 +2431,6 @@
        <td>2023-01-07 22:15:09 </td>
        <td>A vulnerability has been found in SourceCodester Loan Management System and classified as critical. This vulnerability affects unknown code of the file login.php. The manipulation of the argument username leads to sql injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. VDB-205618 is the identifier assigned to this vulnerability.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-2666">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a52cb2758dd59317797e015ec9c7ab7d</td>
-       <td>CVE-2023-22475</td>
-       <td>2023-01-06 15:15:09 </td>
-       <td>Canarytokens is an open source tool which helps track activity and actions on your network. A Cross-Site Scripting vulnerability was identified in the history page of triggered Canarytokens prior to sha-fb61290. An attacker who discovers an HTTP-based Canarytoken (a URL) can use this to execute Javascript in the Canarytoken's trigger history page (domain: canarytokens.org) when the history page is later visited by the Canarytoken's creator. This vulnerability could be used to disable or delete the affected Canarytoken, or view its activation history. It might also be used as a stepping stone towards revealing more information about the Canarytoken's creator to the attacker. For example, an attacker could recover the email address tied to the Canarytoken, or place Javascript on the history page that redirect the creator towards an attacker-controlled Canarytoken to show the creator's network location. This vulnerability is similar to CVE-2022-31113, but affected parameters reported differently from the Canarytoken trigger request. An attacker could only act on the discovered Canarytoken. This issue did not expose other Canarytokens or other Canarytoken creators. Canarytokens Docker images sha-fb61290 and later contain a patch for this issue.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-22475">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>cfe9ff096a6529684244dd9dc9449efc</td>
-       <td>CVE-2022-3929</td>
-       <td>2023-01-05 22:15:09 </td>
-       <td>Communication between the client and the server application of the affected products is partially done using CORBA (Common Object Request Broker Architecture) over TCP/IP. This protocol is not encrypted and allows tracing of internal messages. This issue affects * FOXMAN-UN product: FOXMAN-UN R15B, FOXMAN-UN R15A, FOXMAN-UN R14B, FOXMAN-UN R14A, FOXMAN-UN R11B, FOXMAN-UN R11A, FOXMAN-UN R10C, FOXMAN-UN R9C; * UNEM product: UNEM R15B, UNEM R15A, UNEM R14B, UNEM R14A, UNEM R11B, UNEM R11A, UNEM R10C, UNEM R9C. List of CPEs: * cpe:2.3:a:hitachienergy:foxman-un:R15B:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:foxman-un:R15A:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:foxman-un:R14B:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:foxman-un:R14A:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:foxman-un:R11B:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:foxman-un:R11A:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:foxman-un:R10C:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:foxman-un:R9C:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:unem:R15B:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:unem:R15A:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:unem:R14B:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:unem:R14A:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:unem:R11B:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:unem:R11A:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:unem:R10C:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:unem:R9C:*:*:*:*:*:*:*</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-3929">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>30386ad07277069ee932a107317f74cc</td>
-       <td>CVE-2022-3928</td>
-       <td>2023-01-05 22:15:09 </td>
-       <td>Hardcoded credential is found in affected products' message queue. An attacker that manages to exploit this vulnerability will be able to access data to the internal message queue. This issue affects * FOXMAN-UN product: FOXMAN-UN R15B, FOXMAN-UN R15A, FOXMAN-UN R14B, FOXMAN-UN R14A, FOXMAN-UN R11B, FOXMAN-UN R11A, FOXMAN-UN R10C, FOXMAN-UN R9C; * UNEM product: UNEM R15B, UNEM R15A, UNEM R14B, UNEM R14A, UNEM R11B, UNEM R11A, UNEM R10C, UNEM R9C. List of CPEs: * cpe:2.3:a:hitachienergy:foxman-un:R15B:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:foxman-un:R15A:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:foxman-un:R14B:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:foxman-un:R14A:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:foxman-un:R11B:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:foxman-un:R11A:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:foxman-un:R10C:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:foxman-un:R9C:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:unem:R15B:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:unem:R15A:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:unem:R14B:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:unem:R14A:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:unem:R11B:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:unem:R11A:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:unem:R10C:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:unem:R9C:*:*:*:*:*:*:*</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-3928">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d3bd4c5fc96f9a39da86840c68c583f6</td>
-       <td>CVE-2022-3927</td>
-       <td>2023-01-05 22:15:09 </td>
-       <td>The affected products store both public and private key that are used to sign and protect Custom Parameter Set (CPS) file from modification. An attacker that manages to exploit this vulnerability will be able to change the CPS file, sign it so that it is trusted as the legitimate CPS file. This issue affects * FOXMAN-UN product: FOXMAN-UN R15B, FOXMAN-UN R15A, FOXMAN-UN R14B, FOXMAN-UN R14A, FOXMAN-UN R11B, FOXMAN-UN R11A, FOXMAN-UN R10C, FOXMAN-UN R9C; * UNEM product: UNEM R15B, UNEM R15A, UNEM R14B, UNEM R14A, UNEM R11B, UNEM R11A, UNEM R10C, UNEM R9C. List of CPEs: * cpe:2.3:a:hitachienergy:foxman-un:R15B:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:foxman-un:R15A:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:foxman-un:R14B:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:foxman-un:R14A:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:foxman-un:R11B:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:foxman-un:R11A:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:foxman-un:R10C:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:foxman-un:R9C:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:unem:R15B:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:unem:R15A:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:unem:R14B:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:unem:R14A:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:unem:R11B:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:unem:R11A:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:unem:R10C:*:*:*:*:*:*:* * cpe:2.3:a:hitachienergy:unem:R9C:*:*:*:*:*:*:*</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-3927">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5f113328f2c3715a6fbe048fc8d2f667</td>
-       <td>CVE-2023-22455</td>
-       <td>2023-01-05 21:15:09 </td>
-       <td>Discourse is an option source discussion platform. Prior to version 2.8.14 on the `stable` branch and version 3.0.0.beta16 on the `beta` and `tests-passed` branches, tag descriptions, which can be updated by moderators, can be used for cross-site scripting attacks. This vulnerability can lead to a full XSS on sites which have modified or disabled Discourse&acirc;&euro;&trade;s default Content Security Policy. Versions 2.8.14 and 3.0.0.beta16 contain a patch.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-22455">详情</a></td>
       </tr>
 
      </tbody>
