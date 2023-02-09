@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-02-08 10:10:11 -->
+<!-- RELEASE TIME : 2023-02-09 10:10:10 -->
 <html lang="zh-cn">
 
  <head>
@@ -28,7 +28,7 @@
       <tr>
        <td>e6486742b816640aa8af5fa8d5251384</td>
        <td>CVE-2023-22501</td>
-       <td>2023-02-07 10:28:13 <img src="imgs/new.gif" /></td>
+       <td>2023-02-07 10:28:13</td>
        <td>CVE-2023-22501：Jira 身份验证漏洞通告</td>
        <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=c214a8b1304cadf5b0bc47f6a08e51c1">详情</a></td>
       </tr>
@@ -282,6 +282,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>7bb164b2dde72001655fdcf13538c1e3</td>
+       <td>CVE-2023-25163</td>
+       <td>2023-02-08 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>Argo CD is a declarative, GitOps continuous delivery tool for Kubernetes. All versions of Argo CD starting with v2.6.0-rc1 have an output sanitization bug which leaks repository access credentials in error messages. These error messages are visible to the user, and they are logged. The error message is visible when a user attempts to create or update an Application via the Argo CD API (and therefor the UI or CLI). The user must have `applications, create` or `applications, update` RBAC access to reach the code which may produce the error. The user is not guaranteed to be able to trigger the error message. They may attempt to spam the API with requests to trigger a rate limit error from the upstream repository. If the user has `repositories, update` access, they may edit an existing repository to introduce a URL typo or otherwise force an error message. But if they have that level of access, they are probably intended to have access to the credentials anyway. A patch for this vulnerability has been released in version 2.6.1. Users are advised to upgrade. There are no known workarounds for this vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-25163">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>fd48db21edfa98d3bf7aadde6a7f6d9d</td>
+       <td>CVE-2022-47648</td>
+       <td>2023-02-08 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>Bosch Security Systems B420 firmware 02.02.0001 employs IP based authorization in its authentication mechanism, allowing attackers to access the device as long as they are on the same network as a legitimate user.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-47648">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1dd032663778b9309fb3a6090a4033cc</td>
+       <td>CVE-2022-45982</td>
+       <td>2023-02-08 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>thinkphp 6.0.0~6.0.13 and 6.1.0~6.1.1 contains a deserialization vulnerability. This vulnerability allows attackers to execute arbitrary code via a crafted payload.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45982">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>bd6fbce643259ca20791b9acec35efdf</td>
+       <td>CVE-2022-38778</td>
+       <td>2023-02-08 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>A flaw (CVE-2022-38900) was discovered in one of Kibana’s third party dependencies, that could allow an authenticated user to perform a request that crashes the Kibana server process.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-38778">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5b9adb2b47c31b4609c5fa1fa70ab89d</td>
+       <td>CVE-2022-38777</td>
+       <td>2023-02-08 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>An issue was discovered in the rollback feature of Elastic Endpoint Security for Windows, which could allow unprivileged users to elevate their privileges to those of the LocalSystem account.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-38777">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e4c6eaa965f428a135f04865f0ddf2b1</td>
+       <td>CVE-2023-25167</td>
+       <td>2023-02-08 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>Discourse is an open source discussion platform. In affected versions a malicious user can cause a regular expression denial of service using a carefully crafted git URL. This issue is patched in the latest stable, beta and tests-passed versions of Discourse. Users are advised to upgrade. There are no known workarounds for this issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-25167">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6e116c1e46ef1cb841994f09303aa82a</td>
+       <td>CVE-2023-25166</td>
+       <td>2023-02-08 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>formula is a math and string formula parser. In versions prior to 3.0.1 crafted user-provided strings to formula's parser might lead to polynomial execution time and a denial of service. Users should upgrade to 3.0.1+. There are no known workarounds for this vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-25166">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ab045098b2d00ccbbc89da6ecf3d8640</td>
+       <td>CVE-2023-25165</td>
+       <td>2023-02-08 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>Helm is a tool that streamlines installing and managing Kubernetes applications.`getHostByName` is a Helm template function introduced in Helm v3. The function is able to accept a hostname and return an IP address for that hostname. To get the IP address the function performs a DNS lookup. The DNS lookup happens when used with `helm install|upgrade|template` or when the Helm SDK is used to render a chart. Information passed into the chart can be disclosed to the DNS servers used to lookup the IP address. For example, a malicious chart could inject `getHostByName` into a chart in order to disclose values to a malicious DNS server. The issue has been fixed in Helm 3.11.1. Prior to using a chart with Helm verify the `getHostByName` function is not being used in a template to disclose any information you do not want passed to DNS servers.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-25165">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3f79967c3a3621fda7cb0d99df98ac3f</td>
+       <td>CVE-2023-25164</td>
+       <td>2023-02-08 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>Tinacms is a Git-backed headless content management system with support for visual editing. Sites being built with @tinacms/cli >= 1.0.0 && < 1.0.9 which store sensitive values in the process.env variable are impacted. These values will be added in plaintext to the index.js file. If you're on a version prior to 1.0.0 this vulnerability does not affect you. If you are affected and your Tina-enabled website has sensitive credentials stored as environment variables (eg. Algolia API keys) you should rotate those keys immediately. This issue has been patched in @tinacms/cli@1.0.9. Users are advised to upgrade. There are no known workarounds for this issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-25164">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>29286b44026b3184ca7c889e517cc455</td>
+       <td>CVE-2023-25151</td>
+       <td>2023-02-08 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>opentelemetry-go-contrib is a collection of extensions for OpenTelemetry-Go. The v0.38.0 release of `go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp` uses the `httpconv.ServerRequest` function to annotate metric measurements for the `http.server.request_content_length`, `http.server.response_content_length`, and `http.server.duration` instruments. The `ServerRequest` function sets the `http.target` attribute value to be the whole request URI (including the query string)[^1]. The metric instruments do not "forget" previous measurement attributes when `cumulative` temporality is used, this means the cardinality of the measurements allocated is directly correlated with the unique URIs handled. If the query string is constantly random, this will result in a constant increase in memory allocation that can be used in a denial-of-service attack. This issue has been addressed in version 0.39.0. Users are advised to upgrade. There are no known workarounds for this issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-25151">详情</a></td>
+      </tr>
+
+      <tr>
        <td>1100611d9e4036aaeaa2ced10505cb1d</td>
        <td>CVE-2023-24828</td>
        <td>2023-02-08 00:15:00 <img src="imgs/new.gif" /></td>
@@ -332,7 +412,7 @@
       <tr>
        <td>46c2a256e913cb212da5488e560c6672</td>
        <td>CVE-2023-23026</td>
-       <td>2023-02-07 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-02-07 23:15:00</td>
        <td>Cross site scripting (XSS) vulnerability in sourcecodester oretnom23 sales management system 1.0, allows attackers to execute arbitrary code via the product_name and product_price inputs in file print.php.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-23026">详情</a></td>
       </tr>
@@ -340,7 +420,7 @@
       <tr>
        <td>41f946e59933d8395557b8a686915bd8</td>
        <td>CVE-2023-23011</td>
-       <td>2023-02-07 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-02-07 23:15:00</td>
        <td>Cross Site Scripting (XSS) vulnerability in InvoicePlane 1.6 via filter_product input to file modal_product_lookups.php.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-23011">详情</a></td>
       </tr>
@@ -348,7 +428,7 @@
       <tr>
        <td>353c0c8f09364df73964665ecba3778d</td>
        <td>CVE-2023-0736</td>
-       <td>2023-02-07 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-02-07 23:15:00</td>
        <td>Cross-site Scripting (XSS) - Stored in GitHub repository wallabag/wallabag prior to 2.5.4.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0736">详情</a></td>
       </tr>
@@ -356,7 +436,7 @@
       <tr>
        <td>e8f99868644173b769305d60d27563b0</td>
        <td>CVE-2023-0735</td>
-       <td>2023-02-07 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-02-07 23:15:00</td>
        <td>Cross-Site Request Forgery (CSRF) in GitHub repository wallabag/wallabag prior to 2.5.4.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0735">详情</a></td>
       </tr>
@@ -439,86 +519,6 @@
        <td>2023-02-06 21:15:00</td>
        <td>Nextcloud mail is an email app for the nextcloud home server platform. In affected versions the SMTP, IMAP and Sieve host fields allowed to scan for internal services and servers reachable from within the local network of the Nextcloud Server. It is recommended that the Nextcloud Maill app is upgraded to 1.15.0 or 2.2.2. The only known workaround for this issue is to completely disable the nextcloud mail app.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-23943">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0301cc6c5a526a3ad07594516cc7f7ef</td>
-       <td>CVE-2017-20175</td>
-       <td>2023-02-05 20:15:00</td>
-       <td>A vulnerability classified as problematic has been found in DaSchTour matomo-mediawiki-extension up to 2.4.2. This affects an unknown part of the file Piwik.hooks.php of the component Username Handler. The manipulation leads to cross site scripting. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. Upgrading to version 2.4.3 is able to address this issue. The name of the patch is 681324e4f518a8af4bd1f93867074c728eb9923d. It is recommended to upgrade the affected component. The associated identifier of this vulnerability is VDB-220203.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2017-20175">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9b0c6f64602b75aaaa38455b18191c00</td>
-       <td>CVE-2023-22849</td>
-       <td>2023-02-04 21:15:00</td>
-       <td>An improper neutralization of input during web page generation ('Cross-site Scripting') [CWE-79] vulnerability in Sling App CMS version 1.1.4 and prior may allow an authenticated remote attacker to perform a reflected cross-site scripting (XSS) attack in multiple features. Upgrade to Apache Sling App CMS >= 1.1.6</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-22849">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7f613f09f3b0de58595b5cdb0e666c27</td>
-       <td>CVE-2022-45786</td>
-       <td>2023-02-04 21:15:00</td>
-       <td>There are issues with the AGE drivers for Golang and Python that enable SQL injections to occur. This impacts AGE for PostgreSQL 11 & AGE for PostgreSQL 12, all versions up-to-and-including 1.1.0, when using those drivers. The fix is to update to the latest Golang and Python drivers in addition to the latest version of AGE that is used for PostgreSQL 11 or PostgreSQL 12. The update of AGE will add a new function to enable parameterization of the cypher() function, which, in conjunction with the driver updates, will resolve this issue. Background (for those who want more information): After thoroughly researching this issue, we found that due to the nature of the cypher() function, it was not easy to parameterize the values passed into it. This enabled SQL injections, if the developer of the driver wasn't careful. The developer of the Golang and Pyton drivers didn't fully utilize parameterization, likely because of this, thus enabling SQL injections. The obvious fix to this issue is to use parameterization in the drivers for all PG SQL queries. However, parameterizing all PG queries is complicated by the fact that the cypher() function call itself cannot be parameterized directly, as it isn't a real function. At least, not the parameters that would take the graph name and cypher query. The reason the cypher() function cannot have those values parameterized is because the function is a placeholder and never actually runs. The cypher() function node, created by PG in the query tree, is transformed and replaced with a query tree for the actual cypher query during the analyze phase. The problem is that parameters - that would be passed in and that the cypher() function transform needs to be resolved - are only resolved in the execution phase, which is much later. Since the transform of the cypher() function needs to know the graph name and cypher query prior to execution, they can't be passed as parameters. The fix that we are testing right now, and are proposing to use, is to create a function that will be called prior to the execution of the cypher() function transform. This new function will allow values to be passed as parameters for the graph name and cypher query. As this command will be executed prior to the cypher() function transform, its values will be resolved. These values can then be cached for the immediately following cypher() function transform to use. As added features, the cached values will store the calling session's pid, for validation. And, the cypher() function transform will clear this cached information after function invocation, regardless of whether it was used. This method will allow the parameterizing of the cypher() function indirectly and provide a way to lock out SQL injection attacks.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-45786">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ec4eedd0444fbc85a54b5cb281f2bf58</td>
-       <td>CVE-2023-25193</td>
-       <td>2023-02-04 20:15:00</td>
-       <td>hb-ot-layout-gsubgpos.hh in HarfBuzz through 6.0.0 allows attackers to trigger O(n^2) growth via consecutive marks during the process of looking back for base glyphs when attaching marks.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-25193">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>161c38cee172d2cbecdd226ed8de1e7e</td>
-       <td>CVE-2023-0678</td>
-       <td>2023-02-04 13:15:00</td>
-       <td>Improper Authorization in GitHub repository phpipam/phpipam prior to v1.5.1.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0678">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>07bbc1f50ccce171ff39b7eb0e89d7b3</td>
-       <td>CVE-2023-0677</td>
-       <td>2023-02-04 13:15:00</td>
-       <td>Cross-site Scripting (XSS) - Reflected in GitHub repository phpipam/phpipam prior to v1.5.1.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0677">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a180f95e97ae5a7723936e8153445929</td>
-       <td>CVE-2023-0676</td>
-       <td>2023-02-04 13:15:00</td>
-       <td>Cross-site Scripting (XSS) - Reflected in GitHub repository phpipam/phpipam prior to 1.5.1.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0676">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1d9c2bdd6d689ecfe8b44f9878294d7d</td>
-       <td>CVE-2023-0675</td>
-       <td>2023-02-04 08:15:00</td>
-       <td>A vulnerability, which was classified as critical, was found in Calendar Event Management System 2.3.0. This affects an unknown part. The manipulation of the argument start/end leads to sql injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-220197 was assigned to this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0675">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>18e69f049c8afcee147d833bc1e725c8</td>
-       <td>CVE-2023-0674</td>
-       <td>2023-02-04 08:15:00</td>
-       <td>A vulnerability, which was classified as problematic, has been found in XXL-JOB 2.3.1. Affected by this issue is some unknown functionality of the file /user/updatePwd of the component New Password Handler. The manipulation leads to cross-site request forgery. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-220196.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0674">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1e8c85d30718dfa8d78bfdb5b015c434</td>
-       <td>CVE-2023-0673</td>
-       <td>2023-02-04 08:15:00</td>
-       <td>A vulnerability classified as critical was found in SourceCodester Online Eyewear Shop 1.0. Affected by this vulnerability is an unknown functionality of the file oews/products/view_product.php. The manipulation of the argument id leads to sql injection. The attack can be launched remotely. The associated identifier of this vulnerability is VDB-220195.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-0673">详情</a></td>
       </tr>
 
      </tbody>
@@ -1682,9 +1682,25 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>65412adb8ac6716124f07071c3972f71</td>
+       <td>CVE-2022-41152</td>
+       <td>2023-02-08 20:37:44 <img src="imgs/new.gif" /></td>
+       <td>TRACKER-SOFTWARE PDF-XCHANGE_EDITOR Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=e61b00462af240ec9fdb8b455e04be5a">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>49e30dd465d72abd6bfdbaf39fa0d243</td>
+       <td>CVE-2022-42370</td>
+       <td>2023-02-08 20:37:26 <img src="imgs/new.gif" /></td>
+       <td>TRACKER-SOFTWARE PDF-XCHANGE_EDITOR Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=42fffb2854cd4c78ad22a955c8b75089">详情</a></td>
+      </tr>
+
+      <tr>
        <td>6dbaed71f28efe63ccb6253c857ba8d7</td>
        <td>CVE-2023-24435</td>
-       <td>2023-02-07 20:34:31 <img src="imgs/new.gif" /></td>
+       <td>2023-02-07 20:34:31</td>
        <td>JENKINS GITHUB_PULL_REQUEST_BUILDER Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=6dd157e3e28d46c18aba102350740784">详情</a></td>
       </tr>
@@ -1692,7 +1708,7 @@
       <tr>
        <td>e8f2071e6ba2d984859b79f357345191</td>
        <td>CVE-2023-24494</td>
-       <td>2023-02-07 20:34:06 <img src="imgs/new.gif" /></td>
+       <td>2023-02-07 20:34:06</td>
        <td>TENABLE TENABLE.SC Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=fc46850b134449328d3dc8b74deadc90">详情</a></td>
       </tr>
@@ -1700,7 +1716,7 @@
       <tr>
        <td>44255fd589c4abbdc4d5f2d27f0b00d3</td>
        <td>CVE-2022-44264</td>
-       <td>2023-02-07 20:33:54 <img src="imgs/new.gif" /></td>
+       <td>2023-02-07 20:33:54</td>
        <td>DENTSPLYSIRONA SIDEXIS Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=44702a1b61174e0bac3b565094da559b">详情</a></td>
       </tr>
@@ -1905,22 +1921,6 @@
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=c8aa83035d9a4924a0f4acc880535a26">详情</a></td>
       </tr>
 
-      <tr>
-       <td>80a5a4ce22d248ce48c25dd9d01d45a4</td>
-       <td>CVE-2023-24055</td>
-       <td>2023-02-03 20:26:27</td>
-       <td>KEEPASS KEEPASS Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=aeb6ff75bc9240f883972e722e067ce2">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1819a5266b8723df1b2b5757dba73544</td>
-       <td>CVE-2023-20010</td>
-       <td>2023-02-03 20:26:20</td>
-       <td>CISCO UNIFIED_COMMUNICATIONS_MANAGER Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=5eec33e5c6054d6a9f59f9581fae0a61">详情</a></td>
-      </tr>
-
      </tbody>
     </table>
    </div>
@@ -1937,6 +1937,126 @@
        <th width="43%">TITLE</th>
        <th width="5%">URL</th>
       </tr>
+      <tr>
+       <td>c7b4805b5ec840bdda805e0aead6b577</td>
+       <td>CVE-2022-4144</td>
+       <td>2023-02-08 10:10:03 <img src="imgs/new.gif" /></td>
+       <td>QEMU越界读取漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75431">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>966189820ac72cc336b4f8a1ac27e806</td>
+       <td>CVE-2022-41944</td>
+       <td>2023-02-08 10:10:03 <img src="imgs/new.gif" /></td>
+       <td>Discourse信息泄露漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75430">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1c69ab6b1fa61774b9bc7020240f0e68</td>
+       <td>CVE-2022-32966</td>
+       <td>2023-02-08 10:10:03 <img src="imgs/new.gif" /></td>
+       <td>Realtek RTL8111FP-CG Firmware拒绝服务漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75429">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>320560bda5bf03fb227c4ecea2cf241e</td>
+       <td>CVE-2022-36193</td>
+       <td>2023-02-08 10:10:03 <img src="imgs/new.gif" /></td>
+       <td>School Management System SQL注入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75428">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3d5fdf9a9a3024b9c413777fb8d246c7</td>
+       <td>CVE-2022-28607</td>
+       <td>2023-02-08 10:10:03 <img src="imgs/new.gif" /></td>
+       <td>ISIC信息泄露漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75427">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>459c1e3c32731c4bbf87c61e491208bc</td>
+       <td>CVE-2022-4246</td>
+       <td>2023-02-08 10:10:03 <img src="imgs/new.gif" /></td>
+       <td>Kakao PotPlayer拒绝服务漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75426">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f98fe20c542fd1189639a0c62d4fd7bf</td>
+       <td>CVE-2022-45562</td>
+       <td>2023-02-08 10:10:03 <img src="imgs/new.gif" /></td>
+       <td>Telos Alliance Omnia MPX Node默认权限错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75425">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b1f133a717e95feec51776f8f63e6e70</td>
+       <td>CVE-2022-42705</td>
+       <td>2023-02-08 10:10:03 <img src="imgs/new.gif" /></td>
+       <td>Asterisk内存错误引用漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75424">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>cd600acf54c061690a05766ca6fc628f</td>
+       <td>CVE-2022-41910</td>
+       <td>2023-02-08 10:10:03 <img src="imgs/new.gif" /></td>
+       <td>Google TensorFlow越界读取漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75423">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a917a7a09d0186b45ceee0037ba45115</td>
+       <td>CVE-2022-34881</td>
+       <td>2023-02-08 10:10:03 <img src="imgs/new.gif" /></td>
+       <td>Hitachi JP1/Automatic Operation信息泄露漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75422">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b71646bbab579e35ce972dfa5707df2b</td>
+       <td>CVE-2022-38337</td>
+       <td>2023-02-08 10:10:03 <img src="imgs/new.gif" /></td>
+       <td>Mobatek MobaXterm硬编码凭据漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75421">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0887476457c3adf7479e70abbc83024e</td>
+       <td>CVE-2022-46169</td>
+       <td>2023-02-08 10:10:03 <img src="imgs/new.gif" /></td>
+       <td>Cacti命令注入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75420">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>54b3510efc3fc3046cbe2e71ec8d3214</td>
+       <td>CVE-2022-46742</td>
+       <td>2023-02-08 10:10:03 <img src="imgs/new.gif" /></td>
+       <td>PaddlePaddle代码注入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75419">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d3b6d16bfea2917a929f2acf4cd1b405</td>
+       <td>CVE-2022-44620</td>
+       <td>2023-02-08 10:10:03 <img src="imgs/new.gif" /></td>
+       <td>UNIMO Technology UDR-JA1604/UDR-JA1608/UDR-JA1616身份验证错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75418">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>857775222af18f67df200fab5c8cd1d0</td>
+       <td>CVE-2022-45217</td>
+       <td>2023-02-08 10:10:03 <img src="imgs/new.gif" /></td>
+       <td>Book Store Management System跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75417">详情</a></td>
+      </tr>
+
       <tr>
        <td>3dc73be966dde10a3d62d695c8c77d71</td>
        <td>CVE-2022-41661</td>
@@ -2057,126 +2177,6 @@
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75315">详情</a></td>
       </tr>
 
-      <tr>
-       <td>41c49874e48d1021809f3105658d5bf1</td>
-       <td>CVE-2022-42409</td>
-       <td>2023-01-31 10:10:02</td>
-       <td>PDF-XChange Editor越界读取漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75274">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f44ef80eb6f1cbd07d5317d0a4b9864e</td>
-       <td>CVE-2022-42410</td>
-       <td>2023-01-31 10:10:02</td>
-       <td>PDF-XChange Editor越界写入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75273">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>cfc0c9550d223c21b288adf272ba5e95</td>
-       <td>CVE-2022-42411</td>
-       <td>2023-01-31 10:10:02</td>
-       <td>PDF-XChange Editor越界读取漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75272">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a6fd10b828c40177cecf4e654fdc9d07</td>
-       <td>CVE-2022-42412</td>
-       <td>2023-01-31 10:10:02</td>
-       <td>PDF-XChange Editor越界读取漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75271">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f31918e979171d2741a84c93f3be4867</td>
-       <td>CVE-2022-42413</td>
-       <td>2023-01-31 10:10:02</td>
-       <td>PDF-XChange Editor越界读取漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75270">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>db82af42fe4fb934b7fe905c204b345b</td>
-       <td>CVE-2022-42414</td>
-       <td>2023-01-31 10:10:02</td>
-       <td>PDF-XChange Editor信息泄露漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75269">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>46676e2a3c9083c69fce0a8196ad6f18</td>
-       <td>CVE-2022-42415</td>
-       <td>2023-01-31 10:10:02</td>
-       <td>PDF-XChange Editor越界写入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75268">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4f3a62627b0e22994993aba8436fc49a</td>
-       <td>CVE-2022-42416</td>
-       <td>2023-01-31 10:10:02</td>
-       <td>PDF-XChange Editor越界写入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75267">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>521ba1740ce12dff08a330f48b28d5a0</td>
-       <td>CVE-2022-42417</td>
-       <td>2023-01-31 10:10:02</td>
-       <td>PDF-XChange Editor越界读取漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75266">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4523180d9aa01de1638403c75ff7323f</td>
-       <td>CVE-2022-42418</td>
-       <td>2023-01-31 10:10:02</td>
-       <td>PDF-XChange Editor空指针解引用漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75265">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>39db7708b1adc5cec9b938f100aad1ca</td>
-       <td>CVE-2022-42419</td>
-       <td>2023-01-31 10:10:02</td>
-       <td>PDF-XChange Editor越界写入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75264">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>be944c4891d9becdcf3aab4991188f01</td>
-       <td>CVE-2022-42420</td>
-       <td>2023-01-31 10:10:02</td>
-       <td>PDF-XChange Editor越界写入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75263">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8866faf5fdd3ba6640736d39605fb1a0</td>
-       <td>CVE-2022-42421</td>
-       <td>2023-01-31 10:10:02</td>
-       <td>PDF-XChange Editor越界写入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75262">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>588237ee4d81f6107855e995ebda91f1</td>
-       <td>CVE-2022-42407</td>
-       <td>2023-01-31 10:10:02</td>
-       <td>PDF-XChange Editor越界读取漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75261">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f99a159acda51faa60dd6f3df788d291</td>
-       <td>CVE-2022-42406</td>
-       <td>2023-01-31 10:10:02</td>
-       <td>PDF-XChange Editor越界读取漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/75260">详情</a></td>
-      </tr>
-
      </tbody>
     </table>
    </div>
@@ -2194,11 +2194,75 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>bc1db3006872ca566b2571a362c2e295</td>
+       <td>CVE-2022-47717</td>
+       <td>2023-02-01 14:15:09 </td>
+       <td>Last Yard 22.09.8-1 is vulnerable to Cross-origin resource sharing (CORS).</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-47717">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5053d5cbda941f501d7e7d2214861626</td>
+       <td>CVE-2022-47715</td>
+       <td>2023-02-01 14:15:09 </td>
+       <td>In Last Yard 22.09.8-1, the cookie can be stolen via via unencrypted traffic.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-47715">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b341832bfc45558e663538da58c3aaa0</td>
+       <td>CVE-2022-47714</td>
+       <td>2023-02-01 14:15:08 </td>
+       <td>Last Yard 22.09.8-1 does not enforce HSTS headers</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-47714">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5bc0f59abf6599aa30ac9203965624f9</td>
+       <td>CVE-2022-47701</td>
+       <td>2023-01-31 18:15:09 </td>
+       <td>COMFAST (Shenzhen Sihai Zhonglian Network Technology Co., Ltd) CF-WR623N Router firmware V2.3.0.1 is vulnerable to Cross Site Scripting (XSS).</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-47701">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>cf690d93843d380c8a2e8636806d3b67</td>
+       <td>CVE-2022-47700</td>
+       <td>2023-01-31 18:15:09 </td>
+       <td>COMFAST (Shenzhen Sihai Zhonglian Network Technology Co., Ltd) CF-WR623N Router firmware V2.3.0.1 and before is vulnerable to Incorrect Access Control. Improper authentication allows requests to be made to back-end scripts without a valid session or authentication.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-47700">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a64d85abc721bea8846310d0b1290a11</td>
+       <td>CVE-2022-47699</td>
+       <td>2023-01-31 18:15:09 </td>
+       <td>COMFAST (Shenzhen Sihai Zhonglian Network Technology Co., Ltd) CF-WR623N Router firmware V2.3.0.1 is vulnerable to Incorrect Access Control.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-47699">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>24083858569956ec08048cbe1470c46e</td>
+       <td>CVE-2022-47698</td>
+       <td>2023-01-31 18:15:09 </td>
+       <td>COMFAST (Shenzhen Sihai Zhonglian Network Technology Co., Ltd) CF-WR623N Router firmware V2.3.0.1 is vulnerable to Cross Site Scripting (XSS) via the URL filtering feature in the router.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-47698">详情</a></td>
+      </tr>
+
+      <tr>
        <td>ea5d006b3ec03b48de793167360250e2</td>
        <td>CVE-2022-4041</td>
        <td>2023-01-31 02:15:08 </td>
        <td>Incorrect Privilege Assignment vulnerability in Hitachi Storage Plug-in for VMware vCenter allows remote authenticated users to cause privilege escalation. This issue affects Hitachi Storage Plug-in for VMware vCenter: from 04.8.0 before 04.9.1.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-4041">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2a52167eb1efd145fd49b528d240dde9</td>
+       <td>CVE-2022-4776</td>
+       <td>2023-01-30 21:15:12 </td>
+       <td>The CC Child Pages WordPress plugin before 1.43 does not validate and escape some of its shortcode attributes before outputting them back in the page, which could allow users with a role as low as contributor to perform Stored Cross-Site Scripting attacks which could be used against high privilege users such as admins.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-4776">详情</a></td>
       </tr>
 
       <tr>
@@ -2215,6 +2279,14 @@
        <td>2023-01-26 22:15:15 </td>
        <td>A directory traversal vulnerability exists in the httpd delfile.cgi functionality of Siretta QUARTZ-GOLD G5.0.1.5-210720-141020. A specially-crafted HTTP request can lead to arbitrary file deletion. An attacker can send an HTTP request to trigger this vulnerability.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-40701">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f4e09eee5b66c067410622055e66eba0</td>
+       <td>CVE-2022-47767</td>
+       <td>2023-01-26 21:18:05 </td>
+       <td>A backdoor in Solar-Log Gateway products allows remote access via web panel gaining super administration privileges to the attacker. This affects all Solar-Log devices that use firmware version v4.2.7 up to v5.1.1 (included).</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-47767">详情</a></td>
       </tr>
 
       <tr>
@@ -2314,6 +2386,14 @@
       </tr>
 
       <tr>
+       <td>10dfa3616e033e8252f32f4280a0ff2b</td>
+       <td>CVE-2022-47732</td>
+       <td>2023-01-20 17:15:10 </td>
+       <td>In Yeastar N412 and N824 Configuration Panel 42.x and 45.x, an unauthenticated attacker can create backup file and download it, revealing admin hash, allowing, once cracked, to login inside the Configuration Panel, otherwise, replacing the hash in the archive and restoring it on the device which will change admin password granting access to the device.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-47732">详情</a></td>
+      </tr>
+
+      <tr>
        <td>d749dce893997306fc5a3e6f19870641</td>
        <td>CVE-2021-27782</td>
        <td>2023-01-20 07:15:10 </td>
@@ -2351,86 +2431,6 @@
        <td>2023-01-18 16:15:11 </td>
        <td>It is possible to manipulate the JWT token without the knowledge of the JWT secret and authenticate without valid JWT token as any user. This is happening only in the situation when zOSMF doesn&acirc;&euro;&trade;t have the APAR PH12143 applied. This issue affects: 1.16 versions to 1.19. What happens is that the services using the ZAAS client or the API ML API to query will be deceived into believing the information in the JWT token is valid when it isn&acirc;&euro;&trade;t. It&acirc;&euro;&trade;s possible to use this to persuade the southbound service that different user is authenticated.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2021-4314">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d3f7592c5b291eb70e8e54de82a9dfed</td>
-       <td>CVE-2022-47881</td>
-       <td>2023-01-18 15:15:11 </td>
-       <td>Foxit PDF Reader and PDF Editor 11.2.1.53537 and earlier has an Out-of-Bounds Read vulnerability.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-47881">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>887398007092c888c7e8ba9344afb43b</td>
-       <td>CVE-2023-21860</td>
-       <td>2023-01-18 01:15:13 </td>
-       <td>Vulnerability in the MySQL Cluster product of Oracle MySQL (component: Cluster: Internal Operations).  Supported versions that are affected are 7.4.38 and prior, 7.5.28 and prior, 7.6.24 and prior and  8.0.31 and prior. Difficult to exploit vulnerability allows high privileged attacker with access to the physical communication segment attached to the hardware where the MySQL Cluster executes to compromise MySQL Cluster.  Successful attacks require human interaction from a person other than the attacker. Successful attacks of this vulnerability can result in takeover of MySQL Cluster. CVSS 3.1 Base Score 6.3 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:A/AC:H/PR:H/UI:R/S:U/C:H/I:H/A:H).</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-21860">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>17ce06e2336e8cf4ce977a83a77bc118</td>
-       <td>CVE-2022-47917</td>
-       <td>2023-01-18 01:15:13 </td>
-       <td>Sewio&acirc;&euro;&trade;s Real-Time Location System (RTLS) Studio version 2.0.0 up to and including version 2.6.2 is vulnerable to improper input validation of user input to several modules and services of the software. This could allow an attacker to delete arbitrary files and cause a denial-of-service condition.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-47917">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>dd98224720015275874e1c84722859d4</td>
-       <td>CVE-2022-47911</td>
-       <td>2023-01-18 01:15:13 </td>
-       <td>Sewio&acirc;&euro;&trade;s Real-Time Location System (RTLS) Studio version 2.0.0 up to and including version 2.6.2 does not properly validate the input module name to the backup services of the software. This could allow a remote attacker to access sensitive functions of the application and execute arbitrary system commands.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-47911">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>43255280b8660a455823d82414d89a43</td>
-       <td>CVE-2023-21865</td>
-       <td>2023-01-18 00:15:15 </td>
-       <td>Vulnerability in the MySQL Server product of Oracle MySQL (component: Server: Optimizer).  Supported versions that are affected are 8.0.30 and prior. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server.  Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server. CVSS 3.1 Base Score 4.9 (Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H).</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-21865">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e2c33884cbd1d3b79bdba3b073da9491</td>
-       <td>CVE-2023-21864</td>
-       <td>2023-01-18 00:15:15 </td>
-       <td>Vulnerability in the MySQL Server product of Oracle MySQL (component: Server: Optimizer).  Supported versions that are affected are 8.0.30 and prior. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server.  Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server. CVSS 3.1 Base Score 4.9 (Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H).</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-21864">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>fcf275064e28258bdda0698bf617d7c2</td>
-       <td>CVE-2023-21863</td>
-       <td>2023-01-18 00:15:14 </td>
-       <td>Vulnerability in the MySQL Server product of Oracle MySQL (component: Server: Optimizer).  Supported versions that are affected are 8.0.31 and prior. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server.  Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server. CVSS 3.1 Base Score 4.9 (Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H).</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-21863">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6f294965b21509ee810c157ff9e097c7</td>
-       <td>CVE-2023-21862</td>
-       <td>2023-01-18 00:15:14 </td>
-       <td>Vulnerability in the Oracle Web Services Manager product of Oracle Fusion Middleware (component: XML Security component).   The supported version that is affected is 12.2.1.4.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Web Services Manager.  Successful attacks require human interaction from a person other than the attacker. Successful attacks of this vulnerability can result in  unauthorized creation, deletion or modification access to critical data or all Oracle Web Services Manager accessible data as well as  unauthorized access to critical data or complete access to all Oracle Web Services Manager accessible data. CVSS 3.1 Base Score 8.1 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N).</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-21862">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>bb524023b5cc99dd207210dad3f35fb3</td>
-       <td>CVE-2023-21861</td>
-       <td>2023-01-18 00:15:14 </td>
-       <td>Vulnerability in the Oracle Business Intelligence Enterprise Edition product of Oracle Fusion Middleware (component: Visual Analyzer).  Supported versions that are affected are 5.9.0.0.0 and  6.4.0.0.0. Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Business Intelligence Enterprise Edition.  Successful attacks require human interaction from a person other than the attacker and while the vulnerability is in Oracle Business Intelligence Enterprise Edition, attacks may significantly impact additional products (scope change). Successful attacks of this vulnerability can result in  unauthorized update, insert or delete access to some of Oracle Business Intelligence Enterprise Edition accessible data as well as  unauthorized read access to a subset of Oracle Business Intelligence Enterprise Edition accessible data. CVSS 3.1 Base Score 5.4 (Confidentiality and Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N).</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-21861">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a2177708fbd8b42a7f93142f3caada49</td>
-       <td>CVE-2023-21859</td>
-       <td>2023-01-18 00:15:14 </td>
-       <td>Vulnerability in the Oracle Access Manager product of Oracle Fusion Middleware (component: Authentication Engine).   The supported version that is affected is 12.2.1.4.0. Easily exploitable vulnerability allows high privileged attacker with logon to the infrastructure where Oracle Access Manager executes to compromise Oracle Access Manager.  Successful attacks of this vulnerability can result in  unauthorized access to critical data or complete access to all Oracle Access Manager accessible data. CVSS 3.1 Base Score 4.4 (Confidentiality impacts).  CVSS Vector: (CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:N/A:N).</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-21859">详情</a></td>
       </tr>
 
      </tbody>
