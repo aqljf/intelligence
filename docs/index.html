@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-03-04 10:10:11 -->
+<!-- RELEASE TIME : 2023-03-05 10:10:12 -->
 <html lang="zh-cn">
 
  <head>
@@ -28,7 +28,7 @@
       <tr>
        <td>98a5b68d96d5541e9781ff32ec966a13</td>
        <td>CVE-2023-0050</td>
-       <td>2023-03-03 15:22:27 <img src="imgs/new.gif" /></td>
+       <td>2023-03-03 15:22:27</td>
        <td>CVE-2023-0050：GitLab跨站脚本漏洞通告</td>
        <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=316b9c8cdd3c18911976bc3f9f0fbe52">详情</a></td>
       </tr>
@@ -282,6 +282,70 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>59979216db1b94d7429eb98e2baa8be7</td>
+       <td>CVE-2014-125091</td>
+       <td>2023-03-04 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability has been found in codepeople cp-polls Plugin 1.0.1 and classified as critical. This vulnerability affects unknown code of the file cp-admin-int-message-list.inc.php. The manipulation of the argument lu leads to sql injection. The attack can be initiated remotely. Upgrading to version 1.0.2 is able to address this issue. The name of the patch is 6d7168cbf12d1c183bacc5cd5678f6f5b0d518d2. It is recommended to upgrade the affected component. The identifier of this vulnerability is VDB-222268.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2014-125091">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>462291eae3d32996f318fa32c58e0f5b</td>
+       <td>CVE-2014-125090</td>
+       <td>2023-03-04 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability was found in Media Downloader Plugin 0.1.992. It has been declared as problematic. This vulnerability affects the function dl_file_resumable of the file getfile.php. The manipulation of the argument file leads to cross site scripting. The attack can be initiated remotely. Upgrading to version 0.1.993 is able to address this issue. The name of the patch is 77beb720c682b9300035ab5f96eee225181d8a92. It is recommended to upgrade the affected component. VDB-222262 is the identifier assigned to this vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2014-125090">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>cb9ca74c9e494fa6f00beb1f79568774</td>
+       <td>CVE-2020-36665</td>
+       <td>2023-03-04 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability was found in Artesãos SEOTools up to 0.17.1 and classified as critical. This issue affects the function eachValue of the file TwitterCards.php. The manipulation of the argument value leads to open redirect. Upgrading to version 0.17.2 is able to address this issue. The name of the patch is ca27cd0edf917e0bc805227013859b8b5a1f01fb. It is recommended to upgrade the affected component. The identifier VDB-222233 was assigned to this vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2020-36665">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7db001c5bce658893880dd515d563b29</td>
+       <td>CVE-2020-36664</td>
+       <td>2023-03-04 17:15:00 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability has been found in Artesãos SEOTools up to 0.17.1 and classified as problematic. This vulnerability affects the function setTitle of the file SEOMeta.php. The manipulation of the argument title leads to open redirect. Upgrading to version 0.17.2 is able to address this issue. The name of the patch is ca27cd0edf917e0bc805227013859b8b5a1f01fb. It is recommended to upgrade the affected component. The identifier of this vulnerability is VDB-222232.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2020-36664">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>369d01d9a5495ab8def198beec03c7b8</td>
+       <td>CVE-2023-1175</td>
+       <td>2023-03-04 16:15:00 <img src="imgs/new.gif" /></td>
+       <td>Incorrect Calculation of Buffer Size in GitHub repository vim/vim prior to 9.0.1378.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-1175">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c8b9ded3c39c34b89f992f28ac64ccd0</td>
+       <td>CVE-2020-36663</td>
+       <td>2023-03-04 07:15:00 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability, which was classified as problematic, was found in Artesãos SEOTools up to 0.17.1. This affects the function makeTag of the file OpenGraph.php. The manipulation of the argument value leads to open redirect. Upgrading to version 0.17.2 is able to address this issue. The name of the patch is ca27cd0edf917e0bc805227013859b8b5a1f01fb. It is recommended to upgrade the affected component. The associated identifier of this vulnerability is VDB-222231.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2020-36663">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0324555706fa009c70dc19ece3ae6935</td>
+       <td>CVE-2023-26481</td>
+       <td>2023-03-04 01:15:00 <img src="imgs/new.gif" /></td>
+       <td>authentik is an open-source Identity Provider. Due to an insufficient access check, a recovery flow link that is created by an admin (or sent via email by an admin) can be used to set the password for any arbitrary user. This attack is only possible if a recovery flow exists, which has both an Identification and an Email stage bound to it. If the flow has policies on the identification stage to skip it when the flow is restored (by checking `request.context['is_restored']`), the flow is not affected by this. With this flow in place, an administrator must create a recovery Link or send a recovery URL to the attacker, who can, due to the improper validation of the token create, set the password for any account. Regardless, for custom recovery flows it is recommended to add a policy that checks if the flow is restored, and skips the identification stage. This issue has been fixed in versions 2023.2.3, 2023.1.3 and 2022.12.2.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-26481">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1fb7a49018ab86d4af6968dc371b57f5</td>
+       <td>CVE-2023-25819</td>
+       <td>2023-03-04 01:15:00 <img src="imgs/new.gif" /></td>
+       <td>Discourse is an open source platform for community discussion. Tags that are normally private are showing in metadata. This affects any site running the `tests-passed` or `beta` branches >= 3.1.0.beta2. The issue is patched in the latest `beta` and `tests-passed` version of Discourse.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-25819">详情</a></td>
+      </tr>
+
+      <tr>
        <td>3120e77b32a8bc6cf297e96d7c1ccd5a</td>
        <td>CVE-2023-26490</td>
        <td>2023-03-04 00:15:00 <img src="imgs/new.gif" /></td>
@@ -324,7 +388,7 @@
       <tr>
        <td>5bbebfa3d0a528f8d36cec6b018455b3</td>
        <td>CVE-2023-27290</td>
-       <td>2023-03-03 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-03-03 23:15:00</td>
        <td>Docker based datastores for IBM Instana (IBM Observability with Instana 239-0 through 239-2, 241-0 through 241-2, and 243-0) do not currently require authentication. Due to this, an attacker within the network could access the datastores with read/write access. IBM X-Force ID: 248737.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-27290">详情</a></td>
       </tr>
@@ -332,7 +396,7 @@
       <tr>
        <td>dab5e3eaa841da9e55f1319daa411ede</td>
        <td>CVE-2023-26779</td>
-       <td>2023-03-03 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-03-03 23:15:00</td>
        <td>CleverStupidDog yf-exam v 1.8.0 is vulnerable to Deserialization which can lead to remote code execution (RCE).</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-26779">详情</a></td>
       </tr>
@@ -340,7 +404,7 @@
       <tr>
        <td>6f518f9c5ee2980b59ffd6265dec9c85</td>
        <td>CVE-2023-26491</td>
-       <td>2023-03-03 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-03-03 23:15:00</td>
        <td>RSSHub is an open source and extensible RSS feed generator. When the URL parameters contain certain special characters, it returns an error page that does not properly handle XSS vulnerabilities, allowing for the execution of arbitrary JavaScript code. Users who access the deliberately constructed URL are affected. This vulnerability was fixed in version c910c4d28717fb860fbe064736641f379fab2c91. Please upgrade to this or a later version, there are no known workarounds.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-26491">详情</a></td>
       </tr>
@@ -348,7 +412,7 @@
       <tr>
        <td>7fcd20c9a311ca3f342fdf1ece4e9b6b</td>
        <td>CVE-2023-26483</td>
-       <td>2023-03-03 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-03-03 23:15:00</td>
        <td>gosaml2 is a Pure Go implementation of SAML 2.0. SAML Service Providers using this library for SAML authentication support are likely susceptible to Denial of Service attacks. A bug in this library enables attackers to craft a `deflate`-compressed request which will consume significantly more memory during processing than the size of the original request. This may eventually lead to memory exhaustion and the process being killed. The maximum compression ratio achievable with `deflate` is 1032:1, so by limiting the size of bodies passed to gosaml2, limiting the rate and concurrency of calls, and ensuring that lots of memory is available to the process it _may_ be possible to help Go's garbage collector "keep up". Implementors are encouraged not to rely on this. This issue is fixed in version 0.9.0.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-26483">详情</a></td>
       </tr>
@@ -356,7 +420,7 @@
       <tr>
        <td>cfdc403b6ab02522da18345c3cf4d324</td>
        <td>CVE-2023-26047</td>
-       <td>2023-03-03 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-03-03 23:15:00</td>
        <td>teler-waf is a Go HTTP middleware that provides teler IDS functionality to protect against web-based attacks. In teler-waf prior to version v0.2.0 is vulnerable to a bypass attack when a specific case-sensitive hex entities payload with special characters such as CR/LF and horizontal tab is used. This vulnerability allows an attacker to execute arbitrary JavaScript code on the victim's browser and compromise the security of the web application. An attacker can exploit this vulnerability to bypass common web attack threat rules in teler-waf and launch cross-site scripting (XSS) attacks. The attacker can execute arbitrary JavaScript code on the victim's browser and steal sensitive information, such as login credentials and session tokens, or take control of the victim's browser and perform malicious actions. This issue has been patched in version 0.2.0.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-26047">详情</a></td>
       </tr>
@@ -455,70 +519,6 @@
        <td>2023-03-01 22:15:00</td>
        <td>IBM Financial Transaction Manager 3.2.0 through 3.2.7 could allow a remote attacker to traverse directories on the system. An attacker could send a specially-crafted URL request containing "dot dot" sequences (/../) to view arbitrary files on the system. IBM X-Force ID: 192953.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2020-5001">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>91615360c91f92107ff864ab40b92068</td>
-       <td>CVE-2023-24127</td>
-       <td>2023-03-01 21:15:00</td>
-       <td>Jensen of Scandinavia Eagle 1200AC V15.03.06.33_en was discovered to contain a stack overflow via the wepkey1 parameter at /goform/WifiBasicSet.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-24127">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>bce65f6c94419c0f3f81e0506e7764f1</td>
-       <td>CVE-2023-24126</td>
-       <td>2023-03-01 21:15:00</td>
-       <td>Jensen of Scandinavia Eagle 1200AC V15.03.06.33_en was discovered to contain a stack overflow via the wepkey4_5g parameter at /goform/WifiBasicSet.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-24126">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f62564338a6797264b782827ee838d84</td>
-       <td>CVE-2023-24125</td>
-       <td>2023-03-01 21:15:00</td>
-       <td>Jensen of Scandinavia Eagle 1200AC V15.03.06.33_en was discovered to contain a stack overflow via the wepkey2_5g parameter at /goform/WifiBasicSet.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-24125">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>87d8a495f8af72219843b74b6d705652</td>
-       <td>CVE-2023-24124</td>
-       <td>2023-03-01 21:15:00</td>
-       <td>Jensen of Scandinavia Eagle 1200AC V15.03.06.33_en was discovered to contain a stack overflow via the wrlEn parameter at /goform/WifiBasicSet.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-24124">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3cf42708c482c0b4e3e74f05caa1c3f8</td>
-       <td>CVE-2023-24123</td>
-       <td>2023-03-01 21:15:00</td>
-       <td>Jensen of Scandinavia Eagle 1200AC V15.03.06.33_en was discovered to contain a stack overflow via the wepauth parameter at /goform/WifiBasicSet.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-24123">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>bb148672479e590912641bd0925ba01b</td>
-       <td>CVE-2023-24122</td>
-       <td>2023-03-01 21:15:00</td>
-       <td>Jensen of Scandinavia Eagle 1200AC V15.03.06.33_en was discovered to contain a stack overflow via the ssid_5g parameter at /goform/WifiBasicSet.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-24122">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6cf75654c564ddc7d8b447c0080d806d</td>
-       <td>CVE-2023-24121</td>
-       <td>2023-03-01 21:15:00</td>
-       <td>Jensen of Scandinavia Eagle 1200AC V15.03.06.33_en was discovered to contain a stack overflow via the security_5g parameter at /goform/WifiBasicSet.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-24121">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e4eac5c16ca942e9475597ba456122df</td>
-       <td>CVE-2023-24120</td>
-       <td>2023-03-01 21:15:00</td>
-       <td>Jensen of Scandinavia Eagle 1200AC V15.03.06.33_en was discovered to contain a stack overflow via the wrlEn_5g parameter at /goform/WifiBasicSet.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-24120">详情</a></td>
       </tr>
 
      </tbody>
@@ -1682,9 +1682,57 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>5f22433810b4e6b8f85ce8ed843376e9</td>
+       <td>CVE-2023-0928</td>
+       <td>2023-03-04 20:38:01 <img src="imgs/new.gif" /></td>
+       <td>GOOGLE CHROME Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=a2607d69244d46bc9ce09cfc86bbbb03">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9158b997af9d57f259e60ec11eff43fb</td>
+       <td>CVE-2023-24329</td>
+       <td>2023-03-04 20:37:41 <img src="imgs/new.gif" /></td>
+       <td>PYTHON PYTHON Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=eeb8c1f25a384dc5add462d0510af2d3">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>41a2a4dc49db04f3595d22965fe34594</td>
+       <td>CVE-2022-41734</td>
+       <td>2023-03-04 20:37:29 <img src="imgs/new.gif" /></td>
+       <td>IBM Multiple product Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=34d65a85b17a46ed96dd98bb9ae9b20f">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>37784cb582841cf8e673f1c3f5fbc46d</td>
+       <td>CVE-2023-0941</td>
+       <td>2023-03-04 20:37:23 <img src="imgs/new.gif" /></td>
+       <td>GOOGLE CHROME Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=557b39e6348c4feb9e3edcbc02128228">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>72eab42754b0564f630ebcdb41aaef4c</td>
+       <td>CVE-2022-40231</td>
+       <td>2023-03-04 20:37:16 <img src="imgs/new.gif" /></td>
+       <td>IBM STERLING_B2B_INTEGRATOR Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=10fd8e7bb3594c11bafdc7098216e5ec">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1e5f9711ca86d22836734f37e6bde050</td>
+       <td>CVE-2023-0482</td>
+       <td>2023-03-04 20:37:03 <img src="imgs/new.gif" /></td>
+       <td>REDHAT RESTEASY Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=fd66a42ba8144a8482316bdf03a72015">详情</a></td>
+      </tr>
+
+      <tr>
        <td>067a144a1277fd836f8acd7acc356f57</td>
        <td>CVE-2022-48328</td>
-       <td>2023-03-03 20:42:56 <img src="imgs/new.gif" /></td>
+       <td>2023-03-03 20:42:56</td>
        <td>MISP MISP Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=109bfe1f4fa44d9d9749ebbdc874670d">详情</a></td>
       </tr>
@@ -1692,7 +1740,7 @@
       <tr>
        <td>49fb3a5c72420f80435d66bcb01becda</td>
        <td>CVE-2023-1067</td>
-       <td>2023-03-03 20:42:50 <img src="imgs/new.gif" /></td>
+       <td>2023-03-03 20:42:50</td>
        <td>PIMCORE PIMCORE Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=f80abb64b6e44f2f827fe37e94ef8312">详情</a></td>
       </tr>
@@ -1700,7 +1748,7 @@
       <tr>
        <td>b9cc0e6c945233db906ec4c11e909632</td>
        <td>CVE-2021-32441</td>
-       <td>2023-03-03 20:42:31 <img src="imgs/new.gif" /></td>
+       <td>2023-03-03 20:42:31</td>
        <td>EXPONENTCMS EXPONENT_CMS Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=cd7934e98a6c44fdb462013df42c2829">详情</a></td>
       </tr>
@@ -1708,7 +1756,7 @@
       <tr>
        <td>e8462bfc53ab7f63c20e0c5758bf4333</td>
        <td>CVE-2021-33950</td>
-       <td>2023-03-03 20:42:18 <img src="imgs/new.gif" /></td>
+       <td>2023-03-03 20:42:18</td>
        <td>OPENKM OPENKM Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=39c6ab05a32247289d0544f27a7a362f">详情</a></td>
       </tr>
@@ -1716,7 +1764,7 @@
       <tr>
        <td>ac5bdd33811f69aa99cef8613f429f1d</td>
        <td>CVE-2020-19824</td>
-       <td>2023-03-03 20:42:11 <img src="imgs/new.gif" /></td>
+       <td>2023-03-03 20:42:11</td>
        <td>MPV MPV Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=4cf46f2f0af3492f885b1bb6d6c54061">详情</a></td>
       </tr>
@@ -1724,7 +1772,7 @@
       <tr>
        <td>01ed1ebad6a429dec3dffffa656bb84d</td>
        <td>CVE-2022-20803</td>
-       <td>2023-03-03 20:42:05 <img src="imgs/new.gif" /></td>
+       <td>2023-03-03 20:42:05</td>
        <td>ClamAV 资源管理错误漏洞</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=cc4557c469d24dab85f472ce4bc4b4c4">详情</a></td>
       </tr>
@@ -1732,7 +1780,7 @@
       <tr>
        <td>a9a867061e7b571bbdead05f69b1edb6</td>
        <td>CVE-2021-33391</td>
-       <td>2023-03-03 20:41:59 <img src="imgs/new.gif" /></td>
+       <td>2023-03-03 20:41:59</td>
        <td>HTACG TIDY Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=818e0b4a495b4b508df18933fe780305">详情</a></td>
       </tr>
@@ -1871,54 +1919,6 @@
        <td>2023-02-28 20:26:06</td>
        <td>SPLUNK Multiple product Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=b09c19a6fcd2451d9706eee80f98426e">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ce688529cc6859574d13450821b746c6</td>
-       <td>CVE-2023-22935</td>
-       <td>2023-02-28 20:26:00</td>
-       <td>SPLUNK Multiple product Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=bb03059d08d0484997f5a8f72a8f30ad">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5bf6e2c8dda574b40325ddc6a2261d31</td>
-       <td>CVE-2023-22939</td>
-       <td>2023-02-28 20:25:41</td>
-       <td>SPLUNK Multiple product Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=b3ea9b890f234be08fdb1e0e18c8cff9">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>856cc2501ae7a800aa151058fb1a6d61</td>
-       <td>CVE-2022-43929</td>
-       <td>2023-02-27 20:32:51</td>
-       <td>IBM DB2 Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=f1b170fce64f468cb891f241ccd66751">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d8ff0fcbaf5cc6d31127a96560fedcc4</td>
-       <td>CVE-2023-21575</td>
-       <td>2023-02-27 20:32:44</td>
-       <td>ADOBE PHOTOSHOP Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=f17e6bafcee84e069887afcde26c576f">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4f6be83b10294793960d601d44b7f142</td>
-       <td>CVE-2023-21578</td>
-       <td>2023-02-27 20:32:38</td>
-       <td>ADOBE PHOTOSHOP Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=b47e7fd3dfa4434c8c6bb87ffe13d31b">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e90ec898c74544e4b7e3d2022088f3d7</td>
-       <td>CVE-2023-24964</td>
-       <td>2023-02-27 20:32:32</td>
-       <td>IBM INFOSPHERE_INFORMATION_SERVER Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=8b8009569911498db05d1cbb0ebd8db2">详情</a></td>
       </tr>
 
      </tbody>
