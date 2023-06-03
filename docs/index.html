@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-06-02 10:10:10 -->
+<!-- RELEASE TIME : 2023-06-03 10:10:11 -->
 <html lang="zh-cn">
 
  <head>
@@ -28,7 +28,7 @@
       <tr>
        <td>8673ad2a7712694529bdcc80a9b9c795</td>
        <td>CVE-2023-33246</td>
-       <td>2023-06-01 15:55:56 <img src="imgs/new.gif" /></td>
+       <td>2023-06-01 15:55:56</td>
        <td>CVE-2023-33246：Apache RocketMQ 远程代码执行漏洞通告</td>
        <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=64784de801dc7167b394d4dd">详情</a></td>
       </tr>
@@ -282,9 +282,89 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>8abef1432957f154853c2bd34fe29411</td>
+       <td>CVE-2023-3044</td>
+       <td>2023-06-02 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>An excessively large PDF page size (found in fuzz testing, unlikely in normal PDF files) can result in a divide-by-zero in Xpdf's text extraction code.This is related to CVE-2022-30524, but the problem here is caused by a very large page size, rather than by a very large character coordinate.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-3044">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d4ff79511c82835b1312ed2b3252b4e2</td>
+       <td>CVE-2023-2816</td>
+       <td>2023-06-02 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>Consul and Consul Enterprise allowed any user with service:write permissions to use Envoy extensions configured via service-defaults to patch remote proxy instances that target the configured service, regardless of whether the user has permission to modify the service(s) corresponding to those modified proxies.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-2816">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>92d1daddd7f333cbe7efef0e9f86f3cb</td>
+       <td>CVE-2023-1297</td>
+       <td>2023-06-02 23:15:00 <img src="imgs/new.gif" /></td>
+       <td>Consul and Consul Enterprise's cluster peering implementation contained a flaw whereby a peer cluster with service of the same name as a local service could corrupt Consul state, resulting in denial of service. This vulnerability was resolved in Consul 1.14.5, and 1.15.3</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-1297">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>35bd3c6afd0e0378586a3ea794509b7f</td>
+       <td>CVE-2023-33763</td>
+       <td>2023-06-02 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>eMedia Consulting simpleRedak up to v2.47.23.05 was discovered to contain a reflected cross-site scripting (XSS) vulnerability via the component /scheduler/index.php.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-33763">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9af8e671c1bf119387dafe046b9dafb9</td>
+       <td>CVE-2023-33762</td>
+       <td>2023-06-02 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>eMedia Consulting simpleRedak up to v2.47.23.05 was discovered to contain a SQL injection vulnerability via the Activity parameter.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-33762">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>61b73728a73bb075be33009dfdd3db41</td>
+       <td>CVE-2023-33761</td>
+       <td>2023-06-02 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>eMedia Consulting simpleRedak up to v2.47.23.05 was discovered to contain a reflected cross-site scripting (XSS) vulnerability via the component /view/cb/format_642.php.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-33761">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b0d08db7907e8cf500fab092f4274a97</td>
+       <td>CVE-2023-33675</td>
+       <td>2023-06-02 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>Tenda AC8V4.0-V16.03.34.06 was discovered to contain a stack overflow via the time parameter in the get_parentControl_list_Info function.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-33675">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a9bb3ce800c7d913018fc642071c8eb1</td>
+       <td>CVE-2023-33673</td>
+       <td>2023-06-02 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>Tenda AC8V4.0-V16.03.34.06 was discovered to contain a stack overflow via the firewallEn parameter in the formSetFirewallCfg function.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-33673">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>48135046b4f0a1b30e3940a99ad8ea3e</td>
+       <td>CVE-2023-33672</td>
+       <td>2023-06-02 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>Tenda AC8V4.0-V16.03.34.06 was discovered to contain a stack overflow via the shareSpeed parameter in the fromSetWifiGusetBasic function.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-33672">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3fc76eb9bd5bff1d2526a5c84acdee9b</td>
+       <td>CVE-2023-33671</td>
+       <td>2023-06-02 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>Tenda AC8V4.0-V16.03.34.06 was discovered to contain a stack overflow via the deviceId parameter in the saveParentControlInfo function.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-33671">详情</a></td>
+      </tr>
+
+      <tr>
        <td>a3d2eacb76a96ddb18480ee7df77a583</td>
        <td>CVE-2023-29736</td>
-       <td>2023-06-01 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-06-01 21:15:00</td>
        <td>Keyboard Themes 1.275.1.164 for Android contains a dictionary traversal vulnerability that allows unauthorized apps to overwrite arbitrary files in its internal storage and achieve arbitrary code execution.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-29736">详情</a></td>
       </tr>
@@ -292,7 +372,7 @@
       <tr>
        <td>051f168dc6e9d0ebe26c2a1a5a7e9678</td>
        <td>CVE-2023-29723</td>
-       <td>2023-06-01 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-06-01 21:15:00</td>
        <td>The Glitter Unicorn Wallpaper app for Android 7.0 thru 8.0 allows unauthorized applications to actively request permission to insert data into the database that records information about a user's personal preferences and will be loaded into memory to be read and used when the application is opened. By injecting data, the attacker can force the application to load malicious image URLs and display them in the UI. As the amount of data increases, it will eventually cause the application to trigger an OOM error and crash, resulting in a persistent denial of service attack.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-29723">详情</a></td>
       </tr>
@@ -300,7 +380,7 @@
       <tr>
        <td>6195391ea927baf42e24beb43cbd04a6</td>
        <td>CVE-2023-29722</td>
-       <td>2023-06-01 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-06-01 21:15:00</td>
        <td>The Glitter Unicorn Wallpaper app for Android 7.0 thru 8.0 allows unauthorized apps to actively request permission to modify data in the database that records information about a user's personal preferences and will be loaded into memory to be read and used when the app is opened. An attacker could tamper with this data to cause an escalation of privilege attack.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-29722">详情</a></td>
       </tr>
@@ -308,7 +388,7 @@
       <tr>
        <td>1fc8de28cfbe19e269a0a65d109312ac</td>
        <td>CVE-2023-27640</td>
-       <td>2023-06-01 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-06-01 21:15:00</td>
        <td>An issue was discovered in the tshirtecommerce (aka Custom Product Designer) component 2.1.4 for PrestaShop. An HTTP request can be forged with the POST parameter type in the /tshirtecommerce/fonts.php endpoint, to allow a remote attacker to traverse directories on the system in order to open files (without restriction on the extension and path). The content of the file is returned with base64 encoding. This is exploited in the wild in March 2023.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-27640">详情</a></td>
       </tr>
@@ -316,7 +396,7 @@
       <tr>
        <td>581de2fe56eb1c8d3a07ec550650deb7</td>
        <td>CVE-2023-27639</td>
-       <td>2023-06-01 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-06-01 21:15:00</td>
        <td>An issue was discovered in the tshirtecommerce (aka Custom Product Designer) component 2.1.4 for PrestaShop. An HTTP request can be forged with the POST parameter file_name in the tshirtecommerce/ajax.php?type=svg endpoint, to allow a remote attacker to traverse directories on the system in order to open files (without restriction on the extension and path). Only files that can be parsed in XML can be opened. This is exploited in the wild in March 2023.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-27639">详情</a></td>
       </tr>
@@ -324,7 +404,7 @@
       <tr>
        <td>a8f3f626c85433006f1771a7e1e24ba8</td>
        <td>CVE-2023-33764</td>
-       <td>2023-06-01 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-06-01 20:15:00</td>
        <td>eMedia Consulting simpleRedak up to v2.47.23.05 was discovered to contain a stored cross-site scripting (XSS) vulnerability via the component #/de/casting/show/detail/<ID>.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-33764">详情</a></td>
       </tr>
@@ -332,7 +412,7 @@
       <tr>
        <td>3452520b85799f3515927ced569519ba</td>
        <td>CVE-2023-33754</td>
-       <td>2023-06-01 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-06-01 20:15:00</td>
        <td>The captive portal in Inpiazza Cloud WiFi versions prior to v4.2.17 does not enforce limits on the number of attempts for password recovery, allowing attackers to brute force valid user accounts to gain access to login credentials.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-33754">详情</a></td>
       </tr>
@@ -340,7 +420,7 @@
       <tr>
        <td>3cfc4217855bafb2a241580b056edf03</td>
        <td>CVE-2023-34339</td>
-       <td>2023-06-01 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-06-01 19:15:00</td>
        <td>In JetBrains Ktor before 2.3.1 headers containing authentication data could be added to the exception's message</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-34339">详情</a></td>
       </tr>
@@ -348,7 +428,7 @@
       <tr>
        <td>55adbeeabf929497d2cdc8821185cc7e</td>
        <td>CVE-2023-34092</td>
-       <td>2023-06-01 17:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-06-01 17:15:00</td>
        <td>Vite provides frontend tooling. Prior to versions 2.9.16, 3.2.7, 4.0.5, 4.1.5, 4.2.3, and 4.3.9, Vite Server Options (`server.fs.deny`) can be bypassed using double forward-slash (//) allows any unauthenticated user to read file from the Vite root-path of the application including the default `fs.deny` settings (`['.env', '.env.*', '*.{crt,pem}']`). Only users explicitly exposing the Vite dev server to the network (using `--host` or `server.host` config option) are affected, and only files in the immediate Vite project root folder could be exposed. This issue is fixed in vite@4.3.9, vite@4.2.3, vite@4.1.5, vite@4.0.5, vite@3.2.7, and vite@2.9.16.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-34092">详情</a></td>
       </tr>
@@ -356,7 +436,7 @@
       <tr>
        <td>c09636b3ad0cc51ad02da31f0a0988b6</td>
        <td>CVE-2023-34091</td>
-       <td>2023-06-01 17:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-06-01 17:15:00</td>
        <td>Kyverno is a policy engine designed for Kubernetes. In versions of Kyverno prior to 1.10.0, resources which have the `deletionTimestamp` field defined can bypass validate, generate, or mutate-existing policies, even in cases where the `validationFailureAction` field is set to `Enforce`. This situation occurs as resources pending deletion were being consciously exempted by Kyverno, as a way to reduce processing load as policies are typically not applied to objects which are being deleted. However, this could potentially result in allowing a malicious user to leverage the Kubernetes finalizers feature by setting a finalizer which causes the Kubernetes API server to set the `deletionTimestamp` and then not completing the delete operation as a way to explicitly to bypass a Kyverno policy. Note that this is not applicable to Kubernetes Pods but, as an example, a Kubernetes Service resource can be manipulated using an indefinite finalizer to bypass policies. This is resolved in Kyverno 1.10.0. There is no known workaround.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-34091">详情</a></td>
       </tr>
@@ -439,86 +519,6 @@
        <td>2023-05-31 21:15:00</td>
        <td>H3C Magic R300 version R300-2100MV100R004 was discovered to contain a stack overflow via the EdittriggerList interface at /goform/aspForm.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-33634">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ba25c2a4e97e67e1ec285bd75c48921e</td>
-       <td>CVE-2023-29743</td>
-       <td>2023-05-30 23:15:00</td>
-       <td>An issue found in BestWeather v.7.3.1 for Android allows unauthorized apps to cause a persistent denial of service attack by manipulating the database.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-29743">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2ac9ba298d53c66cafb5b1c8999735ae</td>
-       <td>CVE-2023-29741</td>
-       <td>2023-05-30 23:15:00</td>
-       <td>An issue found in BestWeather v.7.3.1 for Android allows unauthorized apps to cause an escalation of privileges attack by manipulating the database.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-29741">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>22755873cff0a951d85c0831544c841e</td>
-       <td>CVE-2023-29740</td>
-       <td>2023-05-30 23:15:00</td>
-       <td>An issue found in Alarm Clock for Heavy Sleepers v.5.3.2 for Android allows unauthorized apps to cause a denial of service attack by manipulating the database.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-29740">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9e93a1fe76fba4309357fb8441e8ec74</td>
-       <td>CVE-2023-29739</td>
-       <td>2023-05-30 23:15:00</td>
-       <td>An issue found in Alarm Clock for Heavy Sleepers v.5.3.2 for Android allows unauthorized apps to cause escalation of privilege attacks by manipulating the component.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-29739">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e380fb93dc26833a613d6fdf2927124d</td>
-       <td>CVE-2023-29738</td>
-       <td>2023-05-30 23:15:00</td>
-       <td>An issue found in Wave Animated Keyboard Emoji v.1.70.7 for Android allows a local attacker to cause code execution and escalation of Privileges via the database files.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-29738">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e1b0c823db8191052effe1d776fa3017</td>
-       <td>CVE-2023-29728</td>
-       <td>2023-05-30 23:15:00</td>
-       <td>The Call Blocker application 6.6.3 for Android allows attackers to tamper with feature-related data, resulting in a severe elevation of privilege attack.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-29728">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>694309a0e01aa43b9343632a977d635f</td>
-       <td>CVE-2023-29727</td>
-       <td>2023-05-30 23:15:00</td>
-       <td>The Call Blocker application 6.6.3 for Android allows unauthorized applications to use exposed components to delete data stored in its database that is related to user privacy settings and affects the implementation of the normal functionality of the application. An attacker can use this to cause an escalation of privilege attack.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-29727">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>713c7c0bb55a624b7aef5ca69e9faa1c</td>
-       <td>CVE-2023-29726</td>
-       <td>2023-05-30 23:15:00</td>
-       <td>The Call Blocker application 6.6.3 for Android incorrectly opens a key component that an attacker can use to inject large amounts of dirty data into the application's database. When the application starts, it loads the data from the database into memory. Once the attacker injects too much data, the application triggers an OOM error and crashes, resulting in a persistent denial of service.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-29726">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>869868223951dbdcc3a10e3ff800facf</td>
-       <td>CVE-2023-2952</td>
-       <td>2023-05-30 23:15:00</td>
-       <td>XRA dissector infinite loop in Wireshark 4.0.0 to 4.0.5 and 3.6.0 to 3.6.13 allows denial of service via packet injection or crafted capture file</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-2952">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0508885ca2cbd747e1db79cb32248727</td>
-       <td>CVE-2022-39075</td>
-       <td>2023-05-30 23:15:00</td>
-       <td>There is an unauthorized access vulnerability in some ZTE mobile phones. If a malicious application is installed on the phone, it could delete some system files without user permission.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-39075">详情</a></td>
       </tr>
 
      </tbody>
@@ -1690,6 +1690,22 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>208491464fdede81548c8a7eb6b551c5</td>
+       <td>CVE-2023-2856</td>
+       <td>2023-06-02 20:40:40 <img src="imgs/new.gif" /></td>
+       <td>WIRESHARK WIRESHARK Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=e9524334fca346dc955984caed32a602">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>38bccefedd396c91a93daf201e8ac385</td>
+       <td>CVE-2022-48479</td>
+       <td>2023-06-02 20:40:32 <img src="imgs/new.gif" /></td>
+       <td>HUAWEI HARMONYOS Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=ef1ac1e219c44915bff5ebdef20d22cf">详情</a></td>
+      </tr>
+
+      <tr>
        <td>cfc8ef24b8781cbda5d92f9c755f229b</td>
        <td>CVE-2021-46883</td>
        <td>2023-05-31 20:39:18</td>
@@ -1913,22 +1929,6 @@
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=11d7f223738e4dc78a1a0ba82b5fc342">详情</a></td>
       </tr>
 
-      <tr>
-       <td>60e194ff2e4b653ef8361ddd8b9970b2</td>
-       <td>CVE-2023-2838</td>
-       <td>2023-05-28 20:41:34</td>
-       <td>GPAC GPAC Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=e3cf3162b7d34a88bc2e4899aebc720a">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7c2d9411fb8bb237cf9782710fabe0ad</td>
-       <td>CVE-2023-33288</td>
-       <td>2023-05-28 20:41:32</td>
-       <td>LINUX LINUX_KERNEL Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=fb7bcd497bfb42b4925e455775aadff9">详情</a></td>
-      </tr>
-
      </tbody>
     </table>
    </div>
@@ -1948,7 +1948,7 @@
       <tr>
        <td>92b12e101ca77469a29ee733b5f219ce</td>
        <td>CVE-2023-21616</td>
-       <td>2023-06-01 10:10:03 <img src="imgs/new.gif" /></td>
+       <td>2023-06-01 10:10:03</td>
        <td>Adobe Experience Manager跨站脚本漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/79877">详情</a></td>
       </tr>
@@ -1956,7 +1956,7 @@
       <tr>
        <td>9c2afa7374a8167b467ee29abd901ac9</td>
        <td>CVE-2023-22258</td>
-       <td>2023-06-01 10:10:03 <img src="imgs/new.gif" /></td>
+       <td>2023-06-01 10:10:03</td>
        <td>Adobe Experience Manager开放重定向漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/79876">详情</a></td>
       </tr>
@@ -1964,7 +1964,7 @@
       <tr>
        <td>0b4ecda476e8025d97b14414515dbd13</td>
        <td>CVE-2022-42499</td>
-       <td>2023-06-01 10:10:03 <img src="imgs/new.gif" /></td>
+       <td>2023-06-01 10:10:03</td>
        <td>Google Android Kernel越界写入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/79875">详情</a></td>
       </tr>
@@ -1972,7 +1972,7 @@
       <tr>
        <td>835866aaf0aca452231ef2f108d917f1</td>
        <td>CVE-2022-20917</td>
-       <td>2023-06-01 10:10:03 <img src="imgs/new.gif" /></td>
+       <td>2023-06-01 10:10:03</td>
        <td>Google Android权限提升漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/79874">详情</a></td>
       </tr>
@@ -1980,7 +1980,7 @@
       <tr>
        <td>c0a223ef4c74f87d0d87391fde7e8742</td>
        <td>CVE-2022-20951</td>
-       <td>2023-06-01 10:10:03 <img src="imgs/new.gif" /></td>
+       <td>2023-06-01 10:10:03</td>
        <td>Google Android越界写入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/79873">详情</a></td>
       </tr>
@@ -1988,7 +1988,7 @@
       <tr>
        <td>514ea47eed4b3ded0b51a508ac246456</td>
        <td>CVE-2023-20957</td>
-       <td>2023-06-01 10:10:03 <img src="imgs/new.gif" /></td>
+       <td>2023-06-01 10:10:03</td>
        <td>Google Android权限提升漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/79872">详情</a></td>
       </tr>
@@ -1996,7 +1996,7 @@
       <tr>
        <td>3af7c9d0e1dad3af958ef7a5108aca07</td>
        <td>CVE-2023-20964</td>
-       <td>2023-06-01 10:10:03 <img src="imgs/new.gif" /></td>
+       <td>2023-06-01 10:10:03</td>
        <td>Google Android权限提升漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/79871">详情</a></td>
       </tr>
@@ -2004,7 +2004,7 @@
       <tr>
        <td>7f5a82e797e283c203fd719346f6de25</td>
        <td>CVE-2023-20972</td>
-       <td>2023-06-01 10:10:03 <img src="imgs/new.gif" /></td>
+       <td>2023-06-01 10:10:03</td>
        <td>Google Android越界读取漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/79870">详情</a></td>
       </tr>
@@ -2012,7 +2012,7 @@
       <tr>
        <td>702a32aa1e2514f49231956ecd0148cd</td>
        <td>CVE-2023-20979</td>
-       <td>2023-06-01 10:10:03 <img src="imgs/new.gif" /></td>
+       <td>2023-06-01 10:10:03</td>
        <td>Google Android越界读取漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/79869">详情</a></td>
       </tr>
@@ -2020,7 +2020,7 @@
       <tr>
        <td>54a7abb70b9849d6414883ef70ad173a</td>
        <td>CVE-2023-20985</td>
-       <td>2023-06-01 10:10:03 <img src="imgs/new.gif" /></td>
+       <td>2023-06-01 10:10:03</td>
        <td>Google Android越界写入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/79868">详情</a></td>
       </tr>
@@ -2028,7 +2028,7 @@
       <tr>
        <td>26615e72869f3ad1296df699341cb2d8</td>
        <td>CVE-2023-20991</td>
-       <td>2023-06-01 10:10:03 <img src="imgs/new.gif" /></td>
+       <td>2023-06-01 10:10:03</td>
        <td>Google Android越界读取漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/79867">详情</a></td>
       </tr>
@@ -2036,7 +2036,7 @@
       <tr>
        <td>916939639d40a57ec884ffa70b07b986</td>
        <td>CVE-2023-20997</td>
-       <td>2023-06-01 10:10:03 <img src="imgs/new.gif" /></td>
+       <td>2023-06-01 10:10:03</td>
        <td>Google Android无限循环漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/79866">详情</a></td>
       </tr>
@@ -2044,7 +2044,7 @@
       <tr>
        <td>ec21fd10ff46b453e082a88add5c6cbc</td>
        <td>CVE-2023-21003</td>
-       <td>2023-06-01 10:10:03 <img src="imgs/new.gif" /></td>
+       <td>2023-06-01 10:10:03</td>
        <td>Google Android权限提升漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/79865">详情</a></td>
       </tr>
@@ -2052,7 +2052,7 @@
       <tr>
        <td>9e091cfcdcd1ba2d0142ac4ff71c36b3</td>
        <td>CVE-2023-21009</td>
-       <td>2023-06-01 10:10:03 <img src="imgs/new.gif" /></td>
+       <td>2023-06-01 10:10:03</td>
        <td>Google Android越界读取漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/79864">详情</a></td>
       </tr>
@@ -2060,7 +2060,7 @@
       <tr>
        <td>45cb5503446175ffe18ef9e45f01e892</td>
        <td>CVE-2023-21015</td>
-       <td>2023-06-01 10:10:03 <img src="imgs/new.gif" /></td>
+       <td>2023-06-01 10:10:03</td>
        <td>Google Android权限提升漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/79863">详情</a></td>
       </tr>
@@ -2068,7 +2068,7 @@
       <tr>
        <td>4943c039a2c496a527cc2a9e11166d25</td>
        <td>CVE-2022-36969</td>
-       <td>2023-06-01 10:10:02 <img src="imgs/new.gif" /></td>
+       <td>2023-06-01 10:10:02</td>
        <td>AVEVA Edge不受控制的搜索路径元素漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/79923">详情</a></td>
       </tr>
@@ -2076,7 +2076,7 @@
       <tr>
        <td>f09e8a972e30ef82ee88b98f9632bd44</td>
        <td>CVE-2022-36975</td>
-       <td>2023-06-01 10:10:02 <img src="imgs/new.gif" /></td>
+       <td>2023-06-01 10:10:02</td>
        <td>Ivanti Avalanche SQL注入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/79922">详情</a></td>
       </tr>
@@ -2084,7 +2084,7 @@
       <tr>
        <td>d2032d3f960295452338db2a9dbeaacd</td>
        <td>CVE-2022-36981</td>
-       <td>2023-06-01 10:10:02 <img src="imgs/new.gif" /></td>
+       <td>2023-06-01 10:10:02</td>
        <td>Ivanti Avalanche路径遍历漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/79921">详情</a></td>
       </tr>
@@ -2092,7 +2092,7 @@
       <tr>
        <td>1730878bb97ab41964c0344a11f10db1</td>
        <td>CVE-2022-28687</td>
-       <td>2023-06-01 10:10:02 <img src="imgs/new.gif" /></td>
+       <td>2023-06-01 10:10:02</td>
        <td>AVEVA Edge不受控制的搜索路径元素漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/79920">详情</a></td>
       </tr>
@@ -2100,7 +2100,7 @@
       <tr>
        <td>4c6a09793c0fa4eab53c737677465a88</td>
        <td>CVE-2023-26345</td>
-       <td>2023-06-01 10:10:02 <img src="imgs/new.gif" /></td>
+       <td>2023-06-01 10:10:02</td>
        <td>Adobe Dimension越界读取漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/79919">详情</a></td>
       </tr>
@@ -2108,7 +2108,7 @@
       <tr>
        <td>8ee0f21ce4014bc1b8f21ddf420b7a22</td>
        <td>CVE-2023-26352</td>
-       <td>2023-06-01 10:10:02 <img src="imgs/new.gif" /></td>
+       <td>2023-06-01 10:10:02</td>
        <td>Adobe Dimension越界读取漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/79918">详情</a></td>
       </tr>
@@ -2116,7 +2116,7 @@
       <tr>
        <td>3c2d39c916cb0fa564bbe93854eddf58</td>
        <td>CVE-2020-8889</td>
-       <td>2023-06-01 10:10:02 <img src="imgs/new.gif" /></td>
+       <td>2023-06-01 10:10:02</td>
        <td>ShipStation信息泄露漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/79917">详情</a></td>
       </tr>
@@ -2124,7 +2124,7 @@
       <tr>
        <td>bc8f2d1a045011ffcac849f1652585b1</td>
        <td>CVE-2023-28626</td>
-       <td>2023-06-01 10:10:02 <img src="imgs/new.gif" /></td>
+       <td>2023-06-01 10:10:02</td>
        <td>comrak不受控制的资源消耗漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/79916">详情</a></td>
       </tr>
@@ -2132,7 +2132,7 @@
       <tr>
        <td>af3d8f3d439897c67360712c6ec221cf</td>
        <td>CVE-2023-27886</td>
-       <td>2023-06-01 10:10:02 <img src="imgs/new.gif" /></td>
+       <td>2023-06-01 10:10:02</td>
        <td>Osprey Pump Controller操作系统命令注入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/79915">详情</a></td>
       </tr>
@@ -2140,7 +2140,7 @@
       <tr>
        <td>2a415b2412b9421562cc1dcbb7a08c93</td>
        <td>CVE-2022-28644</td>
-       <td>2023-06-01 10:10:02 <img src="imgs/new.gif" /></td>
+       <td>2023-06-01 10:10:02</td>
        <td>Bentley Systems MicroStation CONNECT越界写入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/79914">详情</a></td>
       </tr>
@@ -2148,7 +2148,7 @@
       <tr>
        <td>0cf823d2bd106803343d5a65d27d1009</td>
        <td>CVE-2023-27229</td>
-       <td>2023-06-01 10:10:02 <img src="imgs/new.gif" /></td>
+       <td>2023-06-01 10:10:02</td>
        <td>TOTOLINK A7100RU命令注入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/79913">详情</a></td>
       </tr>
@@ -2156,7 +2156,7 @@
       <tr>
        <td>4cfbd0a344668fc6993b0d2d5c8e6804</td>
        <td>CVE-2023-1680</td>
-       <td>2023-06-01 10:10:02 <img src="imgs/new.gif" /></td>
+       <td>2023-06-01 10:10:02</td>
        <td>XunRuiCMS信息泄露漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/79912">详情</a></td>
       </tr>
@@ -2164,7 +2164,7 @@
       <tr>
        <td>0372f46b7d913217d17bdeda6cd7af3d</td>
        <td>CVE-2022-27643</td>
-       <td>2023-06-01 10:10:02 <img src="imgs/new.gif" /></td>
+       <td>2023-06-01 10:10:02</td>
        <td>NETGEAR R6700v3缓冲区溢出漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/79911">详情</a></td>
       </tr>
@@ -2172,7 +2172,7 @@
       <tr>
        <td>4e1912cc9f6b1979cd1af6a21af6a019</td>
        <td>CVE-2022-28318</td>
-       <td>2023-06-01 10:10:02 <img src="imgs/new.gif" /></td>
+       <td>2023-06-01 10:10:02</td>
        <td>Bentley Systems MicroStation CONNECT越界写入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/79910">详情</a></td>
       </tr>
@@ -2180,7 +2180,7 @@
       <tr>
        <td>b4f511311cb5fbc93f4c7738004c0309</td>
        <td>CVE-2022-28300</td>
-       <td>2023-06-01 10:10:02 <img src="imgs/new.gif" /></td>
+       <td>2023-06-01 10:10:02</td>
        <td>Bentley Systems MicroStation CONNECT越界写入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/79909">详情</a></td>
       </tr>
@@ -2402,6 +2402,14 @@
       </tr>
 
       <tr>
+       <td>8c5c5f4d3e3e2c018c366cd3acfa33ad</td>
+       <td>CVE-2023-31748</td>
+       <td>2023-05-24 15:15:09 </td>
+       <td>Insecure permissions in MobileTrans v4.0.11 allows attackers to escalate privileges to local admin via replacing the executable file.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-31748">详情</a></td>
+      </tr>
+
+      <tr>
        <td>7a55c5fff2c1fb97885fcd41e1cc8134</td>
        <td>CVE-2023-33940</td>
        <td>2023-05-24 14:15:09 </td>
@@ -2431,14 +2439,6 @@
        <td>2023-05-24 13:15:09 </td>
        <td>Stored cross-site scripting (XSS) vulnerability in Form widget configuration in Liferay Portal 7.1.0 through 7.3.0, and Liferay DXP 7.1 before fix pack 18, and 7.2 before fix pack 5 allows remote attackers to inject arbitrary web script or HTML via a crafted payload injected into a form's `name` field.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-33937">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9863063cec9f7aa39c8cc8af449b3e23</td>
-       <td>CVE-2023-32700</td>
-       <td>2023-05-20 18:15:09 </td>
-       <td>LuaTeX before 1.17.0 allows execution of arbitrary shell commands when compiling a TeX file obtained from an untrusted source. This occurs because luatex-core.lua lets the original io.popen be accessed. This also affects TeX Live before 2023 r66984 and MiKTeX before 23.5.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-32700">详情</a></td>
       </tr>
 
      </tbody>
