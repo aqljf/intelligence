@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-08-19 10:13:15 -->
+<!-- RELEASE TIME : 2023-08-20 10:13:15 -->
 <html lang="zh-cn">
 
  <head>
@@ -282,9 +282,65 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>b52046a2e9d4c444a0a533bdef905f4e</td>
+       <td>CVE-2023-2971</td>
+       <td>2023-08-19 06:15:00 <img src="imgs/new.gif" /></td>
+       <td>Improper path handling in Typora before 1.7.0-dev on Windows and Linux allows a crafted webpage to access local files and exfiltrate them to remote web servers via "typora://app/typemark/". This vulnerability can be exploited if a user opens a malicious markdown file in Typora, or copies text from a malicious webpage and paste it into Typora.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-2971">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>169bd015c5ca63abc6afc3639bccad43</td>
+       <td>CVE-2023-2318</td>
+       <td>2023-08-19 06:15:00 <img src="imgs/new.gif" /></td>
+       <td>DOM-based XSS in src/muya/lib/contentState/pasteCtrl.js in MarkText 0.17.1 and before on Windows, Linux and macOS allows arbitrary JavaScript code to run in the context of MarkText main window. This vulnerability can be exploited if a user copies text from a malicious webpage and paste it into MarkText.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-2318">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>97f7d25d43a5a74b11bedf6cd530872f</td>
+       <td>CVE-2023-2317</td>
+       <td>2023-08-19 06:15:00 <img src="imgs/new.gif" /></td>
+       <td>DOM-based XSS in updater/update.html in Typora before 1.6.7 on Windows and Linux allows a crafted markdown file to run arbitrary JavaScript code in the context of Typora main window via loading typora://app/typemark/updater/update.html in <embed> tag. This vulnerability can be exploited if a user opens a malicious markdown file in Typora, or copies text from a malicious webpage and paste it into Typora.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-2317">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>29e04800a75c44e458c307112676f7fd</td>
+       <td>CVE-2023-2316</td>
+       <td>2023-08-19 06:15:00 <img src="imgs/new.gif" /></td>
+       <td>Improper path handling in Typora before 1.6.7 on Windows and Linux allows a crafted webpage to access local files and exfiltrate them to remote web servers via "typora://app/<absolute-path>". This vulnerability can be exploited if a user opens a malicious markdown file in Typora, or copies text from a malicious webpage and paste it into Typora.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-2316">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>bf31cfea86afdbb420af4bd5aa3be4d5</td>
+       <td>CVE-2023-2110</td>
+       <td>2023-08-19 06:15:00 <img src="imgs/new.gif" /></td>
+       <td>Improper path handling in Obsidian desktop before 1.2.8 on Windows, Linux and macOS allows a crafted webpage to access local files and exfiltrate them to remote web servers via "app://local/<absolute-path>". This vulnerability can be exploited if a user opens a malicious markdown file in Obsidian, or copies text from a malicious webpage and paste it into Obsidian.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-2110">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ddf89979db0e9f0242633996f90baaa2</td>
+       <td>CVE-2023-4433</td>
+       <td>2023-08-19 01:15:00 <img src="imgs/new.gif" /></td>
+       <td>Cross-site Scripting (XSS) - Stored in GitHub repository cockpit-hq/cockpit prior to 2.6.4.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-4433">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5ec7cfd2168fa2a5995b5183d97f7aad</td>
+       <td>CVE-2023-4432</td>
+       <td>2023-08-19 01:15:00 <img src="imgs/new.gif" /></td>
+       <td>Cross-site Scripting (XSS) - Reflected in GitHub repository cockpit-hq/cockpit prior to 2.6.4.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-4432">详情</a></td>
+      </tr>
+
+      <tr>
        <td>9da7eb1136b1d9bdf4acb75e746e0eb1</td>
        <td>CVE-2023-40175</td>
-       <td>2023-08-18 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-08-18 22:15:00</td>
        <td>Puma is a Ruby/Rack web server built for parallelism. Prior to versions 6.3.1 and 5.6.7, puma exhibited incorrect behavior when parsing chunked transfer encoding bodies and zero-length Content-Length headers in a way that allowed HTTP request smuggling. Severity of this issue is highly dependent on the nature of the web site using puma is. This could be caused by either incorrect parsing of trailing fields in chunked transfer encoding bodies or by parsing of blank/zero-length Content-Length headers. Both issues have been addressed and this vulnerability has been fixed in versions 6.3.1 and 5.6.7. Users are advised to upgrade. There are no known workarounds for this vulnerability.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-40175">详情</a></td>
       </tr>
@@ -292,7 +348,7 @@
       <tr>
        <td>25b287c48c92d0be1c28823abc00bc31</td>
        <td>CVE-2023-40174</td>
-       <td>2023-08-18 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-08-18 22:15:00</td>
        <td>Social media skeleton is an uncompleted/framework social media project implemented using a php, css ,javascript and html. Insufficient session expiration is a web application security vulnerability that occurs when a web application does not properly manage the lifecycle of a user's session. Social media skeleton releases prior to 1.0.5 did not properly limit manage user session lifecycles. This issue has been addressed in version 1.0.5 and users are advised to upgrade. There are no known workarounds for this vulnerability.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-40174">详情</a></td>
       </tr>
@@ -300,7 +356,7 @@
       <tr>
        <td>7f2715b79f0056aba04516264dad61be</td>
        <td>CVE-2023-40173</td>
-       <td>2023-08-18 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-08-18 22:15:00</td>
        <td>Social media skeleton is an uncompleted/framework social media project implemented using a php, css ,javascript and html. Prior to version 1.0.5 Social media skeleton did not properly salt passwords leaving user passwords susceptible to cracking should an attacker gain access to hashed passwords. This issue has been addressed in version 1.0.5 and users are advised to upgrade. There are no known workarounds for this issue.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-40173">详情</a></td>
       </tr>
@@ -308,7 +364,7 @@
       <tr>
        <td>bb707bdef7c4f37ff7dc8c000e1e1ec5</td>
        <td>CVE-2023-40172</td>
-       <td>2023-08-18 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-08-18 22:15:00</td>
        <td>Social media skeleton is an uncompleted/framework social media project implemented using a php, css ,javascript and html. A Cross-site request forgery (CSRF) attack is a type of malicious attack whereby an attacker tricks a victim into performing an action on a website that they do not intend to do. This can be done by sending the victim a malicious link or by exploiting a vulnerability in the website. Prior to version 1.0.5 Social media skeleton did not properly restrict CSRF attacks. This has been addressed in version 1.0.5 and all users are advised to upgrade. There are no known workarounds for this vulnerability.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-40172">详情</a></td>
       </tr>
@@ -316,7 +372,7 @@
       <tr>
        <td>c2fb3c9f1410e22015d092e84104ccb9</td>
        <td>CVE-2023-40037</td>
-       <td>2023-08-18 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-08-18 22:15:00</td>
        <td>Apache NiFi 1.21.0 through 1.23.0 support JDBC and JNDI JMS access in several Processors and Controller Services with connection URL validation that does not provide sufficient protection against crafted inputs. An authenticated and authorized user can bypass connection URL validation using custom input formatting. The resolution enhances connection URL validation and introduces validation for additional related properties. Upgrading to Apache NiFi 1.23.1 is the recommended mitigation.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-40037">详情</a></td>
       </tr>
@@ -324,7 +380,7 @@
       <tr>
        <td>2c679c979f5001653f1a87fe7e918b7d</td>
        <td>CVE-2023-38839</td>
-       <td>2023-08-18 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-08-18 22:15:00</td>
        <td>SQL injection vulnerability in Kidus Minimati v.1.0.0 allows a remote attacker to obtain sensitive information via theID parameter in the fulldelete.php component.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-38839">详情</a></td>
       </tr>
@@ -332,7 +388,7 @@
       <tr>
        <td>6ab77cf4b8174359b041009087379ffa</td>
        <td>CVE-2023-20212</td>
-       <td>2023-08-18 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-08-18 20:15:00</td>
        <td>A vulnerability in the AutoIt module of ClamAV could allow an unauthenticated, remote attacker to cause a denial of service (DoS) condition on an affected device.  This vulnerability is due to a logic error in the memory management of an affected device. An attacker could exploit this vulnerability by submitting a crafted AutoIt file to be scanned by ClamAV on the affected device. A successful exploit could allow the attacker to cause the ClamAV scanning process to restart unexpectedly, resulting in a DoS condition.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-20212">详情</a></td>
       </tr>
@@ -340,7 +396,7 @@
       <tr>
        <td>3657f019ab3c720ad7fb7f96e214b5c8</td>
        <td>CVE-2023-4422</td>
-       <td>2023-08-18 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-08-18 19:15:00</td>
        <td>Cross-site Scripting (XSS) - Stored in GitHub repository cockpit-hq/cockpit prior to 2.6.3.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-4422">详情</a></td>
       </tr>
@@ -348,7 +404,7 @@
       <tr>
        <td>d5ec727cf26cf7052380cce7d88ec9da</td>
        <td>CVE-2023-38911</td>
-       <td>2023-08-18 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-08-18 19:15:00</td>
        <td>A Cross-Site Scripting (XSS) vulnerability in CSZ CMS 1.3.0 allows attackers to execute arbitrary code via a crafted payload to the Gallery parameter in the YouTube URL fields.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-38911">详情</a></td>
       </tr>
@@ -356,7 +412,7 @@
       <tr>
        <td>982e60c3ee07aeacbbbd1151bb2d8ed0</td>
        <td>CVE-2023-38910</td>
-       <td>2023-08-18 19:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-08-18 19:15:00</td>
        <td>CSZ CMS 1.3.0 is vulnerable to cross-site scripting (XSS), which allows attackers to execute arbitrary web scripts or HTML via a crafted payload entered in the 'Carousel Wiget' section and choosing our carousel widget created above, in 'Photo URL' and 'YouTube URL' plugin.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-38910">详情</a></td>
       </tr>
@@ -463,62 +519,6 @@
        <td>2023-08-16 22:15:00</td>
        <td>An issue in Konga v0.14.9 allows attackers to bypass authentication via a crafted JWT token.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-39846">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d4839e6de1d52589c07f2eff4f4bf0d1</td>
-       <td>CVE-2023-38894</td>
-       <td>2023-08-16 22:15:00</td>
-       <td>A Prototype Pollution issue in Cronvel Tree-kit v.0.7.4 and before allows a remote attacker to execute arbitrary code via the extend function.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-38894">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>df2780cc5529b8b17081ed69bf56285f</td>
-       <td>CVE-2023-35893</td>
-       <td>2023-08-16 22:15:00</td>
-       <td>IBM Security Guardium 10.6, 11.3, 11.4, and 11.5 could allow a remote authenticated attacker to execute arbitrary commands on the system by sending a specially crafted request.  IBM X-Force ID:  258824.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-35893">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f5361c64e7e5a6ee56735bfa9b5770f4</td>
-       <td>CVE-2023-20237</td>
-       <td>2023-08-16 22:15:00</td>
-       <td>A vulnerability in Cisco Intersight Virtual Appliance could allow an unauthenticated, adjacent attacker to access internal HTTP services that are otherwise inaccessible. This vulnerability is due to insufficient restrictions on internally accessible http proxies. An attacker could exploit this vulnerability by submitting a crafted CLI command. A successful exploit could allow the attacker access to internal subnets beyond the sphere of their intended access level.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-20237">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>976015091e872380de6542b0b1222117</td>
-       <td>CVE-2023-20232</td>
-       <td>2023-08-16 22:15:00</td>
-       <td>A vulnerability in the Tomcat implementation for Cisco Unified Contact Center Express (Unified CCX) could allow an unauthenticated, remote attacker to cause a web cache poisoning attack on an affected device.  This vulnerability is due to improper input validation of HTTP requests. An attacker could exploit this vulnerability by sending crafted HTTP requests to a specific API endpoint on the Unified CCX Finesse Portal. A successful exploit could allow the attacker to cause the internal WebProxy to redirect users to an attacker-controlled host.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-20232">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d8b14b5048be2664b7375eab56075ec9</td>
-       <td>CVE-2023-20229</td>
-       <td>2023-08-16 22:15:00</td>
-       <td>A vulnerability in the CryptoService function of Cisco Duo Device Health Application for Windows could allow an authenticated, local attacker with low privileges to conduct directory traversal attacks and overwrite arbitrary files on an affected system. This vulnerability is due to insufficient input validation. An attacker could exploit this vulnerability by executing a directory traversal attack on an affected host. A successful exploit could allow an attacker to use a cryptographic key to overwrite arbitrary files with SYSTEM-level privileges, resulting in a denial of service (DoS) condition or data loss on the affected system.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-20229">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5ca63b7d0086358e4920871618ce7737</td>
-       <td>CVE-2023-20224</td>
-       <td>2023-08-16 22:15:00</td>
-       <td>A vulnerability in the CLI of Cisco ThousandEyes Enterprise Agent, Virtual Appliance installation type, could allow an authenticated, local attacker to elevate privileges to root on an affected device. This vulnerability is due to insufficient input validation of user-supplied CLI arguments. An attacker could exploit this vulnerability by authenticating to an affected device and using crafted commands at the prompt. A successful exploit could allow the attacker to execute arbitrary commands as root. The attacker must have valid credentials on the affected device.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-20224">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d9f774c01f700fea328888dad54964ca</td>
-       <td>CVE-2023-20222</td>
-       <td>2023-08-16 22:15:00</td>
-       <td>A vulnerability in the web-based management interface of Cisco Prime Infrastructure and Cisco Evolved Programmable Network Manager (EPNM) could allow an unauthenticated, remote attacker to conduct a cross-site scripting (XSS) attack against a user of the interface on an affected device. The vulnerability is due to insufficient validation of user-supplied input by the web-based management interface of an affected system. An attacker could exploit this vulnerability by injecting malicious code into specific pages of the interface. A successful exploit could allow the attacker to execute arbitrary script code in the context of the affected interface or access sensitive, browser-based information.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-20222">详情</a></td>
       </tr>
 
      </tbody>
@@ -1698,9 +1698,89 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>5db158bdc8451c2b64e1a8734e8974e4</td>
+       <td>CVE-2023-39381</td>
+       <td>2023-08-19 20:10:21 <img src="imgs/new.gif" /></td>
+       <td>HUAWEI Multiple product Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=6537bd43eda84e4fb373bf28ed6a010d">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>91a2d5ffdd92169f8d867d0fa2732ec7</td>
+       <td>CVE-2023-39383</td>
+       <td>2023-08-19 20:10:18 <img src="imgs/new.gif" /></td>
+       <td>HUAWEI Multiple product Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=3bb73594d810412da0db550ea73bf2c7">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f7b17fb564be5de75e6d8b8b19d2becb</td>
+       <td>CVE-2023-39382</td>
+       <td>2023-08-19 20:09:54 <img src="imgs/new.gif" /></td>
+       <td>HUAWEI Multiple product Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=ef4d3dc71b6741c1a3ff11b361107a97">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>04a8e3eea1f3fb3f735d3ad4253269b5</td>
+       <td>CVE-2020-36138</td>
+       <td>2023-08-19 20:09:53 <img src="imgs/new.gif" /></td>
+       <td>FFMPEG FFMPEG Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=e6a8ed06df2a4d52a1506eeb06cd3d03">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>768fad550992a7d880078afc062ef526</td>
+       <td>CVE-2020-24922</td>
+       <td>2023-08-19 20:09:53 <img src="imgs/new.gif" /></td>
+       <td>XUXUELI XXL-JOB Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=da41b7fb216043eb8f790ae09cbbdece">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>efb5a8094efbf51b2dcbc05931d701bd</td>
+       <td>CVE-2020-24187</td>
+       <td>2023-08-19 20:09:53 <img src="imgs/new.gif" /></td>
+       <td>JERRYSCRIPT JERRYSCRIPT Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=54948847768c4385901559d8fcb7830b">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7744165e36928a00f663c1c0b0b79b22</td>
+       <td>CVE-2020-27449</td>
+       <td>2023-08-19 20:09:53 <img src="imgs/new.gif" /></td>
+       <td>ZOHOCORP MANAGEENGINE_PASSWORD_MANAGER_PRO Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=3860ce972b364445a3e4c13d5b8c00ff">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1c9daecc866d74284f788917649702bf</td>
+       <td>CVE-2020-36024</td>
+       <td>2023-08-19 20:09:53 <img src="imgs/new.gif" /></td>
+       <td>FREEDESKTOP POPPLER Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=28b6ebbc602a40389b11cc187d711ad1">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>55d7d5d2312835d61195a0d47b36fa7c</td>
+       <td>CVE-2020-23595</td>
+       <td>2023-08-19 20:09:21 <img src="imgs/new.gif" /></td>
+       <td>YZMCMS YZMCMS Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=fcc364a71e3a403f9b448a5eb69c3eaa">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1ffde013f7b13e877ad425ee42abcfbd</td>
+       <td>CVE-2020-24872</td>
+       <td>2023-08-19 20:09:21 <img src="imgs/new.gif" /></td>
+       <td>LEPTON-CMS LEPTONCMS Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=f0ee546ff2b34530944e2dc1c118289b">详情</a></td>
+      </tr>
+
+      <tr>
        <td>cf02bde2a74f94aab47aac96d66a35b6</td>
        <td>CVE-2023-29320</td>
-       <td>2023-08-18 20:07:02 <img src="imgs/new.gif" /></td>
+       <td>2023-08-18 20:07:02</td>
        <td>ADOBE Multiple product Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=682eacf798de4d8a80f701454f2389d3">详情</a></td>
       </tr>
@@ -1708,7 +1788,7 @@
       <tr>
        <td>967969d5987da64e96231bda991a042a</td>
        <td>CVE-2023-37988</td>
-       <td>2023-08-18 20:07:02 <img src="imgs/new.gif" /></td>
+       <td>2023-08-18 20:07:02</td>
        <td>CREATIVE-SOLUTIONS CONTACT_FORM_GENERATOR Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=23aed3aa935b4b0884b0658c1a558f28">详情</a></td>
       </tr>
@@ -1716,7 +1796,7 @@
       <tr>
        <td>92ba3950012ee3ce2f0576a8f4429086</td>
        <td>CVE-2020-36037</td>
-       <td>2023-08-18 20:07:02 <img src="imgs/new.gif" /></td>
+       <td>2023-08-18 20:07:02</td>
        <td>WUZHICMS WUZHICMS Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=16c0f2117d7e4031a3b19c77f64c2434">详情</a></td>
       </tr>
@@ -1724,7 +1804,7 @@
       <tr>
        <td>ffed30e0e10efb13526d6d14e891bea8</td>
        <td>CVE-2023-29299</td>
-       <td>2023-08-18 20:07:02 <img src="imgs/new.gif" /></td>
+       <td>2023-08-18 20:07:02</td>
        <td>ADOBE Multiple product Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=103155d03bc94dd3a9e373d8b14123f7">详情</a></td>
       </tr>
@@ -1732,7 +1812,7 @@
       <tr>
        <td>044d2f89ab3c473cdd769ab5f0e18638</td>
        <td>CVE-2023-38223</td>
-       <td>2023-08-18 20:07:01 <img src="imgs/new.gif" /></td>
+       <td>2023-08-18 20:07:01</td>
        <td>ADOBE Multiple product Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=450d491810644bf58be91b5e38f87fb0">详情</a></td>
       </tr>
@@ -1740,7 +1820,7 @@
       <tr>
        <td>ad70ee77cdc0922e4b1eb1c2c70260da</td>
        <td>CVE-2023-38210</td>
-       <td>2023-08-18 20:07:01 <img src="imgs/new.gif" /></td>
+       <td>2023-08-18 20:07:01</td>
        <td>ADOBE XMP_TOOLKIT_SOFTWARE_DEVELOPMENT_KIT Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=0323110beccb49d088b003baa356f1e9">详情</a></td>
       </tr>
@@ -1748,7 +1828,7 @@
       <tr>
        <td>19f77568da9b42508efbbe2c877d7010</td>
        <td>CVE-2020-36082</td>
-       <td>2023-08-18 20:06:32 <img src="imgs/new.gif" /></td>
+       <td>2023-08-18 20:06:32</td>
        <td>BLOOFOX BLOOFOXCMS Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=39ce9a8f68284604bbf90b97adc5b237">详情</a></td>
       </tr>
@@ -1756,7 +1836,7 @@
       <tr>
        <td>321724f4cbc0ce3a5824b5183bbf6fba</td>
        <td>CVE-2023-38234</td>
-       <td>2023-08-18 20:06:31 <img src="imgs/new.gif" /></td>
+       <td>2023-08-18 20:06:31</td>
        <td>ADOBE Multiple product Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=d9b29ee0fb344331830077251fa2cd7b">详情</a></td>
       </tr>
@@ -1764,7 +1844,7 @@
       <tr>
        <td>0d7f86c241ad4319d407f05f9fc06579</td>
        <td>CVE-2023-38225</td>
-       <td>2023-08-18 20:06:31 <img src="imgs/new.gif" /></td>
+       <td>2023-08-18 20:06:31</td>
        <td>ADOBE Multiple product Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=abb7982dcfd945c2b0c27fe03472e882">详情</a></td>
       </tr>
@@ -1772,7 +1852,7 @@
       <tr>
        <td>94fc47fb60d96c613a499a776ef90077</td>
        <td>CVE-2023-38222</td>
-       <td>2023-08-18 20:06:31 <img src="imgs/new.gif" /></td>
+       <td>2023-08-18 20:06:31</td>
        <td>ADOBE Multiple product Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=a6150086e3074995b1fd9aa707a013d5">详情</a></td>
       </tr>
@@ -1855,86 +1935,6 @@
        <td>2023-08-14 20:43:06</td>
        <td>SIEMENS Multiple product Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=9258cc334ceb4830a4d89e6a8f9a7bf4">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6d379c2c15a09683f480b4b0f49204b8</td>
-       <td>CVE-2023-38530</td>
-       <td>2023-08-14 20:43:06</td>
-       <td>SIEMENS Multiple product Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=7c47ef55cc17459e95cdbc20611d8b3f">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>80e601dcd89872260cf724136ca8eda1</td>
-       <td>CVE-2023-38524</td>
-       <td>2023-08-14 20:43:06</td>
-       <td>SIEMENS Multiple product Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=696421fb2632467587d0f4d5d559215b">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>bfcf867c0fba0db51c0956b70b9ebb38</td>
-       <td>CVE-2023-31452</td>
-       <td>2023-08-14 20:43:06</td>
-       <td>PAESSLER PRTG_NETWORK_MONITOR Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=0d226ea6e947438e988281f0d726a7c3">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c52dfdc8f631705b9973b9f4eb4c3839</td>
-       <td>CVE-2023-32782</td>
-       <td>2023-08-14 20:42:54</td>
-       <td>PAESSLER PRTG_NETWORK_MONITOR Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=fc936e04ea6948e586ede24ca7acc701">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>cebcb061f2c95958438e18f72cb9a7d1</td>
-       <td>CVE-2023-31450</td>
-       <td>2023-08-14 20:42:54</td>
-       <td>PAESSLER PRTG_NETWORK_MONITOR Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=f1e19707dc944cd3a7368472fd1415fd">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3721fc35eb86321b78dd568d2263df8a</td>
-       <td>CVE-2023-38529</td>
-       <td>2023-08-14 20:42:53</td>
-       <td>SIEMENS Multiple product Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=f51f26e45cf04d0ba6dee384a010c6ad">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>84c34aede4de2fdd4658fb8f0c47ef22</td>
-       <td>CVE-2023-36532</td>
-       <td>2023-08-14 20:42:53</td>
-       <td>ZOOM Multiple product Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=9be6b6815e0e4644875b9d5b616f6624">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>35243930c180d080f8cb2de2c5e24a6f</td>
-       <td>CVE-2023-21626</td>
-       <td>2023-08-13 21:13:52</td>
-       <td>QUALCOMM Multiple product Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=bc01200a87db409184f5ecf18c5cd71b">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0d0bac76efef4254dbee317244223529</td>
-       <td>CVE-2023-21647</td>
-       <td>2023-08-13 21:09:18</td>
-       <td>QUALCOMM Multiple product Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=6657dc4959dc42359bfda08b3418b414">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>326f6f3858d74d548d8351b93cea4111</td>
-       <td>CVE-2023-21650</td>
-       <td>2023-08-13 21:02:11</td>
-       <td>QUALCOMM Multiple product Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=f797e19e8c1e4aaca830b5dd7ae26f02">详情</a></td>
       </tr>
 
      </tbody>
