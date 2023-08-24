@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-08-23 10:13:14 -->
+<!-- RELEASE TIME : 2023-08-24 10:12:16 -->
 <html lang="zh-cn">
 
  <head>
@@ -282,9 +282,89 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>11beeee0648ade58261516d6462ce99b</td>
+       <td>CVE-2023-41028</td>
+       <td>2023-08-23 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>A stack-based buffer overflow exists in Juplink RX4-1500, a WiFi router, in versions 1.0.2 through 1.0.5. An authenticated attacker can exploit this vulnerability to achieve code execution as root.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-41028">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6153e351aa1ac26b73487f02eb2ddb55</td>
+       <td>CVE-2023-38422</td>
+       <td>2023-08-23 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>Walchem Intuition 9 firmware versions prior to v4.21 are missing authentication for some of the API routes of the management web server. This could allow an attacker to download and export sensitive data.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-38422">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>22c82b61130246f8aef9f48ecd5eb70f</td>
+       <td>CVE-2023-36317</td>
+       <td>2023-08-23 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>Cross Site Scripting (XSS) vulnerability in sourcecodester Student Study Center Desk Management System 1.0 allows attackers to run arbitrary code via crafted GET request to web application URL.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-36317">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e9a5463cf8fa1c89a609dae8d2a7ad0b</td>
+       <td>CVE-2023-3453</td>
+       <td>2023-08-23 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>ETIC Telecom RAS versions 4.7.0 and prior the web management portal authentication disabled by default. This could allow an attacker with adjacent network access to alter the configuration of the device or cause a denial-of-service condition.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-3453">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d184d48e9f37493b95d0cd579c06275a</td>
+       <td>CVE-2023-32202</td>
+       <td>2023-08-23 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>Walchem Intuition 9 firmware versions prior to v4.21 are vulnerable to improper authentication. Login credentials are stored in a format that could allow an attacker to use them as-is to login and gain access to the device.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-32202">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>cb493597bd0bc5222caae61299ed0269</td>
+       <td>CVE-2023-40185</td>
+       <td>2023-08-23 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>shescape is simple shell escape library for JavaScript. This may impact users that use Shescape on Windows in a threaded context. The vulnerability can result in Shescape escaping (or quoting) for the wrong shell, thus allowing attackers to bypass protections depending on the combination of expected and used shell. This bug has been patched in version 1.7.4.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-40185">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a901cd2da44230d6cf7cd1a15228e789</td>
+       <td>CVE-2023-40178</td>
+       <td>2023-08-23 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>Node-SAML is a SAML library not dependent on any frameworks that runs in Node. The lack of checking of current timestamp allows a LogoutRequest XML to be reused multiple times even when the current time is past the NotOnOrAfter. This could impact the user where they would be logged out from an expired LogoutRequest. In bigger contexts, if LogoutRequests are sent out in mass to different SPs, this could impact many users on a large scale. This issue was patched in version 4.0.5.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-40178">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5bacc0769489be6d59c9688af5f4d431</td>
+       <td>CVE-2023-40177</td>
+       <td>2023-08-23 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>XWiki Platform is a generic wiki platform offering runtime services for applications built on top of it. Any registered user can use the content field of their user profile page to execute arbitrary scripts with programming rights, thus effectively performing rights escalation. This issue is present since version 4.3M2 when AppWithinMinutes Application added support for the Content field, allowing any wiki page (including the user profile page) to use its content as an AWM Content field, which has a custom displayer that executes the content with the rights of the ``AppWithinMinutes.Content`` author, rather than the rights of the content author. The vulnerability has been fixed in XWiki 14.10.5 and 15.1RC1. The fix is in the content of the AppWithinMinutes.Content page that defines the custom displayer. By using the ``display`` script service to render the content we make sure that the proper author is used for access rights checks.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-40177">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>881aabc496e3d934262942419363e673</td>
+       <td>CVE-2023-40035</td>
+       <td>2023-08-23 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>Craft is a CMS for creating custom digital experiences on the web and beyond. Bypassing the validatePath function can lead to potential remote code execution. This vulnerability can lead to malicious control of vulnerable systems and data exfiltrations. Although the vulnerability is exploitable only in the authenticated users, configuration with ALLOW_ADMIN_CHANGES=true, there is still a potential security threat (Remote Code Execution). This issue has been patched in version 4.4.15 and version 3.8.15.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-40035">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2f9feb9df20f6a2efc98fc2453521172</td>
+       <td>CVE-2023-40176</td>
+       <td>2023-08-23 20:15:00 <img src="imgs/new.gif" /></td>
+       <td>XWiki Platform is a generic wiki platform offering runtime services for applications built on top of it. Any registered user can exploit a stored XSS through their user profile by setting the payload as the value of the time zone user preference. Even though the time zone is selected from a drop down (no free text value) it can still be set from JavaScript (using the browser developer tools) or by calling the save URL on the user profile with the right query string. Once the time zone is set it is displayed without escaping which means the payload gets executed for any user that visits the malicious user profile, allowing the attacker to steal information and even gain more access rights (escalation to programming rights). This issue is present since version 4.1M2 when the time zone user preference was introduced. The issue has been fixed in XWiki 14.10.5 and 15.1RC1.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-40176">详情</a></td>
+      </tr>
+
+      <tr>
        <td>3f09465985f752ff318b67999d400c36</td>
        <td>CVE-2023-40370</td>
-       <td>2023-08-22 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-08-22 22:15:00</td>
        <td>IBM Robotic Process Automation 21.0.0 through 21.0.7.1 runtime is vulnerable to information disclosure of script content if the remote REST request computer policy is enabled.  IBM X-Force ID:  263470.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-40370">详情</a></td>
       </tr>
@@ -292,7 +372,7 @@
       <tr>
        <td>b851b8a6e4b1da1b79ea224b7273647e</td>
        <td>CVE-2023-39026</td>
-       <td>2023-08-22 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-08-22 22:15:00</td>
        <td>Directory Traversal vulnerability in FileMage Gateway Windows Deployments v.1.10.8 and before allows a remote attacker to obtain sensitive information via a crafted request to the /mgmt/ component.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-39026">详情</a></td>
       </tr>
@@ -300,7 +380,7 @@
       <tr>
        <td>39e8affd0b08ebd6a59cbaa9a8349bf1</td>
        <td>CVE-2023-38734</td>
-       <td>2023-08-22 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-08-22 22:15:00</td>
        <td>IBM Robotic Process Automation 21.0.0 through 21.0.7.1 and 23.0.0 through 23.0.1 is vulnerable to incorrect privilege assignment when importing users from an LDAP directory.  IBM X-Force ID:  262481.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-38734">详情</a></td>
       </tr>
@@ -308,7 +388,7 @@
       <tr>
        <td>c6de6af0eff4ba0f5df092e4cc096675</td>
        <td>CVE-2023-38733</td>
-       <td>2023-08-22 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-08-22 22:15:00</td>
        <td>IBM Robotic Process Automation 21.0.0 through 21.0.7.1 and 23.0.0 through 23.0.1 server could allow an authenticated user to view sensitive information from installation logs.  IBM X-Force Id:  262293.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-38733">详情</a></td>
       </tr>
@@ -316,7 +396,7 @@
       <tr>
        <td>f6167028de7beac2bf0c8831ac3331a6</td>
        <td>CVE-2020-24113</td>
-       <td>2023-08-22 22:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-08-22 22:15:00</td>
        <td>Directory Traversal vulnerability in Contacts File Upload Interface in Yealink W60B version 77.83.0.85, allows attackers to gain sensitive information and cause a denial of service (DoS).</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2020-24113">详情</a></td>
       </tr>
@@ -324,7 +404,7 @@
       <tr>
        <td>fb44cd72676a57ec09b8b9bff3c2b6b0</td>
        <td>CVE-2023-33850</td>
-       <td>2023-08-22 21:15:00 <img src="imgs/new.gif" /></td>
+       <td>2023-08-22 21:15:00</td>
        <td>IBM GSKit-Crypto could allow a remote attacker to obtain sensitive information, caused by a timing-based side channel in the RSA Decryption implementation. By sending an overly large number of trial messages for decryption, an attacker could exploit this vulnerability to obtain sensitive information. IBM X-Force ID: 257132.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-33850">详情</a></td>
       </tr>
@@ -332,7 +412,7 @@
       <tr>
        <td>f04328eaa0b7bee135f997d06b210d46</td>
        <td>CVE-2023-4475</td>
-       <td>2023-08-22 19:16:00 <img src="imgs/new.gif" /></td>
+       <td>2023-08-22 19:16:00</td>
        <td>An Arbitrary File Movement vulnerability was found in ASUSTOR Data Master (ADM) allows an attacker to exploit the file renaming feature to move files to unintended directories. Affected products and versions include: ADM 4.0.6.RIS1, 4.1.0 and below as well as ADM 4.2.2.RI61 and below.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-4475">详情</a></td>
       </tr>
@@ -340,7 +420,7 @@
       <tr>
        <td>4627a809129356f70ce19dc7c3fd372b</td>
        <td>CVE-2023-4212</td>
-       <td>2023-08-22 19:16:00 <img src="imgs/new.gif" /></td>
+       <td>2023-08-22 19:16:00</td>
        <td>?A command injection vulnerability exists in Trane XL824, XL850, XL1050, and Pivot thermostats allowing an attacker to execute arbitrary commands as root using a specially crafted filename. The vulnerability requires physical access to the device via a USB stick.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-4212">详情</a></td>
       </tr>
@@ -348,7 +428,7 @@
       <tr>
        <td>16a22b8aed219064c03132b8ce9b63e9</td>
        <td>CVE-2023-39599</td>
-       <td>2023-08-22 19:16:00 <img src="imgs/new.gif" /></td>
+       <td>2023-08-22 19:16:00</td>
        <td>Cross-Site Scripting (XSS) vulnerability in CSZ CMS v.1.3.0 allows attackers to execute arbitrary code via a crafted payload to the Social Settings parameter.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-39599">详情</a></td>
       </tr>
@@ -356,7 +436,7 @@
       <tr>
        <td>6069f7b8ba0d62ba0a990c07115597f1</td>
        <td>CVE-2023-39141</td>
-       <td>2023-08-22 19:16:00 <img src="imgs/new.gif" /></td>
+       <td>2023-08-22 19:16:00</td>
        <td>webui-aria2 commit 4fe2e was discovered to contain a path traversal vulnerability.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-39141">详情</a></td>
       </tr>
@@ -439,86 +519,6 @@
        <td>2023-08-21 19:15:00</td>
        <td>Improper access controls in the entry duplication component in Devolutions Remote Desktop Manager 2023.2.19 and earlier versions on Windows allows an authenticated user, under specific circumstances, to inadvertently share their personal vault entry with shared vaults via an incorrect vault in the duplication write process.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-4417">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>22dc3d7fa59b75aa397b1720bac34f4e</td>
-       <td>CVE-2023-4440</td>
-       <td>2023-08-20 23:15:00</td>
-       <td>A vulnerability was found in SourceCodester Free Hospital Management System for Small Practices 1.0. It has been classified as critical. This affects an unknown part of the file appointment.php. The manipulation of the argument sheduledate leads to sql injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-237561 was assigned to this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-4440">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1c44d068a1ad54706f0c651f9ce4ec74</td>
-       <td>CVE-2023-4439</td>
-       <td>2023-08-20 23:15:00</td>
-       <td>A vulnerability was found in SourceCodester Card Holder Management System 1.0 and classified as problematic. Affected by this issue is some unknown functionality of the component Minus Value Handler. The manipulation leads to improper validation of specified quantity in input. The attack may be launched remotely. The identifier of this vulnerability is VDB-237560.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-4439">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e356f8e74b6f0a3b490a3ef2a388c767</td>
-       <td>CVE-2023-4438</td>
-       <td>2023-08-20 23:15:00</td>
-       <td>A vulnerability has been found in SourceCodester Inventory Management System 1.0 and classified as critical. Affected by this vulnerability is an unknown functionality of the file app/ajax/search_sales_report.php. The manipulation of the argument customer leads to sql injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-237559.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-4438">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e10a76d94ea655034a6ebfc2306aad5c</td>
-       <td>CVE-2023-4437</td>
-       <td>2023-08-20 22:15:00</td>
-       <td>A vulnerability, which was classified as critical, was found in SourceCodester Inventory Management System 1.0. Affected is an unknown function of the file app/ajax/search_sell_paymen_report.php. The manipulation of the argument customer leads to sql injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. VDB-237558 is the identifier assigned to this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-4437">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9ff5881e461a29f6fae8dc10959df241</td>
-       <td>CVE-2023-4436</td>
-       <td>2023-08-20 22:15:00</td>
-       <td>A vulnerability, which was classified as critical, has been found in SourceCodester Inventory Management System 1.0. This issue affects some unknown processing of the file app/action/edit_update.php. The manipulation of the argument user_id leads to sql injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-237557 was assigned to this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-4436">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>27b1077153b6345ef910c9a457736813</td>
-       <td>CVE-2023-36674</td>
-       <td>2023-08-20 18:15:00</td>
-       <td>An issue was discovered in MediaWiki before 1.35.11, 1.36.x through 1.38.x before 1.38.7, 1.39.x before 1.39.4, and 1.40.x before 1.40.1. It is possible to bypass the Bad image list (aka badFile) by using the thumb parameter (aka Manualthumb) of the File syntax.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-36674">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8f62b56210ebfbe337f2e24e283578bf</td>
-       <td>CVE-2022-24989</td>
-       <td>2023-08-20 18:15:00</td>
-       <td>TerraMaster NAS through 4.2.30 allows remote WAN attackers to execute arbitrary code as root via the raidtype and diskstring parameters for PHP Object Instantiation to the api.php?mobile/createRaid URI. (Shell metacharacters can be placed in raidtype because popen is used without any sanitization.) The credentials from CVE-2022-24990 exploitation can be used.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-24989">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8db3635458685fb05b466e2a25d887fc</td>
-       <td>CVE-2023-4451</td>
-       <td>2023-08-20 15:15:00</td>
-       <td>Cross-site Scripting (XSS) - Reflected in GitHub repository cockpit-hq/cockpit prior to 2.6.4.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-4451">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2ae2ea8477f995554f74bc38691e4e89</td>
-       <td>CVE-2023-37250</td>
-       <td>2023-08-20 08:15:00</td>
-       <td>Unity Parsec before 8 has a TOCTOU race condition that permits local attackers to escalate privileges to SYSTEM if Parsec was installed in "Per User" mode. The application intentionally launches DLLs from a user-owned directory but intended to always perform integrity verification of those DLLs.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-37250">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>55b2e43dbe0e99883835963f04e59976</td>
-       <td>CVE-2023-37369</td>
-       <td>2023-08-20 07:15:00</td>
-       <td>In Qt before 5.15.15, 6.x before 6.2.9, and 6.3.x through 6.5.x before 6.5.2, there can be an application crash in QXmlStreamReader via a crafted XML string that triggers a situation in which a prefix is greater than a length.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-37369">详情</a></td>
       </tr>
 
      </tbody>
@@ -1698,9 +1698,25 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>b859937e71c8c33bab5180cbf502efe1</td>
+       <td>CVE-2023-40347</td>
+       <td>2023-08-23 20:08:11 <img src="imgs/new.gif" /></td>
+       <td>JENKINS MAVEN_ARTIFACT_CHOICELISTPROVIDER_\(NEXUS\) Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=60f11345ae4d491a9ca5165ff3819b5d">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>87eb16d715d163e1c15cdc1a3b66891f</td>
+       <td>CVE-2022-22655</td>
+       <td>2023-08-23 20:07:16 <img src="imgs/new.gif" /></td>
+       <td>APPLE Multiple product Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=b32eb49639384070be023ebd90096d5c">详情</a></td>
+      </tr>
+
+      <tr>
        <td>040eea420ebd7dc55fafdad0c9ba002e</td>
        <td>CVE-2023-39400</td>
-       <td>2023-08-22 20:07:01 <img src="imgs/new.gif" /></td>
+       <td>2023-08-22 20:07:01</td>
        <td>HUAWEI Multiple product Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=1d37c989cd244111b51585b713159d67">详情</a></td>
       </tr>
@@ -1708,7 +1724,7 @@
       <tr>
        <td>5374b46df6f083359c699677ff808372</td>
        <td>CVE-2023-39389</td>
-       <td>2023-08-22 20:07:00 <img src="imgs/new.gif" /></td>
+       <td>2023-08-22 20:07:00</td>
        <td>HUAWEI Multiple product Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=706c0090936642ea945f1feb4ff3f133">详情</a></td>
       </tr>
@@ -1716,7 +1732,7 @@
       <tr>
        <td>31d8dd31a68492bc98b687492dcdb34c</td>
        <td>CVE-2023-39391</td>
-       <td>2023-08-22 20:07:00 <img src="imgs/new.gif" /></td>
+       <td>2023-08-22 20:07:00</td>
        <td>HUAWEI Multiple product Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=455eafc80aaa4142a495717862dda0e1">详情</a></td>
       </tr>
@@ -1724,7 +1740,7 @@
       <tr>
        <td>fec95743cf989e37ba1cffaeff278893</td>
        <td>CVE-2020-36023</td>
-       <td>2023-08-22 20:06:37 <img src="imgs/new.gif" /></td>
+       <td>2023-08-22 20:06:37</td>
        <td>FREEDESKTOP POPPLER Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=ba93fb474e3c4b49b0dc732229e20580">详情</a></td>
       </tr>
@@ -1921,22 +1937,6 @@
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=54948847768c4385901559d8fcb7830b">详情</a></td>
       </tr>
 
-      <tr>
-       <td>7744165e36928a00f663c1c0b0b79b22</td>
-       <td>CVE-2020-27449</td>
-       <td>2023-08-19 20:09:53</td>
-       <td>ZOHOCORP MANAGEENGINE_PASSWORD_MANAGER_PRO Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=3860ce972b364445a3e4c13d5b8c00ff">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1c9daecc866d74284f788917649702bf</td>
-       <td>CVE-2020-36024</td>
-       <td>2023-08-19 20:09:53</td>
-       <td>FREEDESKTOP POPPLER Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=28b6ebbc602a40389b11cc187d711ad1">详情</a></td>
-      </tr>
-
      </tbody>
     </table>
    </div>
@@ -1953,6 +1953,126 @@
        <th width="43%">TITLE</th>
        <th width="5%">URL</th>
       </tr>
+      <tr>
+       <td>1dd5b59d4f07494dafdee92bab8ae06f</td>
+       <td>CVE-2023-20887</td>
+       <td>2023-08-14 10:10:08</td>
+       <td>VMware Aria Operations for Networks命令注入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/83121">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1646824d05a497468acae80d6869a486</td>
+       <td>CVE-2023-23482</td>
+       <td>2023-08-14 10:10:08</td>
+       <td>IBM Sterling Partner Engagement Manager点击劫持漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/83120">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>554cb85659976d7a48795539620dfd0b</td>
+       <td>CVE-2020-36720</td>
+       <td>2023-08-14 10:10:08</td>
+       <td>WordPress Kali Forms Plugin授权错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/83119">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1133185246b561d911e401d79ea4f0ec</td>
+       <td>CVE-2021-4351</td>
+       <td>2023-08-14 10:10:08</td>
+       <td>WordPress Frontend File Manager Plugin授权错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/83118">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c02e2e06b58118910f61a9cfbf97c55f</td>
+       <td>CVE-2021-4364</td>
+       <td>2023-08-14 10:10:08</td>
+       <td>WordPress JobSearch WP Job Board Plugin授权绕过漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/83117">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5996f967d96f7f247ce2216990ea0c34</td>
+       <td>CVE-2021-4376</td>
+       <td>2023-08-14 10:10:08</td>
+       <td>WordPress WooCommerce Multi Currency Plugin授权错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/83116">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0b4ed04942c04e4d6469a60a49d13692</td>
+       <td>CVE-2023-34364</td>
+       <td>2023-08-14 10:10:08</td>
+       <td>Progress Software DataDirect&nbsp;&nbsp;Connect for ODBC缓冲区溢出漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/83115">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ec22aec4d2e2e0d2274d844c3afc555e</td>
+       <td>CVE-2019-16283</td>
+       <td>2023-08-14 10:10:08</td>
+       <td>HP SoftPaq任意代码执行漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/83114">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d0de35aefc00d12c41a55cab0b27aff4</td>
+       <td>CVE-2023-29752</td>
+       <td>2023-08-14 10:10:08</td>
+       <td>Facemoji Emoji Keyboard权限提升漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/83113">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3467a550b50da520d616fd6fc6e5fdb4</td>
+       <td>CVE-2023-32751</td>
+       <td>2023-08-14 10:10:08</td>
+       <td>Abstrium Pydio Cells跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/83112">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>60127e797da788be025bca1f736a31d7</td>
+       <td>CVE-2023-0710</td>
+       <td>2023-08-14 10:10:08</td>
+       <td>WordPress Metform Elementor Contact Form Builder跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/83111">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>dc3e8937c913b214d6442f8110649ac9</td>
+       <td>CVE-2023-2546</td>
+       <td>2023-08-14 10:10:08</td>
+       <td>WordPress WP User Switch plugin身份验证绕过漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/83110">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c3d74dad83ab18736dc55eb88e5fc441</td>
+       <td>CVE-2023-3121</td>
+       <td>2023-08-14 10:10:08</td>
+       <td>Dahua Smart Parking Management服务器端请求伪造漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/83109">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a30e7f9229a58e0ecb719850a9ecfdfc</td>
+       <td>CVE-2023-33613</td>
+       <td>2023-08-14 10:10:08</td>
+       <td>Sourceforge axTLS堆缓冲区溢出漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/83108">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7a1b8df67ef8792e2cf55748bda4146f</td>
+       <td>CVE-2023-0993</td>
+       <td>2023-08-14 10:10:08</td>
+       <td>WordPress SiteGround Security plugin授权错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/83107">详情</a></td>
+      </tr>
+
       <tr>
        <td>203ae708432c6e5b9e52c51e772688d2</td>
        <td>CVE-2023-29459</td>
@@ -2073,126 +2193,6 @@
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/82697">详情</a></td>
       </tr>
 
-      <tr>
-       <td>708cca37d210ef0b82c2510d9b595702</td>
-       <td>CVE-2023-32201</td>
-       <td>2023-08-04 10:10:08</td>
-       <td>Fuji Electric TELLUS和TELLUS Lite堆栈缓冲区溢出漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/82617">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0c30af97b88c8b3d63fb517b6a563037</td>
-       <td>CVE-2023-36288</td>
-       <td>2023-08-04 10:10:08</td>
-       <td>Webkul QloApps跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/82616">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>714c9eaa7e8dd131f5566d658d14b105</td>
-       <td>CVE-2020-20335</td>
-       <td>2023-08-04 10:10:08</td>
-       <td>Antirez Kilo缓冲区溢出漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/82615">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d7f7b9455e6e30cfd5a66e9dd6536bd5</td>
-       <td>CVE-2023-35855</td>
-       <td>2023-08-04 10:10:08</td>
-       <td>Valve Counter-Strike缓冲区溢出漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/82614">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b3b18072d861173c5e301342d51973f6</td>
-       <td>CVE-2022-48469</td>
-       <td>2023-08-04 10:10:08</td>
-       <td>Huawei B535-232a流量劫持漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/82613">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0e54b916922dee9bda226a744db2e6d3</td>
-       <td></td>
-       <td>2023-08-04 10:10:08</td>
-       <td>WordPress Integration for Contact Form 7 and Zoho CRM, Bigin Plugin SQL注入漏洞（CVE-</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/82612">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2f5b0d0bd76ae3c28484d4641b02c29a</td>
-       <td>CVE-2023-3312</td>
-       <td>2023-08-04 10:10:08</td>
-       <td>Linux Kernel双重释放漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/82611">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ae6c68f0eef687937a9f68097d655cfb</td>
-       <td>CVE-2023-25645</td>
-       <td>2023-08-04 10:10:08</td>
-       <td>ZTE AndroidTV STBs访问控制错误漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/82610">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>293215a22f9e930d0cd6d3060f5ebab1</td>
-       <td>CVE-2023-3195</td>
-       <td>2023-08-04 10:10:08</td>
-       <td>ImageMagick堆栈缓冲区溢出漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/82609">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1f73acad7df2e7844a9942acb06b243c</td>
-       <td>CVE-2023-35789</td>
-       <td>2023-08-04 10:10:08</td>
-       <td>rabbitmq-c信息泄露漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/82608">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c24e0e66fbb2d84cffb5eef5a0b0634e</td>
-       <td>CVE-2023-2797</td>
-       <td>2023-08-04 10:10:08</td>
-       <td>Mattermost代码注入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/82607">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8c5250f7dbb6ce428cb12bdd4aa6d7b4</td>
-       <td>CVE-2023-36287</td>
-       <td>2023-08-04 10:10:08</td>
-       <td>Webkul QloApps跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/82606">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d852d3e640b459137534cce1d279cc3c</td>
-       <td>CVE-2023-32542</td>
-       <td>2023-08-04 10:10:08</td>
-       <td>Fuji Electric TELLUS和TELLUS Lite越界读取漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/82605">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3c8b5597d643129e56c62bdaea576e64</td>
-       <td>CVE-2023-29546</td>
-       <td>2023-08-04 10:10:08</td>
-       <td>Mozilla Firefox和Focus信息泄露漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/82604">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>866d8cf2d69108d1f504a8b206b157a9</td>
-       <td>CVE-2023-32419</td>
-       <td>2023-08-04 10:10:08</td>
-       <td>Apple iOS和iPadOS越界写入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/82603">详情</a></td>
-      </tr>
-
      </tbody>
     </table>
    </div>
@@ -2209,6 +2209,86 @@
        <th width="43%">TITLE</th>
        <th width="5%">URL</th>
       </tr>
+      <tr>
+       <td>9189eae04ec52615a2aa4737c2bdaf52</td>
+       <td>CVE-2023-4449</td>
+       <td>2023-08-21 02:15:10 </td>
+       <td>A vulnerability was found in SourceCodester Free and Open Source Inventory Management System 1.0. It has been classified as critical. Affected is an unknown function of the file /index.php?page=member. The manipulation of the argument columns[0][data] leads to sql injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. VDB-237570 is the identifier assigned to this vulnerability.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-4449">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>89badd4dc51b4a531381f8f9de59558b</td>
+       <td>CVE-2023-4444</td>
+       <td>2023-08-21 01:15:10 </td>
+       <td>A vulnerability classified as critical was found in SourceCodester Free Hospital Management System for Small Practices 1.0. Affected by this vulnerability is an unknown functionality of the file vm\patient\edit-user.php. The manipulation of the argument id00/nic/oldemail/email/spec/Tele leads to sql injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-237565 was assigned to this vulnerability.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-4444">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7d272d431b18e91149d0e8e66ee6a330</td>
+       <td>CVE-2023-4443</td>
+       <td>2023-08-21 01:15:10 </td>
+       <td>A vulnerability classified as critical has been found in SourceCodester Free Hospital Management System for Small Practices 1.0/5.0.12. Affected is an unknown function of the file vm\doctor\edit-doc.php. The manipulation of the argument id00/nic/oldemail/email/spec/Tele leads to sql injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-237564.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-4443">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>cada8907d30d7a25d23da5659a4fd663</td>
+       <td>CVE-2023-4442</td>
+       <td>2023-08-21 00:15:09 </td>
+       <td>A vulnerability was found in SourceCodester Free Hospital Management System for Small Practices 1.0. It has been rated as critical. This issue affects some unknown processing of the file \vm\patient\booking-complete.php. The manipulation of the argument userid/apponum/scheduleid leads to sql injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-237563.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-4442">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8f284d88606bc49f745779ab2e9e115e</td>
+       <td>CVE-2023-4441</td>
+       <td>2023-08-21 00:15:09 </td>
+       <td>A vulnerability was found in SourceCodester Free Hospital Management System for Small Practices 1.0. It has been declared as critical. This vulnerability affects unknown code of the file /patient/appointment.php. The manipulation of the argument sheduledate leads to sql injection. The attack can be initiated remotely. VDB-237562 is the identifier assigned to this vulnerability.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-4441">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e036c37115b519d27a6550f4a991f1c9</td>
+       <td>CVE-2023-4440</td>
+       <td>2023-08-20 23:15:10 </td>
+       <td>A vulnerability was found in SourceCodester Free Hospital Management System for Small Practices 1.0. It has been classified as critical. This affects an unknown part of the file appointment.php. The manipulation of the argument sheduledate leads to sql injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-237561 was assigned to this vulnerability.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-4440">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8127f0816ae29150b49f1ede191ddb3c</td>
+       <td>CVE-2023-4439</td>
+       <td>2023-08-20 23:15:10 </td>
+       <td>A vulnerability was found in SourceCodester Card Holder Management System 1.0 and classified as problematic. Affected by this issue is some unknown functionality of the component Minus Value Handler. The manipulation leads to improper validation of specified quantity in input. The attack may be launched remotely. The identifier of this vulnerability is VDB-237560.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-4439">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>cdff04da7e39d9651f4ef17a1a0c4a5d</td>
+       <td>CVE-2023-4438</td>
+       <td>2023-08-20 23:15:09 </td>
+       <td>A vulnerability has been found in SourceCodester Inventory Management System 1.0 and classified as critical. Affected by this vulnerability is an unknown functionality of the file app/ajax/search_sales_report.php. The manipulation of the argument customer leads to sql injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-237559.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-4438">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c94b8a3b941556bf205826a8cfb298e6</td>
+       <td>CVE-2023-4437</td>
+       <td>2023-08-20 22:15:11 </td>
+       <td>A vulnerability, which was classified as critical, was found in SourceCodester Inventory Management System 1.0. Affected is an unknown function of the file app/ajax/search_sell_paymen_report.php. The manipulation of the argument customer leads to sql injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. VDB-237558 is the identifier assigned to this vulnerability.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-4437">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>75c4a79cad95cd3c0364e28367cacf6b</td>
+       <td>CVE-2023-4433</td>
+       <td>2023-08-19 01:15:09 </td>
+       <td>Cross-site Scripting (XSS) - Stored in GitHub repository cockpit-hq/cockpit prior to 2.6.4.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-4433">详情</a></td>
+      </tr>
+
       <tr>
        <td>31fcd00769e4abd665a6ce3ca8449103</td>
        <td>CVE-2023-4422</td>
@@ -2367,86 +2447,6 @@
        <td>2023-08-15 18:15:10 </td>
        <td>Use after free in Device Trust Connectors in Google Chrome prior to 116.0.5845.96 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-4349">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d1cae090aa1815b70daa61cf3d350362</td>
-       <td>CVE-2023-4108</td>
-       <td>2023-08-11 07:15:10 </td>
-       <td>Mattermost fails to sanitize post metadata during audit logging resulting in permalinks contents being logged</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-4108">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5d73d7bf2b4812652c16bbae9d2bc9b0</td>
-       <td>CVE-2023-4304</td>
-       <td>2023-08-11 01:15:09 </td>
-       <td>Business Logic Errors in GitHub repository froxlor/froxlor prior to 2.0.22,2.1.0.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-4304">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5f02be790a06bd60407b0f5a7f4109ea</td>
-       <td>CVE-2023-4128</td>
-       <td>2023-08-10 17:15:12 </td>
-       <td>A use-after-free flaw was found in net/sched/cls_fw.c in classifiers (cls_fw, cls_u32, and cls_route) in the Linux Kernel. This flaw allows a local attacker to perform a local privilege escalation due to incorrect handling of the existing filter, leading to a kernel information leak issue.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-4128">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>99732ba02993a5024280b4c97d4c9855</td>
-       <td>CVE-2023-4283</td>
-       <td>2023-08-10 12:15:12 </td>
-       <td>The EmbedPress plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'embedpress_calendar' shortcode in versions up to, and including, 3.8.2 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated attackers with contributor-level and above permissions to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-4283">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>eebd08915ed0ead62242ac211ce6ea46</td>
-       <td>CVE-2023-4282</td>
-       <td>2023-08-10 12:15:12 </td>
-       <td>The EmbedPress plugin for WordPress is vulnerable to unauthorized loss of data due to a missing capability check on the 'admin_post_remove' and 'remove_private_data' functions in versions up to, and including, 3.8.2. This makes it possible for authenticated attackers with subscriber privileges or above, to delete plugin settings.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-4282">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e3ba777fc1bb92047bb7b4d3053c3b0c</td>
-       <td>CVE-2023-4277</td>
-       <td>2023-08-10 07:15:37 </td>
-       <td>The Realia plugin for WordPress is vulnerable to Cross-Site Request Forgery in versions up to, and including, 1.4.0. This is due to missing nonce validation on the 'process_change_profile_form' function. This makes it possible for unauthenticated attackers to change user email via a forged request granted they can trick a site administrator into performing an action such as clicking on a link.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-4277">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>69b99f42e3d2aeeb8c15a0ea1b26302a</td>
-       <td>CVE-2023-4276</td>
-       <td>2023-08-10 07:15:37 </td>
-       <td>The Absolute Privacy plugin for WordPress is vulnerable to Cross-Site Request Forgery in versions up to, and including, 2.1. This is due to missing nonce validation on the 'abpr_profileShortcode' function. This makes it possible for unauthenticated attackers to change user email and password via a forged request granted they can trick a site administrator into performing an action such as clicking on a link.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-4276">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1ff1ae3656c63ca9baeb55cc21d2c6b9</td>
-       <td>CVE-2023-4273</td>
-       <td>2023-08-09 15:15:09 </td>
-       <td>A flaw was found in the exFAT driver of the Linux kernel. The vulnerability exists in the implementation of the file name reconstruction function, which is responsible for reading file name entries from a directory index and merging file name parts belonging to one file into a single long file name. Since the file name characters are copied into a stack variable, a local privileged attacker could use this flaw to overflow the kernel stack.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-4273">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3eddcf90de647efc075ac0020c0b272c</td>
-       <td>CVE-2023-32782</td>
-       <td>2023-08-09 12:15:10 </td>
-       <td>An issue was discovered in Paessler PRTG Network Monitor 23.2.83.1760. Due to command-line parameter injection and an undocumented debug feature flag, an attacker can utilize the DICOM sensor to write arbitrary data to the disk. This can be utilized to write a custom EXE(.bat) sensor, that will then run. This primitive gives remote code execution.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-32782">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>47b025f2b545e785422ad6b7d7609cf0</td>
-       <td>CVE-2023-32781</td>
-       <td>2023-08-09 12:15:10 </td>
-       <td>An issue was discovered in Paessler PRTG Network Monitor 23.2.83.1760. Due to command-line parameter injection and an undocumented debug feature flag, an attacker can utilize the HL7 sensor to write arbitrary data to the disk. This can be utilized to write a custom EXE(.bat) sensor, that will then run. This primitive gives remote code execution.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-32781">详情</a></td>
       </tr>
 
      </tbody>
