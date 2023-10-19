@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-10-18 09:11:14 -->
+<!-- RELEASE TIME : 2023-10-19 09:11:14 -->
 <html lang="zh-cn">
 
  <head>
@@ -28,7 +28,7 @@
       <tr>
        <td>adac1daf92ae9567a5e0c667d43f6be3</td>
        <td>CVE-2023-20198</td>
-       <td>2023-10-17 16:22:34 <img src="imgs/new.gif" /></td>
+       <td>2023-10-17 16:22:34</td>
        <td>CVE-2023-20198：Cisco IOS XE Web UI 权限提升漏洞通告</td>
        <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=652e43e5ea0822e915605df1">详情</a></td>
       </tr>
@@ -282,6 +282,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>abfefed17be6ae94bb86bd8a3a83f867</td>
+       <td>CVE-2023-45811</td>
+       <td>2023-10-17 23:15:00</td>
+       <td>Synchrony deobfuscator is a javascript cleaner & deobfuscator. A `__proto__` pollution vulnerability exists in versions before v2.4.4. Successful exploitation could lead to arbitrary code execution. A `__proto__` pollution vulnerability exists in the `LiteralMap` transformer allowing crafted input to modify properties in the Object prototype. A fix has been released in `deobfuscator@2.4.4`. Users are advised to upgrade. Users unable to upgrade should launch node with the [--disable-proto=delete][disable-proto] or [--disable-proto=throw][disable-proto] flags</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-45811">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>4462e3afee73e2796bd8302f8f730ee6</td>
+       <td>CVE-2023-45810</td>
+       <td>2023-10-17 23:15:00</td>
+       <td>OpenFGA is a flexible authorization/permission engine built for developers and inspired by Google Zanzibar. Affected versions of OpenFGA are vulnerable to a denial of service attack. When a number of `ListObjects` calls are executed, in some scenarios, those calls are not releasing resources even after a response has been sent, and given a sufficient call volume the service as a whole becomes unresponsive. This issue has been addressed in version 1.3.4 and the upgrade is considered backwards compatible. There are no known workarounds for this vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-45810">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b9b3235b501c79108f7b96e5e2c54449</td>
+       <td>CVE-2023-42507</td>
+       <td>2023-10-17 23:15:00</td>
+       <td>Stack-based buffer overflow vulnerability exists in OnSinView2 versions 2.0.1 and earlier. If this vulnerability is exploited, information may be disclosed or arbitrary code may be executed by having a user open a specially crafted OnSinView2 project file.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-42507">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2b745326fb1ae1102bfd4aa79d19a997</td>
+       <td>CVE-2023-42506</td>
+       <td>2023-10-17 23:15:00</td>
+       <td>Improper restriction of operations within the bounds of a memory buffer issue exists in OnSinView2 versions 2.0.1 and earlier. If this vulnerability is exploited, information may be disclosed or arbitrary code may be executed by having a user open a specially crafted OnSinView2 project file.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-42506">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6ebc40786ecc41385bcdd76b6db1e48d</td>
+       <td>CVE-2023-41715</td>
+       <td>2023-10-17 23:15:00</td>
+       <td>SonicOS post-authentication Improper Privilege Management vulnerability in the SonicOS SSL VPN Tunnel allows users to elevate their privileges inside the tunnel.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-41715">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f700d5d171947e2f9614f3b65170fc5a</td>
+       <td>CVE-2023-41713</td>
+       <td>2023-10-17 23:15:00</td>
+       <td>SonicOS Use of Hard-coded Password vulnerability in the 'dynHandleBuyToolbar' demo function.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-41713">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>26cb9ba01708cf9afac835cf0deb946a</td>
+       <td>CVE-2023-41712</td>
+       <td>2023-10-17 23:15:00</td>
+       <td>SonicOS post-authentication Stack-Based Buffer Overflow Vulnerability in the SSL VPN plainprefs.exp URL endpoint leads to a firewall crash.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-41712">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>62942e25c05f4fb3f6e6764b25344844</td>
+       <td>CVE-2023-41711</td>
+       <td>2023-10-17 23:15:00</td>
+       <td>SonicOS post-authentication Stack-Based Buffer Overflow Vulnerability in the sonicwall.exp, prefs.exp URL endpoints lead to a firewall crash.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-41711">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9142b0e3f63e645798e18eb0fd88b604</td>
+       <td>CVE-2023-39280</td>
+       <td>2023-10-17 23:15:00</td>
+       <td>SonicOS p ost-authentication Stack-Based Buffer Overflow vulnerability in the ssoStats-s.xml, ssoStats-s.wri URL endpoints leads to a firewall crash.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-39280">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>43d18dd0aa8f052a07a161e673a5083f</td>
+       <td>CVE-2023-39279</td>
+       <td>2023-10-17 23:15:00</td>
+       <td>SonicOS post-authentication Stack-Based Buffer Overflow vulnerability in the getPacketReplayData.json URL endpoint leads to a firewall crash.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-39279">详情</a></td>
+      </tr>
+
+      <tr>
        <td>1dbcb87a082e482cf25b38e3e6e4dc66</td>
        <td>CVE-2023-45683</td>
        <td>2023-10-16 19:15:00</td>
@@ -439,86 +519,6 @@
        <td>2023-10-14 16:15:00</td>
        <td>IBM Cloud Pak for Business Automation 18.0.0, 18.0.1, 18.0.2, 19.0.1, 19.0.2, 19.0.3, 20.0.1, 20.0.2, 20.0.3, 21.0.1, 21.0.2, 21.0.3, 22.0.1, and 22.0.2 is vulnerable to cross-site scripting. This vulnerability allows users to embed arbitrary JavaScript code in the Web UI thus altering the intended functionality potentially leading to credentials disclosure within a trusted session. IBM X-Force ID: 258349.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-35024">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d5109c3f059771b64d2818f04df2b2a7</td>
-       <td>CVE-2023-30154</td>
-       <td>2023-10-14 04:15:00</td>
-       <td>Multiple improper neutralization of SQL parameters in module AfterMail (aftermailpresta) for PrestaShop, before version 2.2.1, allows remote attackers to perform SQL injection attacks via `id_customer`, `id_conf`, `id_product` and `token` parameters in `aftermailajax.php via the 'id_product' parameter in hooks DisplayRightColumnProduct and DisplayProductButtons.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-30154">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>89f2b7eecbcaa33380436c889b47ee51</td>
-       <td>CVE-2023-30148</td>
-       <td>2023-10-14 04:15:00</td>
-       <td>Multiple Stored Cross Site Scripting (XSS) vulnerabilities in Opart opartmultihtmlblock before version 2.0.12 and Opart multihtmlblock* version 1.0.0, allows remote authenticated users to inject arbitrary web script or HTML via the body_text or body_text_rude field in /sourcefiles/BlockhtmlClass.php and /sourcefiles/blockhtml.php.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-30148">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d476dc09e68b6896767c1d6a2ecd84c7</td>
-       <td>CVE-2023-45853</td>
-       <td>2023-10-14 02:15:00</td>
-       <td>MiniZip in zlib through 1.3 has an integer overflow and resultant heap-based buffer overflow in zipOpenNewFileInZip4_64 via a long filename, comment, or extra field. NOTE: MiniZip is not a supported part of the zlib product.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-45853">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>84bcfaba9c9356a0a2c4d155b23fc72e</td>
-       <td>CVE-2023-45852</td>
-       <td>2023-10-14 02:15:00</td>
-       <td>In Vitogate 300 2.1.3.0, /cgi-bin/vitogate.cgi allows an unauthenticated attacker to bypass authentication and execute arbitrary commands via shell metacharacters in the ipaddr params JSON data for the put method.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-45852">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e8d8d4942fd651ab1fc2972cb5cb47b0</td>
-       <td>CVE-2023-45674</td>
-       <td>2023-10-14 00:15:00</td>
-       <td>Farmbot-Web-App is a web control interface for the Farmbot farm automation platform. An SQL injection vulnerability was found in FarmBot's web app that allows authenticated attackers to extract arbitrary data from its database (including the user table). This issue may lead to Information Disclosure. This issue has been patched in version 15.8.4. Users are advised to upgrade. There are no known workarounds for this issue.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-45674">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>afb44cd234df13574dd5c2ba0b436be7</td>
-       <td>CVE-2023-4257</td>
-       <td>2023-10-13 22:15:00</td>
-       <td>Unchecked user input length in /subsys/net/l2/wifi/wifi_shell.c can cause buffer overflows.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-4257">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7d1c73733377342a4c239ce909db9aa3</td>
-       <td>CVE-2023-4263</td>
-       <td>2023-10-13 21:15:00</td>
-       <td>Potential buffer overflow vulnerability in the Zephyr IEEE 802.15.4 nRF 15.4 driver</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-4263">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>16dc8966b1fdd057f17a3f25d4c2b416</td>
-       <td>CVE-2023-36559</td>
-       <td>2023-10-13 21:15:00</td>
-       <td>Microsoft Edge (Chromium-based) Spoofing Vulnerability</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-36559">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6c5f54c9783cfa9793ec83b4e66e7f5f</td>
-       <td>CVE-2023-34977</td>
-       <td>2023-10-13 20:15:00</td>
-       <td>A cross-site scripting (XSS) vulnerability has been reported to affect Video Station. If exploited, the vulnerability could allow authenticated users to inject malicious code via a network. We have already fixed the vulnerability in the following version: Video Station 5.7.0 ( 2023/07/27 ) and later</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-34977">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4cd9b5980a5c7f8d564ca5dbd8b7920d</td>
-       <td>CVE-2023-34976</td>
-       <td>2023-10-13 20:15:00</td>
-       <td>A SQL injection vulnerability has been reported to affect Video Station. If exploited, the vulnerability could allow authenticated users to inject malicious code via a network. We have already fixed the vulnerability in the following version: Video Station 5.7.0 ( 2023/07/27 ) and later</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-34976">详情</a></td>
       </tr>
 
      </tbody>
@@ -1698,9 +1698,17 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>fab8a4e01df678a13d47631d51b5181a</td>
+       <td>CVE-2023-35654</td>
+       <td>2023-10-18 20:17:24 <img src="imgs/new.gif" /></td>
+       <td>GOOGLE ANDROID Vulnerability</td>
+       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=bbee65651f8b409aa4497ddc561132b4">详情</a></td>
+      </tr>
+
+      <tr>
        <td>5cfdc98263da0973a51329334bf1a006</td>
        <td>CVE-2023-44118</td>
-       <td>2023-10-17 20:11:03 <img src="imgs/new.gif" /></td>
+       <td>2023-10-17 20:11:03</td>
        <td>HUAWEI Multiple product Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=f715883d523c4a2a8c8f076e6e07d37d">详情</a></td>
       </tr>
@@ -1708,7 +1716,7 @@
       <tr>
        <td>0c61607b47a3c68209ca10399fcbb41d</td>
        <td>CVE-2023-5475</td>
-       <td>2023-10-17 20:11:03 <img src="imgs/new.gif" /></td>
+       <td>2023-10-17 20:11:03</td>
        <td>GOOGLE CHROME Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=c4b87cf861ee435e9d7ae5a1d2894518">详情</a></td>
       </tr>
@@ -1716,7 +1724,7 @@
       <tr>
        <td>02dba56f548a9f8c8f0c3cab647a3c16</td>
        <td>CVE-2023-44106</td>
-       <td>2023-10-17 20:11:03 <img src="imgs/new.gif" /></td>
+       <td>2023-10-17 20:11:03</td>
        <td>HUAWEI Multiple product Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=a72f9cbca83940c3bd930f44a01c7884">详情</a></td>
       </tr>
@@ -1724,7 +1732,7 @@
       <tr>
        <td>5cfb6a885e1fd532a9bbb5b2ad986ed4</td>
        <td>CVE-2023-5476</td>
-       <td>2023-10-17 20:11:03 <img src="imgs/new.gif" /></td>
+       <td>2023-10-17 20:11:03</td>
        <td>GOOGLE CHROME Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=8bb4a7173ee842e49356d42d03340886">详情</a></td>
       </tr>
@@ -1732,7 +1740,7 @@
       <tr>
        <td>d943d2ce866d72bed1b2a08ad614d4bb</td>
        <td>CVE-2023-44119</td>
-       <td>2023-10-17 20:11:03 <img src="imgs/new.gif" /></td>
+       <td>2023-10-17 20:11:03</td>
        <td>HUAWEI Multiple product Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=45c2af0797484e739a7413e955ff7835">详情</a></td>
       </tr>
@@ -1740,7 +1748,7 @@
       <tr>
        <td>5e71a16be3726ba435fba74ab3aa05cf</td>
        <td>CVE-2023-44116</td>
-       <td>2023-10-17 20:11:02 <img src="imgs/new.gif" /></td>
+       <td>2023-10-17 20:11:02</td>
        <td>HUAWEI Multiple product Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=908406c071c949f79a3d1489f38d6621">详情</a></td>
       </tr>
@@ -1927,14 +1935,6 @@
        <td>2023-10-14 20:10:58</td>
        <td>SIEMENS TECNOMATIX Vulnerability</td>
        <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=6ba4d5bc806642e1b4989775645c1939">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>633ecd07d66f2e792eff9ce3ed50efad</td>
-       <td>CVE-2023-45204</td>
-       <td>2023-10-14 20:10:58</td>
-       <td>SIEMENS TECNOMATIX Vulnerability</td>
-       <td><a target="_blank" href="https://redqueen.tj-un.com/IntelDetails.html?id=4fe77163c2974c75944bb190b1616b63">详情</a></td>
       </tr>
 
      </tbody>
@@ -2218,6 +2218,30 @@
       </tr>
 
       <tr>
+       <td>0a6a15c6631304965f03f7ba8db6d50a</td>
+       <td>CVE-2023-5240</td>
+       <td>2023-10-13 13:15:12 </td>
+       <td>Improper access control in PAM propagation scripts in Devolutions Server 2023.2.8.0 and ealier allows an attack with permission to manage PAM propagation scripts to retrieve passwords stored in it via a GET request.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-5240">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6a88ec4dbc774f83bb8bcf36b76f24a5</td>
+       <td>CVE-2023-5072</td>
+       <td>2023-10-12 17:15:10 </td>
+       <td>Denial of Service  in JSON-Java versions up to and including 20230618. &Acirc;&nbsp;A bug in the parser means that an input string of modest size can lead to indefinite amounts of memory being used.&Acirc;&nbsp;</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-5072">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7faf468e9b4fcbc3d9a756714fa856b6</td>
+       <td>CVE-2023-5046</td>
+       <td>2023-10-12 12:15:10 </td>
+       <td>Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Biltay Technology Procost allows SQL Injection, Command Line Execution through SQL Injection.This issue affects Procost: before 1390.</td>
+       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-5046">详情</a></td>
+      </tr>
+
+      <tr>
        <td>2acd1bba9dc3b592cb411070a2388430</td>
        <td>CVE-2023-5487</td>
        <td>2023-10-11 23:15:11 </td>
@@ -2423,30 +2447,6 @@
        <td>2023-10-10 13:15:22 </td>
        <td>A vulnerability was found in libX11 due to an integer overflow within the XCreateImage() function. This flaw allows a local user to trigger an integer overflow and execute arbitrary code with elevated privileges.</td>
        <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-43787">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>bbe6b0bd6ab910c62d555780c59f9bd4</td>
-       <td>CVE-2023-43786</td>
-       <td>2023-10-10 13:15:22 </td>
-       <td>A vulnerability was found in libX11 due to an infinite loop within the PutSubImage() function. This flaw allows a local user to consume all available system resources and cause a denial of service condition.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-43786">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>cc3c504d4b0f0bfdc7069745ca993481</td>
-       <td>CVE-2023-43785</td>
-       <td>2023-10-10 13:15:21 </td>
-       <td>A vulnerability was found in libX11 due to a boundary condition within the _XkbReadKeySyms() function. This flaw allows a local user to trigger an out-of-bounds read error and read the contents of memory on the system.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-43785">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c15b52c7ee2796841dc578b129733f71</td>
-       <td>CVE-2023-41852</td>
-       <td>2023-10-10 09:15:09 </td>
-       <td>Cross-Site Request Forgery (CSRF) vulnerability in MailMunch MailMunch &acirc;&euro;&ldquo; Grow your Email List plugin &lt;=&Acirc;&nbsp;3.1.2 versions.</td>
-       <td><a target="_blank" href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2023-41852">详情</a></td>
       </tr>
 
      </tbody>
