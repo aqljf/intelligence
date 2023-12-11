@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-12-10 09:11:14 -->
+<!-- RELEASE TIME : 2023-12-11 09:11:12 -->
 <html lang="zh-cn">
 
  <head>
@@ -282,6 +282,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>cfe66376c14ecdb318276da793876d2e</td>
+       <td>CVE-2023-50457</td>
+       <td>2023-12-10 19:15:07 <img src="imgs/new.gif" /></td>
+       <td>An issue was discovered in Zammad before 6.2.0. When listing tickets linked to a knowledge base answer, or knowledge base answers of a ticket, a user could see entries for which they lack permissions.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-50457">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3bd18e5272c7bae5e39d5f1881e8de03</td>
+       <td>CVE-2023-50456</td>
+       <td>2023-12-10 19:15:07 <img src="imgs/new.gif" /></td>
+       <td>An issue was discovered in Zammad before 6.2.0. An attacker can trigger phishing links in generated notification emails via a crafted first or last name.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-50456">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>796252add224e05af35e0f5cbde19293</td>
+       <td>CVE-2023-50455</td>
+       <td>2023-12-10 19:15:07 <img src="imgs/new.gif" /></td>
+       <td>An issue was discovered in Zammad before 6.2.0. Due to lack of rate limiting in the "email address verification" feature, an attacker could send many requests for a known address to cause Denial Of Service (generation of many emails, which would also spam the victim).</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-50455">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3421291f68b88872c968959cd347357d</td>
+       <td>CVE-2023-50454</td>
+       <td>2023-12-10 19:15:07 <img src="imgs/new.gif" /></td>
+       <td>An issue was discovered in Zammad before 6.2.0. In several subsystems, SSL/TLS was used to establish connections to external services without proper validation of hostname and certificate authority. This is exploitable by man-in-the-middle attackers.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-50454">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b3130aa6b98db0358e1a8254aab8138a</td>
+       <td>CVE-2023-50453</td>
+       <td>2023-12-10 19:15:07 <img src="imgs/new.gif" /></td>
+       <td>An issue was discovered in Zammad before 6.2.0. It uses the public endpoint /api/v1/signshow for its login screen. This endpoint returns internal configuration data of user object attributes, such as selectable values, which should not be visible to the public.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-50453">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d0ae090f56c7b167469011ae41317fc0</td>
+       <td>CVE-2022-48614</td>
+       <td>2023-12-10 19:15:07 <img src="imgs/new.gif" /></td>
+       <td>Special:Ask in Semantic MediaWiki before 4.0.2 allows Reflected XSS.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-48614">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3f15150ea8e70904cee71ff324e1c962</td>
+       <td>CVE-2023-5870</td>
+       <td>2023-12-10 18:15:07 <img src="imgs/new.gif" /></td>
+       <td>A flaw was found in PostgreSQL involving the pg_cancel_backend role that signals background workers, including the logical replication launcher, autovacuum workers, and the autovacuum launcher. Successful exploitation requires a non-core extension with a less-resilient background worker and would affect that specific background worker only. This issue may allow a remote high privileged user to launch a denial of service (DoS) attack.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-5870">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c1ed494f85bbcc1e7dd1be219604e061</td>
+       <td>CVE-2023-5869</td>
+       <td>2023-12-10 18:15:07 <img src="imgs/new.gif" /></td>
+       <td>A flaw was found in PostgreSQL that allows authenticated database users to execute arbitrary code through missing overflow checks during SQL array value modification. This issue exists due to an integer overflow during array modification where a remote user can trigger the overflow by providing specially crafted data. This enables the execution of arbitrary code on the target system, allowing users to write arbitrary bytes to memory and extensively read the server's memory.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-5869">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b1657eee4224a1e1617435353ccb16be</td>
+       <td>CVE-2023-5868</td>
+       <td>2023-12-10 18:15:07 <img src="imgs/new.gif" /></td>
+       <td>A memory disclosure vulnerability was found in PostgreSQL that allows remote users to access sensitive information by exploiting certain aggregate function calls with 'unknown'-type arguments. Handling 'unknown'-type values from string literals without type designation can disclose bytes, potentially revealing notable and confidential information. This issue exists due to excessive data output in aggregate function calls, enabling remote users to read some portion of system memory.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-5868">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>50e9bb51cc98f8c019a829fca7f64017</td>
+       <td>CVE-2023-50449</td>
+       <td>2023-12-10 18:15:07 <img src="imgs/new.gif" /></td>
+       <td>JFinalCMS 5.0.0 could allow a remote attacker to read files via ../ Directory Traversal in the /common/down/file fileKey parameter.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-50449">详情</a></td>
+      </tr>
+
+      <tr>
        <td>830e25ee8c0831aa43dc03d5a6c74d0e</td>
        <td>CVE-2023-49788</td>
        <td>2023-12-08 20:15:07</td>
@@ -439,86 +519,6 @@
        <td>2023-12-07 22:15:08</td>
        <td>A vulnerability has been found in D-Link DAR-7000 up to 20231126 and classified as critical. This vulnerability affects unknown code of the file /user/inc/workidajax.php. The manipulation of the argument id leads to sql injection. The exploit has been disclosed to the public and may be used. VDB-247162 is the identifier assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-6581">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e44632fbdceb84715c3c8695e30bf6f9</td>
-       <td>CVE-2023-46218</td>
-       <td>2023-12-07 01:15:07</td>
-       <td>This flaw allows a malicious HTTP server to set "super cookies" in curl that are then passed back to more origins than what is otherwise allowed or possible. This allows a site to set cookies that then would get sent to different and unrelated sites and domains. It could do this by exploiting a mixed case flaw in curl's function that verifies a given cookie domain against the Public Suffix List (PSL). For example a cookie could be set with `domain=co.UK` when the URL used a lower case hostname `curl.co.uk`, even though `co.uk` is listed as a PSL domain.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-46218">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9645c5496a03242b6a0f84fc66aa639a</td>
-       <td>CVE-2023-6566</td>
-       <td>2023-12-07 00:15:07</td>
-       <td>Business Logic Errors in GitHub repository microweber/microweber prior to 2.0.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-6566">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7e3587c664786f23f74c0bc01f29e5e5</td>
-       <td>CVE-2023-46354</td>
-       <td>2023-12-06 23:15:07</td>
-       <td>In the module "Orders (CSV, Excel) Export PRO" (ordersexport) < 5.2.0 from MyPrestaModules for PrestaShop, a guest can download personal information without restriction. Due to a lack of permissions control, a guest can access exports from the module which can lead to a leak of personal information from ps_customer/ps_address tables such as name / surname / email / phone number / full postal address.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-46354">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3a194437889e5aa16ca96512a44fcebc</td>
-       <td>CVE-2023-46353</td>
-       <td>2023-12-06 23:15:07</td>
-       <td>In the module "Product Tag Icons Pro" (ticons) before 1.8.4 from MyPresta.eu for PrestaShop, a guest can perform SQL injection. The method TiconProduct::getTiconByProductAndTicon() has sensitive SQL calls that can be executed with a trivial http call and exploited to forge a SQL injection.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-46353">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d61176ed6019d7dda694e2fe94757b09</td>
-       <td>CVE-2023-49096</td>
-       <td>2023-12-06 20:15:07</td>
-       <td>Jellyfin is a Free Software Media System for managing and streaming media. In affected versions there is an argument injection in the VideosController, specifically the `/Videos/<itemId>/stream` and `/Videos/<itemId>/stream.<container>` endpoints which are present in the current Jellyfin version. Additional endpoints in the AudioController might also be vulnerable, as they differ only slightly in execution. Those endpoints are reachable by an unauthenticated user. In order to exploit this vulnerability an unauthenticated attacker has to guess an itemId, which is a completely random GUID. It’s a very unlikely case even for a large media database with lots of items. Without an additional information leak, this vulnerability shouldn’t be directly exploitable, even if the instance is reachable from the Internet. There are a lot of query parameters that get accepted by the method. At least two of those, videoCodec and audioCodec are vulnerable to the argument injection. The values can be traced through a lot of code and might be changed in the process. However, the fallback is to always use them as-is, which means we can inject our own arguments. Those arguments land in the command line of FFmpeg. Because UseShellExecute is always set to false, we can’t simply terminate the FFmpeg command and execute our own. It should only be possible to add additional arguments to FFmpeg, which is powerful enough as it stands. There is probably a way of overwriting an arbitrary file with malicious content. This vulnerability has been addressed in version 10.8.13. Users are advised to upgrade. There are no known workarounds for this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-49096">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>02439a4cad92443bd05ced17c1393013</td>
-       <td>CVE-2023-48123</td>
-       <td>2023-12-06 20:15:07</td>
-       <td>An issue in Netgate pfSense Plus v.23.05.1 and before and pfSense CE v.2.7.0 allows a remote attacker to execute arbitrary code via a crafted request to the packet_capture.php file.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-48123">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>95124316056b645bfdd5e15450ac28ae</td>
-       <td>CVE-2023-46751</td>
-       <td>2023-12-06 20:15:07</td>
-       <td>An issue was discovered in the function gdev_prn_open_printer_seekable() in Artifex Ghostscript through 10.02.0 allows remote attackers to crash the application via a dangling pointer.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-46751">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a2ee44d842d8064bafaf5619a32969bc</td>
-       <td>CVE-2023-6393</td>
-       <td>2023-12-06 17:15:07</td>
-       <td>A flaw was found in the Quarkus Cache Runtime. When request processing utilizes a Uni cached using @CacheResult and the cached Uni reuses the initial "completion" context, the processing switches to the cached Uni instead of the request context. This is a problem if the cached Uni context contains sensitive information, and could allow a malicious user to benefit from a POST request returning the response that is meant for another user, gaining access to sensitive data.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-6393">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>585864085369f34932b2caacf0737e51</td>
-       <td>CVE-2023-45285</td>
-       <td>2023-12-06 17:15:07</td>
-       <td>Using go get to fetch a module with the ".git" suffix may unexpectedly fallback to the insecure "git://" protocol if the module is unavailable via the secure "https://" and "git+ssh://" protocols, even if GOINSECURE is not set for said module. This only affects users who are not using the module proxy and are fetching modules directly (i.e. GOPROXY=off).</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-45285">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>fae130155f87a468c794ae4c3e0da7dc</td>
-       <td>CVE-2023-39326</td>
-       <td>2023-12-06 17:15:07</td>
-       <td>A malicious HTTP sender can use chunk extensions to cause a receiver reading from a request or response body to read many more bytes from the network than are in the body. A malicious HTTP client can further exploit this to cause a server to automatically read a large amount of data (up to about 1GiB) when a handler fails to read the entire body of a request. Chunk extensions are a little-used HTTP feature which permit including additional metadata in a request or response body sent using the chunked encoding. The net/http chunked encoding reader discards this metadata. A sender can exploit this by inserting a large metadata segment with each byte transferred. The chunk reader now produces an error if the ratio of real body to encoded bytes grows too small.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-39326">详情</a></td>
       </tr>
 
      </tbody>
