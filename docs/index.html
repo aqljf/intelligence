@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-12-12 09:11:13 -->
+<!-- RELEASE TIME : 2023-12-13 09:11:13 -->
 <html lang="zh-cn">
 
  <head>
@@ -28,7 +28,7 @@
       <tr>
        <td>a80663b6475a4d3850b8182e3e6eaccc</td>
        <td></td>
-       <td>2023-12-11 15:32:40 <img src="imgs/new.gif" /></td>
+       <td>2023-12-11 15:32:40</td>
        <td>安全事件周报 2023-12-04 第49周</td>
        <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=6576bb14ea0822e915606093">详情</a></td>
       </tr>
@@ -282,9 +282,89 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>db38d7451df73a33f135cbf54f350859</td>
+       <td>CVE-2023-50252</td>
+       <td>2023-12-12 21:15:08 <img src="imgs/new.gif" /></td>
+       <td>php-svg-lib is an SVG file parsing / rendering library. Prior to version 0.5.1, when handling `<use>` tag that references an `<image>` tag, it merges the attributes from the `<use>` tag to the `<image>` tag. The problem pops up especially when the `href` attribute from the `<use>` tag has not been sanitized. This can lead to an unsafe file read that can cause PHAR Deserialization vulnerability in PHP prior to version 8. Version 0.5.1 contains a patch for this issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-50252">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b4f9e9ef4069a2846055aca5765843e5</td>
+       <td>CVE-2023-50251</td>
+       <td>2023-12-12 21:15:08 <img src="imgs/new.gif" /></td>
+       <td>php-svg-lib is an SVG file parsing / rendering library. Prior to version 0.5.1, when parsing the attributes passed to a `use` tag inside an svg document, an attacker can cause the system to go to an infinite recursion. Depending on the system configuration and attack pattern this could exhaust the memory available to the executing process and/or to the server itself. An attacker sending multiple request to a system to render the above payload can potentially cause resource exhaustion to the point that the system is unable to handle incoming request. Version 0.5.1 contains a patch for this issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-50251">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c05bf0f44b67478d89fa195d1f4472e2</td>
+       <td>CVE-2023-48225</td>
+       <td>2023-12-12 21:15:08 <img src="imgs/new.gif" /></td>
+       <td>Laf is a cloud development platform. Prior to version 1.0.0-beta.13, the control of LAF app enV is not strict enough, and in certain scenarios of privatization environment, it may lead to sensitive information leakage in secret and configmap. In ES6 syntax, if an obj directly references another obj, the name of the obj itself will be used as the key, and the entire object structure will be integrated intact. When constructing the deployment instance of the app, env was found from the database and directly inserted into the template, resulting in controllability here. Sensitive information in the secret and configmap can be read through the k8s envFrom field. In a privatization environment, when `namespaceConf. fixed` is marked, it may lead to the leakage of sensitive information in the system. As of time of publication, it is unclear whether any patches or workarounds exist.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-48225">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a5cf6fbfe5a9a9d2c7f94c88f189cd16</td>
+       <td>CVE-2023-50247</td>
+       <td>2023-12-12 20:15:08 <img src="imgs/new.gif" /></td>
+       <td>h2o is an HTTP server with support for HTTP/1.x, HTTP/2 and HTTP/3. The QUIC stack (quicly), as used by H2O up to commit 43f86e5 (in version 2.3.0-beta and prior), is susceptible to a state exhaustion attack. When H2O is serving HTTP/3, a remote attacker can exploit this vulnerability to progressively increase the memory retained by the QUIC stack. This can eventually cause H2O to abort due to memory exhaustion. The vulnerability has been resolved in commit d67e81d03be12a9d53dc8271af6530f40164cd35. HTTP/1 and HTTP/2 are not affected by this vulnerability as they do not use QUIC. Administrators looking to mitigate this issue without upgrading can disable HTTP/3 support.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-50247">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7ede9ab149a23045d6184e6bf166a583</td>
+       <td>CVE-2023-49279</td>
+       <td>2023-12-12 20:15:08 <img src="imgs/new.gif" /></td>
+       <td>Umbraco is an ASP.NET content management system (CMS). Starting in version 7.0.0 and prior to versions 7.15.11, 8.18.9, 10.7.0, 11.5.0, and 12.2.0, a user with access to the backoffice can upload SVG files that include scripts. If the user can trick another user to load the media directly in a browser, the scripts can be executed. Versions 7.15.11, 8.18.9, 10.7.0, 11.5.0, and 12.2.0 contain a patch for this issue. Some workarounds are available. Implement the server side file validation or serve all media from an different host (e.g cdn) than where Umbraco is hosted.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-49279">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f78baafed8fd7cf1170087a0140886e6</td>
+       <td>CVE-2023-49278</td>
+       <td>2023-12-12 20:15:08 <img src="imgs/new.gif" /></td>
+       <td>Umbraco is an ASP.NET content management system (CMS). Starting in version 8.0.0 and prior to versions 8.18.10, 10.8.1, and 12.3.4, a brute force exploit can be used to collect valid usernames. Versions 8.18.10, 10.8.1, and 12.3.4 contain a patch for this issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-49278">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>04fd93c7dd7e97b9c19ea430760b0e77</td>
+       <td>CVE-2023-49274</td>
+       <td>2023-12-12 20:15:07 <img src="imgs/new.gif" /></td>
+       <td>Umbraco is an ASP.NET content management system (CMS). Starting in version 8.0.0 and prior to versions 8.18.10, 10.8.1, and 12.3.4, a user enumeration attack is possible when SMTP is not set up correctly, but reset password is enabled. Versions 8.18.10, 10.8.1, and 12.3.4 contain a patch for this issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-49274">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>00622df8840e4f23ed1b5bca232c687d</td>
+       <td>CVE-2023-41337</td>
+       <td>2023-12-12 20:15:07 <img src="imgs/new.gif" /></td>
+       <td>h2o is an HTTP server with support for HTTP/1.x, HTTP/2 and HTTP/3. In version 2.3.0-beta2 and prior, when h2o is configured to listen to multiple addresses or ports with each of them using different backend servers managed by multiple entities, a malicious backend entity that also has the opportunity to observe or inject packets exchanged between the client and h2o may misdirect HTTPS requests going to other backends and observe the contents of that HTTPS request being sent. The attack involves a victim client trying to resume a TLS connection and an attacker redirecting the packets to a different address or port than that intended by the client. The attacker must already have been configured by the administrator of h2o to act as a backend to one of the addresses or ports that the h2o instance listens to. Session IDs and tickets generated by h2o are not bound to information specific to the server address, port, or the X.509 certificate, and therefore it is possible for an attacker to force the victim connection to wrongfully resume against a different server address or port on which the same h2o instance is listening. Once a TLS session is misdirected to resume to a server address / port that is configured to use an attacker-controlled server as the backend, depending on the configuration, HTTPS requests from the victim client may be forwarded to the attacker's server. An H2O instance is vulnerable to this attack only if the instance is configured to listen to different addresses or ports using the listen directive at the host level and the instance is configured to connect to backend servers managed by multiple entities. A patch is available at commit 35760540337a47e5150da0f4a66a609fad2ef0ab. As a workaround, one may stop using using host-level listen directives in favor of global-level ones.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-41337">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ef4926bb55a263b32fff12e7c6859a36</td>
+       <td>CVE-2023-34064</td>
+       <td>2023-12-12 20:15:06 <img src="imgs/new.gif" /></td>
+       <td>Workspace ONE Launcher contains a Privilege Escalation Vulnerability. A malicious actor with physical access to Workspace ONE Launcher could utilize the Edge Panel feature to bypass setup to gain access to sensitive information.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-34064">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>07c6c829cc890247f5d4c316f6ae2f07</td>
+       <td>CVE-2023-6687</td>
+       <td>2023-12-12 19:15:08 <img src="imgs/new.gif" /></td>
+       <td>An issue was discovered by Elastic whereby Elastic Agent would log a raw event in its own logs at the WARN or ERROR level if ingesting that event to Elasticsearch failed with any 4xx HTTP status code except 409 or 429. Depending on the nature of the event that Elastic Agent attempted to ingest, this could lead to the insertion of sensitive or private information in the Elastic Agent logs. Elastic has released 8.11.3 and 7.17.16 that prevents this issue by limiting these types of logs to DEBUG level logging, which is disabled by default.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-6687">详情</a></td>
+      </tr>
+
+      <tr>
        <td>26d3a89b1f4cdc20dbbee789e9b3f8f4</td>
        <td>CVE-2023-6659</td>
-       <td>2023-12-11 01:15:07 <img src="imgs/new.gif" /></td>
+       <td>2023-12-11 01:15:07</td>
        <td>A vulnerability, which was classified as critical, has been found in Campcodes Web-Based Student Clearance System 1.0. This issue affects some unknown processing of the file /libsystem/login.php. The manipulation of the argument student leads to sql injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-247367.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-6659">详情</a></td>
       </tr>
@@ -292,7 +372,7 @@
       <tr>
        <td>dd631c6e99b205300dfa26dc7dda26fd</td>
        <td>CVE-2023-50465</td>
-       <td>2023-12-11 01:15:07 <img src="imgs/new.gif" /></td>
+       <td>2023-12-11 01:15:07</td>
        <td>A stored cross-site scripting (XSS) vulnerability exists in Monica (aka MonicaHQ) 4.0.0 via an SVG document uploaded by an authenticated user.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-50465">详情</a></td>
       </tr>
@@ -439,86 +519,6 @@
        <td>2023-12-08 20:15:07</td>
        <td>Cross Site Scripting vulnerability in EverShop NPM versions before v.1.0.0-rc.5 allows a remote attacker to obtain sensitive information via a crafted scripts to the Admin Panel.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-46499">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>89a6c33138e46811687b3b14e3b4b618</td>
-       <td>CVE-2023-46498</td>
-       <td>2023-12-08 20:15:07</td>
-       <td>An issue in EverShop NPM versions before v.1.0.0-rc.8 allows a remote attacker to obtain sensitive information and execute arbitrary code via the /deleteCustomer/route.json file.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-46498">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3564eac4b8859f01e7f7823b43fab2d4</td>
-       <td>CVE-2023-46497</td>
-       <td>2023-12-08 20:15:07</td>
-       <td>Directory Traversal vulnerability in EverShop NPM versions before v.1.0.0-rc.8 allows a remote attacker to obtain sensitive information via a crafted request to the mkdirSync function in the folderCreate/createFolder.js endpoint.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-46497">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c69c0d5387a6a5e86ed265eac6b5fefe</td>
-       <td>CVE-2023-46496</td>
-       <td>2023-12-08 20:15:07</td>
-       <td>Directory Traversal vulnerability in EverShop NPM versions before v.1.0.0-rc.8 allows a remote attacker to obtain sensitive information via a crafted request to the DELETE function in api/files endpoint.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-46496">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f0ea83df7853cdbee08b64161856c952</td>
-       <td>CVE-2023-46495</td>
-       <td>2023-12-08 20:15:07</td>
-       <td>Cross Site Scripting vulnerability in EverShop NPM versions before v.1.0.0-rc.8 allows a remote attacker to obtain sensitive information via a crafted request to the sortBy parameter.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-46495">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7e01173d5b596ddf7ef09fd65acd5445</td>
-       <td>CVE-2023-46494</td>
-       <td>2023-12-08 20:15:07</td>
-       <td>Cross Site Scripting vulnerability in EverShop NPM versions before v.1.0.0-rc.5 allows a remote attacker to obtain sensitive information via a crafted request to the ProductGrid function in admin/productGrid/Grid.jsx.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-46494">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a968ce247ed3423b25d1ebb31faff41a</td>
-       <td>CVE-2023-46493</td>
-       <td>2023-12-08 20:15:07</td>
-       <td>Directory Traversal vulnerability in EverShop NPM versions before v.1.0.0-rc.8 allows a remote attacker to obtain sensitive information via a crafted request to the readDirSync function in fileBrowser/browser.js.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-46493">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>456a1aba1dd1120102e5a8a306afdd36</td>
-       <td>CVE-2023-43305</td>
-       <td>2023-12-08 02:15:06</td>
-       <td>An issue in studio kent mini-app on Line v13.6.1 allows attackers to send crafted malicious notifications via leakage of the channel access token.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-43305">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b9c988c961b0657044c6b0c182927c57</td>
-       <td>CVE-2023-43744</td>
-       <td>2023-12-08 01:15:07</td>
-       <td>An OS command injection vulnerability in Zultys MX-SE, MX-SE II, MX-E, MX-Virtual, MX250, and MX30 with firmware versions prior to 17.0.10 patch 17161 and 16.04 patch 16109 allows an administrator to execute arbitrary OS commands via a file name parameter in a patch application function. The Zultys MX Administrator client has a "Patch Manager" section that allows administrators to apply patches to the device. The user supplied filename for the patch file is passed to a shell script without validation. Including bash command substitution characters in a patch file name results in execution of the provided command.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-43744">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>98f68502ce57687cc4f241f7ad77ae8d</td>
-       <td>CVE-2023-43743</td>
-       <td>2023-12-08 01:15:07</td>
-       <td>A SQL injection vulnerability in Zultys MX-SE, MX-SE II, MX-E, MX-Virtual, MX250, and MX30 with firmware versions prior to 17.0.10 patch 17161 and 16.04 patch 16109 allows an authenticated attacker to execute arbitrary SQL queries on the backend database via the filter parameter in requests to the /newapi/ endpoint in the Zultys MX web interface.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-43743">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b6ae804cc344bdddae872eb7854f9a1a</td>
-       <td>CVE-2023-43742</td>
-       <td>2023-12-08 01:15:07</td>
-       <td>An authentication bypass in Zultys MX-SE, MX-SE II, MX-E, MX-Virtual, MX250, and MX30 with firmware versions prior to 17.0.10 patch 17161 and 16.04 patch 16109 allows an unauthenticated attacker to obtain an administrative session via a protection mechanism failure in the authentication function. In normal operation, the Zultys MX Administrator Windows client connects to port 7505 and attempts authentication, submitting the administrator username and password to the server. Upon authentication failure, the server sends a login failure message prompting the client to disconnect. However, if the client ignores the failure message instead and attempts to continue, the server does not forcibly close the connection and processes all subsequent requests from the client as if authentication had been successful.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-43742">详情</a></td>
       </tr>
 
      </tbody>
@@ -1954,9 +1954,49 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>78af3070223f0cc4fe66d1c1f85e2e05</td>
+       <td>CVE-2023-5552</td>
+       <td>2023-12-12 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>Sophos Firewall信息泄露漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87745">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d2827b03d27c0f59afc89441540523c2</td>
+       <td>CVE-2023-42507</td>
+       <td>2023-12-12 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>JTEKT ELECTRONICS OnSinView2堆栈缓冲区溢出漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87744">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c0e2e0899d864a1ecb63ec32e646de86</td>
+       <td>CVE-2023-45810</td>
+       <td>2023-12-12 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>OpenFGA不受控制的资源消耗漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87743">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0db46004326c55c905a1690513235235</td>
+       <td>CVE-2023-45811</td>
+       <td>2023-12-12 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>synchrony原型污染漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87742">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6a86429feda4983146e4dd49dd846e56</td>
+       <td>CVE-2023-47307</td>
+       <td>2023-12-12 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>Shenzhen Libituo Technology LBT-T300-T310缓冲区溢出漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87734">详情</a></td>
+      </tr>
+
+      <tr>
        <td>7575a30400880fb7fc49087ffbed6821</td>
        <td>CVE-2023-39277</td>
-       <td>2023-12-11 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2023-12-11 09:09:08</td>
        <td>SonicWALL SonicOS堆栈缓冲区溢出漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87713">详情</a></td>
       </tr>
@@ -1964,7 +2004,7 @@
       <tr>
        <td>a41750709792bfb5a86151b41b962d0a</td>
        <td>CVE-2023-39278</td>
-       <td>2023-12-11 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2023-12-11 09:09:08</td>
        <td>SonicWALL SonicOS堆栈缓冲区溢出漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87712">详情</a></td>
       </tr>
@@ -1972,7 +2012,7 @@
       <tr>
        <td>2e0171fc3e98d512f71e3b578027c7ab</td>
        <td>CVE-2023-39276</td>
-       <td>2023-12-11 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2023-12-11 09:09:08</td>
        <td>SonicWALL SonicOS堆栈缓冲区溢出漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87711">详情</a></td>
       </tr>
@@ -1980,7 +2020,7 @@
       <tr>
        <td>9102c0dd8cc54324161e91971500bd58</td>
        <td>CVE-2023-41631</td>
-       <td>2023-12-11 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2023-12-11 09:09:08</td>
        <td>eSST Monitoring远程代码执行漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87710">详情</a></td>
       </tr>
@@ -1988,7 +2028,7 @@
       <tr>
        <td>85701cfd385b141f8c9b9770ce0fe56e</td>
        <td>CVE-2023-41630</td>
-       <td>2023-12-11 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2023-12-11 09:09:08</td>
        <td>eSST Monitoring代码注入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87709">详情</a></td>
       </tr>
@@ -1996,7 +2036,7 @@
       <tr>
        <td>5c456091ed2af0b5f92b3026c1702215</td>
        <td>CVE-2023-41629</td>
-       <td>2023-12-11 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2023-12-11 09:09:08</td>
        <td>eSST Monitoring路径遍历漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87708">详情</a></td>
       </tr>
@@ -2004,7 +2044,7 @@
       <tr>
        <td>cfc886ff990cc8aca53a06224a9ce708</td>
        <td>CVE-2023-42506</td>
-       <td>2023-12-11 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2023-12-11 09:09:08</td>
        <td>JTEKT ELECTRONICS OnSinView2内存缓冲区边界操作限制错误漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87707">详情</a></td>
       </tr>
@@ -2012,7 +2052,7 @@
       <tr>
        <td>40905b443754d3752b13acbd848d5ae0</td>
        <td>CVE-2023-41712</td>
-       <td>2023-12-11 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2023-12-11 09:09:08</td>
        <td>SonicWALL SonicOS堆栈缓冲区溢出漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87706">详情</a></td>
       </tr>
@@ -2020,7 +2060,7 @@
       <tr>
        <td>281b808e2969cb1b6579203bca47674f</td>
        <td>CVE-2023-41715</td>
-       <td>2023-12-11 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2023-12-11 09:09:08</td>
        <td>SonicWALL SonicOS堆栈缓冲区溢出漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87705">详情</a></td>
       </tr>
@@ -2028,7 +2068,7 @@
       <tr>
        <td>a23a4a02e7f41b71e702b02bfc16da99</td>
        <td>CVE-2023-41711</td>
-       <td>2023-12-11 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2023-12-11 09:09:08</td>
        <td>SonicWALL SonicOS堆栈缓冲区溢出漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87704">详情</a></td>
       </tr>
@@ -2036,7 +2076,7 @@
       <tr>
        <td>67a6029254f6206b1eb701054374b300</td>
        <td>CVE-2023-39280</td>
-       <td>2023-12-11 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2023-12-11 09:09:08</td>
        <td>SonicWALL SonicOS堆栈缓冲区溢出漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87703">详情</a></td>
       </tr>
@@ -2044,7 +2084,7 @@
       <tr>
        <td>7dceb8c0bd915dd23233a459757fdbd1</td>
        <td>CVE-2023-39279</td>
-       <td>2023-12-11 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2023-12-11 09:09:08</td>
        <td>SonicWALL SonicOS堆栈缓冲区溢出漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87702">详情</a></td>
       </tr>
@@ -2052,7 +2092,7 @@
       <tr>
        <td>2057668dfa80e90cc7c1fc4b6ded916f</td>
        <td>CVE-2023-22110</td>
-       <td>2023-12-11 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2023-12-11 09:09:08</td>
        <td>Oracle MySQL Server拒绝服务漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87701">详情</a></td>
       </tr>
@@ -2060,7 +2100,7 @@
       <tr>
        <td>77c0ed2bb193957ec07384ae6517a1fc</td>
        <td>CVE-2023-22113</td>
-       <td>2023-12-11 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2023-12-11 09:09:08</td>
        <td>Oracle MySQL Server信息泄露漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87700">详情</a></td>
       </tr>
@@ -2068,129 +2108,89 @@
       <tr>
        <td>fe0b838c8b9348239e2c7eb26cbf31cd</td>
        <td>CVE-2023-22121</td>
-       <td>2023-12-11 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2023-12-11 09:09:08</td>
        <td>Oracle Banking Trade Finance信息泄露漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87699">详情</a></td>
       </tr>
 
       <tr>
-       <td>0edcb6b3c4f76abd41b7ed9c066d0bea</td>
-       <td>CVE-2023-3251</td>
-       <td>2023-12-08 09:09:07</td>
-       <td>Tenable Nessus凭据保护不足漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87672">详情</a></td>
+       <td>e4cb70925e6ffd931406ae839e72c752</td>
+       <td>CVE-2023-45252</td>
+       <td>2023-12-11 09:09:07</td>
+       <td>Huddly Camera Service DLL劫持漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87741">详情</a></td>
       </tr>
 
       <tr>
-       <td>d47778d2fc594f1b5ee0926d1d321eab</td>
-       <td>CVE-2023-41037</td>
-       <td>2023-12-08 09:09:07</td>
-       <td>Openpgp.js加密签名验证错误漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87671">详情</a></td>
+       <td>e98512f7c8114a86960e613005e53904</td>
+       <td>CVE-2023-45253</td>
+       <td>2023-12-11 09:09:07</td>
+       <td>Huddly Camera Service权限管理错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87740">详情</a></td>
       </tr>
 
       <tr>
-       <td>50cf726b7be546d2cfc6456b9416e401</td>
-       <td>CVE-2023-40889</td>
-       <td>2023-12-08 09:09:07</td>
-       <td>ZBar堆缓冲区溢出漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87670">详情</a></td>
+       <td>c38fe10b6a1f2de25f9c979a672d7a2c</td>
+       <td>CVE-2023-5915</td>
+       <td>2023-12-11 09:09:07</td>
+       <td>Yokogawa Electric STARDOM FCN/FCJ controller不受控制的资源消耗漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87739">详情</a></td>
       </tr>
 
       <tr>
-       <td>be0ee0402aa28ec19b7d66178944196b</td>
-       <td>CVE-2023-40787</td>
-       <td>2023-12-08 09:09:07</td>
-       <td>SpringBlade SQL注入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87669">详情</a></td>
+       <td>01c90dda564c30878fbdcfdf4aebf521</td>
+       <td>CVE-2023-28896</td>
+       <td>2023-12-11 09:09:07</td>
+       <td>Skoda Modular Infotainment Platform 3加密强度不足漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87738">详情</a></td>
       </tr>
 
       <tr>
-       <td>4d4c9ad1e08522267578de5bda2a4e58</td>
-       <td>CVE-2023-4163</td>
-       <td>2023-12-08 09:09:07</td>
-       <td>Brocade Fabric OS缓冲区溢出漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87668">详情</a></td>
+       <td>0bf8736e9d464aaa571241a607a4a2c6</td>
+       <td>CVE-2023-5636</td>
+       <td>2023-12-11 09:09:07</td>
+       <td>ArslanSoft Education Portal文件上传漏洞 </td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87737">详情</a></td>
       </tr>
 
       <tr>
-       <td>a2cf3b396c04c4e718dcd4fe37ada879</td>
-       <td>CVE-2023-2173</td>
-       <td>2023-12-08 09:09:07</td>
-       <td>WordPress BadgeOS Plugin授权错误漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87667">详情</a></td>
+       <td>947f5860ba2a42b043aa9606a258eb94</td>
+       <td>CVE-2023-4912</td>
+       <td>2023-12-11 09:09:07</td>
+       <td>GitLab EE不受控制的资源消耗漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87736">详情</a></td>
       </tr>
 
       <tr>
-       <td>27a95523a04650edb1c0602a1a6f8a35</td>
-       <td>CVE-2023-2353</td>
-       <td>2023-12-08 09:09:07</td>
-       <td>WordPress CHP Ads Block Detector Plugin授权错误漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87666">详情</a></td>
+       <td>90e7219660f5a8a70da495c17e0b7e89</td>
+       <td>CVE-2023-5226</td>
+       <td>2023-12-11 09:09:07</td>
+       <td>GitLab代码注入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87735">详情</a></td>
       </tr>
 
       <tr>
-       <td>f492824ccd05de0a07a34f68cba628f0</td>
-       <td>CVE-2023-3764</td>
-       <td>2023-12-08 09:09:07</td>
-       <td>WordPress WooCommerce PDF Invoice Builder Plugin跨站请求伪造漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87665">详情</a></td>
+       <td>023b85ab14509b6b94356d3be25ac9f9</td>
+       <td>CVE-2023-5634</td>
+       <td>2023-12-11 09:09:07</td>
+       <td>ArslanSoft Education Portal SQL注入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87733">详情</a></td>
       </tr>
 
       <tr>
-       <td>c470fd857186a85f439f9d7b6edd126f</td>
-       <td>CVE-2023-39663</td>
-       <td>2023-12-08 09:09:07</td>
-       <td>MathJax拒绝服务漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87664">详情</a></td>
+       <td>029b317fc138d9cdfcdfbec4170891f8</td>
+       <td>CVE-2023-5995</td>
+       <td>2023-12-11 09:09:07</td>
+       <td>GitLab EE访问控制错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87732">详情</a></td>
       </tr>
 
       <tr>
-       <td>f028fb5c05534976e77725ab30af9b48</td>
-       <td>CVE-2023-39678</td>
-       <td>2023-12-08 09:09:07</td>
-       <td>BDCOM OLT P3310D-2AC跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87663">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0a149be5d75e94a9290f1aaa7891e532</td>
-       <td>CVE-2023-38971</td>
-       <td>2023-12-08 09:09:07</td>
-       <td>Badaso跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87662">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b4392b91d07cce96dfb8a897cc6b67df</td>
-       <td>CVE-2023-3136</td>
-       <td>2023-12-08 09:09:07</td>
-       <td>WordPress MailArchiver Plugin跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87661">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3bdabbada5d70d9ae16d67ed0c604865</td>
-       <td>CVE-2023-4600</td>
-       <td>2023-12-08 09:09:07</td>
-       <td>WordPress AffiliateWP Plugin授权错误漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87660">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7bd19ffd90147de3d2017ead83e07abf</td>
-       <td>CVE-2022-1601</td>
-       <td>2023-12-08 09:09:07</td>
-       <td>WordPress AffiliateWP Plugin信息泄露漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87659">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>46617068e4be5fbbe679e5c6e3430cc1</td>
-       <td>CVE-2023-3992</td>
-       <td>2023-12-08 09:09:07</td>
-       <td>WordPress PostX Plugin跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87658">详情</a></td>
+       <td>75c7417d05cf2f9c3360f068a1f515f3</td>
+       <td>CVE-2023-44381</td>
+       <td>2023-12-11 09:09:07</td>
+       <td>October代码注入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87731">详情</a></td>
       </tr>
 
      </tbody>
