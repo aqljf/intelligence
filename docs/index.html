@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-12-13 09:11:13 -->
+<!-- RELEASE TIME : 2023-12-14 09:11:12 -->
 <html lang="zh-cn">
 
  <head>
@@ -25,6 +25,14 @@
        <th width="43%">TITLE</th>
        <th width="5%">URL</th>
       </tr>
+      <tr>
+       <td>382c73d6388430b9cea6072c6c61858e</td>
+       <td></td>
+       <td>2023-12-13 16:50:10 <img src="imgs/new.gif" /></td>
+       <td>2023-12 补丁日: 微软多个漏洞安全更新通告</td>
+       <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=65796f09ea0822e9156060b4">详情</a></td>
+      </tr>
+
       <tr>
        <td>a80663b6475a4d3850b8182e3e6eaccc</td>
        <td></td>
@@ -257,14 +265,6 @@
        <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=6513eb3822adc884abcd7fc9">详情</a></td>
       </tr>
 
-      <tr>
-       <td>2302ee59f937af9868dfe9834254938f</td>
-       <td></td>
-       <td>2023-09-25 14:56:48</td>
-       <td>安全事件周报 2023-09-18 第38周</td>
-       <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=65112f3022adc884abcd7fa5">详情</a></td>
-      </tr>
-
      </tbody>
     </table>
    </div>
@@ -284,7 +284,7 @@
       <tr>
        <td>db38d7451df73a33f135cbf54f350859</td>
        <td>CVE-2023-50252</td>
-       <td>2023-12-12 21:15:08 <img src="imgs/new.gif" /></td>
+       <td>2023-12-12 21:15:08</td>
        <td>php-svg-lib is an SVG file parsing / rendering library. Prior to version 0.5.1, when handling `<use>` tag that references an `<image>` tag, it merges the attributes from the `<use>` tag to the `<image>` tag. The problem pops up especially when the `href` attribute from the `<use>` tag has not been sanitized. This can lead to an unsafe file read that can cause PHAR Deserialization vulnerability in PHP prior to version 8. Version 0.5.1 contains a patch for this issue.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-50252">详情</a></td>
       </tr>
@@ -292,7 +292,7 @@
       <tr>
        <td>b4f9e9ef4069a2846055aca5765843e5</td>
        <td>CVE-2023-50251</td>
-       <td>2023-12-12 21:15:08 <img src="imgs/new.gif" /></td>
+       <td>2023-12-12 21:15:08</td>
        <td>php-svg-lib is an SVG file parsing / rendering library. Prior to version 0.5.1, when parsing the attributes passed to a `use` tag inside an svg document, an attacker can cause the system to go to an infinite recursion. Depending on the system configuration and attack pattern this could exhaust the memory available to the executing process and/or to the server itself. An attacker sending multiple request to a system to render the above payload can potentially cause resource exhaustion to the point that the system is unable to handle incoming request. Version 0.5.1 contains a patch for this issue.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-50251">详情</a></td>
       </tr>
@@ -300,7 +300,7 @@
       <tr>
        <td>c05bf0f44b67478d89fa195d1f4472e2</td>
        <td>CVE-2023-48225</td>
-       <td>2023-12-12 21:15:08 <img src="imgs/new.gif" /></td>
+       <td>2023-12-12 21:15:08</td>
        <td>Laf is a cloud development platform. Prior to version 1.0.0-beta.13, the control of LAF app enV is not strict enough, and in certain scenarios of privatization environment, it may lead to sensitive information leakage in secret and configmap. In ES6 syntax, if an obj directly references another obj, the name of the obj itself will be used as the key, and the entire object structure will be integrated intact. When constructing the deployment instance of the app, env was found from the database and directly inserted into the template, resulting in controllability here. Sensitive information in the secret and configmap can be read through the k8s envFrom field. In a privatization environment, when `namespaceConf. fixed` is marked, it may lead to the leakage of sensitive information in the system. As of time of publication, it is unclear whether any patches or workarounds exist.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-48225">详情</a></td>
       </tr>
@@ -308,7 +308,7 @@
       <tr>
        <td>a5cf6fbfe5a9a9d2c7f94c88f189cd16</td>
        <td>CVE-2023-50247</td>
-       <td>2023-12-12 20:15:08 <img src="imgs/new.gif" /></td>
+       <td>2023-12-12 20:15:08</td>
        <td>h2o is an HTTP server with support for HTTP/1.x, HTTP/2 and HTTP/3. The QUIC stack (quicly), as used by H2O up to commit 43f86e5 (in version 2.3.0-beta and prior), is susceptible to a state exhaustion attack. When H2O is serving HTTP/3, a remote attacker can exploit this vulnerability to progressively increase the memory retained by the QUIC stack. This can eventually cause H2O to abort due to memory exhaustion. The vulnerability has been resolved in commit d67e81d03be12a9d53dc8271af6530f40164cd35. HTTP/1 and HTTP/2 are not affected by this vulnerability as they do not use QUIC. Administrators looking to mitigate this issue without upgrading can disable HTTP/3 support.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-50247">详情</a></td>
       </tr>
@@ -316,7 +316,7 @@
       <tr>
        <td>7ede9ab149a23045d6184e6bf166a583</td>
        <td>CVE-2023-49279</td>
-       <td>2023-12-12 20:15:08 <img src="imgs/new.gif" /></td>
+       <td>2023-12-12 20:15:08</td>
        <td>Umbraco is an ASP.NET content management system (CMS). Starting in version 7.0.0 and prior to versions 7.15.11, 8.18.9, 10.7.0, 11.5.0, and 12.2.0, a user with access to the backoffice can upload SVG files that include scripts. If the user can trick another user to load the media directly in a browser, the scripts can be executed. Versions 7.15.11, 8.18.9, 10.7.0, 11.5.0, and 12.2.0 contain a patch for this issue. Some workarounds are available. Implement the server side file validation or serve all media from an different host (e.g cdn) than where Umbraco is hosted.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-49279">详情</a></td>
       </tr>
@@ -324,7 +324,7 @@
       <tr>
        <td>f78baafed8fd7cf1170087a0140886e6</td>
        <td>CVE-2023-49278</td>
-       <td>2023-12-12 20:15:08 <img src="imgs/new.gif" /></td>
+       <td>2023-12-12 20:15:08</td>
        <td>Umbraco is an ASP.NET content management system (CMS). Starting in version 8.0.0 and prior to versions 8.18.10, 10.8.1, and 12.3.4, a brute force exploit can be used to collect valid usernames. Versions 8.18.10, 10.8.1, and 12.3.4 contain a patch for this issue.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-49278">详情</a></td>
       </tr>
@@ -332,7 +332,7 @@
       <tr>
        <td>04fd93c7dd7e97b9c19ea430760b0e77</td>
        <td>CVE-2023-49274</td>
-       <td>2023-12-12 20:15:07 <img src="imgs/new.gif" /></td>
+       <td>2023-12-12 20:15:07</td>
        <td>Umbraco is an ASP.NET content management system (CMS). Starting in version 8.0.0 and prior to versions 8.18.10, 10.8.1, and 12.3.4, a user enumeration attack is possible when SMTP is not set up correctly, but reset password is enabled. Versions 8.18.10, 10.8.1, and 12.3.4 contain a patch for this issue.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-49274">详情</a></td>
       </tr>
@@ -340,7 +340,7 @@
       <tr>
        <td>00622df8840e4f23ed1b5bca232c687d</td>
        <td>CVE-2023-41337</td>
-       <td>2023-12-12 20:15:07 <img src="imgs/new.gif" /></td>
+       <td>2023-12-12 20:15:07</td>
        <td>h2o is an HTTP server with support for HTTP/1.x, HTTP/2 and HTTP/3. In version 2.3.0-beta2 and prior, when h2o is configured to listen to multiple addresses or ports with each of them using different backend servers managed by multiple entities, a malicious backend entity that also has the opportunity to observe or inject packets exchanged between the client and h2o may misdirect HTTPS requests going to other backends and observe the contents of that HTTPS request being sent. The attack involves a victim client trying to resume a TLS connection and an attacker redirecting the packets to a different address or port than that intended by the client. The attacker must already have been configured by the administrator of h2o to act as a backend to one of the addresses or ports that the h2o instance listens to. Session IDs and tickets generated by h2o are not bound to information specific to the server address, port, or the X.509 certificate, and therefore it is possible for an attacker to force the victim connection to wrongfully resume against a different server address or port on which the same h2o instance is listening. Once a TLS session is misdirected to resume to a server address / port that is configured to use an attacker-controlled server as the backend, depending on the configuration, HTTPS requests from the victim client may be forwarded to the attacker's server. An H2O instance is vulnerable to this attack only if the instance is configured to listen to different addresses or ports using the listen directive at the host level and the instance is configured to connect to backend servers managed by multiple entities. A patch is available at commit 35760540337a47e5150da0f4a66a609fad2ef0ab. As a workaround, one may stop using using host-level listen directives in favor of global-level ones.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-41337">详情</a></td>
       </tr>
@@ -348,7 +348,7 @@
       <tr>
        <td>ef4926bb55a263b32fff12e7c6859a36</td>
        <td>CVE-2023-34064</td>
-       <td>2023-12-12 20:15:06 <img src="imgs/new.gif" /></td>
+       <td>2023-12-12 20:15:06</td>
        <td>Workspace ONE Launcher contains a Privilege Escalation Vulnerability. A malicious actor with physical access to Workspace ONE Launcher could utilize the Edge Panel feature to bypass setup to gain access to sensitive information.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-34064">详情</a></td>
       </tr>
@@ -356,7 +356,7 @@
       <tr>
        <td>07c6c829cc890247f5d4c316f6ae2f07</td>
        <td>CVE-2023-6687</td>
-       <td>2023-12-12 19:15:08 <img src="imgs/new.gif" /></td>
+       <td>2023-12-12 19:15:08</td>
        <td>An issue was discovered by Elastic whereby Elastic Agent would log a raw event in its own logs at the WARN or ERROR level if ingesting that event to Elasticsearch failed with any 4xx HTTP status code except 409 or 429. Depending on the nature of the event that Elastic Agent attempted to ingest, this could lead to the insertion of sensitive or private information in the Elastic Agent logs. Elastic has released 8.11.3 and 7.17.16 that prevents this issue by limiting these types of logs to DEBUG level logging, which is disabled by default.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-6687">详情</a></td>
       </tr>
@@ -1954,9 +1954,129 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>86d9cf12b468558744a0869be816da39</td>
+       <td>CVE-2023-43803</td>
+       <td>2023-12-13 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>Arduino Create Agent路径遍历漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87845">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6288d28aff0395aa02f0d630c33e0252</td>
+       <td>CVE-2023-43802</td>
+       <td>2023-12-13 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>Arduino Create Agent路径遍历漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87844">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6ec106840d5ab706b6cecdb291b23e44</td>
+       <td>CVE-2023-43801</td>
+       <td>2023-12-13 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>Arduino Create Agent路径遍历漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87843">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>55cc44c7c017720bebbb93d533afb154</td>
+       <td>CVE-2023-5204</td>
+       <td>2023-12-13 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>WordPress ChatBot Plugin SQL注入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87842">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2905e1219d15230846312269be7fd43b</td>
+       <td>CVE-2023-37503</td>
+       <td>2023-12-13 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>HCL Technologies Compass弱密码请求漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87841">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c93c26da03a6c0700177d5300ddadd52</td>
+       <td>CVE-2023-5254</td>
+       <td>2023-12-13 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>WordPress ChatBot Plugin信息泄露漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87840">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0a7c12d100111cc92f49896618e2bbc0</td>
+       <td>CVE-2023-35663</td>
+       <td>2023-12-13 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>Google Android越界读取漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87839">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>213b4a7fdc95f9034fa864199a92ef87</td>
+       <td>CVE-2023-45146</td>
+       <td>2023-12-13 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>XXL-RPC不受信数据反序列化漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87838">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ba5e8fa30339e05ba274cd11e309bcb9</td>
+       <td>CVE-2023-25753</td>
+       <td>2023-12-13 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>Apache ShenYu服务器端请求伪造漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87837">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9145949c20f66bab4a6c574ec2591b16</td>
+       <td>CVE-2023-3254</td>
+       <td>2023-12-13 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>WordPress Widgets for Google Reviews Plugin跨站请求伪造漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87836">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>bab9149d89e3029329daae49399f8c2c</td>
+       <td>CVE-2023-5212</td>
+       <td>2023-12-13 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>WordPress AI ChatBot Plugin任意文件删除漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87835">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1ccef511ad6f96c479521bb5da62c854</td>
+       <td>CVE-2023-26300</td>
+       <td>2023-12-13 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>HP PC权限提升漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87834">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c20066cb7dcb3d72c9556aab7749aaf6</td>
+       <td>CVE-2022-24404</td>
+       <td>2023-12-13 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>TETRA BURST完整性检查值验证错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87833">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>bbced563bbddfe1f8c0f2173616fce16</td>
+       <td>CVE-2023-37502</td>
+       <td>2023-12-13 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>HCL Technologies Compass任意文件上传漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87832">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>cb7152fad14877238953cda72cb4275d</td>
+       <td>CVE-2023-36857</td>
+       <td>2023-12-13 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>Baker Hughes Bently Nevada 3500身份认证绕过漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87831">详情</a></td>
+      </tr>
+
+      <tr>
        <td>78af3070223f0cc4fe66d1c1f85e2e05</td>
        <td>CVE-2023-5552</td>
-       <td>2023-12-12 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>2023-12-12 09:09:07</td>
        <td>Sophos Firewall信息泄露漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87745">详情</a></td>
       </tr>
@@ -1964,7 +2084,7 @@
       <tr>
        <td>d2827b03d27c0f59afc89441540523c2</td>
        <td>CVE-2023-42507</td>
-       <td>2023-12-12 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>2023-12-12 09:09:07</td>
        <td>JTEKT ELECTRONICS OnSinView2堆栈缓冲区溢出漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87744">详情</a></td>
       </tr>
@@ -1972,7 +2092,7 @@
       <tr>
        <td>c0e2e0899d864a1ecb63ec32e646de86</td>
        <td>CVE-2023-45810</td>
-       <td>2023-12-12 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>2023-12-12 09:09:07</td>
        <td>OpenFGA不受控制的资源消耗漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87743">详情</a></td>
       </tr>
@@ -1980,7 +2100,7 @@
       <tr>
        <td>0db46004326c55c905a1690513235235</td>
        <td>CVE-2023-45811</td>
-       <td>2023-12-12 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>2023-12-12 09:09:07</td>
        <td>synchrony原型污染漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87742">详情</a></td>
       </tr>
@@ -1988,7 +2108,7 @@
       <tr>
        <td>6a86429feda4983146e4dd49dd846e56</td>
        <td>CVE-2023-47307</td>
-       <td>2023-12-12 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>2023-12-12 09:09:07</td>
        <td>Shenzhen Libituo Technology LBT-T300-T310缓冲区溢出漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87734">详情</a></td>
       </tr>
@@ -2071,126 +2191,6 @@
        <td>2023-12-11 09:09:08</td>
        <td>SonicWALL SonicOS堆栈缓冲区溢出漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87704">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>67a6029254f6206b1eb701054374b300</td>
-       <td>CVE-2023-39280</td>
-       <td>2023-12-11 09:09:08</td>
-       <td>SonicWALL SonicOS堆栈缓冲区溢出漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87703">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7dceb8c0bd915dd23233a459757fdbd1</td>
-       <td>CVE-2023-39279</td>
-       <td>2023-12-11 09:09:08</td>
-       <td>SonicWALL SonicOS堆栈缓冲区溢出漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87702">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2057668dfa80e90cc7c1fc4b6ded916f</td>
-       <td>CVE-2023-22110</td>
-       <td>2023-12-11 09:09:08</td>
-       <td>Oracle MySQL Server拒绝服务漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87701">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>77c0ed2bb193957ec07384ae6517a1fc</td>
-       <td>CVE-2023-22113</td>
-       <td>2023-12-11 09:09:08</td>
-       <td>Oracle MySQL Server信息泄露漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87700">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>fe0b838c8b9348239e2c7eb26cbf31cd</td>
-       <td>CVE-2023-22121</td>
-       <td>2023-12-11 09:09:08</td>
-       <td>Oracle Banking Trade Finance信息泄露漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87699">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e4cb70925e6ffd931406ae839e72c752</td>
-       <td>CVE-2023-45252</td>
-       <td>2023-12-11 09:09:07</td>
-       <td>Huddly Camera Service DLL劫持漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87741">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e98512f7c8114a86960e613005e53904</td>
-       <td>CVE-2023-45253</td>
-       <td>2023-12-11 09:09:07</td>
-       <td>Huddly Camera Service权限管理错误漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87740">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c38fe10b6a1f2de25f9c979a672d7a2c</td>
-       <td>CVE-2023-5915</td>
-       <td>2023-12-11 09:09:07</td>
-       <td>Yokogawa Electric STARDOM FCN/FCJ controller不受控制的资源消耗漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87739">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>01c90dda564c30878fbdcfdf4aebf521</td>
-       <td>CVE-2023-28896</td>
-       <td>2023-12-11 09:09:07</td>
-       <td>Skoda Modular Infotainment Platform 3加密强度不足漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87738">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0bf8736e9d464aaa571241a607a4a2c6</td>
-       <td>CVE-2023-5636</td>
-       <td>2023-12-11 09:09:07</td>
-       <td>ArslanSoft Education Portal文件上传漏洞 </td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87737">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>947f5860ba2a42b043aa9606a258eb94</td>
-       <td>CVE-2023-4912</td>
-       <td>2023-12-11 09:09:07</td>
-       <td>GitLab EE不受控制的资源消耗漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87736">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>90e7219660f5a8a70da495c17e0b7e89</td>
-       <td>CVE-2023-5226</td>
-       <td>2023-12-11 09:09:07</td>
-       <td>GitLab代码注入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87735">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>023b85ab14509b6b94356d3be25ac9f9</td>
-       <td>CVE-2023-5634</td>
-       <td>2023-12-11 09:09:07</td>
-       <td>ArslanSoft Education Portal SQL注入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87733">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>029b317fc138d9cdfcdfbec4170891f8</td>
-       <td>CVE-2023-5995</td>
-       <td>2023-12-11 09:09:07</td>
-       <td>GitLab EE访问控制错误漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87732">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>75c7417d05cf2f9c3360f068a1f515f3</td>
-       <td>CVE-2023-44381</td>
-       <td>2023-12-11 09:09:07</td>
-       <td>October代码注入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/87731">详情</a></td>
       </tr>
 
      </tbody>
