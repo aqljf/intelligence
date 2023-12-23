@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2023-12-22 09:11:15 -->
+<!-- RELEASE TIME : 2023-12-23 09:11:13 -->
 <html lang="zh-cn">
 
  <head>
@@ -282,6 +282,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>b2ca914fe748c4b4aa85dbdd9a480e2f</td>
+       <td>CVE-2023-5989</td>
+       <td>2023-12-21 10:15:37</td>
+       <td>Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Uyumsoft Information System and Technologies LioXERP allows Stored XSS.This issue affects LioXERP: before v.146.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-5989">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>391643475c55ea6927c9a78924925c52</td>
+       <td>CVE-2023-5988</td>
+       <td>2023-12-21 10:15:37</td>
+       <td>Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Uyumsoft Information System and Technologies LioXERP allows Reflected XSS.This issue affects LioXERP: before v.146.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-5988">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>42dbbab49dc871956d0a2b771b3b2341</td>
+       <td>CVE-2023-51655</td>
+       <td>2023-12-21 10:15:36</td>
+       <td>In JetBrains IntelliJ IDEA before 2023.3.2 code execution was possible in Untrusted Project mode via a malicious plugin repository specified in the project configuration</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-51655">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>225f72c02bcd0853d271a6c70c1acbdb</td>
+       <td>CVE-2023-50783</td>
+       <td>2023-12-21 10:15:36</td>
+       <td>Apache Airflow, versions before 2.8.0, is affected by a vulnerability that allows an authenticated user without the variable edit permission, to update a variable. This flaw compromises the integrity of variable management, potentially leading to unauthorized data modification. Users are recommended to upgrade to 2.8.0, which fixes this issue</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-50783">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>029defa02964adb4a656f7966b53ad4c</td>
+       <td>CVE-2023-49920</td>
+       <td>2023-12-21 10:15:36</td>
+       <td>Apache Airflow, version 2.7.0 through 2.7.3, has a vulnerability that allows an attacker to trigger a DAG in a GET request without CSRF validation. As a result, it was possible for a malicious website opened in the same browser - by the user who also had Airflow UI opened - to trigger the execution of DAGs without the user's consent. Users are advised to upgrade to version 2.8.0 or later which is not affected</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-49920">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e7557308ababd0cbc56bcaacde904410</td>
+       <td>CVE-2023-48291</td>
+       <td>2023-12-21 10:15:36</td>
+       <td>Apache Airflow, in versions prior to 2.8.0, contains a security vulnerability that allows an authenticated user with limited access to some DAGs, to craft a request that could give the user write access to various DAG resources for DAGs that the user had no access to, thus, enabling the user to clear DAGs they shouldn't. This is a missing fix for CVE-2023-42792 in Apache Airflow 2.7.2 Users of Apache Airflow are strongly advised to upgrade to version 2.8.0 or newer to mitigate the risk associated with this vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-48291">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0cfacb20730b8cc615f09c7a72d830f7</td>
+       <td>CVE-2023-47265</td>
+       <td>2023-12-21 10:15:35</td>
+       <td>Apache Airflow, versions 2.6.0 through 2.7.3 has a stored XSS vulnerability that allows a DAG author to add an unbounded and not-sanitized javascript in the parameter description field of the DAG. This Javascript can be executed on the client side of any of the user who looks at the tasks in the browser sandbox. While this issue does not allow to exit the browser sandbox or manipulation of the server-side data - more than the DAG author already has, it allows to modify what the user looking at the DAG details sees in the browser - which opens up all kinds of possibilities of misleading other users. Users of Apache Airflow are recommended to upgrade to version 2.8.0 or newer to mitigate the risk associated with this vulnerability</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-47265">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>4a609b5e13c4e345b0bc8413f9231ea9</td>
+       <td>CVE-2023-2585</td>
+       <td>2023-12-21 10:15:34</td>
+       <td>Keycloak's device authorization grant does not correctly validate the device code and client ID. An attacker client could abuse the missing validation to spoof a client consent request and trick an authorization admin into granting consent to a malicious OAuth client or possible unauthorized access to an existing OAuth client.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-2585">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c706c90387c51266165104988ba08658</td>
+       <td>CVE-2023-7026</td>
+       <td>2023-12-21 05:15:08</td>
+       <td>A vulnerability was found in Lightxun IPTV Gateway up to 20231208. It has been rated as problematic. This issue affects some unknown processing of the file /ZHGXTV/index.php/admin/index/web_upload_template.html. The manipulation of the argument file leads to unrestricted upload. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-248579.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-7026">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>50a6ac80096e330a6b5d1f770bae069a</td>
+       <td>CVE-2023-7025</td>
+       <td>2023-12-21 03:15:07</td>
+       <td>A vulnerability was found in KylinSoft hedron-domain-hook up to 3.8.0.12-0k0.5. It has been declared as critical. This vulnerability affects the function init_kcm of the component DBus Handler. The manipulation leads to improper access controls. Attacking locally is a requirement. The exploit has been disclosed to the public and may be used. VDB-248578 is the identifier assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-7025">详情</a></td>
+      </tr>
+
+      <tr>
        <td>181645864228b6b91deadf55676629da</td>
        <td>CVE-2023-49814</td>
        <td>2023-12-20 19:15:10</td>
@@ -439,86 +519,6 @@
        <td>2023-12-19 01:15:11</td>
        <td>Exposure of Sensitive Information to an Unauthorized Actor vulnerability in Jordy Meow Perfect Images (Manage Image Sizes, Thumbnails, Replace, Retina).This issue affects Perfect Images (Manage Image Sizes, Thumbnails, Replace, Retina): from n/a through 6.4.5.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-44982">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7b1b8d967c02cf5671828f68a3f97c7b</td>
-       <td>CVE-2023-6920</td>
-       <td>2023-12-18 17:15:11</td>
-       <td>Rejected reason: This flaw was found to be a duplicate of CVE-2023-6927. Please see https://access.redhat.com/security/cve/CVE-2023-6927 for information about affected products and security errata.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-6920">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>cb47df80ed0971d57a2f5a28cc82001e</td>
-       <td>CVE-2023-48766</td>
-       <td>2023-12-18 17:15:10</td>
-       <td>Cross-Site Request Forgery (CSRF) vulnerability in SVGator SVGator – Add Animated SVG Easily.This issue affects SVGator – Add Animated SVG Easily: from n/a through 1.2.4.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-48766">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>290a1c7f6fb9800d6a443f49073f8692</td>
-       <td>CVE-2023-48762</td>
-       <td>2023-12-18 17:15:10</td>
-       <td>Cross-Site Request Forgery (CSRF) vulnerability in Crocoblock JetElements For Elementor.This issue affects JetElements For Elementor: from n/a through 2.6.13.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-48762">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>173a2cf0073213f591b7927613fe21d2</td>
-       <td>CVE-2023-46617</td>
-       <td>2023-12-18 17:15:09</td>
-       <td>Cross-Site Request Forgery (CSRF) vulnerability in AdFoxly AdFoxly – Ad Manager, AdSense Ads & Ads.Txt.This issue affects AdFoxly – Ad Manager, AdSense Ads & Ads.Txt: from n/a through 1.8.5.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-46617">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>bfed380a5e5a8624a6b208cc1e7b716c</td>
-       <td>CVE-2023-48795</td>
-       <td>2023-12-18 16:15:10</td>
-       <td>The SSH transport protocol with certain OpenSSH extensions, found in OpenSSH before 9.6 and other products, allows remote attackers to bypass integrity checks such that some packets are omitted (from the extension negotiation message), and a client and server may consequently end up with a connection for which some security features have been downgraded or disabled, aka a Terrapin attack. This occurs because the SSH Binary Packet Protocol (BPP), implemented by these extensions, mishandles the handshake phase and mishandles use of sequence numbers. For example, there is an effective attack against ChaCha20-Poly1305 (and CBC with Encrypt-then-MAC). The bypass occurs in chacha20-poly1305@openssh.com and (if CBC is used) the -etm@openssh.com MAC algorithms. This also affects Maverick Synergy Java SSH API before 3.1.0-SNAPSHOT, Dropbear through 2022.83, Ssh before 5.1.1 in Erlang/OTP, PuTTY before 0.80, and AsyncSSH before 2.14.2; and there could be effects on Bitvise SSH through 9.31, libssh through 0.10.5, and golang.org/x/crypto through 2023-12-17.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-48795">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1b2e1a95ae4b3853e92471883dfa4c7c</td>
-       <td>CVE-2023-48755</td>
-       <td>2023-12-18 16:15:10</td>
-       <td>Cross-Site Request Forgery (CSRF) vulnerability in Michael Winkler teachPress.This issue affects teachPress: from n/a through 9.0.4.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-48755">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>bfd26aa9d555fec8ba0a1937af1f602a</td>
-       <td>CVE-2023-47806</td>
-       <td>2023-12-18 16:15:10</td>
-       <td>Cross-Site Request Forgery (CSRF) vulnerability in Saint Systems Disable User Login.This issue affects Disable User Login: from n/a through 1.3.7.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-47806">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>81e26fa403b50b593346c792d46d1c9c</td>
-       <td>CVE-2023-47789</td>
-       <td>2023-12-18 16:15:10</td>
-       <td>Cross-Site Request Forgery (CSRF) vulnerability in WooCommerce Canada Post Shipping Method.This issue affects Canada Post Shipping Method: from n/a through 2.8.3.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-47789">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>35f337ec1f101de3c30614254fc93b4a</td>
-       <td>CVE-2023-47787</td>
-       <td>2023-12-18 16:15:10</td>
-       <td>Cross-Site Request Forgery (CSRF) vulnerability in WooCommerce WooCommerce Bookings.This issue affects WooCommerce Bookings: from n/a through 2.0.3.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-47787">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>494a1cff26e19bf348fb26dd25df2291</td>
-       <td>CVE-2023-33214</td>
-       <td>2023-12-18 16:15:09</td>
-       <td>Cross-Site Request Forgery (CSRF) vulnerability in Tagbox Tagbox – UGC Galleries, Social Media Widgets, User Reviews & Analytics.This issue affects Tagbox – UGC Galleries, Social Media Widgets, User Reviews & Analytics: from n/a through 3.1.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-33214">详情</a></td>
       </tr>
 
      </tbody>
@@ -1954,9 +1954,129 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>bc3b9f4c74d180fc56f3cb4a154e3f61</td>
+       <td>CVE-2023-41960</td>
+       <td>2023-12-22 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>Bosch ctrlX HMI Web Panel WR21信息泄露漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88326">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ffae3c55f21f7b58c35b791432279dd5</td>
+       <td>CVE-2023-41721</td>
+       <td>2023-12-22 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>Ubiquiti UniFi Network信息泄露漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88325">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7d83f9655bfc4585a1aa36c2af2b4ddc</td>
+       <td>CVE-2023-41372</td>
+       <td>2023-12-22 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>Bosch ctrlX HMI Web Panel WR21硬编码凭据使用漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88324">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0f8e8352acd4c05268b73323c410e918</td>
+       <td>CVE-2023-39930</td>
+       <td>2023-12-22 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>Ping Identity PingFederate身份认证绕过漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88323">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e651371f19edad04461abc153788abd1</td>
+       <td>CVE-2023-39740</td>
+       <td>2023-12-22 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>Line信息泄露漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88322">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a462d08cf462c12f3c404f973ad02b32</td>
+       <td>CVE-2023-39739</td>
+       <td>2023-12-22 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>Line信息泄露漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88321">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>96fba323c052c055aa8f9d2367a4a05b</td>
+       <td>CVE-2023-39737</td>
+       <td>2023-12-22 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>Line信息泄露漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88320">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>57e40c864f67f5157d504ed088ed08be</td>
+       <td>CVE-2023-39736</td>
+       <td>2023-12-22 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>Line信息泄露漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88319">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>862a926f0776cc684a89cdcb78705d0f</td>
+       <td>CVE-2023-39735</td>
+       <td>2023-12-22 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>Line信息泄露漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88318">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f29c014a230c7f07e953134a7f093d61</td>
+       <td>CVE-2023-39734</td>
+       <td>2023-12-22 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>Line信息泄露漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88317">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>da38dff23a9efb4ce184608138bd04b9</td>
+       <td>CVE-2023-39733</td>
+       <td>2023-12-22 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>Line信息泄露漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88316">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3b57894517cc19edaccc6f64f94f0aaa</td>
+       <td>CVE-2023-39732</td>
+       <td>2023-12-22 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>Line信息泄露漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88315">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>bfd3a1e2ca70cd63da1606bb7014b8ac</td>
+       <td>CVE-2023-39619</td>
+       <td>2023-12-22 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>Node Email Check拒绝服务漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88314">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1c944cba529340a2d93efc6049d291b6</td>
+       <td>CVE-2023-38041</td>
+       <td>2023-12-22 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>Ivanti Secure Access Client竞争条件漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88313">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c54bc2bf3cf78064870e08cad12864a9</td>
+       <td>CVE-2023-37913</td>
+       <td>2023-12-22 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>XWiki Platform路径遍历漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88312">详情</a></td>
+      </tr>
+
+      <tr>
        <td>cefbe0803e0723823fd6313d4514da08</td>
        <td>CVE-2023-34085</td>
-       <td>2023-12-21 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>2023-12-21 09:09:07</td>
        <td>Ping Identity PingFederate信息泄露漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88265">详情</a></td>
       </tr>
@@ -1964,7 +2084,7 @@
       <tr>
        <td>a689e56a3365d55ffd481ac44e1b05cf</td>
        <td>CVE-2023-27262</td>
-       <td>2023-12-21 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>2023-12-21 09:09:07</td>
        <td>IDAttend IDWeb SQL注入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88264">详情</a></td>
       </tr>
@@ -1972,7 +2092,7 @@
       <tr>
        <td>6f26ef1124809863b55580b966b8d3b2</td>
        <td>CVE-2023-27257</td>
-       <td>2023-12-21 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>2023-12-21 09:09:07</td>
        <td>IDAttend IDWeb身份认证错误漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88263">详情</a></td>
       </tr>
@@ -1980,7 +2100,7 @@
       <tr>
        <td>6da30852948c49cdeb3268426fd4e3c6</td>
        <td>CVE-2023-27259</td>
-       <td>2023-12-21 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>2023-12-21 09:09:07</td>
        <td>IDAttend IDWeb身份认证错误漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88262">详情</a></td>
       </tr>
@@ -1988,7 +2108,7 @@
       <tr>
        <td>f6ef43ab9d5b8d28d3aacbdee48058cf</td>
        <td>CVE-2023-27375</td>
-       <td>2023-12-21 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>2023-12-21 09:09:07</td>
        <td>IDAttend IDWeb身份认证错误漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88261">详情</a></td>
       </tr>
@@ -1996,7 +2116,7 @@
       <tr>
        <td>04fa00cf92bc6069d36419b32b494011</td>
        <td>CVE-2023-27258</td>
-       <td>2023-12-21 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>2023-12-21 09:09:07</td>
        <td>IDAttend IDWeb身份认证错误漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88260">详情</a></td>
       </tr>
@@ -2004,7 +2124,7 @@
       <tr>
        <td>e5bf6369ee06cd7f63615310d0496546</td>
        <td>CVE-2023-27261</td>
-       <td>2023-12-21 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>2023-12-21 09:09:07</td>
        <td>IDAttend IDWeb身份认证错误漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88259">详情</a></td>
       </tr>
@@ -2012,7 +2132,7 @@
       <tr>
        <td>0a6a907f9a14e0f07b12bc4b61eacf7e</td>
        <td>CVE-2023-27260</td>
-       <td>2023-12-21 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>2023-12-21 09:09:07</td>
        <td>IDAttend IDWeb SQL注入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88258">详情</a></td>
       </tr>
@@ -2020,7 +2140,7 @@
       <tr>
        <td>f7b17b7e5e66133e889042c178d4e732</td>
        <td>CVE-2023-27254</td>
-       <td>2023-12-21 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>2023-12-21 09:09:07</td>
        <td>IDAttend IDWeb SQL注入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88257">详情</a></td>
       </tr>
@@ -2028,7 +2148,7 @@
       <tr>
        <td>daf9de5b750f893692d81ef8c02692b8</td>
        <td>CVE-2023-26582</td>
-       <td>2023-12-21 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>2023-12-21 09:09:07</td>
        <td>IDAttend IDWeb SQL注入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88256">详情</a></td>
       </tr>
@@ -2036,7 +2156,7 @@
       <tr>
        <td>4cb10ede30bb1b85c11fe02aa1e63695</td>
        <td>CVE-2023-27256</td>
-       <td>2023-12-21 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>2023-12-21 09:09:07</td>
        <td>IDAttend IDWeb身份认证错误漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88255">详情</a></td>
       </tr>
@@ -2044,7 +2164,7 @@
       <tr>
        <td>a7b62af40c4e7d617f7d8b80df3902b3</td>
        <td>CVE-2023-26584</td>
-       <td>2023-12-21 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>2023-12-21 09:09:07</td>
        <td>IDAttend IDWeb SQL注入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88254">详情</a></td>
       </tr>
@@ -2052,7 +2172,7 @@
       <tr>
        <td>a3f426c34012c7807d73aabecb4c70df</td>
        <td>CVE-2023-26583</td>
-       <td>2023-12-21 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>2023-12-21 09:09:07</td>
        <td>IDAttend IDWeb SQL注入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88253">详情</a></td>
       </tr>
@@ -2060,7 +2180,7 @@
       <tr>
        <td>ca742a4dc2265a66371402734915b956</td>
        <td>CVE-2023-27376</td>
-       <td>2023-12-21 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>2023-12-21 09:09:07</td>
        <td>IDAttend IDWeb身份认证错误漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88252">详情</a></td>
       </tr>
@@ -2068,129 +2188,9 @@
       <tr>
        <td>b1bba189602c119c835a45a016e36b95</td>
        <td>CVE-2023-27255</td>
-       <td>2023-12-21 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>2023-12-21 09:09:07</td>
        <td>IDAttend IDWeb SQL注入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88251">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>22da9d688b412258ca5222986988117f</td>
-       <td>CVE-2023-27148</td>
-       <td>2023-12-20 09:09:08</td>
-       <td>Enhancesoft osTicket跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88196">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>875a419a71d6632896c8241d72d439e1</td>
-       <td>CVE-2023-46288</td>
-       <td>2023-12-20 09:09:08</td>
-       <td>Apache Airflow信息泄露漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88195">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9c965270b969e8b88f0d0f639938d77f</td>
-       <td>CVE-2023-5718</td>
-       <td>2023-12-20 09:09:08</td>
-       <td>Vue.js vue-devtools来源验证错误漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88194">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e95c6fd32d6aad69551cc6216ef5f5f2</td>
-       <td>CVE-2023-27149</td>
-       <td>2023-12-20 09:09:08</td>
-       <td>Enhancesoft osTicket跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88193">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e661a8957e182fab6eed5c6bbd547e07</td>
-       <td>CVE-2022-22466</td>
-       <td>2023-12-20 09:09:08</td>
-       <td>IBM Security Verify Governance硬编码凭据使用漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88192">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>eb19e4e3a83fe063caaccc0da4761ca2</td>
-       <td>CVE-2023-38722</td>
-       <td>2023-12-20 09:09:08</td>
-       <td>IBM Sterling Partner Engagement Manager跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88191">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>522bd8b5416ec5285af1d0922c5c9cd9</td>
-       <td>CVE-2023-37532</td>
-       <td>2023-12-20 09:09:08</td>
-       <td>HCL Technologies HCL Commerce路径遍历漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88190">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>939de79cf9be41dec378081a4e4ff3a8</td>
-       <td>CVE-2023-46122</td>
-       <td>2023-12-20 09:09:08</td>
-       <td>sbt路径遍历漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88189">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>55fe060c9429e87cc00691264e99c38a</td>
-       <td>CVE-2023-43067</td>
-       <td>2023-12-20 09:09:08</td>
-       <td>Dell Unity XML外部实体注入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88188">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>fc2d2d97ec5e5eba92157a203372a397</td>
-       <td>CVE-2023-43065</td>
-       <td>2023-12-20 09:09:08</td>
-       <td>Dell Unity跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88187">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d496976e83c69313d36dd47f43aa7b94</td>
-       <td>CVE-2023-46127</td>
-       <td>2023-12-20 09:09:08</td>
-       <td>Frappe Technologies Frappe跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88186">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2db084b140c94889d7fcaf1e77a5ebe1</td>
-       <td>CVE-2023-5246</td>
-       <td>2023-12-20 09:09:08</td>
-       <td>SICK Flexi Soft Gateways身份认证错误漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88185">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a6224cdff7a2432ee9c0a9dcf20a6d9e</td>
-       <td>CVE-2021-26737</td>
-       <td>2023-12-20 09:09:08</td>
-       <td>Zscaler Client Connector来源验证错误漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88184">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9b468ce7b0be7c9b74425e5627463786</td>
-       <td>CVE-2023-43045</td>
-       <td>2023-12-20 09:09:08</td>
-       <td>IBM Sterling Partner Engagement Manager身份认证绕过漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88183">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>677136b53a26608d65269ed91a4e7291</td>
-       <td>CVE-2021-26736</td>
-       <td>2023-12-20 09:09:08</td>
-       <td>Zscaler Client Connector未引用的搜索路径或元素漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88182">详情</a></td>
       </tr>
 
      </tbody>
