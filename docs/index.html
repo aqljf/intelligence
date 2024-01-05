@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2024-01-04 09:11:15 -->
+<!-- RELEASE TIME : 2024-01-05 09:11:15 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,7 +284,7 @@
       <tr>
        <td>44102087bced5fb0c7d9ce1a2d84da8e</td>
        <td>CVE-2023-46929</td>
-       <td>2024-01-03 19:15:08 <img src="imgs/new.gif" /></td>
+       <td>2024-01-03 19:15:08</td>
        <td>An issue discovered in GPAC 2.3-DEV-rev605-gfc9e29089-master in MP4Box in gf_avc_change_vui /afltest/gpac/src/media_tools/av_parsers.c:6872:55 allows attackers to crash the application.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-46929">详情</a></td>
       </tr>
@@ -292,7 +292,7 @@
       <tr>
        <td>46a91bb73763686e20b127e7264c3d8a</td>
        <td>CVE-2024-21633</td>
-       <td>2024-01-03 17:15:13 <img src="imgs/new.gif" /></td>
+       <td>2024-01-03 17:15:13</td>
        <td>Apktool is a tool for reverse engineering Android APK files. In versions 2.9.1 and prior, Apktool infers resource files' output path according to their resource names which can be manipulated by attacker to place files at desired location on the system Apktool runs on. Affected environments are those in which an attacker may write/overwrite any file that user has write access, and either user name is known or cwd is under user folder. Commit d348c43b24a9de350ff6e5bd610545a10c1fc712 contains a patch for this issue.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-21633">详情</a></td>
       </tr>
@@ -300,7 +300,7 @@
       <tr>
        <td>4264be1ccbbe07e942c97f62fb0d7fda</td>
        <td>CVE-2024-21631</td>
-       <td>2024-01-03 17:15:12 <img src="imgs/new.gif" /></td>
+       <td>2024-01-03 17:15:12</td>
        <td>Vapor is an HTTP web framework for Swift. Prior to version 4.90.0, Vapor's `vapor_urlparser_parse` function uses `uint16_t` indexes when parsing a URI's components, which may cause integer overflows when parsing untrusted inputs. This vulnerability does not affect Vapor directly but could impact applications relying on the URI type for validating user input. The URI type is used in several places in Vapor. A developer may decide to use URI to represent a URL in their application (especially if that URL is then passed to the HTTP Client) and rely on its public properties and methods. However, URI may fail to properly parse a valid (albeit abnormally long) URL, due to string ranges being converted to 16-bit integers. An attacker may use this behavior to trick the application into accepting a URL to an untrusted destination. By padding the port number with zeros, an attacker can cause an integer overflow to occur when the URL authority is parsed and, as a result, spoof the host. Version 4.90.0 contains a patch for this issue. As a workaround, validate user input before parsing as a URI or, if possible, use Foundation's `URL` and `URLComponents` utilities.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-21631">详情</a></td>
       </tr>
@@ -308,7 +308,7 @@
       <tr>
        <td>b9f6137a8a47c87da3a8ac04b233b556</td>
        <td>CVE-2024-21622</td>
-       <td>2024-01-03 17:15:12 <img src="imgs/new.gif" /></td>
+       <td>2024-01-03 17:15:12</td>
        <td>Craft is a content management system. This is a potential moderate impact, low complexity privilege escalation vulnerability in Craft starting in 3.x prior to 3.9.6 and 4.x prior to 4.4.16 with certain user permissions setups. This has been fixed in Craft 4.4.16 and Craft 3.9.6. Users should ensure they are running at least those versions.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-21622">详情</a></td>
       </tr>
@@ -316,7 +316,7 @@
       <tr>
        <td>9e259a29a43c60b2469cb38ba121b172</td>
        <td>CVE-2024-0217</td>
-       <td>2024-01-03 17:15:12 <img src="imgs/new.gif" /></td>
+       <td>2024-01-03 17:15:12</td>
        <td>A use-after-free flaw was found in PackageKitd. In some conditions, the order of cleanup mechanics for a transaction could be impacted. As a result, some memory access could occur on memory regions that were previously freed. Once freed, a memory region can be reused for other allocations and any previously stored data in this memory region is considered lost.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-0217">详情</a></td>
       </tr>
@@ -324,7 +324,7 @@
       <tr>
        <td>7b4d67def060b6ec34c4f0346fe1accc</td>
        <td>CVE-2023-6004</td>
-       <td>2024-01-03 17:15:11 <img src="imgs/new.gif" /></td>
+       <td>2024-01-03 17:15:11</td>
        <td>A flaw was found in libssh. By utilizing the ProxyCommand or ProxyJump feature, users can exploit unchecked hostname syntax on the client. This issue may allow an attacker to inject malicious code into the command of the features mentioned through the hostname parameter.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-6004">详情</a></td>
       </tr>
@@ -332,7 +332,7 @@
       <tr>
        <td>41655c8b5db5379a2287ffd40fee8e23</td>
        <td>CVE-2023-50253</td>
-       <td>2024-01-03 17:15:11 <img src="imgs/new.gif" /></td>
+       <td>2024-01-03 17:15:11</td>
        <td>Laf is a cloud development platform. In the Laf version design, the log uses communication with k8s to quickly retrieve logs from the container without the need for additional storage. However, in version 1.0.0-beta.13 and prior, this interface does not verify the permissions of the pod, which allows authenticated users to obtain any pod logs under the same namespace through this method, thereby obtaining sensitive information printed in the logs. As of time of publication, no known patched versions exist.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-50253">详情</a></td>
       </tr>
@@ -340,7 +340,7 @@
       <tr>
        <td>408b418042a5def80f2b739b9261f074</td>
        <td>CVE-2023-46742</td>
-       <td>2024-01-03 17:15:11 <img src="imgs/new.gif" /></td>
+       <td>2024-01-03 17:15:11</td>
        <td>CubeFS is an open-source cloud-native file storage system. CubeFS prior to version 3.3.1 was found to leak users secret keys and access keys in the logs in multiple components. When CubeCS creates new users, it leaks the users secret key. This could allow a lower-privileged user with access to the logs to retrieve sensitive information and impersonate other users with higher privileges than themselves. The issue has been patched in v3.3.1. There is no other mitigation than upgrading CubeFS.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-46742">详情</a></td>
       </tr>
@@ -348,7 +348,7 @@
       <tr>
        <td>d8a14b34f9bdf38f76040a2641b1fb10</td>
        <td>CVE-2023-46741</td>
-       <td>2024-01-03 17:15:10 <img src="imgs/new.gif" /></td>
+       <td>2024-01-03 17:15:10</td>
        <td>CubeFS is an open-source cloud-native file storage system. A vulnerability was found in CubeFS prior to version 3.3.1 that could allow users to read sensitive data from the logs which could allow them escalate privileges. CubeFS leaks configuration keys in plaintext format in the logs. These keys could allow anyone to carry out operations on blobs that they otherwise do not have permissions for. For example, an attacker that has succesfully retrieved a secret key from the logs can delete blogs from the blob store. The attacker can either be an internal user with limited privileges to read the log, or they can be an external user who has escalated privileges sufficiently to access the logs. The vulnerability has been patched in v3.3.1. There is no other mitigation than upgrading.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-46741">详情</a></td>
       </tr>
@@ -356,7 +356,7 @@
       <tr>
        <td>5d2e8dfdcc554d690b4556438ac60061</td>
        <td>CVE-2023-46740</td>
-       <td>2024-01-03 17:15:10 <img src="imgs/new.gif" /></td>
+       <td>2024-01-03 17:15:10</td>
        <td>CubeFS is an open-source cloud-native file storage system. Prior to version 3.3.1, CubeFS used an insecure random string generator to generate user-specific, sensitive keys used to authenticate users in a CubeFS deployment. This could allow an attacker to predict and/or guess the generated string and impersonate a user thereby obtaining higher privileges. When CubeFS creates new users, it creates a piece of sensitive information for the user called the “accessKey”. To create the "accesKey", CubeFS uses an insecure string generator which makes it easy to guess and thereby impersonate the created user. An attacker could leverage the predictable random string generator and guess a users access key and impersonate the user to obtain higher privileges. The issue has been fixed in v3.3.1. There is no other mitigation than to upgrade.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-46740">详情</a></td>
       </tr>
@@ -1954,9 +1954,129 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>561e13442e690b34c5261ff3bd5ad041</td>
+       <td>CVE-2023-5164</td>
+       <td>2024-01-04 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>WordPress Bellows Accordion Menu Plugin跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88963">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>4a68ea6f7a912818cf5e3b9a3823010c</td>
+       <td>CVE-2023-44323</td>
+       <td>2024-01-04 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>Microsoft Edge内存错误引用漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88962">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>18172ee07bc1f7b667632ea32c14cd93</td>
+       <td>CVE-2023-5049</td>
+       <td>2024-01-04 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>WordPress Giveaways and Contests by RafflePress Plugin跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88961">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>23a9987334546ac2183f49bdcdfd9817</td>
+       <td>CVE-2023-5666</td>
+       <td>2024-01-04 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>WordPress WP Simple Galleries Plugin跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88960">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7cd620b3da2bf2c8a4fb2f6db8d72ac2</td>
+       <td>CVE-2023-42431</td>
+       <td>2024-01-04 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>BlueSpice跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88959">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>82ce97f7ee5c4cc6c04b0c789e607979</td>
+       <td>CVE-2023-4964</td>
+       <td>2024-01-04 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>OpenText Service Management Automation X开放重定向漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88958">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c4589cd7562e1e6b952ffb9c2da972ec</td>
+       <td>CVE-2023-5199</td>
+       <td>2024-01-04 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>WordPress PHP to Page Plugin本地文件包含漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88957">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b20a956aee8de3887a9f92ceaef4ac17</td>
+       <td>CVE-2023-5250</td>
+       <td>2024-01-04 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>WordPress Grid Plus Plugin本地文件包含漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88956">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>064abe96cf58617f68c0dd0f3d12234a</td>
+       <td>CVE-2023-5362</td>
+       <td>2024-01-04 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>WordPress Carousel, Recent Post Slider and Banner Slider跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88955">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>4f62ff2ed6ea03019fb951fd2eae97b0</td>
+       <td>CVE-2023-5251</td>
+       <td>2024-01-04 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>WordPress Grid Plus Plugin授权错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88954">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>70536fded9126720aa1d245185a71fa1</td>
+       <td>CVE-2023-5843</td>
+       <td>2024-01-04 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>WordPress Ads by datafeedr.com Plugin远程代码执行漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88953">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1c8e74acbbc4b86dc1f33e484796d5de</td>
+       <td>CVE-2023-21299</td>
+       <td>2024-01-04 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>Google Android信息泄露漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88952">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ecd82a84ea2f08d4e87db0a2599002fb</td>
+       <td>CVE-2023-21301</td>
+       <td>2024-01-04 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>Google Android信息泄露漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88951">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>562f7ca5b72742876438943a4eb9725c</td>
+       <td>CVE-2022-20264</td>
+       <td>2024-01-04 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>Google Android信息泄露漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88950">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>437c7c5085259030815f4212179a2e42</td>
+       <td>CVE-2023-21300</td>
+       <td>2024-01-04 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>Google Android信息泄露漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88949">详情</a></td>
+      </tr>
+
+      <tr>
        <td>610a0ee7d9744da1742c74bbc5887f10</td>
        <td>CVE-2023-43300</td>
-       <td>2024-01-03 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2024-01-03 09:09:08</td>
        <td>Line urban_project mini-app信息泄露漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88889">详情</a></td>
       </tr>
@@ -1964,7 +2084,7 @@
       <tr>
        <td>e9e3a7c38f680d996a804fb2c6b533bd</td>
        <td>CVE-2023-44291</td>
-       <td>2024-01-03 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2024-01-03 09:09:08</td>
        <td>Dell DM5500操作系统命令注入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88888">详情</a></td>
       </tr>
@@ -1972,7 +2092,7 @@
       <tr>
        <td>49270d034bec649d712a6b24bd49ad30</td>
        <td>CVE-2023-44306</td>
-       <td>2024-01-03 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2024-01-03 09:09:08</td>
        <td>Dell DM5500路径遍历漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88887">详情</a></td>
       </tr>
@@ -1980,7 +2100,7 @@
       <tr>
        <td>b0e8d1890bc066dab8b6e3749fa0b707</td>
        <td>CVE-2023-49287</td>
-       <td>2024-01-03 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2024-01-03 09:09:08</td>
        <td>TinyDir缓冲区溢出漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88886">详情</a></td>
       </tr>
@@ -1988,7 +2108,7 @@
       <tr>
        <td>faaf669619af07640870a64b58e88b70</td>
        <td>CVE-2023-44305</td>
-       <td>2024-01-03 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2024-01-03 09:09:08</td>
        <td>Dell DM5500堆栈缓冲区溢出漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88885">详情</a></td>
       </tr>
@@ -1996,7 +2116,7 @@
       <tr>
        <td>66f1d3d36ad3c11aae5fd8c6bd2a245e</td>
        <td>CVE-2023-49108</td>
-       <td>2024-01-03 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2024-01-03 09:09:08</td>
        <td>Sumitomo Electric Industries RakRak Document Plus路径遍历漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88884">详情</a></td>
       </tr>
@@ -2004,7 +2124,7 @@
       <tr>
        <td>0e83e239d7a3be1216cfe7ae43a38edf</td>
        <td>CVE-2023-44301</td>
-       <td>2024-01-03 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2024-01-03 09:09:08</td>
        <td>Dell DM5500跨站脚本执行漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88883">详情</a></td>
       </tr>
@@ -2012,7 +2132,7 @@
       <tr>
        <td>5748b302efbd08c73bd476c92b45357f</td>
        <td>CVE-2023-44302</td>
-       <td>2024-01-03 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2024-01-03 09:09:08</td>
        <td>Dell DM5500授权错误漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88882">详情</a></td>
       </tr>
@@ -2020,7 +2140,7 @@
       <tr>
        <td>f2fe67517a20d75decf007049e2ff259</td>
        <td>CVE-2023-44300</td>
-       <td>2024-01-03 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2024-01-03 09:09:08</td>
        <td>Dell DM5500纯文本密码存储漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88881">详情</a></td>
       </tr>
@@ -2028,7 +2148,7 @@
       <tr>
        <td>51cd9efe63cfa27e294bbded3dea064c</td>
        <td>CVE-2023-44304</td>
-       <td>2024-01-03 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2024-01-03 09:09:08</td>
        <td>Dell DM5500操作系统命令注入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88880">详情</a></td>
       </tr>
@@ -2036,7 +2156,7 @@
       <tr>
        <td>8d5e56f869dd77107c90603fddf78abd</td>
        <td>CVE-2023-49093</td>
-       <td>2024-01-03 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2024-01-03 09:09:08</td>
        <td>HtmlUnit代码注入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88879">详情</a></td>
       </tr>
@@ -2044,7 +2164,7 @@
       <tr>
        <td>18d3d549ac223a8b39ac45a298bbc8a6</td>
        <td>CVE-2023-43299</td>
-       <td>2024-01-03 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2024-01-03 09:09:08</td>
        <td>Line DA BUTCHERS mini-app信息泄露漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88878">详情</a></td>
       </tr>
@@ -2052,7 +2172,7 @@
       <tr>
        <td>55d574a930c0b989f421e339c5ec2577</td>
        <td>CVE-2023-43301</td>
-       <td>2024-01-03 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2024-01-03 09:09:08</td>
        <td>Line DARTS SHOP MAXIM mini-app信息泄露漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88877">详情</a></td>
       </tr>
@@ -2060,7 +2180,7 @@
       <tr>
        <td>8eb8781955a7a51eb064c29f38a62a43</td>
        <td>CVE-2023-43298</td>
-       <td>2024-01-03 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2024-01-03 09:09:08</td>
        <td>Line SCOL Members Card mini-app信息泄露漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88876">详情</a></td>
       </tr>
@@ -2068,129 +2188,9 @@
       <tr>
        <td>190ecbd258c9b3d5c9a4de90810e0e6b</td>
        <td>CVE-2023-43303</td>
-       <td>2024-01-03 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2024-01-03 09:09:08</td>
        <td>Line craftbeer bar canvas mini-app信息泄露漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88875">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a881f72b2b67617359b756b9d0988633</td>
-       <td>CVE-2023-5807</td>
-       <td>2023-12-29 09:09:07</td>
-       <td>TRtek Software Education Portal SQL注入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88762">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>42fe427802d8a1369be30b261288aa7b</td>
-       <td>CVE-2023-27854</td>
-       <td>2023-12-29 09:09:07</td>
-       <td>Rockwell Automation Arena Simulation Software任意代码执行漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88761">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>337281b629c4b9a2e7f08e545e8d7793</td>
-       <td>CVE-2023-27858</td>
-       <td>2023-12-29 09:09:07</td>
-       <td>Rockwell Automation Arena Simulation Software任意代码执行漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88760">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9a32b351ee225c227466a4703e41c77e</td>
-       <td>CVE-2023-46290</td>
-       <td>2023-12-29 09:09:07</td>
-       <td>Rockwell Automation FactoryTalk Services Platform身份认证错误漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88759">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>545d4baeb77008cab4d58bd3561364a9</td>
-       <td>CVE-2023-46289</td>
-       <td>2023-12-29 09:09:07</td>
-       <td>Rockwell Automation FactoryTalk View Site Edition输入验证错误漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88758">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>692a7e2ef5cfbfc7ffd306128d3bd2ba</td>
-       <td>CVE-2022-34886</td>
-       <td>2023-12-29 09:09:07</td>
-       <td>Lenovo Printers远程代码执行漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88757">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>578c1d61c7648c007b9d7928498aad0e</td>
-       <td>CVE-2022-34887</td>
-       <td>2023-12-29 09:09:07</td>
-       <td>Lenovo Printers身份认证错误漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88756">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2e55ff4ec8623e1042a8375c7a9f52e1</td>
-       <td>CVE-2023-5827</td>
-       <td>2023-12-29 09:09:07</td>
-       <td>Shanghai CTI Monitoring and Early Warning System SQL注入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88755">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e63ecbebac9dbca42b7c6e983dc410a7</td>
-       <td>CVE-2022-3429</td>
-       <td>2023-12-29 09:09:07</td>
-       <td>Lenovo Printers拒绝服务漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88754">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5b4eb1c43d608220bfd619ca49040eaf</td>
-       <td>CVE-2022-3681</td>
-       <td>2023-12-29 09:09:07</td>
-       <td>Motorola MR2600身份认证错误漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88753">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>eb91f72de07c7edeec1ae20490c64a58</td>
-       <td>CVE-2023-5826</td>
-       <td>2023-12-29 09:09:07</td>
-       <td>Netcon NS-ASG Application Security Gateway SQL注入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88752">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6816dd2cf86f1c5fea9398b5c55e54e5</td>
-       <td>CVE-2023-46604</td>
-       <td>2023-12-29 09:09:07</td>
-       <td>Apache ActiveMQ不受信数据反序列化漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88751">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b79491d44ea78b1e127a96921037d4ff</td>
-       <td>CVE-2023-4967</td>
-       <td>2023-12-29 09:09:07</td>
-       <td>Citrix Systems Citrix NetScaler ADC和NetScaler Gateway拒绝服务漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88750">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6026799f1120ccfea2a1f690eb499597</td>
-       <td>CVE-2022-3611</td>
-       <td>2023-12-29 09:09:07</td>
-       <td>Lenovo App Store信息泄露漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88749">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>cdb418593ad280954c99f7f611d82a94</td>
-       <td>CVE-2023-34057</td>
-       <td>2023-12-29 09:09:07</td>
-       <td>VMware Tools权限提升漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/88748">详情</a></td>
       </tr>
 
      </tbody>
