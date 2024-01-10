@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2024-01-09 09:11:17 -->
+<!-- RELEASE TIME : 2024-01-10 09:11:14 -->
 <html lang="zh-cn">
 
  <head>
@@ -28,7 +28,7 @@
       <tr>
        <td>c2b35c67c2732343be5c23579ebcdd04</td>
        <td></td>
-       <td>2024-01-08 15:37:47 <img src="imgs/new.gif" /></td>
+       <td>2024-01-08 15:37:47</td>
        <td>安全事件周报 2024-01-01 第1周</td>
        <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=659ba624c09f255b91b17c23">详情</a></td>
       </tr>
@@ -282,9 +282,89 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>8fc99205a4cbe0813cc987d5f8556d1f</td>
+       <td>CVE-2023-6788</td>
+       <td>2024-01-09 04:15:07 <img src="imgs/new.gif" /></td>
+       <td>The Metform Elementor Contact Form Builder plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 3.8.1. This is due to missing or incorrect nonce validation on the contents function. This makes it possible for unauthenticated attackers to update the options "mf_hubsopt_token", "mf_hubsopt_refresh_token", "mf_hubsopt_token_type", and "mf_hubsopt_expires_in" via a forged request granted they can trick a site administrator into performing an action such as clicking on a link. This would allow an attacker to connect their own Hubspot account to a victim site's metform to obtain leads and contacts.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-6788">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ab82211b6cec63b4f8c0c3d6d8e14dfd</td>
+       <td>CVE-2023-6594</td>
+       <td>2024-01-09 03:15:08 <img src="imgs/new.gif" /></td>
+       <td>The WordPress Button Plugin MaxButtons plugin for WordPress is vulnerable to Stored Cross-Site Scripting via admin settings in all versions up to, and including, 9.7.4 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with administrator-level permissions and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. This only affects multi-site installations and installations where unfiltered_html has been disabled. Administrators can give button creation privileges to users with lower levels (contributor+) which would allow those lower-privileged users to carry out attacks.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-6594">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>49cdfcbc4e543c8b54037051f25ff9a2</td>
+       <td>CVE-2024-22125</td>
+       <td>2024-01-09 02:15:46 <img src="imgs/new.gif" /></td>
+       <td>Under certain conditions the Microsoft Edge browser extension (SAP GUI connector for Microsoft Edge) - version 1.0, allows an attacker to access highly sensitive information which would otherwise be restricted causing high impact on confidentiality.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-22125">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>26218c1f1ffafc23d430bac8b2974037</td>
+       <td>CVE-2024-22124</td>
+       <td>2024-01-09 02:15:46 <img src="imgs/new.gif" /></td>
+       <td>Under certain conditions, Internet Communication Manager (ICM) or SAP Web Dispatcher - versions KERNEL 7.22, KERNEL 7.53, KERNEL 7.54, KRNL64UC 7.22, KRNL64UC 7.22EXT, KRNL64UC 7.53, KRNL64NUC 7.22, KRNL64NUC 7.22_EXT, WEBDISP 7.22_EXT, WEBDISP 7.53, WEBDISP 7.54, could allow an attacker to access information which would otherwise be restricted causing high impact on confidentiality.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-22124">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>49f674e5bab4acdbf29a28e1526f9d02</td>
+       <td>CVE-2024-21738</td>
+       <td>2024-01-09 02:15:46 <img src="imgs/new.gif" /></td>
+       <td>SAP NetWeaver ABAP Application Server and ABAP Platform do not sufficiently encode user-controlled inputs, resulting in Cross-Site Scripting (XSS) vulnerability. An attacker with low privileges can cause limited impact to confidentiality of the application data after successful exploitation.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-21738">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1e7936419466b61cb4bf6d08a3398820</td>
+       <td>CVE-2024-21737</td>
+       <td>2024-01-09 02:15:45 <img src="imgs/new.gif" /></td>
+       <td>In SAP Application Interface Framework File Adapter - version 702, a high privilege user can use a function module to traverse through various layers and execute OS commands directly. By this, such user can control the behaviour of the application. This leads to considerable impact on confidentiality, integrity and availability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-21737">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ad4d78e390eb960ac33b44b432fbceb9</td>
+       <td>CVE-2024-21736</td>
+       <td>2024-01-09 02:15:45 <img src="imgs/new.gif" /></td>
+       <td>SAP S/4HANA Finance for (Advanced Payment Management) - versions SAPSCORE 128, S4CORE 107, does not perform necessary authorization checks. A function import could be triggered allowing the attacker to create in-house bank accounts leading to low impact on the confidentiality of the application.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-21736">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9dd81ea8a4968a45a60c4af975db5795</td>
+       <td>CVE-2023-51717</td>
+       <td>2024-01-09 02:15:45 <img src="imgs/new.gif" /></td>
+       <td>Dataiku DSS before 11.4.5 and 12.4.1 has Incorrect Access Control that could lead to a full authentication bypass.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-51717">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>32885c9da8bb4f7a6b1b844da26aef65</td>
+       <td>CVE-2023-49238</td>
+       <td>2024-01-09 02:15:44 <img src="imgs/new.gif" /></td>
+       <td>In Gradle Enterprise before 2023.1, a remote attacker may be able to gain access to a new installation (in certain installation scenarios) because of a non-unique initial system user password. Although this password must be changed upon the first login, it is possible that an attacker logs in before the legitimate administrator logs in.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-49238">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6a3831fb38c17c81014d083dbbe8c4aa</td>
+       <td>CVE-2023-39336</td>
+       <td>2024-01-09 02:15:44 <img src="imgs/new.gif" /></td>
+       <td>An unspecified SQL Injection vulnerability in Ivanti Endpoint Manager released prior to 2022 SU 5 allows an attacker with access to the internal network to execute arbitrary SQL queries and retrieve output without the need for authentication. Under specific circumstances, this may also lead to RCE on the core server.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-39336">详情</a></td>
+      </tr>
+
+      <tr>
        <td>44595af387648d8817ca03a920da4be0</td>
        <td>CVE-2023-52074</td>
-       <td>2024-01-08 22:15:45 <img src="imgs/new.gif" /></td>
+       <td>2024-01-08 22:15:45</td>
        <td>FlyCms v1.0 was discovered to contain a Cross-Site Request Forgery (CSRF) via the component system/site/webconfig_updagte.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-52074">详情</a></td>
       </tr>
@@ -292,7 +372,7 @@
       <tr>
        <td>e374f31eba2aa01832254e309857ed86</td>
        <td>CVE-2023-52073</td>
-       <td>2024-01-08 22:15:45 <img src="imgs/new.gif" /></td>
+       <td>2024-01-08 22:15:45</td>
        <td>FlyCms v1.0 was discovered to contain a Cross-Site Request Forgery (CSRF) via the component /system/site/config_footer_updagte.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-52073">详情</a></td>
       </tr>
@@ -300,7 +380,7 @@
       <tr>
        <td>11cc6e21c244ca45666a93b09b1c89b1</td>
        <td>CVE-2023-52072</td>
-       <td>2024-01-08 22:15:45 <img src="imgs/new.gif" /></td>
+       <td>2024-01-08 22:15:45</td>
        <td>FlyCms v1.0 was discovered to contain a Cross-Site Request Forgery (CSRF) via the component /system/site/userconfig_updagte.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-52072">详情</a></td>
       </tr>
@@ -308,7 +388,7 @@
       <tr>
        <td>179b53315a087b72a1b88579ea7bdb59</td>
        <td>CVE-2022-40696</td>
-       <td>2024-01-08 22:15:44 <img src="imgs/new.gif" /></td>
+       <td>2024-01-08 22:15:44</td>
        <td>Exposure of Sensitive Information to an Unauthorized Actor vulnerability in WP Engine Advanced Custom Fields (ACF).This issue affects Advanced Custom Fields (ACF): from 3.1.1 through 6.0.2.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-40696">详情</a></td>
       </tr>
@@ -316,7 +396,7 @@
       <tr>
        <td>370837629bb56af9b01222ecf68b1394</td>
        <td>CVE-2022-36352</td>
-       <td>2024-01-08 22:15:44 <img src="imgs/new.gif" /></td>
+       <td>2024-01-08 22:15:44</td>
        <td>Missing Authorization vulnerability in Profilegrid ProfileGrid – User Profiles, Memberships, Groups and Communities.This issue affects ProfileGrid – User Profiles, Memberships, Groups and Communities: from n/a through 5.0.3.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-36352">详情</a></td>
       </tr>
@@ -324,7 +404,7 @@
       <tr>
        <td>68e18caa6ccdfa633b1d081b76aa81f0</td>
        <td>CVE-2022-34344</td>
-       <td>2024-01-08 22:15:44 <img src="imgs/new.gif" /></td>
+       <td>2024-01-08 22:15:44</td>
        <td>Missing Authorization vulnerability in Rymera Web Co Wholesale Suite – WooCommerce Wholesale Prices, B2B, Catalog Mode, Order Form, Wholesale User Roles, Dynamic Pricing & More.This issue affects Wholesale Suite – WooCommerce Wholesale Prices, B2B, Catalog Mode, Order Form, Wholesale User Roles, Dynamic Pricing & More: from n/a through 2.1.5.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-34344">详情</a></td>
       </tr>
@@ -332,7 +412,7 @@
       <tr>
        <td>9b2f8f6db495fbf3a2c07580a8f6fa50</td>
        <td>CVE-2022-29409</td>
-       <td>2024-01-08 22:15:44 <img src="imgs/new.gif" /></td>
+       <td>2024-01-08 22:15:44</td>
        <td>Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-29409">详情</a></td>
       </tr>
@@ -340,7 +420,7 @@
       <tr>
        <td>653094e98c35055fc73cb7a7bf7aa2b4</td>
        <td>CVE-2023-7218</td>
-       <td>2024-01-08 21:15:10 <img src="imgs/new.gif" /></td>
+       <td>2024-01-08 21:15:10</td>
        <td>A vulnerability, which was classified as critical, was found in Totolink N350RT 9.3.5u.6139_B202012. Affected is the function loginAuth of the file /cgi-bin/cstecgi.cgi. The manipulation of the argument password leads to stack-based buffer overflow. It is possible to launch the attack remotely. The identifier of this vulnerability is VDB-249852. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-7218">详情</a></td>
       </tr>
@@ -348,7 +428,7 @@
       <tr>
        <td>be885bdfa26fb71f9f0d992a79397e12</td>
        <td>CVE-2023-52202</td>
-       <td>2024-01-08 21:15:10 <img src="imgs/new.gif" /></td>
+       <td>2024-01-08 21:15:10</td>
        <td>Deserialization of Untrusted Data vulnerability in SVNLabs Softwares HTML5 MP3 Player with Folder Feedburner Playlist Free.This issue affects HTML5 MP3 Player with Folder Feedburner Playlist Free: from n/a through 2.8.0.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-52202">详情</a></td>
       </tr>
@@ -356,7 +436,7 @@
       <tr>
        <td>23691577eecb9e169a6cf084c6a31776</td>
        <td>CVE-2023-52201</td>
-       <td>2024-01-08 21:15:10 <img src="imgs/new.gif" /></td>
+       <td>2024-01-08 21:15:10</td>
        <td>Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Brian D. Goad pTypeConverter.This issue affects pTypeConverter: from n/a through 0.2.8.1.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-52201">详情</a></td>
       </tr>
@@ -439,86 +519,6 @@
        <td>2024-01-05 21:15:43</td>
        <td>Flarum is open source discussion platform software. Prior to version 1.8.5, the Flarum `/logout` route includes a redirect parameter that allows any third party to redirect users from a (trusted) domain of the Flarum installation to redirect to any link. For logged-in users, the logout must be confirmed. Guests are immediately redirected. This could be used by spammers to redirect to a web address using a trusted domain of a running Flarum installation. The vulnerability has been fixed and published as flarum/core v1.8.5. As a workaround, some extensions modifying the logout route can remedy this issue if their implementation is safe.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-21641">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>05fdfca069662eb38c6d79235c81ccf0</td>
-       <td>CVE-2024-22051</td>
-       <td>2024-01-04 21:15:10</td>
-       <td>CommonMarker versions prior to 0.23.4 are at risk of an integer overflow vulnerability. This vulnerability can result in possibly unauthenticated remote attackers to cause heap memory corruption, potentially leading to an information leak or remote code execution, via parsing tables with marker rows that contain more than UINT16_MAX columns.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-22051">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7ccf465a6561926d524743b198d45c33</td>
-       <td>CVE-2024-22050</td>
-       <td>2024-01-04 21:15:10</td>
-       <td>Path traversal in the static file service in Iodine less than 0.7.33 allows an unauthenticated, remote attacker to read files outside the public folder via malicious URLs.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-22050">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>71c578935e7093f2b43a3e58f2ff1509</td>
-       <td>CVE-2024-22049</td>
-       <td>2024-01-04 21:15:10</td>
-       <td>httparty before 0.21.0 is vulnerable to an assumed-immutable web parameter vulnerability. A remote and unauthenticated attacker can provide a crafted filename parameter during multipart/form-data uploads which could result in attacker controlled filenames being written.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-22049">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>170fd5d08922395d97939f8ace9d9bfd</td>
-       <td>CVE-2024-22048</td>
-       <td>2024-01-04 21:15:09</td>
-       <td>govuk_tech_docs versions from 2.0.2 to before 3.3.1 are vulnerable to a cross-site scripting vulnerability. Malicious JavaScript may be executed in the user's browser if a malicious search result is displayed on the search page.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-22048">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e0d75648ae70488d8f7a2c2301344e60</td>
-       <td>CVE-2024-22047</td>
-       <td>2024-01-04 21:15:09</td>
-       <td>A race condition exists in Audited 4.0.0 to 5.3.3 that can result in an authenticated user to cause audit log entries to be attributed to another user.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-22047">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>59d85acda3a1c220e56b86890781466a</td>
-       <td>CVE-2024-0241</td>
-       <td>2024-01-04 21:15:09</td>
-       <td>encoded_id-rails versions before 1.0.0.beta2 are affected by an uncontrolled resource consumption vulnerability. A remote and unauthenticated attacker might cause a denial of service condition by sending an HTTP request with an extremely long "id" parameter.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-0241">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7fbb57bcb0a17cd6a6c3db8d24bdf548</td>
-       <td>CVE-2024-21636</td>
-       <td>2024-01-04 20:15:25</td>
-       <td>view_component is a framework for building reusable, testable, and encapsulated view components in Ruby on Rails. Versions prior to 3.9.0 have a cross-site scripting vulnerability that has the potential to impact anyone rendering a component directly from a controller with the view_component gem. Note that only components that define a `#call` method (i.e. instead of using a sidecar template) are affected. The return value of the `#call` method is not sanitized and can include user-defined content. In addition, the return value of the `#output_postamble` methodis not sanitized, which can also lead to cross-site scripting issues. Versions 3.9.0 has been released and fully mitigates both the `#call` and the `#output_postamble` vulnerabilities. As a workaround, sanitize the return value of `#call`.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-21636">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1ff5b7fbb4720b0857510753a0f179b9</td>
-       <td>CVE-2023-5619</td>
-       <td>2024-01-04 20:15:25</td>
-       <td>Rejected reason: ** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: CVE-2023-6530. Reason: This candidate is a reservation duplicate of CVE-2023-6530. Notes: All CVE users should reference CVE-2023-43226 instead of this candidate. All references and descriptions in this candidate have been removed to prevent accidental usage.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-5619">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6bc8c39fdf193cbcb84b837d6391f826</td>
-       <td>CVE-2023-5442</td>
-       <td>2024-01-04 19:15:08</td>
-       <td>Rejected reason: ** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: CVE-2023-6991. Reason: This candidate is a reservation duplicate of CVE-2023-6991. Notes: All CVE users should reference CVE-2023-43226 instead of this candidate. All references and descriptions in this candidate have been removed to prevent accidental usage.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-5442">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>245ef5ab04620e4d1e9989637d29956a</td>
-       <td>CVE-2023-51812</td>
-       <td>2024-01-04 19:15:08</td>
-       <td>Tenda AX3 v16.03.12.11 was discovered to contain a remote code execution (RCE) vulnerability via the list parameter at /goform/SetNetControlList.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-51812">详情</a></td>
       </tr>
 
      </tbody>
