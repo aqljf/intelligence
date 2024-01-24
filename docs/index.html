@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2024-01-23 09:11:17 -->
+<!-- RELEASE TIME : 2024-01-24 09:11:14 -->
 <html lang="zh-cn">
 
  <head>
@@ -28,7 +28,7 @@
       <tr>
        <td>f4359caac3c70e9141439aa773e1e8a5</td>
        <td></td>
-       <td>2024-01-22 19:39:38 <img src="imgs/new.gif" /></td>
+       <td>2024-01-22 19:39:38</td>
        <td>安全事件周报 2024-01-15 第3周</td>
        <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=65ae53dec09f255b91b17cc1">详情</a></td>
       </tr>
@@ -284,7 +284,7 @@
       <tr>
        <td>3e0b7c1d0d237da80a26fd87f17bf6b7</td>
        <td>CVE-2024-23340</td>
-       <td>2024-01-22 23:15:08 <img src="imgs/new.gif" /></td>
+       <td>2024-01-22 23:15:08</td>
        <td>@hono/node-server is an adapter that allows users to run Hono applications on Node.js. Since v1.3.0, @hono/node-server has used its own Request object with `url` behavior that is unexpected. In the standard API, if the URL contains `..`, here called "double dots", the URL string returned by Request will be in the resolved path. However, the `url` in @hono/node-server's Request as does not resolve double dots, so `http://localhost/static/.. /foo.txt` is returned. This causes vulnerabilities when using `serveStatic`. Modern web browsers and a latest `curl` command resolve double dots on the client side, so this issue doesn't affect those using either of those tools. However, problems may occur if accessed by a client that does not resolve them. Version 1.4.1 includes the change to fix this issue. As a workaround, don't use `serveStatic`.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-23340">详情</a></td>
       </tr>
@@ -292,7 +292,7 @@
       <tr>
        <td>c956ec6f8d082fdc0f07cc295ae7e870</td>
        <td>CVE-2024-23339</td>
-       <td>2024-01-22 23:15:08 <img src="imgs/new.gif" /></td>
+       <td>2024-01-22 23:15:08</td>
        <td>hoolock is a suite of lightweight utilities designed to maintain a small footprint when bundled. Starting in version 2.0.0 and prior to version 2.2.1, utility functions related to object paths (`get`, `set`, and `update`) did not block attempts to access or alter object prototypes. Starting in version 2.2.1, the `get`, `set` and `update` functions throw a `TypeError` when a user attempts to access or alter inherited properties.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-23339">详情</a></td>
       </tr>
@@ -300,7 +300,7 @@
       <tr>
        <td>62d6073bf55dd61aea754f1f55f6b9b2</td>
        <td>CVE-2021-42141</td>
-       <td>2024-01-22 23:15:08 <img src="imgs/new.gif" /></td>
+       <td>2024-01-22 23:15:08</td>
        <td>An issue was discovered in Contiki-NG tinyDTLS through 2018-08-30. One incorrect handshake could complete with different epoch numbers in the packets Client_Hello, Client_key_exchange, and Change_cipher_spec, which may cause denial of service.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-42141">详情</a></td>
       </tr>
@@ -308,7 +308,7 @@
       <tr>
        <td>663295d7c88f1c5e433c4d4d9bbf95ae</td>
        <td>CVE-2024-23678</td>
-       <td>2024-01-22 21:15:10 <img src="imgs/new.gif" /></td>
+       <td>2024-01-22 21:15:10</td>
        <td>In Splunk Enterprise for Windows versions below 9.0.8 and 9.1.3, Splunk Enterprise does not correctly sanitize path input data. This results in the unsafe deserialization of untrusted data from a separate disk partition on the machine. This vulnerability only affects Splunk Enterprise for Windows.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-23678">详情</a></td>
       </tr>
@@ -316,7 +316,7 @@
       <tr>
        <td>fc7e2ea10a613eb6d3fe3ce7c0e9bf9b</td>
        <td>CVE-2024-23677</td>
-       <td>2024-01-22 21:15:10 <img src="imgs/new.gif" /></td>
+       <td>2024-01-22 21:15:10</td>
        <td>In Splunk Enterprise versions below 9.0.8, the Splunk RapidDiag utility discloses server responses from external applications in a log file.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-23677">详情</a></td>
       </tr>
@@ -324,7 +324,7 @@
       <tr>
        <td>db78d623296d72f4899c27766a7f2423</td>
        <td>CVE-2024-23676</td>
-       <td>2024-01-22 21:15:10 <img src="imgs/new.gif" /></td>
+       <td>2024-01-22 21:15:10</td>
        <td>In Splunk versions below 9.0.8 and 9.1.3, the “mrollup” SPL command lets a low-privileged user view metrics on an index that they do not have permission to view. This vulnerability requires user interaction from a high-privileged user to exploit.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-23676">详情</a></td>
       </tr>
@@ -332,7 +332,7 @@
       <tr>
        <td>ce1a7c739655a11c001ac56a417fb561</td>
        <td>CVE-2024-23675</td>
-       <td>2024-01-22 21:15:10 <img src="imgs/new.gif" /></td>
+       <td>2024-01-22 21:15:10</td>
        <td>In Splunk Enterprise versions below 9.0.8 and 9.1.3, Splunk app key value store (KV Store) improperly handles permissions for users that use the REST application programming interface (API). This can potentially result in the deletion of KV Store collections.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-23675">详情</a></td>
       </tr>
@@ -340,7 +340,7 @@
       <tr>
        <td>82d251ad982a4afbdd43ef097a569de1</td>
        <td>CVE-2023-47141</td>
-       <td>2024-01-22 21:15:09 <img src="imgs/new.gif" /></td>
+       <td>2024-01-22 21:15:09</td>
        <td>IIBM Db2 for Linux, UNIX and Windows (includes Db2 Connect Server) 11.5 could allow an authenticated user with CONNECT privileges to cause a denial of service using a specially crafted query. IBM X-Force ID: 270264.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-47141">详情</a></td>
       </tr>
@@ -348,7 +348,7 @@
       <tr>
        <td>448b7f707fc189f0ed3d277aca6b029b</td>
        <td>CVE-2023-24135</td>
-       <td>2024-01-22 21:15:08 <img src="imgs/new.gif" /></td>
+       <td>2024-01-22 21:15:08</td>
        <td>Jensen of Scandinavia Eagle 1200AC V15.03.06.33_en was discovered to contain a command injection vulnerability in the function formWriteFacMac. This vulnerability allows attackers to execute arbitrary commands via manipulation of the mac parameter.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-24135">详情</a></td>
       </tr>
@@ -356,7 +356,7 @@
       <tr>
        <td>0c4a33e007a8ec59b081b0b69c486b75</td>
        <td>CVE-2023-7194</td>
-       <td>2024-01-22 20:15:47 <img src="imgs/new.gif" /></td>
+       <td>2024-01-22 20:15:47</td>
        <td>The Meris WordPress theme through 1.1.2 does not sanitise and escape some parameters before outputting them back in the page, leading to Reflected Cross-Site Scripting which could be used against high privilege users such as admin</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-7194">详情</a></td>
       </tr>
@@ -1954,9 +1954,129 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>0f3525f69ba5005006cce82bdf073c6b</td>
+       <td>CVE-2023-37927</td>
+       <td>2024-01-23 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>Zyxel NAS326操作系统命令注入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89941">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f1ff34a5e09a5a177342f7b8be09e911</td>
+       <td>CVE-2023-5247</td>
+       <td>2024-01-23 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>Mitsubishi Electric FA Engineering Software任意代码执行漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89940">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ec24326c68693693d60cce8a87544618</td>
+       <td>CVE-2023-35138</td>
+       <td>2024-01-23 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>Zyxel NAS326操作系统命令注入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89939">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>237bf6ec9bd21c0c6f4f4d41a6bac44a</td>
+       <td>CVE-2023-5965</td>
+       <td>2024-01-23 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>EspoCRM任意文件上传漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89938">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>adb8174a194d89d512890247f7aaaea2</td>
+       <td>CVE-2023-4770</td>
+       <td>2024-01-23 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>4D Windows Server不受控制的搜索路径元素漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89937">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>77f1d2c57891b73ae24f78fcc50e359a</td>
+       <td>CVE-2023-49694</td>
+       <td>2024-01-23 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>NETGEAR ProSAFE Network Management System访问控制错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89936">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>37f3153fc6ef72234750450e164f3c37</td>
+       <td>CVE-2023-49693</td>
+       <td>2024-01-23 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>NETGEAR ProSAFE Network Management System身份认证错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89935">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>dd557f3410747fc4018992d50461017f</td>
+       <td>CVE-2023-3741</td>
+       <td>2024-01-23 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>NEC Platforms DT900 Series和DT900S Series操作系统命令注入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89934">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f7bc485e764b5bef6823f06e4a71574d</td>
+       <td>CVE-2023-35137</td>
+       <td>2024-01-23 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>Zyxel NAS326身份认证错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89933">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b4494556c7f7b5e3c0ea37ce8c9fe21f</td>
+       <td>CVE-2023-49620</td>
+       <td>2024-01-23 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>Apache DolphinScheduler授权错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89932">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>59422bc7e50f7d219b926ab3e3c952a3</td>
+       <td>CVE-2023-49081</td>
+       <td>2024-01-23 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>aiohttp输入验证错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89931">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8ab32c09d523635967b6e18c45ad291c</td>
+       <td>CVE-2023-47418</td>
+       <td>2024-01-23 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>o2oa远程代码执行漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89930">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f0d82581b86a278df84bdf6ac35333f9</td>
+       <td>CVE-2023-49094</td>
+       <td>2024-01-23 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>Symbolicator服务器端请求伪造漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89929">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f5cdf82d81414b4662a55a1c2bf80dc9</td>
+       <td>CVE-2023-47464</td>
+       <td>2024-01-23 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>GL.iNet AX1800不安全权限漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89928">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f0ab9b2c6fafdbbcfd19675b8f6a3618</td>
+       <td>CVE-2023-47463</td>
+       <td>2024-01-23 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>GL.iNet AX1800不安全权限漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89927">详情</a></td>
+      </tr>
+
+      <tr>
        <td>2530283b7130b16ed0eaf401e9a1bbe8</td>
        <td>CVE-2023-46384</td>
-       <td>2024-01-22 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2024-01-22 09:09:08</td>
        <td>LOYTEC LINX Configurator 不安全权限漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89906">详情</a></td>
       </tr>
@@ -1964,7 +2084,7 @@
       <tr>
        <td>c8ac48ac9bd06e6d9b1e3b777353036c</td>
        <td>CVE-2023-42917</td>
-       <td>2024-01-22 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2024-01-22 09:09:08</td>
        <td>Apple多款产品内存破坏漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89905">详情</a></td>
       </tr>
@@ -1972,7 +2092,7 @@
       <tr>
        <td>13905d7bd8a3c187f138a8a1ef5a4c23</td>
        <td>CVE-2023-39226</td>
-       <td>2024-01-22 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2024-01-22 09:09:08</td>
        <td>Delta Electronics InfraSuite Device Master任意代码执行漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89904">详情</a></td>
       </tr>
@@ -1980,7 +2100,7 @@
       <tr>
        <td>44e8729e7e7c400c67a3f16fcb37123d</td>
        <td>CVE-2023-48894</td>
-       <td>2024-01-22 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2024-01-22 09:09:08</td>
        <td>jshERP访问控制错误漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89903">详情</a></td>
       </tr>
@@ -1988,7 +2108,7 @@
       <tr>
        <td>11113334180af61673a08684d5a4f05a</td>
        <td>CVE-2023-49735</td>
-       <td>2024-01-22 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2024-01-22 09:09:08</td>
        <td>Apache Tiles路径遍历漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89902">详情</a></td>
       </tr>
@@ -1996,7 +2116,7 @@
       <tr>
        <td>b34d5c5b1181bbb1df88af67d75cdedf</td>
        <td>CVE-2023-5909</td>
-       <td>2024-01-22 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2024-01-22 09:09:08</td>
        <td>PTC KEPserverEX证书验证错误漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89901">详情</a></td>
       </tr>
@@ -2004,7 +2124,7 @@
       <tr>
        <td>62e06e1284329961dae82ccd358b62ab</td>
        <td>CVE-2023-42916</td>
-       <td>2024-01-22 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2024-01-22 09:09:08</td>
        <td>Apple多款产品越界读取漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89900">详情</a></td>
       </tr>
@@ -2012,7 +2132,7 @@
       <tr>
        <td>7c79cb7df81b7b456b8498b27819e268</td>
        <td>CVE-2023-47453</td>
-       <td>2024-01-22 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2024-01-22 09:09:08</td>
        <td>Sohu Video Player不受信搜索路径漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89899">详情</a></td>
       </tr>
@@ -2020,7 +2140,7 @@
       <tr>
        <td>e6d6fb076bcfb9768ef70c9b0aec4b58</td>
        <td>CVE-2021-35975</td>
-       <td>2024-01-22 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2024-01-22 09:09:08</td>
        <td>Systematica Radius路径遍历漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89898">详情</a></td>
       </tr>
@@ -2028,7 +2148,7 @@
       <tr>
        <td>e07c79afbb7a57b46f1f3d348428d2b3</td>
        <td>CVE-2023-47452</td>
-       <td>2024-01-22 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2024-01-22 09:09:08</td>
        <td>Notepad++不受信搜索路径漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89897">详情</a></td>
       </tr>
@@ -2036,7 +2156,7 @@
       <tr>
        <td>dba64bd3a79220861fe2b291a5715748</td>
        <td>CVE-2023-6344</td>
-       <td>2024-01-22 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2024-01-22 09:09:08</td>
        <td>Tyler Technologies Magistrate Court Case Management Plus身份认证错误漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89896">详情</a></td>
       </tr>
@@ -2044,7 +2164,7 @@
       <tr>
        <td>e7d4f6271c06ec6771ee3f1cd0e752ba</td>
        <td>CVE-2023-6353</td>
-       <td>2024-01-22 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2024-01-22 09:09:08</td>
        <td>Tyler Technologies Civil and Criminal Electronic Filing身份认证错误漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89895">详情</a></td>
       </tr>
@@ -2052,7 +2172,7 @@
       <tr>
        <td>70b6eca25300346ed607405e3ef93e43</td>
        <td>CVE-2023-6354</td>
-       <td>2024-01-22 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2024-01-22 09:09:08</td>
        <td>Tyler Technologies Magistrate Court Case Management Plus身份认证错误漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89894">详情</a></td>
       </tr>
@@ -2060,7 +2180,7 @@
       <tr>
        <td>555227350e49aa95167843c4e64fb23d</td>
        <td>CVE-2023-6375</td>
-       <td>2024-01-22 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2024-01-22 09:09:08</td>
        <td>Tyler Technologies Magistrate Court Case Management Plus信息泄露漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89893">详情</a></td>
       </tr>
@@ -2068,129 +2188,9 @@
       <tr>
        <td>3c46b351bdb4f294596c51c14d620fd0</td>
        <td>CVE-2023-6376</td>
-       <td>2024-01-22 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2024-01-22 09:09:08</td>
        <td>Henschen &amp; Associates court document management software信息泄露漏洞（CVE-2023-6376</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89892">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7cf1ac22bec6e9bc57e4502151819e6c</td>
-       <td>CVE-2023-51527</td>
-       <td>2024-01-19 09:09:08</td>
-       <td>WordPress Senol Sahin AI Power: Complete AI Pack Plugin信息泄露漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89816">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>96424d4e9d33061e11bcabb505cd4ba8</td>
-       <td>CVE-2023-49830</td>
-       <td>2024-01-19 09:09:08</td>
-       <td>WordPress Astra Pro Plugin代码注入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89815">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f1a534d76396e6c26118493c0bba23b7</td>
-       <td>CVE-2023-51430</td>
-       <td>2024-01-19 09:09:08</td>
-       <td>Honor Magic UI权限分配错误漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89814">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>809992280dfe0b47d0a12dac8aab96c1</td>
-       <td>CVE-2023-31296</td>
-       <td>2024-01-19 09:09:08</td>
-       <td>Sesami Cash Point &amp; Transport Optimizer CSV注入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89813">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7570f0a6b873e514301a9cf6bb71dd56</td>
-       <td>CVE-2023-51429</td>
-       <td>2024-01-19 09:09:08</td>
-       <td>Honor Magic OS权限分配错误漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89812">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c67cdc2755fa3d632e8a5e47e168a1a6</td>
-       <td>CVE-2023-51428</td>
-       <td>2024-01-19 09:09:08</td>
-       <td>Honor Magic OS类型混淆漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89811">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0180e0891d4ffeeb9f3488665eb01ceb</td>
-       <td>CVE-2023-51688</td>
-       <td>2024-01-19 09:09:08</td>
-       <td>WordPress eCommerce Product Catalog Plugin信息泄露漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89810">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2d042465847e66b794570f03b81c3843</td>
-       <td>CVE-2023-7080</td>
-       <td>2024-01-19 09:09:08</td>
-       <td>Cloudflare Wrangler任意代码执行漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89809">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e77d18ebe78be79582c95d0cfe772c24</td>
-       <td>CVE-2023-23442</td>
-       <td>2024-01-19 09:09:08</td>
-       <td>Honor Magic OS类型混淆漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89808">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>62975023409590ef6288530406dddfd5</td>
-       <td>CVE-2023-51427</td>
-       <td>2024-01-19 09:09:08</td>
-       <td>Honor Magic OS类型混淆漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89807">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>fb805f8bb89b5bd0d539e09335bcf00a</td>
-       <td>CVE-2023-51426</td>
-       <td>2024-01-19 09:09:08</td>
-       <td>Honor Magic OS类型混淆漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89806">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4ad51568c99b277333274d9d36ad0387</td>
-       <td>CVE-2023-23441</td>
-       <td>2024-01-19 09:09:08</td>
-       <td>Honor Magic UI越界读取漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89805">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>20385da61c5a74529301f27b9a8bb9b1</td>
-       <td>CVE-2023-47804</td>
-       <td>2024-01-19 09:09:08</td>
-       <td>Apache OpenOffice参数注入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89804">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b5d9537b8697d041ce6a6fd3245f1aed</td>
-       <td>CVE-2023-7148</td>
-       <td>2024-01-19 09:09:08</td>
-       <td>Shifu代码注入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89803">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>58fc4e4e8d3d660b3b22ed14478e2ab3</td>
-       <td>CVE-2023-7078</td>
-       <td>2024-01-19 09:09:08</td>
-       <td>Cloudflare Miniflare服务器端请求伪造漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/89802">详情</a></td>
       </tr>
 
      </tbody>
