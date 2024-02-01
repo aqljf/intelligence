@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2024-01-31 09:11:15 -->
+<!-- RELEASE TIME : 2024-02-01 09:11:16 -->
 <html lang="zh-cn">
 
  <head>
@@ -282,9 +282,89 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>12eb6a740c2600c2bc8e18d05075f7b9</td>
+       <td>CVE-2024-22236</td>
+       <td>2024-01-31 07:15:07 <img src="imgs/new.gif" /></td>
+       <td>In Spring Cloud Contract, versions 4.1.x prior to 4.1.1, versions 4.0.x prior to 4.0.5, and versions 3.1.x prior to 3.1.10, test execution is vulnerable to local information disclosure via temporary directory created with unsafe permissions through the shaded com.google.guava:guava dependency in the org.springframework.cloud:spring-cloud-contract-shade dependency.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-22236">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>490783c56d358d587d8fb5c54bf885c3</td>
+       <td>CVE-2023-3934</td>
+       <td>2024-01-31 06:15:45 <img src="imgs/new.gif" /></td>
+       <td>Rejected reason: Please discard this CVE, we are not using this anymore. The vulnerability turned out to be a non-security issue</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-3934">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>00582fe99a29bb73b013f12fe676249e</td>
+       <td>CVE-2024-0914</td>
+       <td>2024-01-31 05:15:08 <img src="imgs/new.gif" /></td>
+       <td>A timing side-channel vulnerability has been discovered in the opencryptoki package while processing RSA PKCS#1 v1.5 padded ciphertexts. This flaw could potentially enable unauthorized RSA ciphertext decryption or signing, even without access to the corresponding private key.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-0914">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8ce42f2177c88d28261110921a12e179</td>
+       <td>CVE-2024-1069</td>
+       <td>2024-01-31 03:15:08 <img src="imgs/new.gif" /></td>
+       <td>The Contact Form Entries plugin for WordPress is vulnerable to arbitrary file uploads due to insufficient file validation on the 'view_page' function in versions up to, and including, 1.3.2. This makes it possible for authenticated attackers with administrator-level capabilities or above, to upload arbitrary files on the affected site's server which may make remote code execution possible.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-1069">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b7561f09fe3d88d8cba9b84bec49c7e6</td>
+       <td>CVE-2023-31505</td>
+       <td>2024-01-31 03:15:08 <img src="imgs/new.gif" /></td>
+       <td>An arbitrary file upload vulnerability in Schlix CMS v2.2.8-1, allows remote authenticated attackers to execute arbitrary code and obtain sensitive information via a crafted .phtml file.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-31505">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>55d4873ddbaa2b9f48a75e802668b088</td>
+       <td>CVE-2023-2439</td>
+       <td>2024-01-31 03:15:07 <img src="imgs/new.gif" /></td>
+       <td>The UserPro plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'userpro' shortcode in versions up to, and including, 5.1.5 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated attackers with contributor-level and above permissions to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-2439">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>fb9100e147b46e93166e5d434e87b5d4</td>
+       <td>CVE-2024-23745</td>
+       <td>2024-01-31 02:15:54 <img src="imgs/new.gif" /></td>
+       <td>In Notion Web Clipper 1.0.3(7), a .nib file is susceptible to the Dirty NIB attack. NIB files can be manipulated to execute arbitrary commands. Additionally, even if a NIB file is modified within an application, Gatekeeper may still permit the execution of the application, enabling the execution of arbitrary commands within the application's context.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-23745">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2576d8a827e10fc2ecd04110e387fb53</td>
+       <td>CVE-2024-22569</td>
+       <td>2024-01-31 02:15:54 <img src="imgs/new.gif" /></td>
+       <td>Stored Cross-Site Scripting (XSS) vulnerability in POSCMS v4.6.2, allows attackers to execute arbitrary code via a crafted payload to /index.php?c=install&m=index&step=2&is_install_db=0.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-22569">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>99b1e9663802c75cdfe5bbaf5b05781c</td>
+       <td>CVE-2024-23834</td>
+       <td>2024-01-30 22:15:53</td>
+       <td>Discourse is an open-source discussion platform. Improperly sanitized user input could lead to an XSS vulnerability in some situations. This vulnerability only affects Discourse instances which have disabled the default Content Security Policy. The vulnerability is patched in 3.1.5 and 3.2.0.beta5. As a workaround, ensure Content Security Policy is enabled and does not include `unsafe-inline`.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-23834">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5dcb11d92ca762a8517d724cf976b880</td>
+       <td>CVE-2024-1077</td>
+       <td>2024-01-30 22:15:53</td>
+       <td>Use after free in Network in Google Chrome prior to 121.0.6167.139 allowed a remote attacker to potentially exploit heap corruption via a malicious file. (Chromium security severity: High)</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-1077">详情</a></td>
+      </tr>
+
+      <tr>
        <td>37b1dc62bc69582779f7fb4a04c18022</td>
        <td>CVE-2024-24333</td>
-       <td>2024-01-30 15:15:09 <img src="imgs/new.gif" /></td>
+       <td>2024-01-30 15:15:09</td>
        <td>TOTOLINK A3300R V17.0.0cu.557_B20221024 was discovered to contain a command injection vulnerability via the desc parameter in the setWiFiAclRules function.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-24333">详情</a></td>
       </tr>
@@ -292,7 +372,7 @@
       <tr>
        <td>fc32eaf2351d0eb1e0460c8b99d5fb2e</td>
        <td>CVE-2024-24332</td>
-       <td>2024-01-30 15:15:09 <img src="imgs/new.gif" /></td>
+       <td>2024-01-30 15:15:09</td>
        <td>TOTOLINK A3300R V17.0.0cu.557_B20221024 was discovered to contain a command injection vulnerability via the url parameter in the setUrlFilterRules function.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-24332">详情</a></td>
       </tr>
@@ -300,7 +380,7 @@
       <tr>
        <td>279cb3821554fa3e805dc6bdc9686577</td>
        <td>CVE-2024-24331</td>
-       <td>2024-01-30 15:15:09 <img src="imgs/new.gif" /></td>
+       <td>2024-01-30 15:15:09</td>
        <td>TOTOLINK A3300R V17.0.0cu.557_B20221024 was discovered to contain a command injection vulnerability via the enable parameter in the setWiFiScheduleCfg function.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-24331">详情</a></td>
       </tr>
@@ -308,7 +388,7 @@
       <tr>
        <td>068a5956579620140a1a0d91b7964849</td>
        <td>CVE-2024-24330</td>
-       <td>2024-01-30 15:15:09 <img src="imgs/new.gif" /></td>
+       <td>2024-01-30 15:15:09</td>
        <td>TOTOLINK A3300R V17.0.0cu.557_B20221024 was discovered to contain a command injection vulnerability via the port or enable parameter in the setRemoteCfg function.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-24330">详情</a></td>
       </tr>
@@ -316,7 +396,7 @@
       <tr>
        <td>fda5a519b51772d75c483917ca1e4c06</td>
        <td>CVE-2024-24329</td>
-       <td>2024-01-30 15:15:09 <img src="imgs/new.gif" /></td>
+       <td>2024-01-30 15:15:09</td>
        <td>TOTOLINK A3300R V17.0.0cu.557_B20221024 was discovered to contain a command injection vulnerability via the enable parameter in the setPortForwardRules function.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-24329">详情</a></td>
       </tr>
@@ -324,7 +404,7 @@
       <tr>
        <td>a007b127b6294eacb25d959a92fdd5bf</td>
        <td>CVE-2024-24328</td>
-       <td>2024-01-30 15:15:09 <img src="imgs/new.gif" /></td>
+       <td>2024-01-30 15:15:09</td>
        <td>TOTOLINK A3300R V17.0.0cu.557_B20221024 was discovered to contain a command injection vulnerability via the enable parameter in the setMacFilterRules function.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-24328">详情</a></td>
       </tr>
@@ -332,7 +412,7 @@
       <tr>
        <td>b65e8c6a0bbc08fbca1f297866733d5b</td>
        <td>CVE-2024-24327</td>
-       <td>2024-01-30 15:15:09 <img src="imgs/new.gif" /></td>
+       <td>2024-01-30 15:15:09</td>
        <td>TOTOLINK A3300R V17.0.0cu.557_B20221024 was discovered to contain a command injection vulnerability via the pppoePass parameter in the setIpv6Cfg function.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-24327">详情</a></td>
       </tr>
@@ -340,7 +420,7 @@
       <tr>
        <td>90f4986016ebd552b90082c3f8003d00</td>
        <td>CVE-2024-24326</td>
-       <td>2024-01-30 15:15:09 <img src="imgs/new.gif" /></td>
+       <td>2024-01-30 15:15:09</td>
        <td>TOTOLINK A3300R V17.0.0cu.557_B20221024 was discovered to contain a command injection vulnerability via the arpEnable parameter in the setStaticDhcpRules function.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-24326">详情</a></td>
       </tr>
@@ -348,7 +428,7 @@
       <tr>
        <td>9789e39bd3a984bd6ba0aba8530c85d1</td>
        <td>CVE-2024-24325</td>
-       <td>2024-01-30 15:15:09 <img src="imgs/new.gif" /></td>
+       <td>2024-01-30 15:15:09</td>
        <td>TOTOLINK A3300R V17.0.0cu.557_B20221024 was discovered to contain a command injection vulnerability via the enable parameter in the setParentalRules function.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-24325">详情</a></td>
       </tr>
@@ -356,7 +436,7 @@
       <tr>
        <td>17bab45642ed8e1bed8a89f25a72c085</td>
        <td>CVE-2024-24324</td>
-       <td>2024-01-30 15:15:09 <img src="imgs/new.gif" /></td>
+       <td>2024-01-30 15:15:09</td>
        <td>TOTOLINK A8000RU v7.1cu.643_B20200521 was discovered to contain a hardcoded password for root stored in /etc/shadow.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-24324">详情</a></td>
       </tr>
@@ -439,86 +519,6 @@
        <td>2024-01-27 12:15:07</td>
        <td>A vulnerability was found in flink-extended ai-flow 0.3.1. It has been declared as critical. Affected by this vulnerability is the function cloudpickle.loads of the file \ai_flow\cli\commands\workflow_command.py. The manipulation leads to deserialization. The attack can be launched remotely. The complexity of an attack is rather high. The exploitation appears to be difficult. The exploit has been disclosed to the public and may be used. The identifier VDB-252205 was assigned to this vulnerability.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-0960">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ca9c41e0d5b80bdea474696e69735f92</td>
-       <td>CVE-2024-0959</td>
-       <td>2024-01-27 11:15:17</td>
-       <td>A vulnerability was found in StanfordVL GibsonEnv 0.3.1. It has been classified as critical. Affected is the function cloudpickle.load of the file gibson\utils\pposgd_fuse.py. The manipulation leads to deserialization. It is possible to launch the attack remotely. The complexity of an attack is rather high. The exploitability is told to be difficult. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-252204.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-0959">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>fa745314a1eb56ce33677aeb744b3c83</td>
-       <td>CVE-2024-22861</td>
-       <td>2024-01-27 07:15:07</td>
-       <td>Integer overflow vulnerability in FFmpeg before n6.1, allows attackers to cause a denial of service (DoS) via the avcodec/osq module.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-22861">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>928b8155eea79205b51dd097a99cd508</td>
-       <td>CVE-2024-22862</td>
-       <td>2024-01-27 06:15:48</td>
-       <td>Integer overflow vulnerability in FFmpeg before n6.1, allows remote attackers to execute arbitrary code via the JJPEG XL Parser.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-22862">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6f0f8fcd8af8015f1e035b67e7726f23</td>
-       <td>CVE-2024-22860</td>
-       <td>2024-01-27 06:15:48</td>
-       <td>Integer overflow vulnerability in FFmpeg before n6.1, allows remote attackers to execute arbitrary code via the jpegxl_anim_read_packet component in the JPEG XL Animation decoder.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-22860">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>06ddc50de5eb9495b9b95a3819e15e60</td>
-       <td>CVE-2024-0958</td>
-       <td>2024-01-27 06:15:48</td>
-       <td>A vulnerability was found in CodeAstro Stock Management System 1.0 and classified as problematic. This issue affects some unknown processing of the file /index.php of the component Add Category Handler. The manipulation of the argument Category Name/Category Description leads to cross site scripting. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-252203.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-0958">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>76ab596a58fd8790864110886707c415</td>
-       <td>CVE-2024-0618</td>
-       <td>2024-01-27 06:15:48</td>
-       <td>The Contact Form Plugin – Fastest Contact Form Builder Plugin for WordPress by Fluent Forms plugin for WordPress is vulnerable to Stored Cross-Site Scripting via imported form titles in all versions up to, and including, 5.1.5 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with administrator-level access, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. This only affects multi-site installations and installations where unfiltered_html has been disabled.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-0618">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>fbbafa994de476f132bfaf5a844b2066</td>
-       <td>CVE-2023-48202</td>
-       <td>2024-01-27 06:15:47</td>
-       <td>Cross-Site Scripting (XSS) vulnerability in Sunlight CMS 8.0.1 allows an authenticated low-privileged user to escalate privileges via a crafted SVG file in the File Manager component.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-48202">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>af33a69b1c827f0d2ff5457720669639</td>
-       <td>CVE-2023-48201</td>
-       <td>2024-01-27 06:15:47</td>
-       <td>Cross Site Scripting (XSS) vulnerability in Sunlight CMS v.8.0.1, allows remote authenticated attackers to execute arbitrary code and escalate privileges via a crafted script to the Content text editor component.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-48201">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8f5e15e90d805fddb0baacd8f0f3bb46</td>
-       <td>CVE-2024-21985</td>
-       <td>2024-01-26 16:15:22</td>
-       <td>ONTAP 9 versions prior to 9.9.1P18, 9.10.1P16, 9.11.1P13, 9.12.1P10 and 9.13.1P4 are susceptible to a vulnerability which could allow an authenticated user with multiple remote accounts with differing roles to perform actions via REST API beyond their intended privilege. Possible actions include viewing limited configuration details and metrics or modifying limited settings, some of which could result in a Denial of Service (DoS).</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-21985">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d57bec278588d436040d3c7423baa491</td>
-       <td>CVE-2024-0930</td>
-       <td>2024-01-26 16:15:22</td>
-       <td>A vulnerability classified as critical has been found in Tenda AC10U 15.03.06.49_multi_TDE01. This affects the function fromSetWirelessRepeat. The manipulation of the argument wpapsk_crypto leads to stack-based buffer overflow. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-252135. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-0930">详情</a></td>
       </tr>
 
      </tbody>
@@ -1956,7 +1956,7 @@
       <tr>
        <td>257b020bf3927301ce8e4eb7cadec223</td>
        <td>CVE-2021-37937</td>
-       <td>2024-01-30 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>2024-01-30 09:09:07</td>
        <td>Elastic Elasticsearch权限管理错误漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90212">详情</a></td>
       </tr>
@@ -1964,7 +1964,7 @@
       <tr>
        <td>d943bb6d40b5357825580015263eb46c</td>
        <td>CVE-2021-37942</td>
-       <td>2024-01-30 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>2024-01-30 09:09:07</td>
        <td>Elastic APM Java agent权限提升漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90211">详情</a></td>
       </tr>
@@ -1972,7 +1972,7 @@
       <tr>
        <td>20b7ce5191ab1dd867e8e9b05195b757</td>
        <td>CVE-2023-46814</td>
-       <td>2024-01-30 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>2024-01-30 09:09:07</td>
        <td>VideoLAN VLC media player二进制劫持漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90210">详情</a></td>
       </tr>
@@ -1980,7 +1980,7 @@
       <tr>
        <td>c6e6ac4e283819545812107fff89391e</td>
        <td>CVE-2023-48161</td>
-       <td>2024-01-30 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>2024-01-30 09:09:07</td>
        <td>GIFLIB缓冲区溢出漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90209">详情</a></td>
       </tr>
@@ -1988,7 +1988,7 @@
       <tr>
        <td>33b71b4ddf50f025b66dc66648b4e359</td>
        <td>CVE-2023-29069</td>
-       <td>2024-01-30 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>2024-01-30 09:09:07</td>
        <td>Autodesk Desktop Connector不受控制的搜索路径元素漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90208">详情</a></td>
       </tr>
@@ -1996,7 +1996,7 @@
       <tr>
        <td>65adf6b4971e56e2100357fc4168f986</td>
        <td>CVE-2023-41146</td>
-       <td>2024-01-30 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>2024-01-30 09:09:07</td>
        <td>Autodesk Customer Support Portal信息泄露漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90207">详情</a></td>
       </tr>
@@ -2004,7 +2004,7 @@
       <tr>
        <td>42fd3217219dbcb88eba7e5ee9920971</td>
        <td>CVE-2023-47016</td>
-       <td>2024-01-30 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>2024-01-30 09:09:07</td>
        <td>radare2越界读取漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90206">详情</a></td>
       </tr>
@@ -2012,7 +2012,7 @@
       <tr>
        <td>f3dedee5dc7b5ffd519987f05bb90bcd</td>
        <td>CVE-2023-47392</td>
-       <td>2024-01-30 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>2024-01-30 09:09:07</td>
        <td>Mercedes-Benz Mercedes me IOS APP访问控制错误漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90205">详情</a></td>
       </tr>
@@ -2020,7 +2020,7 @@
       <tr>
        <td>5ad3ebe7f438b311240ac31e6a2c7c87</td>
        <td>CVE-2023-47393</td>
-       <td>2024-01-30 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>2024-01-30 09:09:07</td>
        <td>Mercedes-Benz Mercedes me IOS APP访问控制错误漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90204">详情</a></td>
       </tr>
@@ -2028,7 +2028,7 @@
       <tr>
        <td>e353aac0c271f41e72a230ab4ae586a6</td>
        <td>CVE-2023-2446</td>
-       <td>2024-01-30 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>2024-01-30 09:09:07</td>
        <td>WordPress UserPro Plugin信息泄露漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90203">详情</a></td>
       </tr>
@@ -2036,7 +2036,7 @@
       <tr>
        <td>e3b430b739f61729952169c5169c3557</td>
        <td>CVE-2023-46673</td>
-       <td>2024-01-30 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>2024-01-30 09:09:07</td>
        <td>Elastic Elasticsearch异常情况处理错误漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90202">详情</a></td>
       </tr>
@@ -2044,7 +2044,7 @@
       <tr>
        <td>d02b260dfcffe59cc69064512638e090</td>
        <td>CVE-2023-6117</td>
-       <td>2024-01-30 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>2024-01-30 09:09:07</td>
        <td>M-Files Server不受控制的资源消耗漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90201">详情</a></td>
       </tr>
@@ -2052,7 +2052,7 @@
       <tr>
        <td>837b760f7dcb36629730ed741cfec7b5</td>
        <td>CVE-2023-6189</td>
-       <td>2024-01-30 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>2024-01-30 09:09:07</td>
        <td>M-Files Server权限处理错误漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90200">详情</a></td>
       </tr>
@@ -2060,7 +2060,7 @@
       <tr>
        <td>48f0a5473919701ec69a8254403a20a9</td>
        <td>CVE-2023-3103</td>
-       <td>2024-01-30 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>2024-01-30 09:09:07</td>
        <td>Unitree Robotics A1身份认证绕过漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90199">详情</a></td>
       </tr>
@@ -2068,7 +2068,7 @@
       <tr>
        <td>e348442cdfc614baffc65caeaf88cb72</td>
        <td>CVE-2023-3104</td>
-       <td>2024-01-30 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>2024-01-30 09:09:07</td>
        <td>Unitree Robotics A1身份认证错误漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90198">详情</a></td>
       </tr>
