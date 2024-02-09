@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2024-02-08 09:11:13 -->
+<!-- RELEASE TIME : 2024-02-09 09:11:14 -->
 <html lang="zh-cn">
 
  <head>
@@ -282,9 +282,89 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>479116192245ec9ff6a728dc9d09567e</td>
+       <td>CVE-2024-24350</td>
+       <td>2024-02-08 01:15:27 <img src="imgs/new.gif" /></td>
+       <td>File Upload vulnerability in Software Publico e-Sic Livre v.2.0 and before allows a remote attacker to execute arbitrary code via the extension filtering component.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-24350">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>77c21347e652d860e89e006d0de6afb2</td>
+       <td>CVE-2024-24026</td>
+       <td>2024-02-08 01:15:27 <img src="imgs/new.gif" /></td>
+       <td>An arbitrary File upload vulnerability exists in Novel-Plus v4.3.0-RC1 and prior versions at com.java2nb.system.controller.SysUserController: uploadImg(). An attacker can pass in specially crafted filename parameter to perform arbitrary File download.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-24026">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>333849acd4a5c1a2af3f3b7d161d2252</td>
+       <td>CVE-2024-24025</td>
+       <td>2024-02-08 01:15:27 <img src="imgs/new.gif" /></td>
+       <td>An arbitrary File upload vulnerability exists in Novel-Plus v4.3.0-RC1 and prior at com.java2nb.common.controller.FileController: upload(). An attacker can pass in specially crafted filename parameter to perform arbitrary File download.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-24025">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>4291a34c7d76bd9ad26182719fe6a8f1</td>
+       <td>CVE-2024-24024</td>
+       <td>2024-02-08 01:15:27 <img src="imgs/new.gif" /></td>
+       <td>An arbitrary File download vulnerability exists in Novel-Plus v4.3.0-RC1 and prior at com.java2nb.common.controller.FileController: fileDownload(). An attacker can pass in specially crafted filePath and fieName parameters to perform arbitrary File download.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-24024">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>25c7166099e951170ba8abfb2e515c5d</td>
+       <td>CVE-2024-24023</td>
+       <td>2024-02-08 01:15:27 <img src="imgs/new.gif" /></td>
+       <td>A SQL injection vulnerability exists in Novel-Plus v4.3.0-RC1 and prior. An attacker can pass specially crafted offset, limit, and sort parameters to perform SQL injection via /novel/bookContent/list.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-24023">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>95ba57c5db4c1e3295d2538b15d2d63b</td>
+       <td>CVE-2024-24018</td>
+       <td>2024-02-08 01:15:27 <img src="imgs/new.gif" /></td>
+       <td>A SQL injection vulnerability exists in Novel-Plus v4.3.0-RC1 and prior versions. An attacker can pass in crafted offset, limit, and sort parameters to perform SQL injection via /system/dataPerm/list</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-24018">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>96e1de53cecadc04d3dea58ed660b48f</td>
+       <td>CVE-2023-48974</td>
+       <td>2024-02-08 01:15:26 <img src="imgs/new.gif" /></td>
+       <td>Cross Site Scripting vulnerability in Axigen WebMail v.10.5.7 and before allows a remote attacker to escalate privileges via a crafted script to the serverName_input parameter.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-48974">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0e17b051a9f235afaa8fb218b16197a7</td>
+       <td>CVE-2024-24806</td>
+       <td>2024-02-07 22:15:10</td>
+       <td>libuv is a multi-platform support library with a focus on asynchronous I/O. The `uv_getaddrinfo` function in `src/unix/getaddrinfo.c` (and its windows counterpart `src/win/getaddrinfo.c`), truncates hostnames to 256 characters before calling `getaddrinfo`. This behavior can be exploited to create addresses like `0x00007f000001`, which are considered valid by `getaddrinfo` and could allow an attacker to craft payloads that resolve to unintended IP addresses, bypassing developer checks. The vulnerability arises due to how the `hostname_ascii` variable (with a length of 256 bytes) is handled in `uv_getaddrinfo` and subsequently in `uv__idna_toascii`. When the hostname exceeds 256 characters, it gets truncated without a terminating null byte. As a result attackers may be able to access internal APIs or for websites (similar to MySpace) that allows users to have `username.example.com` pages. Internal services that crawl or cache these user pages can be exposed to SSRF attacks if a malicious user chooses a long vulnerable username. This issue has been addressed in release version 1.48.0. Users are advised to upgrade. There are no known workarounds for this vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-24806">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c00a2531e0b8c99f91b3a8f4cb5aff41</td>
+       <td>CVE-2024-23448</td>
+       <td>2024-02-07 22:15:09</td>
+       <td>An issue was discovered whereby APM Server could log at ERROR level, a response from Elasticsearch indicating that indexing the document failed and that response would contain parts of the original document. Depending on the nature of the document that the APM Server attempted to ingest, this could lead to the insertion of sensitive or private information in the APM Server logs.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-23448">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>130dc4379d0320843f5025e232b3bb0f</td>
+       <td>CVE-2024-1066</td>
+       <td>2024-02-07 22:15:09</td>
+       <td>An issue has been discovered in GitLab EE affecting all versions from 13.3.0 prior to 16.6.7, 16.7 prior to 16.7.5, and 16.8 prior to 16.8.2 which allows an attacker to do a resource exhaustion using GraphQL `vulnerabilitiesCountByDay`</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-1066">详情</a></td>
+      </tr>
+
+      <tr>
        <td>8b6827f90073579427f6e9fb3fbe09ab</td>
        <td>CVE-2024-1079</td>
-       <td>2024-02-07 08:15:43 <img src="imgs/new.gif" /></td>
+       <td>2024-02-07 08:15:43</td>
        <td>The Quiz Maker plugin for WordPress is vulnerable to unauthorized access of data due to a missing capability check on the ays_show_results() function in all versions up to, and including, 6.5.2.4. This makes it possible for unauthenticated attackers to fetch arbitrary quiz results which can contain PII.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-1079">详情</a></td>
       </tr>
@@ -292,7 +372,7 @@
       <tr>
        <td>01186fcb20868ed7e03ed4e5ba0bab97</td>
        <td>CVE-2024-1078</td>
-       <td>2024-02-07 08:15:42 <img src="imgs/new.gif" /></td>
+       <td>2024-02-07 08:15:42</td>
        <td>The Quiz Maker plugin for WordPress is vulnerable to unauthorized modification of data due to a missing capability check on the ays_quick_start() and add_question_rows() functions in all versions up to, and including, 6.5.2.4. This makes it possible for authenticated attackers, with subscriber-level access and above, to create arbitrary quizzes.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-1078">详情</a></td>
       </tr>
@@ -300,7 +380,7 @@
       <tr>
        <td>b944bd8e9ce2eefc05570932ea093c72</td>
        <td>CVE-2024-0977</td>
-       <td>2024-02-07 08:15:41 <img src="imgs/new.gif" /></td>
+       <td>2024-02-07 08:15:41</td>
        <td>The Timeline Widget For Elementor (Elementor Timeline, Vertical & Horizontal Timeline) plugin for WordPress is vulnerable to Stored Cross-Site Scripting via image URLs in the plugin's timeline widget in all versions up to, and including, 1.5.3 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated attackers with contributor-level and above permissions to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page, changes the slideshow type, and then changes it back to an image.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-0977">详情</a></td>
       </tr>
@@ -308,7 +388,7 @@
       <tr>
        <td>bce12e38d6fc6de5271e127c2e923092</td>
        <td>CVE-2023-40355</td>
-       <td>2024-02-07 08:15:40 <img src="imgs/new.gif" /></td>
+       <td>2024-02-07 08:15:40</td>
        <td>Cross Site Scripting (XSS) vulnerability in Axigen versions 10.3.3.0 before 10.3.3.59, 10.4.0 before 10.4.19, and 10.5.0 before 10.5.5, allows authenticated attackers to execute arbitrary code and obtain sensitive information via the logic for switching between the Standard and Ajax versions.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-40355">详情</a></td>
       </tr>
@@ -316,7 +396,7 @@
       <tr>
        <td>d8a7ec532a97672daf723ae530e10905</td>
        <td>CVE-2024-1055</td>
-       <td>2024-02-07 07:15:09 <img src="imgs/new.gif" /></td>
+       <td>2024-02-07 07:15:09</td>
        <td>The PowerPack Addons for Elementor (Free Widgets, Extensions and Templates) plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin's buttons in all versions up to, and including, 2.7.14 due to insufficient input sanitization and output escaping on user supplied URL values. This makes it possible for authenticated attackers with contributor-level and above permissions to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-1055">详情</a></td>
       </tr>
@@ -324,7 +404,7 @@
       <tr>
        <td>41ec1a6d53651a0ac48d5e6a1f8c37ce</td>
        <td>CVE-2024-1037</td>
-       <td>2024-02-07 07:15:08 <img src="imgs/new.gif" /></td>
+       <td>2024-02-07 07:15:08</td>
        <td>The All-In-One Security (AIOS) – Security and Firewall plugin for WordPress is vulnerable to Reflected Cross-Site Scripting via the 'tab' parameter in all versions up to, and including, 5.2.5 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that execute if they can successfully trick a user into performing an action such as clicking on a link.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-1037">详情</a></td>
       </tr>
@@ -332,7 +412,7 @@
       <tr>
        <td>ad96ad76adac6ecd5f0dc15e95a9ef0c</td>
        <td>CVE-2024-0628</td>
-       <td>2024-02-07 07:15:07 <img src="imgs/new.gif" /></td>
+       <td>2024-02-07 07:15:07</td>
        <td>The WP RSS Aggregator plugin for WordPress is vulnerable to Server-Side Request Forgery in all versions up to, and including, 4.23.5 via the RSS feed source in admin settings. This makes it possible for authenticated attackers, with administrator-level access and above, to make web requests to arbitrary locations originating from the web application and can be used to query and modify information from internal services.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-0628">详情</a></td>
       </tr>
@@ -340,7 +420,7 @@
       <tr>
        <td>ff19707dae7e221c96f4a355eb00af83</td>
        <td>CVE-2024-0256</td>
-       <td>2024-02-07 05:15:08 <img src="imgs/new.gif" /></td>
+       <td>2024-02-07 05:15:08</td>
        <td>The Starbox plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the Profile Display Name and Social Settings in all versions up to, and including, 3.4.8 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with subscriber-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-0256">详情</a></td>
       </tr>
@@ -348,7 +428,7 @@
       <tr>
        <td>bc795570b54cf0d3e3b359d92bd3103c</td>
        <td>CVE-2024-23447</td>
-       <td>2024-02-07 04:15:07 <img src="imgs/new.gif" /></td>
+       <td>2024-02-07 04:15:07</td>
        <td>An issue was discovered in the Windows Network Drive Connector when using Document Level Security to assign permissions to a file, with explicit allow write and deny read. Although the document is not accessible to the user in Network Drive it is visible in search applications to the user.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-23447">详情</a></td>
       </tr>
@@ -356,7 +436,7 @@
       <tr>
        <td>218903fcd473554d33c30a323e2f61b4</td>
        <td>CVE-2024-23446</td>
-       <td>2024-02-07 04:15:07 <img src="imgs/new.gif" /></td>
+       <td>2024-02-07 04:15:07</td>
        <td>An issue was discovered by Elastic, whereby the Detection Engine Search API does not respect Document-level security (DLS) or Field-level security (FLS) when querying the .alerts-security.alerts-{space_id} indices. Users who are authorized to call this API may obtain unauthorized access to documents if their roles are configured with DLS or FLS against the aforementioned index.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-23446">详情</a></td>
       </tr>
@@ -439,86 +519,6 @@
        <td>2024-02-06 22:16:14</td>
        <td>An attacker with access to the web application with vulnerable software could introduce arbitrary JavaScript by injecting a cross-site scripting payload into the "dns.0.server" parameter.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-45227">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>cc8d346c52ba962335221697d8dda11c</td>
-       <td>CVE-2021-46903</td>
-       <td>2024-02-04 21:15:07</td>
-       <td>An issue was discovered in LTOS-Web-Interface in Meinberg LANTIME-Firmware before 6.24.029 MBGID-9343 and 7 before 7.04.008 MBGID-6303. An admin can delete required user accounts (in violation of expected access control).</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-46903">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1f3df5b6fe34e65d9198347d087967bb</td>
-       <td>CVE-2021-46902</td>
-       <td>2024-02-04 21:15:07</td>
-       <td>An issue was discovered in LTOS-Web-Interface in Meinberg LANTIME-Firmware before 6.24.029 MBGID-9343 and 7 before 7.04.008 MBGID-6303. Path validation is mishandled, and thus an admin can read or delete files in violation of expected access controls.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-46902">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3d31f92d3eb76d78e887c06a12a40bc3</td>
-       <td>CVE-2023-52426</td>
-       <td>2024-02-04 20:15:46</td>
-       <td>libexpat through 2.5.0 allows recursive XML Entity Expansion if XML_DTD is undefined at compile time.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-52426">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a34c668a968b73dc1586591ec3e18c8e</td>
-       <td>CVE-2023-52425</td>
-       <td>2024-02-04 20:15:46</td>
-       <td>libexpat through 2.5.0 allows a denial of service (resource consumption) because many full reparsings are required in the case of a large token for which multiple buffer fills are needed.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-52425">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>219f11a2bdfaf9f1ff2a5a4d997d2b4e</td>
-       <td>CVE-2021-4435</td>
-       <td>2024-02-04 20:15:45</td>
-       <td>An untrusted search path vulnerability was found in Yarn. When a victim runs certain Yarn commands in a directory with attacker-controlled content, malicious commands could be executed in unexpected ways.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2021-4435">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ce5ce97df25056f614b714c848071d27</td>
-       <td>CVE-2020-36773</td>
-       <td>2024-02-04 18:16:00</td>
-       <td>Artifex Ghostscript before 9.53.0 has an out-of-bounds write and use-after-free in devices/vector/gdevtxtw.c (for txtwrite) because a single character code in a PDF document can map to more than one Unicode code point (e.g., for a ligature).</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2020-36773">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>06c29b0a9e5d8cbd7f5866fe2f7a897b</td>
-       <td>CVE-2018-25098</td>
-       <td>2024-02-04 17:15:07</td>
-       <td>** UNSUPPORTED WHEN ASSIGNED ** A vulnerability was found in blockmason credit-protocol. It has been declared as problematic. Affected by this vulnerability is the function executeUcacTx of the file contracts/CreditProtocol.sol of the component UCAC Handler. The manipulation leads to denial of service. This product does not use versioning. This is why information about affected and unaffected releases are unavailable. The patch is named 082e01f18707ef995e80ebe97fcedb229a55efc5. It is recommended to apply a patch to fix this issue. The associated identifier of this vulnerability is VDB-252799. NOTE: This vulnerability only affects products that are no longer supported by the maintainer.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2018-25098">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d3da538417ce304ee20540bd0e3d23b6</td>
-       <td>CVE-2024-25062</td>
-       <td>2024-02-04 16:15:45</td>
-       <td>An issue was discovered in libxml2 before 2.11.7 and 2.12.x before 2.12.5. When using the XML Reader interface with DTD validation and XInclude expansion enabled, processing crafted XML documents can lead to an xmlValidatePopElement use-after-free.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-25062">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>fc64ce37cd30f9cd4224b2e8f2e27a04</td>
-       <td>CVE-2023-6240</td>
-       <td>2024-02-04 14:15:47</td>
-       <td>A Marvin vulnerability side-channel leakage was found in the RSA decryption operation in the Linux Kernel. This issue may allow a network attacker to decrypt ciphertexts or forge signatures, limiting the services that use that private key.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-6240">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4b53e52ec84e0c4214096122e12db6af</td>
-       <td>CVE-2019-25159</td>
-       <td>2024-02-04 06:15:07</td>
-       <td>A vulnerability was found in mpedraza2020 Intranet del Monterroso up to 4.50.0. It has been classified as critical. This affects an unknown part of the file config/cargos.php. The manipulation of the argument dni_profe leads to sql injection. Upgrading to version 4.51.0 is able to address this issue. The identifier of the patch is 678190bee1dfd64b54a2b0e88abfd009e78adce8. It is recommended to upgrade the affected component. The identifier VDB-252717 was assigned to this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2019-25159">详情</a></td>
       </tr>
 
      </tbody>
