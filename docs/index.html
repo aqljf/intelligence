@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2024-02-12 09:11:14 -->
+<!-- RELEASE TIME : 2024-02-13 09:11:13 -->
 <html lang="zh-cn">
 
  <head>
@@ -282,9 +282,89 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>6f31033eeb01582e6f7026c776e4fb77</td>
+       <td>CVE-2024-25744</td>
+       <td>2024-02-12 05:15:07 <img src="imgs/new.gif" /></td>
+       <td>In the Linux kernel before 6.6.7, an untrusted VMM can trigger int80 syscall handling at any given point. This is related to arch/x86/coco/tdx/tdx.c and arch/x86/mm/mem_encrypt_amd.c.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-25744">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c7066a1278fbaaa7394cb5700fbf70e2</td>
+       <td>CVE-2024-25741</td>
+       <td>2024-02-12 03:15:32 <img src="imgs/new.gif" /></td>
+       <td>printer_write in drivers/usb/gadget/function/f_printer.c in the Linux kernel through 6.7.4 does not properly call usb_ep_queue, which might allow attackers to cause a denial of service or have unspecified other impact.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-25741">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7ab020082ecbf46287d59ee94c2596ba</td>
+       <td>CVE-2024-25740</td>
+       <td>2024-02-12 03:15:32 <img src="imgs/new.gif" /></td>
+       <td>A memory leak flaw was found in the UBI driver in drivers/mtd/ubi/attach.c in the Linux kernel through 6.7.4 for UBI_IOCATT, because kobj->name is not released.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-25740">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e4cf737008a30ca57ff4412f12dbe41b</td>
+       <td>CVE-2024-25739</td>
+       <td>2024-02-12 03:15:32 <img src="imgs/new.gif" /></td>
+       <td>create_empty_lvol in drivers/mtd/ubi/vtbl.c in the Linux kernel through 6.7.4 can attempt to allocate zero bytes, and crash, because of a missing check for ubi->leb_size.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-25739">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>060f7bf21981a500e82c1c0eefef12a8</td>
+       <td>CVE-2023-52429</td>
+       <td>2024-02-12 03:15:32 <img src="imgs/new.gif" /></td>
+       <td>dm_table_create in drivers/md/dm-table.c in the Linux kernel through 6.7.4 can attempt to (in alloc_targets) allocate more than INT_MAX bytes, and crash, because of a missing check for struct dm_ioctl.target_count.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-52429">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8fa5a716a7437bfdae163da7d9ecc0e1</td>
+       <td>CVE-2024-1433</td>
+       <td>2024-02-11 23:15:07</td>
+       <td>A vulnerability, which was classified as problematic, was found in KDE Plasma Workspace up to 5.93.0. This affects the function EventPluginsManager::enabledPlugins of the file components/calendar/eventpluginsmanager.cpp of the component Theme File Handler. The manipulation of the argument pluginId leads to path traversal. It is possible to initiate the attack remotely. The complexity of an attack is rather high. The exploitability is told to be difficult. The patch is named 6cdf42916369ebf4ad5bd876c4dfa0170d7b2f01. It is recommended to apply a patch to fix this issue. The associated identifier of this vulnerability is VDB-253407. NOTE: This requires write access to user's home or the installation of third party global themes.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-1433">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2ee0f376aaf6f42762853e62d254d63a</td>
+       <td>CVE-2024-25728</td>
+       <td>2024-02-11 22:15:08</td>
+       <td>ExpressVPN before 12.73.0 on Windows, when split tunneling is used, sends DNS requests according to the Windows configuration (e.g., sends them to DNS servers operated by the user's ISP instead of to the ExpressVPN DNS servers), which may allow remote attackers to obtain sensitive information about websites visited by VPN users.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-25728">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6ef8c696e1d824edf671edcd48a1011b</td>
+       <td>CVE-2024-25419</td>
+       <td>2024-02-11 21:15:46</td>
+       <td>flusity-CMS v2.33 was discovered to contain a Cross-Site Request Forgery (CSRF) via the component /core/tools/update_menu.php.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-25419">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>883e1f93e289237f7a3e603c99a7ca30</td>
+       <td>CVE-2024-25418</td>
+       <td>2024-02-11 21:15:46</td>
+       <td>flusity-CMS v2.33 was discovered to contain a Cross-Site Request Forgery (CSRF) via the component /core/tools/delete_menu.php.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-25418">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c3703210bec0c4bc80d80dcce840cec2</td>
+       <td>CVE-2024-25417</td>
+       <td>2024-02-11 21:15:46</td>
+       <td>flusity-CMS v2.33 was discovered to contain a Cross-Site Request Forgery (CSRF) via the component /core/tools/add_translation.php.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-25417">详情</a></td>
+      </tr>
+
+      <tr>
        <td>ed12debe3aa15237e1ce625b8bdc75dc</td>
        <td>CVE-2023-52427</td>
-       <td>2024-02-11 04:15:08 <img src="imgs/new.gif" /></td>
+       <td>2024-02-11 04:15:08</td>
        <td>In OpenDDS through 3.27, there is a segmentation fault for a DataWriter with a large value of resource_limits.max_samples. NOTE: the vendor's position is that the product is not designed to handle a max_samples value that is too large for the amount of memory on the system.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-52427">详情</a></td>
       </tr>
@@ -292,7 +372,7 @@
       <tr>
        <td>061cfacf3d6ab6a1e6e3e8d698165661</td>
        <td>CVE-2024-25715</td>
-       <td>2024-02-11 03:15:09 <img src="imgs/new.gif" /></td>
+       <td>2024-02-11 03:15:09</td>
        <td>Glewlwyd SSO server 2.x through 2.7.6 allows open redirection via redirect_uri.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-25715">详情</a></td>
       </tr>
@@ -300,7 +380,7 @@
       <tr>
        <td>a4a820edf24435c39dfeef8af4bfe37a</td>
        <td>CVE-2024-25714</td>
-       <td>2024-02-11 03:15:09 <img src="imgs/new.gif" /></td>
+       <td>2024-02-11 03:15:09</td>
        <td>In Rhonabwy through 1.1.13, HMAC signature verification uses a strcmp function that is vulnerable to side-channel attacks, because it stops the comparison when the first difference is spotted in the two signatures. (The fix uses gnutls_memcmp, which has constant-time execution.)</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-25714">详情</a></td>
       </tr>
@@ -308,7 +388,7 @@
       <tr>
        <td>9db7aa02c0ee17ff06abc6c3e9eca064</td>
        <td>CVE-2024-1432</td>
-       <td>2024-02-11 03:15:08 <img src="imgs/new.gif" /></td>
+       <td>2024-02-11 03:15:08</td>
        <td>** UNSUPPORTED WHEN ASSIGNED ** A vulnerability was found in DeepFaceLab pretrained DF.wf.288res.384.92.72.22 and classified as problematic. This issue affects the function apply_xseg of the file main.py. The manipulation leads to deserialization. The attack may be initiated remotely. The complexity of an attack is rather high. The exploitation is known to be difficult. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-253391. NOTE: This vulnerability only affects products that are no longer supported by the maintainer.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-1432">详情</a></td>
       </tr>
@@ -316,7 +396,7 @@
       <tr>
        <td>6b7d0373962eb9f3491ca8bb2120f89e</td>
        <td>CVE-2024-1431</td>
-       <td>2024-02-11 03:15:07 <img src="imgs/new.gif" /></td>
+       <td>2024-02-11 03:15:07</td>
        <td>A vulnerability was found in Netgear R7000 1.0.11.136_10.2.120 and classified as problematic. Affected by this issue is some unknown functionality of the file /debuginfo.htm of the component Web Management Interface. The manipulation leads to information disclosure. The exploit has been disclosed to the public and may be used. VDB-253382 is the identifier assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-1431">详情</a></td>
       </tr>
@@ -324,7 +404,7 @@
       <tr>
        <td>a4f6a250e2a5cceccd57d833a0bc1d09</td>
        <td>CVE-2024-23724</td>
-       <td>2024-02-11 01:15:08 <img src="imgs/new.gif" /></td>
+       <td>2024-02-11 01:15:08</td>
        <td>Ghost through 5.76.0 allows stored XSS, and resultant privilege escalation in which a contributor can take over any account, via an SVG profile picture that contains JavaScript code to interact with the API on localhost TCP port 3001. NOTE: The discoverer reports that "The vendor does not view this as a valid vector."</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-23724">详情</a></td>
       </tr>
@@ -332,7 +412,7 @@
       <tr>
        <td>4af14b5ecf1632767d889fe4108a3b5f</td>
        <td>CVE-2024-1430</td>
-       <td>2024-02-11 01:15:07 <img src="imgs/new.gif" /></td>
+       <td>2024-02-11 01:15:07</td>
        <td>A vulnerability has been found in Netgear R7000 1.0.11.136_10.2.120 and classified as problematic. Affected by this vulnerability is an unknown functionality of the file /currentsetting.htm of the component Web Management Interface. The manipulation leads to information disclosure. The exploit has been disclosed to the public and may be used. The identifier VDB-253381 was assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-1430">详情</a></td>
       </tr>
@@ -439,86 +519,6 @@
        <td>2024-02-09 18:15:08</td>
        <td>Insufficiently Protected Credentials vulnerability in Apache Solr. This issue affects Apache Solr: from 6.0.0 through 8.11.2, from 9.0.0 before 9.3.0. One of the two endpoints that publishes the Solr process' Java system properties, /admin/info/properties, was only setup to hide system properties that had "password" contained in the name. There are a number of sensitive system properties, such as "basicauth" and "aws.secretKey" do not contain "password", thus their values were published via the "/admin/info/properties" endpoint. This endpoint populates the list of System Properties on the home screen of the Solr Admin page, making the exposed credentials visible in the UI. This /admin/info/properties endpoint is protected under the "config-read" permission. Therefore, Solr Clouds with Authorization enabled will only be vulnerable through logged-in users that have the "config-read" permission. Users are recommended to upgrade to version 9.3.0 or 8.11.3, which fixes the issue. A single option now controls hiding Java system property for all endpoints, "-Dsolr.hiddenSysProps". By default all known sensitive properties are hidden (including "-Dbasicauth"), as well as any property with a name containing "secret" or "password". Users who cannot upgrade can also use the following Java system property to fix the issue: '-Dsolr.redaction.system.pattern=.*(password|secret|basicauth).*'</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-50291">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>479116192245ec9ff6a728dc9d09567e</td>
-       <td>CVE-2024-24350</td>
-       <td>2024-02-08 01:15:27</td>
-       <td>File Upload vulnerability in Software Publico e-Sic Livre v.2.0 and before allows a remote attacker to execute arbitrary code via the extension filtering component.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-24350">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>77c21347e652d860e89e006d0de6afb2</td>
-       <td>CVE-2024-24026</td>
-       <td>2024-02-08 01:15:27</td>
-       <td>An arbitrary File upload vulnerability exists in Novel-Plus v4.3.0-RC1 and prior versions at com.java2nb.system.controller.SysUserController: uploadImg(). An attacker can pass in specially crafted filename parameter to perform arbitrary File download.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-24026">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>333849acd4a5c1a2af3f3b7d161d2252</td>
-       <td>CVE-2024-24025</td>
-       <td>2024-02-08 01:15:27</td>
-       <td>An arbitrary File upload vulnerability exists in Novel-Plus v4.3.0-RC1 and prior at com.java2nb.common.controller.FileController: upload(). An attacker can pass in specially crafted filename parameter to perform arbitrary File download.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-24025">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4291a34c7d76bd9ad26182719fe6a8f1</td>
-       <td>CVE-2024-24024</td>
-       <td>2024-02-08 01:15:27</td>
-       <td>An arbitrary File download vulnerability exists in Novel-Plus v4.3.0-RC1 and prior at com.java2nb.common.controller.FileController: fileDownload(). An attacker can pass in specially crafted filePath and fieName parameters to perform arbitrary File download.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-24024">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>25c7166099e951170ba8abfb2e515c5d</td>
-       <td>CVE-2024-24023</td>
-       <td>2024-02-08 01:15:27</td>
-       <td>A SQL injection vulnerability exists in Novel-Plus v4.3.0-RC1 and prior. An attacker can pass specially crafted offset, limit, and sort parameters to perform SQL injection via /novel/bookContent/list.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-24023">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>95ba57c5db4c1e3295d2538b15d2d63b</td>
-       <td>CVE-2024-24018</td>
-       <td>2024-02-08 01:15:27</td>
-       <td>A SQL injection vulnerability exists in Novel-Plus v4.3.0-RC1 and prior versions. An attacker can pass in crafted offset, limit, and sort parameters to perform SQL injection via /system/dataPerm/list</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-24018">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>96e1de53cecadc04d3dea58ed660b48f</td>
-       <td>CVE-2023-48974</td>
-       <td>2024-02-08 01:15:26</td>
-       <td>Cross Site Scripting vulnerability in Axigen WebMail v.10.5.7 and before allows a remote attacker to escalate privileges via a crafted script to the serverName_input parameter.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-48974">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0e17b051a9f235afaa8fb218b16197a7</td>
-       <td>CVE-2024-24806</td>
-       <td>2024-02-07 22:15:10</td>
-       <td>libuv is a multi-platform support library with a focus on asynchronous I/O. The `uv_getaddrinfo` function in `src/unix/getaddrinfo.c` (and its windows counterpart `src/win/getaddrinfo.c`), truncates hostnames to 256 characters before calling `getaddrinfo`. This behavior can be exploited to create addresses like `0x00007f000001`, which are considered valid by `getaddrinfo` and could allow an attacker to craft payloads that resolve to unintended IP addresses, bypassing developer checks. The vulnerability arises due to how the `hostname_ascii` variable (with a length of 256 bytes) is handled in `uv_getaddrinfo` and subsequently in `uv__idna_toascii`. When the hostname exceeds 256 characters, it gets truncated without a terminating null byte. As a result attackers may be able to access internal APIs or for websites (similar to MySpace) that allows users to have `username.example.com` pages. Internal services that crawl or cache these user pages can be exposed to SSRF attacks if a malicious user chooses a long vulnerable username. This issue has been addressed in release version 1.48.0. Users are advised to upgrade. There are no known workarounds for this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-24806">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c00a2531e0b8c99f91b3a8f4cb5aff41</td>
-       <td>CVE-2024-23448</td>
-       <td>2024-02-07 22:15:09</td>
-       <td>An issue was discovered whereby APM Server could log at ERROR level, a response from Elasticsearch indicating that indexing the document failed and that response would contain parts of the original document. Depending on the nature of the document that the APM Server attempted to ingest, this could lead to the insertion of sensitive or private information in the APM Server logs.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-23448">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>130dc4379d0320843f5025e232b3bb0f</td>
-       <td>CVE-2024-1066</td>
-       <td>2024-02-07 22:15:09</td>
-       <td>An issue has been discovered in GitLab EE affecting all versions from 13.3.0 prior to 16.6.7, 16.7 prior to 16.7.5, and 16.8 prior to 16.8.2 which allows an attacker to do a resource exhaustion using GraphQL `vulnerabilitiesCountByDay`</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-1066">详情</a></td>
       </tr>
 
      </tbody>
