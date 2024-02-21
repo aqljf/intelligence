@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2024-02-20 09:11:36 -->
+<!-- RELEASE TIME : 2024-02-21 09:11:16 -->
 <html lang="zh-cn">
 
  <head>
@@ -28,7 +28,7 @@
       <tr>
        <td>f000a20bfa53fd8b0f5231b52ff34577</td>
        <td></td>
-       <td>2024-02-19 18:10:13 <img src="imgs/new.gif" /></td>
+       <td>2024-02-19 18:10:13</td>
        <td>2024-02 补丁日: 微软多个漏洞安全更新通告</td>
        <td><a target="_blank" href="https://cert.360.cn/warning/detail?id=65d32801c09f255b91b17d93">详情</a></td>
       </tr>
@@ -282,6 +282,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>b8aba38af1a774eff45b0bbe10813aac</td>
+       <td>CVE-2024-24794</td>
+       <td>2024-02-20 11:15:08 <img src="imgs/new.gif" /></td>
+       <td>A use-after-free vulnerability exists in the DICOM Element Parsing as implemented in Imaging Data Commons libdicom 1.0.5. A specially crafted DICOM file can cause premature freeing of memory that is used later. To trigger this vulnerability, an attacker would need to induce the vulnerable application to process a malicious DICOM image.The Use-After-Free happens in the `parse_meta_sequence_end()` parsing the Sequence Value Represenations.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-24794">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9cf9f848f33665ea32436073d225a420</td>
+       <td>CVE-2024-24793</td>
+       <td>2024-02-20 11:15:08 <img src="imgs/new.gif" /></td>
+       <td>A use-after-free vulnerability exists in the DICOM Element Parsing as implemented in Imaging Data Commons libdicom 1.0.5. A specially crafted DICOM file can cause premature freeing of memory that is used later. To trigger this vulnerability, an attacker would need to induce the vulnerable application to process a malicious DICOM image.The Use-After-Free happens in the `parse_meta_element_create()` parsing the elements in the File Meta Information header.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-24793">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e3fe73e2d653c4f0db722139743c2983</td>
+       <td>CVE-2023-7245</td>
+       <td>2024-02-20 11:15:07 <img src="imgs/new.gif" /></td>
+       <td>The nodejs framework in OpenVPN Connect 3.0 through 3.4.3 (Windows)/3.4.7 (macOS) was not properly configured, which allows a local user to execute arbitrary code within the nodejs process context via the ELECTRON_RUN_AS_NODE environment variable</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-7245">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>40c0b4e6eccba333cb08be33cf9a6cb6</td>
+       <td>CVE-2024-25609</td>
+       <td>2024-02-20 10:15:08 <img src="imgs/new.gif" /></td>
+       <td>HtmlUtil.escapeRedirect in Liferay Portal 7.2.0 through 7.4.3.12, and older unsupported versions, and Liferay DXP 7.4 before update 9, 7.3 service pack 3, 7.2 fix pack 15 through 18, and older unsupported versions can be circumvented by using two forward slashes, which allows remote attackers to redirect users to arbitrary external URLs via the (1) 'redirect` parameter (2) `FORWARD_URL` parameter, and (3) others parameters that rely on HtmlUtil.escapeRedirect. This vulnerability is the result of an incomplete fix in CVE-2022-28977.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-25609">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>de19821832c611b987b4e2ff8fcd2aa2</td>
+       <td>CVE-2024-25608</td>
+       <td>2024-02-20 10:15:08 <img src="imgs/new.gif" /></td>
+       <td>HtmlUtil.escapeRedirect in Liferay Portal 7.2.0 through 7.4.3.18, and older unsupported versions, and Liferay DXP 7.4 before update 19, 7.3 before update 4, 7.2 before fix pack 19, and older unsupported versions can be circumvented by using the 'REPLACEMENT CHARACTER' (U+FFFD), which allows remote attackers to redirect users to arbitrary external URLs via the (1) 'redirect` parameter (2) `FORWARD_URL` parameter, (3) `noSuchEntryRedirect` parameter, and (4) others parameters that rely on HtmlUtil.escapeRedirect.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-25608">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5cc2f806d8d4bc4262321df1d995c8df</td>
+       <td>CVE-2024-25607</td>
+       <td>2024-02-20 10:15:08 <img src="imgs/new.gif" /></td>
+       <td>The default password hashing algorithm (PBKDF2-HMAC-SHA1) in Liferay Portal 7.2.0 through 7.4.3.15, and older unsupported versions, and Liferay DXP 7.4 before update 16, 7.3 before update 4, 7.2 before fix pack 17, and older unsupported versions defaults to a low work factor, which allows attackers to quickly crack password hashes.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-25607">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0f3627630ee089d9dc8ed517f431fc7c</td>
+       <td>CVE-2023-51770</td>
+       <td>2024-02-20 10:15:08 <img src="imgs/new.gif" /></td>
+       <td>Arbitrary File Read Vulnerability in Apache Dolphinscheduler. This issue affects Apache DolphinScheduler: before 3.2.1. We recommend users to upgrade Apache DolphinScheduler to version 3.2.1, which fixes the issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-51770">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6661ba2b40a7b755c39fcbf712128d9b</td>
+       <td>CVE-2023-50270</td>
+       <td>2024-02-20 10:15:08 <img src="imgs/new.gif" /></td>
+       <td>Session Fixation Apache DolphinScheduler before version 3.2.0, which session is still valid after the password change. Users are recommended to upgrade to version 3.2.1, which fixes this issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-50270">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>565cdcaa93894ee76db0f6f1d5aeda16</td>
+       <td>CVE-2023-49250</td>
+       <td>2024-02-20 10:15:08 <img src="imgs/new.gif" /></td>
+       <td>Because the HttpUtils class did not verify certificates, an attacker that could perform a Man-in-the-Middle (MITM) attack on outgoing https connections could impersonate the server. This issue affects Apache DolphinScheduler: before 3.2.0. Users are recommended to upgrade to version 3.2.1, which fixes the issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-49250">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d93cfe8129be54ba1ca1924433b3d875</td>
+       <td>CVE-2023-49109</td>
+       <td>2024-02-20 10:15:07 <img src="imgs/new.gif" /></td>
+       <td>Exposure of Remote Code Execution in Apache Dolphinscheduler. This issue affects Apache DolphinScheduler: before 3.2.1. We recommend users to upgrade Apache DolphinScheduler to version 3.2.1, which fixes the issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-49109">详情</a></td>
+      </tr>
+
+      <tr>
        <td>6aa334efde52ba1564057fd534fbc0f0</td>
        <td>CVE-2023-6249</td>
        <td>2024-02-18 08:15:07</td>
@@ -439,86 +519,6 @@
        <td>2024-02-16 02:15:51</td>
        <td>A remote code execution (RCE) vulnerability in /admin/define_language.php of CE Phoenix v1.0.8.20 allows attackers to execute arbitrary PHP code via injecting a crafted payload into the file english.php.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-25415">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f4b6c8602f534398ec169444ba866ec5</td>
-       <td>CVE-2024-25620</td>
-       <td>2024-02-15 00:15:45</td>
-       <td>Helm is a tool for managing Charts. Charts are packages of pre-configured Kubernetes resources. When either the Helm client or SDK is used to save a chart whose name within the `Chart.yaml` file includes a relative path change, the chart would be saved outside its expected directory based on the changes in the relative path. The validation and linting did not detect the path changes in the name. This issue has been resolved in Helm v3.14.1. Users unable to upgrade should check all charts used by Helm for path changes in their name as found in the `Chart.yaml` file. This includes dependencies.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-25620">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d180424eeff34a639d75c0aaa18da297</td>
-       <td>CVE-2024-24301</td>
-       <td>2024-02-14 23:15:08</td>
-       <td>Command Injection vulnerability discovered in 4ipnet EAP-767 device v3.42.00 within the web interface of the device allows attackers with valid credentials to inject arbitrary shell commands to be executed by the device with root privileges.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-24301">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f22efcffbfd452555557990fb7070efa</td>
-       <td>CVE-2024-24300</td>
-       <td>2024-02-14 23:15:08</td>
-       <td>4ipnet EAP-767 v3.42.00 is vulnerable to Incorrect Access Control. The device uses the same set of credentials, regardless of how many times a user logs in, the content of the cookie remains unchanged.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-24300">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>78feefedce41c6047b3a4701dfbff676</td>
-       <td>CVE-2023-6138</td>
-       <td>2024-02-14 23:15:08</td>
-       <td>A potential security vulnerability has been identified in the system BIOS for certain HP Workstation PCs, which might allow escalation of privilege, arbitrary code execution, or denial of service. HP is releasing mitigation for the potential vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-6138">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9349462f4abf012b08235071e9c3b64d</td>
-       <td>CVE-2022-48220</td>
-       <td>2024-02-14 23:15:08</td>
-       <td>Potential vulnerabilities have been identified in certain HP Desktop PC products using the HP TamperLock feature, which might allow intrusion detection bypass via a physical attack. HP is releasing firmware and guidance to mitigate these potential vulnerabilities.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-48220">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>bf6ad87d2a8511d99f253c17c79dcdd3</td>
-       <td>CVE-2022-48219</td>
-       <td>2024-02-14 23:15:07</td>
-       <td>Potential vulnerabilities have been identified in certain HP Desktop PC products using the HP TamperLock feature, which might allow intrusion detection bypass via a physical attack. HP is releasing firmware and guidance to mitigate these potential vulnerabilities.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-48219">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>375ecf8d8e60b8b09412c52e66ad8bb2</td>
-       <td>CVE-2024-1471</td>
-       <td>2024-02-14 22:15:47</td>
-       <td>An HTML injection vulnerability exists where an authenticated, remote attacker with administrator privileges on the Security Center application could modify Repository parameters, which could lead to HTML redirection attacks.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-1471">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e21bfe93720eca43aebe350aa7426243</td>
-       <td>CVE-2024-1367</td>
-       <td>2024-02-14 22:15:47</td>
-       <td>A command injection vulnerability exists where an authenticated, remote attacker with administrator privileges on the Security Center application could modify Logging parameters, which could lead to the execution of arbitrary code on the Security Center host.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-1367">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c549c1e3e23fe847b0cac550846cbdc3</td>
-       <td>CVE-2023-49721</td>
-       <td>2024-02-14 22:15:47</td>
-       <td>An insecure default to allow UEFI Shell in EDK2 was left enabled in LXD. This allows an OS-resident attacker to bypass Secure Boot.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-49721">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c97466358b23783d42d48f5c6667eb6b</td>
-       <td>CVE-2023-48733</td>
-       <td>2024-02-14 22:15:47</td>
-       <td>An insecure default to allow UEFI Shell in EDK2 was left enabled in Ubuntu's EDK2. This allows an OS-resident attacker to bypass Secure Boot.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-48733">详情</a></td>
       </tr>
 
      </tbody>
@@ -1954,6 +1954,126 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>bd549d021ead1b9084f64e5d4cc08e2a</td>
+       <td>CVE-2023-47126</td>
+       <td>2024-02-20 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>TYPO3信息泄露漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90612">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f574b5d2ff22dee5ebbb5685e90153e8</td>
+       <td>CVE-2023-47127</td>
+       <td>2024-02-20 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>TYPO3身份认证错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90611">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d2d4430c1880c00e1c59f24c14e67c87</td>
+       <td>CVE-2023-47384</td>
+       <td>2024-02-20 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>GPAC内存泄露漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90610">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d9609415f24811936d438d419a6733e2</td>
+       <td>CVE-2023-47130</td>
+       <td>2024-02-20 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>Yii远程代码执行漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90609">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>06a8a8f13ba989e5763f6a7502a412b8</td>
+       <td>CVE-2023-47630</td>
+       <td>2024-02-20 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>Kyverno数据真实性验证错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90608">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7f8e60192fbcfd41b4fa9af7b390fdac</td>
+       <td>CVE-2023-47640</td>
+       <td>2024-02-20 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>DataHub加密算法使用错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90607">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>00d7e8c0843cc21375b8981e62edbdf8</td>
+       <td>CVE-2023-47641</td>
+       <td>2024-02-20 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>aiohttp HTTP请求走私漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90606">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b4db3b5b9a61c0185aa6d4e31e4f2c9a</td>
+       <td>CVE-2023-5528</td>
+       <td>2024-02-20 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>Kubernetes输入验证错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90605">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>215cf843535b7378797de1016b553bc9</td>
+       <td>CVE-2022-45781</td>
+       <td>2024-02-20 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>Tenda AX1803缓冲区溢出漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90604">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f4d779ae9882a0ed118f5db28fff9b6f</td>
+       <td>CVE-2023-39535</td>
+       <td>2024-02-20 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>AMI AptioV输入验证错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90603">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a5d1f0ef1eb4d45433ee1e4f4d2b4213</td>
+       <td>CVE-2023-39536</td>
+       <td>2024-02-20 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>AMI AptioV输入验证错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90602">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b9a32f50d79da0f254f6d65bdf96dbf9</td>
+       <td>CVE-2023-39537</td>
+       <td>2024-02-20 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>AMI AptioV输入验证错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90601">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f77828807f921b7d36f19740be935fca</td>
+       <td>CVE-2023-46022</td>
+       <td>2024-02-20 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>Blood Bank SQL注入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90600">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>29bb5b6ba3ed4b7afee13d5c7a37267a</td>
+       <td>CVE-2023-46023</td>
+       <td>2024-02-20 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>Simple Task List SQL注入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90599">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>da4b415c06d0d6f96bed59bc092e1788</td>
+       <td>CVE-2023-46024</td>
+       <td>2024-02-20 09:09:07 <img src="imgs/new.gif" /></td>
+       <td>Simple Task List SQL注入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90598">详情</a></td>
+      </tr>
+
+      <tr>
        <td>dc2a7ba4673c561c437cedf1370f69d9</td>
        <td>CVE-2024-1284</td>
        <td>2024-02-14 09:09:08</td>
@@ -2071,126 +2191,6 @@
        <td>2024-02-14 09:09:08</td>
        <td>Microsoft Azure DevOps Server远程代码执行漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90547">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>96bca9f07db8203fc7e5899bb145a60d</td>
-       <td>CVE-2023-43590</td>
-       <td>2024-02-06 09:09:08</td>
-       <td>Zoom Rooms for macOS后置链接漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90481">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7a99051f47697fce211a46e24c4e7bd5</td>
-       <td>CVE-2023-43591</td>
-       <td>2024-02-06 09:09:08</td>
-       <td>Zoom Rooms for macOS权限管理错误漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90480">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>67fc87d6fcd21513db514172d7cee528</td>
-       <td>CVE-2023-46121</td>
-       <td>2024-02-06 09:09:08</td>
-       <td>yt-dlp HTTP请求走私漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90479">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4a74d94af2b1502bf13e12fcda264064</td>
-       <td>CVE-2023-47308</td>
-       <td>2024-02-06 09:09:08</td>
-       <td>PrestaShop Newsletter Popup PRO SQL注入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90478">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>36d0885daf8cc31ffcf3caeeaf83a5b4</td>
-       <td>CVE-2023-47678</td>
-       <td>2024-02-06 09:09:08</td>
-       <td>ASUS RT-AC87U访问控制错误漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90477">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1393f5fd56dc6976abc94209e49b1189</td>
-       <td>CVE-2023-5984</td>
-       <td>2024-02-06 09:09:08</td>
-       <td>Schneider Electric ION8650和ION8800缺少完整性检查漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90476">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a500759f7c8c762590b01e1eb0af7a24</td>
-       <td>CVE-2023-5985</td>
-       <td>2024-02-06 09:09:08</td>
-       <td>Schneider Electric ION8650和ION8800跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90475">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9db7a87f4299b766cab0b9f2424436f1</td>
-       <td>CVE-2023-5986</td>
-       <td>2024-02-06 09:09:08</td>
-       <td>Schneider Electric EcoStruxure Power Monitoring Expert开放重定向漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90474">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1665f73375090d9002c432bb8e21de0c</td>
-       <td>CVE-2023-6032</td>
-       <td>2024-02-06 09:09:08</td>
-       <td>Schneider Electric Galaxy VS和Galaxy VL路径遍历漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90473">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3decbbb54848daf2caef8eac2d9e10f0</td>
-       <td>CVE-2023-47580</td>
-       <td>2024-02-06 09:09:08</td>
-       <td>Fuji Electric TELLUS和TELLUS Lite任意代码执行漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90472">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>68764caa5ca92a05b9e79439be68ae6e</td>
-       <td>CVE-2023-47581</td>
-       <td>2024-02-06 09:09:08</td>
-       <td>Fuji Electric TELLUS和TELLUS Lite越界读取漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90471">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0685a244af021bc838b2443083bdf404</td>
-       <td>CVE-2023-47582</td>
-       <td>2024-02-06 09:09:08</td>
-       <td>Fuji Electric TELLUS和TELLUS Lite越界读取漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90470">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>fae6849614c7e8ff05b45c63a0ee87ab</td>
-       <td>CVE-2023-47583</td>
-       <td>2024-02-06 09:09:08</td>
-       <td>Fuji Electric TELLUS Simulator越界读取漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90469">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9fd3d79b592e001f9e697012d4a09ca2</td>
-       <td>CVE-2023-47584</td>
-       <td>2024-02-06 09:09:08</td>
-       <td>Fuji Electric V-Server和V-Server Lite越界写入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90468">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>df90490412a7584eaaa8d538422db2f6</td>
-       <td>CVE-2023-47585</td>
-       <td>2024-02-06 09:09:08</td>
-       <td>Fuji Electric V-Server和V-Server Lite越界读取漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/90467">详情</a></td>
       </tr>
 
      </tbody>
