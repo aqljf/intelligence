@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2024-03-15 09:11:16 -->
+<!-- RELEASE TIME : 2024-03-16 09:11:15 -->
 <html lang="zh-cn">
 
  <head>
@@ -282,6 +282,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>10c1fc9b10da23342155ee46451e8cfd</td>
+       <td>CVE-2024-28752</td>
+       <td>2024-03-15 11:15:09 <img src="imgs/new.gif" /></td>
+       <td>A SSRF vulnerability using the Aegis DataBinding in versions of Apache CXF before 4.0.4, 3.6.3 and 3.5.8 allows an attacker to perform SSRF style attacks on webservices that take at least one parameter of any type. Users of other data bindings (including the default databinding) are not impacted.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-28752">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a55e4c496f575ed112fec96ad7f64595</td>
+       <td>CVE-2024-27987</td>
+       <td>2024-03-15 11:15:09 <img src="imgs/new.gif" /></td>
+       <td>Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in GiveWP Give allows Reflected XSS.This issue affects Give: from n/a through 3.3.1.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-27987">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>502a91f591da2c8f4ce77d118e05854b</td>
+       <td>CVE-2024-23944</td>
+       <td>2024-03-15 11:15:08 <img src="imgs/new.gif" /></td>
+       <td>Information disclosure in persistent watchers handling in Apache ZooKeeper due to missing ACL check. It allows an attacker to monitor child znodes by attaching a persistent watcher (addWatch command) to a parent which the attacker has already access to. ZooKeeper server doesn't do ACL check when the persistent watcher is triggered and as a consequence, the full path of znodes that a watch event gets triggered upon is exposed to the owner of the watcher. It's important to note that only the path is exposed by this vulnerability, not the data of znode, but since znode path can contain sensitive information like user name or login ID, this issue is potentially critical. Users are recommended to upgrade to version 3.9.2, 3.8.4 which fixes the issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-23944">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5ad7e505f4273bfc12030988514fef4c</td>
+       <td>CVE-2024-2490</td>
+       <td>2024-03-15 10:15:08 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability classified as critical was found in Tenda AC18 15.03.05.05. Affected by this vulnerability is the function setSchedWifi of the file /goform/openSchedWifi. The manipulation of the argument schedStartTime/schedEndTime leads to stack-based buffer overflow. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-256897 was assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-2490">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>294ba4e3a31e85cdffeaeda41036bdb0</td>
+       <td>CVE-2024-2450</td>
+       <td>2024-03-15 10:15:08 <img src="imgs/new.gif" /></td>
+       <td>Mattermost versions 8.1.x before 8.1.10, 9.2.x before 9.2.6, 9.3.x before 9.3.2, and 9.4.x before 9.4.3 fail to correctly verify account ownership when switching from email to SAML authentication, allowing an authenticated attacker to take over other user accounts via a crafted switch request under specific conditions.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-2450">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d4fec049aece6bcd9dc2d6cc21ad5b00</td>
+       <td>CVE-2024-2446</td>
+       <td>2024-03-15 10:15:08 <img src="imgs/new.gif" /></td>
+       <td>Mattermost versions 8.1.x before 8.1.10, 9.2.x before 9.2.6, 9.3.x before 9.3.2, and 9.4.x before 9.4.3 fail to limit the number of @-mentions processed per message, allowing an authenticated attacker to crash the client applications of other users via large, crafted messages.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-2446">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>00a9473ab244152e319bae63835dd5c5</td>
+       <td>CVE-2024-2445</td>
+       <td>2024-03-15 10:15:07 <img src="imgs/new.gif" /></td>
+       <td>Mattermost Jira plugin versions shipped with Mattermost versions 8.1.x before 8.1.10, 9.2.x before 9.2.6, 9.3.x before 9.3.2, and 9.4.x before 9.4.3 fail to escape user-controlled outputs when generating HTML pages, which allows an attacker to perform reflected cross-site scripting attacks against the users of the Mattermost server.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-2445">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6ec7253c2e8b45e3cf229204d0621b16</td>
+       <td>CVE-2024-2489</td>
+       <td>2024-03-15 09:15:08 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability classified as critical has been found in Tenda AC18 15.03.05.05. Affected is the function formSetQosBand of the file /goform/SetNetControlList. The manipulation of the argument list leads to stack-based buffer overflow. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-256896. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-2489">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7fd020e4688430a26a25b87e4b0ff450</td>
+       <td>CVE-2024-2488</td>
+       <td>2024-03-15 09:15:08 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability was found in Tenda AC18 15.03.05.05. It has been rated as critical. This issue affects the function formSetPPTPServer of the file /goform/SetPptpServerCfg. The manipulation of the argument startIP leads to stack-based buffer overflow. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-256895. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-2488">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f175a257ef9c323dd032ee49fa0970f2</td>
+       <td>CVE-2024-28053</td>
+       <td>2024-03-15 09:15:07 <img src="imgs/new.gif" /></td>
+       <td>Resource Exhaustion in Mattermost Server versions 8.1.x before 8.1.10 fails to limit the size of the payload that can be read and parsed allowing an attacker to send a very large email payload and crash the server.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-28053">详情</a></td>
+      </tr>
+
+      <tr>
        <td>8653cd46019e19de0c735c3a5638d0ec</td>
        <td>CVE-2024-2242</td>
        <td>2024-03-13 22:15:12</td>
@@ -439,86 +519,6 @@
        <td>2024-03-12 11:15:46</td>
        <td>The authentication method in Apache Doris versions before 2.0.0 was vulnerable to timing attacks. Users are recommended to upgrade to version 2.0.0 + or 1.2.8, which fixes this issue.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-41313">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>be5117503a77172f6a537e3061347866</td>
-       <td>CVE-2024-1373</td>
-       <td>2024-03-11 10:15:49</td>
-       <td>Rejected reason: ** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: CVE-2023-46209. Reason: This candidate is a duplicate of CVE-2023-46209. Notes: All CVE users should reference CVE-2023-46209 instead of this candidate. All references and descriptions in this candidate have been removed to prevent accidental usage.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-1373">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>953f0039493ea7cfa4b7657ff1e77c81</td>
-       <td>CVE-2024-28823</td>
-       <td>2024-03-11 05:15:05</td>
-       <td>Amazon AWS aws-js-s3-explorer (aka AWS JavaScript S3 Explorer) 1.0.0 allows XSS via a crafted S3 bucket name to index.html.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-28823">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>dfd89c1cc0221576e3c2012edca5c26a</td>
-       <td>CVE-2024-28816</td>
-       <td>2024-03-11 03:15:05</td>
-       <td>Student Information Chatbot a0196ab allows SQL injection via the username to the login function in index.php.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-28816">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b52aff18883ff6ff7354db86c9a26d68</td>
-       <td>CVE-2024-2184</td>
-       <td>2024-03-11 01:15:50</td>
-       <td>Buffer overflow in identifier field of WSD probe request process of Small Office Multifunction Printers and Laser Printers(*) which may allow an attacker on the network segment to trigger the affected product being unresponsive or to execute arbitrary code.*:Satera MF740C Series/Satera MF640C Series/Satera LBP660C Series/Satera LBP620C Series firmware v12.07 and earlier, and Satera MF750C Series/Satera LBP670C Series firmware v03.09 and earlier sold in Japan.Color imageCLASS MF740C Series/Color imageCLASS MF640C Series/Color imageCLASS X MF1127C/Color imageCLASS LBP664Cdw/Color imageCLASS LBP622Cdw/Color imageCLASS X LBP1127C firmware v12.07 and earlier, and Color imageCLASS MF750C Series/Color imageCLASS X MF1333C/Color imageCLASS LBP674Cdw/Color imageCLASS X LBP1333C firmware v03.09 and earlier sold in US.i-SENSYS MF740C Series/i-SENSYS MF640C Series/C1127i Series/i-SENSYS LBP660C Series/i-SENSYS LBP620C Series/C1127P firmware v12.07 and earlier, and i-SENSYS MF750C Series/C1333i Series/i-SENSYS LBP673Cdw/C1333P firmware v03.09 and earlier sold in Europe.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-2184">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5adba0ce3cb2672750a8aaef48a43390</td>
-       <td>CVE-2024-2365</td>
-       <td>2024-03-11 00:15:17</td>
-       <td>A vulnerability classified as problematic was found in Musicshelf 1.0/1.1 on Android. Affected by this vulnerability is an unknown functionality of the file io\fabric\sdk\android\services\network\PinningTrustManager.java of the component SHA-1 Handler. The manipulation leads to password hash with insufficient computational effort. It is possible to launch the attack on the physical device. The complexity of an attack is rather high. The exploitation appears to be difficult. The exploit has been disclosed to the public and may be used. The identifier VDB-256321 was assigned to this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-2365">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7dfda121547ac1ba7020fd6ff9af3432</td>
-       <td>CVE-2024-2364</td>
-       <td>2024-03-10 23:15:54</td>
-       <td>A vulnerability classified as problematic has been found in Musicshelf 1.0/1.1 on Android. Affected is an unknown function of the file androidmanifest.xml of the component Backup Handler. The manipulation leads to exposure of backup file to an unauthorized control sphere. It is possible to launch the attack on the physical device. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-256320.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-2364">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>24998448193870ac1e2a7fb7370f9d39</td>
-       <td>CVE-2024-2363</td>
-       <td>2024-03-10 23:15:54</td>
-       <td>** UNSUPPORTED WHEN ASSIGNED ** A vulnerability was found in AOL AIM Triton 1.0.4. It has been declared as problematic. This vulnerability affects unknown code of the component Invite Handler. The manipulation of the argument CSeq leads to denial of service. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. VDB-256318 is the identifier assigned to this vulnerability. NOTE: This vulnerability only affects products that are no longer supported by the maintainer.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-2363">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>173c779386856f5b54b8d792decb9181</td>
-       <td>CVE-2024-2314</td>
-       <td>2024-03-10 23:15:53</td>
-       <td>If kernel headers need to be extracted, bcc will attempt to load them from a temporary directory. An unprivileged attacker could use this to force bcc to load compromised linux headers. Linux distributions which provide kernel headers by default are not affected by default.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-2314">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d1e234d89a7fad0a326616f268ddfc35</td>
-       <td>CVE-2024-2313</td>
-       <td>2024-03-10 23:15:53</td>
-       <td>If kernel headers need to be extracted, bpftrace will attempt to load them from a temporary directory. An unprivileged attacker could use this to force bcc to load compromised linux headers. Linux distributions which provide kernel headers by default are not affected by default.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-2313">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7a8629e69e599c8bcfe74af258088ce3</td>
-       <td>CVE-2024-2355</td>
-       <td>2024-03-10 12:15:06</td>
-       <td>A vulnerability has been found in keerti1924 Secret-Coder-PHP-Project 1.0 and classified as problematic. Affected by this vulnerability is an unknown functionality of the file /secret_coder.sql. The manipulation leads to inclusion of sensitive information in source code. The attack can be launched remotely. The complexity of an attack is rather high. The exploitation appears to be difficult. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-256315. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-2355">详情</a></td>
       </tr>
 
      </tbody>
@@ -1954,9 +1954,129 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>716a8ec28a88f336405d734e8d11425e</td>
+       <td>CVE-2024-25831</td>
+       <td>2024-03-15 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>Field Logic DataCube4跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/91701">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>fb86c922179a6caf507e9fe5d2ed8a65</td>
+       <td>CVE-2024-25833</td>
+       <td>2024-03-15 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>Field Logic DataCube3 SQL注入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/91700">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0fe1bdb8d5a0c7794f82c3ec06cff3cb</td>
+       <td>CVE-2024-25931</td>
+       <td>2024-03-15 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>WordPress Plugin Heureka跨站请求伪造漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/91699">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a36eedc979af7ca3e344a71d20454609</td>
+       <td>CVE-2024-25932</td>
+       <td>2024-03-15 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>WordPress Change Table Prefix Plugin跨站请求伪造漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/91698">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>4bd7eb31f0d3e46f0767c1e2fe506841</td>
+       <td>CVE-2024-26470</td>
+       <td>2024-03-15 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>FullStackHero WebAPI Boilerplate标头注入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/91697">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>329eb20720395114a8556a6ce0b68dfb</td>
+       <td>CVE-2024-26473</td>
+       <td>2024-03-15 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>KLiK SocialMediaWebsite跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/91696">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b7c09cb3ed18ad39656cda3e1b4268d6</td>
+       <td>CVE-2024-1434</td>
+       <td>2024-03-15 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>WordPress Plugin Media Alt Renamer跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/91695">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>92a2413c77ac07031d9bf8d83bac5a95</td>
+       <td>CVE-2024-27083</td>
+       <td>2024-03-15 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>Flask-AppBuilder跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/91694">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>752e646ccca42e56ef89880036e96fad</td>
+       <td>CVE-2024-27284</td>
+       <td>2024-03-15 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>cassandra-rs内存错误引用漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/91693">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8696ea9cf7b5f2b0d20923e742378b7f</td>
+       <td>CVE-2024-27516</td>
+       <td>2024-03-15 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>Live Helper Chat服务器端模板注入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/91692">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ebef13bf0eeb7ecb32fe16ba3e92c80b</td>
+       <td>CVE-2023-51802</td>
+       <td>2024-03-15 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>Simple Student Attendance System跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/91691">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>01fa9d8e0c01d8072562b10ecc7a8af1</td>
+       <td>CVE-2024-1468</td>
+       <td>2024-03-15 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>WordPress plugin Avada任意文件上传漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/91690">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>478e352dd4b733875cdc33772791a746</td>
+       <td>CVE-2021-39090</td>
+       <td>2024-03-15 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>IBM Cloud Pak for Security信息泄露漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/91689">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b408674e9ca25ef5f3343b227825c322</td>
+       <td>CVE-2024-26462</td>
+       <td>2024-03-15 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>MIT Kerberos内存泄露漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/91688">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0a485ae5221be82d3c87d5c1f80ec925</td>
+       <td>CVE-2023-50305</td>
+       <td>2024-03-15 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>IBM Engineering Requirements Management DOORS Next跨站请求伪造漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/91687">详情</a></td>
+      </tr>
+
+      <tr>
        <td>a0a8a5400e43c6833d97492ad35beec7</td>
        <td>CVE-2020-36769</td>
-       <td>2024-03-14 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2024-03-14 09:09:08</td>
        <td>WordPress Widget Settings Importer/Exporter Plugin跨站脚本漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/91596">详情</a></td>
       </tr>
@@ -1964,7 +2084,7 @@
       <tr>
        <td>d44b1522f585e57394429998612a3ce1</td>
        <td>CVE-2023-30451</td>
-       <td>2024-03-14 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2024-03-14 09:09:08</td>
        <td>TYPO3路径遍历漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/91595">详情</a></td>
       </tr>
@@ -1972,7 +2092,7 @@
       <tr>
        <td>1c3efc4fb9843b71523e056d457804aa</td>
        <td>CVE-2023-7002</td>
-       <td>2024-03-14 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2024-03-14 09:09:08</td>
        <td>WordPress Backup Migration Plugin操作系统命令注入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/91594">详情</a></td>
       </tr>
@@ -1980,7 +2100,7 @@
       <tr>
        <td>6e47790e2d4f765e1c1beaa1aef085c1</td>
        <td>CVE-2022-39820</td>
-       <td>2024-03-14 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2024-03-14 09:09:08</td>
        <td>Nokia NFM-T凭据无保护存储漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/91593">详情</a></td>
       </tr>
@@ -1988,7 +2108,7 @@
       <tr>
        <td>d6bdc9bd3a247389a48a19207a14ce7b</td>
        <td>CVE-2023-7101</td>
-       <td>2024-03-14 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2024-03-14 09:09:08</td>
        <td>Spreadsheet-ParseExcel代码注入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/91592">详情</a></td>
       </tr>
@@ -1996,7 +2116,7 @@
       <tr>
        <td>7c964db120d569c16968073b65f1601e</td>
        <td>CVE-2023-7093</td>
-       <td>2024-03-14 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2024-03-14 09:09:08</td>
        <td>KylinSoft kylin-system-updater操作系统命名注入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/91591">详情</a></td>
       </tr>
@@ -2004,7 +2124,7 @@
       <tr>
        <td>056fffd097158418a59d44173b2428ab</td>
        <td>CVE-2023-51651</td>
-       <td>2024-03-14 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2024-03-14 09:09:08</td>
        <td>Amazon AWS SDK for PHP路径遍历漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/91590">详情</a></td>
       </tr>
@@ -2012,7 +2132,7 @@
       <tr>
        <td>925854f8994e3649d709d27ecf945ea2</td>
        <td>CVE-2023-6972</td>
-       <td>2024-03-14 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2024-03-14 09:09:08</td>
        <td>WordPress Backup Migration Plugin路径遍历漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/91589">详情</a></td>
       </tr>
@@ -2020,7 +2140,7 @@
       <tr>
        <td>fa3c4573753f261dcf1a4c61626a83ea</td>
        <td>CVE-2023-6971</td>
-       <td>2024-03-14 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2024-03-14 09:09:08</td>
        <td>WordPress Backup Migration Plugin远程文件包含漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/91588">详情</a></td>
       </tr>
@@ -2028,7 +2148,7 @@
       <tr>
        <td>89115ee54b72ebae0360461282a3872b</td>
        <td>CVE-2023-50924</td>
-       <td>2024-03-14 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2024-03-14 09:09:08</td>
        <td>Engelsystem跨站脚本漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/91587">详情</a></td>
       </tr>
@@ -2036,7 +2156,7 @@
       <tr>
        <td>a79455b86009ccbc398983dec2a3e98c</td>
        <td>CVE-2023-50712</td>
-       <td>2024-03-14 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2024-03-14 09:09:08</td>
        <td>Iris跨站脚本漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/91586">详情</a></td>
       </tr>
@@ -2044,7 +2164,7 @@
       <tr>
        <td>d39bc2abd9be7ea92bf7ee04a8302b03</td>
        <td>CVE-2023-50730</td>
-       <td>2024-03-14 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2024-03-14 09:09:08</td>
        <td>Grackle不受控制的资源消耗漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/91585">详情</a></td>
       </tr>
@@ -2052,7 +2172,7 @@
       <tr>
        <td>997a3edd41adfe0508bfc0641f776cb0</td>
        <td>CVE-2023-51035</td>
-       <td>2024-03-14 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2024-03-14 09:09:08</td>
        <td>TOTOLINK EX1200L操作系统命令注入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/91584">详情</a></td>
       </tr>
@@ -2060,7 +2180,7 @@
       <tr>
        <td>95e6e94450b5c6a6dd2c1fa74bc8e9e6</td>
        <td>CVE-2023-51020</td>
-       <td>2024-03-14 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2024-03-14 09:09:08</td>
        <td>TOTOLINK EX1800T任意代码执行漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/91583">详情</a></td>
       </tr>
@@ -2068,129 +2188,9 @@
       <tr>
        <td>b6f9e464ba350fed0c725176a2c27613</td>
        <td>CVE-2022-39818</td>
-       <td>2024-03-14 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2024-03-14 09:09:08</td>
        <td>Nokia NFM-T操作系统命令注入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/91582">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1d6bee1f9603db977958e25d7524cabb</td>
-       <td>CVE-2023-47215</td>
-       <td>2024-03-13 09:09:07</td>
-       <td>Weseek GROWI跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/91512">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7f7639556a19ffb29b3421edea1ee46b</td>
-       <td>CVE-2023-45737</td>
-       <td>2024-03-13 09:09:07</td>
-       <td>Weseek GROWI跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/91511">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2b181292b7642c96d20da08250c530c6</td>
-       <td>CVE-2023-49119</td>
-       <td>2024-03-13 09:09:07</td>
-       <td>Weseek GROWI跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/91510">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>71223befd468c7b0738a86872fe00111</td>
-       <td>CVE-2023-49598</td>
-       <td>2024-03-13 09:09:07</td>
-       <td>Weseek GROWI跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/91509">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>139b99cbe16fb3ec0a949dab3b1dfcd4</td>
-       <td>CVE-2023-45740</td>
-       <td>2024-03-13 09:09:07</td>
-       <td>Weseek GROWI跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/91508">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c588404da4684e3a5f510f39fd81a967</td>
-       <td>CVE-2023-50175</td>
-       <td>2024-03-13 09:09:07</td>
-       <td>Weseek GROWI跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/91507">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>bafcd8f3458b91916f51ea8febb2cdee</td>
-       <td>CVE-2023-5980</td>
-       <td>2024-03-13 09:09:07</td>
-       <td>WordPress BSK Forms Blacklist Plugin跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/91506">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>937169fffb1df576b8ef4ed00d345d6c</td>
-       <td>CVE-2023-45741</td>
-       <td>2024-03-13 09:09:07</td>
-       <td>Buffalo VR-S1000操作系统命令注入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/91505">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>06265b31d27d283c23717892c1aafce3</td>
-       <td>CVE-2023-46711</td>
-       <td>2024-03-13 09:09:07</td>
-       <td>Buffalo VR-S1000硬编码凭据使用漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/91504">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1b85055fe57007657bbfae12076fa84a</td>
-       <td>CVE-2023-6268</td>
-       <td>2024-03-13 09:09:07</td>
-       <td>WordPress JSON Content Importer Plugin跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/91503">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>36ba0c3a6786c967529d45c92d0951ed</td>
-       <td>CVE-2023-5931</td>
-       <td>2024-03-13 09:09:07</td>
-       <td>WordPress rtMedia, BuddyPress and bbPress Plugin危险类型文件不受限上传漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/91502">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6a3ba7417a93325c5103ba486f0b5c55</td>
-       <td>CVE-2023-5939</td>
-       <td>2024-03-13 09:09:07</td>
-       <td>WordPress rtMedia, BuddyPress and bbPress Plugin远程代码执行漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/91501">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d1682a621acb7e9742e9408e5fd1f622</td>
-       <td>CVE-2023-50297</td>
-       <td>2024-03-13 09:09:07</td>
-       <td>Alfasado PowerCMS开放重定向漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/91500">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>cae394217995708e3c0c52757efe5b67</td>
-       <td>CVE-2023-48003</td>
-       <td>2024-03-13 09:09:07</td>
-       <td>Asp.Net Zero开放重定向漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/91499">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9c4215d74b92a1a4bca834586aed5ea4</td>
-       <td>CVE-2023-46699</td>
-       <td>2024-03-13 09:09:07</td>
-       <td>Weseek GROWI跨站请求伪造漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/91498">详情</a></td>
       </tr>
 
      </tbody>
