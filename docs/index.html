@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2024-03-25 09:11:16 -->
+<!-- RELEASE TIME : 2024-03-26 09:11:18 -->
 <html lang="zh-cn">
 
  <head>
@@ -282,9 +282,89 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>ee4f9a70d4cada80384ea5dc0626b06d</td>
+       <td>CVE-2024-29666</td>
+       <td>2024-03-25 19:15:59 <img src="imgs/new.gif" /></td>
+       <td>Insecure Permissions vulnerability in Vehicle Monitoring platform system CMSV6 v.7.31.0.2 through v.7.32.0.3 allows a remote attacker to escalate privileges via the default password component.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-29666">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7a4f0b56df20bdac326c4218ff4b5cbd</td>
+       <td>CVE-2024-29515</td>
+       <td>2024-03-25 19:15:59 <img src="imgs/new.gif" /></td>
+       <td>File Upload vulnerability in lepton v.7.1.0 allows a remote authenticated attackers to execute arbitrary code via uploading a crafted PHP file to the save.php and config.php component.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-29515">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>aaa5d95c343cb9e90b216848c775274d</td>
+       <td>CVE-2024-28850</td>
+       <td>2024-03-25 19:15:58 <img src="imgs/new.gif" /></td>
+       <td>WP Crontrol controls the cron events on WordPress websites. WP Crontrol includes a feature that allows administrative users to create events in the WP-Cron system that store and execute PHP code subject to the restrictive security permissions documented here. While there is no known vulnerability in this feature on its own, there exists potential for this feature to be vulnerable to RCE if it were specifically targeted via vulnerability chaining that exploited a separate SQLi (or similar) vulnerability. This is exploitable on a site if one of the below preconditions are met, the site is vulnerable to a writeable SQLi vulnerability in any plugin, theme, or WordPress core, the site's database is compromised at the hosting level, the site is vulnerable to a method of updating arbitrary options in the wp_options table, or the site is vulnerable to a method of triggering an arbitrary action, filter, or function with control of the parameters. As a hardening measure, WP Crontrol version 1.16.2 ships with a new feature that prevents tampering of the code stored in a PHP cron event.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-28850">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>4f31117fd036e11045296404d9a780a9</td>
+       <td>CVE-2024-28108</td>
+       <td>2024-03-25 19:15:58 <img src="imgs/new.gif" /></td>
+       <td>phpMyFAQ is an open source FAQ web application for PHP 8.1+ and MySQL, PostgreSQL and other databases. Due to insufficient validation on the `contentLink` parameter, it is possible for unauthenticated users to inject HTML code to the page which might affect other users. _Also, requires that adding new FAQs is allowed for guests and that the admin doesn't check the content of a newly added FAQ._ This vulnerability is fixed in 3.2.6.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-28108">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2806443c8d060ad9598174c01eb55b55</td>
+       <td>CVE-2024-28107</td>
+       <td>2024-03-25 19:15:58 <img src="imgs/new.gif" /></td>
+       <td>phpMyFAQ is an open source FAQ web application for PHP 8.1+ and MySQL, PostgreSQL and other databases. A SQL injection vulnerability has been discovered in the `insertentry` & `saveentry` when modifying records due to improper escaping of the email address. This allows any authenticated user with the rights to add/edit FAQ news to exploit this vulnerability to exfiltrate data, take over accounts and in some cases, even achieve RCE. This vulnerability is fixed in 3.2.6.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-28107">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b326a1168998a5a6c3b84da8831c3756</td>
+       <td>CVE-2024-28106</td>
+       <td>2024-03-25 19:15:58 <img src="imgs/new.gif" /></td>
+       <td>phpMyFAQ is an open source FAQ web application for PHP 8.1+ and MySQL, PostgreSQL and other databases. By manipulating the news parameter in a POST request, an attacker can inject malicious JavaScript code. Upon browsing to the compromised news page, the XSS payload triggers. This vulnerability is fixed in 3.2.6.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-28106">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>fb0f317b84530e7064e495aeba5681e4</td>
+       <td>CVE-2024-28105</td>
+       <td>2024-03-25 19:15:58 <img src="imgs/new.gif" /></td>
+       <td>phpMyFAQ is an open source FAQ web application for PHP 8.1+ and MySQL, PostgreSQL and other databases. The category image upload function in phpmyfaq is vulnerable to manipulation of the `Content-type` and `lang` parameters, allowing attackers to upload malicious files with a .php extension, potentially leading to remote code execution (RCE) on the system. This vulnerability is fixed in 3.2.6.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-28105">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f05c54f6117a6bca0fe96d18148f66b2</td>
+       <td>CVE-2024-27300</td>
+       <td>2024-03-25 19:15:57 <img src="imgs/new.gif" /></td>
+       <td>phpMyFAQ is an open source FAQ web application for PHP 8.1+ and MySQL, PostgreSQL and other databases. The `email` field in phpMyFAQ's user control panel page is vulnerable to stored XSS attacks due to the inadequacy of PHP's `FILTER_VALIDATE_EMAIL` function, which only validates the email format, not its content. This vulnerability enables an attacker to execute arbitrary client-side JavaScript within the context of another user's phpMyFAQ session. This vulnerability is fixed in 3.2.6.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-27300">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0c7b75ab30549c2503af19c0bdd44886</td>
+       <td>CVE-2024-27299</td>
+       <td>2024-03-25 19:15:57 <img src="imgs/new.gif" /></td>
+       <td>phpMyFAQ is an open source FAQ web application for PHP 8.1+ and MySQL, PostgreSQL and other databases. A SQL injection vulnerability has been discovered in the the "Add News" functionality due to improper escaping of the email address. This allows any authenticated user with the rights to add/edit FAQ news to exploit this vulnerability to exfiltrate data, take over accounts and in some cases, even achieve RCE. The vulnerable field lies in the `authorEmail` field which uses PHP's `FILTER_VALIDATE_EMAIL` filter. This filter is insufficient in protecting against SQL injection attacks and should still be properly escaped. However, in this version of phpMyFAQ (3.2.5), this field is not escaped properly can be used together with other fields to fully exploit the SQL injection vulnerability. This vulnerability is fixed in 3.2.6.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-27299">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9aef74a2366c296947558f84f13c3813</td>
+       <td>CVE-2023-48296</td>
+       <td>2024-03-25 19:15:57 <img src="imgs/new.gif" /></td>
+       <td>OroPlatform is a PHP Business Application Platform (BAP). Navigation history, most viewed and favorite navigation items are returned to storefront user in JSON navigation response if ID of storefront user matches ID of back-office user. This vulnerability is fixed in 5.1.4.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-48296">详情</a></td>
+      </tr>
+
+      <tr>
        <td>8aec703d1a2eb130c65d6e80d9a4925e</td>
        <td>CVE-2024-29194</td>
-       <td>2024-03-24 19:15:07 <img src="imgs/new.gif" /></td>
+       <td>2024-03-24 19:15:07</td>
        <td>OneUptime is a solution for monitoring and managing online services. The vulnerability lies in the improper validation of client-side stored data within the web application. Specifically, the is_master_admin key, stored in the local storage of the browser, can be manipulated by an attacker. By changing this key from false to true, the application grants administrative privileges to the user, without proper server-side validation. This has been patched in 7.0.1815.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-29194">详情</a></td>
       </tr>
@@ -292,7 +372,7 @@
       <tr>
        <td>cc8b03049c589a31e02607b12a447186</td>
        <td>CVE-2020-36825</td>
-       <td>2024-03-24 12:15:08 <img src="imgs/new.gif" /></td>
+       <td>2024-03-24 12:15:08</td>
        <td>A vulnerability has been found in cyberaz0r WebRAT up to 20191222 and classified as critical. This vulnerability affects the function download_file of the file Server/api.php. The manipulation of the argument name leads to unrestricted upload. The attack can be initiated remotely. The patch is identified as 0c394a795b9c10c07085361e6fcea286ee793701. It is recommended to apply a patch to fix this issue. VDB-257782 is the identifier assigned to this vulnerability.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2020-36825">详情</a></td>
       </tr>
@@ -300,7 +380,7 @@
       <tr>
        <td>7517ef714514155e05e2e0979930da10</td>
        <td>CVE-2024-2856</td>
-       <td>2024-03-24 07:15:08 <img src="imgs/new.gif" /></td>
+       <td>2024-03-24 07:15:08</td>
        <td>A vulnerability, which was classified as critical, has been found in Tenda AC10 16.03.10.13/16.03.10.20. Affected by this issue is the function fromSetSysTime of the file /goform/SetSysTimeCfg. The manipulation of the argument timeZone leads to stack-based buffer overflow. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-257780. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-2856">详情</a></td>
       </tr>
@@ -308,7 +388,7 @@
       <tr>
        <td>1a90951350eeac3e24efb4c00f11874f</td>
        <td>CVE-2024-2855</td>
-       <td>2024-03-24 06:15:11 <img src="imgs/new.gif" /></td>
+       <td>2024-03-24 06:15:11</td>
        <td>A vulnerability classified as critical was found in Tenda AC15 15.03.05.18/15.03.05.19/15.03.20. Affected by this vulnerability is the function fromSetSysTime of the file /goform/SetSysTimeCfg. The manipulation of the argument time leads to stack-based buffer overflow. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-257779. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-2855">详情</a></td>
       </tr>
@@ -316,7 +396,7 @@
       <tr>
        <td>2c3575249b0d2e33c7b5550465bcc21c</td>
        <td>CVE-2024-2854</td>
-       <td>2024-03-24 06:15:08 <img src="imgs/new.gif" /></td>
+       <td>2024-03-24 06:15:08</td>
        <td>A vulnerability classified as critical has been found in Tenda AC18 15.03.05.05. Affected is the function formSetSambaConf of the file /goform/setsambacfg. The manipulation of the argument usbName leads to os command injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. VDB-257778 is the identifier assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-2854">详情</a></td>
       </tr>
@@ -324,7 +404,7 @@
       <tr>
        <td>857fc6973fbdff0aa8a6b668939d9b6f</td>
        <td>CVE-2024-2853</td>
-       <td>2024-03-24 05:15:10 <img src="imgs/new.gif" /></td>
+       <td>2024-03-24 05:15:10</td>
        <td>A vulnerability was found in Tenda AC10U 15.03.06.48/15.03.06.49. It has been rated as critical. This issue affects the function formSetSambaConf of the file /goform/setsambacfg. The manipulation of the argument usbName leads to os command injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-257777 was assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-2853">详情</a></td>
       </tr>
@@ -332,7 +412,7 @@
       <tr>
        <td>b4d17d778d424941d925b842ac4b935f</td>
        <td>CVE-2024-2852</td>
-       <td>2024-03-24 05:15:09 <img src="imgs/new.gif" /></td>
+       <td>2024-03-24 05:15:09</td>
        <td>A vulnerability was found in Tenda AC15 15.03.20_multi. It has been declared as critical. This vulnerability affects the function saveParentControlInfo of the file /goform/saveParentControlInfo. The manipulation of the argument urls leads to stack-based buffer overflow. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-257776. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-2852">详情</a></td>
       </tr>
@@ -340,7 +420,7 @@
       <tr>
        <td>1f1bddd119f52769fc2f5f0054e38557</td>
        <td>CVE-2024-2851</td>
-       <td>2024-03-24 03:15:09 <img src="imgs/new.gif" /></td>
+       <td>2024-03-24 03:15:09</td>
        <td>A vulnerability was found in Tenda AC15 15.03.05.18/15.03.20_multi. It has been classified as critical. This affects the function formSetSambaConf of the file /goform/setsambacfg. The manipulation of the argument usbName leads to os command injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-257775. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-2851">详情</a></td>
       </tr>
@@ -348,7 +428,7 @@
       <tr>
        <td>39bbe3ce2e69b3935583c63d45c31390</td>
        <td>CVE-2024-2850</td>
-       <td>2024-03-24 02:15:07 <img src="imgs/new.gif" /></td>
+       <td>2024-03-24 02:15:07</td>
        <td>A vulnerability was found in Tenda AC15 15.03.05.18 and classified as critical. Affected by this issue is the function saveParentControlInfo of the file /goform/saveParentControlInfo. The manipulation of the argument urls leads to stack-based buffer overflow. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. VDB-257774 is the identifier assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-2850">详情</a></td>
       </tr>
@@ -356,7 +436,7 @@
       <tr>
        <td>764eb27068e7ba1d990dda5c3e09e5a6</td>
        <td>CVE-2024-30161</td>
-       <td>2024-03-24 01:15:45 <img src="imgs/new.gif" /></td>
+       <td>2024-03-24 01:15:45</td>
        <td>In Qt before 6.5.6 and 6.6.x before 6.6.3, the wasm component may access QNetworkReply header data via a dangling pointer.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-30161">详情</a></td>
       </tr>
@@ -439,86 +519,6 @@
        <td>2024-03-23 03:15:13</td>
        <td>The EmbedPress – Embed PDF, Google Docs, Vimeo, Wistia, Embed YouTube Videos, Audios, Maps & Embed Any Documents in Gutenberg & Elementor plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the EmbedPress document widget in all versions up to, and including, 3.9.12 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-2688">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>80cc6a41822efb98030a077e1e7ef1ce</td>
-       <td>CVE-2024-2827</td>
-       <td>2024-03-22 19:15:09</td>
-       <td>A vulnerability, which was classified as critical, has been found in lakernote EasyAdmin up to 20240315. This issue affects some unknown processing of the file /ureport/designer/saveReportFile. The manipulation leads to server-side request forgery. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-257717 was assigned to this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-2827">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ba0e829c194a24aac5b3e7dbae7c05af</td>
-       <td>CVE-2024-2826</td>
-       <td>2024-03-22 19:15:08</td>
-       <td>A vulnerability classified as problematic was found in lakernote EasyAdmin up to 20240315. This vulnerability affects unknown code of the file /ureport/designer/saveReportFile. The manipulation leads to xml external entity reference. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-257716.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-2826">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e076280e06286ded2a14541a2db74ef1</td>
-       <td>CVE-2024-2825</td>
-       <td>2024-03-22 19:15:08</td>
-       <td>A vulnerability classified as critical has been found in lakernote EasyAdmin up to 20240315. This affects an unknown part of the file /ureport/designer/saveReportFile. The manipulation of the argument file leads to path traversal: '../filedir'. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-257715.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-2825">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>41b63d0ee38b6d54226646bda44e0999</td>
-       <td>CVE-2023-5685</td>
-       <td>2024-03-22 19:15:07</td>
-       <td>A flaw was found in XNIO. The XNIO NotifierState that can cause a Stack Overflow Exception when the chain of notifier states becomes problematically large can lead to uncontrolled resource management and a possible denial of service (DoS).</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-5685">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c5fe8a0b7ba083ad80676d14ef56e587</td>
-       <td>CVE-2024-2824</td>
-       <td>2024-03-22 18:15:08</td>
-       <td>A vulnerability was found in Matthias-Wandel jhead 3.08 and classified as critical. This issue affects the function PrintFormatNumber of the file exif.c. The manipulation leads to heap-based buffer overflow. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-257711.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-2824">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9943fe83d62ce930b8aaa2a9a9737d78</td>
-       <td>CVE-2023-4063</td>
-       <td>2024-03-22 18:15:07</td>
-       <td>Certain HP OfficeJet Pro printers are potentially vulnerable to a Denial of Service when using an improper eSCL URL GET request.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-4063">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>437e97e1ac3cc11379618d190f6e5719</td>
-       <td>CVE-2024-2823</td>
-       <td>2024-03-22 17:15:09</td>
-       <td>A vulnerability has been found in DedeCMS 5.7 and classified as problematic. This vulnerability affects unknown code of the file /src/dede/mda_main.php. The manipulation leads to cross-site request forgery. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. VDB-257710 is the identifier assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-2823">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>52d9f1bedaad2dc7bfb4b982ed9c6d82</td>
-       <td>CVE-2024-2822</td>
-       <td>2024-03-22 17:15:09</td>
-       <td>A vulnerability, which was classified as problematic, was found in DedeCMS 5.7. This affects an unknown part of the file /src/dede/vote_edit.php. The manipulation of the argument aid leads to cross-site request forgery. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-257709 was assigned to this vulnerability. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-2822">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>790718c7090088e98e145faecd157dcd</td>
-       <td>CVE-2024-29499</td>
-       <td>2024-03-22 17:15:08</td>
-       <td>Anchor CMS v0.12.7 was discovered to contain a Cross-Site Request Forgery (CSRF) via /anchor/admin/users/delete/2.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-29499">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7e0edc1355ce0435e4655b72d12ee295</td>
-       <td>CVE-2024-29385</td>
-       <td>2024-03-22 17:15:08</td>
-       <td>DIR-845L router <= v1.01KRb03 has an Unauthenticated remote code execution vulnerability in the cgibin binary via soapcgi_main function.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-29385">详情</a></td>
       </tr>
 
      </tbody>
@@ -1954,6 +1954,126 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>c9c147e30790a9670122929db7ab5f8c</td>
+       <td>CVE-2023-6827</td>
+       <td>2024-03-25 09:09:10 <img src="imgs/new.gif" /></td>
+       <td>WordPress Essential Real Estate Plugin任意文件上传漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/92258">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3f18e9ca344fbfdb74f1028001a6c6df</td>
+       <td>CVE-2023-48378</td>
+       <td>2024-03-25 09:09:10 <img src="imgs/new.gif" /></td>
+       <td>Softnext Technologies Mail SQR Expert路径遍历漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/92257">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0b78ba699e732e3ffecc397af9589c27</td>
+       <td>CVE-2023-48376</td>
+       <td>2024-03-25 09:09:10 <img src="imgs/new.gif" /></td>
+       <td>Softnext Technologies Mail SQR Expert任意文件上传漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/92256">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ed3db587eff0d54ad5def3991bdcfae1</td>
+       <td>CVE-2023-6707</td>
+       <td>2024-03-25 09:09:10 <img src="imgs/new.gif" /></td>
+       <td>Google Chrome内存错误引用漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/92255">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e6e5f2af3bd28b0f9dc2ce68454921fc</td>
+       <td>CVE-2023-4489</td>
+       <td>2024-03-25 09:09:10 <img src="imgs/new.gif" /></td>
+       <td>Silicon Labs Z/IP Gateway SDK未初始化资源使用漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/92254">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a7df82dae708b2cb266d87a8431f12f3</td>
+       <td>CVE-2023-48050</td>
+       <td>2024-03-25 09:09:10 <img src="imgs/new.gif" /></td>
+       <td>ZKTeco ZKBio Time SQL注入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/92253">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>409de977236256161db477d3642e0f2c</td>
+       <td>CVE-2023-48379</td>
+       <td>2024-03-25 09:09:10 <img src="imgs/new.gif" /></td>
+       <td>Softnext Technologies Mail SQR Expert操作系统命令注入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/92252">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7d72deccb051f401a70af8d0d0248039</td>
+       <td>CVE-2023-40954</td>
+       <td>2024-03-25 09:09:10 <img src="imgs/new.gif" /></td>
+       <td>Dynamic Progress Bar SQL注入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/92251">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ddd2b8746fcbddb31c590149c4d51840</td>
+       <td>CVE-2023-48049</td>
+       <td>2024-03-25 09:09:10 <img src="imgs/new.gif" /></td>
+       <td>Cybrosys Techno Solutions Website Blog Search SQL注入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/92250">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>29db5f5e574dd66d0a7eb86fd7dc0089</td>
+       <td>CVE-2023-50715</td>
+       <td>2024-03-25 09:09:10 <img src="imgs/new.gif" /></td>
+       <td>Home Assistant信息泄露漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/92249">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ccbd7573dd45bb2ecb348eccb62f6e83</td>
+       <td>CVE-2023-45894</td>
+       <td>2024-03-25 09:09:10 <img src="imgs/new.gif" /></td>
+       <td>Parallels Remote Application Server远程代码执行漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/92248">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>13eea8200479d82fb503c851feb17c49</td>
+       <td>CVE-2023-48371</td>
+       <td>2024-03-25 09:09:10 <img src="imgs/new.gif" /></td>
+       <td>ITPison OMICARD EDM任意文件上传漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/92247">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>23bc6c112ef084b1e454588d05c02ddc</td>
+       <td>CVE-2023-49294</td>
+       <td>2024-03-25 09:09:10 <img src="imgs/new.gif" /></td>
+       <td>Asterisk路径遍历漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/92246">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>131b97be9077ca85e4109cb9b7066085</td>
+       <td>CVE-2023-49786</td>
+       <td>2024-03-25 09:09:10 <img src="imgs/new.gif" /></td>
+       <td>Asterisk竞争条件漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/92245">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a9c837aa945a214507f1c9e634a9c383</td>
+       <td>CVE-2023-6706</td>
+       <td>2024-03-25 09:09:10 <img src="imgs/new.gif" /></td>
+       <td>Google Chrome内存错误引用漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/92244">详情</a></td>
+      </tr>
+
+      <tr>
        <td>5c4aa80e0cdaa93aecaf2a1378020d14</td>
        <td>CVE-2023-6851</td>
        <td>2024-03-22 09:09:07</td>
@@ -2071,126 +2191,6 @@
        <td>2024-03-22 09:09:07</td>
        <td>Ivanti Connect Secure拒绝服务漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/92114">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>aeb478089668a1e3f7041fc9a37057ed</td>
-       <td>CVE-2023-6203</td>
-       <td>2024-03-21 09:09:08</td>
-       <td>WordPress Events Calendar Plugin信息泄露漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/92025">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>76e74f7ff196d0b39d987844f2528268</td>
-       <td>CVE-2023-5005</td>
-       <td>2024-03-21 09:09:08</td>
-       <td>WordPress Autocomplete Location field Contact Form Plugin跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/92024">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>484c549f2308ad8a48ec68feb63aab0d</td>
-       <td>CVE-2023-46177</td>
-       <td>2024-03-21 09:09:08</td>
-       <td>IBM MQ Appliance路径遍历漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/92023">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>761fbb8b32f0c4810228eb68232b6ffe</td>
-       <td>CVE-2023-6691</td>
-       <td>2024-03-21 09:09:08</td>
-       <td>Cambium Networks ePMP Force 300-25代码注入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/92022">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>843edd82f15a60f5bddc57f310687fff</td>
-       <td>CVE-2023-3430</td>
-       <td>2024-03-21 09:09:08</td>
-       <td>OpenImageIO堆缓冲区溢出漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/92021">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b4183189234b28d701cdf5babd707c6d</td>
-       <td>CVE-2023-39509</td>
-       <td>2024-03-21 09:09:08</td>
-       <td>Bosch IP Cameras命令注入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/92020">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6ef4a4db23647ca3f3caf351c3b6f098</td>
-       <td>CVE-2023-28053</td>
-       <td>2024-03-21 09:09:08</td>
-       <td>Dell NetWorker Virtual Edition风险加密算法使用漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/92019">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e830ef919b8f21e02e3781ff40287b3c</td>
-       <td>CVE-2023-6315</td>
-       <td>2024-03-21 09:09:08</td>
-       <td>Panasonic Control FPWIN Pro越界读取漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/92018">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6d52600f6c8b5a1247616eb736e18fad</td>
-       <td>CVE-2023-6314</td>
-       <td>2024-03-21 09:09:08</td>
-       <td>Panasonic Control FPWIN Pro堆栈缓冲区溢出漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/92017">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>77a9c3a009413eec14d8bc663f42aacf</td>
-       <td>CVE-2023-5384</td>
-       <td>2024-03-21 09:09:08</td>
-       <td>Red Hat Infinispan信息泄露漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/92016">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>15a56cbbb46e678a844ba81b52ef6bdc</td>
-       <td>CVE-2023-5236</td>
-       <td>2024-03-21 09:09:08</td>
-       <td>Red Hat Infinispan拒绝服务漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/92015">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6177fbbb51cee781d84bf520dfbdaffb</td>
-       <td>CVE-2023-6228</td>
-       <td>2024-03-21 09:09:08</td>
-       <td>LibTIFF堆缓冲区溢出漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/92014">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d1b32326f868b57606cf75937c06cd51</td>
-       <td>CVE-2023-35867</td>
-       <td>2024-03-21 09:09:08</td>
-       <td>Bosch多款产品异常情况处理错误漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/92013">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e22ea84fa43e87c106fb2c8f2cbea32a</td>
-       <td>CVE-2023-50271</td>
-       <td>2024-03-21 09:09:08</td>
-       <td>Hewlett Packard Enterprise Management Homepage信息泄露漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/92012">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>854882e81fdb048b526fec7cbdaa0593</td>
-       <td>CVE-2023-5056</td>
-       <td>2024-03-21 09:09:08</td>
-       <td>skupper-operator授权错误漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/92011">详情</a></td>
       </tr>
 
      </tbody>
