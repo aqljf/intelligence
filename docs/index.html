@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2024-04-23 09:11:13 -->
+<!-- RELEASE TIME : 2024-04-24 09:11:13 -->
 <html lang="zh-cn">
 
  <head>
@@ -282,6 +282,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>77e33783c65fb599dd25a95235f2bee9</td>
+       <td>CVE-2024-3177</td>
+       <td>2024-04-22 23:15:51</td>
+       <td>A security issue was discovered in Kubernetes where users may be able to launch containers that bypass the mountable secrets policy enforced by the ServiceAccount admission plugin when using containers, init containers, and ephemeral containers with the envFrom field populated. The policy ensures pods running with a service account may only reference secrets specified in the service account’s secrets field. Kubernetes clusters are only affected if the ServiceAccount admission plugin and the kubernetes.io/enforce-mountable-secrets annotation are used together with containers, init containers, and ephemeral containers with the envFrom field populated.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-3177">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>280b2b1c7479b8e43c50efa9161e532c</td>
+       <td>CVE-2024-32657</td>
+       <td>2024-04-22 23:15:50</td>
+       <td>Hydra is a Continuous Integration service for Nix based projects. Attackers can execute arbitrary code in the browser context of Hydra and execute authenticated HTTP requests. The abused feature allows Nix builds to specify files that Hydra serves to clients. One use of this functionality is serving NixOS `.iso` files. The issue is only with html files served by Hydra. The issue has been patched on https://hydra.nixos.org around 2024-04-21 14:30 UTC. The nixpkgs package were fixed in unstable and 23.11. Users with custom Hydra packages can apply the fix commit to their local installations. The vulnerability is only triggered when opening HTML build artifacts, so not opening them until the vulnerability is fixed works around the issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-32657">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>62e666b89f29ff2e4e2b22e4bf0e0a42</td>
+       <td>CVE-2024-32656</td>
+       <td>2024-04-22 23:15:50</td>
+       <td>Ant Media Server is live streaming engine software. A local privilege escalation vulnerability in present in versions 2.6.0 through 2.8.2 allows any unprivileged operating system user account to escalate privileges to the root user account on the system. This vulnerability arises from Ant Media Server running with Java Management Extensions (JMX) enabled and authentication disabled on localhost on port 5599/TCP. This vulnerability is nearly identical to the local privilege escalation vulnerability CVE-2023-26269 identified in Apache James. Any unprivileged operating system user can connect to the JMX service running on port 5599/TCP on localhost and leverage the MLet Bean within JMX to load a remote MBean from an attacker-controlled server. This allows an attacker to execute arbitrary code within the Java process run by Ant Media Server and execute code within the context of the `antmedia` service account on the system. Version 2.9.0 contains a patch for the issue. As a workaround, one may remove certain parameters from the `antmedia.service` file.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-32656">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>554a0ac02706303dcded2a7cd054af14</td>
+       <td>CVE-2024-32653</td>
+       <td>2024-04-22 23:15:50</td>
+       <td>jadx is a Dex to Java decompiler. Prior to version 1.5.0, the package name is not filtered before concatenation. This can be exploited to inject arbitrary code into the package name. The vulnerability allows an attacker to execute commands with shell privileges. Version 1.5.0 contains a patch for the vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-32653">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>4aa135259bd73194edced3140171ead9</td>
+       <td>CVE-2024-32480</td>
+       <td>2024-04-22 23:15:50</td>
+       <td>LibreNMS is an open-source, PHP/MySQL/SNMP-based network monitoring system. Versions prior to 24.4.0 are vulnerable to SQL injection. The `order` parameter is obtained from `$request`. After performing a string check, the value is directly incorporated into an SQL statement and concatenated, resulting in a SQL injection vulnerability. An attacker may extract a whole database this way. Version 24.4.0 fixes the issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-32480">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>298f54b7417e20b3553b685ca66b2161</td>
+       <td>CVE-2024-32479</td>
+       <td>2024-04-22 22:15:08</td>
+       <td>LibreNMS is an open-source, PHP/MySQL/SNMP-based network monitoring system. Prior to version 24.4.0, there is improper sanitization on the `Service` template name, which can lead to stored Cross-site Scripting. Version 24.4.0 fixes this vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-32479">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9eccda989b666a21ac84d2c831c4a697</td>
+       <td>CVE-2024-32461</td>
+       <td>2024-04-22 22:15:07</td>
+       <td>LibreNMS is an open-source, PHP/MySQL/SNMP-based network monitoring system. A SQL injection vulnerability in POST /search/search=packages in LibreNMS prior to version 24.4.0 allows a user with global read privileges to execute SQL commands via the package parameter. With this vulnerability, an attacker can exploit a SQL injection time based vulnerability to extract all data from the database, such as administrator credentials. Version 24.4.0 contains a patch for the vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-32461">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>bee4c8ac511f12f49530a9e00ba8a753</td>
+       <td>CVE-2024-32460</td>
+       <td>2024-04-22 22:15:07</td>
+       <td>FreeRDP is a free implementation of the Remote Desktop Protocol. FreeRDP based based clients using `/bpp:32` legacy `GDI` drawing path with a version of FreeRDP prior to 3.5.0 or 2.11.6 are vulnerable to out-of-bounds read. Versions 3.5.0 and 2.11.6 patch the issue. As a workaround, use modern drawing paths (e.g. `/rfx` or `/gfx` options). The workaround requires server side support.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-32460">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>01a245df26fca613f715f7ac0a80509e</td>
+       <td>CVE-2024-32459</td>
+       <td>2024-04-22 22:15:07</td>
+       <td>FreeRDP is a free implementation of the Remote Desktop Protocol. FreeRDP based clients and servers that use a version of FreeRDP prior to 3.5.0 or 2.11.6 are vulnerable to out-of-bounds read. Versions 3.5.0 and 2.11.6 patch the issue. No known workarounds are available.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-32459">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>52ee009d2daa91b59134b9d4ea4cdf3f</td>
+       <td>CVE-2024-31036</td>
+       <td>2024-04-22 22:15:07</td>
+       <td>A heap-buffer-overflow vulnerability in the read_byte function in NanoMQ v.0.21.7 allows attackers to cause a denial of service via transmission of crafted hexstreams.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-31036">详情</a></td>
+      </tr>
+
+      <tr>
        <td>63b2ecda32a2b2f3c9eef5daed4af627</td>
        <td>CVE-2015-10132</td>
        <td>2024-04-21 20:15:45</td>
@@ -439,86 +519,6 @@
        <td>2024-04-19 21:15:08</td>
        <td>Pytorch before v2.2.0 has an Out-of-bounds Read vulnerability via the component torch/csrc/jit/mobile/flatbuffer_loader.cpp.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-31584">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>882336e63f8f362ae432dcf34545bb36</td>
-       <td>CVE-2024-30974</td>
-       <td>2024-04-19 21:15:08</td>
-       <td>SQL Injection vulnerability in autoexpress v.1.3.0 allows attackers to run arbitrary SQL commands via the carId parameter.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-30974">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>260e77e43494cda414d2a798eb317b45</td>
-       <td>CVE-2024-22905</td>
-       <td>2024-04-19 21:15:07</td>
-       <td>Buffer Overflow vulnerability in ARM mbed-os v.6.17.0 allows a remote attacker to execute arbitrary code via a crafted script to the hciTrSerialRxIncoming function.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-22905">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9f3fdc93a01824c806baaff87504a00e</td>
-       <td>CVE-2024-30923</td>
-       <td>2024-04-18 21:15:07</td>
-       <td>SQL Injection vulnerability in DerbyNet v9.0 and below allows a remote attacker to execute arbitrary code via the where Clause in Racer Document Rendering</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-30923">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>dd354069b4bc4392111cb03227ce30e9</td>
-       <td>CVE-2024-30922</td>
-       <td>2024-04-18 21:15:07</td>
-       <td>SQL Injection vulnerability in DerbyNet v9.0 allows a remote attacker to execute arbitrary code via the where Clause in Award Document Rendering.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-30922">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ae29e390446cb177ee8654c871b65e96</td>
-       <td>CVE-2024-30921</td>
-       <td>2024-04-18 21:15:07</td>
-       <td>Cross Site Scripting vulnerability in DerbyNet v9.0 and below allows a remote attacker to execute arbitrary code via the photo.php component.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-30921">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>10db47651c20c56152eb79b87aab4c6e</td>
-       <td>CVE-2024-30920</td>
-       <td>2024-04-18 21:15:07</td>
-       <td>Cross Site Scripting vulnerability in DerbyNet v9.0 and below allows a remote attacker to execute arbitrary code via the render-document.php component.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-30920">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ffdd0761bc93a066fe7ea247741dd977</td>
-       <td>CVE-2024-30107</td>
-       <td>2024-04-18 21:15:07</td>
-       <td>HCL Connections contains a broken access control vulnerability that may expose sensitive information to unauthorized users in certain scenarios.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-30107">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0b56c14674ba41df39efd973376f8d31</td>
-       <td>CVE-2024-32477</td>
-       <td>2024-04-18 20:15:17</td>
-       <td>Deno is a JavaScript, TypeScript, and WebAssembly runtime with secure defaults. By using ANSI escape sequences and a race between `libc::tcflush(0, libc::TCIFLUSH)` and reading standard input, it's possible to manipulate the permission prompt and force it to allow an unsafe action regardless of the user input. Some ANSI escape sequences act as a info request to the master terminal emulator and the terminal emulator sends back the reply in the PTY channel. standard streams also use this channel to send and get data. For example the `\033[6n` sequence requests the current cursor position. These sequences allow us to append data to the standard input of Deno. This vulnerability allows an attacker to bypass Deno permission policy. This vulnerability is fixed in 1.42.2.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-32477">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e259fa4761d579dc26ee40732488d728</td>
-       <td>CVE-2024-32474</td>
-       <td>2024-04-18 20:15:17</td>
-       <td>Sentry is an error tracking and performance monitoring platform. Prior to 24.4.1, when authenticating as a superuser to Sentry with a username and password, the password is leaked as cleartext in logs under the _event_: `auth-index.validate_superuser`. An attacker with access to the log data could use these leaked credentials to login to the Sentry system as superuser. Self-hosted users on affected versions should upgrade to 24.4.1 or later. Users can configure the logging level to exclude logs of the `INFO` level and only generate logs for levels at `WARNING` or more.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-32474">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>17bd011120675ec9e445c2ee33695e58</td>
-       <td>CVE-2024-20380</td>
-       <td>2024-04-18 20:15:17</td>
-       <td>A vulnerability in the HTML parser of ClamAV could allow an unauthenticated, remote attacker to cause a denial of service (DoS) condition on an affected device. The vulnerability is due to an issue in the C to Rust foreign function interface. An attacker could exploit this vulnerability by submitting a crafted file containing HTML content to be scanned by ClamAV on an affected device. An exploit could allow the attacker to cause the ClamAV scanning process to terminate, resulting in a DoS condition on the affected software.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-20380">详情</a></td>
       </tr>
 
      </tbody>
@@ -1956,7 +1956,7 @@
       <tr>
        <td>e9a3507f450b02345057f383f7d3c852</td>
        <td>CVE-2024-23268</td>
-       <td>2024-04-22 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2024-04-22 09:09:08</td>
        <td>Apple多款产品注入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/93825">详情</a></td>
       </tr>
@@ -1964,7 +1964,7 @@
       <tr>
        <td>0df769fb28c5f621bf64cf394f26b4d5</td>
        <td>CVE-2024-23258</td>
-       <td>2024-04-22 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2024-04-22 09:09:08</td>
        <td>Apple visionOS和macOS Sonoma越界读取漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/93824">详情</a></td>
       </tr>
@@ -1972,7 +1972,7 @@
       <tr>
        <td>a78e197b2c93926bc718710dee8303e9</td>
        <td>CVE-2024-23270</td>
-       <td>2024-04-22 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2024-04-22 09:09:08</td>
        <td>Apple多款产品任意代码执行漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/93823">详情</a></td>
       </tr>
@@ -1980,7 +1980,7 @@
       <tr>
        <td>1ff8de147db71b63d28d81b81129fdb2</td>
        <td>CVE-2024-23269</td>
-       <td>2024-04-22 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2024-04-22 09:09:08</td>
        <td>Apple多款产品权限降低漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/93822">详情</a></td>
       </tr>
@@ -1988,7 +1988,7 @@
       <tr>
        <td>6333257b4fb6ed436fa6835ddb231611</td>
        <td>CVE-2024-23257</td>
-       <td>2024-04-22 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2024-04-22 09:09:08</td>
        <td>Apple多款产品信息泄露漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/93821">详情</a></td>
       </tr>
@@ -1996,7 +1996,7 @@
       <tr>
        <td>414421e17ff1dbfb45ba5b7fba3dd471</td>
        <td>CVE-2024-23259</td>
-       <td>2024-04-22 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2024-04-22 09:09:08</td>
        <td>Apple多款产品拒绝服务漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/93820">详情</a></td>
       </tr>
@@ -2004,7 +2004,7 @@
       <tr>
        <td>f47210c79440a20e2cff5fb1c921c983</td>
        <td>CVE-2024-23255</td>
-       <td>2024-04-22 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2024-04-22 09:09:08</td>
        <td>Apple多款产品信息泄露漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/93819">详情</a></td>
       </tr>
@@ -2012,7 +2012,7 @@
       <tr>
        <td>3a81cc0e6c4cc2bba76d38e9f6c0fc51</td>
        <td>CVE-2024-23260</td>
-       <td>2024-04-22 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2024-04-22 09:09:08</td>
        <td>Apple macOS Sonoma权限管理错误漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/93818">详情</a></td>
       </tr>
@@ -2020,7 +2020,7 @@
       <tr>
        <td>9ecdd7e7d3777d13b79bcd57570320c1</td>
        <td>CVE-2024-23266</td>
-       <td>2024-04-22 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2024-04-22 09:09:08</td>
        <td>Apple多款产品信息泄露漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/93817">详情</a></td>
       </tr>
@@ -2028,7 +2028,7 @@
       <tr>
        <td>1d9eff9f6fb552f837e3d99eea8d6851</td>
        <td>CVE-2023-48517</td>
-       <td>2024-04-22 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2024-04-22 09:09:08</td>
        <td>Adobe Experience Manager跨站脚本漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/93816">详情</a></td>
       </tr>
@@ -2036,7 +2036,7 @@
       <tr>
        <td>c1f82cc207c1bacda44d76fed261b269</td>
        <td>CVE-2024-23265</td>
-       <td>2024-04-22 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2024-04-22 09:09:08</td>
        <td>Apple多款产品内存破坏漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/93815">详情</a></td>
       </tr>
@@ -2044,7 +2044,7 @@
       <tr>
        <td>5b3041fa635c345224fe1aa822c0fc00</td>
        <td>CVE-2024-23264</td>
-       <td>2024-04-22 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2024-04-22 09:09:08</td>
        <td>Apple多款产品信息泄露漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/93814">详情</a></td>
       </tr>
@@ -2052,7 +2052,7 @@
       <tr>
        <td>9d6f4bd25ac3a51101f36fa3e5c90b3f</td>
        <td>CVE-2024-23273</td>
-       <td>2024-04-22 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2024-04-22 09:09:08</td>
        <td>Apple多款产品状态管理错误漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/93813">详情</a></td>
       </tr>
@@ -2060,7 +2060,7 @@
       <tr>
        <td>e71f533d61672a5310dac3e43d22f66e</td>
        <td>CVE-2024-23272</td>
-       <td>2024-04-22 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2024-04-22 09:09:08</td>
        <td>Apple多款产品逻辑漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/93812">详情</a></td>
       </tr>
@@ -2068,129 +2068,129 @@
       <tr>
        <td>d138f3eb68dabd241690cb7614530ca4</td>
        <td>CVE-2024-23281</td>
-       <td>2024-04-22 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2024-04-22 09:09:08</td>
        <td>Apple macOS Sonoma信息泄露漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/93811">详情</a></td>
       </tr>
 
       <tr>
-       <td>8fa9083476f517693da83ddec3b39da9</td>
+       <td>afd38de51162a913a8393bc9a5a860cd</td>
+       <td>CVE-2020-36773</td>
+       <td>2024-04-22 09:09:08</td>
+       <td>Artifex Software Ghostscript越界写入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/93858">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e6c21f8cd0a916c2e68a4e8a79ac4048</td>
+       <td>CVE-2024-1215</td>
+       <td>2024-04-22 09:09:08</td>
+       <td>Sourcecodester PHP CRUD without Refresh/Reload跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/93857">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>175747cf1b0cee970286e18d9dca3514</td>
+       <td>CVE-2024-1194</td>
+       <td>2024-04-22 09:09:08</td>
+       <td>Armcode AlienIP拒绝服务漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/93856">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>cca49cf7672a19c7479e1ac57d174c24</td>
+       <td>CVE-2023-50947</td>
+       <td>2024-04-22 09:09:08</td>
+       <td>IBM Business Automation Workflow跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/93855">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f9b75a21ef05f55d80992d52ffcbab8f</td>
+       <td>CVE-2023-47562</td>
+       <td>2024-04-22 09:09:08</td>
+       <td>QNAP Photo Station操作系统命令注入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/93854">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7246381127cc373623901c8739ee1230</td>
+       <td>CVE-2024-1197</td>
+       <td>2024-04-22 09:09:08</td>
+       <td>SourceCodester Testimonial Page Manager SQL注入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/93853">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>476ad84c40d246be743cbbac7a21266f</td>
+       <td>CVE-2023-32327</td>
+       <td>2024-04-22 09:09:08</td>
+       <td>IBM Security Access Manager Container XML外部实体注入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/93852">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ac7ff9e7113ecfe0431f3932c943eff8</td>
+       <td>CVE-2024-0909</td>
+       <td>2024-04-22 09:09:08</td>
+       <td>WordPress plugin Anonymous Restricted Content信息泄露漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/93851">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2e1a207b1a24027f12cff163ae6dd941</td>
+       <td>CVE-2024-23635</td>
+       <td>2024-04-22 09:09:08</td>
+       <td>OWASP AntiSamy跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/93850">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>59bb175ebae02618d6d13b4f4c517f3c</td>
+       <td>CVE-2023-6676</td>
+       <td>2024-04-22 09:09:08</td>
+       <td>National Keep CyberMath跨站请求伪造漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/93849">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d6c5c294d48a46d68f8b7b82114744b3</td>
+       <td>CVE-2024-23831</td>
+       <td>2024-04-22 09:09:08</td>
+       <td>LedgerSMB权限提升漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/93848">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1e96fe6ebfccedc83b42b6379b34e18d</td>
+       <td>CVE-2023-47561</td>
+       <td>2024-04-22 09:09:08</td>
+       <td>QNAP Systems Photo Station跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/93847">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ecb3931117c18f588d59321497d5ab03</td>
+       <td>CVE-2024-22108</td>
+       <td>2024-04-22 09:09:08</td>
+       <td>GTB Technologies Central Console SQL注入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/93846">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3a1461afb1f7210c872c26397f023bdc</td>
+       <td>CVE-2023-51504</td>
+       <td>2024-04-22 09:09:08</td>
+       <td>WordPress plugin Dans Embedder for Google Calendar跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/93845">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>683bb70b842a85f8d42f09138e262e48</td>
        <td></td>
-       <td>2024-04-19 09:09:08</td>
-       <td>WordPress plugin Booking for Appointments and Events Calendar存储型跨站脚本漏洞（CVE-2023-</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/93736">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6d331d01773f556109caea2e447fc208</td>
-       <td>CVE-2024-0221</td>
-       <td>2024-04-19 09:09:08</td>
-       <td>WordPress plugin Photo Gallery by 10Web路径遍历漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/93735">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f80d7e483daaa153adf0d20739b3a0ea</td>
-       <td>CVE-2024-0374</td>
-       <td>2024-04-19 09:09:08</td>
-       <td>WordPress plugin Views for WP Forms跨站请求伪造漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/93734">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f55b9946941340ee8f8aaf843702193d</td>
-       <td>CVE-2024-24543</td>
-       <td>2024-04-19 09:09:08</td>
-       <td>Tenda AC9缓冲区溢出漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/93733">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a197c13c946f211cfd1db5245f675ae7</td>
-       <td>CVE-2023-6701</td>
-       <td>2024-04-19 09:09:08</td>
-       <td>WordPress plugin Advanced Custom Fields存储型跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/93732">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5b86147c0bc34d78dfa55125aafa6335</td>
-       <td>CVE-2023-6884</td>
-       <td>2024-04-19 09:09:08</td>
-       <td>WordPress Plugin for Google Reviews存储型跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/93731">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>041729a4204e9e0ac7947ce6cdf4081a</td>
-       <td></td>
-       <td>2024-04-19 09:09:08</td>
-       <td>WordPress plugin Author Box, Guest Author and Co-Authors for Your Posts信息泄露漏洞（CV</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/93730">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ce328cd8578572515a5c7d940d0ead48</td>
-       <td>CVE-2023-692</td>
-       <td>2024-04-19 09:09:08</td>
-       <td>WordPress plugin Unlimited Addons for WPBakery Page Builder任意文件上传漏洞（CVE-2023-692</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/93729">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0d7e7ab1414e0d0c4571799d11b6c917</td>
-       <td>CVE-2023-6807</td>
-       <td>2024-04-19 09:09:08</td>
-       <td>WordPress Plugin GeneratePress Premium跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/93728">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>207d3c301a2635f0380ae2be05e06584</td>
-       <td>CVE-2023-6982</td>
-       <td>2024-04-19 09:09:08</td>
-       <td>WordPress plugin Display custom fields in the frontend存储型跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/93727">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9db1bf0520a4ed46445f7a97626fb585</td>
-       <td>CVE-2023-6635</td>
-       <td>2024-04-19 09:09:08</td>
-       <td>WordPress plugin EditorsKit任意文件上传漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/93726">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>bba36cb3733dc32d9f8ce6807f422210</td>
-       <td>CVE-2024-0790</td>
-       <td>2024-04-19 09:09:08</td>
-       <td>WordPress plugin WOLF跨站请求伪造漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/93725">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>74458d516d61297ab34d3c82d4d0342d</td>
-       <td>CVE-2024-23673</td>
-       <td>2024-04-19 09:09:08</td>
-       <td>Apache Sling Servlets Resolver路径遍历漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/93724">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9b39421e2b531f60f2293d9c6d2533f4</td>
-       <td>CVE-2024-0612</td>
-       <td>2024-04-19 09:09:08</td>
-       <td>WordPress plugin Content Views存储型跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/93723">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1b38b312f95376842339ad96f72982e9</td>
-       <td>CVE-2024-0586</td>
-       <td>2024-04-19 09:09:08</td>
-       <td>WordPress plugin Essential Addons for Elementor存储型跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/93722">详情</a></td>
+       <td>2024-04-22 09:09:08</td>
+       <td>WordPress plugin Biteship: Plugin Ongkos Kirim Kurir Instant, Reguler, Kargo跨站脚本</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/93844">详情</a></td>
       </tr>
 
      </tbody>
