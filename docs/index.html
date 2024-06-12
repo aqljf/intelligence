@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2024-06-11 09:11:14 -->
+<!-- RELEASE TIME : 2024-06-12 09:11:14 -->
 <html lang="zh-cn">
 
  <head>
@@ -282,9 +282,89 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>50962c6423c92d79bf3eb91d622eef4d</td>
+       <td>CVE-2024-5702</td>
+       <td>2024-06-11 13:15:51 <img src="imgs/new.gif" /></td>
+       <td>Memory corruption in the networking stack could have led to a potentially exploitable crash. This vulnerability affects Firefox < 125 and Firefox ESR < 115.12.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-5702">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>15c7dd82cba467fcb1f0e9ab76220e7d</td>
+       <td>CVE-2024-5701</td>
+       <td>2024-06-11 13:15:51 <img src="imgs/new.gif" /></td>
+       <td>Memory safety bugs present in Firefox 126. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Firefox < 127.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-5701">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b474ad87d2a1c8b10f9a1328b81972cf</td>
+       <td>CVE-2024-5700</td>
+       <td>2024-06-11 13:15:51 <img src="imgs/new.gif" /></td>
+       <td>Memory safety bugs present in Firefox 126, Firefox ESR 115.11, and Thunderbird 115.11. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Firefox < 127 and Firefox ESR < 115.12.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-5700">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>08a289b0f9252f3445659e081a6bc76c</td>
+       <td>CVE-2024-5699</td>
+       <td>2024-06-11 13:15:51 <img src="imgs/new.gif" /></td>
+       <td>In violation of spec, cookie prefixes such as `__Secure` were being ignored if they were not correctly capitalized - by spec they should be checked with a case-insensitive comparison. This could have resulted in the browser not correctly honoring the behaviors specified by the prefix. This vulnerability affects Firefox < 127.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-5699">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8096e402c0b5868a1de8a0c06a68cf49</td>
+       <td>CVE-2024-5698</td>
+       <td>2024-06-11 13:15:51 <img src="imgs/new.gif" /></td>
+       <td>By manipulating the fullscreen feature while opening a data-list, an attacker could have overlaid a text box over the address bar. This could have led to user confusion and possible spoofing attacks. This vulnerability affects Firefox < 127.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-5698">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>57d6749782d9051bff0310e5357b9c6e</td>
+       <td>CVE-2024-5697</td>
+       <td>2024-06-11 13:15:51 <img src="imgs/new.gif" /></td>
+       <td>A website was able to detect when a user took a screenshot of a page using the built-in Screenshot functionality in Firefox. This vulnerability affects Firefox < 127.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-5697">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2c7dbb56713db3fd0fbf4cb514840637</td>
+       <td>CVE-2024-5696</td>
+       <td>2024-06-11 13:15:51 <img src="imgs/new.gif" /></td>
+       <td>By manipulating the text in an `&lt;input&gt;` tag, an attacker could have caused corrupt memory leading to a potentially exploitable crash. This vulnerability affects Firefox < 127 and Firefox ESR < 115.12.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-5696">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>88af31d92ceac08939afd9155664db84</td>
+       <td>CVE-2024-5695</td>
+       <td>2024-06-11 13:15:51 <img src="imgs/new.gif" /></td>
+       <td>If an out-of-memory condition occurs at a specific point using allocations in the probabilistic heap checker, an assertion could have been triggered, and in rarer situations, memory corruption could have occurred. This vulnerability affects Firefox < 127.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-5695">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>954e493bb68a7c450adeafb91fc39bf0</td>
+       <td>CVE-2024-5694</td>
+       <td>2024-06-11 13:15:50 <img src="imgs/new.gif" /></td>
+       <td>An attacker could have caused a use-after-free in the JavaScript engine to read memory in the JavaScript string section of the heap. This vulnerability affects Firefox < 127.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-5694">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2baae96bfaca3dfcc04d0652cd7e3891</td>
+       <td>CVE-2024-5693</td>
+       <td>2024-06-11 13:15:50 <img src="imgs/new.gif" /></td>
+       <td>Offscreen Canvas did not properly track cross-origin tainting, which could be used to access image data from another site in violation of same-origin policy. This vulnerability affects Firefox < 127 and Firefox ESR < 115.12.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-5693">详情</a></td>
+      </tr>
+
+      <tr>
        <td>f921fc539d7dbbbd16d595b350d016bf</td>
        <td>CVE-2024-5786</td>
-       <td>2024-06-10 13:15:51 <img src="imgs/new.gif" /></td>
+       <td>2024-06-10 13:15:51</td>
        <td>Cross-Site Request Forgery vulnerability in Comtrend router WLD71-T1_v2.0.201820, affecting the GRG-4280us version. This vulnerability allows an attacker to force an end user to execute unwanted actions in a web application to which he is authenticated.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-5786">详情</a></td>
       </tr>
@@ -292,7 +372,7 @@
       <tr>
        <td>32d45e9d926f9665bc0f4395fd09b231</td>
        <td>CVE-2024-5785</td>
-       <td>2024-06-10 13:15:51 <img src="imgs/new.gif" /></td>
+       <td>2024-06-10 13:15:51</td>
        <td>Command injection vulnerability in Comtrend router WLD71-T1_v2.0.201820, affecting the GRG-4280us version. This vulnerability could allow an authenticated user to execute commands inside the router by making a POST request to the URL “/boaform/admin/formUserTracert”.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-5785">详情</a></td>
       </tr>
@@ -300,7 +380,7 @@
       <tr>
        <td>ca64759545267f22163107519fb1037e</td>
        <td>CVE-2024-36405</td>
-       <td>2024-06-10 13:15:50 <img src="imgs/new.gif" /></td>
+       <td>2024-06-10 13:15:50</td>
        <td>liboqs is a C-language cryptographic library that provides implementations of post-quantum cryptography algorithms. A control-flow timing lean has been identified in the reference implementation of the Kyber key encapsulation mechanism when it is compiled with Clang 15-18 for `-Os`, `-O1`, and other compilation options. A proof-of-concept local attack on the reference implementation leaks the entire ML-KEM 512 secret key in ~10 minutes using end-to-end decapsulation timing measurements. The issue has been fixed in version 0.10.1. As a possible workaround, some compiler options may produce vectorized code that does not leak secret information, however relying on these compiler options as a workaround may not be reliable.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-36405">详情</a></td>
       </tr>
@@ -308,7 +388,7 @@
       <tr>
        <td>379dafe47acf1c4e948a2c7701ad51ba</td>
        <td>CVE-2024-3700</td>
-       <td>2024-06-10 12:15:10 <img src="imgs/new.gif" /></td>
+       <td>2024-06-10 12:15:10</td>
        <td>Use of hard-coded password to the patients' database allows an attacker to retrieve sensitive data stored in the database. The password is the same among all Simple Care software installations. This issue affects Estomed Sp. z o.o. Simple Care software in all versions. The software is no longer supported.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-3700">详情</a></td>
       </tr>
@@ -316,7 +396,7 @@
       <tr>
        <td>fe6fd703ea7eed7bbaccbd1b3191812f</td>
        <td>CVE-2024-3699</td>
-       <td>2024-06-10 12:15:10 <img src="imgs/new.gif" /></td>
+       <td>2024-06-10 12:15:10</td>
        <td>Use of hard-coded password to the patients' database allows an attacker to retrieve sensitive data stored in the database. The password is the same among all drEryk Gabinet installations.This issue affects drEryk Gabinet software versions from 7.0.0.0 through 9.17.0.0.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-3699">详情</a></td>
       </tr>
@@ -324,7 +404,7 @@
       <tr>
        <td>09be932b53a64e7cdc13730557a2407d</td>
        <td>CVE-2024-28833</td>
-       <td>2024-06-10 12:15:09 <img src="imgs/new.gif" /></td>
+       <td>2024-06-10 12:15:09</td>
        <td>Improper restriction of excessive authentication attempts with two factor authentication methods in Checkmk 2.3 before 2.3.0p6 facilitates brute-forcing of second factor mechanisms.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-28833">详情</a></td>
       </tr>
@@ -332,7 +412,7 @@
       <tr>
        <td>c782629c0bc01f0720592b5b3cfc5498</td>
        <td>CVE-2024-1228</td>
-       <td>2024-06-10 12:15:09 <img src="imgs/new.gif" /></td>
+       <td>2024-06-10 12:15:09</td>
        <td>Use of hard-coded password to the patients' database allows an attacker to retrieve sensitive data stored in the database. The password is the same among all Eurosoft Przychodnia installations. This issue affects Eurosoft Przychodnia software before version 20240417.001 (from that version vulnerability is fixed).</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-1228">详情</a></td>
       </tr>
@@ -340,7 +420,7 @@
       <tr>
        <td>77540c911956015cc3b3bd903c544b24</td>
        <td>CVE-2024-36971</td>
-       <td>2024-06-10 09:15:09 <img src="imgs/new.gif" /></td>
+       <td>2024-06-10 09:15:09</td>
        <td>In the Linux kernel, the following vulnerability has been resolved: net: fix __dst_negative_advice() race __dst_negative_advice() does not enforce proper RCU rules when sk->dst_cache must be cleared, leading to possible UAF. RCU rules are that we must first clear sk->sk_dst_cache, then call dst_release(old_dst). Note that sk_dst_reset(sk) is implementing this protocol correctly, while __dst_negative_advice() uses the wrong order. Given that ip6_negative_advice() has special logic against RTF_CACHE, this means each of the three ->negative_advice() existing methods must perform the sk_dst_reset() themselves. Note the check against NULL dst is centralized in __dst_negative_advice(), there is no need to duplicate it in various callbacks. Many thanks to Clement Lecigne for tracking this issue. This old bug became visible after the blamed commit, using UDP sockets.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-36971">详情</a></td>
       </tr>
@@ -348,7 +428,7 @@
       <tr>
        <td>a07ee8b1fed75be77dc42ffd928031f0</td>
        <td>CVE-2024-4746</td>
-       <td>2024-06-10 08:15:52 <img src="imgs/new.gif" /></td>
+       <td>2024-06-10 08:15:52</td>
        <td>Missing Authorization vulnerability in Netgsm.This issue affects Netgsm: from n/a through 2.9.16.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-4746">详情</a></td>
       </tr>
@@ -356,7 +436,7 @@
       <tr>
        <td>52fd944cfc0a600ded5dd35c8c055eea</td>
        <td>CVE-2024-4745</td>
-       <td>2024-06-10 08:15:52 <img src="imgs/new.gif" /></td>
+       <td>2024-06-10 08:15:52</td>
        <td>Missing Authorization vulnerability in RafflePress Giveaways and Contests by RafflePress.This issue affects Giveaways and Contests by RafflePress: from n/a through 1.12.4.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-4745">详情</a></td>
       </tr>
@@ -439,86 +519,6 @@
        <td>2024-06-09 13:15:51</td>
        <td>Missing Authorization vulnerability in Merv Barrett Easy Property Listings.This issue affects Easy Property Listings: from n/a through 3.5.3.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-32799">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3bb913c3c2f8c9ffbbc9464c97028639</td>
-       <td>CVE-2024-37407</td>
-       <td>2024-06-08 13:15:58</td>
-       <td>Libarchive before 3.7.4 allows name out-of-bounds access when a ZIP archive has an empty-name file and mac-ext is enabled. This occurs in slurp_central_directory in archive_read_support_format_zip.c.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-37407">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>cc244e85a7dab442690ed23fc44bec84</td>
-       <td>CVE-2024-36970</td>
-       <td>2024-06-08 13:15:58</td>
-       <td>In the Linux kernel, the following vulnerability has been resolved: wifi: iwlwifi: Use request_module_nowait This appears to work around a deadlock regression that came in with the LED merge in 6.9. The deadlock happens on my system with 24 iwlwifi radios, so maybe it something like all worker threads are busy and some work that needs to complete cannot complete. [also remove unnecessary "load_module" var and now-wrong comment]</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-36970">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6c2889fd2a3436c62a259b5e11574e91</td>
-       <td>CVE-2024-36969</td>
-       <td>2024-06-08 13:15:58</td>
-       <td>In the Linux kernel, the following vulnerability has been resolved: drm/amd/display: Fix division by zero in setup_dsc_config When slice_height is 0, the division by slice_height in the calculation of the number of slices will cause a division by zero driver crash. This leaves the kernel in a state that requires a reboot. This patch adds a check to avoid the division by zero. The stack trace below is for the 6.8.4 Kernel. I reproduced the issue on a Z16 Gen 2 Lenovo Thinkpad with a Apple Studio Display monitor connected via Thunderbolt. The amdgpu driver crashed with this exception when I rebooted the system with the monitor connected. kernel: ? die (arch/x86/kernel/dumpstack.c:421 arch/x86/kernel/dumpstack.c:434 arch/x86/kernel/dumpstack.c:447) kernel: ? do_trap (arch/x86/kernel/traps.c:113 arch/x86/kernel/traps.c:154) kernel: ? setup_dsc_config (drivers/gpu/drm/amd/amdgpu/../display/dc/dsc/dc_dsc.c:1053) amdgpu kernel: ? do_error_trap (./arch/x86/include/asm/traps.h:58 arch/x86/kernel/traps.c:175) kernel: ? setup_dsc_config (drivers/gpu/drm/amd/amdgpu/../display/dc/dsc/dc_dsc.c:1053) amdgpu kernel: ? exc_divide_error (arch/x86/kernel/traps.c:194 (discriminator 2)) kernel: ? setup_dsc_config (drivers/gpu/drm/amd/amdgpu/../display/dc/dsc/dc_dsc.c:1053) amdgpu kernel: ? asm_exc_divide_error (./arch/x86/include/asm/idtentry.h:548) kernel: ? setup_dsc_config (drivers/gpu/drm/amd/amdgpu/../display/dc/dsc/dc_dsc.c:1053) amdgpu kernel: dc_dsc_compute_config (drivers/gpu/drm/amd/amdgpu/../display/dc/dsc/dc_dsc.c:1109) amdgpu After applying this patch, the driver no longer crashes when the monitor is connected and the system is rebooted. I believe this is the same issue reported for 3113.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-36969">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e89fa782f7f10fd44413234de72a298b</td>
-       <td>CVE-2024-36968</td>
-       <td>2024-06-08 13:15:58</td>
-       <td>In the Linux kernel, the following vulnerability has been resolved: Bluetooth: L2CAP: Fix div-by-zero in l2cap_le_flowctl_init() l2cap_le_flowctl_init() can cause both div-by-zero and an integer overflow since hdev->le_mtu may not fall in the valid range. Move MTU from hci_dev to hci_conn to validate MTU and stop the connection process earlier if MTU is invalid. Also, add a missing validation in read_buffer_size() and make it return an error value if the validation fails. Now hci_conn_add() returns ERR_PTR() as it can fail due to the both a kzalloc failure and invalid MTU value. divide error: 0000 [#1] PREEMPT SMP KASAN NOPTI CPU: 0 PID: 67 Comm: kworker/u5:0 Tainted: G W 6.9.0-rc5+ #20 Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.15.0-1 04/01/2014 Workqueue: hci0 hci_rx_work RIP: 0010:l2cap_le_flowctl_init+0x19e/0x3f0 net/bluetooth/l2cap_core.c:547 Code: e8 17 17 0c 00 66 41 89 9f 84 00 00 00 bf 01 00 00 00 41 b8 02 00 00 00 4c 89 fe 4c 89 e2 89 d9 e8 27 17 0c 00 44 89 f0 31 d2 <66> f7 f3 89 c3 ff c3 4d 8d b7 88 00 00 00 4c 89 f0 48 c1 e8 03 42 RSP: 0018:ffff88810bc0f858 EFLAGS: 00010246 RAX: 00000000000002a0 RBX: 0000000000000000 RCX: dffffc0000000000 RDX: 0000000000000000 RSI: ffff88810bc0f7c0 RDI: ffffc90002dcb66f RBP: ffff88810bc0f880 R08: aa69db2dda70ff01 R09: 0000ffaaaaaaaaaa R10: 0084000000ffaaaa R11: 0000000000000000 R12: ffff88810d65a084 R13: dffffc0000000000 R14: 00000000000002a0 R15: ffff88810d65a000 FS: 0000000000000000(0000) GS:ffff88811ac00000(0000) knlGS:0000000000000000 CS: 0010 DS: 0000 ES: 0000 CR0: 0000000080050033 CR2: 0000000020000100 CR3: 0000000103268003 CR4: 0000000000770ef0 PKRU: 55555554 Call Trace: <TASK> l2cap_le_connect_req net/bluetooth/l2cap_core.c:4902 [inline] l2cap_le_sig_cmd net/bluetooth/l2cap_core.c:5420 [inline] l2cap_le_sig_channel net/bluetooth/l2cap_core.c:5486 [inline] l2cap_recv_frame+0xe59d/0x11710 net/bluetooth/l2cap_core.c:6809 l2cap_recv_acldata+0x544/0x10a0 net/bluetooth/l2cap_core.c:7506 hci_acldata_packet net/bluetooth/hci_core.c:3939 [inline] hci_rx_work+0x5e5/0xb20 net/bluetooth/hci_core.c:4176 process_one_work kernel/workqueue.c:3254 [inline] process_scheduled_works+0x90f/0x1530 kernel/workqueue.c:3335 worker_thread+0x926/0xe70 kernel/workqueue.c:3416 kthread+0x2e3/0x380 kernel/kthread.c:388 ret_from_fork+0x5c/0x90 arch/x86/kernel/process.c:147 ret_from_fork_asm+0x1a/0x30 arch/x86/entry/entry_64.S:244 </TASK> Modules linked in: ---[ end trace 0000000000000000 ]---</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-36968">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1073883b0710da4d48dff533f951a445</td>
-       <td>CVE-2024-36967</td>
-       <td>2024-06-08 13:15:58</td>
-       <td>In the Linux kernel, the following vulnerability has been resolved: KEYS: trusted: Fix memory leak in tpm2_key_encode() 'scratch' is never freed. Fix this by calling kfree() in the success, and in the error case.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-36967">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1dcd64e6f4b32e5aac5fe2c2aa0478ff</td>
-       <td>CVE-2024-36966</td>
-       <td>2024-06-08 13:15:57</td>
-       <td>In the Linux kernel, the following vulnerability has been resolved: erofs: reliably distinguish block based and fscache mode When erofs_kill_sb() is called in block dev based mode, s_bdev may not have been initialised yet, and if CONFIG_EROFS_FS_ONDEMAND is enabled, it will be mistaken for fscache mode, and then attempt to free an anon_dev that has never been allocated, triggering the following warning: ============================================ ida_free called for id=0 which is not allocated. WARNING: CPU: 14 PID: 926 at lib/idr.c:525 ida_free+0x134/0x140 Modules linked in: CPU: 14 PID: 926 Comm: mount Not tainted 6.9.0-rc3-dirty #630 RIP: 0010:ida_free+0x134/0x140 Call Trace: <TASK> erofs_kill_sb+0x81/0x90 deactivate_locked_super+0x35/0x80 get_tree_bdev+0x136/0x1e0 vfs_get_tree+0x2c/0xf0 do_new_mount+0x190/0x2f0 [...] ============================================ Now when erofs_kill_sb() is called, erofs_sb_info must have been initialised, so use sbi->fsid to distinguish between the two modes.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-36966">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9daf6bc3b1b0b67e4c704c437aede44b</td>
-       <td>CVE-2024-36965</td>
-       <td>2024-06-08 13:15:57</td>
-       <td>In the Linux kernel, the following vulnerability has been resolved: remoteproc: mediatek: Make sure IPI buffer fits in L2TCM The IPI buffer location is read from the firmware that we load to the System Companion Processor, and it's not granted that both the SRAM (L2TCM) size that is defined in the devicetree node is large enough for that, and while this is especially true for multi-core SCP, it's still useful to check on single-core variants as well. Failing to perform this check may make this driver perform R/W operations out of the L2TCM boundary, resulting (at best) in a kernel panic. To fix that, check that the IPI buffer fits, otherwise return a failure and refuse to boot the relevant SCP core (or the SCP at all, if this is single core).</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-36965">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1591aa59d7c2e1ca3298b2af0547d230</td>
-       <td>CVE-2024-35752</td>
-       <td>2024-06-08 13:15:57</td>
-       <td>Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting') vulnerability in Enea Overclokk Stellissimo Text Box allows Stored XSS.This issue affects Stellissimo Text Box: from n/a through 1.1.4.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-35752">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e799b5dbbf11c3252782062bd7833194</td>
-       <td>CVE-2024-35751</td>
-       <td>2024-06-08 13:15:57</td>
-       <td>Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting') vulnerability in Creative Motion, Will Bontrager Software, LLC Woody ad snippets allows Stored XSS.This issue affects Woody ad snippets: from n/a through 2.4.10.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-35751">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>795be7078de2e866ff7a1a7aa240bd5f</td>
-       <td>CVE-2024-35750</td>
-       <td>2024-06-08 13:15:57</td>
-       <td>Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in wpdevart Responsive Image Gallery, Gallery Album.This issue affects Responsive Image Gallery, Gallery Album: from n/a through 2.0.3.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-35750">详情</a></td>
       </tr>
 
      </tbody>
@@ -1962,6 +1962,126 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>19e7e82548a1cd19a00651dac67efb03</td>
+       <td>CVE-2023-48505</td>
+       <td>2024-06-11 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>Adobe Experience Manager跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/96179">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7e835d7432526e9228ad97c2d2cdbadb</td>
+       <td>CVE-2023-50938</td>
+       <td>2024-06-11 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>IBM PowerSC不合理授权漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/96178">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f9920eb7a780b949a8ad9992e739e501</td>
+       <td>CVE-2023-38019</td>
+       <td>2024-06-11 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>IBM QRadar SOAR Plug-in目录遍历漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/96177">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>4455aadfa344e92ead20a9eeb8e1ed38</td>
+       <td>CVE-2022-40744</td>
+       <td>2024-06-11 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>IBM Aspera Faspex跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/96176">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>4a18116918d6d5cfd894a047af1ab2b5</td>
+       <td>CVE-2024-22533</td>
+       <td>2024-06-11 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>Beetl服务器端模板注入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/96175">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>77caf83a4cbf08464cbd97d16859d4d5</td>
+       <td>CVE-2024-22320</td>
+       <td>2024-06-11 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>IBM Operational Decision Manager任意代码执行漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/96174">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7eeeb052f9d4695d5e8fabd40cc54dad</td>
+       <td>CVE-2024-1073</td>
+       <td>2024-06-11 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>WordPress plugin SlimStat Analytics跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/96172">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a792d078b5a6172226c700ac203b00ca</td>
+       <td>CVE-2024-0685</td>
+       <td>2024-06-11 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>WordPress plugin Ninja Forms Contact Form SQL注入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/96171">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3da71e027146a8578547fcdd075854a8</td>
+       <td>CVE-2023-38263</td>
+       <td>2024-06-11 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>IBM QRadar SOAR Plug-in访问控制错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/96170">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>74b48773f339e907d4ecb5b56d0a847c</td>
+       <td>CVE-2023-38020</td>
+       <td>2024-06-11 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>IBM QRadar SOAR Plug-in日志注入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/96169">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7799ae9523b648594a5bf334621e0430</td>
+       <td>CVE-2023-50962</td>
+       <td>2024-06-11 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>IBM PowerSC信息泄露漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/96168">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>cb67c9928a76bd452e983f0a0b5b0963</td>
+       <td>CVE-2021-22282</td>
+       <td>2024-06-11 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>B&amp;R Industrial Automation Studio代码注入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/96167">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d405b1d6c9e2f7f750ed52b47f4ecdf7</td>
+       <td>CVE-2020-24681</td>
+       <td>2024-06-11 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>B&amp;R Industrial Automation Studio权限提升漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/96166">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>795c6f33c0eff0de9599bb4abd5bc2ea</td>
+       <td>CVE-2023-50941</td>
+       <td>2024-06-11 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>IBM PowerSC不合理授权漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/96165">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>21661f5d4ad2fd4a3e84e2e28babbb02</td>
+       <td>CVE-2023-46159</td>
+       <td>2024-06-11 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>IBM Storage Ceph拒绝服务漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/96164">详情</a></td>
+      </tr>
+
+      <tr>
        <td>0b23f795d51fa173eefa1ec754ff2d99</td>
        <td>CVE-2024-25568</td>
        <td>2024-06-07 09:09:08</td>
@@ -2079,126 +2199,6 @@
        <td>2024-06-07 09:09:08</td>
        <td>Foxit PDF Reader越界读取漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/96128">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>814729af9fcdd6393150e70714eb296b</td>
-       <td>CVE-2023-46351</td>
-       <td>2024-06-06 09:09:08</td>
-       <td>PrestaShop SQL注入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/96068">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>251f34bb91404406d16404f564ec2cfc</td>
-       <td>CVE-2023-49351</td>
-       <td>2024-06-06 09:09:08</td>
-       <td>Edimax BR6478AC堆栈缓冲区溢出漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/96067">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a46a6d69391a55d5f0f5a400a6322fdb</td>
-       <td>CVE-2023-31003</td>
-       <td>2024-06-06 09:09:08</td>
-       <td>IBM Security Access Manager Appliance访问控制错误漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/96066">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d642b553fe240bcebf4217e0a20aca39</td>
-       <td>CVE-2023-4757</td>
-       <td>2024-06-06 09:09:08</td>
-       <td>WordPress Staff / Employee Business Directory跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/96065">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>70726e32062f84c111beef169a3e5806</td>
-       <td>CVE-2023-48506</td>
-       <td>2024-06-06 09:09:08</td>
-       <td>Adobe Experience Manager跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/96064">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>39e90c75a0b725b8986325c472d48464</td>
-       <td>CVE-2023-48508</td>
-       <td>2024-06-06 09:09:08</td>
-       <td>Adobe Experience Manager跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/96063">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7fd6756dd40ede2b307a045aafa4db3e</td>
-       <td>CVE-2024-27337</td>
-       <td>2024-06-06 09:09:08</td>
-       <td>Kofax Power PDF堆栈缓冲区溢出漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/96062">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e612cbe3e94a94672a6e51bb8187564a</td>
-       <td>CVE-2024-0736</td>
-       <td>2024-06-06 09:09:08</td>
-       <td>EFS Software EFS Easy File Sharing FTP拒绝服务漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/96061">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3adf3a66a70af0884aaf04d0f46601e9</td>
-       <td>CVE-2024-0733</td>
-       <td>2024-06-06 09:09:08</td>
-       <td>Smsot SQL注入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/96060">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f70919d4b3afb169c1c0146aa49a9444</td>
-       <td>CVE-2021-31314</td>
-       <td>2024-06-06 09:09:08</td>
-       <td>ejinshan危险类型文件不受限上传漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/96059">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0d982abd89db2875f79130a6e74fd4a8</td>
-       <td>CVE-2024-1180</td>
-       <td>2024-06-06 09:09:08</td>
-       <td>TP-LINK Omada ER605操作系统命令注入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/96058">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a479987c18cff318da482325d6aeab6a</td>
-       <td>CVE-2024-0737</td>
-       <td>2024-06-06 09:09:08</td>
-       <td>Xlight FTP拒绝服务漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/96057">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c69528fe2c702647335de0b89362bf2e</td>
-       <td>CVE-2023-44039</td>
-       <td>2024-06-06 09:09:08</td>
-       <td>VeridiumID访问控制错误漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/96056">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c0a61b1cf31930b751c4ad6a2afb46ac</td>
-       <td>CVE-2024-23689</td>
-       <td>2024-06-06 09:09:08</td>
-       <td>ClickHouse信息暴露漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/96055">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4b00f5cc10a10052b78d5f808527921b</td>
-       <td>CVE-2023-51926</td>
-       <td>2024-06-06 09:09:08</td>
-       <td>yonyou YonBIP信息泄露漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/96054">详情</a></td>
       </tr>
 
      </tbody>
