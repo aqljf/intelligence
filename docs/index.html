@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2024-07-14 09:11:17 -->
+<!-- RELEASE TIME : 2024-07-15 09:11:17 -->
 <html lang="zh-cn">
 
  <head>
@@ -282,9 +282,49 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>6d0983a97d0c492b804c34ee9bbc3a8a</td>
+       <td>CVE-2023-52885</td>
+       <td>2024-07-14 08:15:01 <img src="imgs/new.gif" /></td>
+       <td>In the Linux kernel, the following vulnerability has been resolved: SUNRPC: Fix UAF in svc_tcp_listen_data_ready() After the listener svc_sock is freed, and before invoking svc_tcp_accept() for the established child sock, there is a window that the newsock retaining a freed listener svc_sock in sk_user_data which cloning from parent. In the race window, if data is received on the newsock, we will observe use-after-free report in svc_tcp_listen_data_ready(). Reproduce by two tasks: 1. while :; do rpc.nfsd 0 ; rpc.nfsd; done 2. while :; do echo "" | ncat -4 127.0.0.1 2049 ; done KASAN report: ================================================================== BUG: KASAN: slab-use-after-free in svc_tcp_listen_data_ready+0x1cf/0x1f0 [sunrpc] Read of size 8 at addr ffff888139d96228 by task nc/102553 CPU: 7 PID: 102553 Comm: nc Not tainted 6.3.0+ #18 Hardware name: VMware, Inc. VMware Virtual Platform/440BX Desktop Reference Platform, BIOS 6.00 11/12/2020 Call Trace: <IRQ> dump_stack_lvl+0x33/0x50 print_address_description.constprop.0+0x27/0x310 print_report+0x3e/0x70 kasan_report+0xae/0xe0 svc_tcp_listen_data_ready+0x1cf/0x1f0 [sunrpc] tcp_data_queue+0x9f4/0x20e0 tcp_rcv_established+0x666/0x1f60 tcp_v4_do_rcv+0x51c/0x850 tcp_v4_rcv+0x23fc/0x2e80 ip_protocol_deliver_rcu+0x62/0x300 ip_local_deliver_finish+0x267/0x350 ip_local_deliver+0x18b/0x2d0 ip_rcv+0x2fb/0x370 __netif_receive_skb_one_core+0x166/0x1b0 process_backlog+0x24c/0x5e0 __napi_poll+0xa2/0x500 net_rx_action+0x854/0xc90 __do_softirq+0x1bb/0x5de do_softirq+0xcb/0x100 </IRQ> <TASK> ... </TASK> Allocated by task 102371: kasan_save_stack+0x1e/0x40 kasan_set_track+0x21/0x30 __kasan_kmalloc+0x7b/0x90 svc_setup_socket+0x52/0x4f0 [sunrpc] svc_addsock+0x20d/0x400 [sunrpc] __write_ports_addfd+0x209/0x390 [nfsd] write_ports+0x239/0x2c0 [nfsd] nfsctl_transaction_write+0xac/0x110 [nfsd] vfs_write+0x1c3/0xae0 ksys_write+0xed/0x1c0 do_syscall_64+0x38/0x90 entry_SYSCALL_64_after_hwframe+0x72/0xdc Freed by task 102551: kasan_save_stack+0x1e/0x40 kasan_set_track+0x21/0x30 kasan_save_free_info+0x2a/0x50 __kasan_slab_free+0x106/0x190 __kmem_cache_free+0x133/0x270 svc_xprt_free+0x1e2/0x350 [sunrpc] svc_xprt_destroy_all+0x25a/0x440 [sunrpc] nfsd_put+0x125/0x240 [nfsd] nfsd_svc+0x2cb/0x3c0 [nfsd] write_threads+0x1ac/0x2a0 [nfsd] nfsctl_transaction_write+0xac/0x110 [nfsd] vfs_write+0x1c3/0xae0 ksys_write+0xed/0x1c0 do_syscall_64+0x38/0x90 entry_SYSCALL_64_after_hwframe+0x72/0xdc Fix the UAF by simply doing nothing in svc_tcp_listen_data_ready() if state != TCP_LISTEN, that will avoid dereferencing svsk for all child socket.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-52885">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2a4b63d57c0e3a978301b4fbc867a5fb</td>
+       <td>CVE-2024-6730</td>
+       <td>2024-07-14 02:15:03 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability was found in Nanjing Xingyuantu Technology SparkShop up to 1.1.6. It has been rated as critical. This issue affects some unknown processing of the file /api/Common/uploadFile. The manipulation of the argument file leads to unrestricted upload. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-271403.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-6730">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8af0b02674cd01b58ee357c0543fff72</td>
+       <td>CVE-2024-6729</td>
+       <td>2024-07-14 02:15:02 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability was found in SourceCodester Kortex Lite Advocate Office Management System 1.0. It has been declared as critical. This vulnerability affects unknown code of the file /control/add_act.php. The manipulation of the argument aname leads to sql injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. VDB-271402 is the identifier assigned to this vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-6729">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2eafabe0b90d4189f4ca12bcfc02a174</td>
+       <td>CVE-2024-6728</td>
+       <td>2024-07-14 01:15:01 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability was found in itsourcecode Tailoring Management System 1.0. It has been classified as critical. This affects an unknown part of the file typeedit.php. The manipulation of the argument id leads to sql injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-271401 was assigned to this vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-6728">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>830b2e8724add994e785922b50854d62</td>
+       <td>CVE-2024-6465</td>
+       <td>2024-07-13 12:15:10</td>
+       <td>The WP Links Page plugin for WordPress is vulnerable to unauthorized modification of data due to a missing capability check on the 'wplf_ajax_update_screenshots' function in all versions up to, and including, 4.9.5. This makes it possible for authenticated attackers, with Subscriber-level access and above, to regenerate the link's thumbnail image.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-6465">详情</a></td>
+      </tr>
+
+      <tr>
        <td>57dac9a6999a9e23a2efe2bac1448b60</td>
        <td>CVE-2024-6574</td>
-       <td>2024-07-13 06:15:05 <img src="imgs/new.gif" /></td>
+       <td>2024-07-13 06:15:05</td>
        <td>The Laposta plugin for WordPress is vulnerable to Full Path Disclosure in all versions up to, and including, 1.12. This is due to the plugin not preventing direct access to several test files. This makes it possible for unauthenticated attackers to retrieve the full path of the web application, which can be used to aid other attacks. The information displayed is not useful on its own, and requires another vulnerability to be present for damage to an affected website. This plugin is no longer being maintained and has been closed for downloads.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-6574">详情</a></td>
       </tr>
@@ -292,7 +332,7 @@
       <tr>
        <td>a6dc50579c93988117941747ff7a5c09</td>
        <td>CVE-2024-6070</td>
-       <td>2024-07-13 06:15:05 <img src="imgs/new.gif" /></td>
+       <td>2024-07-13 06:15:05</td>
        <td>The If-So Dynamic Content Personalization WordPress plugin before 1.8.0.4 does not sanitise and escape some of its settings, which could allow high privilege users such as admin to perform Stored Cross-Site Scripting attacks even when the unfiltered_html capability is disallowed (for example in multisite setup)</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-6070">详情</a></td>
       </tr>
@@ -300,7 +340,7 @@
       <tr>
        <td>4e90e149bb941a158305a6c57d83c557</td>
        <td>CVE-2024-5744</td>
-       <td>2024-07-13 06:15:05 <img src="imgs/new.gif" /></td>
+       <td>2024-07-13 06:15:05</td>
        <td>The wp-eMember WordPress plugin before 10.6.7 does not escape the $_SERVER['REQUEST_URI'] parameter before outputting it back in an attribute, which could lead to Reflected Cross-Site Scripting in old web browsers</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-5744">详情</a></td>
       </tr>
@@ -308,7 +348,7 @@
       <tr>
        <td>9ed5aee713fe874507d9161b1ebccfb8</td>
        <td>CVE-2024-5715</td>
-       <td>2024-07-13 06:15:05 <img src="imgs/new.gif" /></td>
+       <td>2024-07-13 06:15:05</td>
        <td>The wp-eMember WordPress plugin before 10.6.7 does not sanitise and escape a parameter before outputting it back in the page, leading to a Reflected Cross-Site Scripting which could be used against high privilege users such as admin</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-5715">详情</a></td>
       </tr>
@@ -316,7 +356,7 @@
       <tr>
        <td>47e2d246c0462007f63154f1a8791efe</td>
        <td>CVE-2024-5713</td>
-       <td>2024-07-13 06:15:05 <img src="imgs/new.gif" /></td>
+       <td>2024-07-13 06:15:05</td>
        <td>The If-So Dynamic Content Personalization WordPress plugin before 1.8.0.4 does not escape the $_SERVER['REQUEST_URI'] parameter before outputting it back in an attribute, which could lead to Reflected Cross-Site Scripting in old web browsers</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-5713">详情</a></td>
       </tr>
@@ -324,7 +364,7 @@
       <tr>
        <td>dfdd2dc850b01d879419f63234b5f907</td>
        <td>CVE-2024-5644</td>
-       <td>2024-07-13 06:15:05 <img src="imgs/new.gif" /></td>
+       <td>2024-07-13 06:15:05</td>
        <td>The Tournamatch WordPress plugin before 4.6.1 does not sanitise and escape some of its settings, which could allow high privilege users such as admin to perform Stored Cross-Site Scripting attacks even when the unfiltered_html capability is disallowed (for example in multisite setup)</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-5644">详情</a></td>
       </tr>
@@ -332,7 +372,7 @@
       <tr>
        <td>2949363891e2486d98878a529a7f9cf0</td>
        <td>CVE-2024-5627</td>
-       <td>2024-07-13 06:15:05 <img src="imgs/new.gif" /></td>
+       <td>2024-07-13 06:15:05</td>
        <td>The Tournamatch WordPress plugin before 4.6.1 does not sanitise and escape some parameters, which could allow users with a role as low as subscriber to perform Cross-Site Scripting attacks.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-5627">详情</a></td>
       </tr>
@@ -340,7 +380,7 @@
       <tr>
        <td>186e23b29098fdaa2a10ab45d68a98d4</td>
        <td>CVE-2024-5575</td>
-       <td>2024-07-13 06:15:05 <img src="imgs/new.gif" /></td>
+       <td>2024-07-13 06:15:05</td>
        <td>The Ditty WordPress plugin before 3.1.43 does not sanitise and escape some of its blocks' settings, which could allow high privilege users such as authors to perform Cross-Site Scripting attacks even when unfiltered_html is disallowed</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-5575">详情</a></td>
       </tr>
@@ -348,7 +388,7 @@
       <tr>
        <td>3fed2ca311ff353ee6fad6bcf2f6271f</td>
        <td>CVE-2024-5472</td>
-       <td>2024-07-13 06:15:05 <img src="imgs/new.gif" /></td>
+       <td>2024-07-13 06:15:05</td>
        <td>The WP QuickLaTeX WordPress plugin before 3.8.7 does not sanitise and escape some of its settings, which could allow high privilege users such as admin to perform Stored Cross-Site Scripting attacks even when the unfiltered_html capability is disallowed (for example in multisite setup).</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-5472">详情</a></td>
       </tr>
@@ -356,7 +396,7 @@
       <tr>
        <td>418a586199861ee595d189d3febabc41</td>
        <td>CVE-2024-5450</td>
-       <td>2024-07-13 06:15:04 <img src="imgs/new.gif" /></td>
+       <td>2024-07-13 06:15:04</td>
        <td>The Bug Library WordPress plugin before 2.1.1 does not check the file type on user-submitted bug reports, allowing an unauthenticated user to upload PHP files</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-5450">详情</a></td>
       </tr>
@@ -479,46 +519,6 @@
        <td>2024-07-08 08:15:10</td>
        <td>Apache NiFi 1.10.0 through 1.26.0 and 2.0.0-M1 through 2.0.0-M3 support a description field in the Parameter Context configuration that is vulnerable to cross-site scripting. An authenticated user, authorized to configure a Parameter Context, can enter arbitrary JavaScript code, which the client browser will execute within the session context of the authenticated user. Upgrading to Apache NiFi 1.27.0 or 2.0.0-M4 is the recommended mitigation.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-37389">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6392d906e8f951281996a58ad1cdb9ae</td>
-       <td>CVE-2024-34603</td>
-       <td>2024-07-08 07:15:04</td>
-       <td>Improper access control in Samsung Message prior to SMR Jul-2024 Release 1 allows local attackers to access location data.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-34603">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>cad9bf06e8f4fde922eba25707ee1d8b</td>
-       <td>CVE-2024-34602</td>
-       <td>2024-07-08 07:15:02</td>
-       <td>Use of implicit intent for sensitive communication in Samsung Messages prior to SMR Jul-2024 Release 1 allows local attackers to get sensitive information. User interaction is required for triggering this vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-34602">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>978833fc2ef9e5ae5071ff0890b810e8</td>
-       <td>CVE-2024-37528</td>
-       <td>2024-07-08 03:15:02</td>
-       <td>IBM Cloud Pak for Business Automation 18.0.0, 18.0.1, 18.0.2, 19.0.1, 19.0.2, 19.0.3, 20.0.1, 20.0.2, 20.0.3, 21.0.1, 21.0.2, 21.0.3, 22.0.1, 22.0.2, 23.0.1, and 23.0.2 is vulnerable to cross-site scripting. This vulnerability allows a privileged user to embed arbitrary JavaScript code in the Web UI thus altering the intended functionality potentially leading to credentials disclosure within a trusted session. IBM X-Force ID: 294293.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-37528">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d4f22c6c267ce5a740b941e38f74f881</td>
-       <td>CVE-2024-31897</td>
-       <td>2024-07-08 03:15:02</td>
-       <td>IBM Cloud Pak for Business Automation 18.0.0, 18.0.1, 18.0.2, 19.0.1, 19.0.2, 19.0.3, 20.0.1, 20.0.2, 20.0.3, 21.0.1, 21.0.2, 21.0.3, 22.0.1, 22.0.2, 23.0.1, and 23.0.2 vulnerable to server-side request forgery (SSRF). This may allow an authenticated attacker to send unauthorized requests from the system, potentially leading to network enumeration or facilitating other attacks. IBM X-Force ID: 288178.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-31897">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>712fc7fc173dc900f6ec509561b115e7</td>
-       <td>CVE-2024-38330</td>
-       <td>2024-07-08 02:15:01</td>
-       <td>IBM System Management for i 7.2, 7.3, and 7.4 could allow a local user to gain elevated privileges due to an unqualified library program call. A malicious actor could cause user-controlled code to run with administrator privilege. IBM X-Force ID: 295227.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-38330">详情</a></td>
       </tr>
 
      </tbody>
