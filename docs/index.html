@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2024-07-15 09:11:17 -->
+<!-- RELEASE TIME : 2024-07-16 09:11:16 -->
 <html lang="zh-cn">
 
  <head>
@@ -282,9 +282,89 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>9519075dd88dc6692b7a32f79cf22ec6</td>
+       <td>CVE-2024-6745</td>
+       <td>2024-07-15 11:15:02 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability classified as critical has been found in code-projects Simple Ticket Booking 1.0. Affected is an unknown function of the file adminauthenticate.php of the component Login. The manipulation of the argument email/password leads to sql injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. The identifier of this vulnerability is VDB-271476.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-6745">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>27ea46ec394400bf9c216d987b0028bd</td>
+       <td>CVE-2024-6741</td>
+       <td>2024-07-15 09:15:03 <img src="imgs/new.gif" /></td>
+       <td>Openfind's Mail2000 has a vulnerability that allows the HttpOnly flag to be bypassed. Unauthenticated remote attackers can exploit this vulnerability using specific JavaScript code to obtain the session cookie with the HttpOnly flag enabled.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-6741">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f7f23f4bc7e465e09de41679392fcf10</td>
+       <td>CVE-2024-6398</td>
+       <td>2024-07-15 09:15:02 <img src="imgs/new.gif" /></td>
+       <td>An information disclosure vulnerability in SWG in versions 12.x prior to 12.2.10 and 11.x prior to 11.2.24 allows information stored in a customizable block page to be disclosed to third-party websites due to Same Origin Policy Bypass of browsers in certain scenarios. The risk is low, because other recommended default security policies such as URL categorization and GTI are in place in most policies to block access to uncategorized/high risk websites. Any information disclosed depends on how the customers have customized the block pages.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-6398">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c33fc9e19fbfa4d4f486acd7e88a6d4f</td>
+       <td>CVE-2024-41007</td>
+       <td>2024-07-15 09:15:02 <img src="imgs/new.gif" /></td>
+       <td>In the Linux kernel, the following vulnerability has been resolved: tcp: avoid too many retransmit packets If a TCP socket is using TCP_USER_TIMEOUT, and the other peer retracted its window to zero, tcp_retransmit_timer() can retransmit a packet every two jiffies (2 ms for HZ=1000), for about 4 minutes after TCP_USER_TIMEOUT has 'expired'. The fix is to make sure tcp_rtx_probe0_timed_out() takes icsk->icsk_user_timeout into account. Before blamed commit, the socket would not timeout after icsk->icsk_user_timeout, but would use standard exponential backoff for the retransmits. Also worth noting that before commit e89688e3e978 ("net: tcp: fix unexcepted socket die when snd_wnd is 0"), the issue would last 2 minutes instead of 4.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-41007">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>895ee46f9625fa355bb208aadbecfe29</td>
+       <td>CVE-2024-39767</td>
+       <td>2024-07-15 09:15:02 <img src="imgs/new.gif" /></td>
+       <td>Mattermost Mobile Apps versions <=2.16.0 fail to validate that the push notifications received for a server actually came from this serve that which allows a malicious server to send push notifications with another server’s diagnostic ID or server URL and have them show up in mobile apps as that server’s push notifications.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-39767">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0040c80d5d61d3661d18fce3e102b364</td>
+       <td>CVE-2024-32945</td>
+       <td>2024-07-15 09:15:02 <img src="imgs/new.gif" /></td>
+       <td>Mattermost Mobile Apps versions <=2.16.0 fail to protect against abuse of a globally shared MathJax state which allows an attacker to change the contents of a LateX post, by creating another post with specific macro definitions.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-32945">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>38bdab60f58bcafb7feb69d9175a6cea</td>
+       <td>CVE-2024-6740</td>
+       <td>2024-07-15 08:15:03 <img src="imgs/new.gif" /></td>
+       <td>Openfind's Mail2000 does not properly validate email atachments, allowing unauthenticated remote attackers to inject JavaScript code within the attachment and perform Stored Cross-site scripting attacks.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-6740">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d869b899ddd3e2df63bd64aa13308a43</td>
+       <td>CVE-2024-6540</td>
+       <td>2024-07-15 08:15:02 <img src="imgs/new.gif" /></td>
+       <td>Improper filtering of fields when using the export function in the ticket overview of the external interface in OTRS could allow an authorized user to download a list of tickets containing information about tickets of other customers. The problem only occurs if the TicketSearchLegacyEngine has been disabled by the administrator. This issue affects OTRS: 8.0.X, 2023.X, from 2024.X through 2024.4.x</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-6540">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>28077d22fe4ceddd57aa94cc4ddba78e</td>
+       <td>CVE-2024-23794</td>
+       <td>2024-07-15 08:15:02 <img src="imgs/new.gif" /></td>
+       <td>An incorrect privilege assignment vulnerability in the inline editing functionality of OTRS can lead to privilege escalation. This flaw allows an agent with read-only permissions to gain full access to a ticket. This issue arises in very rare instances when an admin has previously enabled the setting 'RequiredLock' of 'AgentFrontend::Ticket::InlineEditing::Property###Watch' in the system configuration.This issue affects OTRS: * 8.0.X * 2023.X * from 2024.X through 2024.4.x</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-23794">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d5943a375da09472fffccab3171b32f7</td>
+       <td>CVE-2023-49566</td>
+       <td>2024-07-15 08:15:02 <img src="imgs/new.gif" /></td>
+       <td>In Apache Linkis <=1.5.0, due to the lack of effective filtering of parameters, an attacker configuring malicious db2 parameters in the DataSource Manager Module will result in jndi injection. Therefore, the parameters in the DB2 URL should be blacklisted. This attack requires the attacker to obtain an authorized account from Linkis before it can be carried out. Versions of Apache Linkis <=1.5.0 will be affected. We recommend users upgrade the version of Linkis to version 1.6.0.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-49566">详情</a></td>
+      </tr>
+
+      <tr>
        <td>6d0983a97d0c492b804c34ee9bbc3a8a</td>
        <td>CVE-2023-52885</td>
-       <td>2024-07-14 08:15:01 <img src="imgs/new.gif" /></td>
+       <td>2024-07-14 08:15:01</td>
        <td>In the Linux kernel, the following vulnerability has been resolved: SUNRPC: Fix UAF in svc_tcp_listen_data_ready() After the listener svc_sock is freed, and before invoking svc_tcp_accept() for the established child sock, there is a window that the newsock retaining a freed listener svc_sock in sk_user_data which cloning from parent. In the race window, if data is received on the newsock, we will observe use-after-free report in svc_tcp_listen_data_ready(). Reproduce by two tasks: 1. while :; do rpc.nfsd 0 ; rpc.nfsd; done 2. while :; do echo "" | ncat -4 127.0.0.1 2049 ; done KASAN report: ================================================================== BUG: KASAN: slab-use-after-free in svc_tcp_listen_data_ready+0x1cf/0x1f0 [sunrpc] Read of size 8 at addr ffff888139d96228 by task nc/102553 CPU: 7 PID: 102553 Comm: nc Not tainted 6.3.0+ #18 Hardware name: VMware, Inc. VMware Virtual Platform/440BX Desktop Reference Platform, BIOS 6.00 11/12/2020 Call Trace: <IRQ> dump_stack_lvl+0x33/0x50 print_address_description.constprop.0+0x27/0x310 print_report+0x3e/0x70 kasan_report+0xae/0xe0 svc_tcp_listen_data_ready+0x1cf/0x1f0 [sunrpc] tcp_data_queue+0x9f4/0x20e0 tcp_rcv_established+0x666/0x1f60 tcp_v4_do_rcv+0x51c/0x850 tcp_v4_rcv+0x23fc/0x2e80 ip_protocol_deliver_rcu+0x62/0x300 ip_local_deliver_finish+0x267/0x350 ip_local_deliver+0x18b/0x2d0 ip_rcv+0x2fb/0x370 __netif_receive_skb_one_core+0x166/0x1b0 process_backlog+0x24c/0x5e0 __napi_poll+0xa2/0x500 net_rx_action+0x854/0xc90 __do_softirq+0x1bb/0x5de do_softirq+0xcb/0x100 </IRQ> <TASK> ... </TASK> Allocated by task 102371: kasan_save_stack+0x1e/0x40 kasan_set_track+0x21/0x30 __kasan_kmalloc+0x7b/0x90 svc_setup_socket+0x52/0x4f0 [sunrpc] svc_addsock+0x20d/0x400 [sunrpc] __write_ports_addfd+0x209/0x390 [nfsd] write_ports+0x239/0x2c0 [nfsd] nfsctl_transaction_write+0xac/0x110 [nfsd] vfs_write+0x1c3/0xae0 ksys_write+0xed/0x1c0 do_syscall_64+0x38/0x90 entry_SYSCALL_64_after_hwframe+0x72/0xdc Freed by task 102551: kasan_save_stack+0x1e/0x40 kasan_set_track+0x21/0x30 kasan_save_free_info+0x2a/0x50 __kasan_slab_free+0x106/0x190 __kmem_cache_free+0x133/0x270 svc_xprt_free+0x1e2/0x350 [sunrpc] svc_xprt_destroy_all+0x25a/0x440 [sunrpc] nfsd_put+0x125/0x240 [nfsd] nfsd_svc+0x2cb/0x3c0 [nfsd] write_threads+0x1ac/0x2a0 [nfsd] nfsctl_transaction_write+0xac/0x110 [nfsd] vfs_write+0x1c3/0xae0 ksys_write+0xed/0x1c0 do_syscall_64+0x38/0x90 entry_SYSCALL_64_after_hwframe+0x72/0xdc Fix the UAF by simply doing nothing in svc_tcp_listen_data_ready() if state != TCP_LISTEN, that will avoid dereferencing svsk for all child socket.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-52885">详情</a></td>
       </tr>
@@ -292,7 +372,7 @@
       <tr>
        <td>2a4b63d57c0e3a978301b4fbc867a5fb</td>
        <td>CVE-2024-6730</td>
-       <td>2024-07-14 02:15:03 <img src="imgs/new.gif" /></td>
+       <td>2024-07-14 02:15:03</td>
        <td>A vulnerability was found in Nanjing Xingyuantu Technology SparkShop up to 1.1.6. It has been rated as critical. This issue affects some unknown processing of the file /api/Common/uploadFile. The manipulation of the argument file leads to unrestricted upload. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The associated identifier of this vulnerability is VDB-271403.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-6730">详情</a></td>
       </tr>
@@ -300,7 +380,7 @@
       <tr>
        <td>8af0b02674cd01b58ee357c0543fff72</td>
        <td>CVE-2024-6729</td>
-       <td>2024-07-14 02:15:02 <img src="imgs/new.gif" /></td>
+       <td>2024-07-14 02:15:02</td>
        <td>A vulnerability was found in SourceCodester Kortex Lite Advocate Office Management System 1.0. It has been declared as critical. This vulnerability affects unknown code of the file /control/add_act.php. The manipulation of the argument aname leads to sql injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. VDB-271402 is the identifier assigned to this vulnerability.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-6729">详情</a></td>
       </tr>
@@ -308,7 +388,7 @@
       <tr>
        <td>2eafabe0b90d4189f4ca12bcfc02a174</td>
        <td>CVE-2024-6728</td>
-       <td>2024-07-14 01:15:01 <img src="imgs/new.gif" /></td>
+       <td>2024-07-14 01:15:01</td>
        <td>A vulnerability was found in itsourcecode Tailoring Management System 1.0. It has been classified as critical. This affects an unknown part of the file typeedit.php. The manipulation of the argument id leads to sql injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-271401 was assigned to this vulnerability.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-6728">详情</a></td>
       </tr>
@@ -439,86 +519,6 @@
        <td>2024-07-09 11:15:15</td>
        <td>Longse NVR (Network Video Recorder) model NVR3608PGE2W, as well as products based on this device, are transmitting user's login and password to a remote control service without using any encryption. This enables an on-path attacker to eavesdrop the credentials and subsequently obtain access to the video stream. The credentials are being sent when a user decides to change his password in router's portal.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-5631">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1a3155dc7dcae8fee2b91bac9e437761</td>
-       <td>CVE-2024-4862</td>
-       <td>2024-07-09 11:15:15</td>
-       <td>The WPBITS Addons For Elementor Page Builder plugin for WordPress is vulnerable to Stored Cross-Site Scripting via several widgets in all versions up to, and including, 1.5 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-4862">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3f08a1d3ca7d4252e86fa38ee54eeca7</td>
-       <td>CVE-2024-37462</td>
-       <td>2024-07-09 11:15:15</td>
-       <td>Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability in G5Theme Ultimate Bootstrap Elements for Elementor allows Path Traversal.This issue affects Ultimate Bootstrap Elements for Elementor: from n/a through 1.4.2.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-37462">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f164cf253721f1b487776ddde1ba0358</td>
-       <td>CVE-2024-37455</td>
-       <td>2024-07-09 11:15:15</td>
-       <td>Improper Privilege Management vulnerability in Brainstorm Force Ultimate Addons for Elementor allows Privilege Escalation.This issue affects Ultimate Addons for Elementor: from n/a through 1.36.31.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-37455">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0e23ca3c7bd15ff87b3f41c825b750ed</td>
-       <td>CVE-2024-37454</td>
-       <td>2024-07-09 11:15:14</td>
-       <td>Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability in AWSM Innovations AWSM Team allows Path Traversal.This issue affects AWSM Team: from n/a through 1.3.1.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-37454">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>454a7dcd012ab3a0ce189373a4e46419</td>
-       <td>CVE-2024-37442</td>
-       <td>2024-07-09 11:15:14</td>
-       <td>Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection') vulnerability in Photo Gallery Team Photo Gallery by Ays allows Code Injection.This issue affects Photo Gallery by Ays: from n/a before 5.7.1.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-37442">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c606b570f9a0282ee1b634bf7702842b</td>
-       <td>CVE-2024-37999</td>
-       <td>2024-07-08 11:15:10</td>
-       <td>A vulnerability has been identified in Medicalis Workflow Orchestrator (All versions). The affected application executes as a trusted account with high privileges and network access. This could allow an authenticated local attacker to escalate privileges.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-37999">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5c688c042e6ae09c664c93f3dc523d27</td>
-       <td>CVE-2024-27903</td>
-       <td>2024-07-08 11:15:10</td>
-       <td>OpenVPN plug-ins on Windows with OpenVPN 2.6.9 and earlier could be loaded from any directory, which allows an attacker to load an arbitrary plug-in which can be used to interact with the privileged OpenVPN interactive service.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-27903">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>18fba033494f24bdf0496d1156fdca55</td>
-       <td>CVE-2024-27459</td>
-       <td>2024-07-08 11:15:10</td>
-       <td>The interactive service in OpenVPN 2.6.9 and earlier allows an attacker to send data causing a stack overflow which can be used to execute arbitrary code with more privileges.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-27459">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8c07f627da71113e61c9d5968a7dfd79</td>
-       <td>CVE-2024-24974</td>
-       <td>2024-07-08 11:15:10</td>
-       <td>The interactive service in OpenVPN 2.6.9 and earlier allows the OpenVPN service pipe to be accessed remotely, which allows a remote attacker to interact with the privileged OpenVPN interactive service.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-24974">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>25430873b62b53a507c03ce5c6d65422</td>
-       <td>CVE-2024-37389</td>
-       <td>2024-07-08 08:15:10</td>
-       <td>Apache NiFi 1.10.0 through 1.26.0 and 2.0.0-M1 through 2.0.0-M3 support a description field in the Parameter Context configuration that is vulnerable to cross-site scripting. An authenticated user, authorized to configure a Parameter Context, can enter arbitrary JavaScript code, which the client browser will execute within the session context of the authenticated user. Upgrading to Apache NiFi 1.27.0 or 2.0.0-M4 is the recommended mitigation.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-37389">详情</a></td>
       </tr>
 
      </tbody>
@@ -1962,6 +1962,126 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>f55655a41bb25851eb0fbad346c334ca</td>
+       <td>CVE-2024-21502</td>
+       <td>2024-07-15 09:09:09 <img src="imgs/new.gif" /></td>
+       <td>fastecdsa未初始化变量使用漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/98714">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>922ecf8e9cb633cacc73e22de55bfa3e</td>
+       <td>CVE-2024-27132</td>
+       <td>2024-07-15 09:09:09 <img src="imgs/new.gif" /></td>
+       <td>Mlflow跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/98713">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ca7b3b2165aa255fd6266747fd3d3027</td>
+       <td>CVE-2024-22395</td>
+       <td>2024-07-15 09:09:09 <img src="imgs/new.gif" /></td>
+       <td>SonicWALL SMA100访问控制错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/98712">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>83fe280a22310111c55c073f10a5525d</td>
+       <td>CVE-2022-38357</td>
+       <td>2024-07-15 09:09:09 <img src="imgs/new.gif" /></td>
+       <td>IBM Cognos Analytics Mobile Server拒绝服务漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/98711">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c188456ad28f890f85aca73a0b6dbc3c</td>
+       <td>CVE-2023-38344</td>
+       <td>2024-07-15 09:09:09 <img src="imgs/new.gif" /></td>
+       <td>IBM Cognos Analytics跨站请求伪造漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/98710">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>49499e2525b1bb6904919624b9ae6afa</td>
+       <td>CVE-2023-49959</td>
+       <td>2024-07-15 09:09:09 <img src="imgs/new.gif" /></td>
+       <td>Indu-Sol PROFINET-INspektor NT命令注入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/98709">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ed6c4a346c356c45f2b89e4cf9345dc1</td>
+       <td>CVE-2024-0387</td>
+       <td>2024-07-15 09:09:09 <img src="imgs/new.gif" /></td>
+       <td>MOXA EDS-4000/G4000 Series混淆代理漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/98708">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8afd49c3aca38835d556cb378a7d946e</td>
+       <td>CVE-2021-33161</td>
+       <td>2024-07-15 09:09:09 <img src="imgs/new.gif" /></td>
+       <td>Intel Ethernet Adapters和Intel Ethernet Controller I225输入验证错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/98707">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>abaac6240be854c7821af1049c441c6e</td>
+       <td>CVE-2021-33157</td>
+       <td>2024-07-15 09:09:09 <img src="imgs/new.gif" /></td>
+       <td>Intel Ethernet Adapters和Intel Ethernet Controller I225控制流管理错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/98706">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>42c3ebde465a2fd8218e8ef64816a12b</td>
+       <td>CVE-2021-33162</td>
+       <td>2024-07-15 09:09:09 <img src="imgs/new.gif" /></td>
+       <td>Intel Ethernet Adapters和Intel Ethernet Controller I225访问控制错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/98705">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>dbe7189089e3f36f9a7f03022f03c072</td>
+       <td>CVE-2024-0439</td>
+       <td>2024-07-15 09:09:09 <img src="imgs/new.gif" /></td>
+       <td>AnythingLLM权限管理错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/98704">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>444da3084f136582639885b17c4b759b</td>
+       <td>CVE-2023-51393</td>
+       <td>2024-07-15 09:09:09 <img src="imgs/new.gif" /></td>
+       <td>Silicon Labs Ember ZNet SDK不受控制的资源消耗漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/98703">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>04df5bbfa8b02bd56f8d80403c3c0146</td>
+       <td>CVE-2023-5775</td>
+       <td>2024-07-15 09:09:09 <img src="imgs/new.gif" /></td>
+       <td>WordPress BackWPup Plugin信息泄露漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/98702">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>96c1f71421a1f98c92da27d909070961</td>
+       <td>CVE-2023-38359</td>
+       <td>2024-07-15 09:09:09 <img src="imgs/new.gif" /></td>
+       <td>IBM Cognos Analytics跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/98701">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>56be2714d12349adbaa570a23fbc4962</td>
+       <td>CVE-2024-25875</td>
+       <td>2024-07-15 09:09:09 <img src="imgs/new.gif" /></td>
+       <td>Enhavo CMS跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/98700">详情</a></td>
+      </tr>
+
+      <tr>
        <td>044e471531c5df1b655ffbe038103e3e</td>
        <td>CVE-2023-38086</td>
        <td>2024-07-12 09:09:09</td>
@@ -2079,126 +2199,6 @@
        <td>2024-07-12 09:09:09</td>
        <td>NETGEAR ProSAFE SQL注入权限提升漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/98630">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3032e6f79426b544b41d495bab0f471e</td>
-       <td>CVE-2024-1566</td>
-       <td>2024-07-11 09:09:07</td>
-       <td>WordPress Redirects Plugin未授权数据修改漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/98525">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>de3cdaa15ec26b12303eb127eb12c1f2</td>
-       <td>CVE-2024-1516</td>
-       <td>2024-07-11 09:09:07</td>
-       <td>WordPress WP eCommerce Plugin未授权帖子创建漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/98524">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9940e56c2b8e1b1d93eb86988f8abea0</td>
-       <td>CVE-2024-0975</td>
-       <td>2024-07-11 09:09:07</td>
-       <td>WordPress Access Control Plugin信息泄露漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/98523">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>59cc706839722750097c0bfdcfd5e735</td>
-       <td>CVE-2024-27103</td>
-       <td>2024-07-11 09:09:07</td>
-       <td>Querybook跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/98522">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>70a6d889b0c8994532e2ee267e1982c9</td>
-       <td>CVE-2024-24772</td>
-       <td>2024-07-11 09:09:07</td>
-       <td>Apache Superset输入验证错误漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/98521">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3cca32f228b8cf1f7fe1b5eb23a67604</td>
-       <td>CVE-2023-6917</td>
-       <td>2024-07-11 09:09:07</td>
-       <td>Performance Co-Pilot权限提升漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/98520">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e4e246a46a417798a2df1e68aa51c74f</td>
-       <td>CVE-2024-26016</td>
-       <td>2024-07-11 09:09:07</td>
-       <td>Apache Superset授权错误漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/98519">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>69e567c89f5271399e9fd9b6a3fa3a81</td>
-       <td>CVE-2024-1847</td>
-       <td>2024-07-11 09:09:07</td>
-       <td>eDrawings内存错误引用漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/98518">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>67115f35336f3423de657360614ec949</td>
-       <td>CVE-2024-1632</td>
-       <td>2024-07-11 09:09:07</td>
-       <td>Progress Sitefinityt访问控制错误漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/98517">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f08e4789d90bed9dce47ac41def7529e</td>
-       <td>CVE-2024-21885</td>
-       <td>2024-07-11 09:09:07</td>
-       <td>X.org Server缓冲区溢出漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/98516">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3f91165eea96e15f4216165251788e18</td>
-       <td>CVE-2024-24779</td>
-       <td>2024-07-11 09:09:07</td>
-       <td>Apache Superset授权错误漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/98515">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>385df040f0ac9f716d3af50f16187584</td>
-       <td>CVE-2024-27315</td>
-       <td>2024-07-11 09:09:07</td>
-       <td>Apache Superset信息泄露漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/98514">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>fabfbfc2a4df26b5d318c66d0cceaa4f</td>
-       <td>CVE-2024-22459</td>
-       <td>2024-07-11 09:09:07</td>
-       <td>Dell ECS访问控制错误漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/98513">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>22f2f2eec7aab0efaf6ced57b20add12</td>
-       <td>CVE-2024-1965</td>
-       <td>2024-07-11 09:09:07</td>
-       <td>Haivision Aviwest Manager和Aviwest Steamhub服务器端请求伪造漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/98512">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>74e18ecc7944c8c9741a531243e3f296</td>
-       <td>CVE-2024-1860</td>
-       <td>2024-07-11 09:09:07</td>
-       <td>WordPress Disable Json API Plugin未授权数据修改漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/98511">详情</a></td>
       </tr>
 
      </tbody>
