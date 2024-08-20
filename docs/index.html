@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2024-08-18 09:12:13 -->
+<!-- RELEASE TIME : 2024-08-20 09:13:13 -->
 <html lang="zh-cn">
 
  <head>
@@ -282,6 +282,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>4b5abbe04f8288c115b9da4891a19bca</td>
+       <td>CVE-2024-25582</td>
+       <td>2024-08-19 07:15:03 <img src="imgs/new.gif" /></td>
+       <td>Module savepoints could be abused to inject references to malicious code delivered through the same domain. Attackers could perform malicious API requests or extract information from the users account. Exploiting this vulnerability requires temporary access to an account or successful social engineering to make a user follow a prepared link to a malicious account. Please deploy the provided updates and patch releases. The savepoint module path has been restricted to modules that provide the feature, excluding any arbitrary or non-existing modules. No publicly available exploits are known.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-25582">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c43b3414c73e2b5fa5fce2464de03cb3</td>
+       <td>CVE-2024-6843</td>
+       <td>2024-08-19 06:15:06 <img src="imgs/new.gif" /></td>
+       <td>The Chatbot with ChatGPT WordPress plugin before 2.4.5 does not sanitise and escape user inputs, which could allow unauthenticated users to perform Stored Cross-Site Scripting attacks against admins</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-6843">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>646d4a8dac114032310ba0c1ba7430b9</td>
+       <td>CVE-2024-6451</td>
+       <td>2024-08-19 06:15:05 <img src="imgs/new.gif" /></td>
+       <td>AI Engine < 2.4.3 is susceptible to remote-code-execution (RCE) via Log Poisoning. The AI Engine WordPress plugin before 2.5.1 fails to validate the file extension of "logs_path", allowing Administrators to change log filetypes from .log to .php.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-6451">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9cd979950fc630c364c23f5a4b809edf</td>
+       <td>CVE-2024-6330</td>
+       <td>2024-08-19 06:15:05 <img src="imgs/new.gif" /></td>
+       <td>The GEO my WP WordPress plugin before 4.5.0.2 does not prevent unauthenticated attackers from including arbitrary files in PHP's execution context, which leads to Remote Code Execution.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-6330">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>81bd60611363d775ee8e33230601f920</td>
+       <td>CVE-2024-44083</td>
+       <td>2024-08-19 04:15:04 <img src="imgs/new.gif" /></td>
+       <td>ida64.dll in Hex-Rays IDA Pro through 8.4 crashes when there is a section that has many jumps linked, and the final jump corresponds to the payload from where the actual entry point will be invoked. NOTE: in many use cases, this is an inconvenience but not a security issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-44083">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>14605e427cb6de6d4b65e0418052307e</td>
+       <td>CVE-2024-7921</td>
+       <td>2024-08-19 03:15:03 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability has been found in Anhui Deshun Intelligent Technology Jieshun JieLink+ JSOTC2016 up to 20240805 and classified as problematic. Affected by this vulnerability is an unknown functionality of the file /report/ParkOutRecord/GetDataList. The manipulation leads to improper access controls. The attack can be launched remotely. The exploit has been disclosed to the public and may be used.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-7921">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>35b0b48b0a8aea375a03e552ec84b57d</td>
+       <td>CVE-2024-44076</td>
+       <td>2024-08-19 03:15:03 <img src="imgs/new.gif" /></td>
+       <td>In Microcks before 1.10.0, the POST /api/import and POST /api/export endpoints allow non-administrator access.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-44076">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ab5986b4fe05cf88ebfa3af454b9f37f</td>
+       <td>CVE-2024-44073</td>
+       <td>2024-08-19 03:15:03 <img src="imgs/new.gif" /></td>
+       <td>The Miniscript (aka rust-miniscript) library before 12.2.0 for Rust allows stack consumption because it does not properly track tree depth.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-44073">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>34c8c2ced3c09395106a452ed0ebf93f</td>
+       <td>CVE-2024-44070</td>
+       <td>2024-08-19 02:15:04 <img src="imgs/new.gif" /></td>
+       <td>An issue was discovered in FRRouting (FRR) through 10.1. bgp_attr_encap in bgpd/bgp_attr.c does not check the actual remaining stream length before taking the TLV value.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-44070">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>607850d8f3db42e783ff740105635a33</td>
+       <td>CVE-2024-44069</td>
+       <td>2024-08-19 02:15:04 <img src="imgs/new.gif" /></td>
+       <td>Pi-hole before 6 allows unauthenticated admin/api.php?setTempUnit= calls to change the temperature units of the web dashboard. NOTE: the supplier reportedly does "not consider the bug a security issue" but the specific motivation for letting arbitrary persons change the value (Celsius, Fahrenheit, or Kelvin), seen by the device owner, is unclear.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-44069">详情</a></td>
+      </tr>
+
+      <tr>
        <td>e2f738d69277570c358f458b40114ab3</td>
        <td>CVE-2024-7886</td>
        <td>2024-08-16 22:15:04</td>
@@ -439,86 +519,6 @@
        <td>2024-08-15 22:15:06</td>
        <td>In setForceHideNonSystemOverlayWindowIfNeeded of WindowState.java, there is a possible way for message content to be visible on the screensaver while lock screen visibility settings are restricted by the user due to a logic error in the code. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-34741">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2eb3c917b53b7ce3b72aaa233f5be803</td>
-       <td>CVE-2024-7754</td>
-       <td>2024-08-14 01:15:12</td>
-       <td>A vulnerability was found in SourceCodester Clinics Patient Management System 1.0. It has been rated as critical. This issue affects some unknown processing of the file /ajax/check_medicine_name.php. The manipulation of the argument user_name leads to sql injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-7754">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7ede4c20e39a9cf498c2e744cbedcaee</td>
-       <td>CVE-2024-7753</td>
-       <td>2024-08-14 01:15:12</td>
-       <td>A vulnerability was found in SourceCodester Clinics Patient Management System 1.0. It has been declared as problematic. This vulnerability affects unknown code of the file /user_images/. The manipulation leads to direct request. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-7753">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3f0e39b7ac3c21af0515b961820e0472</td>
-       <td>CVE-2024-7752</td>
-       <td>2024-08-14 00:15:08</td>
-       <td>A vulnerability was found in SourceCodester Clinics Patient Management System 1.0. It has been classified as problematic. This affects an unknown part of the file /update_medicine.php. The manipulation of the argument medicine_name leads to cross site scripting. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-7752">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>bb605a5e8598d9c0c90aae6b76bfe66d</td>
-       <td>CVE-2024-38163</td>
-       <td>2024-08-14 00:15:07</td>
-       <td>Windows Update Stack Elevation of Privilege Vulnerability</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-38163">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a869e0819d7d83354277dde431f9540e</td>
-       <td>CVE-2024-7751</td>
-       <td>2024-08-13 23:15:20</td>
-       <td>A vulnerability was found in SourceCodester Clinics Patient Management System 1.0 and classified as critical. Affected by this issue is some unknown functionality of the file /update_medicine.php. The manipulation of the argument hidden_id leads to sql injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-7751">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0f6ab73365fafb90bf3ed951e39e2ce0</td>
-       <td>CVE-2024-7750</td>
-       <td>2024-08-13 23:15:19</td>
-       <td>A vulnerability has been found in SourceCodester Clinics Patient Management System 1.0 and classified as critical. Affected by this vulnerability is an unknown functionality of the file /medicines.php. The manipulation of the argument medicine_name leads to sql injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-7750">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>478224007174a8fe8cd775a3740fc5cc</td>
-       <td>CVE-2024-28986</td>
-       <td>2024-08-13 23:15:16</td>
-       <td>SolarWinds Web Help Desk was found to be susceptible to a Java Deserialization Remote Code Execution vulnerability that, if exploited, would allow an attacker to run commands on the host machine. While it was reported as an unauthenticated vulnerability, SolarWinds has been unable to reproduce it without authentication after thorough testing. However, out of an abundance of caution, we recommend all Web Help Desk customers apply the patch, which is now available.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-28986">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ce15525086823fece9352d6158b1edb2</td>
-       <td>CVE-2024-7749</td>
-       <td>2024-08-13 22:15:08</td>
-       <td>A vulnerability, which was classified as problematic, was found in SourceCodester Accounts Manager App 1.0. Affected is an unknown function of the file /endpoint/add-account.php. The manipulation of the argument account_name leads to cross site scripting. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-7749">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e9695854a1725381b514c595181d2f56</td>
-       <td>CVE-2024-7748</td>
-       <td>2024-08-13 22:15:08</td>
-       <td>A vulnerability, which was classified as critical, has been found in SourceCodester Accounts Manager App 1.0. This issue affects some unknown processing of the file /endpoint/delete-account.php. The manipulation of the argument account leads to sql injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-7748">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>94ddcc4a40265aac386631b2bbfd5a46</td>
-       <td>CVE-2024-7743</td>
-       <td>2024-08-13 21:15:17</td>
-       <td>A vulnerability was found in wanglongcn ltcms 1.0.20. It has been declared as critical. Affected by this vulnerability is the function downloadUrl of the file /api/file/downloadUrl of the component API Endpoint. The manipulation of the argument file leads to server-side request forgery. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-7743">详情</a></td>
       </tr>
 
      </tbody>
