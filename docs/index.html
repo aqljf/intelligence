@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2024-08-23 09:13:33 -->
+<!-- RELEASE TIME : 2024-08-24 09:12:13 -->
 <html lang="zh-cn">
 
  <head>
@@ -282,6 +282,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>2f8d277589c2f507e4f10a811a4f5c66</td>
+       <td>CVE-2024-43105</td>
+       <td>2024-08-23 07:25:00 <img src="imgs/new.gif" /></td>
+       <td>Mattermost Plugin Channel Export versions <=1.0.0 fail to restrict concurrent runs of the /export command which allows a user to consume excessive resource by running the /export command multiple times at once.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-43105">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d973e92a83228b6245f5471593c72a44</td>
+       <td>CVE-2024-40766</td>
+       <td>2024-08-23 07:15:03 <img src="imgs/new.gif" /></td>
+       <td>An improper access control vulnerability has been identified in the SonicWall SonicOS management access, potentially leading to unauthorized resource access and in specific conditions, causing the firewall to crash. This issue affects SonicWall Firewall Gen 5 and Gen 6 devices, as well as Gen 7 devices running SonicOS 7.0.1-5035 and older versions.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-40766">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>cfb7d6bf56813cd7a4ed9614b1d6ddce</td>
+       <td>CVE-2024-6715</td>
+       <td>2024-08-23 06:15:04 <img src="imgs/new.gif" /></td>
+       <td>The Ditty WordPress plugin before 3.1.46 re-introduced a previously fixed security issue (https://wpscan.com/vulnerability/80a9eb3a-2cb1-4844-9004-ba2554b2d46c/) in v3.1.39</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-6715">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>cdae8133d71b17563339f96eee5ea38e</td>
+       <td>CVE-2024-3282</td>
+       <td>2024-08-23 06:15:03 <img src="imgs/new.gif" /></td>
+       <td>The WP Table Builder WordPress plugin through 1.5.0 does not sanitise and escape some of its Table data, which could allow high privilege users such as admin to perform Stored Cross-Site Scripting attacks even when the unfiltered_html capability is disallowed (for example in multisite setup)</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-3282">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>4f47889cf2fff7ca9b78b57fbad2d3a6</td>
+       <td>CVE-2024-7258</td>
+       <td>2024-08-23 05:15:15 <img src="imgs/new.gif" /></td>
+       <td>The WooCommerce Google Feed Manager plugin for WordPress is vulnerable to unauthorized loss of data due to a missing capability check on the 'wppfm_removeFeedFile' function in all versions up to, and including, 2.8.0. This makes it possible for authenticated attackers, with Contributor-level access and above, to delete arbitrary files on the server, which can easily lead to remote code execution when the right file is deleted (such as wp-config.php).</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-7258">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e69509f7ee3b18eaa0c47c76b6371702</td>
+       <td>CVE-2024-7559</td>
+       <td>2024-08-23 03:15:04 <img src="imgs/new.gif" /></td>
+       <td>The File Manager Pro plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation and capability checks in the mk_file_folder_manager AJAX action in all versions up to, and including, 8.3.7. This makes it possible for authenticated attackers, with Subscriber-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-7559">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>26190261b4a2c4c9888b2f3777cba39d</td>
+       <td>CVE-2024-43477</td>
+       <td>2024-08-23 02:15:07 <img src="imgs/new.gif" /></td>
+       <td>Improper access control in Decentralized Identity Services allows an unathenticated attacker to disable Verifiable ID's on another tenant.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-43477">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9c3f075af344d5bc51673365c963bda1</td>
+       <td>CVE-2024-8089</td>
+       <td>2024-08-23 00:15:08 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability was found in SourceCodester E-Commerce System 1.0. It has been classified as critical. Affected is an unknown function of the file /ecommerce/admin/products/controller.php. The manipulation of the argument photo leads to unrestricted upload. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-8089">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>aca7cea818120b4f9f32a3bc151b55b0</td>
+       <td>CVE-2024-8087</td>
+       <td>2024-08-22 23:15:08</td>
+       <td>A vulnerability was found in SourceCodester E-Commerce System 1.0 and classified as critical. This issue affects some unknown processing of the file /ecommerce/popup_Item.php. The manipulation of the argument id leads to sql injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-8087">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>51a77aafd4aae5e5910691f1703ffc52</td>
+       <td>CVE-2024-8086</td>
+       <td>2024-08-22 23:15:08</td>
+       <td>A vulnerability has been found in SourceCodester E-Commerce System 1.0 and classified as critical. This vulnerability affects unknown code of the file /ecommerce/admin/login.php of the component Admin Login. The manipulation of the argument user_email leads to sql injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-8086">详情</a></td>
+      </tr>
+
+      <tr>
        <td>ec9ac2e431f0ff7b1df83fa01223745d</td>
        <td>CVE-2024-6339</td>
        <td>2024-08-21 08:15:04</td>
@@ -439,86 +519,6 @@
        <td>2024-08-19 02:15:04</td>
        <td>Pi-hole before 6 allows unauthenticated admin/api.php?setTempUnit= calls to change the temperature units of the web dashboard. NOTE: the supplier reportedly does "not consider the bug a security issue" but the specific motivation for letting arbitrary persons change the value (Celsius, Fahrenheit, or Kelvin), seen by the device owner, is unclear.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-44069">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e2f738d69277570c358f458b40114ab3</td>
-       <td>CVE-2024-7886</td>
-       <td>2024-08-16 22:15:04</td>
-       <td>** DISPUTED ** A vulnerability has been found in Scooter Software Beyond Compare up to 3.3.5.15075 and classified as critical. Affected by this vulnerability is an unknown functionality in the library 7zxa.dll. The manipulation leads to uncontrolled search path. Attacking locally is a requirement. The real existence of this vulnerability is still doubted at the moment. NOTE: The vendor explains that a system must be breached before exploiting this issue.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-7886">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2598410220be29386f45b508b0041282</td>
-       <td>CVE-2024-43395</td>
-       <td>2024-08-16 21:15:06</td>
-       <td>CraftOS-PC 2 is a rewrite of the desktop port of CraftOS from the popular Minecraft mod ComputerCraft using C++ and a modified version of PUC Lua, as well as SDL for drawing. Prior to version 2.8.3, users of CraftOS-PC 2 on Windows can escape the computer folder and access files anywhere without permission or notice by obfuscating `..`s to bypass the internal check preventing parent directory traversal. Version 2.8.3 contains a patch for this issue.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-43395">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1abb747f81d7edcf2e97570000b55d7a</td>
-       <td>CVE-2024-43472</td>
-       <td>2024-08-16 20:15:13</td>
-       <td>Microsoft Edge (Chromium-based) Elevation of Privilege Vulnerability</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-43472">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4bc7c93daabdcf542b49e122d948ad09</td>
-       <td>CVE-2024-43042</td>
-       <td>2024-08-16 20:15:13</td>
-       <td>Pluck CMS 4.7.18 does not restrict failed login attempts, allowing attackers to execute a brute force attack.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-43042">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8a1964c795284808b20e54c15784b98d</td>
-       <td>CVE-2024-43011</td>
-       <td>2024-08-16 20:15:13</td>
-       <td>An arbitrary file deletion vulnerability exists in the admin/del.php file at line 62 in ZZCMS 2023 and earlier. Due to insufficient validation and sanitization of user input for file paths, an attacker can exploit this vulnerability by using directory traversal techniques to delete arbitrary files on the server. This can lead to the deletion of critical files, potentially disrupting the normal operation of the system.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-43011">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5883bc18f7e4ebcf4ad29633352ef5be</td>
-       <td>CVE-2024-43009</td>
-       <td>2024-08-16 20:15:13</td>
-       <td>A reflected cross-site scripting (XSS) vulnerability exists in user/login.php at line 24 in ZZCMS 2023 and earlier. The application directly inserts the value of the HTTP_REFERER header into the HTML response without proper sanitization. An attacker can exploit this vulnerability by tricking a user into visiting a specially crafted URL, which includes a malicious Referer header. This can lead to the execution of arbitrary JavaScript code in the context of the victim's browser, potentially resulting in session hijacking, defacement, or other malicious activities.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-43009">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4ddac24916aa004e953b488d9afee331</td>
-       <td>CVE-2024-43006</td>
-       <td>2024-08-16 20:15:13</td>
-       <td>A stored cross-site scripting (XSS) vulnerability exists in ZZCMS2023 in the ask/show.php file at line 21. An attacker can exploit this vulnerability by sending a specially crafted POST request to /user/ask_edit.php?action=add, which includes malicious JavaScript code in the 'content' parameter. When a user visits the ask/show_{newsid}.html page, the injected script is executed in the context of the user's browser, leading to potential theft of cookies, session tokens, or other sensitive information.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-43006">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4da11a675f4271f06f723aab593ce854</td>
-       <td>CVE-2024-43005</td>
-       <td>2024-08-16 20:15:13</td>
-       <td>A reflected cross-site scripting (XSS) vulnerability in the component dl_liuyan_save.php of ZZCMS v2023 allows attackers to execute arbitrary code in the context of a user's browser via injecting a crafted payload.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-43005">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>54299a537a40dc679bad78e1decc0e74</td>
-       <td>CVE-2023-4717</td>
-       <td>2024-08-16 20:15:10</td>
-       <td>Rejected reason: ** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. Reason: This candidate was issued in error. Notes: All references and descriptions in this candidate have been removed to prevent accidental usage.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-4717">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a73a2a30c7fafc86740bcd8ce8ef3b10</td>
-       <td>CVE-2023-47728</td>
-       <td>2024-08-16 20:15:09</td>
-       <td>IBM QRadar Suite Software 1.10.12.0 through 1.10.22.0 and IBM Cloud Pak for Security 1.10.0.0 through 1.10.11.0 could allow a remote attacker to obtain sensitive information when a detailed technical error message is returned in the request. This information could be used in further attacks against the system. IBM X-Force ID: 272201.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-47728">详情</a></td>
       </tr>
 
      </tbody>
