@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2024-09-02 09:12:11 -->
+<!-- RELEASE TIME : 2024-09-04 09:11:13 -->
 <html lang="zh-cn">
 
  <head>
@@ -282,9 +282,89 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>77ea58e2de4ed902d61432037fa18fb8</td>
+       <td>CVE-2024-8374</td>
+       <td>2024-09-03 10:15:06 <img src="imgs/new.gif" /></td>
+       <td>UltiMaker Cura slicer versions 5.7.0-beta.1 through 5.7.2 are vulnerable to code injection via the 3MF format reader (/plugins/ThreeMFReader.py). The vulnerability arises from improper handling of the drop_to_buildplate property within 3MF files, which are ZIP archives containing the model data. When a 3MF file is loaded in Cura, the value of the drop_to_buildplate property is passed to the Python eval() function without proper sanitization, allowing an attacker to execute arbitrary code by crafting a malicious 3MF file. This vulnerability poses a significant risk as 3MF files are commonly shared via 3D model databases.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-8374">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>35ac9738005f92c54db9addd741aa1c8</td>
+       <td>CVE-2024-45587</td>
+       <td>2024-09-03 10:15:06 <img src="imgs/new.gif" /></td>
+       <td>This vulnerability exists in Symphony XTS Web Trading platform version 2.0.0.1_P160 due to improper access controls on APIs in the Transaction module of vulnerable application. An authenticated remote attacker could exploit this vulnerability by manipulating parameters through HTTP request which could lead to compromise of other user accounts.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-45587">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>be3e1e033b83f0ee498f3642ef5e430f</td>
+       <td>CVE-2024-45586</td>
+       <td>2024-09-03 10:15:06 <img src="imgs/new.gif" /></td>
+       <td>This vulnerability exists due to improper access controls on APIs in the Authentication module of Symphony XTS Web Trading and Mobile Trading platforms (version 2.0.0.1_P160). An authenticated remote attacker could exploit this vulnerability by manipulating parameters through HTTP request which could lead to unauthorized account take over belonging to other users.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-45586">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8042569f6e641780b595c30078be8ef5</td>
+       <td>CVE-2024-3655</td>
+       <td>2024-09-03 10:15:06 <img src="imgs/new.gif" /></td>
+       <td>Use After Free vulnerability in Arm Ltd Bifrost GPU Kernel Driver, Arm Ltd Valhall GPU Kernel Driver, Arm Ltd Arm 5th Gen GPU Architecture Kernel Driver allows a local non-privileged user to make improper GPU memory processing operations to gain access to already freed memory.This issue affects Bifrost GPU Kernel Driver: from r43p0 through r49p0; Valhall GPU Kernel Driver: from r43p0 through r49p0; Arm 5th Gen GPU Architecture Kernel Driver: from r43p0 through r49p0.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-3655">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>183381cfb4f87410f8030bd0261e9522</td>
+       <td>CVE-2024-38811</td>
+       <td>2024-09-03 10:15:05 <img src="imgs/new.gif" /></td>
+       <td>VMware Fusion (13.x before 13.6) contains a code-execution vulnerability due to the usage of an insecure environment variable. A malicious actor with standard user privileges may exploit this vulnerability to execute code in the context of the Fusion application.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-38811">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1269d3e201fe0112afdac37ee8af1d66</td>
+       <td>CVE-2024-37136</td>
+       <td>2024-09-03 06:15:14 <img src="imgs/new.gif" /></td>
+       <td>Dell Path to PowerProtect, versions 1.1, 1.2, contains an Exposure of Private Personal Information to an Unauthorized Actor vulnerability. A remote high privileged attacker could potentially exploit this vulnerability, leading to information exposure.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-37136">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6c167e14655b97ef2098990cb4c18678</td>
+       <td>CVE-2024-7261</td>
+       <td>2024-09-03 03:15:03 <img src="imgs/new.gif" /></td>
+       <td>The improper neutralization of special elements in the parameter "host" in the CGI program of Zyxel NWA1123ACv3 firmware version 6.70(ABVT.4) and earlier, WAC500 firmware version 6.70(ABVS.4) and earlier, WAX655E firmware version 7.00(ACDO.1) and earlier, WBE530 firmware version 7.00(ACLE.1) and earlier, and USG LITE 60AX firmware version V2.00(ACIP.2) could allow an unauthenticated attacker to execute OS commands by sending a crafted cookie to a vulnerable device.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-7261">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>981c5f288f152c79e587a08460fc137c</td>
+       <td>CVE-2024-42061</td>
+       <td>2024-09-03 03:15:03 <img src="imgs/new.gif" /></td>
+       <td>A reflected cross-site scripting (XSS) vulnerability in the CGI program "dynamic_script.cgi" of Zyxel ATP series firmware versions from V4.32 through V5.38, USG FLEX series firmware versions from V4.50 through V5.38, USG FLEX 50(W) series firmware versions from V4.16 through V5.38, and USG20(W)-VPN series firmware versions from V4.16 through V5.38 could allow an attacker to trick a user into visiting a crafted URL with the XSS payload. The attacker could obtain browser-based information if the malicious script is executed on the victim’s browser.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-42061">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>31edb251c4ff2a372056aaf1b05141ee</td>
+       <td>CVE-2024-7203</td>
+       <td>2024-09-03 02:15:05 <img src="imgs/new.gif" /></td>
+       <td>A post-authentication command injection vulnerability in Zyxel ATP series firmware versions from V4.60 through V5.38 and USG FLEX series firmware versions from V4.60 through V5.38 could allow an authenticated attacker with administrator privileges to execute some operating system (OS) commands on an affected device by executing a crafted CLI command.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-7203">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3acdaca1f42eb793939643d0199b45bf</td>
+       <td>CVE-2024-6343</td>
+       <td>2024-09-03 02:15:05 <img src="imgs/new.gif" /></td>
+       <td>A buffer overflow vulnerability in the CGI program of Zyxel ATP series firmware versions from V4.32 through V5.38, USG FLEX series firmware versions from V4.50 through V5.38, USG FLEX 50(W) series firmware versions from V4.16 through V5.38, and USG20(W)-VPN series firmware versions from V4.16 through V5.38 could allow an authenticated attacker with administrator privileges to cause denial of service (DoS) conditions by sending a crafted HTTP request to a vulnerable device.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-6343">详情</a></td>
+      </tr>
+
+      <tr>
        <td>241827295878b1c3de31f448e48cbb51</td>
        <td>CVE-2024-8368</td>
-       <td>2024-09-01 05:15:12 <img src="imgs/new.gif" /></td>
+       <td>2024-09-01 05:15:12</td>
        <td>A vulnerability was found in code-projects Hospital Management System 1.0. It has been rated as critical. Affected by this issue is some unknown functionality of the file index.php of the component Login. The manipulation of the argument username leads to sql injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-8368">详情</a></td>
       </tr>
@@ -292,7 +372,7 @@
       <tr>
        <td>84e745187733f3bd8abf34c2c0b7677c</td>
        <td>CVE-2024-8367</td>
-       <td>2024-09-01 04:15:14 <img src="imgs/new.gif" /></td>
+       <td>2024-09-01 04:15:14</td>
        <td>A vulnerability was found in HM Courts & Tribunals Service Probate Back Office up to c1afe0cdb2b2766d9e24872c4e827f8b82a6cd31. It has been classified as problematic. Affected is an unknown function of the file src/main/java/uk/gov/hmcts/probate/service/NotificationService.java of the component Markdown Handler. The manipulation leads to injection. Continious delivery with rolling releases is used by this product. Therefore, no version details of affected nor updated releases are available. The patch is identified as d90230d7cf575e5b0852d56660104c8bd2503c34. It is recommended to apply a patch to fix this issue.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-8367">详情</a></td>
       </tr>
@@ -439,86 +519,6 @@
        <td>2024-08-30 05:15:12</td>
        <td>The Betheme theme for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 27.5.6 via deserialization of untrusted input of the 'mfn-page-items' post meta value. This makes it possible for authenticated attackers, with contributor-level access and above, to inject a PHP Object. No known POP chain is present in the vulnerable plugin. If a POP chain is present via an additional plugin or theme installed on the target system, it could allow the attacker to delete arbitrary files, retrieve sensitive data, or execute code.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-2694">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>649c6eac2ff9f980daeae5055b7894e4</td>
-       <td>CVE-2024-8229</td>
-       <td>2024-08-28 01:15:03</td>
-       <td>A vulnerability was found in Tenda O6 1.0.0.7(2054). It has been declared as critical. This vulnerability affects the function frommacFilterModify of the file /goform/operateMacFilter. The manipulation of the argument mac leads to stack-based buffer overflow. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-8229">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>007594beda9df48e19d50e23b0da29fb</td>
-       <td>CVE-2024-8231</td>
-       <td>2024-08-28 01:00:09</td>
-       <td>A vulnerability classified as critical has been found in Tenda O6 1.0.0.7(2054). Affected is the function fromVirtualSet of the file /goform/setPortForward. The manipulation of the argument ip/localPort/publicPort/app leads to stack-based buffer overflow. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-8231">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9677f08c8e699ef34b22e80a870c319f</td>
-       <td>CVE-2024-8230</td>
-       <td>2024-08-28 01:00:07</td>
-       <td>A vulnerability was found in Tenda O6 1.0.0.7(2054). It has been rated as critical. This issue affects the function fromSafeSetMacFilter of the file /goform/setMacFilterList. The manipulation of the argument remark/type/time leads to stack-based buffer overflow. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-8230">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2f404df340e461899806f346f10ec150</td>
-       <td>CVE-2024-8228</td>
-       <td>2024-08-28 00:15:04</td>
-       <td>A vulnerability was found in Tenda O5 1.0.0.8(5017). It has been classified as critical. This affects the function fromSafeSetMacFilter of the file /goform/setMacFilterList. The manipulation of the argument remark/type/time leads to stack-based buffer overflow. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-8228">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7caab0a6229e93cc493871e431d69149</td>
-       <td>CVE-2024-8227</td>
-       <td>2024-08-28 00:15:04</td>
-       <td>A vulnerability was found in Tenda O1 1.0.0.7(10648) and classified as critical. Affected by this issue is the function fromDhcpSetSer of the file /goform/DhcpSetSer. The manipulation of the argument dhcpStartIp/dhcpEndIp/dhcpGw/dhcpMask/dhcpLeaseTime/dhcpDns1/dhcpDns2 leads to stack-based buffer overflow. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-8227">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>697b406e1986520051370210e9e8f24c</td>
-       <td>CVE-2024-8226</td>
-       <td>2024-08-28 00:15:04</td>
-       <td>A vulnerability has been found in Tenda O1 1.0.0.7(10648) and classified as critical. Affected by this vulnerability is the function formSetCfm of the file /goform/setcfm. The manipulation of the argument funcpara1 leads to stack-based buffer overflow. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-8226">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d33b1a4c2b1373e5ddb77bc669a41c4e</td>
-       <td>CVE-2024-8225</td>
-       <td>2024-08-27 23:15:04</td>
-       <td>A vulnerability, which was classified as critical, was found in Tenda G3 15.11.0.20. Affected is the function formSetSysTime of the file /goform/SetSysTimeCfg. The manipulation of the argument sysTimePolicy leads to stack-based buffer overflow. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-8225">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1625c4f1a67bc62ade9948e9502c70c4</td>
-       <td>CVE-2024-8224</td>
-       <td>2024-08-27 23:15:03</td>
-       <td>A vulnerability, which was classified as critical, has been found in Tenda G3 15.11.0.20. This issue affects the function formSetDebugCfg of the file /goform/setDebugCfg. The manipulation of the argument enable/level/module leads to stack-based buffer overflow. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. NOTE: The vendor was contacted early about this disclosure but did not respond in any way.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-8224">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4f6db5aff6372dcf6a308f0476921826</td>
-       <td>CVE-2024-8223</td>
-       <td>2024-08-27 23:15:03</td>
-       <td>A vulnerability classified as critical was found in SourceCodester Music Gallery Site 1.0. This vulnerability affects unknown code of the file /classes/Master.php?f=delete_category. The manipulation of the argument id leads to sql injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-8223">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>07a4cf151afc74e5513c7fbc4f96cdf6</td>
-       <td>CVE-2024-8222</td>
-       <td>2024-08-27 23:15:03</td>
-       <td>A vulnerability classified as critical has been found in SourceCodester Music Gallery Site 1.0. This affects an unknown part of the file /admin/?page=musics/manage_music. The manipulation of the argument id leads to sql injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-8222">详情</a></td>
       </tr>
 
      </tbody>
