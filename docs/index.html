@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2024-09-04 09:11:13 -->
+<!-- RELEASE TIME : 2024-09-07 09:11:14 -->
 <html lang="zh-cn">
 
  <head>
@@ -282,9 +282,89 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>a4a2eaa6a3679feff64f42da4ab147ca</td>
+       <td>CVE-2023-52916</td>
+       <td>2024-09-06 09:15:03 <img src="imgs/new.gif" /></td>
+       <td>In the Linux kernel, the following vulnerability has been resolved: media: aspeed: Fix memory overwrite if timing is 1600x900 When capturing 1600x900, system could crash when system memory usage is tight. The way to reproduce this issue: 1. Use 1600x900 to display on host 2. Mount ISO through 'Virtual media' on OpenBMC's web 3. Run script as below on host to do sha continuously #!/bin/bash while [ [1] ]; do find /media -type f -printf '"%h/%f"\n' | xargs sha256sum done 4. Open KVM on OpenBMC's web The size of macro block captured is 8x8. Therefore, we should make sure the height of src-buf is 8 aligned to fix this issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-52916">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9e5edcf949d32c4992e35ecd271c4377</td>
+       <td>CVE-2023-52915</td>
+       <td>2024-09-06 09:15:02 <img src="imgs/new.gif" /></td>
+       <td>In the Linux kernel, the following vulnerability has been resolved: media: dvb-usb-v2: af9035: Fix null-ptr-deref in af9035_i2c_master_xfer In af9035_i2c_master_xfer, msg is controlled by user. When msg[i].buf is null and msg[i].len is zero, former checks on msg[i].buf would be passed. Malicious data finally reach af9035_i2c_master_xfer. If accessing msg[i].buf[0] without sanity check, null ptr deref would happen. We add check on msg[i].len to prevent crash. Similar commit: commit 0ed554fd769a ("media: dvb-usb: az6027: fix null-ptr-deref in az6027_i2c_xfer()")</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-52915">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8587dc882a0a39395634c1701f35ad8c</td>
+       <td>CVE-2024-8427</td>
+       <td>2024-09-06 07:15:03 <img src="imgs/new.gif" /></td>
+       <td>The Frontend Post Submission Manager Lite – Frontend Posting WordPress Plugin plugin for WordPress is vulnerable to unauthorized modification of data due to a missing capability check on the save_global_settings and process_form_edit functions in all versions up to, and including, 1.2.2. This makes it possible for authenticated attackers, with Subscriber-level access and above, to update the plugin's settings and forms.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-8427">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>01fa7c2a4d274ebddca1c6639e9067a6</td>
+       <td>CVE-2024-8317</td>
+       <td>2024-09-06 07:15:03 <img src="imgs/new.gif" /></td>
+       <td>The WP AdCenter – Ad Manager & Adsense Ads plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the ‘ad_alignment’ attribute in all versions up to, and including, 2.5.6 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with Contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-8317">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0622c48b4a4d3361b5541c8fd26a06d3</td>
+       <td>CVE-2024-8292</td>
+       <td>2024-09-06 07:15:03 <img src="imgs/new.gif" /></td>
+       <td>The WP-Recall – Registration, Profile, Commerce & More plugin for WordPress is vulnerable to privilege escalation/account takeover in all versions up to, and including, 16.26.8. This is due to to plugin not properly verifying a user's identity during new order creation. This makes it possible for unauthenticated attackers to supply any email through the user_email field and update the password for that user during new order creation. This requires the commerce addon to be enabled in order to exploit.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-8292">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e878dd20971a6e2843472e929e11a443</td>
+       <td>CVE-2024-7349</td>
+       <td>2024-09-06 07:15:02 <img src="imgs/new.gif" /></td>
+       <td>The LifterLMS – WP LMS for eLearning, Online Courses, & Quizzes plugin for WordPress is vulnerable to blind SQL Injection via the 'order' parameter in all versions up to, and including, 7.7.5 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query. This makes it possible for authenticated attackers, with administrator-level access and above, to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-7349">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1469b61f60f833eec943ef8ece5e9d94</td>
+       <td>CVE-2024-6792</td>
+       <td>2024-09-06 06:15:02 <img src="imgs/new.gif" /></td>
+       <td>The WP ULike WordPress plugin before 4.7.2.1 does not properly sanitize user display names when rendering on a public page.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-6792">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a65b1135d277a03173c4908300bc6e9a</td>
+       <td>CVE-2024-45751</td>
+       <td>2024-09-06 05:15:13 <img src="imgs/new.gif" /></td>
+       <td>tgt (aka Linux target framework) before 1.0.93 attempts to achieve entropy by calling rand without srand. The PRNG seed is always 1, and thus the sequence of challenges is always identical.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-45751">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>01cdf6523d61c5d89a642e556308cf3f</td>
+       <td>CVE-2024-39585</td>
+       <td>2024-09-06 05:15:13 <img src="imgs/new.gif" /></td>
+       <td>Dell SmartFabric OS10 Software, version(s) 10.5.5.4 through 10.5.5.10 and 10.5.6.x, contain(s) an Use of Hard-coded Password vulnerability. A low privileged attacker with remote access could potentially exploit this vulnerability, leading to Client-side request forgery and Information disclosure.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-39585">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>fd42ee6c45e901285cb7dfeb9e964e90</td>
+       <td>CVE-2024-38486</td>
+       <td>2024-09-06 05:15:13 <img src="imgs/new.gif" /></td>
+       <td>Dell SmartFabric OS10 Software, version(s) 10.5.5.4 through 10.5.5.10 and 10.5.6.x , contain(s) an Improper Neutralization of Special Elements used in a Command ('Command Injection') vulnerability. A low privileged attacker with remote access could potentially exploit this vulnerability, leading to Command execution.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-38486">详情</a></td>
+      </tr>
+
+      <tr>
        <td>77ea58e2de4ed902d61432037fa18fb8</td>
        <td>CVE-2024-8374</td>
-       <td>2024-09-03 10:15:06 <img src="imgs/new.gif" /></td>
+       <td>2024-09-03 10:15:06</td>
        <td>UltiMaker Cura slicer versions 5.7.0-beta.1 through 5.7.2 are vulnerable to code injection via the 3MF format reader (/plugins/ThreeMFReader.py). The vulnerability arises from improper handling of the drop_to_buildplate property within 3MF files, which are ZIP archives containing the model data. When a 3MF file is loaded in Cura, the value of the drop_to_buildplate property is passed to the Python eval() function without proper sanitization, allowing an attacker to execute arbitrary code by crafting a malicious 3MF file. This vulnerability poses a significant risk as 3MF files are commonly shared via 3D model databases.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-8374">详情</a></td>
       </tr>
@@ -292,7 +372,7 @@
       <tr>
        <td>35ac9738005f92c54db9addd741aa1c8</td>
        <td>CVE-2024-45587</td>
-       <td>2024-09-03 10:15:06 <img src="imgs/new.gif" /></td>
+       <td>2024-09-03 10:15:06</td>
        <td>This vulnerability exists in Symphony XTS Web Trading platform version 2.0.0.1_P160 due to improper access controls on APIs in the Transaction module of vulnerable application. An authenticated remote attacker could exploit this vulnerability by manipulating parameters through HTTP request which could lead to compromise of other user accounts.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-45587">详情</a></td>
       </tr>
@@ -300,7 +380,7 @@
       <tr>
        <td>be3e1e033b83f0ee498f3642ef5e430f</td>
        <td>CVE-2024-45586</td>
-       <td>2024-09-03 10:15:06 <img src="imgs/new.gif" /></td>
+       <td>2024-09-03 10:15:06</td>
        <td>This vulnerability exists due to improper access controls on APIs in the Authentication module of Symphony XTS Web Trading and Mobile Trading platforms (version 2.0.0.1_P160). An authenticated remote attacker could exploit this vulnerability by manipulating parameters through HTTP request which could lead to unauthorized account take over belonging to other users.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-45586">详情</a></td>
       </tr>
@@ -308,7 +388,7 @@
       <tr>
        <td>8042569f6e641780b595c30078be8ef5</td>
        <td>CVE-2024-3655</td>
-       <td>2024-09-03 10:15:06 <img src="imgs/new.gif" /></td>
+       <td>2024-09-03 10:15:06</td>
        <td>Use After Free vulnerability in Arm Ltd Bifrost GPU Kernel Driver, Arm Ltd Valhall GPU Kernel Driver, Arm Ltd Arm 5th Gen GPU Architecture Kernel Driver allows a local non-privileged user to make improper GPU memory processing operations to gain access to already freed memory.This issue affects Bifrost GPU Kernel Driver: from r43p0 through r49p0; Valhall GPU Kernel Driver: from r43p0 through r49p0; Arm 5th Gen GPU Architecture Kernel Driver: from r43p0 through r49p0.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-3655">详情</a></td>
       </tr>
@@ -316,7 +396,7 @@
       <tr>
        <td>183381cfb4f87410f8030bd0261e9522</td>
        <td>CVE-2024-38811</td>
-       <td>2024-09-03 10:15:05 <img src="imgs/new.gif" /></td>
+       <td>2024-09-03 10:15:05</td>
        <td>VMware Fusion (13.x before 13.6) contains a code-execution vulnerability due to the usage of an insecure environment variable. A malicious actor with standard user privileges may exploit this vulnerability to execute code in the context of the Fusion application.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-38811">详情</a></td>
       </tr>
@@ -324,7 +404,7 @@
       <tr>
        <td>1269d3e201fe0112afdac37ee8af1d66</td>
        <td>CVE-2024-37136</td>
-       <td>2024-09-03 06:15:14 <img src="imgs/new.gif" /></td>
+       <td>2024-09-03 06:15:14</td>
        <td>Dell Path to PowerProtect, versions 1.1, 1.2, contains an Exposure of Private Personal Information to an Unauthorized Actor vulnerability. A remote high privileged attacker could potentially exploit this vulnerability, leading to information exposure.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-37136">详情</a></td>
       </tr>
@@ -332,7 +412,7 @@
       <tr>
        <td>6c167e14655b97ef2098990cb4c18678</td>
        <td>CVE-2024-7261</td>
-       <td>2024-09-03 03:15:03 <img src="imgs/new.gif" /></td>
+       <td>2024-09-03 03:15:03</td>
        <td>The improper neutralization of special elements in the parameter "host" in the CGI program of Zyxel NWA1123ACv3 firmware version 6.70(ABVT.4) and earlier, WAC500 firmware version 6.70(ABVS.4) and earlier, WAX655E firmware version 7.00(ACDO.1) and earlier, WBE530 firmware version 7.00(ACLE.1) and earlier, and USG LITE 60AX firmware version V2.00(ACIP.2) could allow an unauthenticated attacker to execute OS commands by sending a crafted cookie to a vulnerable device.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-7261">详情</a></td>
       </tr>
@@ -340,7 +420,7 @@
       <tr>
        <td>981c5f288f152c79e587a08460fc137c</td>
        <td>CVE-2024-42061</td>
-       <td>2024-09-03 03:15:03 <img src="imgs/new.gif" /></td>
+       <td>2024-09-03 03:15:03</td>
        <td>A reflected cross-site scripting (XSS) vulnerability in the CGI program "dynamic_script.cgi" of Zyxel ATP series firmware versions from V4.32 through V5.38, USG FLEX series firmware versions from V4.50 through V5.38, USG FLEX 50(W) series firmware versions from V4.16 through V5.38, and USG20(W)-VPN series firmware versions from V4.16 through V5.38 could allow an attacker to trick a user into visiting a crafted URL with the XSS payload. The attacker could obtain browser-based information if the malicious script is executed on the victim’s browser.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-42061">详情</a></td>
       </tr>
@@ -348,7 +428,7 @@
       <tr>
        <td>31edb251c4ff2a372056aaf1b05141ee</td>
        <td>CVE-2024-7203</td>
-       <td>2024-09-03 02:15:05 <img src="imgs/new.gif" /></td>
+       <td>2024-09-03 02:15:05</td>
        <td>A post-authentication command injection vulnerability in Zyxel ATP series firmware versions from V4.60 through V5.38 and USG FLEX series firmware versions from V4.60 through V5.38 could allow an authenticated attacker with administrator privileges to execute some operating system (OS) commands on an affected device by executing a crafted CLI command.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-7203">详情</a></td>
       </tr>
@@ -356,7 +436,7 @@
       <tr>
        <td>3acdaca1f42eb793939643d0199b45bf</td>
        <td>CVE-2024-6343</td>
-       <td>2024-09-03 02:15:05 <img src="imgs/new.gif" /></td>
+       <td>2024-09-03 02:15:05</td>
        <td>A buffer overflow vulnerability in the CGI program of Zyxel ATP series firmware versions from V4.32 through V5.38, USG FLEX series firmware versions from V4.50 through V5.38, USG FLEX 50(W) series firmware versions from V4.16 through V5.38, and USG20(W)-VPN series firmware versions from V4.16 through V5.38 could allow an authenticated attacker with administrator privileges to cause denial of service (DoS) conditions by sending a crafted HTTP request to a vulnerable device.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-6343">详情</a></td>
       </tr>
@@ -439,86 +519,6 @@
        <td>2024-08-31 09:15:05</td>
        <td>NVIDIA CUDA Toolkit contains a vulnerability in command `cuobjdump` where a user may cause a crash by passing in a malformed ELF file. A successful exploit of this vulnerability may cause an out of bounds read in the unprivileged process memory which could lead to a limited denial of service.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-0109">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>489ba602cc77ce257d145bec011a9e70</td>
-       <td>CVE-2024-8319</td>
-       <td>2024-08-30 07:33:09</td>
-       <td>The Tourfic plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 2.11.20. This is due to missing or incorrect nonce validation on the tf_order_status_email_resend_function, tf_visitor_details_edit_function, tf_checkinout_details_edit_function, tf_order_status_edit_function, tf_order_bulk_action_edit_function, tf_remove_room_order_ids, and tf_delete_old_review_fields functions. This makes it possible for unauthenticated attackers to resend order status emails, update visitor/order details, edit check-in/out details, edit order status, perform bulk order status updates, remove room order IDs, and delete old review fields, respectively, via a forged request granted they can trick a site administrator into performing an action such as clicking on a link.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-8319">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>27301d34a81376401edf262b1b1223f4</td>
-       <td>CVE-2024-8016</td>
-       <td>2024-08-30 07:15:12</td>
-       <td>The Events Calendar Pro plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 7.0.2 via deserialization of untrusted input from the 'filters' parameter in widgets. This makes it possible for authenticated attackers, with administrator-level access and above, to inject a PHP Object. The additional presence of a POP chain allows attackers to execute code remotely. In certain configurations, this can be exploitable by lower level users. We confirmed that this plugin installed with Elementor makes it possible for users with contributor-level access and above to exploit this issue.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-8016">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3b56b4785012fc035f088dc2f5a3e82d</td>
-       <td>CVE-2024-42412</td>
-       <td>2024-08-30 07:15:12</td>
-       <td>Cross-site scripting vulnerability exists in WAB-I1750-PS and WAB-S1167-PS due to improper processing of input values in menu.cgi. If a user views a malicious web page while logged in to the product, an arbitrary script may be executed on the user's web browser.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-42412">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e4925f066a2af72374267b00e67d1348</td>
-       <td>CVE-2024-39300</td>
-       <td>2024-08-30 07:15:11</td>
-       <td>Missing authentication vulnerability exists in Telnet function of WAB-I1750-PS v1.5.10 and earlier. When Telnet function of the product is enabled, a remote attacker may login to the product without authentication and alter the product's settings.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-39300">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f88c337fc12cc8f31b2f852a9f696e2a</td>
-       <td>CVE-2024-34577</td>
-       <td>2024-08-30 07:15:11</td>
-       <td>Cross-site scripting vulnerability exists in WRC-X3000GS2-B, WRC-X3000GS2-W, and WRC-X3000GS2A-B due to improper processing of input values in easysetup.cgi. If a user views a malicious web page while logged in to the product, an arbitrary script may be executed on the user's web browser.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-34577">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e699e3816cfba6f2fa0b7f987a1d2341</td>
-       <td>CVE-2024-8333</td>
-       <td>2024-08-30 06:15:05</td>
-       <td>Rejected reason: Test CVE</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-8333">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2df67382b43bee1a8088579c94bc3407</td>
-       <td>CVE-2024-3673</td>
-       <td>2024-08-30 06:15:05</td>
-       <td>The Web Directory Free WordPress plugin before 1.7.3 does not validate a parameter before using it in an include(), which could lead to Local File Inclusion issues.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-3673">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>89ff02c0a8cf88db2b22797dbe4cfcd6</td>
-       <td>CVE-2024-5879</td>
-       <td>2024-08-30 05:15:12</td>
-       <td>The HubSpot – CRM, Email Marketing, Live Chat, Forms & Analytics plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'url' attribute of the HubSpot Meeting Widget in all versions up to, and including, 11.1.22 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with Contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-5879">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>67b6cdc8def27a81c8c466593b5c1b74</td>
-       <td>CVE-2024-3998</td>
-       <td>2024-08-30 05:15:12</td>
-       <td>The Betheme theme for WordPress is vulnerable to Stored Cross-Site Scripting via several of the plugin's shortcodes in all versions up to, and including, 27.5.6 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-3998">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>49cb3ef41a4bc6e73e4c1b6e46a71183</td>
-       <td>CVE-2024-2694</td>
-       <td>2024-08-30 05:15:12</td>
-       <td>The Betheme theme for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 27.5.6 via deserialization of untrusted input of the 'mfn-page-items' post meta value. This makes it possible for authenticated attackers, with contributor-level access and above, to inject a PHP Object. No known POP chain is present in the vulnerable plugin. If a POP chain is present via an additional plugin or theme installed on the target system, it could allow the attacker to delete arbitrary files, retrieve sensitive data, or execute code.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-2694">详情</a></td>
       </tr>
 
      </tbody>
