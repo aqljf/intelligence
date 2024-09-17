@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2024-09-16 09:11:14 -->
+<!-- RELEASE TIME : 2024-09-17 09:11:15 -->
 <html lang="zh-cn">
 
  <head>
@@ -282,9 +282,89 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>e2a6df954d98ea44c3098b7a6b0e5ba1</td>
+       <td>CVE-2024-45833</td>
+       <td>2024-09-16 07:15:03 <img src="imgs/new.gif" /></td>
+       <td>Mattermost Mobile Apps versions <=2.18.0 fail to disable autocomplete during login while typing the password and visible password is selected, which allows the password to get saved in the dictionary when the user has Swiftkey as the default keyboard, the masking is off and the password contains a special character..</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-45833">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>795dc07e8031fe8bc2ea0ff038484244</td>
+       <td>CVE-2024-45698</td>
+       <td>2024-09-16 07:15:03 <img src="imgs/new.gif" /></td>
+       <td>Certain models of D-Link wireless routers do not properly validate user input in the telnet service, allowing unauthenticated remote attackers to use hard-coded credentials to log into telnet and inject arbitrary OS commands, which can then be executed on the device.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-45698">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>00556a4bc5bd969d74856a19d6957596</td>
+       <td>CVE-2024-45697</td>
+       <td>2024-09-16 07:15:03 <img src="imgs/new.gif" /></td>
+       <td>Certain models of D-Link wireless routers have a hidden functionality where the telnet service is enabled when the WAN port is plugged in. Unauthorized remote attackers can log in and execute OS commands using hard-coded credentials.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-45697">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>af150ca03a40f0cdf941b32e2fe276b0</td>
+       <td>CVE-2024-45696</td>
+       <td>2024-09-16 07:15:03 <img src="imgs/new.gif" /></td>
+       <td>Certain models of D-Link wireless routers contain hidden functionality. By sending specific packets to the web service, the attacker can forcibly enable the telnet service and log in using hard-coded credentials. The telnet service enabled through this method can only be accessed from within the same local network as the device.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-45696">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>fabb87f23013bc4271d38cfa41f67a60</td>
+       <td>CVE-2024-45695</td>
+       <td>2024-09-16 07:15:02 <img src="imgs/new.gif" /></td>
+       <td>The web service of certain models of D-Link wireless routers contains a Stack-based Buffer Overflow vulnerability, which allows unauthenticated remote attackers to exploit this vulnerability to execute arbitrary code on the device.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-45695">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>360f21471ea3fdffe9761c660bdcb44a</td>
+       <td>CVE-2024-45694</td>
+       <td>2024-09-16 07:15:02 <img src="imgs/new.gif" /></td>
+       <td>The web service of certain models of D-Link wireless routers contains a Stack-based Buffer Overflow vulnerability, which allows unauthenticated remote attackers to exploit this vulnerability to execute arbitrary code on the device.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-45694">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>fdd9bd39966970fdae1fc781deabc0e0</td>
+       <td>CVE-2024-39613</td>
+       <td>2024-09-16 07:15:02 <img src="imgs/new.gif" /></td>
+       <td>Mattermost Desktop App versions <=5.8.0 fail to specify an absolute path when searching the cmd.exe file, which allows a local attacker who is able to put an cmd.exe file in the Downloads folder of a user's machine to cause remote code execution on that machine.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-39613">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1a34aff8cb8dda5b8e8a45d6b033bd35</td>
+       <td>CVE-2024-1578</td>
+       <td>2024-09-16 07:15:02 <img src="imgs/new.gif" /></td>
+       <td>The MiCard PLUS Ci and MiCard PLUS BLE reader products developed by rf IDEAS and rebranded by NT-ware have a firmware fault that may result in characters randomly being dropped from some ID card reads, which would result in the wrong ID card number being assigned during ID card self-registration and might result in failed login attempts for end-users. Random characters being dropped from ID card numbers compromises the uniqueness of ID cards that can, therefore, result in a security issue if the users are using the ‘ID card self-registration’ function.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-1578">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>40ac848af4d18673c57e06afa12b2008</td>
+       <td>CVE-2024-8780</td>
+       <td>2024-09-16 06:15:12 <img src="imgs/new.gif" /></td>
+       <td>OMFLOW from The SYSCOM Group does not properly restrict the query range of its data query functionality, allowing remote attackers with regular privileges to obtain accounts and password hashes of other users.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-8780">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>01cb338cfb12f522acd73eec4d84860a</td>
+       <td>CVE-2024-8779</td>
+       <td>2024-09-16 06:15:12 <img src="imgs/new.gif" /></td>
+       <td>OMFLOW from The SYSCOM Group does not properly restrict access to the system settings modification functionality, allowing remote attackers with regular privileges to update system settings or create accounts with administrator privileges, thereby gaining control of the server.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-8779">详情</a></td>
+      </tr>
+
+      <tr>
        <td>1b13b6dbb392496a33c34cb41d51d2d3</td>
        <td>CVE-2024-44059</td>
-       <td>2024-09-15 09:15:04 <img src="imgs/new.gif" /></td>
+       <td>2024-09-15 09:15:04</td>
        <td>Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting') vulnerability in MediaRon LLC Custom Query Blocks allows Stored XSS.This issue affects Custom Query Blocks: from n/a through 5.3.1.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-44059">详情</a></td>
       </tr>
@@ -292,7 +372,7 @@
       <tr>
        <td>f8541efaf79f571f69fe89a99dda557b</td>
        <td>CVE-2024-44058</td>
-       <td>2024-09-15 09:15:03 <img src="imgs/new.gif" /></td>
+       <td>2024-09-15 09:15:03</td>
        <td>Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting') vulnerability in CryoutCreations Parabola allows Stored XSS.This issue affects Parabola: from n/a through 2.4.1.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-44058">详情</a></td>
       </tr>
@@ -300,7 +380,7 @@
       <tr>
        <td>a52b06ce91d4cfd88a070a31f6a8ae03</td>
        <td>CVE-2024-44057</td>
-       <td>2024-09-15 09:15:03 <img src="imgs/new.gif" /></td>
+       <td>2024-09-15 09:15:03</td>
        <td>Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting') vulnerability in CryoutCreations Nirvana allows Stored XSS.This issue affects Nirvana: from n/a through 1.6.3.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-44057">详情</a></td>
       </tr>
@@ -308,7 +388,7 @@
       <tr>
        <td>aa070c36173f1fe6291bd28777138265</td>
        <td>CVE-2024-44056</td>
-       <td>2024-09-15 09:15:02 <img src="imgs/new.gif" /></td>
+       <td>2024-09-15 09:15:02</td>
        <td>Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting') vulnerability in CryoutCreations Mantra allows Stored XSS.This issue affects Mantra: from n/a through 3.3.2.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-44056">详情</a></td>
       </tr>
@@ -316,7 +396,7 @@
       <tr>
        <td>eadd8fd6e4485d88ee42a61783efcfa9</td>
        <td>CVE-2024-44054</td>
-       <td>2024-09-15 09:15:02 <img src="imgs/new.gif" /></td>
+       <td>2024-09-15 09:15:02</td>
        <td>Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting') vulnerability in CryoutCreations Fluida allows Stored XSS.This issue affects Fluida: from n/a through 1.8.8.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-44054">详情</a></td>
       </tr>
@@ -324,7 +404,7 @@
       <tr>
        <td>17eb2eb31053c65ca12764f010de6428</td>
        <td>CVE-2024-44053</td>
-       <td>2024-09-15 09:15:02 <img src="imgs/new.gif" /></td>
+       <td>2024-09-15 09:15:02</td>
        <td>Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting') vulnerability in Mohammad Arif Opor Ayam allows Reflected XSS.This issue affects Opor Ayam: from n/a through 1.8.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-44053">详情</a></td>
       </tr>
@@ -332,7 +412,7 @@
       <tr>
        <td>a272d2e8b9368fc7767508aad3677fa2</td>
        <td>CVE-2024-45460</td>
-       <td>2024-09-15 08:15:14 <img src="imgs/new.gif" /></td>
+       <td>2024-09-15 08:15:14</td>
        <td>Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting') vulnerability in Manu225 Flipping Cards allows Stored XSS.This issue affects Flipping Cards: from n/a through 1.30.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-45460">详情</a></td>
       </tr>
@@ -340,7 +420,7 @@
       <tr>
        <td>375569c0a41cf4efc5e288a06ba12f29</td>
        <td>CVE-2024-45459</td>
-       <td>2024-09-15 08:15:13 <img src="imgs/new.gif" /></td>
+       <td>2024-09-15 08:15:13</td>
        <td>Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting') vulnerability in PickPlugins Product Slider for WooCommerce allows Reflected XSS.This issue affects Product Slider for WooCommerce: from n/a through 1.13.50.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-45459">详情</a></td>
       </tr>
@@ -348,7 +428,7 @@
       <tr>
        <td>501698fbd71027f6d98ae7caa8f6a2e7</td>
        <td>CVE-2024-45458</td>
-       <td>2024-09-15 08:15:13 <img src="imgs/new.gif" /></td>
+       <td>2024-09-15 08:15:13</td>
        <td>Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting') vulnerability in Spiffy Plugins Spiffy Calendar allows Reflected XSS.This issue affects Spiffy Calendar: from n/a through 4.9.13.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-45458">详情</a></td>
       </tr>
@@ -356,7 +436,7 @@
       <tr>
        <td>652eff9b7722ca446e447c69ac0075de</td>
        <td>CVE-2024-45457</td>
-       <td>2024-09-15 08:15:13 <img src="imgs/new.gif" /></td>
+       <td>2024-09-15 08:15:13</td>
        <td>Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting') vulnerability in Spiffy Plugins Spiffy Calendar allows Stored XSS.This issue affects Spiffy Calendar: from n/a through 4.9.13.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-45457">详情</a></td>
       </tr>
@@ -439,86 +519,6 @@
        <td>2024-09-14 03:15:02</td>
        <td>The WooCommerce Multiple Free Gift plugin for WordPress is vulnerable to gift manipulation in all versions up to, and including, 1.2.3. This is due to plugin not enforcing server-side checks on the products that can be added as a gift. This makes it possible for unauthenticated attackers to add non-gift items to their cart as a gift.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-3459">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a0ba98c4c3cb1f077e29c9fda3667799</td>
-       <td>CVE-2024-45113</td>
-       <td>2024-09-13 10:15:16</td>
-       <td>ColdFusion versions 2023.6, 2021.12 and earlier are affected by an Improper Authentication vulnerability that could result in privilege escalation. An attacker could exploit this vulnerability to gain unauthorized access and affect the integrity of the application. Exploitation of this issue does not require user interaction.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-45113">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>88f634c9f07274e378dcc614e9a12989</td>
-       <td>CVE-2024-45109</td>
-       <td>2024-09-13 10:15:16</td>
-       <td>Photoshop Desktop versions 24.7.4, 25.11 and earlier are affected by an out-of-bounds write vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-45109">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>064f7ea422b001bfc187d9d5aa0cb23b</td>
-       <td>CVE-2024-45108</td>
-       <td>2024-09-13 10:15:15</td>
-       <td>Photoshop Desktop versions 24.7.4, 25.11 and earlier are affected by an out-of-bounds write vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-45108">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f93c3f40f8eccd2e75aa05a2d872fdf2</td>
-       <td>CVE-2024-43760</td>
-       <td>2024-09-13 10:15:15</td>
-       <td>Photoshop Desktop versions 24.7.4, 25.11 and earlier are affected by an out-of-bounds write vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-43760">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2f74f77110b0f31d400a90370462f0c2</td>
-       <td>CVE-2024-43756</td>
-       <td>2024-09-13 10:15:14</td>
-       <td>Photoshop Desktop versions 24.7.4, 25.11 and earlier are affected by a Heap-based Buffer Overflow vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-43756">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>00145f3ba8036bf55ac83efd98e00354</td>
-       <td>CVE-2024-41874</td>
-       <td>2024-09-13 10:15:12</td>
-       <td>ColdFusion versions 2023.9, 2021.15 and earlier are affected by a Deserialization of Untrusted Data vulnerability that could result in arbitrary code execution in the context of the current user. An attacker could exploit this vulnerability by providing crafted input to the application, which when deserialized, leads to execution of malicious code. Exploitation of this issue does not require user interaction.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-41874">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>bef68b2eaa7f5ea252bc588880eade13</td>
-       <td>CVE-2024-6656</td>
-       <td>2024-09-13 09:15:14</td>
-       <td>Use of Hard-coded Credentials vulnerability in TNB Mobile Solutions Cockpit Software allows Read Sensitive Strings Within an Executable.This issue affects Cockpit Software: before v2.13.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-6656">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>910e1696f6eea4435ae34e5a880d0aa4</td>
-       <td>CVE-2024-45112</td>
-       <td>2024-09-13 09:15:13</td>
-       <td>Acrobat Reader versions 24.002.21005, 24.001.30159, 20.005.30655, 24.003.20054 and earlier are affected by a Type Confusion vulnerability that could result in arbitrary code execution in the context of the current user. This issue occurs when a resource is accessed using a type that is not compatible with the actual object type, leading to a logic error that an attacker could exploit. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-45112">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1a05fa3a3d346ba24095e9b9d7120682</td>
-       <td>CVE-2024-45111</td>
-       <td>2024-09-13 09:15:13</td>
-       <td>Illustrator versions 28.6, 27.9.5 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-45111">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>de0adf3ed10f81aaeb46e86ffed91d27</td>
-       <td>CVE-2024-43759</td>
-       <td>2024-09-13 09:15:12</td>
-       <td>Illustrator versions 28.6, 27.9.5 and earlier are affected by a NULL Pointer Dereference vulnerability that could lead to an application denial-of-service (DoS). An attacker could exploit this vulnerability to crash the application, resulting in a DoS condition. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-43759">详情</a></td>
       </tr>
 
      </tbody>
