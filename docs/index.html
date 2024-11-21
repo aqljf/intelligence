@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2024-11-20 09:11:14 -->
+<!-- RELEASE TIME : 2024-11-21 09:11:13 -->
 <html lang="zh-cn">
 
  <head>
@@ -282,9 +282,89 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>374766989f3fed02fcb066ebcda0aadb</td>
+       <td>CVE-2024-44309</td>
+       <td>2024-11-20 00:15:17 <img src="imgs/new.gif" /></td>
+       <td>A cookie management issue was addressed with improved state management. This issue is fixed in Safari 18.1.1, iOS 17.7.2 and iPadOS 17.7.2, macOS Sequoia 15.1.1, iOS 18.1.1 and iPadOS 18.1.1, visionOS 2.1.1. Processing maliciously crafted web content may lead to a cross site scripting attack. Apple is aware of a report that this issue may have been actively exploited on Intel-based Mac systems.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-44309">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>007160b6d51a6d659adfa7f71b0ab412</td>
+       <td>CVE-2024-44308</td>
+       <td>2024-11-20 00:15:17 <img src="imgs/new.gif" /></td>
+       <td>The issue was addressed with improved checks. This issue is fixed in Safari 18.1.1, iOS 17.7.2 and iPadOS 17.7.2, macOS Sequoia 15.1.1, iOS 18.1.1 and iPadOS 18.1.1, visionOS 2.1.1. Processing maliciously crafted web content may lead to arbitrary code execution. Apple is aware of a report that this issue may have been actively exploited on Intel-based Mac systems.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-44308">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>4101d64433fe2cda888adb42702dd0ff</td>
+       <td>CVE-2024-44306</td>
+       <td>2024-11-20 00:15:16 <img src="imgs/new.gif" /></td>
+       <td>A buffer overflow issue was addressed with improved memory handling. This issue is fixed in macOS Sonoma 14.6. An app may be able to execute arbitrary code with kernel privileges.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-44306">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c4c4ddb44baad605c4003ec3ab0d163b</td>
+       <td>CVE-2018-9467</td>
+       <td>2024-11-20 00:15:16 <img src="imgs/new.gif" /></td>
+       <td>In the getHost() function of UriTest.java, there is the possibility of incorrect web origin determination. This could lead to incorrect security decisions with no additional execution privileges needed. User interaction is not needed for exploitation.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2018-9467">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>04ad7673f503aab55c35e208146018c4</td>
+       <td>CVE-2018-9466</td>
+       <td>2024-11-19 23:15:04</td>
+       <td>In the xmlSnprintfElementContent function of valid.c, there is a possible out of bounds write. This could lead to remote escalation of privilege in an unprivileged app with no additional execution privileges needed. User interaction is needed for exploitation.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2018-9466">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>796f74ca301514768770ed6e1e04b00c</td>
+       <td>CVE-2018-9456</td>
+       <td>2024-11-19 23:15:04</td>
+       <td>In sdpu_extract_attr_seq of sdp_utils.cc, there is a possible out of bounds read due to an incorrect bounds check. This could lead to remote denial of service with no additional execution privileges needed. User interaction is not needed for exploitation.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2018-9456">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3f473cb02109ab6aa2caad9218b0dc52</td>
+       <td>CVE-2018-9440</td>
+       <td>2024-11-19 23:15:04</td>
+       <td>In parse of M3UParser.cpp there is a possible resource exhaustion due to improper input validation. This could lead to denial of service with no additional execution privileges needed. User interaction is needed for exploitation.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2018-9440">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1db21339fc7926f4bb5ec007fb8f8b39</td>
+       <td>CVE-2024-52595</td>
+       <td>2024-11-19 22:15:21</td>
+       <td>lxml_html_clean is a project for HTML cleaning functionalities copied from `lxml.html.clean`. Prior to version 0.4.0, the HTML Parser in lxml does not properly handle context-switching for special HTML tags such as `<svg>`, `<math>` and `<noscript>`. This behavior deviates from how web browsers parse and interpret such tags. Specifically, content in CSS comments is ignored by lxml_html_clean but may be interpreted differently by web browsers, enabling malicious scripts to bypass the cleaning process. This vulnerability could lead to Cross-Site Scripting (XSS) attacks, compromising the security of users relying on lxml_html_clean in default configuration for sanitizing untrusted HTML content. Users employing the HTML cleaner in a security-sensitive context should upgrade to lxml 0.4.0, which addresses this issue. As a temporary mitigation, users can configure lxml_html_clean with the following settings to prevent the exploitation of this vulnerability. Via `remove_tags`, one may specify tags to remove - their content is moved to their parents' tags. Via `kill_tags`, one may specify tags to be removed completely. Via `allow_tags`, one may restrict the set of permissible tags, excluding context-switching tags like `<svg>`, `<math>` and `<noscript>`.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-52595">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3fd03b0a77d1c479366baa9245aa8691</td>
+       <td>CVE-2024-52392</td>
+       <td>2024-11-19 22:15:20</td>
+       <td>Cross-Site Request Forgery (CSRF) vulnerability in W3speedster W3SPEEDSTER.This issue affects W3SPEEDSTER: from n/a through 7.25.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-52392">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1bcfee17108c579b37b1e8ccd8a75bbe</td>
+       <td>CVE-2024-51669</td>
+       <td>2024-11-19 22:15:20</td>
+       <td>Cross-Site Request Forgery (CSRF) vulnerability in Vivwebs Dynamic Widgets.This issue affects Dynamic Widgets: from n/a through 1.6.4.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-51669">详情</a></td>
+      </tr>
+
+      <tr>
        <td>8872b1763d373668a6ee642d38c378fd</td>
        <td>CVE-2024-8403</td>
-       <td>2024-11-19 06:15:17 <img src="imgs/new.gif" /></td>
+       <td>2024-11-19 06:15:17</td>
        <td>Improper Validation of Specified Type of Input vulnerability in Mitsubishi Electric Corporation MELSEC iQ-F Series FX5-ENET versions 1.100 and later and FX5-ENET/IP versions 1.100 to 1.104 allows a remote attacker to cause a Denial of Service condition in Ethernet communication of the products by sending specially crafted SLMP packets.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-8403">详情</a></td>
       </tr>
@@ -292,7 +372,7 @@
       <tr>
        <td>c15c94dd2ffebd2b66b63a01e14757d8</td>
        <td>CVE-2024-10103</td>
-       <td>2024-11-19 06:15:17 <img src="imgs/new.gif" /></td>
+       <td>2024-11-19 06:15:17</td>
        <td>In the process of testing the MailPoet WordPress plugin before 5.3.2, a vulnerability was found that allows you to implement Stored XSS on behalf of the editor by embedding malicious script, which entails account takeover backdoor</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-10103">详情</a></td>
       </tr>
@@ -300,7 +380,7 @@
       <tr>
        <td>b5bbbe581b31ba13b566974ac7e82b4a</td>
        <td>CVE-2024-21539</td>
-       <td>2024-11-19 05:15:16 <img src="imgs/new.gif" /></td>
+       <td>2024-11-19 05:15:16</td>
        <td>Versions of the package @eslint/plugin-kit before 0.2.3 are vulnerable to Regular Expression Denial of Service (ReDoS) due to improper input sanitization. An attacker can increase the CPU usage and crash the program by exploiting this vulnerability.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-21539">详情</a></td>
       </tr>
@@ -308,7 +388,7 @@
       <tr>
        <td>d17013225d5c5192622fa5cafb8859c8</td>
        <td>CVE-2024-50302</td>
-       <td>2024-11-19 02:16:32 <img src="imgs/new.gif" /></td>
+       <td>2024-11-19 02:16:32</td>
        <td>In the Linux kernel, the following vulnerability has been resolved: HID: core: zero-initialize the report buffer Since the report buffer is used by all kinds of drivers in various ways, let's zero-initialize it during allocation to make sure that it can't be ever used to leak kernel memory via specially-crafted report.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-50302">详情</a></td>
       </tr>
@@ -316,7 +396,7 @@
       <tr>
        <td>f4985a0c0bc7213a58a8401136570131</td>
        <td>CVE-2024-50301</td>
-       <td>2024-11-19 02:16:32 <img src="imgs/new.gif" /></td>
+       <td>2024-11-19 02:16:32</td>
        <td>In the Linux kernel, the following vulnerability has been resolved: security/keys: fix slab-out-of-bounds in key_task_permission KASAN reports an out of bounds read: BUG: KASAN: slab-out-of-bounds in __kuid_val include/linux/uidgid.h:36 BUG: KASAN: slab-out-of-bounds in uid_eq include/linux/uidgid.h:63 [inline] BUG: KASAN: slab-out-of-bounds in key_task_permission+0x394/0x410 security/keys/permission.c:54 Read of size 4 at addr ffff88813c3ab618 by task stress-ng/4362 CPU: 2 PID: 4362 Comm: stress-ng Not tainted 5.10.0-14930-gafbffd6c3ede #15 Call Trace: __dump_stack lib/dump_stack.c:82 [inline] dump_stack+0x107/0x167 lib/dump_stack.c:123 print_address_description.constprop.0+0x19/0x170 mm/kasan/report.c:400 __kasan_report.cold+0x6c/0x84 mm/kasan/report.c:560 kasan_report+0x3a/0x50 mm/kasan/report.c:585 __kuid_val include/linux/uidgid.h:36 [inline] uid_eq include/linux/uidgid.h:63 [inline] key_task_permission+0x394/0x410 security/keys/permission.c:54 search_nested_keyrings+0x90e/0xe90 security/keys/keyring.c:793 This issue was also reported by syzbot. It can be reproduced by following these steps(more details [1]): 1. Obtain more than 32 inputs that have similar hashes, which ends with the pattern '0xxxxxxxe6'. 2. Reboot and add the keys obtained in step 1. The reproducer demonstrates how this issue happened: 1. In the search_nested_keyrings function, when it iterates through the slots in a node(below tag ascend_to_node), if the slot pointer is meta and node->back_pointer != NULL(it means a root), it will proceed to descend_to_node. However, there is an exception. If node is the root, and one of the slots points to a shortcut, it will be treated as a keyring. 2. Whether the ptr is keyring decided by keyring_ptr_is_keyring function. However, KEYRING_PTR_SUBTYPE is 0x2UL, the same as ASSOC_ARRAY_PTR_SUBTYPE_MASK. 3. When 32 keys with the similar hashes are added to the tree, the ROOT has keys with hashes that are not similar (e.g. slot 0) and it splits NODE A without using a shortcut. When NODE A is filled with keys that all hashes are xxe6, the keys are similar, NODE A will split with a shortcut. Finally, it forms the tree as shown below, where slot 6 points to a shortcut. NODE A +------>+---+ ROOT | | 0 | xxe6 +---+ | +---+ xxxx | 0 | shortcut : : xxe6 +---+ | +---+ xxe6 : : | | | xxe6 +---+ | +---+ | 6 |---+ : : xxe6 +---+ +---+ xxe6 : : | f | xxe6 +---+ +---+ xxe6 | f | +---+ 4. As mentioned above, If a slot(slot 6) of the root points to a shortcut, it may be mistakenly transferred to a key*, leading to a read out-of-bounds read. To fix this issue, one should jump to descend_to_node if the ptr is a shortcut, regardless of whether the node is root or not. [1] https://lore.kernel.org/linux-kernel/1cfa878e-8c7b-4570-8606-21daf5e13ce7@huaweicloud.com/ [jarkko: tweaked the commit message a bit to have an appropriate closes tag.]</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-50301">详情</a></td>
       </tr>
@@ -324,7 +404,7 @@
       <tr>
        <td>d5ec95d194deb1a9211d5bb46eec6d44</td>
        <td>CVE-2024-50300</td>
-       <td>2024-11-19 02:16:32 <img src="imgs/new.gif" /></td>
+       <td>2024-11-19 02:16:32</td>
        <td>In the Linux kernel, the following vulnerability has been resolved: regulator: rtq2208: Fix uninitialized use of regulator_config Fix rtq2208 driver uninitialized use to cause kernel error.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-50300">详情</a></td>
       </tr>
@@ -332,7 +412,7 @@
       <tr>
        <td>4fa2330b69373be63ec81fa7308639bb</td>
        <td>CVE-2024-50299</td>
-       <td>2024-11-19 02:16:32 <img src="imgs/new.gif" /></td>
+       <td>2024-11-19 02:16:32</td>
        <td>In the Linux kernel, the following vulnerability has been resolved: sctp: properly validate chunk size in sctp_sf_ootb() A size validation fix similar to that in Commit 50619dbf8db7 ("sctp: add size validation when walking chunks") is also required in sctp_sf_ootb() to address a crash reported by syzbot: BUG: KMSAN: uninit-value in sctp_sf_ootb+0x7f5/0xce0 net/sctp/sm_statefuns.c:3712 sctp_sf_ootb+0x7f5/0xce0 net/sctp/sm_statefuns.c:3712 sctp_do_sm+0x181/0x93d0 net/sctp/sm_sideeffect.c:1166 sctp_endpoint_bh_rcv+0xc38/0xf90 net/sctp/endpointola.c:407 sctp_inq_push+0x2ef/0x380 net/sctp/inqueue.c:88 sctp_rcv+0x3831/0x3b20 net/sctp/input.c:243 sctp4_rcv+0x42/0x50 net/sctp/protocol.c:1159 ip_protocol_deliver_rcu+0xb51/0x13d0 net/ipv4/ip_input.c:205 ip_local_deliver_finish+0x336/0x500 net/ipv4/ip_input.c:233</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-50299">详情</a></td>
       </tr>
@@ -340,7 +420,7 @@
       <tr>
        <td>07038f2daf1c507be2d790bf369691a8</td>
        <td>CVE-2024-50298</td>
-       <td>2024-11-19 02:16:31 <img src="imgs/new.gif" /></td>
+       <td>2024-11-19 02:16:31</td>
        <td>In the Linux kernel, the following vulnerability has been resolved: net: enetc: allocate vf_state during PF probes In the previous implementation, vf_state is allocated memory only when VF is enabled. However, net_device_ops::ndo_set_vf_mac() may be called before VF is enabled to configure the MAC address of VF. If this is the case, enetc_pf_set_vf_mac() will access vf_state, resulting in access to a null pointer. The simplified error log is as follows. root@ls1028ardb:~# ip link set eno0 vf 1 mac 00:0c:e7:66:77:89 [ 173.543315] Unable to handle kernel NULL pointer dereference at virtual address 0000000000000004 [ 173.637254] pc : enetc_pf_set_vf_mac+0x3c/0x80 Message from sy [ 173.641973] lr : do_setlink+0x4a8/0xec8 [ 173.732292] Call trace: [ 173.734740] enetc_pf_set_vf_mac+0x3c/0x80 [ 173.738847] __rtnl_newlink+0x530/0x89c [ 173.742692] rtnl_newlink+0x50/0x7c [ 173.746189] rtnetlink_rcv_msg+0x128/0x390 [ 173.750298] netlink_rcv_skb+0x60/0x130 [ 173.754145] rtnetlink_rcv+0x18/0x24 [ 173.757731] netlink_unicast+0x318/0x380 [ 173.761665] netlink_sendmsg+0x17c/0x3c8</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-50298">详情</a></td>
       </tr>
@@ -348,7 +428,7 @@
       <tr>
        <td>815c048fa3e5b9aaebbfd7dd86bcda6c</td>
        <td>CVE-2024-50297</td>
-       <td>2024-11-19 02:16:31 <img src="imgs/new.gif" /></td>
+       <td>2024-11-19 02:16:31</td>
        <td>In the Linux kernel, the following vulnerability has been resolved: net: xilinx: axienet: Enqueue Tx packets in dql before dmaengine starts Enqueue packets in dql after dma engine starts causes race condition. Tx transfer starts once dma engine is started and may execute dql dequeue in completion before it gets queued. It results in following kernel crash while running iperf stress test: kernel BUG at lib/dynamic_queue_limits.c:99! <snip> Internal error: Oops - BUG: 00000000f2000800 [#1] SMP pc : dql_completed+0x238/0x248 lr : dql_completed+0x3c/0x248 Call trace: dql_completed+0x238/0x248 axienet_dma_tx_cb+0xa0/0x170 xilinx_dma_do_tasklet+0xdc/0x290 tasklet_action_common+0xf8/0x11c tasklet_action+0x30/0x3c handle_softirqs+0xf8/0x230 <snip> Start dmaengine after enqueue in dql fixes the crash.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-50297">详情</a></td>
       </tr>
@@ -356,7 +436,7 @@
       <tr>
        <td>41d78ba4d9fcf42d722237f0db2a154c</td>
        <td>CVE-2024-50296</td>
-       <td>2024-11-19 02:16:31 <img src="imgs/new.gif" /></td>
+       <td>2024-11-19 02:16:31</td>
        <td>In the Linux kernel, the following vulnerability has been resolved: net: hns3: fix kernel crash when uninstalling driver When the driver is uninstalled and the VF is disabled concurrently, a kernel crash occurs. The reason is that the two actions call function pci_disable_sriov(). The num_VFs is checked to determine whether to release the corresponding resources. During the second calling, num_VFs is not 0 and the resource release function is called. However, the corresponding resource has been released during the first invoking. Therefore, the problem occurs: [15277.839633][T50670] Unable to handle kernel NULL pointer dereference at virtual address 0000000000000020 ... [15278.131557][T50670] Call trace: [15278.134686][T50670] klist_put+0x28/0x12c [15278.138682][T50670] klist_del+0x14/0x20 [15278.142592][T50670] device_del+0xbc/0x3c0 [15278.146676][T50670] pci_remove_bus_device+0x84/0x120 [15278.151714][T50670] pci_stop_and_remove_bus_device+0x6c/0x80 [15278.157447][T50670] pci_iov_remove_virtfn+0xb4/0x12c [15278.162485][T50670] sriov_disable+0x50/0x11c [15278.166829][T50670] pci_disable_sriov+0x24/0x30 [15278.171433][T50670] hnae3_unregister_ae_algo_prepare+0x60/0x90 [hnae3] [15278.178039][T50670] hclge_exit+0x28/0xd0 [hclge] [15278.182730][T50670] __se_sys_delete_module.isra.0+0x164/0x230 [15278.188550][T50670] __arm64_sys_delete_module+0x1c/0x30 [15278.193848][T50670] invoke_syscall+0x50/0x11c [15278.198278][T50670] el0_svc_common.constprop.0+0x158/0x164 [15278.203837][T50670] do_el0_svc+0x34/0xcc [15278.207834][T50670] el0_svc+0x20/0x30 For details, see the following figure. rmmod hclge disable VFs ---------------------------------------------------- hclge_exit() sriov_numvfs_store() ... device_lock() pci_disable_sriov() hns3_pci_sriov_configure() pci_disable_sriov() sriov_disable() sriov_disable() if !num_VFs : if !num_VFs : return; return; sriov_del_vfs() sriov_del_vfs() ... ... klist_put() klist_put() ... ... num_VFs = 0; num_VFs = 0; device_unlock(); In this patch, when driver is removing, we get the device_lock() to protect num_VFs, just like sriov_numvfs_store().</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-50296">详情</a></td>
       </tr>
@@ -439,86 +519,6 @@
        <td>2024-11-18 06:15:04</td>
        <td>The DVC from TRCore has a Path Traversal vulnerability, allowing unauthenticated remote attackers to exploit this vulnerability to read arbitrary system files.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-11309">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1d36805e139958e825ecb2769f852834</td>
-       <td>CVE-2024-52876</td>
-       <td>2024-11-17 05:15:04</td>
-       <td>Holy Stone Remote ID Module HSRID01, firmware distributed with the Drone Go2 mobile application before 1.1.8, allows unauthenticated "remote power off" actions (in broadcast mode) via multiple read operations on the ASTM Remote ID (0xFFFA) GATT.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-52876">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5d709228cb59c636bca309663f0bc2a1</td>
-       <td>CVE-2024-52872</td>
-       <td>2024-11-17 04:15:04</td>
-       <td>In Flagsmith before 2.134.1, the get_document endpoint is not correctly protected by permissions.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-52872">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>02e3144a48d15a0a7767d6890494625c</td>
-       <td>CVE-2024-52871</td>
-       <td>2024-11-17 04:15:03</td>
-       <td>In Flagsmith before 2.134.1, it is possible to bypass the ALLOW_REGISTRATION_WITHOUT_INVITE setting.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-52871">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>78be3fde7dad6e7c3b762a5e3cca28ae</td>
-       <td>CVE-2024-52867</td>
-       <td>2024-11-17 03:15:04</td>
-       <td>guix-daemon in GNU Guix before 5ab3c4c allows privilege escalation because build outputs are accessible by local users before file metadata concerns (e.g., for setuid and setgid programs) are properly addressed. The vulnerability can be remediated within the product via certain pull, reconfigure, and restart actions. Both 5ab3c4c and 5582241 are needed to resolve the vulnerability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-52867">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>eee98e3a54dd032fa2dc08be981752b2</td>
-       <td>CVE-2024-52397</td>
-       <td>2024-11-16 23:15:04</td>
-       <td>Unrestricted Upload of File with Dangerous Type vulnerability in Davor Zeljkovic Convert Docx2post allows Upload a Web Shell to a Web Server.This issue affects Convert Docx2post: from n/a through 1.4.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-52397">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3bde3c55cf082c702d7a0193f64a2140</td>
-       <td>CVE-2024-52416</td>
-       <td>2024-11-16 22:15:08</td>
-       <td>Missing Authorization vulnerability in Eugen Bobrowski Debug Tool allows Upload a Web Shell to a Web Server.This issue affects Debug Tool: from n/a through 2.2.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-52416">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c88adf922dd1f9ed52e99404cae9b309</td>
-       <td>CVE-2024-52415</td>
-       <td>2024-11-16 22:15:07</td>
-       <td>Cross-Site Request Forgery (CSRF) vulnerability in Skpstorm SK WP Settings Backup allows Object Injection.This issue affects SK WP Settings Backup: from n/a through 1.0.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-52415">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7a66159c976a536085ae58b2eeddddeb</td>
-       <td>CVE-2024-52414</td>
-       <td>2024-11-16 22:15:07</td>
-       <td>Deserialization of Untrusted Data vulnerability in Anthony Carbon WDES Responsive Mobile Menu allows Object Injection.This issue affects WDES Responsive Mobile Menu: from n/a through 5.3.18.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-52414">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>388a4bf165b6756f551a1a38f5d22dcb</td>
-       <td>CVE-2024-52413</td>
-       <td>2024-11-16 22:15:07</td>
-       <td>Deserialization of Untrusted Data vulnerability in DMC Airin Blog allows Object Injection.This issue affects Airin Blog: from n/a through 1.6.1.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-52413">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b898352f1126fb66b0b951e8de2fcbf1</td>
-       <td>CVE-2024-52412</td>
-       <td>2024-11-16 22:15:07</td>
-       <td>Deserialization of Untrusted Data vulnerability in Stephen Cui Xin allows Object Injection.This issue affects Xin: from n/a through 1.0.8.1.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-52412">详情</a></td>
       </tr>
 
      </tbody>
@@ -1970,6 +1970,126 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>9125cb88726ef7f91d2fcd19bcdef6f3</td>
+       <td>CVE-2024-45166</td>
+       <td>2024-11-20 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>UCI IDOL拒绝服务漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/105964">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d63440f0fd58b06f27ef38347a7b1a7e</td>
+       <td>CVE-2024-8870</td>
+       <td>2024-11-20 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>WordPress plugin Forms for Mailchimp by Optin Cat跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/105963">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c59accffd59e713bcfd9447fb8da954c</td>
+       <td>CVE-2024-9456</td>
+       <td>2024-11-20 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>WordPress plugin WP Awesome Login跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/105962">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>46e2cb6754d13dbc9555ce9b877e3580</td>
+       <td>CVE-2024-45165</td>
+       <td>2024-11-20 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>UCI IDOL中间人攻击漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/105961">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e7e29b644af4d273ce28c104da1c9229</td>
+       <td>CVE-2024-7836</td>
+       <td>2024-11-20 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>WordPress插件Themify Builder未授权帖子复制漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/105960">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5cf4cd68e73c58fddfb9b5dfc9303e13</td>
+       <td>CVE-2024-9933</td>
+       <td>2024-11-20 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>WordPress plugin WatchTowerHQ身份验证绕过漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/105959">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>51e189e8d96c9dc757af83d0a1db2bf4</td>
+       <td>CVE-2024-7384</td>
+       <td>2024-11-20 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>WordPress插件AcyMailing任意文件上传漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/105958">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>04018ac860f52d08396f317bcf0328f7</td>
+       <td>CVE-2024-9932</td>
+       <td>2024-11-20 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>WordPress plugin Wux Blog Editor代码问题漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/105957">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>aefcb884f95e955d85ed09ebf83e5ca0</td>
+       <td>CVE-2024-9931</td>
+       <td>2024-11-20 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>WordPress plugin Wux Blog Editor身份验证绕过漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/105956">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8758d90efca1600e7422e9ecfcb5e224</td>
+       <td>CVE-2024-9930</td>
+       <td>2024-11-20 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>WordPress plugin Extensions by HocWP Team身份验证绕过漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/105955">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d76552a2f26b3fa8e9e02765e516ca12</td>
+       <td>CVE-2024-9890</td>
+       <td>2024-11-20 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>WordPress plugin User Toolkit身份验证绕过漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/105954">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>090b6d4fd2ceaa29c39e9261693404b4</td>
+       <td>CVE-2024-9626</td>
+       <td>2024-11-20 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>WordPress plugin Editorial Assistant by Sovrn未授权的数据修改漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/105953">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>38ad7cf171dbee283a76f56aeecfc35b</td>
+       <td>CVE-2024-48238</td>
+       <td>2024-11-20 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>Taosir wtcms SQL注入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/105952">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2f308893b9825972d875f8c039692fcf</td>
+       <td>CVE-2024-48237</td>
+       <td>2024-11-20 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>Taosir wtcms访问控制错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/105951">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>bef758c0161821713958fff00e0140ae</td>
+       <td>CVE-2024-9613</td>
+       <td>2024-11-20 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>WordPress plugin FormFacade跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/105950">详情</a></td>
+      </tr>
+
+      <tr>
        <td>23a2f0e907d47d8836663401c1151167</td>
        <td>CVE-2024-39926</td>
        <td>2024-11-18 09:09:08</td>
@@ -2087,126 +2207,6 @@
        <td>2024-11-18 09:09:08</td>
        <td>TOTOLINK T10 AC1200硬编码凭证漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/105456">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4cd9d9dcfe05bbe38770ed253b24f18a</td>
-       <td>CVE-2023-6987</td>
-       <td>2024-11-18 09:09:08</td>
-       <td>WordPres插件String locator反射型跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/105512">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>075b26425b9ac49baafb739c61a86a68</td>
-       <td>CVE-2023-0926</td>
-       <td>2024-11-18 09:09:08</td>
-       <td>WordPress插件Custom Permalinks存储型跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/105511">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0ff25ded4a508029773492e195b2d68d</td>
-       <td>CVE-2024-6631</td>
-       <td>2024-11-18 09:09:08</td>
-       <td>WordPress插件ImageRecycle未授权数据修改漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/105510">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>85a4a9a27fa727f0469f95a8b5ceaacb</td>
-       <td>CVE-2024-6499</td>
-       <td>2024-11-18 09:09:08</td>
-       <td>WordPress按钮插件 MaxButtons信息泄露漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/105509">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>907aec799763e26272d656b6ab1cb2b1</td>
-       <td>CVE-2024-8120</td>
-       <td>2024-11-18 09:09:08</td>
-       <td>WordPress插件ImageRecycle跨站请求伪造漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/105508">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0bfad56f4e3811d29c37b39dd6cf1a01</td>
-       <td>CVE-2024-40111</td>
-       <td>2024-11-18 09:09:08</td>
-       <td>Automad跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/105507">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>fb9f172860ad264bf1afbc6f0d782c90</td>
-       <td>CVE-2024-37392</td>
-       <td>2024-11-18 09:09:08</td>
-       <td>SMSEagle存储型跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/105506">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6be4cca7599a6ea9844bbf0c75c3de5e</td>
-       <td>CVE-2024-45189</td>
-       <td>2024-11-18 09:09:08</td>
-       <td>Mage AI路径遍历漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/105505">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e21c5b2bd10ee2a45426e744c14037d6</td>
-       <td>CVE-2024-7568</td>
-       <td>2024-11-18 09:09:08</td>
-       <td>WordPress插件Favicon Generator跨站请求伪造漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/105504">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a84fcc314b0a835e944544f2f9c57db8</td>
-       <td>CVE-2024-2254</td>
-       <td>2024-11-18 09:09:08</td>
-       <td>WordPres插件RT Easy Builder存储型跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/105503">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ae978f7b1c01f1a1906c51f7138ecbb8</td>
-       <td>CVE-2022-43915</td>
-       <td>2024-11-18 09:09:08</td>
-       <td>IBM App Connect Enterprise Certified Container权限提升漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/105502">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3afa1fc0ff1855466ee2ec0beef521fa</td>
-       <td>CVE-2024-7351</td>
-       <td>2024-11-18 09:09:08</td>
-       <td>WordPress插件Simple Job Board PHP对象注入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/105501">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>857b987ea52c9a80f364a7b136a9f167</td>
-       <td>CVE-2024-7656</td>
-       <td>2024-11-18 09:09:08</td>
-       <td>WordPress插件Image Hotspot by DevVN PHP对象注入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/105500">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9f00df7e9d78efcc6eb576f6dd114590</td>
-       <td>CVE-2024-44382</td>
-       <td>2024-11-18 09:09:08</td>
-       <td>D-Link DI_8004W命令执行漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/105499">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d89011410d71472c8da4718eb4877888</td>
-       <td>CVE-2024-44386</td>
-       <td>2024-11-18 09:09:08</td>
-       <td>Tenda FH1206缓冲区溢出漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/105498">详情</a></td>
       </tr>
 
      </tbody>
