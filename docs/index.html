@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2024-11-28 09:11:17 -->
+<!-- RELEASE TIME : 2024-11-29 09:11:13 -->
 <html lang="zh-cn">
 
  <head>
@@ -282,9 +282,89 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>801f710aae50552eeaed4132fc3ebbf5</td>
+       <td>CVE-2024-11082</td>
+       <td>2024-11-28 09:47:12 <img src="imgs/new.gif" /></td>
+       <td>The Tumult Hype Animations plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the hypeanimations_panel() function in all versions up to, and including, 1.9.15. This makes it possible for authenticated attackers, with Author-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-11082">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5cb5098dd477194b7d5f52c902dbe0f6</td>
+       <td>CVE-2024-10780</td>
+       <td>2024-11-28 09:47:12 <img src="imgs/new.gif" /></td>
+       <td>The Restaurant & Cafe Addon for Elementor plugin for WordPress is vulnerable to Information Exposure in all versions up to, and including, 1.5.9 via the 'narestaurant_elementor_template' shortcode due to insufficient restrictions on which posts can be included. This makes it possible for authenticated attackers, with Contributor-level access and above, to extract data from private or draft posts created by Elementor that they should not have access to.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-10780">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>df7f5c827572d2c561e1c206a0a77b0f</td>
+       <td>CVE-2024-8672</td>
+       <td>2024-11-28 09:47:11 <img src="imgs/new.gif" /></td>
+       <td>The Widget Options – The #1 WordPress Widget & Block Control Plugin plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 4.0.7 via the display logic functionality that extends several page builders. This is due to the plugin allowing users to supply input that will be passed through eval() without any filtering or capability checks. This makes it possible for authenticated attackers, with contributor-level access and above, to execute code on the server. Special note: We suggested the vendor implement an allowlist of functions and limit the ability to execute commands to just administrators, however, they did not take our advice. We are considering this patched, however, we believe it could still be further hardened and there may be residual risk with how the issue is currently patched.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-8672">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b785d7b15d5ef67f24e37119ecdb20c3</td>
+       <td>CVE-2024-10670</td>
+       <td>2024-11-28 09:47:11 <img src="imgs/new.gif" /></td>
+       <td>The Primary Addon for Elementor plugin for WordPress is vulnerable to Information Exposure in all versions up to, and including, 1.6.2 via the [prim_elementor_template] shortcode due to insufficient restrictions on which posts can be included. This makes it possible for authenticated attackers, with Contributor-level access and above, to extract data from private or draft posts created with Elementor that they should not have access to.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-10670">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e63781e2ab03c94a69292c2027453e55</td>
+       <td>CVE-2024-10798</td>
+       <td>2024-11-28 09:47:10 <img src="imgs/new.gif" /></td>
+       <td>The Royal Elementor Addons and Templates plugin for WordPress is vulnerable to Information Exposure in all versions up to, and including, 1.7.1003 via the 'wpr-template' shortcode due to insufficient restrictions on which posts can be included. This makes it possible for authenticated attackers, with Contributor-level access and above, to extract data from private or draft posts created via Elementor that they should not have access to.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-10798">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>fe915a3342b1dd27be99c924a01adf1e</td>
+       <td>CVE-2024-11103</td>
+       <td>2024-11-28 09:47:09 <img src="imgs/new.gif" /></td>
+       <td>The Contest Gallery plugin for WordPress is vulnerable to privilege escalation via account takeover in all versions up to, and including, 24.0.7. This is due to the plugin not properly validating a user's identity prior to updating their password. This makes it possible for unauthenticated attackers to change arbitrary user's passwords, including administrators, and leverage that to gain access to their account.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-11103">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ad1e6237c7e5ef6847dcc04b891b2353</td>
+       <td>CVE-2024-22037</td>
+       <td>2024-11-28 09:46:07 <img src="imgs/new.gif" /></td>
+       <td>The uyuni-server-attestation systemd service needs a database_password environment variable. This file has 640 permission, and cannot be shown users, but the environment is still exposed by systemd to non-privileged users.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-22037">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5a6922c25dabba5a31bb1f87b6f08f1f</td>
+       <td>CVE-2024-11599</td>
+       <td>2024-11-28 09:42:48 <img src="imgs/new.gif" /></td>
+       <td>Mattermost versions 10.0.x <= 10.0.1, 10.1.x <= 10.1.1, 9.11.x <= 9.11.3, 9.5.x <= 9.5.11 fail to properly validate email addresses which allows an unauthenticated user to bypass email domain restrictions via carefully crafted input on email registration.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-11599">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>afabc5c7a751dc754a0f7ef3d0f27a33</td>
+       <td>CVE-2024-22038</td>
+       <td>2024-11-28 09:38:03 <img src="imgs/new.gif" /></td>
+       <td>Various problems in obs-scm-bridge allows attackers that create specially crafted git repositories to leak information of cause denial of service.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-22038">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>698ae292edfc1233afd5d0e9f9a0b3eb</td>
+       <td>CVE-2024-49502</td>
+       <td>2024-11-28 09:26:38 <img src="imgs/new.gif" /></td>
+       <td>A Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting') vulnerability in the Setup Wizard, HTTP Proxy credentials pane in spacewalk-web allows attackers to attack users by providing specially crafted URLs to click. This issue affects Container suse/manager/5.0/x86_64/server:5.0.2.7.8.1: before 5.0.15-150600.3.10.2; SUSE Manager Server Module 4.3: before 4.3.42-150400.3.52.1.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-49502">详情</a></td>
+      </tr>
+
+      <tr>
        <td>2f727bde471b13c1ae2e14076ab3a4c8</td>
        <td>CVE-2024-52323</td>
-       <td>2024-11-27 09:54:07 <img src="imgs/new.gif" /></td>
+       <td>2024-11-27 09:54:07</td>
        <td>Zohocorp ManageEngine Analytics Plus versions below 6100 are vulnerable to authenticated sensitive data exposure which allows the users to retrieve sensitive tokens associated to the org-admin account.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-52323">详情</a></td>
       </tr>
@@ -292,7 +372,7 @@
       <tr>
        <td>78c73790025e596e2f99c11661f97985</td>
        <td>CVE-2024-11667</td>
-       <td>2024-11-27 09:39:41 <img src="imgs/new.gif" /></td>
+       <td>2024-11-27 09:39:41</td>
        <td>A directory traversal vulnerability in the web management interface of Zyxel ATP series firmware versions V5.00 through V5.38, USG FLEX series firmware versions V5.00 through V5.38, USG FLEX 50(W) series firmware versions V5.10 through V5.38, and USG20(W)-VPN series firmware versions V5.10 through V5.38 could allow an attacker to download or upload files via a crafted URL.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-11667">详情</a></td>
       </tr>
@@ -300,7 +380,7 @@
       <tr>
        <td>33b86be4fda888a50ee1a76c72c90638</td>
        <td>CVE-2024-36467</td>
-       <td>2024-11-27 07:15:09 <img src="imgs/new.gif" /></td>
+       <td>2024-11-27 07:15:09</td>
        <td>An authenticated user with API access (e.g.: user with default User role), more specifically a user with access to the user.update API endpoint is enough to be able to add themselves to any group (e.g.: Zabbix Administrators), except to groups that are disabled or having restricted GUI access.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-36467">详情</a></td>
       </tr>
@@ -308,7 +388,7 @@
       <tr>
        <td>1fb8e3c220dcc19f8a44aa1cb777b334</td>
        <td>CVE-2024-10895</td>
-       <td>2024-11-27 07:15:08 <img src="imgs/new.gif" /></td>
+       <td>2024-11-27 07:15:08</td>
        <td>The Counter Up – Animated Number Counter & Milestone Showcase plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin's 'lgx-counter' shortcode in all versions up to, and including, 2.4.0 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-10895">详情</a></td>
       </tr>
@@ -316,7 +396,7 @@
       <tr>
        <td>d768d0b6cf54837815bfaeb67117fc0b</td>
        <td>CVE-2024-10580</td>
-       <td>2024-11-27 07:15:07 <img src="imgs/new.gif" /></td>
+       <td>2024-11-27 07:15:07</td>
        <td>The Hustle – Email Marketing, Lead Generation, Optins, Popups plugin for WordPress is vulnerable to unauthorized form submissions due to a missing capability check on the submit_form() function in all versions up to, and including, 7.8.5. This makes it possible for unauthenticated attackers to submit unpublished forms.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-10580">详情</a></td>
       </tr>
@@ -324,7 +404,7 @@
       <tr>
        <td>7a72c1f1369688b841eb91926443ca98</td>
        <td>CVE-2024-10175</td>
-       <td>2024-11-27 07:15:07 <img src="imgs/new.gif" /></td>
+       <td>2024-11-27 07:15:07</td>
        <td>The Pricing Tables For WPBakery Page Builder (formerly Visual Composer) plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin's wdo_pricing_tables shortcode in all versions up to, and including, 1.4 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-10175">详情</a></td>
       </tr>
@@ -332,7 +412,7 @@
       <tr>
        <td>77e99e99cdeb887bc152d7fc043686cb</td>
        <td>CVE-2024-52959</td>
-       <td>2024-11-27 06:15:19 <img src="imgs/new.gif" /></td>
+       <td>2024-11-27 06:15:19</td>
        <td>A Improper Control of Generation of Code ('Code Injection') vulnerability in plugin management in iota C.ai Conversational Platform from 1.0.0 through 2.1.3 allows remote authenticated users to perform arbitrary system commands via a DLL file.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-52959">详情</a></td>
       </tr>
@@ -340,7 +420,7 @@
       <tr>
        <td>fda1b5c1d4095322a3e93a9067c98fad</td>
        <td>CVE-2024-52958</td>
-       <td>2024-11-27 06:15:18 <img src="imgs/new.gif" /></td>
+       <td>2024-11-27 06:15:18</td>
        <td>A improper verification of cryptographic signature vulnerability in plugin management in iota C.ai Conversational Platform from 1.0.0 through 2.1.3 allows remote authenticated users to load a malicious DLL via upload plugin function.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-52958">详情</a></td>
       </tr>
@@ -348,7 +428,7 @@
       <tr>
        <td>7e01b98183c1a6b72d5cc438a2ceab04</td>
        <td>CVE-2024-11219</td>
-       <td>2024-11-27 06:15:18 <img src="imgs/new.gif" /></td>
+       <td>2024-11-27 06:15:18</td>
        <td>The Otter Blocks – Gutenberg Blocks, Page Builder for Gutenberg Editor & FSE plugin for WordPress is vulnerable to Path Traversal in all versions up to, and including, 3.0.6 via the get_image function. This makes it possible for unauthenticated attackers to view arbitrary images on the server, which can contain sensitive information.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-11219">详情</a></td>
       </tr>
@@ -356,7 +436,7 @@
       <tr>
        <td>58ee1c1a3573e58c2cbe62c68b43edef</td>
        <td>CVE-2024-11083</td>
-       <td>2024-11-27 06:15:17 <img src="imgs/new.gif" /></td>
+       <td>2024-11-27 06:15:17</td>
        <td>The ProfilePress plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 4.15.18 via the WordPress core search feature. This makes it possible for unauthenticated attackers to extract sensitive data from posts that have been restricted to higher-level roles such as administrator.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-11083">详情</a></td>
       </tr>
@@ -439,86 +519,6 @@
        <td>2024-11-26 09:15:04</td>
        <td>In multiple functions that process 802.11 frames, out-of-bounds reads can occur due to insufficient validation.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2017-17772">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e07bc2c33b3c45eb1fe555e936e1f44f</td>
-       <td>CVE-2024-11664</td>
-       <td>2024-11-25 09:15:06</td>
-       <td>A vulnerability, which was classified as critical, has been found in eNMS up to 4.2. Affected by this issue is the function multiselect_filtering of the file eNMS/controller.py of the component TGZ File Handler. The manipulation leads to path traversal. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. The patch is identified as 22b0b443acca740fc83b5544165c1f53eff3f529. It is recommended to apply a patch to fix this issue.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-11664">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d2aaafa108cdeddab6eab316968d3f28</td>
-       <td>CVE-2024-11663</td>
-       <td>2024-11-25 09:15:06</td>
-       <td>A vulnerability classified as critical was found in Codezips E-Commerce Site 1.0. Affected by this vulnerability is an unknown functionality of the file search.php. The manipulation of the argument keywords leads to sql injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-11663">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>17400c831ef3066f86e7e8c3813a506b</td>
-       <td>CVE-2022-33862</td>
-       <td>2024-11-25 08:54:39</td>
-       <td>IPP software prior to v1.71 is vulnerable to default credential vulnerability. This could lead attackers to identify and access vulnerable systems.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-33862">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9c4fcb1bac12f13476b88489e06bea12</td>
-       <td>CVE-2024-11661</td>
-       <td>2024-11-25 08:15:09</td>
-       <td>A vulnerability was found in Codezips Free Exam Hall Seating Management System 1.0. It has been declared as problematic. This vulnerability affects unknown code of the file profile.php of the component Profile Image Handler. The manipulation of the argument image leads to unrestricted upload. The attack can be initiated remotely. The researcher submit confuses the vulnerability class of this issue.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-11661">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b32fce327f1088af29d9a77211082940</td>
-       <td>CVE-2024-10492</td>
-       <td>2024-11-25 08:15:08</td>
-       <td>A vulnerability was found in Keycloak. A user with high privileges could read sensitive information from a Vault file that is not within the expected context. This attacker must have previous high access to the Keycloak server in order to perform resource creation, for example, an LDAP provider configuration and set up a Vault read file, which will only inform whether that file exists or not.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-10492">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b899d342ec994e31ea7d20f69831c44e</td>
-       <td>CVE-2024-10451</td>
-       <td>2024-11-25 07:37:05</td>
-       <td>A flaw was found in Keycloak. This issue occurs because sensitive runtime values, such as passwords, may be captured during the Keycloak build process and embedded as default values in bytecode, leading to unintended information disclosure. In Keycloak 26, sensitive data specified directly in environment variables during the build process is also stored as a default values, making it accessible during runtime. Indirect usage of environment variables for SPI options and Quarkus properties is also vulnerable due to unconditional expansion by PropertyMapper logic, capturing sensitive data as default values in all Keycloak versions up to 26.0.2.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-10451">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>fd1c6ff78239ee5f70c92bf0ec3420c8</td>
-       <td>CVE-2024-10270</td>
-       <td>2024-11-25 07:37:04</td>
-       <td>A vulnerability was found in the Keycloak-services package. If untrusted data is passed to the SearchQueryUtils method, it could lead to a denial of service (DoS) scenario by exhausting system resources due to a Regex complexity.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-10270">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6a21b3419e5329a7330f496f9e844fd5</td>
-       <td>CVE-2024-9666</td>
-       <td>2024-11-25 07:29:52</td>
-       <td>A vulnerability was found in the Keycloak Server. The Keycloak Server is vulnerable to a denial of service (DoS) attack due to improper handling of proxy headers. When Keycloak is configured to accept incoming proxy headers, it may accept non-IP values, such as obfuscated identifiers, without proper validation. This issue can lead to costly DNS resolution operations, which an attacker could exploit to tie up IO threads and potentially cause a denial of service. The attacker must have access to send requests to a Keycloak instance that is configured to accept proxy headers, specifically when reverse proxies do not overwrite incoming headers, and Keycloak is configured to trust these headers.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-9666">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1f0bffc6e77b30531a3a5027d13a00f1</td>
-       <td>CVE-2024-11660</td>
-       <td>2024-11-25 07:00:18</td>
-       <td>A vulnerability was found in code-projects Farmacia 1.0. It has been classified as problematic. This affects an unknown part of the file usuario.php. The manipulation of the argument name leads to cross site scripting. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. Other parameters might be affected as well.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-11660">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>73c70b14c7658664dabeafc6a043778e</td>
-       <td>CVE-2024-6538</td>
-       <td>2024-11-25 06:15:12</td>
-       <td>A flaw was found in OpenShift Console. A Server Side Request Forgery (SSRF) attack can happen if an attacker supplies all or part of a URL to the server to query. The server is considered to be in a privileged network position and can often reach exposed services that aren't readily available to clients due to network filtering. Leveraging such an attack vector, the attacker can have an impact on other services and potentially disclose information or have other nefarious effects on the system. The /api/dev-console/proxy/internet endpoint on the OpenShit Console allows authenticated users to have the console's pod perform arbitrary and fully controlled HTTP(s) requests. The full response to these requests is returned by the endpoint. While the name of this endpoint suggests the requests are only bound to the internet, no such checks are in place. An authenticated user can therefore ask the console to perform arbitrary HTTP requests from outside the cluster to a service inside the cluster.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-6538">详情</a></td>
       </tr>
 
      </tbody>
@@ -2002,9 +2002,129 @@
       </tr>
 
       <tr>
+       <td>ab5d9054b742046efb1b16c6be07bec8</td>
+       <td>CVE-2024-49614</td>
+       <td>2024-11-28 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>WordPress plugin SermonAudio Widgets SQL注入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/107108">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>dac56c7036880e8c426f68a032a66064</td>
+       <td>CVE-2024-49617</td>
+       <td>2024-11-28 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>WordPress plugin Back Link Tracker跨站请求伪造漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/107107">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>dbbdf4e329bc03fbc41d8d39de0cc05b</td>
+       <td>CVE-2024-10142</td>
+       <td>2024-11-28 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>Code-Projects Blood Bank System跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/107106">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5da40f46ef675261a73ef00eb4bb163b</td>
+       <td>CVE-2024-10162</td>
+       <td>2024-11-28 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>PHPGurukul Boat Booking System SQL注入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/107105">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>af222c5999fb6d9cee655b46c19d7a32</td>
+       <td>CVE-2024-10163</td>
+       <td>2024-11-28 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>SourceCodester Sentiment Based Movie Rating System SQL注入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/107104">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d7874d11e6c6e180c620a4c2ea89a932</td>
+       <td>CVE-2024-49611</td>
+       <td>2024-11-28 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>WordPress plugin Product Website Showcase代码问题漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/107103">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>fd94e9e850981a456455a2ef11bed12f</td>
+       <td>CVE-2024-49604</td>
+       <td>2024-11-28 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>WordPress plugin Simple User Registration身份验证绕过漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/107102">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6886a58ad9ff98d28b446a0e779f6558</td>
+       <td>CVE-2024-49323</td>
+       <td>2024-11-28 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>WordPress plugin All in One Slider跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/107101">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f5dcccc1c51f713f84f739e273c9e91a</td>
+       <td>CVE-2024-10192</td>
+       <td>2024-11-28 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>Anuj Kumar Ifsc Code Finder Project跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/107100">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>bd9c33980733d6fd2abd2a46c3a421ae</td>
+       <td>CVE-2024-10167</td>
+       <td>2024-11-28 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>Codezips Sales Management System SQL注入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/107099">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3a0d6c9dd89a2dc123941d701d85c163</td>
+       <td>CVE-2024-37404</td>
+       <td>2024-11-28 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>Ivanti远程代码执行漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/107098">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>99b81ce91465cc9e34e45f140d777f08</td>
+       <td>CVE-2024-10140</td>
+       <td>2024-11-28 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>Mayuri K. Pharmacy Management System SQL注入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/107097">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>de7ae98e0822b06833e440eb404c2af4</td>
+       <td>CVE-2024-48049</td>
+       <td>2024-11-28 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>WordPress plugin Mighty Builder跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/107096">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c7c176f5ac7e7b30c705be2ea2b5b341</td>
+       <td>CVE-2024-10173</td>
+       <td>2024-11-28 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>DDMQ授权问题漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/107095">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6ac11cd31005d2051be80b059dfcbc62</td>
+       <td>CVE-2024-49626</td>
+       <td>2024-11-28 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>WordPress plugin Shipyaari Shipping Management反序列化漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/107094">详情</a></td>
+      </tr>
+
+      <tr>
        <td>6e359f1e29910e12097457982372b380</td>
        <td>CVE-2024-45792</td>
-       <td>2024-11-27 09:09:10 <img src="imgs/new.gif" /></td>
+       <td>2024-11-27 09:09:10</td>
        <td>Mantis Bug Tracker信息泄露漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/106934">详情</a></td>
       </tr>
@@ -2012,7 +2132,7 @@
       <tr>
        <td>ff5324414d101b4935f3054dc26ee145</td>
        <td>CVE-2024-48930</td>
-       <td>2024-11-27 09:09:10 <img src="imgs/new.gif" /></td>
+       <td>2024-11-27 09:09:10</td>
        <td>cryptocoinjs secp256k1-node信息泄露漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/106933">详情</a></td>
       </tr>
@@ -2020,7 +2140,7 @@
       <tr>
        <td>4bb16a84606ebc501b95e5d9c84e3024</td>
        <td>CVE-2024-10199</td>
-       <td>2024-11-27 09:09:10 <img src="imgs/new.gif" /></td>
+       <td>2024-11-27 09:09:10</td>
        <td>Code-Projects Pharmacy Management System跨站脚本漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/106932">详情</a></td>
       </tr>
@@ -2028,7 +2148,7 @@
       <tr>
        <td>a189828db0909e7b78fe4682c97f0885</td>
        <td>CVE-2024-10202</td>
-       <td>2024-11-27 09:09:10 <img src="imgs/new.gif" /></td>
+       <td>2024-11-27 09:09:10</td>
        <td>Wellchoose Administrative Management System命令注入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/106931">详情</a></td>
       </tr>
@@ -2036,7 +2156,7 @@
       <tr>
        <td>2cc03acc3b8ea714c7aa6caed13b861a</td>
        <td>CVE-2024-48231</td>
-       <td>2024-11-27 09:09:10 <img src="imgs/new.gif" /></td>
+       <td>2024-11-27 09:09:10</td>
        <td>FunAdmin SQL注入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/106930">详情</a></td>
       </tr>
@@ -2044,7 +2164,7 @@
       <tr>
        <td>efa7cedfe038cc8c6402b98731c238f9</td>
        <td>CVE-2024-44000</td>
-       <td>2024-11-27 09:09:10 <img src="imgs/new.gif" /></td>
+       <td>2024-11-27 09:09:10</td>
        <td>WordPress plugin LiteSpeed Cache凭证保护不足漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/106929">详情</a></td>
       </tr>
@@ -2052,7 +2172,7 @@
       <tr>
        <td>5a83cfb8996138b3b41d6d2047372c12</td>
        <td>CVE-2024-47532</td>
-       <td>2024-11-27 09:09:10 <img src="imgs/new.gif" /></td>
+       <td>2024-11-27 09:09:10</td>
        <td>RestrictedPython信息泄露漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/106928">详情</a></td>
       </tr>
@@ -2060,7 +2180,7 @@
       <tr>
        <td>073f0528a5657c601cc93f8aa56a1c69</td>
        <td>CVE-2024-49273</td>
-       <td>2024-11-27 09:09:10 <img src="imgs/new.gif" /></td>
+       <td>2024-11-27 09:09:10</td>
        <td>WordPress plugin ProfileGrid跨站请求伪造漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/106927">详情</a></td>
       </tr>
@@ -2068,7 +2188,7 @@
       <tr>
        <td>11021bc99038f9e526d37ad001f31830</td>
        <td>CVE-2024-47328</td>
-       <td>2024-11-27 09:09:10 <img src="imgs/new.gif" /></td>
+       <td>2024-11-27 09:09:10</td>
        <td>WordPress plugin Automation By Autonami SQL注入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/106926">详情</a></td>
       </tr>
@@ -2076,7 +2196,7 @@
       <tr>
        <td>876076e8d62fea3f9e585652cb471a43</td>
        <td>CVE-2024-43945</td>
-       <td>2024-11-27 09:09:10 <img src="imgs/new.gif" /></td>
+       <td>2024-11-27 09:09:10</td>
        <td>WordPress plugin LatePoint跨站请求伪造漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/106925">详情</a></td>
       </tr>
@@ -2084,129 +2204,9 @@
       <tr>
        <td>ec2f0bb1825d1769151f6a2c997003ca</td>
        <td>CVE-2024-41738</td>
-       <td>2024-11-27 09:09:10 <img src="imgs/new.gif" /></td>
+       <td>2024-11-27 09:09:10</td>
        <td>IBM TXSeries for Multiplatforms信息泄露漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/106924">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f0947cfa9600689a6fffb0d0618e8caa</td>
-       <td>CVE-2024-41930</td>
-       <td>2024-11-26 09:09:07</td>
-       <td>Media Fusion Teacher Performance Management System跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/106694">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ea27d64ac6341fe0b61340500c40fc5a</td>
-       <td>CVE-2024-46256</td>
-       <td>2024-11-26 09:09:07</td>
-       <td>NginxProxyManager命令注入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/106693">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5fd87e8336ba8f99949ac2be34f28921</td>
-       <td>CVE-2024-9202</td>
-       <td>2024-11-26 09:09:07</td>
-       <td>Eclipse Dataspace Components授权错误漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/106692">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>22624d98b994f512fb44febb30c7dc1b</td>
-       <td>CVE-2024-6436</td>
-       <td>2024-11-26 09:09:07</td>
-       <td>Rockwell Automation Sequence Manager输入验证错误漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/106691">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f379efb794d6e39a21c534144ac9dd57</td>
-       <td>CVE-2024-45744</td>
-       <td>2024-11-26 09:09:07</td>
-       <td>TopQuadrant TopBraid EDG信息泄露漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/106690">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>cb8686c0422d2287fc2fdecb557c201e</td>
-       <td>CVE-2024-25412</td>
-       <td>2024-11-26 09:09:07</td>
-       <td>Flatpress跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/106689">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>bec2384e7b8281d935df749a25b4f514</td>
-       <td>CVE-2024-25411</td>
-       <td>2024-11-26 09:09:07</td>
-       <td>Flatpress跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/106688">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0b95e76773893a41d8d0a0731e225944</td>
-       <td>CVE-2024-45745</td>
-       <td>2024-11-26 09:09:07</td>
-       <td>TopQuadrant TopBraid EDG XML外部实体引用漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/106687">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0d51b1ed0575d30d0f38fd5bdac9a0e3</td>
-       <td>CVE-2024-39433</td>
-       <td>2024-11-26 09:09:07</td>
-       <td>Google Android越界写入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/106686">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7fa0992c31e798438bcfc6448b8b54b9</td>
-       <td>CVE-2024-47077</td>
-       <td>2024-11-26 09:09:07</td>
-       <td>authentik授权错误漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/106685">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2321ebce6a51c83567df11f4c0974ee9</td>
-       <td>CVE-2024-41999</td>
-       <td>2024-11-26 09:09:07</td>
-       <td>Smart-tab Android app主动调式代码漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/106684">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>877d97420496f6883379378d12877153</td>
-       <td>CVE-2024-23958</td>
-       <td>2024-11-26 09:09:07</td>
-       <td>Autel Energy MaxiCharger AC Elite Business C50硬编码凭据身份认证绕过漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/106683">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>418ac41bdd896add625bb728bbe91f1b</td>
-       <td>CVE-2024-23935</td>
-       <td>2024-11-26 09:09:07</td>
-       <td>Alpine Halo9堆栈缓冲区溢出漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/106682">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1c9279f6e4c0d04dc82337a6801548a9</td>
-       <td>CVE-2024-45200</td>
-       <td>2024-11-26 09:09:07</td>
-       <td>Nintendo Mario Kart 8 Deluxe代码注入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/106681">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3badffb5333069f2db5ad689ce6f97c4</td>
-       <td>CVE-2024-8456</td>
-       <td>2024-11-26 09:09:07</td>
-       <td>PLANET switch devices身份认证错误漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/106680">详情</a></td>
       </tr>
 
      </tbody>
