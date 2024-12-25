@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2024-12-24 09:11:14 -->
+<!-- RELEASE TIME : 2024-12-25 09:11:13 -->
 <html lang="zh-cn">
 
  <head>
@@ -284,7 +284,7 @@
       <tr>
        <td>916044873b020917249ba77a70db906d</td>
        <td>CVE-2024-53961</td>
-       <td>2024-12-23 21:15:05 <img src="imgs/new.gif" /></td>
+       <td>2024-12-23 21:15:05</td>
        <td>ColdFusion versions 2023.11, 2021.17 and earlier are affected by an Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability that could lead to arbitrary file system read. An attacker could exploit this vulnerability to access files or directories that are outside of the restricted directory set by the application. This could lead to the disclosure of sensitive information or the manipulation of system data.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-53961">详情</a></td>
       </tr>
@@ -292,7 +292,7 @@
       <tr>
        <td>0bdfdc0a3a264020a14a8ced51c0f40e</td>
        <td>CVE-2024-56363</td>
-       <td>2024-12-23 18:15:07 <img src="imgs/new.gif" /></td>
+       <td>2024-12-23 18:15:07</td>
        <td>APTRS (Automated Penetration Testing Reporting System) is a Python and Django-based automated reporting tool designed for penetration testers and security organizations. In 1.0, there is a vulnerability in the web application's handling of user-supplied input that is incorporated into a Jinja2 template. Specifically, when user input is improperly sanitized or validated, an attacker can inject Jinja2 syntax into the template, causing the server to execute arbitrary code. For example, an attacker might be able to inject expressions like {{ config }}, {{ self.class.mro[1].subclasses() }}, or more dangerous payloads that trigger execution of arbitrary Python code. The vulnerability can be reproduced by submitting crafted input to all the template fields handled by ckeditor, that are passed directly to a Jinja2 template. If the input is rendered without sufficient sanitization, it results in the execution of malicious Jinja2 code on the server.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-56363">详情</a></td>
       </tr>
@@ -300,7 +300,7 @@
       <tr>
        <td>4c02a5c039512e91b1fa263da3030bdd</td>
        <td>CVE-2024-56362</td>
-       <td>2024-12-23 18:15:07 <img src="imgs/new.gif" /></td>
+       <td>2024-12-23 18:15:07</td>
        <td>Navidrome is an open source web-based music collection server and streamer. Navidrome stores the JWT secret in plaintext in the navidrome.db database file under the property table. This practice introduces a security risk because anyone with access to the database file can retrieve the secret. This vulnerability is fixed in 0.54.1.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-56362">详情</a></td>
       </tr>
@@ -308,7 +308,7 @@
       <tr>
        <td>c5d82dec1886b1554f25b191e29880be</td>
        <td>CVE-2024-53276</td>
-       <td>2024-12-23 18:15:07 <img src="imgs/new.gif" /></td>
+       <td>2024-12-23 18:15:07</td>
        <td>Home-Gallery.org is a self-hosted open-source web gallery to browse personal photos and videos. In 1.15.0 and earlier, an open CORS policy in app.js may allow an attacker to view the images of home-gallery when it is using the default settings. The following express middleware allows any website to make a cross site request to home-gallery, thus allowing them to read any endpoint on home-gallery. Home-gallery is mostly safe from cross-site requests due to most of its pages requiring JavaScript, and cross-site requests such as fetch() do not render javascript. If an attacker is able to get the path of the preview images which are randomized, an attacker will be able to view such a photo. If any static files or endpoints are introduced in the future that contain sensitive information, they will be accessible to an attacker website.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-53276">详情</a></td>
       </tr>
@@ -316,7 +316,7 @@
       <tr>
        <td>574caa9c7c9c3d90bc6dd7d924c8d89e</td>
        <td>CVE-2024-53275</td>
-       <td>2024-12-23 18:15:07 <img src="imgs/new.gif" /></td>
+       <td>2024-12-23 18:15:07</td>
        <td>Home-Gallery.org is a self-hosted open-source web gallery to browse personal photos and videos. In 1.15.0 and earlier, the default setup of home-gallery is vulnerable to DNS rebinding. Home-gallery is set up without TLS and user authentication by default, leaving it vulnerable to DNS rebinding. In this attack, an attacker will ask a user to visit their website. The attacker website will then change the DNS records of their domain from their IP address to the internal IP address of the home-gallery instance. To tell which IP addresses are valid, we can rebind a subdomain to each IP address we want to check, and see if there is a response. Once potential candidates have been found, the attacker can launch the attack by reading the response of the web server after the IP address has changed. When the attacker domain is fetched, the response will be from the home-gallery instance, not the attacker website, because the IP address has been changed. Due to a lack of authentication, home-gallery photos can then be extracted by the attacker website.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-53275">详情</a></td>
       </tr>
@@ -324,7 +324,7 @@
       <tr>
        <td>c4f4c0f6dd2e0c26511b977c4aa2ef6f</td>
        <td>CVE-2024-40896</td>
-       <td>2024-12-23 17:15:08 <img src="imgs/new.gif" /></td>
+       <td>2024-12-23 17:15:08</td>
        <td>In libxml2 2.11 before 2.11.9, 2.12 before 2.12.9, and 2.13 before 2.13.3, the SAX parser can produce events for external entities even if custom SAX handlers try to override entity content (by setting "checked"). This makes classic XXE attacks possible.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-40896">详情</a></td>
       </tr>
@@ -332,7 +332,7 @@
       <tr>
        <td>1403001f963d453afaed49b4a7f87a82</td>
        <td>CVE-2024-56364</td>
-       <td>2024-12-23 16:15:07 <img src="imgs/new.gif" /></td>
+       <td>2024-12-23 16:15:07</td>
        <td>SimpleXLSX is software for parsing and retrieving data from Excel XLSx files. Starting in 1.0.12 and ending in 1.1.13, when calling the extended toHTMLEx method, it is possible to execute arbitrary JavaScript code. This vulnerability is fixed in 1.1.13.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-56364">详情</a></td>
       </tr>
@@ -340,7 +340,7 @@
       <tr>
        <td>0c0b6e3d8b9ae26107c0295f04a56493</td>
        <td>CVE-2024-56326</td>
-       <td>2024-12-23 16:15:07 <img src="imgs/new.gif" /></td>
+       <td>2024-12-23 16:15:07</td>
        <td>Jinja is an extensible templating engine. Prior to 3.1.5, An oversight in how the Jinja sandboxed environment detects calls to str.format allows an attacker that controls the content of a template to execute arbitrary Python code. To exploit the vulnerability, an attacker needs to control the content of a template. Whether that is the case depends on the type of application using Jinja. This vulnerability impacts users of applications which execute untrusted templates. Jinja's sandbox does catch calls to str.format and ensures they don't escape the sandbox. However, it's possible to store a reference to a malicious string's format method, then pass that to a filter that calls it. No such filters are built-in to Jinja, but could be present through custom filters in an application. After the fix, such indirect calls are also handled by the sandbox. This vulnerability is fixed in 3.1.5.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-56326">详情</a></td>
       </tr>
@@ -348,7 +348,7 @@
       <tr>
        <td>d43f508a82f7fa455feaf8b23dd7e104</td>
        <td>CVE-2024-56201</td>
-       <td>2024-12-23 16:15:07 <img src="imgs/new.gif" /></td>
+       <td>2024-12-23 16:15:07</td>
        <td>Jinja is an extensible templating engine. Prior to 3.1.5, a bug in the Jinja compiler allows an attacker that controls both the content and filename of a template to execute arbitrary Python code, regardless of if Jinja's sandbox is used. To exploit the vulnerability, an attacker needs to control both the filename and the contents of a template. Whether that is the case depends on the type of application using Jinja. This vulnerability impacts users of applications which execute untrusted templates where the template author can also choose the template filename. This vulnerability is fixed in 3.1.5.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-56201">详情</a></td>
       </tr>
@@ -356,7 +356,7 @@
       <tr>
        <td>417bcaa3adf26488a4db413aec1775a8</td>
        <td>CVE-2024-55947</td>
-       <td>2024-12-23 16:15:07 <img src="imgs/new.gif" /></td>
+       <td>2024-12-23 16:15:07</td>
        <td>Gogs is an open source self-hosted Git service. A malicious user is able to write a file to an arbitrary path on the server to gain SSH access to the server. The vulnerability is fixed in 0.13.1.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-55947">详情</a></td>
       </tr>
@@ -1970,9 +1970,129 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>0242308b334fd34b9aa5bc496f86c971</td>
+       <td>CVE-2024-9603</td>
+       <td>2024-12-24 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>Google Chrome类型混淆漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108734">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1dbcaf09271c9d50cdf88e58c44ff2fd</td>
+       <td>CVE-2024-39440</td>
+       <td>2024-12-24 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>UNISOC Chipsets拒绝服务漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108733">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>cd49cf740e5ee6244ad7459272ef487a</td>
+       <td>CVE-2024-47780</td>
+       <td>2024-12-24 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>TYPO3信息泄露漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108732">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7104c5fd4fbe71f1c9fdd3a0e198e3f0</td>
+       <td>CVE-2024-46410</td>
+       <td>2024-12-24 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>PublicCMS跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108731">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0e4352c69dbca7d9fecd7659b3e82679</td>
+       <td>CVE-2024-9622</td>
+       <td>2024-12-24 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>RESTEasy环境问题漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108730">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c428fe094228a1c76418d0871e759313</td>
+       <td>CVE-2024-9380</td>
+       <td>2024-12-24 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>Ivanti CSA命令注入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108729">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d62805992445e65d44dd6b6f4d11fa04</td>
+       <td>CVE-2024-44349</td>
+       <td>2024-12-24 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>Anteeo WMS SQL注入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108728">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>08ef0357a7f08e48cb2d0b6a7e849799</td>
+       <td>CVE-2024-9381</td>
+       <td>2024-12-24 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>Ivanti CSA路径遍历漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108727">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>fb486ab3f886be5f618ca8052dc3a696</td>
+       <td>CVE-2024-9680</td>
+       <td>2024-12-24 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>Mozilla Firefox释放后重用漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108726">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>fb226a7ef952f51d8c6197cb582e9571</td>
+       <td>CVE-2024-45150</td>
+       <td>2024-12-24 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>Adobe Dimension缓冲区错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108725">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c695452282e942d57a02a8aa4fff3cb9</td>
+       <td>CVE-2024-47823</td>
+       <td>2024-12-24 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>Livewire输入验证错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108724">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e19c3b68e8d45d27f7d8871d4f617223</td>
+       <td>CVE-2023-46586</td>
+       <td>2024-12-24 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>ltworf Weborf拒绝服务漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108723">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f2014ad8a744088e8f28a69f9065d89b</td>
+       <td>CVE-2024-47418</td>
+       <td>2024-12-24 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>Adobe Animate资源管理错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108722">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>dd326fe1ca23af23037858aaf789e8a4</td>
+       <td>CVE-2024-45720</td>
+       <td>2024-12-24 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>Apache Subversion命令注入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108721">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>139c8eb24fb9bd428ae1ac3ef270aa3d</td>
+       <td>CVE-2024-47420</td>
+       <td>2024-12-24 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>Adobe Animate缓冲区错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108720">详情</a></td>
+      </tr>
+
+      <tr>
        <td>29a3df780bfdbf90601bb5bea8abf143</td>
        <td>CVE-2024-25647</td>
-       <td>2024-12-23 09:09:09 <img src="imgs/new.gif" /></td>
+       <td>2024-12-23 09:09:09</td>
        <td>Intel Binary Configuration Tool默认权限错误漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108634">详情</a></td>
       </tr>
@@ -1980,7 +2100,7 @@
       <tr>
        <td>7e2cf76ec7aa5a5db2596d63a52628a2</td>
        <td>CVE-2024-28049</td>
-       <td>2024-12-23 09:09:09 <img src="imgs/new.gif" /></td>
+       <td>2024-12-23 09:09:09</td>
        <td>Intel PROSet/Wireless Software和Intel Killer Wi-Fi输入验证错误漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108633">详情</a></td>
       </tr>
@@ -1988,7 +2108,7 @@
       <tr>
        <td>bf58db5ff8d8748b287ccfb580a0c524</td>
        <td>CVE-2024-49379</td>
-       <td>2024-12-23 09:09:09 <img src="imgs/new.gif" /></td>
+       <td>2024-12-23 09:09:09</td>
        <td>umbrelOS跨站脚本漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108632">详情</a></td>
       </tr>
@@ -1996,7 +2116,7 @@
       <tr>
        <td>5e0b60405b7f62aca6ade27753902132</td>
        <td>CVE-2024-7570</td>
-       <td>2024-12-23 09:09:09 <img src="imgs/new.gif" /></td>
+       <td>2024-12-23 09:09:09</td>
        <td>Ivanti Neurons for ITSM证书验证错误漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108631">详情</a></td>
       </tr>
@@ -2004,7 +2124,7 @@
       <tr>
        <td>6a06086b6f98eef65783dc42131271d8</td>
        <td>CVE-2024-28051</td>
-       <td>2024-12-23 09:09:09 <img src="imgs/new.gif" /></td>
+       <td>2024-12-23 09:09:09</td>
        <td>Intel VPL越界读取漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108630">详情</a></td>
       </tr>
@@ -2012,7 +2132,7 @@
       <tr>
        <td>95890111712df5a1776a7e579752e823</td>
        <td>CVE-2024-27200</td>
-       <td>2024-12-23 09:09:09 <img src="imgs/new.gif" /></td>
+       <td>2024-12-23 09:09:09</td>
        <td>Intel Granulate访问控制错误漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108629">详情</a></td>
       </tr>
@@ -2020,7 +2140,7 @@
       <tr>
        <td>03e52022a14d4ea9eabcd8b1179f3033</td>
        <td>CVE-2024-25565</td>
-       <td>2024-12-23 09:09:09 <img src="imgs/new.gif" /></td>
+       <td>2024-12-23 09:09:09</td>
        <td>Intel Xeon Processors控制流管理不足漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108628">详情</a></td>
       </tr>
@@ -2028,7 +2148,7 @@
       <tr>
        <td>1c481d0058a1d84baa406bb4832b18ca</td>
        <td>CVE-2024-42834</td>
-       <td>2024-12-23 09:09:09 <img src="imgs/new.gif" /></td>
+       <td>2024-12-23 09:09:09</td>
        <td>Incognito Service Activation Center (SAC) UI跨站脚本漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108627">详情</a></td>
       </tr>
@@ -2036,7 +2156,7 @@
       <tr>
        <td>98a22bc683eef7216f274903906981c9</td>
        <td>CVE-2024-21783</td>
-       <td>2024-12-23 09:09:09 <img src="imgs/new.gif" /></td>
+       <td>2024-12-23 09:09:09</td>
        <td>Intel VPL整数溢出漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108626">详情</a></td>
       </tr>
@@ -2044,7 +2164,7 @@
       <tr>
        <td>81e8311b0be2691e70df22dc525bcf50</td>
        <td>CVE-2023-38920</td>
-       <td>2024-12-23 09:09:09 <img src="imgs/new.gif" /></td>
+       <td>2024-12-23 09:09:09</td>
        <td>Cyber Cafe Management System跨站脚本漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108625">详情</a></td>
       </tr>
@@ -2052,7 +2172,7 @@
       <tr>
        <td>2543457033f28d035e07ddade9721776</td>
        <td>CVE-2024-40443</td>
-       <td>2024-12-23 09:09:09 <img src="imgs/new.gif" /></td>
+       <td>2024-12-23 09:09:09</td>
        <td>Simple Laboratory Management System SQL注入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108624">详情</a></td>
       </tr>
@@ -2060,7 +2180,7 @@
       <tr>
        <td>983ed8db6ef823d29d8685d1dcb01a9a</td>
        <td>CVE-2024-11193</td>
-       <td>2024-12-23 09:09:09 <img src="imgs/new.gif" /></td>
+       <td>2024-12-23 09:09:09</td>
        <td>YugabyteDB信息泄露漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108623">详情</a></td>
       </tr>
@@ -2068,7 +2188,7 @@
       <tr>
        <td>fe698fb141e24fd2a2052b2c11655f44</td>
        <td>CVE-2024-25563</td>
-       <td>2024-12-23 09:09:09 <img src="imgs/new.gif" /></td>
+       <td>2024-12-23 09:09:09</td>
        <td>Intel PROSet/Wireless Software和Intel Killer Wi-Fi初始化错误漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108622">详情</a></td>
       </tr>
@@ -2076,7 +2196,7 @@
       <tr>
        <td>06aafae83109020bfbf76c2e1df42949</td>
        <td>CVE-2024-43093</td>
-       <td>2024-12-23 09:09:09 <img src="imgs/new.gif" /></td>
+       <td>2024-12-23 09:09:09</td>
        <td>Google Android访问控制错误漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108621">详情</a></td>
       </tr>
@@ -2084,129 +2204,9 @@
       <tr>
        <td>8629b929c38c6cdb429fabd64502ceb1</td>
        <td>CVE-2024-21820</td>
-       <td>2024-12-23 09:09:09 <img src="imgs/new.gif" /></td>
+       <td>2024-12-23 09:09:09</td>
        <td>Intel SGX SDK默认权限错误漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108620">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ef3cf622fad7f26c1725bf23d5266ff4</td>
-       <td>CVE-2024-4741</td>
-       <td>2024-12-20 09:09:07</td>
-       <td>OpenSSL内存错误引用漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108594">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3ac9fff0bd53e4e9a73a8f580df2964f</td>
-       <td>CVE-2024-7048</td>
-       <td>2024-12-20 09:09:07</td>
-       <td>Open WebUI权限管理不当漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108593">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>29347e629f920acce581d0e297a85808</td>
-       <td>CVE-2024-48933</td>
-       <td>2024-12-20 09:09:07</td>
-       <td>LemonLDAP::NG命令执行漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108592">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2b47de209bf46333d8c985b15ff2d6d4</td>
-       <td>CVE-2024-7037</td>
-       <td>2024-12-20 09:09:07</td>
-       <td>Open WebUI路径遍历漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108591">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>12db2d662497ab92360687af922dd7b7</td>
-       <td>CVE-2024-11165</td>
-       <td>2024-12-20 09:09:07</td>
-       <td>YugabyteDB信息泄露漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108590">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>405eac730e04718f2389829c4ebe340c</td>
-       <td>CVE-2024-48510</td>
-       <td>2024-12-20 09:09:07</td>
-       <td>DotNetZip目录遍历漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108589">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>54cc60f968578af27fa549d7265298d8</td>
-       <td>CVE-2024-47828</td>
-       <td>2024-12-20 09:09:07</td>
-       <td>Ampache跨站请求伪造漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108588">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5ff1471136fe145794d1582a35334524</td>
-       <td>CVE-2024-52293</td>
-       <td>2024-12-20 09:09:07</td>
-       <td>Craft CMS路径遍历漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108587">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>68e837992841f97127270272dfa7f571</td>
-       <td>CVE-2024-46304</td>
-       <td>2024-12-20 09:09:07</td>
-       <td>obgm libcoap拒绝服务漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108586">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a69181d42d73dec25edb9e6a867996fb</td>
-       <td>CVE-2024-9671</td>
-       <td>2024-12-20 09:09:07</td>
-       <td>Red Hat 3scale身份验证错误漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108585">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7a194b980285a47edcf37c91e0036d08</td>
-       <td>CVE-2024-9675</td>
-       <td>2024-12-20 09:09:07</td>
-       <td>Buildah路径遍历漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108584">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c52b7b3da7db9b795f1aa606f19ce32c</td>
-       <td>CVE-2024-47425</td>
-       <td>2024-12-20 09:09:07</td>
-       <td>Adobe Framemaker数字错误漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108583">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8f90877c2a422d2d9d680dc04ba2592e</td>
-       <td>CVE-2024-25825</td>
-       <td>2024-12-20 09:09:07</td>
-       <td>FydeOS多款产品信息泄露漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108582">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b3e87252cdff4fcb5322568c0a35ad0c</td>
-       <td>CVE-2024-7038</td>
-       <td>2024-12-20 09:09:07</td>
-       <td>Open WebUI信息泄露漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108581">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d8c6657e25395276ef58426a0e57d4a9</td>
-       <td>CVE-2024-49505</td>
-       <td>2024-12-20 09:09:07</td>
-       <td>MirrorCache跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/108580">详情</a></td>
       </tr>
 
      </tbody>
