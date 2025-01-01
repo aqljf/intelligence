@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2024-12-31 09:11:14 -->
+<!-- RELEASE TIME : 2025-01-01 09:11:16 -->
 <html lang="zh-cn">
 
  <head>
@@ -282,9 +282,89 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>4563b43b1b292f4a762bf2636b81a60b</td>
+       <td>CVE-2024-13040</td>
+       <td>2024-12-31 02:15:06 <img src="imgs/new.gif" /></td>
+       <td>The QOCA aim from Quanta Computer has an Authorization Bypass Through User-Controlled Key vulnerability. By controlling the user ID parameter, remote attackers with regular privileges could access certain features as any user, modify any user's account information and privileges, leading to privilege escalation.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-13040">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1897a9dcb9774ed70fc39367d50d24fc</td>
+       <td>CVE-2024-12839</td>
+       <td>2024-12-31 02:15:06 <img src="imgs/new.gif" /></td>
+       <td>The login mechanism via device authentication of CGFIDO from Changing Information Technology has an Authentication Bypass vulnerability. If a user visits a forged website, the agent program deployed on their device will send an authentication signature to the website. An unauthenticated remote attacker who obtains this signature can use it to log into the system with any device.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-12839">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1473965d4bdb31129f10563449b78869</td>
+       <td>CVE-2024-12838</td>
+       <td>2024-12-31 02:15:05 <img src="imgs/new.gif" /></td>
+       <td>The passwordless login mechanism in CGFIDO from Changing Information Technology has an Authentication Bypass vulnerability, allowing remote attackers with regular privileges to send a crafted request to switch to the identity of any user, including administrators.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-12838">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e9d189dd4abeb0d65415cdc50d5ddd00</td>
+       <td>CVE-2024-13058</td>
+       <td>2024-12-30 22:15:05</td>
+       <td>An issue exists in SoftIron HyperCloud where authenticated, but non-admin users can create data pools, which could potentially impact the performance and availability of the backend software-defined storage subsystem. This issue only impacts SoftIron HyperCloud and related software products (such as VM Squared) software versions 2.3.0 to before 2.5.0.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-13058">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d1ef781d559992a6c8559e7d3dfa7ef1</td>
+       <td>CVE-2024-13051</td>
+       <td>2024-12-30 21:15:07</td>
+       <td>Ashlar-Vellum Graphite VC6 File Parsing Heap-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Ashlar-Vellum Graphite. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The specific flaw exists within the parsing of VC6 files. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a heap-based buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-24977.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-13051">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>bf06b80881bd6559eb8ec7bbbee4cfcc</td>
+       <td>CVE-2024-13050</td>
+       <td>2024-12-30 21:15:07</td>
+       <td>Ashlar-Vellum Graphite VC6 File Parsing Heap-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Ashlar-Vellum Graphite. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The specific flaw exists within the parsing of VC6 files. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a heap-based buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-24976.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-13050">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>4748144b816f1bfeb5a6373b9c68441b</td>
+       <td>CVE-2024-13049</td>
+       <td>2024-12-30 21:15:07</td>
+       <td>Ashlar-Vellum Cobalt XE File Parsing Type Confusion Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Ashlar-Vellum Cobalt. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The specific flaw exists within the parsing of XE files. The issue results from the lack of proper validation of user-supplied data, which can result in a type confusion condition. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-24847.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-13049">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6dd4d220ad2060d1bb33e08240b82fbf</td>
+       <td>CVE-2024-13048</td>
+       <td>2024-12-30 21:15:07</td>
+       <td>Ashlar-Vellum Cobalt XE File Parsing Out-Of-Bounds Write Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Ashlar-Vellum Cobalt. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The specific flaw exists within the parsing of XE files. The issue results from the lack of proper validation of user-supplied data, which can result in a write past the end of an allocated buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-24844.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-13048">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e14f3a22908ff44b053a2e6beefca8b8</td>
+       <td>CVE-2024-13047</td>
+       <td>2024-12-30 21:15:07</td>
+       <td>Ashlar-Vellum Cobalt CO File Parsing Type Confusion Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Ashlar-Vellum Cobalt. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The specific flaw exists within the parsing of CO files. The issue results from the lack of proper validation of user-supplied data, which can result in a type confusion condition. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-24843.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-13047">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d2d42c8f5c67ef03eb7203ade1b31121</td>
+       <td>CVE-2024-13046</td>
+       <td>2024-12-30 21:15:07</td>
+       <td>Ashlar-Vellum Cobalt CO File Parsing Out-Of-Bounds Write Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Ashlar-Vellum Cobalt. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file. The specific flaw exists within the parsing of CO files. The issue results from the lack of proper validation of user-supplied data, which can result in a write past the end of an allocated buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-24867.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-13046">详情</a></td>
+      </tr>
+
+      <tr>
        <td>d3b3d6cef1598917ae4ee14cbeb4d496</td>
        <td>CVE-2024-13034</td>
-       <td>2024-12-30 02:15:07 <img src="imgs/new.gif" /></td>
+       <td>2024-12-30 02:15:07</td>
        <td>A vulnerability, which was classified as problematic, was found in code-projects Chat System 1.0. This affects an unknown part of the file /admin/update_user.php. The manipulation of the argument name leads to cross site scripting. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-13034">详情</a></td>
       </tr>
@@ -292,7 +372,7 @@
       <tr>
        <td>366134545137a3dc05186fdaccc75cbd</td>
        <td>CVE-2024-13033</td>
-       <td>2024-12-30 02:15:07 <img src="imgs/new.gif" /></td>
+       <td>2024-12-30 02:15:07</td>
        <td>A vulnerability, which was classified as problematic, has been found in code-projects Chat System 1.0. Affected by this issue is some unknown functionality of the file /admin/chatroom.php. The manipulation of the argument id leads to cross site scripting. The attack may be launched remotely. The exploit has been disclosed to the public and may be used.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-13033">详情</a></td>
       </tr>
@@ -300,7 +380,7 @@
       <tr>
        <td>961f25e5349a463e24c344ff01f67df0</td>
        <td>CVE-2024-13032</td>
-       <td>2024-12-30 02:15:06 <img src="imgs/new.gif" /></td>
+       <td>2024-12-30 02:15:06</td>
        <td>A vulnerability classified as problematic was found in Antabot White-Jotter up to 0.2.2. Affected by this vulnerability is an unknown functionality of the file /admin/content/editor of the component Article Editor. The manipulation of the argument articleCover leads to server-side request forgery. The attack can be launched remotely. The exploit has been disclosed to the public and may be used.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-13032">详情</a></td>
       </tr>
@@ -308,7 +388,7 @@
       <tr>
        <td>a531dfc289d9f368d9477def00f41bbb</td>
        <td>CVE-2024-13031</td>
-       <td>2024-12-30 01:15:06 <img src="imgs/new.gif" /></td>
+       <td>2024-12-30 01:15:06</td>
        <td>A vulnerability classified as problematic has been found in Antabot White-Jotter up to 0.2.2. Affected is an unknown function of the file /admin/content/editor of the component Article Content Editor. The manipulation leads to cross site scripting. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-13031">详情</a></td>
       </tr>
@@ -316,7 +396,7 @@
       <tr>
        <td>23ec53b3f0f11362e3755e762ede483f</td>
        <td>CVE-2024-13030</td>
-       <td>2024-12-30 01:15:06 <img src="imgs/new.gif" /></td>
+       <td>2024-12-30 01:15:06</td>
        <td>A vulnerability was found in D-Link DIR-823G 1.0.2B05_20181207. It has been rated as critical. This issue affects the function SetAutoRebootSettings/SetClientInfo/SetDMZSettings/SetFirewallSettings/SetParentsControlInfo/SetQoSSettings/SetVirtualServerSettings of the file /HNAP1/ of the component Web Management Interface. The manipulation leads to improper access controls. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-13030">详情</a></td>
       </tr>
@@ -324,7 +404,7 @@
       <tr>
        <td>9fc0f4f84399d69ecad0a6447d435ac8</td>
        <td>CVE-2024-13029</td>
-       <td>2024-12-30 00:15:04 <img src="imgs/new.gif" /></td>
+       <td>2024-12-30 00:15:04</td>
        <td>A vulnerability, which was classified as problematic, was found in Antabot White-Jotter up to 0.2.2. Affected is an unknown function of the file /admin/content/book of the component Edit Book Handler. The manipulation leads to server-side request forgery. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-13029">详情</a></td>
       </tr>
@@ -439,86 +519,6 @@
        <td>2024-12-28 10:15:18</td>
        <td>In the Linux kernel, the following vulnerability has been resolved: 9p/xen: fix release of IRQ Kernel logs indicate an IRQ was double-freed. Pass correct device ID during IRQ release. [Dominique: remove confusing variable reset to 0]</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-56704">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>cc1bc1a5d8904ff3876a122c4785a102</td>
-       <td>CVE-2024-54775</td>
-       <td>2024-12-27 22:15:12</td>
-       <td>Dcat-Admin v2.2.0-beta and v2.2.2-beta contains a Cross-Site Scripting (XSS) vulnerability via /admin/auth/menu and /admin/auth/extensions.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-54775">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>661f3512b5ebcd00b8091bb1d9142c6f</td>
-       <td>CVE-2024-54774</td>
-       <td>2024-12-27 22:15:12</td>
-       <td>Dcat Admin v2.2.0-beta contains a cross-site scripting (XSS) vulnerability in /admin/articles/create.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-54774">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8d41246f9745e4a04ea25fa8bcd99bca</td>
-       <td>CVE-2024-50714</td>
-       <td>2024-12-27 22:15:11</td>
-       <td>A Server-Side Request Forgery (SSRF) in smarts-srl.com Smart Agent v.1.1.0 allows a remote attacker to obtain sensitive information via a crafted script to the /FB/getFbVideoSource.php component.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-50714">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>751e2849ed01b89cf473dc1fe5c24aff</td>
-       <td>CVE-2024-50717</td>
-       <td>2024-12-27 21:15:08</td>
-       <td>SQL injection vulnerability in Smart Agent v.1.1.0 allows a remote attacker to execute arbitrary code via the client parameter in the /recuperaLog.php component.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-50717">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b03aedba323f9f906f00291a5a1c02cd</td>
-       <td>CVE-2024-50716</td>
-       <td>2024-12-27 21:15:08</td>
-       <td>SQL injection vulnerability in Smart Agent v.1.1.0 allows a remote attacker to execute arbitrary code via the id parameter in the /sendPushManually.php component.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-50716">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>74c3d683414320247f3dd131ac0a1eb2</td>
-       <td>CVE-2024-50715</td>
-       <td>2024-12-27 21:15:07</td>
-       <td>An issue in smarts-srl.com Smart Agent v.1.1.0 allows a remote attacker to obtain sensitive information via command injection through a vulnerable unsanitized parameter defined in the /youtubeInfo.php component.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-50715">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ea7cbad86e2dcb657a4725ca56285fc5</td>
-       <td>CVE-2024-50713</td>
-       <td>2024-12-27 21:15:07</td>
-       <td>SmartAgent v1.1.0 was discovered to contain a SQL injection vulnerability via the id parameter at /tests/interface.php.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-50713">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5110b57c5d88e96cd591c7f9b398bd83</td>
-       <td>CVE-2024-56732</td>
-       <td>2024-12-27 20:15:23</td>
-       <td>HarfBuzz is a text shaping engine. Starting with 8.5.0 through 10.0.1, there is a heap-based buffer overflow in the hb_cairo_glyphs_from_buffer function.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-56732">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b330f7e23cc0d048b1fe14415884c548</td>
-       <td>CVE-2024-54454</td>
-       <td>2024-12-27 20:15:23</td>
-       <td>An issue was discovered in Kurmi Provisioning Suite before 7.9.0.35, 7.10.x through 7.10.0.18, and 7.11.x through 7.11.0.15. An Observable Response Discrepancy vulnerability in the sendPasswordReinitLink action of the unlogged.do page allows remote attackers to test whether a username is valid or not. This allows confirmation of valid usernames.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-54454">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>942c9535f26602514dee4b2de61552b6</td>
-       <td>CVE-2024-54453</td>
-       <td>2024-12-27 20:15:23</td>
-       <td>An issue was discovered in Kurmi Provisioning Suite before 7.9.0.35, 7.10.x through 7.10.0.18, and 7.11.x through 7.11.0.15. A path traversal vulnerability in the DocServlet servlet allows remote attackers to retrieve any file from the Kurmi web application installation folder, e.g., files such as the obfuscated and/or compiled Kurmi source code.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-54453">详情</a></td>
       </tr>
 
      </tbody>
@@ -1970,9 +1970,129 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>26cc1e341ecf00a109a6e589eb433169</td>
+       <td>CVE-2024-52528</td>
+       <td>2024-12-31 09:09:10 <img src="imgs/new.gif" /></td>
+       <td>Budget Control Gateway授权错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/109140">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>682c90d2f26911714efd107ad34f182d</td>
+       <td>CVE-2024-51494</td>
+       <td>2024-12-31 09:09:10 <img src="imgs/new.gif" /></td>
+       <td>LibreNMS跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/109139">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>15f81f1e6aab16f408d85f7f13fdae1a</td>
+       <td>CVE-2024-50651</td>
+       <td>2024-12-31 09:09:10 <img src="imgs/new.gif" /></td>
+       <td>java_shop访问控制错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/109138">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>deb6b5429a10954eaf44f1fb0d8be7e6</td>
+       <td>CVE-2024-51164</td>
+       <td>2024-12-31 09:09:10 <img src="imgs/new.gif" /></td>
+       <td>JEPaaS SQL注入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/109137">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>feed04945d6160c70201edfc5452bfd2</td>
+       <td>CVE-2024-50652</td>
+       <td>2024-12-31 09:09:10 <img src="imgs/new.gif" /></td>
+       <td>java_shop文件上传漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/109136">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2c71aa09938039a828bfa7b7f35af591</td>
+       <td>CVE-2024-50650</td>
+       <td>2024-12-31 09:09:10 <img src="imgs/new.gif" /></td>
+       <td>python_book访问控制错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/109135">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b34b7405cfed70c095a253b93bbfe61a</td>
+       <td>CVE-2024-50648</td>
+       <td>2024-12-31 09:09:10 <img src="imgs/new.gif" /></td>
+       <td>yshopmall任意文件上传漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/109134">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b9626066030469d51f827b91d7d43056</td>
+       <td>CVE-2024-24447</td>
+       <td>2024-12-31 09:09:10 <img src="imgs/new.gif" /></td>
+       <td>OpenAirInterface oai-cn5g-amf缓冲区溢出漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/109133">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1bf1fc71d1c251efb1f3bb6f37df3f83</td>
+       <td>CVE-2024-50647</td>
+       <td>2024-12-31 09:09:10 <img src="imgs/new.gif" /></td>
+       <td>python_food ordering system授权错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/109132">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>157d85396f7333988dbafcb94a76d777</td>
+       <td></td>
+       <td>2024-12-31 09:09:10 <img src="imgs/new.gif" /></td>
+       <td>IBM Engineering Lifecycle Optimization - Engineering Insights XML外部实体注入漏洞（CVE-20</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/109131">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>4be9c0ec6cdd76258cf52637da530471</td>
+       <td>CVE-2024-52525</td>
+       <td>2024-12-31 09:09:10 <img src="imgs/new.gif" /></td>
+       <td>Nextcloud Server敏感信息明文存储漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/109130">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3b73750a62e9a10026b3a2bef5502874</td>
+       <td>CVE-2024-52518</td>
+       <td>2024-12-31 09:09:10 <img src="imgs/new.gif" /></td>
+       <td>Nextcloud Server身份认证错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/109129">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>695b94f08845479960b9bf3432f5a131</td>
+       <td>CVE-2024-52523</td>
+       <td>2024-12-31 09:09:10 <img src="imgs/new.gif" /></td>
+       <td>Nextcloud Server和Enterprise Server越界读取漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/109128">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2592dd47502c20c8a81890adc02f5da6</td>
+       <td>CVE-2024-50352</td>
+       <td>2024-12-31 09:09:10 <img src="imgs/new.gif" /></td>
+       <td>LibreNMS跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/109127">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b2ece5e5f9c092549a6f7442e6d976af</td>
+       <td>CVE-2024-50351</td>
+       <td>2024-12-31 09:09:10 <img src="imgs/new.gif" /></td>
+       <td>LibreNMS跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/109126">详情</a></td>
+      </tr>
+
+      <tr>
        <td>db4d74a048292b997be3b28b89f07c30</td>
        <td>CVE-2023-49141</td>
-       <td>2024-12-30 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2024-12-30 09:09:08</td>
        <td>Intel Processors权限提升漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/109088">详情</a></td>
       </tr>
@@ -1980,7 +2100,7 @@
       <tr>
        <td>04d4979198d7467290cc87da1d514808</td>
        <td>CVE-2024-6532</td>
-       <td>2024-12-30 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2024-12-30 09:09:08</td>
        <td>WordPress Plugin Sheet to Table Live Sync for Google Sheet跨站脚本漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/109087">详情</a></td>
       </tr>
@@ -1988,7 +2108,7 @@
       <tr>
        <td>ebd6ded2c2e2c02c3a6924d101720a55</td>
        <td>CVE-2024-8978</td>
-       <td>2024-12-30 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2024-12-30 09:09:08</td>
        <td>WordPress Essential Addons for Elementor Plugin敏感信息泄露漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/109086">详情</a></td>
       </tr>
@@ -1996,7 +2116,7 @@
       <tr>
        <td>3ba3db42c93a51df8df32f7a8e9c9188</td>
        <td>CVE-2024-9356</td>
-       <td>2024-12-30 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2024-12-30 09:09:08</td>
        <td>WordPress Yotpo: Product &amp; Photo Reviews for WooCommerce跨站脚本漏洞（CVE-2024-9356</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/109085">详情</a></td>
       </tr>
@@ -2004,7 +2124,7 @@
       <tr>
        <td>6fa6527f6192ac8e7d162489065fcf30</td>
        <td>CVE-2024-10311</td>
-       <td>2024-12-30 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2024-12-30 09:09:08</td>
        <td>WordPress External Database Based Actions Plugin身份认证绕过漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/109084">详情</a></td>
       </tr>
@@ -2012,7 +2132,7 @@
       <tr>
        <td>d60177495ef8dea812249f0654b8901d</td>
        <td>CVE-2024-8961</td>
-       <td>2024-12-30 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2024-12-30 09:09:08</td>
        <td>WordPress Essential Addons for Elementor Plugin跨站脚本漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/109083">详情</a></td>
       </tr>
@@ -2020,7 +2140,7 @@
       <tr>
        <td>02a3ca4061f44622927f19331487502d</td>
        <td>CVE-2024-10104</td>
-       <td>2024-12-30 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2024-12-30 09:09:08</td>
        <td>WordPress Jobs Plugin跨站脚本漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/109082">详情</a></td>
       </tr>
@@ -2028,7 +2148,7 @@
       <tr>
        <td>1f18ca451b02ef5756ac6704e47c2aa7</td>
        <td>CVE-2024-9529</td>
-       <td>2024-12-30 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2024-12-30 09:09:08</td>
        <td>WordPress Secure Custom Fields Plugin远程代码执行漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/109081">详情</a></td>
       </tr>
@@ -2036,7 +2156,7 @@
       <tr>
        <td>171176bedc45ece83984bccadd38e44f</td>
        <td>CVE-2024-10825</td>
-       <td>2024-12-30 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2024-12-30 09:09:08</td>
        <td>WordPress Hide My WP Ghost – Security &amp; Firewall Plugin跨站脚本漏洞（CVE-2024-10825</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/109080">详情</a></td>
       </tr>
@@ -2044,7 +2164,7 @@
       <tr>
        <td>2d07d799cdb9de9286870a747be7058a</td>
        <td>CVE-2024-8979</td>
-       <td>2024-12-30 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2024-12-30 09:09:08</td>
        <td>WordPress Essential Addons for Elementor Plugin敏感信息泄露漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/109079">详情</a></td>
       </tr>
@@ -2052,7 +2172,7 @@
       <tr>
        <td>ea5c23829ee70d2421e633a05dbbdee3</td>
        <td>CVE-2024-4389</td>
-       <td>2024-12-30 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2024-12-30 09:09:08</td>
        <td>WordPress Plugin Slider and Carousel slider by Depicter任意文件上传漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/109078">详情</a></td>
       </tr>
@@ -2060,7 +2180,7 @@
       <tr>
        <td>9e3dff301a8ec362a2cba04f1401167a</td>
        <td>CVE-2024-45784</td>
-       <td>2024-12-30 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2024-12-30 09:09:08</td>
        <td>Apache Airflow信息泄露漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/109077">详情</a></td>
       </tr>
@@ -2068,7 +2188,7 @@
       <tr>
        <td>017257468ccbdee7353e0f9e33d0aa11</td>
        <td>CVE-2024-42499</td>
-       <td>2024-12-30 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2024-12-30 09:09:08</td>
        <td>FitNesse路径遍历漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/109076">详情</a></td>
       </tr>
@@ -2076,7 +2196,7 @@
       <tr>
        <td>f5c5d95d8ffdfe41fa42084ca12dd157</td>
        <td>CVE-2023-0737</td>
-       <td>2024-12-30 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2024-12-30 09:09:08</td>
        <td>wallabag跨站脚本请求伪造漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/109075">详情</a></td>
       </tr>
@@ -2084,129 +2204,9 @@
       <tr>
        <td>0e2b9010b6a894e3ff8a7ee742a21c30</td>
        <td>CVE-2024-39610</td>
-       <td>2024-12-30 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2024-12-30 09:09:08</td>
        <td>FitNesse跨站脚本漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/109074">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>56f2c6fc78d0efa49aa6021c9df668a4</td>
-       <td>CVE-2024-9515</td>
-       <td>2024-12-27 09:09:09</td>
-       <td>D-Link DIR-605L缓冲区溢出漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/109041">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c4d16055659e462d2c48f0b4021fe48c</td>
-       <td>CVE-2024-9482</td>
-       <td>2024-12-27 09:09:09</td>
-       <td>Avast Antivirus越界写入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/109040">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>fccb14ad691162834be56963edf7ea5d</td>
-       <td>CVE-2024-52524</td>
-       <td>2024-12-27 09:09:09</td>
-       <td>Giskard远程代码执行漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/109039">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e34dd077733690b0922e23ecf319fa11</td>
-       <td>CVE-2024-6400</td>
-       <td>2024-12-27 09:09:09</td>
-       <td>Finrota Netahsilat信息泄露漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/109038">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>97c165835c1c572c7f633bd5b71e8ecd</td>
-       <td>CVE-2024-3760</td>
-       <td>2024-12-27 09:09:09</td>
-       <td>lunary-ai/lunary邮件轰炸漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/109037">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>238ba36aa62ca58c591e1353ae475595</td>
-       <td>CVE-2024-10394</td>
-       <td>2024-12-27 09:09:09</td>
-       <td>OpenAFS整数溢出漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/109036">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a3cc9ef1cca9d49e3bc4b9f3028dbf6d</td>
-       <td>CVE-2024-10396</td>
-       <td>2024-12-27 09:09:09</td>
-       <td>OpenAFS输入句法正确性验证错误漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/109035">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e68ffe87729d7017f3b7aeafcd2c2c52</td>
-       <td>CVE-2024-5125</td>
-       <td>2024-12-27 09:09:09</td>
-       <td>parisneo/lollms-webui跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/109034">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3fd4c8c0e96e04fff0b0e94fe3ef459d</td>
-       <td>CVE-2024-10397</td>
-       <td>2024-12-27 09:09:09</td>
-       <td>OpenAFS越界写入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/109033">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>70c050cb79c00b22a02ec6f349226bd3</td>
-       <td>CVE-2024-31695</td>
-       <td>2024-12-27 09:09:09</td>
-       <td>Binance授权错误漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/109032">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>145933393ea471d8f0b43dd0cf7c64ef</td>
-       <td>CVE-2024-47657</td>
-       <td>2024-12-27 09:09:09</td>
-       <td>Shilpi Net Back Office访问控制不当漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/109031">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c232b804812eb96ce60b00defe5d06d4</td>
-       <td>CVE-2024-48971</td>
-       <td>2024-12-27 09:09:09</td>
-       <td>Baxter Life2000硬编码凭据使用漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/109030">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>98a073dfca2bfc849c735d82342bf400</td>
-       <td>CVE-2024-48973</td>
-       <td>2024-12-27 09:09:09</td>
-       <td>Baxter Life2000物理访问控制错误漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/109029">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a1d55738ad07b48638339e68e433708d</td>
-       <td>CVE-2024-48974</td>
-       <td>2024-12-27 09:09:09</td>
-       <td>Baxter Life2000信息泄露漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/109028">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4aa2d5ebc3d40632a6d8afe45d94534d</td>
-       <td>CVE-2024-44016</td>
-       <td>2024-12-27 09:09:09</td>
-       <td>WordPress plugin Podiant路径遍历漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/109027">详情</a></td>
       </tr>
 
      </tbody>
