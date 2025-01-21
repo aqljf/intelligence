@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2025-01-20 09:11:14 -->
+<!-- RELEASE TIME : 2025-01-21 09:11:14 -->
 <html lang="zh-cn">
 
  <head>
@@ -282,9 +282,89 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>041117659363a3a7f8cc73c363c3dc0c</td>
+       <td>CVE-2025-24337</td>
+       <td>2025-01-20 14:15:27 <img src="imgs/new.gif" /></td>
+       <td>WriteFreely through 0.15.1, when MySQL is used, allows local users to discover credentials by reading config.ini.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-24337">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9f813f3f046f9dcd3a893f2aa24fea2c</td>
+       <td>CVE-2025-21655</td>
+       <td>2025-01-20 14:15:27 <img src="imgs/new.gif" /></td>
+       <td>In the Linux kernel, the following vulnerability has been resolved: io_uring/eventfd: ensure io_eventfd_signal() defers another RCU period io_eventfd_do_signal() is invoked from an RCU callback, but when dropping the reference to the io_ev_fd, it calls io_eventfd_free() directly if the refcount drops to zero. This isn't correct, as any potential freeing of the io_ev_fd should be deferred another RCU grace period. Just call io_eventfd_put() rather than open-code the dec-and-test and free, which will correctly defer it another RCU grace period.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-21655">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>884c68164dc181cae44b67d30e9ed9db</td>
+       <td>CVE-2024-13176</td>
+       <td>2025-01-20 14:15:26 <img src="imgs/new.gif" /></td>
+       <td>Issue summary: A timing side-channel which could potentially allow recovering the private key exists in the ECDSA signature computation. Impact summary: A timing side-channel in ECDSA signature computations could allow recovering the private key by an attacker. However, measuring the timing would require either local access to the signing application or a very fast network connection with low latency. There is a timing signal of around 300 nanoseconds when the top word of the inverted ECDSA nonce value is zero. This can happen with significant probability only for some of the supported elliptic curves. In particular the NIST P-521 curve is affected. To be able to measure this leak, the attacker process must either be located in the same physical computer or must have a very fast network connection with low latency. For that reason the severity of this vulnerability is Low.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-13176">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1a8fc5b6ad4053fc025224dc2e070c95</td>
+       <td>CVE-2023-52923</td>
+       <td>2025-01-20 10:48:13 <img src="imgs/new.gif" /></td>
+       <td>In the Linux kernel, the following vulnerability has been resolved: netfilter: nf_tables: adapt set backend to use GC transaction API Use the GC transaction API to replace the old and buggy gc API and the busy mark approach. No set elements are removed from async garbage collection anymore, instead the _DEAD bit is set on so the set element is not visible from lookup path anymore. Async GC enqueues transaction work that might be aborted and retried later. rbtree and pipapo set backends does not set on the _DEAD bit from the sync GC path since this runs in control plane path where mutex is held. In this case, set elements are deactivated, removed and then released via RCU callback, sync GC never fails.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-52923">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1f4000f198b297d781340dc3dfdbc6a6</td>
+       <td>CVE-2025-0590</td>
+       <td>2025-01-20 07:17:10 <img src="imgs/new.gif" /></td>
+       <td>Improper permission settings for mobile applications (com.transsion.carlcare) may lead to information leakage risk.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-0590">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c4df16c25f8484681234c90fb51aa38d</td>
+       <td>CVE-2025-0586</td>
+       <td>2025-01-20 03:15:09 <img src="imgs/new.gif" /></td>
+       <td>The a+HRD from aEnrich Technology has an Insecure Deserialization vulnerability, allowing remote attackers with database modification privileges and regular system privileges to perform arbitrary code execution.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-0586">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>57c64641138b9e0a14974ba0ceaae4b3</td>
+       <td>CVE-2025-0585</td>
+       <td>2025-01-20 03:15:09 <img src="imgs/new.gif" /></td>
+       <td>The a+HRD from aEnrich Technology has a SQL Injection vulnerability, allowing unauthenticated remote attackers to inject arbitrary SQL commands to read, modify, and delete database contents.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-0585">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d54818cca93ccf4c67cf428ff157990f</td>
+       <td>CVE-2025-0584</td>
+       <td>2025-01-20 03:15:09 <img src="imgs/new.gif" /></td>
+       <td>The a+HRD from aEnrich Technology has a Server-side Request Forgery, allowing unauthenticated remote attackers to exploit this vulnerability to probe internal network.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-0584">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5cd84b3f052ac13a6fe560b0047fc444</td>
+       <td>CVE-2025-0582</td>
+       <td>2025-01-20 03:15:08 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability classified as critical was found in itsourcecode Farm Management System up to 1.0. This vulnerability affects unknown code of the file /add-pig.php. The manipulation of the argument pigphoto leads to unrestricted upload. The attack can be initiated remotely.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-0582">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6cf94fbff9b3a77ea94e58b699285f0e</td>
+       <td>CVE-2025-0581</td>
+       <td>2025-01-20 03:15:08 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability classified as problematic has been found in CampCodes School Management Software 1.0. This affects an unknown part of the file /chat/group/send of the component Chat History. The manipulation of the argument message leads to cross site scripting. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-0581">详情</a></td>
+      </tr>
+
+      <tr>
        <td>de48939a638f970caa51f9ec709ba4c2</td>
        <td>CVE-2024-41783</td>
-       <td>2025-01-19 15:15:21 <img src="imgs/new.gif" /></td>
+       <td>2025-01-19 15:15:21</td>
        <td>IBM Sterling Secure Proxy 6.0.0.0, 6.0.0.1, 6.0.0.2, 6.0.0.3, 6.1.0.0, and 6.2.0.0 could allow a privileged user to inject commands into the underlying operating system due to improper validation of a specified type of input.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-41783">详情</a></td>
       </tr>
@@ -292,7 +372,7 @@
       <tr>
        <td>d359dcd7a6132f7e4843a87239679d6c</td>
        <td>CVE-2024-41743</td>
-       <td>2025-01-19 15:15:20 <img src="imgs/new.gif" /></td>
+       <td>2025-01-19 15:15:20</td>
        <td>IBM TXSeries for Multiplatforms 10.1 could allow a remote attacker to cause a denial of service using persistent connections due to improper allocation of resources.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-41743">详情</a></td>
       </tr>
@@ -300,7 +380,7 @@
       <tr>
        <td>9a53550bdd172293c92317f3bd7972a3</td>
        <td>CVE-2024-41742</td>
-       <td>2025-01-19 15:15:20 <img src="imgs/new.gif" /></td>
+       <td>2025-01-19 15:15:20</td>
        <td>IBM TXSeries for Multiplatforms 10.1 is vulnerable to a denial of service, caused by improper enforcement of the timeout on individual read operations. By conducting a slowloris-type attacks, a remote attacker could exploit this vulnerability to cause a denial of service.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-41742">详情</a></td>
       </tr>
@@ -308,7 +388,7 @@
       <tr>
        <td>eec34ac8336beb9ed80725fdf951be59</td>
        <td>CVE-2024-38337</td>
-       <td>2025-01-19 15:15:19 <img src="imgs/new.gif" /></td>
+       <td>2025-01-19 15:15:19</td>
        <td>IBM Sterling Secure Proxy 6.0.0.0, 6.0.0.1, 6.0.0.2, 6.0.0.3, 6.1.0.0, and 6.2.0.0 could allow an unauthorized attacker to retrieve or alter sensitive information contents due to incorrect permission assignments.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-38337">详情</a></td>
       </tr>
@@ -316,7 +396,7 @@
       <tr>
        <td>657d280076176411fecda454df1640b2</td>
        <td>CVE-2024-57929</td>
-       <td>2025-01-19 12:15:27 <img src="imgs/new.gif" /></td>
+       <td>2025-01-19 12:15:27</td>
        <td>In the Linux kernel, the following vulnerability has been resolved: dm array: fix releasing a faulty array block twice in dm_array_cursor_end When dm_bm_read_lock() fails due to locking or checksum errors, it releases the faulty block implicitly while leaving an invalid output pointer behind. The caller of dm_bm_read_lock() should not operate on this invalid dm_block pointer, or it will lead to undefined result. For example, the dm_array_cursor incorrectly caches the invalid pointer on reading a faulty array block, causing a double release in dm_array_cursor_end(), then hitting the BUG_ON in dm-bufio cache_put(). Reproduce steps: 1. initialize a cache device dmsetup create cmeta --table "0 8192 linear /dev/sdc 0" dmsetup create cdata --table "0 65536 linear /dev/sdc 8192" dmsetup create corig --table "0 524288 linear /dev/sdc $262144" dd if=/dev/zero of=/dev/mapper/cmeta bs=4k count=1 dmsetup create cache --table "0 524288 cache /dev/mapper/cmeta \ /dev/mapper/cdata /dev/mapper/corig 128 2 metadata2 writethrough smq 0" 2. wipe the second array block offline dmsteup remove cache cmeta cdata corig mapping_root=$(dd if=/dev/sdc bs=1c count=8 skip=192 \ 2>/dev/null | hexdump -e '1/8 "%u\n"') ablock=$(dd if=/dev/sdc bs=1c count=8 skip=$((4096*mapping_root+2056)) \ 2>/dev/null | hexdump -e '1/8 "%u\n"') dd if=/dev/zero of=/dev/sdc bs=4k count=1 seek=$ablock 3. try reopen the cache device dmsetup create cmeta --table "0 8192 linear /dev/sdc 0" dmsetup create cdata --table "0 65536 linear /dev/sdc 8192" dmsetup create corig --table "0 524288 linear /dev/sdc $262144" dmsetup create cache --table "0 524288 cache /dev/mapper/cmeta \ /dev/mapper/cdata /dev/mapper/corig 128 2 metadata2 writethrough smq 0" Kernel logs: (snip) device-mapper: array: array_block_check failed: blocknr 0 != wanted 10 device-mapper: block manager: array validator check failed for block 10 device-mapper: array: get_ablock failed device-mapper: cache metadata: dm_array_cursor_next for mapping failed ------------[ cut here ]------------ kernel BUG at drivers/md/dm-bufio.c:638! Fix by setting the cached block pointer to NULL on errors. In addition to the reproducer described above, this fix can be verified using the "array_cursor/damaged" test in dm-unit: dm-unit run /pdata/array_cursor/damaged --kernel-dir <KERNEL_DIR></td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-57929">详情</a></td>
       </tr>
@@ -324,7 +404,7 @@
       <tr>
        <td>5bcd158a64fce146cb27cfce0d093813</td>
        <td>CVE-2024-57928</td>
-       <td>2025-01-19 12:15:26 <img src="imgs/new.gif" /></td>
+       <td>2025-01-19 12:15:26</td>
        <td>In the Linux kernel, the following vulnerability has been resolved: netfs: Fix enomem handling in buffered reads If netfs_read_to_pagecache() gets an error from either ->prepare_read() or from netfs_prepare_read_iterator(), it needs to decrement ->nr_outstanding, cancel the subrequest and break out of the issuing loop. Currently, it only does this for two of the cases, but there are two more that aren't handled. Fix this by moving the handling to a common place and jumping to it from all four places. This is in preference to inserting a wrapper around netfs_prepare_read_iterator() as proposed by Dmitry Antipov[1].</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-57928">详情</a></td>
       </tr>
@@ -332,7 +412,7 @@
       <tr>
        <td>ce1f6002f7dc4c159babd26911bd51ba</td>
        <td>CVE-2024-57927</td>
-       <td>2025-01-19 12:15:26 <img src="imgs/new.gif" /></td>
+       <td>2025-01-19 12:15:26</td>
        <td>In the Linux kernel, the following vulnerability has been resolved: nfs: Fix oops in nfs_netfs_init_request() when copying to cache When netfslib wants to copy some data that has just been read on behalf of nfs, it creates a new write request and calls nfs_netfs_init_request() to initialise it, but with a NULL file pointer. This causes nfs_file_open_context() to oops - however, we don't actually need the nfs context as we're only going to write to the cache. Fix this by just returning if we aren't given a file pointer and emit a warning if the request was for something other than copy-to-cache. Further, fix nfs_netfs_free_request() so that it doesn't try to free the context if the pointer is NULL.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-57927">详情</a></td>
       </tr>
@@ -340,7 +420,7 @@
       <tr>
        <td>9873631e568f9d23e78e7f43caf6e8da</td>
        <td>CVE-2024-57926</td>
-       <td>2025-01-19 12:15:26 <img src="imgs/new.gif" /></td>
+       <td>2025-01-19 12:15:26</td>
        <td>In the Linux kernel, the following vulnerability has been resolved: drm/mediatek: Set private->all_drm_private[i]->drm to NULL if mtk_drm_bind returns err The pointer need to be set to NULL, otherwise KASAN complains about use-after-free. Because in mtk_drm_bind, all private's drm are set as follows. private->all_drm_private[i]->drm = drm; And drm will be released by drm_dev_put in case mtk_drm_kms_init returns failure. However, the shutdown path still accesses the previous allocated memory in drm_atomic_helper_shutdown. [ 84.874820] watchdog: watchdog0: watchdog did not stop! [ 86.512054] ================================================================== [ 86.513162] BUG: KASAN: use-after-free in drm_atomic_helper_shutdown+0x33c/0x378 [ 86.514258] Read of size 8 at addr ffff0000d46fc068 by task shutdown/1 [ 86.515213] [ 86.515455] CPU: 1 UID: 0 PID: 1 Comm: shutdown Not tainted 6.13.0-rc1-mtk+gfa1a78e5d24b-dirty #55 [ 86.516752] Hardware name: Unknown Product/Unknown Product, BIOS 2022.10 10/01/2022 [ 86.517960] Call trace: [ 86.518333] show_stack+0x20/0x38 (C) [ 86.518891] dump_stack_lvl+0x90/0xd0 [ 86.519443] print_report+0xf8/0x5b0 [ 86.519985] kasan_report+0xb4/0x100 [ 86.520526] __asan_report_load8_noabort+0x20/0x30 [ 86.521240] drm_atomic_helper_shutdown+0x33c/0x378 [ 86.521966] mtk_drm_shutdown+0x54/0x80 [ 86.522546] platform_shutdown+0x64/0x90 [ 86.523137] device_shutdown+0x260/0x5b8 [ 86.523728] kernel_restart+0x78/0xf0 [ 86.524282] __do_sys_reboot+0x258/0x2f0 [ 86.524871] __arm64_sys_reboot+0x90/0xd8 [ 86.525473] invoke_syscall+0x74/0x268 [ 86.526041] el0_svc_common.constprop.0+0xb0/0x240 [ 86.526751] do_el0_svc+0x4c/0x70 [ 86.527251] el0_svc+0x4c/0xc0 [ 86.527719] el0t_64_sync_handler+0x144/0x168 [ 86.528367] el0t_64_sync+0x198/0x1a0 [ 86.528920] [ 86.529157] The buggy address belongs to the physical page: [ 86.529972] page: refcount:0 mapcount:0 mapping:0000000000000000 index:0xffff0000d46fd4d0 pfn:0x1146fc [ 86.531319] flags: 0xbfffc0000000000(node=0|zone=2|lastcpupid=0xffff) [ 86.532267] raw: 0bfffc0000000000 0000000000000000 dead000000000122 0000000000000000 [ 86.533390] raw: ffff0000d46fd4d0 0000000000000000 00000000ffffffff 0000000000000000 [ 86.534511] page dumped because: kasan: bad access detected [ 86.535323] [ 86.535559] Memory state around the buggy address: [ 86.536265] ffff0000d46fbf00: ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff [ 86.537314] ffff0000d46fbf80: ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff [ 86.538363] >ffff0000d46fc000: ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff [ 86.544733] ^ [ 86.551057] ffff0000d46fc080: ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff [ 86.557510] ffff0000d46fc100: ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff [ 86.563928] ================================================================== [ 86.571093] Disabling lock debugging due to kernel taint [ 86.577642] Unable to handle kernel paging request at virtual address e0e9c0920000000b [ 86.581834] KASAN: maybe wild-memory-access in range [0x0752049000000058-0x075204900000005f] ...</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-57926">详情</a></td>
       </tr>
@@ -348,7 +428,7 @@
       <tr>
        <td>53a5e99c6046837e0c020c4e33fea592</td>
        <td>CVE-2024-57925</td>
-       <td>2025-01-19 12:15:26 <img src="imgs/new.gif" /></td>
+       <td>2025-01-19 12:15:26</td>
        <td>In the Linux kernel, the following vulnerability has been resolved: ksmbd: fix a missing return value check bug In the smb2_send_interim_resp(), if ksmbd_alloc_work_struct() fails to allocate a node, it returns a NULL pointer to the in_work pointer. This can lead to an illegal memory write of in_work->response_buf when allocate_interim_rsp_buf() attempts to perform a kzalloc() on it. To address this issue, incorporating a check for the return value of ksmbd_alloc_work_struct() ensures that the function returns immediately upon allocation failure, thereby preventing the aforementioned illegal memory access.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-57925">详情</a></td>
       </tr>
@@ -356,7 +436,7 @@
       <tr>
        <td>141b1d19c29c6ff5ae5eb764551b118e</td>
        <td>CVE-2024-57924</td>
-       <td>2025-01-19 12:15:26 <img src="imgs/new.gif" /></td>
+       <td>2025-01-19 12:15:26</td>
        <td>In the Linux kernel, the following vulnerability has been resolved: fs: relax assertions on failure to encode file handles Encoding file handles is usually performed by a filesystem >encode_fh() method that may fail for various reasons. The legacy users of exportfs_encode_fh(), namely, nfsd and name_to_handle_at(2) syscall are ready to cope with the possibility of failure to encode a file handle. There are a few other users of exportfs_encode_{fh,fid}() that currently have a WARN_ON() assertion when ->encode_fh() fails. Relax those assertions because they are wrong. The second linked bug report states commit 16aac5ad1fa9 ("ovl: support encoding non-decodable file handles") in v6.6 as the regressing commit, but this is not accurate. The aforementioned commit only increases the chances of the assertion and allows triggering the assertion with the reproducer using overlayfs, inotify and drop_caches. Triggering this assertion was always possible with other filesystems and other reasons of ->encode_fh() failures and more particularly, it was also possible with the exact same reproducer using overlayfs that is mounted with options index=on,nfs_export=on also on kernels < v6.6. Therefore, I am not listing the aforementioned commit as a Fixes commit. Backport hint: this patch will have a trivial conflict applying to v6.6.y, and other trivial conflicts applying to stable kernels < v6.6.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-57924">详情</a></td>
       </tr>
@@ -439,86 +519,6 @@
        <td>2025-01-18 09:15:07</td>
        <td>A vulnerability classified as problematic has been found in Hyland Alfresco Community Edition and Alfresco Enterprise Edition up to 6.2.2. This affects an unknown part of the file /share/s/ of the component URL Handler. The manipulation leads to cross site scripting. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. Upgrading to version 7.0 is able to address this issue. It is recommended to upgrade the affected component.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-0557">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>16b31889acd50e434356127a54b28321</td>
-       <td>CVE-2025-0527</td>
-       <td>2025-01-17 14:15:32</td>
-       <td>A vulnerability classified as critical was found in code-projects Admission Management System 1.0. Affected by this vulnerability is an unknown functionality of the file /signupconfirm.php. The manipulation of the argument in_eml leads to sql injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. Other parameters might be affected as well.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-0527">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3ef1bc6ac6e47dbd152f3c8a2c2ab67f</td>
-       <td>CVE-2024-13503</td>
-       <td>2025-01-17 14:15:31</td>
-       <td>Buffer Copy without Checking Size of Input ('Classic Buffer Overflow') vulnerability in Newtec NTC2218, NTC2250, NTC2299 on Linux, PowerPC, ARM (Updating signaling process in the swdownload binary modules) allows Local Execution of Code, Remote Code Inclusion. This issue affects NTC2218, NTC2250, NTC2299: from 1.0.1.1 through 2.2.6.19. The issue is both present on the PowerPC versions of the modem and the ARM versions. A stack buffer buffer overflow in the swdownload binary allows attackers to execute arbitrary code. The parse_INFO function uses an unrestricted `sscanf` to read a string of an incoming network packet into a statically sized buffer.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-13503">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1fbf411fee195e2b4ecffccbda13ed61</td>
-       <td>CVE-2024-13502</td>
-       <td>2025-01-17 14:15:31</td>
-       <td>Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability in Newtec/iDirect NTC2218, NTC2250, NTC2299 on Linux, PowerPC, ARM allows Local Code Inclusion.This issue affects NTC2218, NTC2250, NTC2299: from 1.0.1.1 through 2.2.6.19. The `commit_multicast` page used to configure multicasts in the modem's web administration interface uses improperly parses incoming data from the request before passing it to an `eval` statement in a bash script. This allows attackers to inject arbitrary shell commands.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-13502">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a8b0402d75178a92228b4aecf41a4f10</td>
-       <td>CVE-2024-12703</td>
-       <td>2025-01-17 11:15:08</td>
-       <td>CWE-502: Deserialization of untrusted data vulnerability exists that could lead to loss of confidentiality, integrity and potential remote code execution on workstation when a non-admin authenticated user opens a malicious project file.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-12703">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0b4bed7af88e602a8abfd958090c3b01</td>
-       <td>CVE-2024-12142</td>
-       <td>2025-01-17 11:15:08</td>
-       <td>CWE-200: Exposure of Sensitive Information to an Unauthorized Actor vulnerability exists that could cause information disclosure of restricted web page, modification of web page and denial of service when specific web pages are modified and restricted functions are invoked.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-12142">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>456756233b5b56c662fc985d05e2239b</td>
-       <td>CVE-2024-10498</td>
-       <td>2025-01-17 11:15:08</td>
-       <td>CWE-119: Improper Restriction of Operations within the Bounds of a Memory Buffer vulnerability exists that could allow an unauthorized attacker to modify configuration values outside of the normal range when the attacker sends specific Modbus write packets to the device which could result in invalid data or loss of web interface functionality.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-10498">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>043e1b754a6cfbb40d0e0082353762a1</td>
-       <td>CVE-2024-10497</td>
-       <td>2025-01-17 11:15:06</td>
-       <td>CWE-639: Authorization Bypass Through User-Controlled Key vulnerability exists that could allow an authorized attacker to modify values outside those defined by their privileges (Elevation of Privileges) when the attacker sends modified HTTPS requests to the device.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-10497">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>51bf125d9c2556cc7ae3e24d617badca</td>
-       <td>CVE-2024-13378</td>
-       <td>2025-01-17 10:15:07</td>
-       <td>The Gravity Forms plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the ‘style_settings’ parameter in versions 2.9.0.1 up to, and including, 2.9.1.3 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. The attack is only successful in the Chrome web browser, and requires directly browsing the media file via the attachment post.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-13378">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6c7f02bdb5ba768234c0dfda7817fbac</td>
-       <td>CVE-2024-13377</td>
-       <td>2025-01-17 10:15:07</td>
-       <td>The Gravity Forms plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the ‘alt’ parameter in all versions up to, and including, 2.9.1.3 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-13377">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1d266ffe2d294dda76738965985de9bf</td>
-       <td>CVE-2024-12476</td>
-       <td>2025-01-17 10:15:07</td>
-       <td>CWE-611: Improper Restriction of XML External Entity Reference vulnerability exists that could cause information disclosure, impacts workstation integrity and potential remote code execution on the compromised computer, when specific crafted XML file is imported in the Web Designer configuration tool.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-12476">详情</a></td>
       </tr>
 
      </tbody>
@@ -1970,6 +1970,126 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>b6603019eb70607cbcd58e606d3886ca</td>
+       <td>CVE-2024-42422</td>
+       <td>2025-01-20 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>Dell NetWorker授权绕过漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/110112">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>acca3044156a0ad1bf7914ea1cf52b81</td>
+       <td>CVE-2024-12053</td>
+       <td>2025-01-20 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>Google Chrome类型混淆漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/110111">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>074f9679e3c3190842e41348c5eb19e2</td>
+       <td>CVE-2023-51645</td>
+       <td>2025-01-20 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>Allegra目录遍历远程代码执行漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/110110">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9e4f8c4860792fb0fe9efe227fe76df8</td>
+       <td>CVE-2024-51073</td>
+       <td>2025-01-20 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>KIA Seltos Vehicle Instrument Cluster来源验证错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/110109">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3a04dfdb91a0aeb27d2c71b899efdebb</td>
+       <td>CVE-2024-51072</td>
+       <td>2025-01-20 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>KIA Seltos Vehicle Instrument Cluster来源验证错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/110108">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a5d319ba3976df37068d310ffb1731b5</td>
+       <td>CVE-2023-51642</td>
+       <td>2025-01-20 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>Allegra不受信数据反序列化远程代码执行漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/110107">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>05ea7aeaa95ba003bb87385aa9e7970e</td>
+       <td>CVE-2023-51639</td>
+       <td>2025-01-20 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>Allegra目录遍历身份认证绕过漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/110106">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>fa602e3b2c16caa6215b3fe6aa7daf8e</td>
+       <td>CVE-2024-48861</td>
+       <td>2025-01-20 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>QNAP Systems QuRouter操作系统命令注入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/110105">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>89ca8c0c0e23eff4279c9282a560e946</td>
+       <td>CVE-2024-38647</td>
+       <td>2025-01-20 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>QNAP Systems AI Core信息泄露漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/110104">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>bb9cb48aaebee4b1f6d00501b9444e3f</td>
+       <td>CVE-2024-52723</td>
+       <td>2025-01-20 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>TOTOLINK X6000R操作系统命令注入漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/110103">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9966c773c83cfa6c4204659cde60ccdc</td>
+       <td>CVE-2024-52793</td>
+       <td>2025-01-20 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>Deno Standard Library（std）跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/110102">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>72ac6dc80394fca686f3fda27fc3bec2</td>
+       <td>CVE-2024-51074</td>
+       <td>2025-01-20 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>KIA Seltos Vehicle Instrument Cluster访问控制错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/110101">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ab97d5dfa0c49c3dec807c6158aae032</td>
+       <td>CVE-2023-51643</td>
+       <td>2025-01-20 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>Allegra目录遍历远程代码执行漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/110100">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3e59cb6032719d0410b90a40dd792f4d</td>
+       <td>CVE-2023-51638</td>
+       <td>2025-01-20 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>Allegra硬编码凭据身份认证绕过漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/110099">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>de10083a83c662d4753fdb337f82f154</td>
+       <td>CVE-2023-51640</td>
+       <td>2025-01-20 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>Allegra目录遍历远程代码执行漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/110098">详情</a></td>
+      </tr>
+
+      <tr>
        <td>e81ad5c73703c75a1337c5dbdc270e4e</td>
        <td>CVE-2024-45663</td>
        <td>2025-01-16 09:09:08</td>
@@ -2087,126 +2207,6 @@
        <td>2025-01-16 09:09:08</td>
        <td>WordPress LSX Tour Operator Plugin跨站脚本漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/109853">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>74a6b774466243f166d82ab955cbbda6</td>
-       <td>CVE-2024-53477</td>
-       <td>2025-01-16 09:09:07</td>
-       <td>jfinal cms不受信任的数据反序列化漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/109943">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e7167f055fddbd8cd979ba691dc03d7a</td>
-       <td>CVE-2024-42942</td>
-       <td>2025-01-16 09:09:07</td>
-       <td>Tenda FH1201堆栈缓冲区溢出漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/109942">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>43362e116825048430a07272853b186f</td>
-       <td>CVE-2018-9376</td>
-       <td>2025-01-16 09:09:07</td>
-       <td>Google Pixel越界写入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/109941">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>bd72d5cdcad94f89091752ded6060397</td>
-       <td>CVE-2024-42966</td>
-       <td>2025-01-16 09:09:07</td>
-       <td>TOTOLINK N350RT访问控制错误漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/109940">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7ecf44311439e1a61b33b5a2ae36ecd9</td>
-       <td>CVE-2024-42943</td>
-       <td>2025-01-16 09:09:07</td>
-       <td>Tenda FH1201堆栈缓冲区溢出漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/109939">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>31b50189a6a737dcb28fadc945ab2c8b</td>
-       <td>CVE-2024-42681</td>
-       <td>2025-01-16 09:09:07</td>
-       <td>XXL-JOB不安全权限漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/109938">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9aaca2ca05aae955e647ef026c28b977</td>
-       <td>CVE-2024-42967</td>
-       <td>2025-01-16 09:09:07</td>
-       <td>TOTOLINK N350RT访问控制错误漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/109937">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6db64be71854beacb761aa769ae66faa</td>
-       <td>CVE-2024-42843</td>
-       <td>2025-01-16 09:09:07</td>
-       <td>Projectworlds Online Examination System SQL注入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/109936">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8d12444bc16b0dc7d78b8b56deee30f4</td>
-       <td>CVE-2018-9418</td>
-       <td>2025-01-16 09:09:07</td>
-       <td>Google Pixel越界写入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/109935">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7c856c1d2eb3c487625c13f63a34b468</td>
-       <td>CVE-2024-42941</td>
-       <td>2025-01-16 09:09:07</td>
-       <td>Tenda FH1201堆栈缓冲区溢出漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/109934">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>085122523e8a3910cda4a507cb83bd3c</td>
-       <td>CVE-2024-42946</td>
-       <td>2025-01-16 09:09:07</td>
-       <td>Tenda FH1201堆栈缓冲区溢出漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/109933">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2ace1a4d39f257646322cdb466f3975f</td>
-       <td>CVE-2024-53617</td>
-       <td>2025-01-16 09:09:07</td>
-       <td>LibrePhotos跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/109932">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>044f2c0cc0f04f93117ae98e90608ac2</td>
-       <td>CVE-2024-31800</td>
-       <td>2025-01-16 09:09:07</td>
-       <td>GNCC GC2身份验证绕过漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/109931">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e90d94bc811e0605784b49a300b8095c</td>
-       <td>CVE-2024-31799</td>
-       <td>2025-01-16 09:09:07</td>
-       <td>GNCC GC2信息泄露漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/109930">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e73281a5d0a4987cfade4a44b39b4acb</td>
-       <td>CVE-2024-6347</td>
-       <td>2025-01-16 09:09:07</td>
-       <td>Nissan Altima Blind Spot Detection Sensor ECU身份验证绕过漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/109929">详情</a></td>
       </tr>
 
      </tbody>
