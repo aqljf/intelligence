@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2025-02-01 09:11:13 -->
+<!-- RELEASE TIME : 2025-02-02 09:11:15 -->
 <html lang="zh-cn">
 
  <head>
@@ -282,9 +282,89 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>6c800609d73f2b8ea7214be0a097dab5</td>
+       <td>CVE-2025-24891</td>
+       <td>2025-01-31 23:15:08</td>
+       <td>Dumb Drop is a file upload application. Users with permission to upload to the service are able to exploit a path traversal vulnerability to overwrite arbitrary system files. As the container runs as root by default, there is no limit to what can be overwritten. With this, it's possible to inject malicious payloads into files ran on schedule or upon certain service actions. As the service is not required to run with authentication enabled, this may permit wholly unprivileged users root access. Otherwise, anybody with a PIN.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-24891">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>62cded9e858c3b6164a70396845273f3</td>
+       <td>CVE-2024-57587</td>
+       <td>2025-01-31 22:15:13</td>
+       <td>EasyVirt DCScope 8.6.0 and earlier and co2Scope 1.3.0 and earlier are vulnerable to SQL Injection on the authentication portal.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-57587">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7f567785f638e82a8bba48e274088d86</td>
+       <td>CVE-2024-57435</td>
+       <td>2025-01-31 22:15:13</td>
+       <td>In macrozheng mall-tiny 1.0.1, an attacker can send null data through the resource creation interface resulting in a null pointer dereference occurring in all subsequent operations that require authentication, which triggers a denial-of-service attack and service restart failure.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-57435">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>30738749f23597996b5a3f4467527c7e</td>
+       <td>CVE-2024-57434</td>
+       <td>2025-01-31 22:15:12</td>
+       <td>macrozheng mall-tiny 1.0.1 is vulnerable to Incorrect Access Control. The project imports users by default, and the test user is made a super administrator.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-57434">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c4383abf4c58ae39dcd8cade9939aae8</td>
+       <td>CVE-2024-57433</td>
+       <td>2025-01-31 22:15:12</td>
+       <td>macrozheng mall-tiny 1.0.1 is vulnerable to Incorrect Access Control via the logout function. After a user logs out, their token is still available and fetches information in the logged-in state.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-57433">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6a142478f304a216caad26f78d887345</td>
+       <td>CVE-2024-55062</td>
+       <td>2025-01-31 22:15:10</td>
+       <td>EasyVirt DCScope 8.6.0 and earlier and co2Scope 1.3.0 and earlier are vulnerable to Command injection.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-55062">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>dc9e557bec64eb9fcc0fa194f30e0bc3</td>
+       <td>CVE-2024-53357</td>
+       <td>2025-01-31 22:15:09</td>
+       <td>In EasyVirt DCScope <=8.6.0 and CO2Scope <=1.3.0, the AES encryption keys used to encrypt passwords are not stored securely.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-53357">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>263ee1ea73719e224676bb7253ef9239</td>
+       <td>CVE-2024-53356</td>
+       <td>2025-01-31 22:15:09</td>
+       <td>EasyVirt DCScope <=8.6.0 and CO2Scope <=1.3.0 are vulnerable to privilege escalation as the password token suffers from weak encryption making it possible to brute-force the password token.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-53356">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d408ba5217723d7af23d1fce3e1a1f1a</td>
+       <td>CVE-2024-53355</td>
+       <td>2025-01-31 22:15:09</td>
+       <td>EasyVirt DCScope <=8.6.0 and CO2Scope <=1.3.0 are vulnerable to Incorrect Access Control. This vulnerability allows the api to be used to create/modify/delete information about aliases (users) / users (groups) / roles.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-53355">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>097e957494221472f3e50804814481bf</td>
+       <td>CVE-2024-53354</td>
+       <td>2025-01-31 22:15:09</td>
+       <td>EasyVirt DCScope <=8.6.0 and CO2Scope <=1.3.0 are vulnerable to SQL Injection.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-53354">详情</a></td>
+      </tr>
+
+      <tr>
        <td>e42edf805eaa450c4067c531163f6146</td>
        <td>CVE-2025-0470</td>
-       <td>2025-01-31 04:15:09 <img src="imgs/new.gif" /></td>
+       <td>2025-01-31 04:15:09</td>
        <td>The Forminator Forms – Contact Form, Payment Form & Custom Form Builder plugin for WordPress is vulnerable to Reflected Cross-Site Scripting via the title parameter in all versions up to, and including, 1.38.2 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that execute if they can successfully trick a user into performing an action such as clicking on a link.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-0470">详情</a></td>
       </tr>
@@ -292,7 +372,7 @@
       <tr>
        <td>c1d5502654a8c72a0f0c42bb97d0d0dc</td>
        <td>CVE-2024-47900</td>
-       <td>2025-01-31 04:15:08 <img src="imgs/new.gif" /></td>
+       <td>2025-01-31 04:15:08</td>
        <td>Software installed and run as a non-privileged user may conduct improper GPU system calls to access OOB kernel memory.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-47900">详情</a></td>
       </tr>
@@ -300,7 +380,7 @@
       <tr>
        <td>a0a7c19f733f786176413f8cf2bea7bc</td>
        <td>CVE-2024-47899</td>
-       <td>2025-01-31 04:15:08 <img src="imgs/new.gif" /></td>
+       <td>2025-01-31 04:15:08</td>
        <td>Software installed and run as a non-privileged user may conduct improper GPU system calls to trigger use-after-free kernel exceptions.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-47899">详情</a></td>
       </tr>
@@ -308,7 +388,7 @@
       <tr>
        <td>938e0468e75c5cf002ed9aedaedfa8a6</td>
        <td>CVE-2024-47898</td>
-       <td>2025-01-31 04:15:08 <img src="imgs/new.gif" /></td>
+       <td>2025-01-31 04:15:08</td>
        <td>Software installed and run as a non-privileged user may conduct improper GPU system calls to trigger use-after-free kernel exceptions.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-47898">详情</a></td>
       </tr>
@@ -316,7 +396,7 @@
       <tr>
        <td>5bf5669fd67015265c1d073517b47e3a</td>
        <td>CVE-2024-47891</td>
-       <td>2025-01-31 04:15:08 <img src="imgs/new.gif" /></td>
+       <td>2025-01-31 04:15:08</td>
        <td>Software installed and run as a non-privileged user may conduct improper GPU system calls to trigger use-after-free kernel exceptions.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-47891">详情</a></td>
       </tr>
@@ -324,7 +404,7 @@
       <tr>
        <td>6af810b036c93742e3dd9df8de5174d5</td>
        <td>CVE-2024-13463</td>
-       <td>2025-01-31 04:15:07 <img src="imgs/new.gif" /></td>
+       <td>2025-01-31 04:15:07</td>
        <td>The SeatReg plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin's 'seatreg' shortcode in all versions up to, and including, 1.56.0 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-13463">详情</a></td>
       </tr>
@@ -332,7 +412,7 @@
       <tr>
        <td>369324eb6ccc8d37c02f9fc4d3b7ef66</td>
        <td>CVE-2024-46974</td>
-       <td>2025-01-31 03:15:11 <img src="imgs/new.gif" /></td>
+       <td>2025-01-31 03:15:11</td>
        <td>Software installed and run as a non-privileged user may conduct improper read/write operations on imported/exported DMA buffers.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-46974">详情</a></td>
       </tr>
@@ -340,7 +420,7 @@
       <tr>
        <td>8b0b380dae9f3b28db8a8fe16767bda6</td>
        <td>CVE-2024-13817</td>
-       <td>2025-01-31 03:15:10 <img src="imgs/new.gif" /></td>
+       <td>2025-01-31 03:15:10</td>
        <td>Rejected reason: ** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. Reason: This candidate was issued in error. Notes: All references and descriptions in this candidate have been removed to prevent accidental usage.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-13817">详情</a></td>
       </tr>
@@ -348,7 +428,7 @@
       <tr>
        <td>82f85f797f073500d6950d8f8e4d2ced</td>
        <td>CVE-2024-13767</td>
-       <td>2025-01-31 03:15:10 <img src="imgs/new.gif" /></td>
+       <td>2025-01-31 03:15:10</td>
        <td>The Live2DWebCanvas plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the ClearFiles() function in all versions up to, and including, 1.9.11. This makes it possible for authenticated attackers, with Subscriber-level access and above, to delete arbitrary files on the server, which can easily lead to remote code execution when the right file is deleted (such as wp-config.php).</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-13767">详情</a></td>
       </tr>
@@ -356,7 +436,7 @@
       <tr>
        <td>8e4061e3c33c867ce93d04e071e1b404</td>
        <td>CVE-2024-13399</td>
-       <td>2025-01-31 03:15:10 <img src="imgs/new.gif" /></td>
+       <td>2025-01-31 03:15:10</td>
        <td>The Gosign – Posts Slider Block plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'posts-slider-block' block in all versions up to, and including, 1.1.0 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with Contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-13399">详情</a></td>
       </tr>
@@ -439,86 +519,6 @@
        <td>2025-01-29 23:15:23</td>
        <td>A vulnerability was found in needyamin Library Card System 1.0. It has been classified as critical. Affected is an unknown function of the file admindashboard.php of the component Admin Panel. The manipulation of the argument email/password leads to sql injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-0843">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>856c3ca15973caa717daf768a0f8a742</td>
-       <td>CVE-2025-0804</td>
-       <td>2025-01-29 04:15:07</td>
-       <td>The ClickWhale – Link Manager, Link Shortener and Click Tracker for Affiliate Links & Link Pages plugin for WordPress is vulnerable to Stored Cross-Site Scripting via link titles in all versions up to, and including, 2.4.1 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with Contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-0804">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4af6d507a357aba03f51840ed247a0ee</td>
-       <td>CVE-2025-0806</td>
-       <td>2025-01-29 03:15:06</td>
-       <td>A vulnerability was found in code-projects Job Recruitment 1.0. It has been rated as problematic. This issue affects some unknown processing of the file _call_job_search_ajax.php. The manipulation of the argument job_type leads to cross site scripting. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-0806">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4b4f80214beb48a3c35c5b8e1f6d7659</td>
-       <td>CVE-2024-11932</td>
-       <td>2025-01-29 02:31:28</td>
-       <td>A path traversal vulnerability exists in DataMosaix Private Cloud. By specifying the character sequence in the body of the vulnerable endpoint, it is possible to overwrite files outside of the intended directory. A threat actor with admin privileges could leverage this vulnerability to overwrite reports including user projects.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-11932">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1133fbdf2006dc02316c2c0536d2d969</td>
-       <td>CVE-2025-23362</td>
-       <td>2025-01-29 02:15:27</td>
-       <td>The old versions of EXIF Viewer Classic contain a cross-site scripting vulnerability caused by improper handling of EXIF meta data. When an image is rendered and crafted EXIF meta data is processed, an arbitrary script may be executed on the web browser. Versions 2.3.2 and 2.4.0 were reported as vulnerable. According to the vendor, the product has been refactored after those old versions and the version 3.0.1 is not vulnerable.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-23362">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>eabc19a20019ceace8777d8b1a770d0a</td>
-       <td>CVE-2025-0803</td>
-       <td>2025-01-29 02:15:27</td>
-       <td>A vulnerability, which was classified as critical, has been found in Codezips Gym Management System 1.0. Affected by this issue is some unknown functionality of the file /dashboard/admin/submit_plan_new.php. The manipulation of the argument planid leads to sql injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-0803">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6f3fc8b46b03391a55db05f7d350bbb5</td>
-       <td>CVE-2025-0802</td>
-       <td>2025-01-29 02:15:27</td>
-       <td>A vulnerability classified as critical was found in SourceCodester Best Employee Management System 1.0. Affected by this vulnerability is an unknown functionality of the file /admin/View_user.php of the component Administrative Endpoint. The manipulation leads to improper access controls. The attack can be launched remotely. The exploit has been disclosed to the public and may be used.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-0802">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5807526c9e99bd2d11adf5abaaee4b63</td>
-       <td>CVE-2025-0800</td>
-       <td>2025-01-29 02:15:27</td>
-       <td>A vulnerability classified as problematic has been found in SourceCodester Online Courseware 1.0. Affected is an unknown function of the file /pcci/admin/saveeditt.php of the component Edit Teacher. The manipulation of the argument fname leads to cross site scripting. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-0800">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>fded201bcf219bdaf4aecf401735af6d</td>
-       <td>CVE-2025-0798</td>
-       <td>2025-01-29 02:15:27</td>
-       <td>A vulnerability was found in MicroWorld eScan Antivirus 7.0.32 on Linux. It has been rated as critical. This issue affects some unknown processing of the file rtscanner of the component Quarantine Handler. The manipulation leads to os command injection. The attack may be initiated remotely. The complexity of an attack is rather high. The exploitation is known to be difficult. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-0798">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>33de359577b3ab583960d88126ea8f84</td>
-       <td>CVE-2025-0797</td>
-       <td>2025-01-29 02:15:27</td>
-       <td>A vulnerability was found in MicroWorld eScan Antivirus 7.0.32 on Linux. It has been declared as problematic. This vulnerability affects unknown code of the file /var/Microworld/ of the component Quarantine Handler. The manipulation leads to incorrect default permissions. The attack needs to be approached locally. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-0797">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>10ad35a68890b2f69aa88d9d7bb8e5dc</td>
-       <td>CVE-2025-0795</td>
-       <td>2025-01-29 02:15:26</td>
-       <td>A vulnerability was found in ESAFENET CDG V5. It has been classified as problematic. This affects an unknown part of the file /todolistjump.jsp. The manipulation of the argument flowId leads to cross site scripting. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-0795">详情</a></td>
       </tr>
 
      </tbody>
