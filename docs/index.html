@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2025-02-25 09:09:14 -->
+<!-- RELEASE TIME : 2025-02-27 09:09:13 -->
 <html lang="zh-cn">
 
  <head>
@@ -282,9 +282,89 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>47433a6c34e0cdcbc0f9ed6373f531da</td>
+       <td>CVE-2024-30150</td>
+       <td>2025-02-25 23:15:10</td>
+       <td>HCL MyCloud is affected by Improper Access Control - an unauthenticated privilege escalation vulnerability which may lead to information disclosure and potential for Server-Side Request Forgery (SSRF) and Denial of Service(DOS) attacks from unauthenticated users.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-30150">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>cdac2e73458c1608337e4f7f434318ee</td>
+       <td>CVE-2025-25521</td>
+       <td>2025-02-25 22:15:24</td>
+       <td>Seacms <=13.3 is vulnerable to SQL Injection in admin_type_news.php.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-25521">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>58600867f2f99ce08aab2f5a0373d3e1</td>
+       <td>CVE-2025-25520</td>
+       <td>2025-02-25 22:15:24</td>
+       <td>Seacms <13.3 is vulnerable to SQL Injection in admin_pay.php.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-25520">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3417606f9ee960eaf842b604e6534bc8</td>
+       <td>CVE-2025-25519</td>
+       <td>2025-02-25 22:15:24</td>
+       <td>Seacms <=13.3 is vulnerable to SQL Injection in admin_zyk.php.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-25519">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1d7947d6183a7e89bff13e8398f6eefd</td>
+       <td>CVE-2025-25517</td>
+       <td>2025-02-25 22:15:24</td>
+       <td>Seacms <=13.3 is vulnerable to SQL Injection in admin_reslib.php.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-25517">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2008d347dc58d50250933252cc7af751</td>
+       <td>CVE-2025-25516</td>
+       <td>2025-02-25 22:15:24</td>
+       <td>Seacms <=13.3 is vulnerable to SQL Injection in admin_paylog.php.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-25516">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>291680fddb394b872d0e2235794c2e32</td>
+       <td>CVE-2025-25515</td>
+       <td>2025-02-25 22:15:23</td>
+       <td>Seacms <=13.3 is vulnerable to SQL Injection in admin_collect.php that allows an authenticated attacker to exploit the database.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-25515">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b5bc956e75cba366451423aa712e3ad2</td>
+       <td>CVE-2025-25514</td>
+       <td>2025-02-25 22:15:23</td>
+       <td>Seacms <=13.3 is vulnerable to SQL Injection in admin_collect_news.php.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-25514">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>93ab6a5978291e37d7c02be0b4da6e0d</td>
+       <td>CVE-2025-22211</td>
+       <td>2025-02-25 22:15:15</td>
+       <td>A SQL injection vulnerability in the JoomShopping component versions 1.0.0-1.4.3 for Joomla allows authenticated attackers (administrator) to execute arbitrary SQL commands in the country management area in backend.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-22211">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>66af0d069a65562551d49d18364779a3</td>
+       <td>CVE-2025-0514</td>
+       <td>2025-02-25 22:15:14</td>
+       <td>Improper Input Validation vulnerability in The Document Foundation LibreOffice allows Windows Executable hyperlink targets to be executed unconditionally on activation.This issue affects LibreOffice: from 24.8 before < 24.8.5.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-0514">详情</a></td>
+      </tr>
+
+      <tr>
        <td>59b7990f07389df3a6672782b961b89e</td>
        <td>CVE-2025-27144</td>
-       <td>2025-02-24 23:15:11 <img src="imgs/new.gif" /></td>
+       <td>2025-02-24 23:15:11</td>
        <td>Go JOSE provides an implementation of the Javascript Object Signing and Encryption set of standards in Go, including support for JSON Web Encryption (JWE), JSON Web Signature (JWS), and JSON Web Token (JWT) standards. In versions on the 4.x branch prior to version 4.0.5, when parsing compact JWS or JWE input, Go JOSE could use excessive memory. The code used strings.Split(token, ".") to split JWT tokens, which is vulnerable to excessive memory consumption when processing maliciously crafted tokens with a large number of `.` characters. An attacker could exploit this by sending numerous malformed tokens, leading to memory exhaustion and a Denial of Service. Version 4.0.5 fixes this issue. As a workaround, applications could pre-validate that payloads passed to Go JOSE do not contain an excessive number of `.` characters.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-27144">详情</a></td>
       </tr>
@@ -292,7 +372,7 @@
       <tr>
        <td>9d013c20d4ff1f62f043e65087574492</td>
        <td>CVE-2025-27143</td>
-       <td>2025-02-24 23:15:11 <img src="imgs/new.gif" /></td>
+       <td>2025-02-24 23:15:11</td>
        <td>Better Auth is an authentication and authorization library for TypeScript. Prior to version 1.1.21, the application is vulnerable to an open redirect due to improper validation of the callbackURL parameter in the email verification endpoint and any other endpoint that accepts callback url. While the server blocks fully qualified URLs, it incorrectly allows scheme-less URLs. This results in the browser interpreting the URL as a fully qualified URL, leading to unintended redirection. An attacker can exploit this flaw by crafting a malicious verification link and tricking users into clicking it. Upon successful email verification, the user will be automatically redirected to the attacker's website, which can be used for phishing, malware distribution, or stealing sensitive authentication tokens. This CVE is a bypass of the fix for GHSA-8jhw-6pjj-8723/CVE-2024-56734. Version 1.1.21 contains an updated patch.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-27143">详情</a></td>
       </tr>
@@ -300,7 +380,7 @@
       <tr>
        <td>6697724f29ce8e6db371f10fd23c2ccb</td>
        <td>CVE-2025-22974</td>
-       <td>2025-02-24 23:15:11 <img src="imgs/new.gif" /></td>
+       <td>2025-02-24 23:15:11</td>
        <td>SQL Injection vulnerability in SeaCMS v.13.2 and before allows a remote attacker to execute arbitrary code via the DoTranExecSql parameter in the phome.php component.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-22974">详情</a></td>
       </tr>
@@ -308,7 +388,7 @@
       <tr>
        <td>4f68335639a3c161989b1a17b6edf457</td>
        <td>CVE-2024-57685</td>
-       <td>2025-02-24 23:15:10 <img src="imgs/new.gif" /></td>
+       <td>2025-02-24 23:15:10</td>
        <td>An issue in sparkshop v.1.1.7 and before allows a remote attacker to execute arbitrary code via a crafted phar file.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-57685">详情</a></td>
       </tr>
@@ -316,7 +396,7 @@
       <tr>
        <td>afb38a1c51d36595777f58db85fd3eaf</td>
        <td>CVE-2024-56525</td>
-       <td>2025-02-24 23:15:10 <img src="imgs/new.gif" /></td>
+       <td>2025-02-24 23:15:10</td>
        <td>In Public Knowledge Project (PKP) OJS, OMP, and OPS before 3.3.0.21 and 3.4.x before 3.4.0.8, an XXE attack by the Journal Editor Role can create a new role as super admin in the journal context, and insert a backdoor plugin, by uploading a crafted XML document as a User XML Plugin.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-56525">详情</a></td>
       </tr>
@@ -324,7 +404,7 @@
       <tr>
        <td>befbc671e1c3065633f51daeb28f2bf0</td>
        <td>CVE-2024-53544</td>
-       <td>2025-02-24 23:15:10 <img src="imgs/new.gif" /></td>
+       <td>2025-02-24 23:15:10</td>
        <td>NovaCHRON Zeitsysteme GmbH & Co. KG Smart Time Plus v8.x to v8.6 was discovered to contain a SQL injection vulnerability via the getCookieNames method in the smarttimeplus/MySQLConnection endpoint.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-53544">详情</a></td>
       </tr>
@@ -332,7 +412,7 @@
       <tr>
        <td>aca1215141a89bc5e4a5dde233566e2d</td>
        <td>CVE-2024-53543</td>
-       <td>2025-02-24 23:15:10 <img src="imgs/new.gif" /></td>
+       <td>2025-02-24 23:15:10</td>
        <td>NovaCHRON Zeitsysteme GmbH & Co. KG Smart Time Plus v8.x to v8.6 was discovered to contain a SQL injection vulnerability via the addProject method in the smarttimeplus/MySQLConnection endpoint.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-53543">详情</a></td>
       </tr>
@@ -340,7 +420,7 @@
       <tr>
        <td>55e7a58663cfa33b8ac9e050a4ba8648</td>
        <td>CVE-2024-53542</td>
-       <td>2025-02-24 23:15:09 <img src="imgs/new.gif" /></td>
+       <td>2025-02-24 23:15:09</td>
        <td>Incorrect access control in the component /iclock/Settings?restartNCS=1 of NovaCHRON Zeitsysteme GmbH & Co. KG Smart Time Plus v8.x to v8.6 allows attackers to arbitrarily restart the NCServiceManger via a crafted GET request.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-53542">详情</a></td>
       </tr>
@@ -348,7 +428,7 @@
       <tr>
        <td>7916dd43d47494d9244275e0810e4dad</td>
        <td>CVE-2025-27141</td>
-       <td>2025-02-24 22:15:23 <img src="imgs/new.gif" /></td>
+       <td>2025-02-24 22:15:23</td>
        <td>Metabase Enterprise Edition is the enterprise version of Metabase business intelligence and data analytics software. Starting in version 1.47.0 and prior to versions 1.50.36, 1.51.14, 1.52.11, and 1.53.2 of Metabase Enterprise Edition, users with impersonation permissions may be able to see results of cached questions, even if their permissions don’t allow them to see the data. If some user runs a question which gets cached, and then an impersonated user runs that question, then the impersonated user sees the same results as the previous user. These cached results may include data the impersonated user should not have access to. This vulnerability only impacts the Enterprise Edition of Metabase and not the Open Source Edition. Versions 1.53.2, 1.52.11, 1.51.14, and 1.50.36 contains a patch. Versions on the 1.49.X, 1.48.X, and 1.47.X branches are vulnerable but do not have a patch available, so users should upgrade to a major version with an available fix. Disabling question caching is a workaround for this issue.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-27141">详情</a></td>
       </tr>
@@ -356,7 +436,7 @@
       <tr>
        <td>dd4aa619470cedc58d9c6a4ebc75623a</td>
        <td>CVE-2025-27140</td>
-       <td>2025-02-24 22:15:22 <img src="imgs/new.gif" /></td>
+       <td>2025-02-24 22:15:22</td>
        <td>WeGIA is a Web manager for charitable institutions. An OS Command Injection vulnerability was discovered in versions prior to 3.2.15 of the WeGIA application, `importar_dump.php` endpoint. This vulnerability could allow an attacker to execute arbitrary code remotely. The command is basically a command to move a temporary file, so a webshell upload is also possible. Version 3.2.15 contains a patch for the issue.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-27140">详情</a></td>
       </tr>
@@ -439,86 +519,6 @@
        <td>2025-02-23 15:15:09</td>
        <td>A vulnerability was found in code-projects Blood Bank System 1.0. It has been declared as problematic. This vulnerability affects unknown code of the file /Blood/A-.php. The manipulation of the argument Bloodname leads to cross site scripting. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-1586">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0b87d11fcb52b732796eb42d4eca6a24</td>
-       <td>CVE-2022-28339</td>
-       <td>2025-02-22 21:15:34</td>
-       <td>Trend Micro HouseCall for Home Networks version 5.3.1302 and below contains an uncontrolled search patch element vulnerability that could allow an attacker with low user privileges to create a malicious DLL that could lead to escalated privileges.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2022-28339">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9c146ca091682016d690a865ffb47dc8</td>
-       <td>CVE-2025-27012</td>
-       <td>2025-02-22 16:15:32</td>
-       <td>Cross-Site Request Forgery (CSRF) vulnerability in a1post A1POST.BG Shipping for Woo allows Privilege Escalation. This issue affects A1POST.BG Shipping for Woo: from n/a through 1.5.1.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-27012">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4d9079d5eabd15ecb4e4bc9a3c096985</td>
-       <td>CVE-2025-26973</td>
-       <td>2025-02-22 16:15:32</td>
-       <td>Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in WarfarePlugins Social Warfare allows DOM-Based XSS. This issue affects Social Warfare: from n/a through 4.5.4.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-26973">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>10e1557bfc3787460df55fc54e7c970f</td>
-       <td>CVE-2025-26776</td>
-       <td>2025-02-22 16:15:32</td>
-       <td>Unrestricted Upload of File with Dangerous Type vulnerability in NotFound Chaty Pro allows Upload a Web Shell to a Web Server. This issue affects Chaty Pro: from n/a through 3.3.3.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-26776">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>19b60b2c4fa7040d03e6c54f7eb368ae</td>
-       <td>CVE-2025-26774</td>
-       <td>2025-02-22 16:15:32</td>
-       <td>Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Rock Solid Responsive Modal Builder for High Conversion – Easy Popups allows Reflected XSS. This issue affects Responsive Modal Builder for High Conversion – Easy Popups: from n/a through 1.5.0.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-26774">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>962ce35db5560f85cecc2b7fdbe335bf</td>
-       <td>CVE-2025-26764</td>
-       <td>2025-02-22 16:15:31</td>
-       <td>Missing Authorization vulnerability in enituretechnology Distance Based Shipping Calculator allows Exploiting Incorrectly Configured Access Control Security Levels. This issue affects Distance Based Shipping Calculator: from n/a through 2.0.22.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-26764">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4b7e008ffb46bcd407cfb68174865f3a</td>
-       <td>CVE-2025-26763</td>
-       <td>2025-02-22 16:15:31</td>
-       <td>Deserialization of Untrusted Data vulnerability in MetaSlider Responsive Slider by MetaSlider allows Object Injection. This issue affects Responsive Slider by MetaSlider: from n/a through 3.94.0.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-26763">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>896d81ecdffea4e232f031f10e485175</td>
-       <td>CVE-2025-26760</td>
-       <td>2025-02-22 16:15:31</td>
-       <td>Improper Control of Filename for Include/Require Statement in PHP Program ('PHP Remote File Inclusion') vulnerability in Wow-Company Calculator Builder allows PHP Local File Inclusion. This issue affects Calculator Builder: from n/a through 1.6.2.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-26760">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b0fe7dc0893b7d50617d255bf8e4831d</td>
-       <td>CVE-2025-26757</td>
-       <td>2025-02-22 16:15:31</td>
-       <td>Improper Control of Filename for Include/Require Statement in PHP Program ('PHP Remote File Inclusion') vulnerability in FULL SERVICES FULL Customer allows PHP Local File Inclusion. This issue affects FULL Customer: from n/a through 3.1.26.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-26757">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3f9ac988fc01ea48c68372ea5e19330e</td>
-       <td>CVE-2025-26756</td>
-       <td>2025-02-22 16:15:31</td>
-       <td>Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in grimdonkey Magic the Gathering Card Tooltips allows Stored XSS. This issue affects Magic the Gathering Card Tooltips: from n/a through 3.5.0.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-26756">详情</a></td>
       </tr>
 
      </tbody>
@@ -1970,9 +1970,129 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>f1ebe5e8c4d2b27532decaae22b958c3</td>
+       <td>CVE-2024-46622</td>
+       <td>2025-02-26 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>SecureAge Security Suite权限提升漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/111892">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>11c80e9d55ccd43a588f386f66557910</td>
+       <td>CVE-2025-22395</td>
+       <td>2025-02-26 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>Dell Update Package Framework权限提升漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/111891">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>978a3b64cac54d324490e1d9ccb9d973</td>
+       <td>CVE-2024-48455</td>
+       <td>2025-02-26 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>Netis Systems多款产品信息泄露漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/111890">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>937d32d09ab3d79285bd35cefe2e4fc8</td>
+       <td>CVE-2024-54880</td>
+       <td>2025-02-26 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>SeaCMS访问控制错误漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/111889">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b142cb6a61cb3f3bca079b01c03d1daa</td>
+       <td>CVE-2024-56828</td>
+       <td>2025-02-26 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>ChestnutCMS文件上传漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/111888">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>565566dae4c14015c56f1686d51158d9</td>
+       <td>CVE-2024-48457</td>
+       <td>2025-02-26 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>Netis Systems多款产品越界读取漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/111887">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>88439523bbc7fbb5316a3d53d7ef8045</td>
+       <td>CVE-2024-48456</td>
+       <td>2025-02-26 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>Netis Systems多款产品越界读取漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/111886">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>48d06e40461ebe2a07d633bbaac7f98b</td>
+       <td>CVE-2024-12402</td>
+       <td>2025-02-26 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>WordPress Themes Coder Plugin权限提升漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/111885">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>091cbc8c2acc33047566c6ba72c0a5f2</td>
+       <td>CVE-2024-11777</td>
+       <td>2025-02-26 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>WordPress Sell Media Plugin跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/111884">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>992986b17991ac85700a5c82085792fe</td>
+       <td>CVE-2024-55074</td>
+       <td>2025-02-26 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>Grocy跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/111883">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6dde449c96bd83c445bd0f39adf55b81</td>
+       <td>CVE-2024-11290</td>
+       <td>2025-02-26 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>WordPress Member Access Plugin信息泄露漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/111882">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b44a11235219206cb5e4232040129753</td>
+       <td>CVE-2024-12098</td>
+       <td>2025-02-26 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>WordPress ARS Affiliate Page Plugin跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/111881">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6c2b3d895b8b3067dd3c52f6ee79ce05</td>
+       <td>CVE-2024-11337</td>
+       <td>2025-02-26 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>WordPress Horoscope And Tarot Plugin跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/111880">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3f7a46526136bcfc4aa36cc908a1439c</td>
+       <td>CVE-2024-12541</td>
+       <td>2025-02-26 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>WordPress Chative Live chat and Chatbot Plugin跨站请求伪造漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/111879">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7ba57109b7dd16786a8483309a85c322</td>
+       <td>CVE-2024-11899</td>
+       <td>2025-02-26 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>WordPress Slider Pro Lite Plugin跨站脚本漏洞</td>
+       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/111878">详情</a></td>
+      </tr>
+
+      <tr>
        <td>85e9fd601cb9f2de306bbe8911afc4f4</td>
        <td>CVE-2024-49531</td>
-       <td>2025-02-24 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2025-02-24 09:09:08</td>
        <td>Adobe Acrobat Reader空指针取消引用漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/111801">详情</a></td>
       </tr>
@@ -1980,7 +2100,7 @@
       <tr>
        <td>afa2674ffa37834a36ba8a428023005a</td>
        <td>CVE-2024-49532</td>
-       <td>2025-02-24 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2025-02-24 09:09:08</td>
        <td>Adobe Acrobat Reader越界读取漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/111800">详情</a></td>
       </tr>
@@ -1988,7 +2108,7 @@
       <tr>
        <td>a89596e0b5c7d5a4a0c407965a59029d</td>
        <td>CVE-2024-49551</td>
-       <td>2025-02-24 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2025-02-24 09:09:08</td>
        <td>Adobe Media Encoder越界写入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/111799">详情</a></td>
       </tr>
@@ -1996,7 +2116,7 @@
       <tr>
        <td>97beedc37d81e5ea688611eea1e88136</td>
        <td>CVE-2024-45155</td>
-       <td>2025-02-24 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2025-02-24 09:09:08</td>
        <td>Adobe Animate未初始化指针访问漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/111798">详情</a></td>
       </tr>
@@ -2004,7 +2124,7 @@
       <tr>
        <td>f1e2dcb464918b27e2dcb53f7725246a</td>
        <td>CVE-2024-52997</td>
-       <td>2025-02-24 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2025-02-24 09:09:08</td>
        <td>Adobe Photoshop内存错误引用漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/111797">详情</a></td>
       </tr>
@@ -2012,7 +2132,7 @@
       <tr>
        <td>aa31355cdc2fdb51e07cb3ebb2e7c203</td>
        <td>CVE-2024-49546</td>
-       <td>2025-02-24 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2025-02-24 09:09:08</td>
        <td>Adobe InDesign越界读取漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/111796">详情</a></td>
       </tr>
@@ -2020,7 +2140,7 @@
       <tr>
        <td>635b5ea2ae7be8194aabfa2d39235f22</td>
        <td>CVE-2024-52994</td>
-       <td>2025-02-24 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2025-02-24 09:09:08</td>
        <td>Adobe Substance 3D Sampler越界写入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/111795">详情</a></td>
       </tr>
@@ -2028,7 +2148,7 @@
       <tr>
        <td>69a220500a2f63ba5a49abac55063b65</td>
        <td>CVE-2024-54038</td>
-       <td>2025-02-24 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2025-02-24 09:09:08</td>
        <td>Adobe Connect访问控制错误漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/111794">详情</a></td>
       </tr>
@@ -2036,7 +2156,7 @@
       <tr>
        <td>400db8da2670ab148d9ebaec57dc9843</td>
        <td>CVE-2024-49513</td>
-       <td>2025-02-24 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2025-02-24 09:09:08</td>
        <td>Adobe PDFL SDK越界写入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/111793">详情</a></td>
       </tr>
@@ -2044,7 +2164,7 @@
       <tr>
        <td>3a10c4f7d638f34e8e4b4e110b0a161c</td>
        <td>CVE-2024-53953</td>
-       <td>2025-02-24 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2025-02-24 09:09:08</td>
        <td>Adobe Animate内存错误引用漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/111792">详情</a></td>
       </tr>
@@ -2052,7 +2172,7 @@
       <tr>
        <td>772642b80fa30b6251189af73845fce5</td>
        <td>CVE-2024-49538</td>
-       <td>2025-02-24 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2025-02-24 09:09:08</td>
        <td>Adobe Illustrator越界写入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/111791">详情</a></td>
       </tr>
@@ -2060,7 +2180,7 @@
       <tr>
        <td>d978f089e329f3a4f8347aba0a48bd40</td>
        <td>CVE-2024-49537</td>
-       <td>2025-02-24 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2025-02-24 09:09:08</td>
        <td>Adobe After Effects越界写入漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/111790">详情</a></td>
       </tr>
@@ -2068,7 +2188,7 @@
       <tr>
        <td>9d8f11d6ecc0d121ea48e0d45a9af248</td>
        <td>CVE-2024-49541</td>
-       <td>2025-02-24 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2025-02-24 09:09:08</td>
        <td>Adobe Illustrator越界读取漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/111789">详情</a></td>
       </tr>
@@ -2076,7 +2196,7 @@
       <tr>
        <td>549b0bd2079028433be2e126063dc364</td>
        <td>CVE-2024-54051</td>
-       <td>2025-02-24 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2025-02-24 09:09:08</td>
        <td>Adobe Connect开放重定向漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/111788">详情</a></td>
       </tr>
@@ -2084,129 +2204,9 @@
       <tr>
        <td>c42ae955548a172ac5684bc488ed1fc9</td>
        <td>CVE-2024-43712</td>
-       <td>2025-02-24 09:09:08 <img src="imgs/new.gif" /></td>
+       <td>2025-02-24 09:09:08</td>
        <td>Adobe Experience Manager跨站脚本漏洞</td>
        <td><a target="_blank" href="http://www.nsfocus.net/vulndb/111787">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2e4c3922ed566d15a645e278abdb2b93</td>
-       <td>CVE-2024-11991</td>
-       <td>2025-02-20 09:09:08</td>
-       <td>Motoko未初始化资源使用漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/111600">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>60a883fde36089649cfe31ea2b53f3ed</td>
-       <td>CVE-2024-11268</td>
-       <td>2025-02-20 09:09:08</td>
-       <td>Autodesk Revit越界读取漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/111599">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0ed93ab15fc9de46c0478115b0cc4a68</td>
-       <td>CVE-2024-8864</td>
-       <td>2025-02-20 09:09:08</td>
-       <td>Composio代码注入漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/111598">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ff1b3af3efbfd3a8bc458a1173b31fe0</td>
-       <td>CVE-2024-8865</td>
-       <td>2025-02-20 09:09:08</td>
-       <td>Composio路径遍历漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/111597">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d26a28f2038b7bbc0e63859067922933</td>
-       <td>CVE-2024-8866</td>
-       <td>2025-02-20 09:09:08</td>
-       <td>AutoCMS跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/111596">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b37cd2528b43cb7eaaa3cb036ef36169</td>
-       <td>CVE-2024-8867</td>
-       <td>2025-02-20 09:09:08</td>
-       <td>Perfex CRM跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/111595">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>bb1d70658a0e1430106d7144b1faf799</td>
-       <td>CVE-2024-12057</td>
-       <td>2025-02-20 09:09:08</td>
-       <td>PcVue敏感信息插入日志文件漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/111594">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e1527ffc963ded8d1aeef161a66efc6f</td>
-       <td>CVE-2024-44056</td>
-       <td>2025-02-20 09:09:08</td>
-       <td>WordPress Mantra Plugin跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/111593">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ee2ebdec64be13b0fece6fc6cc5a631b</td>
-       <td>CVE-2024-8863</td>
-       <td>2025-02-20 09:09:08</td>
-       <td>Aim跨站脚本漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/111592">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a62a63a7777f1cf88360763ff0ae4575</td>
-       <td>CVE-2024-8862</td>
-       <td>2025-02-20 09:09:08</td>
-       <td>H2O不受信数据反序列化漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/111591">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>13b74f49cbab56f91acd82408b578828</td>
-       <td>CVE-2024-53450</td>
-       <td>2025-02-20 09:09:08</td>
-       <td>RAGFlow越界读取漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/111590">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b699135766445b5e1a4838a384bbc225</td>
-       <td>CVE-2024-46047</td>
-       <td>2025-02-20 09:09:08</td>
-       <td>Tenda FH451堆栈缓冲区溢出漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/111589">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4e13bdca04f36f38b06fbf93560439a4</td>
-       <td>CVE-2024-46046</td>
-       <td>2025-02-20 09:09:08</td>
-       <td>Tenda FH451堆栈缓冲区溢出漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/111588">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4f98f628b26d25e5e08947263b42fa55</td>
-       <td>CVE-2024-6678</td>
-       <td>2025-02-20 09:09:08</td>
-       <td>GitLab CE/EE身份验证绕过漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/111587">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>14fb7d4f2712bb94be539fa14360b322</td>
-       <td>CVE-2024-4472</td>
-       <td>2025-02-20 09:09:08</td>
-       <td>GitLab CE/EE信息泄露漏洞</td>
-       <td><a target="_blank" href="http://www.nsfocus.net/vulndb/111586">详情</a></td>
       </tr>
 
      </tbody>
