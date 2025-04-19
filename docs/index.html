@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2025-04-18 09:10:14 -->
+<!-- RELEASE TIME : 2025-04-19 09:10:13 -->
 <html lang="zh-cn">
 
  <head>
@@ -282,9 +282,89 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>7c1ad9f9ed5ff67816287586560de16d</td>
+       <td>CVE-2025-28059</td>
+       <td>2025-04-18 17:15:34 <img src="imgs/new.gif" /></td>
+       <td>An access control vulnerability in Nagios Network Analyzer 2024R1.0.3 allows deleted users to retain access to system resources due to improper session invalidation and stale token handling. When an administrator deletes a user account, the backend fails to terminate active sessions and revoke associated API tokens, enabling unauthorized access to restricted functions.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-28059">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>64cf32b11118ed21738912043e069a92</td>
+       <td>CVE-2024-41447</td>
+       <td>2025-04-18 17:15:33 <img src="imgs/new.gif" /></td>
+       <td>A stored cross-site scripting (XSS) vulnerability in Alkacon OpenCMS v17.0 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the author parameter under the Create/Modify article function.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-41447">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7cb058274599a0a49868fb052e8002d1</td>
+       <td>CVE-2025-32796</td>
+       <td>2025-04-18 16:15:23 <img src="imgs/new.gif" /></td>
+       <td>Dify is an open-source LLM app development platform. Prior to version 0.6.12, a vulnerability was identified in the DIFY where normal users can enable or disable apps through the API, even though the web UI button for this action is disabled and normal users are not permitted to make such changes. This access control flaw allows non-admin users to make unauthorized changes, which can disrupt the functionality and availability of the APPS. This issue has been patched in version 0.6.12. A workaround for this vulnerability involves updating the API access control mechanisms to enforce stricter user role permissions and implementing role-based access controls (RBAC) to ensure that only users with admin privileges can send enable or disable requests for apps.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-32796">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>95736772cb58d65516d10e4ad57e6e7b</td>
+       <td>CVE-2025-32795</td>
+       <td>2025-04-18 16:15:23 <img src="imgs/new.gif" /></td>
+       <td>Dify is an open-source LLM app development platform. Prior to version 0.6.12, a vulnerability was identified in the DIFY where normal users are improperly granted permissions to edit APP names, descriptions and icons. This access control flaw allows non-admin users to modify app details, despite being restricted from viewing apps, which poses a security risk to the integrity of the application. This issue has been patched in version 0.6.12. A workaround for this vulnerability involves updating the access control mechanisms to enforce stricter user role permissions and implementing role-based access controls (RBAC) to ensure that only users with admin privileges can modify app details.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-32795">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c9acfd7bcf97c89c4888a6007bd8b137</td>
+       <td>CVE-2025-32792</td>
+       <td>2025-04-18 16:04:16 <img src="imgs/new.gif" /></td>
+       <td>SES safely executes third-party JavaScript 'strict' mode programs in compartments that have no excess authority in their global scope. Prior to version 1.12.0, web pages and web extensions using `ses` and the Compartment API to evaluate third-party code in an isolated execution environment that have also elsewhere used `const`, `let`, and `class` bindings in the top-level scope of a `<script>` tag will have inadvertently revealed these bindings in the lexical scope of third-party code. This issue has been patched in version 1.12.0. Workarounds for this issue involve either avoiding top-level `let`, `const`, or `class` bindings in `<script>` tags, or change these to `var` bindings to be reflected on `globalThis`.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-32792">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9f9582d07b6403b56de3d7cc0032e6fa</td>
+       <td>CVE-2025-32442</td>
+       <td>2025-04-18 15:59:06 <img src="imgs/new.gif" /></td>
+       <td>Fastify is a fast and low overhead web framework, for Node.js. In versions 5.0.0 to 5.3.0, applications that specify different validation strategies for different content types have a possibility to bypass validation by providing a _slightly altered_ content type such as with different casing or altered whitespacing before `;`. This issue has been patched in version 5.3.1. A workaround involves not specifying individual content types in the schema.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-32442">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d84e01cc947ef5cc5876e818b22a91bb</td>
+       <td>CVE-2025-32389</td>
+       <td>2025-04-18 15:56:39 <img src="imgs/new.gif" /></td>
+       <td>NamelessMC is a free, easy to use & powerful website software for Minecraft servers. Prior to version 2.1.4, NamelessMC is vulnerable to SQL injection by providing an unexpected square bracket GET parameter syntax. Square bracket GET parameter syntax refers to the structure `?param[0]=a&param[1]=b&param[2]=c` utilized by PHP, which is parsed by PHP as `$_GET['param']` being of type array. This issue has been patched in version 2.1.4.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-32389">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1e6f9845024f9dd7095a347e9abe8386</td>
+       <td>CVE-2025-31120</td>
+       <td>2025-04-18 15:52:57 <img src="imgs/new.gif" /></td>
+       <td>NamelessMC is a free, easy to use & powerful website software for Minecraft servers. In version 2.1.4 and prior, an insecure view count mechanism in the forum page allows an unauthenticated attacker to artificially increase the view count. The application relies on a client-side cookie (nl-topic-[tid]) (or session variable for guests) to determine if a view should be counted. When a client does not provide the cookie, every page request increments the counter, leading to incorrect view metrics. This issue has been patched in version 2.2.0.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-31120">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ccd42afbfd197f6ae0bbe77ebca4ccb9</td>
+       <td>CVE-2025-31118</td>
+       <td>2025-04-18 15:52:36 <img src="imgs/new.gif" /></td>
+       <td>NamelessMC is a free, easy to use & powerful website software for Minecraft servers. In version 2.1.4 and prior, forum quick reply feature (view_topic.php) does not implement any spam prevention mechanism. This allows authenticated users to continuously post replies without any time restriction, resulting in an uncontrolled surge of posts that can disrupt normal operations. This issue has been patched in version 2.2.0.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-31118">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>cbf807053e2d1442b526641725ecfdce</td>
+       <td>CVE-2025-30357</td>
+       <td>2025-04-18 15:51:21 <img src="imgs/new.gif" /></td>
+       <td>NamelessMC is a free, easy to use & powerful website software for Minecraft servers. In version 2.1.4 and prior, if a malicious user is leaving spam comments on many topics then an administrator, unable to manually remove each spam comment, may delete the malicious account. Once an administrator deletes the malicious user's account, all their posts (comments) along with the associated topics (by unrelated users) will be marked as deleted. This issue has been patched in version 2.2.0.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-30357">详情</a></td>
+      </tr>
+
+      <tr>
        <td>e41fc144424d6ebd2ee06919af9b4fe8</td>
        <td>CVE-2025-3113</td>
-       <td>2025-04-17 07:15:43 <img src="imgs/new.gif" /></td>
+       <td>2025-04-17 07:15:43</td>
        <td>A valid, authenticated user with sufficient privileges and who is aware of Continuous Compliance’s internal database configurations can leverage the application’s built-in Connector functionality to access Continuous Compliance’s internal database. This allows the user to explore the internal database schema and export its data, including the properties of Connecters and Rule Sets.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-3113">详情</a></td>
       </tr>
@@ -292,7 +372,7 @@
       <tr>
        <td>7aa4093606a0195750645d03ad901a67</td>
        <td>CVE-2025-2903</td>
-       <td>2025-04-17 07:15:42 <img src="imgs/new.gif" /></td>
+       <td>2025-04-17 07:15:42</td>
        <td>An attacker with knowledge of creating user accounts during VM deployment on Google Cloud Platform (GCP) using the OS Login feature, can login via SSH gaining command-line control of the operating system. This allows an attacker to gain access to sensitive data stored on the VM, install malicious software, and disrupt or disable the functionality of the VM.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-2903">详情</a></td>
       </tr>
@@ -300,7 +380,7 @@
       <tr>
        <td>fc9df6a0c3c966cdfed824cbcb3ad804</td>
        <td>CVE-2025-3295</td>
-       <td>2025-04-17 06:15:44 <img src="imgs/new.gif" /></td>
+       <td>2025-04-17 06:15:44</td>
        <td>The WP Editor plugin for WordPress is vulnerable to arbitrary file read in all versions up to, and including, 1.2.9.1. This makes it possible for authenticated attackers, with Administrator-level access and above, to read arbitrary files on the affected site's server which may reveal sensitive information.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-3295">详情</a></td>
       </tr>
@@ -308,7 +388,7 @@
       <tr>
        <td>db8fa5eb9116d0d2d170c38198c7a9d3</td>
        <td>CVE-2025-3294</td>
-       <td>2025-04-17 06:15:43 <img src="imgs/new.gif" /></td>
+       <td>2025-04-17 06:15:43</td>
        <td>The WP Editor plugin for WordPress is vulnerable to arbitrary file update due to missing file path validation in all versions up to, and including, 1.2.9.1. This makes it possible for authenticated attackers, with Administrator-level access and above, to overwrite arbitrary files on the affected site's server which may make remote code execution possible assuming the files can be written to by the web server.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-3294">详情</a></td>
       </tr>
@@ -316,7 +396,7 @@
       <tr>
        <td>a8e5a77eb75c4fa35477a735cce7b476</td>
        <td>CVE-2025-1525</td>
-       <td>2025-04-17 06:15:43 <img src="imgs/new.gif" /></td>
+       <td>2025-04-17 06:15:43</td>
        <td>The Ultimate Dashboard WordPress plugin before 3.8.6 does not sanitise and escape some of its settings, which could allow high privilege users such as admin to perform Stored Cross-Site Scripting attacks even when the unfiltered_html capability is disallowed (for example in multisite setup).</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-1525">详情</a></td>
       </tr>
@@ -324,7 +404,7 @@
       <tr>
        <td>2e89647c44adb847be6d23ed3f05a834</td>
        <td>CVE-2025-1524</td>
-       <td>2025-04-17 06:15:43 <img src="imgs/new.gif" /></td>
+       <td>2025-04-17 06:15:43</td>
        <td>The Ultimate Dashboard WordPress plugin before 3.8.6 does not sanitise and escape some of its settings, which could allow high privilege users such as admin to perform Stored Cross-Site Scripting attacks even when the unfiltered_html capability is disallowed (for example in multisite setup).</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-1524">详情</a></td>
       </tr>
@@ -332,7 +412,7 @@
       <tr>
        <td>14b1bcbbfbcd47d3392b038196918b5e</td>
        <td>CVE-2025-1523</td>
-       <td>2025-04-17 06:15:43 <img src="imgs/new.gif" /></td>
+       <td>2025-04-17 06:15:43</td>
        <td>The Ultimate Dashboard WordPress plugin before 3.8.6 does not sanitise and escape some of its settings, which could allow high privilege users such as admin to perform Stored Cross-Site Scripting attacks even when the unfiltered_html capability is disallowed (for example in multisite setup).</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-1523">详情</a></td>
       </tr>
@@ -340,7 +420,7 @@
       <tr>
        <td>a46e1d8bf1be715f123a1f5fb477ffb6</td>
        <td>CVE-2024-13925</td>
-       <td>2025-04-17 06:15:43 <img src="imgs/new.gif" /></td>
+       <td>2025-04-17 06:15:43</td>
        <td>The Klarna Checkout for WooCommerce WordPress plugin before 2.13.5 exposes an unauthenticated WooCommerce Ajax endpoint that allows an attacker to flood the log files with data at the maximum size allowed for a POST parameter per request. This can result in rapid consumption of disk space, potentially filling the entire disk.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-13925">详情</a></td>
       </tr>
@@ -348,7 +428,7 @@
       <tr>
        <td>9a49ae935be1761c4fda42a5c72c1637</td>
        <td>CVE-2024-11924</td>
-       <td>2025-04-17 06:15:42 <img src="imgs/new.gif" /></td>
+       <td>2025-04-17 06:15:42</td>
        <td>The Icegram Express formerly known as Email Subscribers WordPress plugin before 5.7.52 does not sanitise and escape some of its settings, which could allow high privilege users such as admin to perform Stored Cross-Site Scripting attacks even when the unfiltered_html capability is disallowed (for example in multisite setup).</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-11924">详情</a></td>
       </tr>
@@ -356,7 +436,7 @@
       <tr>
        <td>9f763d6b6d3bd391c53f4a163bad078d</td>
        <td>CVE-2025-43717</td>
-       <td>2025-04-17 03:15:16 <img src="imgs/new.gif" /></td>
+       <td>2025-04-17 03:15:16</td>
        <td>In PEAR HTTP_Request2 before 2.7.0, multiple files in the tests directory, notably tests/_network/getparameters.php and tests/_network/postparameters.php, reflect any GET or POST parameters, leading to XSS.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-43717">详情</a></td>
       </tr>
@@ -439,86 +519,6 @@
        <td>2025-04-16 03:15:18</td>
        <td>A vulnerability has been found in TOTOLINK A3700R 9.1.2u.5822_B20200513 and classified as critical. Affected by this vulnerability is the function setSmartQosCfg of the file /cgi-bin/cstecgi.cgi. The manipulation leads to improper access controls. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-3665">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>de038cbf9c11e558253a354e70bcca73</td>
-       <td>CVE-2025-32428</td>
-       <td>2025-04-15 00:15:14</td>
-       <td>Jupyter Remote Desktop Proxy allows you to run a Linux Desktop on a JupyterHub. jupyter-remote-desktop-proxy was meant to rely on UNIX sockets readable only by the current user since version 3.0.0, but when used with TigerVNC, the VNC server started by jupyter-remote-desktop-proxy were still accessible via the network. This vulnerability does not affect users having TurboVNC as the vncserver executable. This issue is fixed in 3.0.1.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-32428">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ed36195fe591c31319ac9a360166ed71</td>
-       <td>CVE-2025-31494</td>
-       <td>2025-04-15 00:15:14</td>
-       <td>AutoGPT is a platform that allows users to create, deploy, and manage continuous artificial intelligence agents that automate complex workflows. The AutoGPT Platform's WebSocket API transmitted node execution updates to subscribers based on the graph_id+graph_version. Additionally, there was no check prohibiting users from subscribing with another user's graph_id+graph_version. As a result, node execution updates from one user's graph execution could be received by another user within the same instance. This vulnerability does not occur between different instances or between users and non-users of the platform. Single-user instances are not affected. In private instances with a user white-list, the impact is limited by the fact that all potential unintended recipients of these node execution updates must have been admitted by the administrator. This vulnerability is fixed in 0.6.1.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-31494">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c37491f5319161a2da40670d8cb8746f</td>
-       <td>CVE-2025-31491</td>
-       <td>2025-04-15 00:15:14</td>
-       <td>AutoGPT is a platform that allows users to create, deploy, and manage continuous artificial intelligence agents that automate complex workflows. Prior to 0.6.1, AutoGPT allows of leakage of cross-domain cookies and protected headers in requests redirect. AutoGPT uses a wrapper around the requests python library, located in autogpt_platform/backend/backend/util/request.py. In this wrapper, redirects are specifically NOT followed for the first request. If the wrapper is used with allow_redirects set to True (which is the default), any redirect is not followed by the initial request, but rather re-requested by the wrapper using the new location. However, there is a fundamental flaw in manually re-requesting the new location: it does not account for security-sensitive headers which should not be sent cross-origin, such as the Authorization and Proxy-Authorization header, and cookies. For example in autogpt_platform/backend/backend/blocks/github/_api.py, an Authorization header is set when retrieving data from the GitHub API. However, if GitHub suffers from an open redirect vulnerability (such as the made-up example of https://api.github.com/repos/{owner}/{repo}/issues/comments/{comment_id}/../../../../../redirect/?url=https://joshua.hu/), and the script can be coerced into visiting it with the Authorization header, the GitHub credentials in the Authorization header will be leaked. This allows leaking auth headers and private cookies. This vulnerability is fixed in 0.6.1.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-31491">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d8c4a68a5297467dc8e504966b034beb</td>
-       <td>CVE-2025-24797</td>
-       <td>2025-04-15 00:15:14</td>
-       <td>Meshtastic is an open source mesh networking solution. A fault in the handling of mesh packets containing invalid protobuf data can result in an attacker-controlled buffer overflow, allowing an attacker to hijack execution flow, potentially resulting in remote code execution. This attack does not require authentication or user interaction, as long as the target device rebroadcasts packets on the default channel. This vulnerability fixed in 2.6.2.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-24797">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>fa7f1843df546798eed78a85a49aafd2</td>
-       <td>CVE-2025-3593</td>
-       <td>2025-04-14 23:15:22</td>
-       <td>A vulnerability was found in ZHENFENG13/code-projects My-Blog-layui 1.0. It has been declared as critical. This vulnerability affects the function Upload of the file /admin/upload/authorImg/. The manipulation of the argument File leads to unrestricted upload. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-3593">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4f7b4dcd6848d359738d051266c66a9c</td>
-       <td>CVE-2025-31490</td>
-       <td>2025-04-14 23:15:21</td>
-       <td>AutoGPT is a platform that allows users to create, deploy, and manage continuous artificial intelligence agents that automate complex workflows. Prior to 0.6.1, AutoGPT allows SSRF due to DNS Rebinding in requests wrapper. AutoGPT is built with a wrapper around Python's requests library, hardening the application against SSRF. The code for this wrapper can be found in autogpt_platform/backend/backend/util/request.py. The requested hostname of a URL which is being requested is validated, ensuring that it does not resolve to any local ipv4 or ipv6 addresses. However, this check is not sufficient, as a DNS server may initially respond with a non-blocked address, with a TTL of 0. This means that the initial resolution would appear as a non-blocked address. In this case, validate_url() will return the url as successful. After validate_url() has successfully returned the url, the url is then passed to the real request() function. When the real request() function is called with the validated url, request() will once again resolve the address of the hostname, because the record will not have been cached (due to TTL 0). This resolution may be in the "invalid range". This type of attack is called a "DNS Rebinding Attack". This vulnerability is fixed in 0.6.1.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-31490">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>df4622835e83cb5a136754405a3518a9</td>
-       <td>CVE-2025-3592</td>
-       <td>2025-04-14 22:15:17</td>
-       <td>A vulnerability was found in ZHENFENG13/code-projects My-Blog-layui 1.0. It has been classified as problematic. This affects an unknown part of the file /admin/v1/link/edit. The manipulation leads to cross site scripting. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used. Multiple parameters might be affected. The vendor was contacted early about this disclosure but did not respond in any way.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-3592">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1a9ffa93013cbac42c9cc376055ce135</td>
-       <td>CVE-2025-3591</td>
-       <td>2025-04-14 22:15:16</td>
-       <td>A vulnerability was found in ZHENFENG13/code-projects My-Blog-layui 1.0 and classified as problematic. Affected by this issue is some unknown functionality of the file /admin/v1/blog/edit. The manipulation leads to cross site scripting. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. Multiple parameters might be affected. The vendor was contacted early about this disclosure but did not respond in any way.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-3591">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c5ffef34b9e667a77ae1b140c4139b24</td>
-       <td>CVE-2025-3590</td>
-       <td>2025-04-14 22:15:16</td>
-       <td>A vulnerability has been found in Adianti Framework up to 8.0 and classified as critical. Affected by this vulnerability is an unknown functionality. The manipulation leads to deserialization. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. Upgrading to version 8.1 is able to address this issue. It is recommended to upgrade the affected component.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-3590">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>33b854e5ef913805ded6ab0a77a50c98</td>
-       <td>CVE-2025-3589</td>
-       <td>2025-04-14 21:15:18</td>
-       <td>A vulnerability, which was classified as critical, was found in SourceCodester Music Class Enrollment System 1.0. Affected is an unknown function of the file /manage_class.php. The manipulation of the argument ID leads to sql injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-3589">详情</a></td>
       </tr>
 
      </tbody>
