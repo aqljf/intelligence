@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2025-05-08 09:10:13 -->
+<!-- RELEASE TIME : 2025-05-09 09:10:13 -->
 <html lang="zh-cn">
 
  <head>
@@ -282,9 +282,89 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>977c62b4fe9e8ce972c29deaecf03d65</td>
+       <td>CVE-2025-3419</td>
+       <td>2025-05-08 06:15:32 <img src="imgs/new.gif" /></td>
+       <td>The Event Manager, Events Calendar, Tickets, Registrations – Eventin plugin for WordPress is vulnerable to arbitrary file read in all versions up to, and including, 4.0.26 via the proxy_image() function. This makes it possible for unauthenticated attackers to read the contents of arbitrary files on the server, which can contain sensitive information.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-3419">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6fa2681581be2dd1e0382fa0aa42ed9a</td>
+       <td>CVE-2024-13793</td>
+       <td>2025-05-08 05:15:50 <img src="imgs/new.gif" /></td>
+       <td>The Wolmart | Multi-Vendor Marketplace WooCommerce Theme theme for WordPress is vulnerable to arbitrary shortcode execution in all versions up to, and including, 1.8.11. This is due to the software allowing users to execute an action that does not properly validate a value before running do_shortcode. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-13793">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e114dfe968e8f531534a003d033079d4</td>
+       <td>CVE-2025-32873</td>
+       <td>2025-05-08 04:17:18 <img src="imgs/new.gif" /></td>
+       <td>An issue was discovered in Django 4.2 before 4.2.21, 5.1 before 5.1.9, and 5.2 before 5.2.1. The django.utils.html.strip_tags() function is vulnerable to a potential denial-of-service (slow performance) when processing inputs containing large sequences of incomplete HTML tags. The template filter striptags is also vulnerable, because it is built on top of strip_tags().</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-32873">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>aa97fc22a331a46f67d0654c40cd8765</td>
+       <td>CVE-2024-55651</td>
+       <td>2025-05-08 00:15:15 <img src="imgs/new.gif" /></td>
+       <td>i-Educar is free, fully online school management software. Version 2.9 of the application fails to properly validate and sanitize user supplied input, leading to a stored cross-site scripting vulnerability that resides within the user type (Tipo de Usuário) input field. Through this attacker vector a malicious user might be able to retrieve information belonging to another user, which may lead to sensitive information leakage or other malicious actions. As of time of publication, no patched versions are known to exist.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-55651">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>bc389308e5ae1b8a37626eb67da75a7c</td>
+       <td>CVE-2025-46727</td>
+       <td>2025-05-07 23:15:54</td>
+       <td>Rack is a modular Ruby web server interface. Prior to versions 2.2.14, 3.0.16, and 3.1.14, `Rack::QueryParser` parses query strings and `application/x-www-form-urlencoded` bodies into Ruby data structures without imposing any limit on the number of parameters, allowing attackers to send requests with extremely large numbers of parameters. The vulnerability arises because `Rack::QueryParser` iterates over each `&`-separated key-value pair and adds it to a Hash without enforcing an upper bound on the total number of parameters. This allows an attacker to send a single request containing hundreds of thousands (or more) of parameters, which consumes excessive memory and CPU during parsing. An attacker can trigger denial of service by sending specifically crafted HTTP requests, which can cause memory exhaustion or pin CPU resources, stalling or crashing the Rack server. This results in full service disruption until the affected worker is restarted. Versions 2.2.14, 3.0.16, and 3.1.14 fix the issue. Some other mitigations are available. One may use middleware to enforce a maximum query string size or parameter count, or employ a reverse proxy (such as Nginx) to limit request sizes and reject oversized query strings or bodies. Limiting request body sizes and query string lengths at the web server or CDN level is an effective mitigation.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-46727">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b80b53d835ba3f83e95f6845257a1bb6</td>
+       <td>CVE-2025-35939</td>
+       <td>2025-05-07 23:15:54</td>
+       <td>Craft CMS stores arbitrary content provided by unauthenticated users in session files. This content could be accessed and executed, possibly using an independent vulnerability. Craft CMS redirects requests that require authentication to the login page and generates a session file on the server at `/var/lib/php/sessions`. Such session files are named `sess_[session_value]`, where `[session_value]` is provided to the client in a `Set-Cookie` response header. Craft CMS stores the return URL requested by the client without sanitizing parameters. Consequently, an unauthenticated client can introduce arbitrary values, such as PHP code, to a known local file location on the server. Craft CMS versions 5.7.5 and 4.15.3 have been released to address this issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-35939">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a1a8de27584acb18fa9268e2cb8cc57c</td>
+       <td>CVE-2025-32441</td>
+       <td>2025-05-07 23:15:53</td>
+       <td>Rack is a modular Ruby web server interface. Prior to version 2.2.14, when using the `Rack::Session::Pool` middleware, simultaneous rack requests can restore a deleted rack session, which allows the unauthenticated user to occupy that session. Rack session middleware prepares the session at the beginning of request, then saves is back to the store with possible changes applied by host rack application. This way the session becomes to be a subject of race conditions in general sense over concurrent rack requests. When using the `Rack::Session::Pool` middleware, and provided the attacker can acquire a session cookie (already a major issue), the session may be restored if the attacker can trigger a long running request (within that same session) adjacent to the user logging out, in order to retain illicit access even after a user has attempted to logout. Version 2.2.14 contains a patch for the issue. Some other mitigations are available. Either ensure the application invalidates sessions atomically by marking them as logged out e.g., using a `logged_out` flag, instead of deleting them, and check this flag on every request to prevent reuse; or implement a custom session store that tracks session invalidation timestamps and refuses to accept session data if the session was invalidated after the request began.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-32441">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>be0d1664731d5d64ed7c056c1102c27f</td>
+       <td>CVE-2025-0936</td>
+       <td>2025-05-07 23:15:53</td>
+       <td>On affected platforms running Arista EOS with a gNMI transport enabled, running the gNOI File TransferToRemote RPC with credentials for a remote server may cause these remote-server credentials to be logged or accounted on the local EOS device or possibly on other remote accounting servers (i.e. TACACS, RADIUS, etc).</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-0936">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f9f853bb9ad865b9d83f7fef68d4ddee</td>
+       <td>CVE-2025-46826</td>
+       <td>2025-05-07 22:15:21</td>
+       <td>insa-auth is an authentication server for INSA Rouen. A minor issue allowed third-party websites to access the server's secondary authentication bridge, potentially revealing basic student information (name and number). However, the issue posed minimal risk, was never exploited, and had limited impact. A fix was implemented promptly on May 3, 2025.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-46826">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2893ba10d6106c3202b27ddfc24525ed</td>
+       <td>CVE-2025-46821</td>
+       <td>2025-05-07 22:15:21</td>
+       <td>Envoy is a cloud-native edge/middle/service proxy. Prior to versions 1.34.1, 1.33.3, 1.32.6, and 1.31.8, Envoy's URI template matcher incorrectly excludes the `*` character from a set of valid characters in the URI path. As a result URI path containing the `*` character will not match a URI template expressions. This can result in bypass of RBAC rules when configured using the `uri_template` permissions. This vulnerability is fixed in Envoy versions v1.34.1, v1.33.3, v1.32.6, v1.31.8. As a workaround, configure additional RBAC permissions using `url_path` with `safe_regex` expression.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-46821">详情</a></td>
+      </tr>
+
+      <tr>
        <td>79bb13c16e762cafdc81bd6aa2bedcb6</td>
        <td>CVE-2025-4335</td>
-       <td>2025-05-07 03:15:19 <img src="imgs/new.gif" /></td>
+       <td>2025-05-07 03:15:19</td>
        <td>The Woocommerce Multiple Addresses plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 1.0.7.1. This is due to insufficient restrictions on user meta that can be updated through the save_multiple_shipping_addresses() function. This makes it possible for authenticated attackers, with Subscriber-level access and above, to elevate their privileges to that of an administrator.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-4335">详情</a></td>
       </tr>
@@ -292,7 +372,7 @@
       <tr>
        <td>8877928b64360bbe2130f6ca3541bbdc</td>
        <td>CVE-2025-4220</td>
-       <td>2025-05-07 03:15:19 <img src="imgs/new.gif" /></td>
+       <td>2025-05-07 03:15:19</td>
        <td>The Xavin&#039;s List Subpages plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin's 'xls' shortcode in all versions up to, and including, 1.3 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-4220">详情</a></td>
       </tr>
@@ -300,7 +380,7 @@
       <tr>
        <td>9ca573f0a6c29148043ec077eb59e581</td>
        <td>CVE-2025-4055</td>
-       <td>2025-05-07 03:15:19 <img src="imgs/new.gif" /></td>
+       <td>2025-05-07 03:15:19</td>
        <td>The Multiple Post Type Order plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin's 'mpto' shortcode in all versions up to, and including, 1.10.0 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-4055">详情</a></td>
       </tr>
@@ -308,7 +388,7 @@
       <tr>
        <td>8dd26e6e1b2e08d7a9ee4f96fa2df0bb</td>
        <td>CVE-2025-4054</td>
-       <td>2025-05-07 03:15:18 <img src="imgs/new.gif" /></td>
+       <td>2025-05-07 03:15:18</td>
        <td>The Relevanssi – A Better Search plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the highlights functionality in all versions up to, and including, 4.24.3 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page via the search results.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-4054">详情</a></td>
       </tr>
@@ -316,7 +396,7 @@
       <tr>
        <td>baaf821fd0bd14c8eef2635f3f52732c</td>
        <td>CVE-2025-3924</td>
-       <td>2025-05-07 03:15:18 <img src="imgs/new.gif" /></td>
+       <td>2025-05-07 03:15:18</td>
        <td>The PeproDev Ultimate Profile Solutions plugin for WordPress is vulnerable to unauthorized access of data via its publicly exposed reset-password endpoint. The plugin looks up the 'valid_email' value based solely on a supplied username parameter, without verifying that the requester is associated with that user account. This allows unauthenticated attackers to enumerate email addresses for any user, including administrators.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-3924">详情</a></td>
       </tr>
@@ -324,7 +404,7 @@
       <tr>
        <td>25c5e97993fbc3bd903e3f4c0281aca7</td>
        <td>CVE-2025-3921</td>
-       <td>2025-05-07 03:15:18 <img src="imgs/new.gif" /></td>
+       <td>2025-05-07 03:15:18</td>
        <td>The PeproDev Ultimate Profile Solutions plugin for WordPress is vulnerable to unauthorized modification of data due to a missing capability check on the handel_ajax_req() function in versions 1.9.1 to 7.5.2. This makes it possible for unauthenticated attackers to update arbitrary user's metadata which can be leveraged to block an administrator from accessing their site when wp_capabilities is set to 0.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-3921">详情</a></td>
       </tr>
@@ -332,7 +412,7 @@
       <tr>
        <td>a4151b00532d42b9554ea83834c8124f</td>
        <td>CVE-2025-3860</td>
-       <td>2025-05-07 03:15:18 <img src="imgs/new.gif" /></td>
+       <td>2025-05-07 03:15:18</td>
        <td>The CarDealerPress plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the ‘saleclass' parameter in all versions up to, and including, 6.7.2504.00 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with Contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-3860">详情</a></td>
       </tr>
@@ -340,7 +420,7 @@
       <tr>
        <td>c304fa433f5a4672d1e4b10f128fd160</td>
        <td>CVE-2025-3853</td>
-       <td>2025-05-07 03:15:18 <img src="imgs/new.gif" /></td>
+       <td>2025-05-07 03:15:18</td>
        <td>The WPshop 2 – E-Commerce plugin for WordPress is vulnerable to Insecure Direct Object Reference in versions 2.0.0 to 2.6.0 via the callback_generate_api_key() due to missing validation on a user controlled key. This makes it possible for authenticated attackers, with Subscriber-level access and above, to create valid API keys on behalf of other users.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-3853">详情</a></td>
       </tr>
@@ -348,7 +428,7 @@
       <tr>
        <td>68277a1b38ca73c50c41e003772bdc44</td>
        <td>CVE-2025-3852</td>
-       <td>2025-05-07 03:15:17 <img src="imgs/new.gif" /></td>
+       <td>2025-05-07 03:15:17</td>
        <td>The WPshop 2 – E-Commerce plugin for WordPress is vulnerable to privilege escalation via account takeover in versions 2.0.0 to 2.6.0. This is due to the plugin not properly validating a user's identity prior to updating their details like email & password through the update() function. This makes it possible for authenticated attackers, with subscriber-level access and above, to change arbitrary user's passwords, including administrators, and leverage that to gain access to their account.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-3852">详情</a></td>
       </tr>
@@ -356,7 +436,7 @@
       <tr>
        <td>4fa1fc0be9c64d8d692d4963792fc0c2</td>
        <td>CVE-2025-3851</td>
-       <td>2025-05-07 03:15:17 <img src="imgs/new.gif" /></td>
+       <td>2025-05-07 03:15:17</td>
        <td>The Download Manager and Payment Form WordPress Plugin – WP SmartPay plugin for WordPress is vulnerable to Insecure Direct Object Reference in versions 1.1.0 to 2.7.13 via the show() function due to missing validation on a user controlled key. This makes it possible for authenticated attackers, with Subscriber-level access and above, to view other user's data like email address, name, and notes.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-3851">详情</a></td>
       </tr>
@@ -439,86 +519,6 @@
        <td>2025-05-06 02:15:14</td>
        <td>In sprd ssense service, there is a possible missing permission check. This could lead to local information disclosure with no additional execution privileges needed.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-39442">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>403068bb1d0e34bcf7184aba6151ebb6</td>
-       <td>CVE-2025-4260</td>
-       <td>2025-05-05 03:15:23</td>
-       <td>A vulnerability was found in zhangyanbo2007 youkefu up to 4.2.0 and classified as problematic. Affected by this issue is the function impsave of the file m\web\handler\admin\system\TemplateController.java. The manipulation of the argument dataFile leads to deserialization. The attack may be launched remotely. The exploit has been disclosed to the public and may be used.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-4260">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f8d22e002e053e843cf9dd5c72626faf</td>
-       <td>CVE-2025-4259</td>
-       <td>2025-05-05 03:15:23</td>
-       <td>A vulnerability has been found in newbee-mall 1.0 and classified as critical. Affected by this vulnerability is the function Upload of the file ltd/newbee/mall/controller/common/UploadController.java. The manipulation of the argument File leads to unrestricted upload. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. This product does not use versioning. This is why information about affected and unaffected releases are unavailable.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-4259">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8b800f106bea82a1c2e3ecd05ed387ee</td>
-       <td>CVE-2025-20671</td>
-       <td>2025-05-05 03:15:22</td>
-       <td>In thermal, there is a possible out of bounds write due to a race condition. This could lead to local escalation of privilege if a malicious actor has already obtained the System privilege. User interaction is not needed for exploitation. Patch ID: ALPS09698599; Issue ID: MSV-3228.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-20671">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>80295adc99796dad802c05da211316cf</td>
-       <td>CVE-2025-20670</td>
-       <td>2025-05-05 03:15:22</td>
-       <td>In Modem, there is a possible permission bypass due to improper certificate validation. This could lead to remote information disclosure, if a UE has connected to a rogue base station controlled by the attacker, with User execution privileges needed. User interaction is needed for exploitation. Patch ID: MOLY01334347; Issue ID: MSV-2772.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-20670">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a89e3ad462e65e11d0a5b196331d664f</td>
-       <td>CVE-2025-20668</td>
-       <td>2025-05-05 03:15:22</td>
-       <td>In scp, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege if a malicious actor has already obtained the System privilege. User interaction is not needed for exploitation. Patch ID: ALPS09625562; Issue ID: MSV-3027.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-20668">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2fb3a1c98db063d6899112f3cf7f94ba</td>
-       <td>CVE-2025-20667</td>
-       <td>2025-05-05 03:15:22</td>
-       <td>In Modem, there is a possible information disclosure due to incorrect error handling. This could lead to remote information disclosure, if a UE has connected to a rogue base station controlled by the attacker, with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY01513293; Issue ID: MSV-2741.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-20667">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>12fed8c57d146a29a6403aa4b1ed88b0</td>
-       <td>CVE-2025-20666</td>
-       <td>2025-05-05 03:15:21</td>
-       <td>In Modem, there is a possible system crash due to an uncaught exception. This could lead to remote denial of service, if a UE has connected to a rogue base station controlled by the attacker, with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY00650610; Issue ID: MSV-2933.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-20666">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ea2f46b682be5a107821d6b32edd0d23</td>
-       <td>CVE-2025-20665</td>
-       <td>2025-05-05 03:15:21</td>
-       <td>In devinfo, there is a possible information disclosure due to a missing SELinux policy. This could lead to local information disclosure of device identifier with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS09555228; Issue ID: MSV-2760.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-20665">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8f51778c16a54170601442a08633fb32</td>
-       <td>CVE-2025-4273</td>
-       <td>2025-05-05 02:15:18</td>
-       <td>Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-4273">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>16e2856583a391dbd20a22ce19784610</td>
-       <td>CVE-2025-4258</td>
-       <td>2025-05-05 02:15:18</td>
-       <td>A vulnerability, which was classified as critical, was found in zhangyanbo2007 youkefu up to 4.2.0. Affected is the function Upload of the file \youkefu-master\src\main\java\com\ukefu\webim\web\handler\resource\MediaController.java. The manipulation of the argument imgFile leads to unrestricted upload. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-4258">详情</a></td>
       </tr>
 
      </tbody>
