@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2025-05-12 09:10:13 -->
+<!-- RELEASE TIME : 2025-05-13 09:10:14 -->
 <html lang="zh-cn">
 
  <head>
@@ -282,9 +282,89 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>6426a20bef2f15a6bf91db60e6600b63</td>
+       <td>CVE-2025-40627</td>
+       <td>2025-05-12 12:15:17 <img src="imgs/new.gif" /></td>
+       <td>Reflected Cross-Site Scripting (XSS) vulnerability in AbanteCart v1.4.0, that could allow an attacker to execute JavaScript code in a victim's browser by sending the victim a malicious URL. This vulnerability can be exploited to steal sensitive user data, such as session cookies, or to perform actions on behalf of the user, through "/eyes? [XSS_PAYLOAD]".</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-40627">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>562a75cf0196b5f2b50350489b686e31</td>
+       <td>CVE-2025-40626</td>
+       <td>2025-05-12 12:15:17 <img src="imgs/new.gif" /></td>
+       <td>Reflected Cross-Site Scripting (XSS) vulnerability in AbanteCart v1.4.0, that could allow an attacker to execute JavaScript code in a victim's browser by sending the victim a malicious URL. This vulnerability can be exploited to steal sensitive user data, such as session cookies, or to perform actions on behalf of the user, through "/about_us?[XSS_PAYLOAD]".</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-40626">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a3837d1e4b85df4ef7c2258cc2a7de7b</td>
+       <td>CVE-2025-47271</td>
+       <td>2025-05-12 11:15:51 <img src="imgs/new.gif" /></td>
+       <td>The OZI action is a GitHub Action that publishes releases to PyPI and mirror releases, signature bundles, and provenance in a tagged release. In versions 1.13.2 through 1.13.5, potentially untrusted data flows into PR creation logic. A malicious actor could construct a branch name that injects arbitrary code. This is patched in 1.13.6. As a workaround, one may downgrade to a version prior to 1.13.2.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-47271">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d8bc5aae8dfdff6d8b66aa0ab027513b</td>
+       <td>CVE-2025-47270</td>
+       <td>2025-05-12 11:15:51 <img src="imgs/new.gif" /></td>
+       <td>nimiq/core-rs-albatross is a Rust implementation of the Nimiq Proof-of-Stake protocol based on the Albatross consensus algorithm. The `nimiq-network-libp2p` subcrate of nimiq/core-rs-albatross is vulnerable to a Denial of Service (DoS) attack due to uncontrolled memory allocation. Specifically, the implementation of the `Discovery` network message handling allocates a buffer based on a length value provided by the peer, without enforcing an upper bound. Since this length is a `u32`, a peer can trigger allocations of up to 4 GB, potentially leading to memory exhaustion and node crashes. As Discovery messages are regularly exchanged for peer discovery, this vulnerability can be exploited repeatedly. The patch for this vulnerability is formally released as part of v1.1.0. The patch implements a limit to the discovery message size of 1 MB and also resizes the message buffer size incrementally as the data is read. No known workarounds are available.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-47270">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>92dc606b797f4d86ba6a66f057b95801</td>
+       <td>CVE-2025-46729</td>
+       <td>2025-05-12 11:15:50 <img src="imgs/new.gif" /></td>
+       <td>julmud/phpDVDProfiler is an adoption of the defunct phpDVDProfiler project, which allows users to display on the web their DVD collections maintained with Invelos's DVDProfiler software. Starting in v_20230807 and prior to v_20250511, cross-site scripting in the search function. v_20250511 contains a patch for the issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-46729">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e0aefc0553e798e0bac623aaa5e75235</td>
+       <td>CVE-2025-32390</td>
+       <td>2025-05-12 11:15:50 <img src="imgs/new.gif" /></td>
+       <td>EspoCRM is a free, open-source customer relationship management platform. Prior to version 9.0.8, HTML Injection in Knowledge Base (KB) articles leads to complete page defacement imitating the login page. Authenticated users with the read knowledge article privilege can browse to the KB article and if they submit their credentials, they get captured in plain text. The vulnerability is allowed by overly permissive HTML editing being allowed on the KB articles. Any authenticated user with the privilege to read KB articles is impacted. In an enterprise with multiple applications, the malicious KB article could be edited to match the login pages of other applications, which would make it useful for credential harvesting against other applications as well. Version 9.0.8 contains a patch for the issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-32390">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2639cf7a04d2c6012c987ffbb21ab4a4</td>
+       <td>CVE-2025-22247</td>
+       <td>2025-05-12 11:15:49 <img src="imgs/new.gif" /></td>
+       <td>VMware Tools contains an insecure file handling vulnerability. A malicious actor with non-administrative privileges on a guest VM may tamper the local files to trigger insecure file operations within that VM.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-22247">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>125969a0e807369c4709908f6fbba62f</td>
+       <td>CVE-2025-1533</td>
+       <td>2025-05-12 10:15:21 <img src="imgs/new.gif" /></td>
+       <td>A stack buffer overflow has been identified in the AsIO3.sys driver. This vulnerability can be triggered by input manipulation, may leading to a system crash (BSOD) or other potentially undefined execution. Refer to the 'Security Update for Armoury Crate App' section on the ASUS Security Advisory for more information.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-1533">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ebfe5c4d35e8412963d221e7593ac510</td>
+       <td>CVE-2025-41393</td>
+       <td>2025-05-12 08:15:19 <img src="imgs/new.gif" /></td>
+       <td>Reflected cross-site scripting vulnerability exists in the laser printers and MFPs (multifunction printers) which implement Ricoh Web Image Monitor. If exploited, an arbitrary script may be executed on the web browser of the user who accessed Web Image Monitor. As for the details of affected product names and versions, refer to the information provided by the vendor under [References].</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-41393">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0897a123ac4f888d5756e95713f9541e</td>
+       <td>CVE-2025-3496</td>
+       <td>2025-05-12 08:15:19 <img src="imgs/new.gif" /></td>
+       <td>An unauthenticated remote attacker can cause a buffer overflow which could lead to unexpected behaviour or DoS via Bluetooth or RS-232 interface.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-3496">详情</a></td>
+      </tr>
+
+      <tr>
        <td>e82a8e38a78aac650b3d4449582e730b</td>
        <td>CVE-2025-4551</td>
-       <td>2025-05-11 23:15:49 <img src="imgs/new.gif" /></td>
+       <td>2025-05-11 23:15:49</td>
        <td>A vulnerability, which was classified as problematic, was found in ContiNew Admin up to 3.6.0. Affected is an unknown function of the file /dev-api/common/file. The manipulation of the argument File leads to cross site scripting. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-4551">详情</a></td>
       </tr>
@@ -292,7 +372,7 @@
       <tr>
        <td>d9f6380f1681a59c34281878245cfec3</td>
        <td>CVE-2025-4550</td>
-       <td>2025-05-11 23:15:49 <img src="imgs/new.gif" /></td>
+       <td>2025-05-11 23:15:49</td>
        <td>A vulnerability, which was classified as critical, has been found in PHPGurukul Apartment Visitors Management System 1.0. This issue affects some unknown processing of the file /admin/pass-details.php. The manipulation of the argument pid leads to sql injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-4550">详情</a></td>
       </tr>
@@ -300,7 +380,7 @@
       <tr>
        <td>d81d251069c0e2c86618a3aebe489bc3</td>
        <td>CVE-2025-4549</td>
-       <td>2025-05-11 22:15:17 <img src="imgs/new.gif" /></td>
+       <td>2025-05-11 22:15:17</td>
        <td>A vulnerability classified as critical was found in Campcodes Online Food Ordering System 1.0. This vulnerability affects unknown code of the file /routers/register-router.php. The manipulation of the argument Name leads to sql injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-4549">详情</a></td>
       </tr>
@@ -308,7 +388,7 @@
       <tr>
        <td>3a322f54857c0dfb8b33870c228a3ced</td>
        <td>CVE-2025-4548</td>
-       <td>2025-05-11 22:15:16 <img src="imgs/new.gif" /></td>
+       <td>2025-05-11 22:15:16</td>
        <td>A vulnerability classified as critical has been found in Campcodes Online Food Ordering System 1.0. This affects an unknown part of the file /routers/router.php. The manipulation of the argument Username leads to sql injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-4548">详情</a></td>
       </tr>
@@ -316,7 +396,7 @@
       <tr>
        <td>d2c0441c43867359206308b480044a07</td>
        <td>CVE-2025-4547</td>
-       <td>2025-05-11 21:15:50 <img src="imgs/new.gif" /></td>
+       <td>2025-05-11 21:15:50</td>
        <td>A vulnerability was found in SourceCodester Web-based Pharmacy Product Management System 1.0. It has been rated as problematic. Affected by this issue is some unknown functionality of the component Add User Page. The manipulation leads to cross site scripting. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. Multiple parameters might be affected.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-4547">详情</a></td>
       </tr>
@@ -324,7 +404,7 @@
       <tr>
        <td>ebe7491318301ab873ddb04b7edc8a44</td>
        <td>CVE-2025-4546</td>
-       <td>2025-05-11 20:15:18 <img src="imgs/new.gif" /></td>
+       <td>2025-05-11 20:15:18</td>
        <td>A vulnerability was found in 1Panel-dev MaxKB up to 1.10.7. It has been declared as critical. Affected by this vulnerability is an unknown functionality of the component Knowledge Base Module. The manipulation leads to csv injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. Upgrading to version 1.10.8 is able to address this issue. It is recommended to upgrade the affected component. The vendor was contacted early about this disclosure.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-4546">详情</a></td>
       </tr>
@@ -332,7 +412,7 @@
       <tr>
        <td>fda1a7d3dffb35d87fabf731ddee35d4</td>
        <td>CVE-2025-4545</td>
-       <td>2025-05-11 20:15:17 <img src="imgs/new.gif" /></td>
+       <td>2025-05-11 20:15:17</td>
        <td>A vulnerability was found in CTCMS Content Management System 2.1.2. It has been classified as critical. Affected is the function del of the file ctcms\apps\controllers\admin\Tpl.php of the component File Handler. The manipulation of the argument File leads to path traversal. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-4545">详情</a></td>
       </tr>
@@ -340,7 +420,7 @@
       <tr>
        <td>f9c904893fae724f2359e4c10fc56b1f</td>
        <td>CVE-2025-4544</td>
-       <td>2025-05-11 19:15:50 <img src="imgs/new.gif" /></td>
+       <td>2025-05-11 19:15:50</td>
        <td>A vulnerability was found in D-Link DI-8100 up to 16.07.26A1 and classified as critical. This issue affects some unknown processing of the file /ddos.asp of the component jhttpd. The manipulation of the argument def_max/def_time/def_tcp_max/def_tcp_time/def_udp_max/def_udp_time/def_icmp_max leads to stack-based buffer overflow. The attack may be initiated remotely. The complexity of an attack is rather high. The exploitation is known to be difficult.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-4544">详情</a></td>
       </tr>
@@ -348,7 +428,7 @@
       <tr>
        <td>1880ca16c30dc720e6e6f5c27efdfc3b</td>
        <td>CVE-2025-4543</td>
-       <td>2025-05-11 18:15:31 <img src="imgs/new.gif" /></td>
+       <td>2025-05-11 18:15:31</td>
        <td>A vulnerability, which was classified as critical, was found in LyLme Spage 2.1. This affects an unknown part of the file lylme_spage/blob/master/admin/ajax_link.php. The manipulation of the argument sort leads to sql injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-4543">详情</a></td>
       </tr>
@@ -356,7 +436,7 @@
       <tr>
        <td>71eab9a9dfd6e291d72715d0b20cc01b</td>
        <td>CVE-2025-4542</td>
-       <td>2025-05-11 18:15:31 <img src="imgs/new.gif" /></td>
+       <td>2025-05-11 18:15:31</td>
        <td>A vulnerability, which was classified as problematic, has been found in Freeebird Hotel 酒店管理系统 API up to 1.2. Affected by this issue is some unknown functionality of the file /src/main/java/cn/mafangui/hotel/tool/SessionInterceptor.java. The manipulation leads to permissive cross-domain policy with untrusted domains. The attack may be launched remotely. The complexity of an attack is rather high. The exploitation is known to be difficult. The exploit has been disclosed to the public and may be used.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-4542">详情</a></td>
       </tr>
@@ -439,86 +519,6 @@
        <td>2025-05-09 21:15:51</td>
        <td>In Eclipse OpenJ9 versions up to 0.51, when used with OpenJDK version 8 a stack based buffer overflow can be caused by modifying a file on disk that is read when the JVM starts.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-4447">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ab5844001bba0602bab507a98b568f09</td>
-       <td>CVE-2025-4463</td>
-       <td>2025-05-09 05:15:52</td>
-       <td>A vulnerability, which was classified as critical, was found in itsourcecode Gym Management System 1.0. Affected is an unknown function of the file /ajax.php?action=save_package. The manipulation of the argument ID leads to sql injection. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-4463">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4de4c21fc40da5efb7ecdb08ce9b7a8f</td>
-       <td>CVE-2025-4462</td>
-       <td>2025-05-09 05:15:52</td>
-       <td>A vulnerability, which was classified as critical, has been found in TOTOLINK N150RT 3.4.0-B20190525. This issue affects some unknown processing of the file /boafrm/formWsc. The manipulation of the argument localPin leads to buffer overflow. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-4462">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3bfcaae71c0acf7512bb121a771366a2</td>
-       <td>CVE-2025-4461</td>
-       <td>2025-05-09 05:15:52</td>
-       <td>A vulnerability classified as problematic was found in TOTOLINK N150RT 3.4.0-B20190525. This vulnerability affects unknown code of the component Virtual Server Page. The manipulation leads to cross site scripting. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-4461">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>251729ef4c7232c4e2c0a8587c21cfb9</td>
-       <td>CVE-2025-47737</td>
-       <td>2025-05-09 05:15:51</td>
-       <td>lib.rs in the trailer crate through 0.1.2 for Rust mishandles allocating with a size of zero.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-47737">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9cb46f04f5dab75f684ffcee614d4173</td>
-       <td>CVE-2025-47736</td>
-       <td>2025-05-09 05:15:51</td>
-       <td>dialect/mod.rs in the libsql-sqlite3-parser crate through 0.13.0 before 14f422a for Rust can crash if the input is not valid UTF-8.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-47736">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7bdfea6c4ab4b55f3efa1081ecc0bfc7</td>
-       <td>CVE-2025-47735</td>
-       <td>2025-05-09 05:15:51</td>
-       <td>inner::drop in inner.rs in the wgp crate through 0.2.0 for Rust lacks drop_slow thread synchronization.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-47735">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5a5328717ed545f219bb4e1b81d2fe81</td>
-       <td>CVE-2025-4460</td>
-       <td>2025-05-09 04:16:17</td>
-       <td>A vulnerability classified as problematic has been found in TOTOLINK N150RT 3.4.0-B20190525. This affects an unknown part of the component URL Filtering Page. The manipulation leads to cross site scripting. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-4460">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>409bd6ee85b8b72bdfc97939094133f2</td>
-       <td>CVE-2025-4459</td>
-       <td>2025-05-09 04:16:17</td>
-       <td>A vulnerability was found in code-projects Patient Record Management System 1.0. It has been rated as critical. Affected by this issue is some unknown functionality of the file fecalysis_form.php. The manipulation of the argument itr_no leads to sql injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-4459">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4069576b9cf55f64217bb7c99dc65445</td>
-       <td>CVE-2025-4458</td>
-       <td>2025-05-09 04:16:17</td>
-       <td>A vulnerability was found in code-projects Patient Record Management System 1.0. It has been declared as critical. Affected by this vulnerability is an unknown functionality of the file /edit_upatient.php. The manipulation of the argument ID leads to sql injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-4458">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>42e5ee22216ffd20028c6ab4c567e84d</td>
-       <td>CVE-2025-4457</td>
-       <td>2025-05-09 04:16:16</td>
-       <td>A vulnerability classified as critical was found in Project Worlds Car Rental Project 1.0. Affected by this vulnerability is an unknown functionality of the file /admin/approve.php. The manipulation of the argument ID leads to sql injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-4457">详情</a></td>
       </tr>
 
      </tbody>
