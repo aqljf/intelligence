@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2025-05-14 09:10:13 -->
+<!-- RELEASE TIME : 2025-05-15 09:10:13 -->
 <html lang="zh-cn">
 
  <head>
@@ -282,9 +282,89 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>10a8ae2c51ce3e8b9f1b4b63cef41f1d</td>
+       <td>CVE-2025-47445</td>
+       <td>2025-05-14 12:15:19 <img src="imgs/new.gif" /></td>
+       <td>Relative Path Traversal vulnerability in Themewinter Eventin allows Path Traversal.This issue affects Eventin: from n/a through 4.0.26.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-47445">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9f7b96f60660f072f51398e17923f435</td>
+       <td>CVE-2025-3931</td>
+       <td>2025-05-14 12:15:19 <img src="imgs/new.gif" /></td>
+       <td>A flaw was found in Yggdrasil, which acts as a system broker, allowing the processes to communicate to other children's "worker" processes through the DBus component. Yggdrasil creates a DBus method to dispatch messages to workers. However, it misses authentication and authorization checks, allowing every system user to call it. One available Yggdrasil worker acts as a package manager with capabilities to create and enable new repositories and install or remove packages. This flaw allows an attacker with access to the system to leverage the lack of authentication on the dispatch message to force the Yggdrasil worker to install arbitrary RPM packages. This issue results in local privilege escalation, enabling the attacker to access and modify sensitive system data.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-3931">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>758a093fb653c4e2417cff888d4e2132</td>
+       <td>CVE-2025-3769</td>
+       <td>2025-05-14 12:15:18 <img src="imgs/new.gif" /></td>
+       <td>The LatePoint – Calendar Booking Plugin for Appointments and Events plugin for WordPress is vulnerable to Insecure Direct Object Reference in all versions up to, and including, 5.1.92 via the 'view_booking_summary_in_lightbox' due to missing validation on a user controlled key. This makes it possible for unauthenticated attackers to retrieve appointment details such as customer names and email addresses.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-3769">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c891d1edb1d8f12013f91431cdff09cc</td>
+       <td>CVE-2025-4430</td>
+       <td>2025-05-14 11:16:36 <img src="imgs/new.gif" /></td>
+       <td>Unauthorized access to "/api/Token/gettoken" endpoint in EZD RP allows file manipulation.This issue affects EZD RP in versions before 20.19 (published on 22nd August 2024).</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-4430">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>17d89d009c1a84654503305b9661982c</td>
+       <td>CVE-2025-47292</td>
+       <td>2025-05-14 11:16:31 <img src="imgs/new.gif" /></td>
+       <td>Cap Collectif is an online decision making platform that integrates several tools. Before commit 812f2a7d271b76deab1175bdaf2be0b8102dd198, the `DebateAlternateArgumentsResolver` deserializes a `Cursor`, allowing any classes and which can be controlled by unauthenticated user. Exploitation of this vulnerability can lead to Remote Code Execution. The vulnerability is fixed in commit 812f2a7d271b76deab1175bdaf2be0b8102dd198.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-47292">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>52b0698aa5d2b21489207d6d50113a2d</td>
+       <td>CVE-2025-3834</td>
+       <td>2025-05-14 11:16:31 <img src="imgs/new.gif" /></td>
+       <td>Zohocorp ManageEngine ADAudit Plus versions 8510 and prior are vulnerable to authenticated SQL injection in the OU History report.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-3834">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>4f15beff33a0b54b7cbd2067f28a830a</td>
+       <td>CVE-2025-3833</td>
+       <td>2025-05-14 11:16:30 <img src="imgs/new.gif" /></td>
+       <td>Zohocorp ManageEngine ADSelfService Plus versions 6513 and prior are vulnerable to authenticated SQL injection in the MFA reports.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-3833">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9dc511cb68a8097a5d9cb45afeeda242</td>
+       <td>CVE-2025-26864</td>
+       <td>2025-05-14 11:16:28 <img src="imgs/new.gif" /></td>
+       <td>Exposure of Sensitive Information to an Unauthorized Actor, Insertion of Sensitive Information into Log File vulnerability in the OpenIdAuthorizer of Apache IoTDB. This issue affects Apache IoTDB: from 0.10.0 through 1.3.3, from 2.0.1-beta before 2.0.2. Users are recommended to upgrade to version 1.3.4 and 2.0.2, which fix the issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-26864">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9c9e28bf2cad81ffea83c788a83bb7f2</td>
+       <td>CVE-2025-26795</td>
+       <td>2025-05-14 11:16:26 <img src="imgs/new.gif" /></td>
+       <td>Exposure of Sensitive Information to an Unauthorized Actor, Insertion of Sensitive Information into Log File vulnerability in Apache IoTDB JDBC driver. This issue affects iotdb-jdbc: from 0.10.0 through 1.3.3, from 2.0.1-beta before 2.0.2. Users are recommended to upgrade to version 2.0.2 and 1.3.4, which fix the issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-26795">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9df6952943fb8aeaa232bb0d6b3bf122</td>
+       <td>CVE-2024-24780</td>
+       <td>2025-05-14 11:15:47 <img src="imgs/new.gif" /></td>
+       <td>Remote Code Execution with untrusted URI of UDF vulnerability in Apache IoTDB. The attacker who has privilege to create UDF can register malicious function from untrusted URI. This issue affects Apache IoTDB: from 1.0.0 before 1.3.4. Users are recommended to upgrade to version 1.3.4, which fixes the issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-24780">详情</a></td>
+      </tr>
+
+      <tr>
        <td>57cc8ffafd207d652fb4ef50bbf64807</td>
        <td>CVE-2025-4649</td>
-       <td>2025-05-13 12:15:18 <img src="imgs/new.gif" /></td>
+       <td>2025-05-13 12:15:18</td>
        <td>Improper Privilege Management vulnerability in Centreon web allows Privilege Escalation. ACL are not correctly taken into account in the display of the "event logs" page. This page requiring, high privileges, will display all available logs. This issue affects web: from 24.10.3 before 24.10.4, from 24.04.09 before 24.04.10, from 23.10.19 before 23.10.21, from 23.04.24 before 23.04.26.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-4649">详情</a></td>
       </tr>
@@ -292,7 +372,7 @@
       <tr>
        <td>44dcb9d7abcef6ba242dfe9061c03630</td>
        <td>CVE-2025-32917</td>
-       <td>2025-05-13 11:15:47 <img src="imgs/new.gif" /></td>
+       <td>2025-05-13 11:15:47</td>
        <td>Privilege escalation in jar_signature agent plugin in Checkmk versions <2.4.0b7 (beta), <2.3.0p32, <2.2.0p42, and 2.1.0p49 (EOL) allow user with write access to JAVA_HOME/bin directory to escalate privileges.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-32917">详情</a></td>
       </tr>
@@ -300,7 +380,7 @@
       <tr>
        <td>0a40f38b2b0870bbebb427fb1ff007a9</td>
        <td>CVE-2025-4648</td>
-       <td>2025-05-13 10:15:29 <img src="imgs/new.gif" /></td>
+       <td>2025-05-13 10:15:29</td>
        <td>Download of Code Without Integrity Check vulnerability in Centreon web allows Reflected XSS. A user with elevated privileges can inject XSS by altering the content of a SVG media during the submit request. This issue affects web: from 24.10.0 before 24.10.5, from 24.04.0 before 24.04.11, from 23.10.0 before 23.10.22, from 23.04.0 before 23.04.27, from 22.10.0 before 22.10.29.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-4648">详情</a></td>
       </tr>
@@ -308,7 +388,7 @@
       <tr>
        <td>25bfd7d4b641a591aee62fd6b99fccc0</td>
        <td>CVE-2025-4647</td>
-       <td>2025-05-13 10:15:29 <img src="imgs/new.gif" /></td>
+       <td>2025-05-13 10:15:29</td>
        <td>Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting') vulnerability in Centreon web allows Reflected XSS. A user with elevated privileges can bypass sanitization measures by replacing the content of an existing SVG. This issue affects web: from 24.10.0 before 24.10.5, from 24.04.0 before 24.04.11, from 23.10.0 before 23.10.22, from 23.04.0 before 23.04.27, from 22.10.0 before 22.10.29.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-4647">详情</a></td>
       </tr>
@@ -316,7 +396,7 @@
       <tr>
        <td>5ab92c08cc8abec1bcea378ff0298794</td>
        <td>CVE-2025-4646</td>
-       <td>2025-05-13 10:15:29 <img src="imgs/new.gif" /></td>
+       <td>2025-05-13 10:15:29</td>
        <td>Improper Privilege Management vulnerability in Centreon web (API Token creation form modules) allows Privilege Escalation.This issue affects web: from 24.04.0 before 24.04.10, from 24.10.0 before 24.10.4.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-4646">详情</a></td>
       </tr>
@@ -324,7 +404,7 @@
       <tr>
        <td>cb8e5c1e89cd9b6bc68622cde5c7fbf7</td>
        <td>CVE-2025-40628</td>
-       <td>2025-05-13 10:15:28 <img src="imgs/new.gif" /></td>
+       <td>2025-05-13 10:15:28</td>
        <td>SQL injection vulnerability in DomainsPRO 1.2. This vulnerability could allow an attacker to retrieve, create, update and delete databases via the “d” parameter in the “/article.php” endpoint.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-40628">详情</a></td>
       </tr>
@@ -332,7 +412,7 @@
       <tr>
        <td>55c4b748ab10c125720f42315f236e97</td>
        <td>CVE-2025-40583</td>
-       <td>2025-05-13 10:15:28 <img src="imgs/new.gif" /></td>
+       <td>2025-05-13 10:15:28</td>
        <td>A vulnerability has been identified in SCALANCE LPE9403 (6GK5998-3GS00-2AC2) (All versions with SINEMA Remote Connect Edge Client installed). Affected devices do transmit sensitive information in cleartext. This could allow a privileged local attacker to retrieve this sensitive information.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-40583">详情</a></td>
       </tr>
@@ -340,7 +420,7 @@
       <tr>
        <td>06cc3dd1eb1a0eef9b51905f1d146c94</td>
        <td>CVE-2025-40582</td>
-       <td>2025-05-13 10:15:28 <img src="imgs/new.gif" /></td>
+       <td>2025-05-13 10:15:28</td>
        <td>A vulnerability has been identified in SCALANCE LPE9403 (6GK5998-3GS00-2AC2) (All versions with SINEMA Remote Connect Edge Client installed). Affected devices do not properly sanitize configuration parameters. This could allow a non-privileged local attacker to execute root commands on the device.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-40582">详情</a></td>
       </tr>
@@ -348,7 +428,7 @@
       <tr>
        <td>ce220aa4356d3e68d3dfd0ebe11aab5a</td>
        <td>CVE-2025-40581</td>
-       <td>2025-05-13 10:15:28 <img src="imgs/new.gif" /></td>
+       <td>2025-05-13 10:15:28</td>
        <td>A vulnerability has been identified in SCALANCE LPE9403 (6GK5998-3GS00-2AC2) (All versions with SINEMA Remote Connect Edge Client installed). Affected devices are vulnerable to an authentication bypass. This could allow a non-privileged local attacker to bypass the authentication of the SINEMA Remote Connect Edge Client, and to read and modify the configuration parameters.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-40581">详情</a></td>
       </tr>
@@ -356,7 +436,7 @@
       <tr>
        <td>1b88e247ccca93786fe924437a628f10</td>
        <td>CVE-2025-40580</td>
-       <td>2025-05-13 10:15:28 <img src="imgs/new.gif" /></td>
+       <td>2025-05-13 10:15:28</td>
        <td>A vulnerability has been identified in SCALANCE LPE9403 (6GK5998-3GS00-2AC2) (All versions). Affected devices are vulnerable to a stack-based buffer overflow. This could allow a non-privileged local attacker to execute arbitrary code on the device or to cause a denial of service condition.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-40580">详情</a></td>
       </tr>
@@ -439,86 +519,6 @@
        <td>2025-05-12 08:15:19</td>
        <td>An unauthenticated remote attacker can cause a buffer overflow which could lead to unexpected behaviour or DoS via Bluetooth or RS-232 interface.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-3496">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e82a8e38a78aac650b3d4449582e730b</td>
-       <td>CVE-2025-4551</td>
-       <td>2025-05-11 23:15:49</td>
-       <td>A vulnerability, which was classified as problematic, was found in ContiNew Admin up to 3.6.0. Affected is an unknown function of the file /dev-api/common/file. The manipulation of the argument File leads to cross site scripting. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-4551">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d9f6380f1681a59c34281878245cfec3</td>
-       <td>CVE-2025-4550</td>
-       <td>2025-05-11 23:15:49</td>
-       <td>A vulnerability, which was classified as critical, has been found in PHPGurukul Apartment Visitors Management System 1.0. This issue affects some unknown processing of the file /admin/pass-details.php. The manipulation of the argument pid leads to sql injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-4550">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d81d251069c0e2c86618a3aebe489bc3</td>
-       <td>CVE-2025-4549</td>
-       <td>2025-05-11 22:15:17</td>
-       <td>A vulnerability classified as critical was found in Campcodes Online Food Ordering System 1.0. This vulnerability affects unknown code of the file /routers/register-router.php. The manipulation of the argument Name leads to sql injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-4549">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3a322f54857c0dfb8b33870c228a3ced</td>
-       <td>CVE-2025-4548</td>
-       <td>2025-05-11 22:15:16</td>
-       <td>A vulnerability classified as critical has been found in Campcodes Online Food Ordering System 1.0. This affects an unknown part of the file /routers/router.php. The manipulation of the argument Username leads to sql injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-4548">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d2c0441c43867359206308b480044a07</td>
-       <td>CVE-2025-4547</td>
-       <td>2025-05-11 21:15:50</td>
-       <td>A vulnerability was found in SourceCodester Web-based Pharmacy Product Management System 1.0. It has been rated as problematic. Affected by this issue is some unknown functionality of the component Add User Page. The manipulation leads to cross site scripting. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. Multiple parameters might be affected.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-4547">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ebe7491318301ab873ddb04b7edc8a44</td>
-       <td>CVE-2025-4546</td>
-       <td>2025-05-11 20:15:18</td>
-       <td>A vulnerability was found in 1Panel-dev MaxKB up to 1.10.7. It has been declared as critical. Affected by this vulnerability is an unknown functionality of the component Knowledge Base Module. The manipulation leads to csv injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used. Upgrading to version 1.10.8 is able to address this issue. It is recommended to upgrade the affected component. The vendor was contacted early about this disclosure.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-4546">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>fda1a7d3dffb35d87fabf731ddee35d4</td>
-       <td>CVE-2025-4545</td>
-       <td>2025-05-11 20:15:17</td>
-       <td>A vulnerability was found in CTCMS Content Management System 2.1.2. It has been classified as critical. Affected is the function del of the file ctcms\apps\controllers\admin\Tpl.php of the component File Handler. The manipulation of the argument File leads to path traversal. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-4545">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f9c904893fae724f2359e4c10fc56b1f</td>
-       <td>CVE-2025-4544</td>
-       <td>2025-05-11 19:15:50</td>
-       <td>A vulnerability was found in D-Link DI-8100 up to 16.07.26A1 and classified as critical. This issue affects some unknown processing of the file /ddos.asp of the component jhttpd. The manipulation of the argument def_max/def_time/def_tcp_max/def_tcp_time/def_udp_max/def_udp_time/def_icmp_max leads to stack-based buffer overflow. The attack may be initiated remotely. The complexity of an attack is rather high. The exploitation is known to be difficult.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-4544">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1880ca16c30dc720e6e6f5c27efdfc3b</td>
-       <td>CVE-2025-4543</td>
-       <td>2025-05-11 18:15:31</td>
-       <td>A vulnerability, which was classified as critical, was found in LyLme Spage 2.1. This affects an unknown part of the file lylme_spage/blob/master/admin/ajax_link.php. The manipulation of the argument sort leads to sql injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-4543">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>71eab9a9dfd6e291d72715d0b20cc01b</td>
-       <td>CVE-2025-4542</td>
-       <td>2025-05-11 18:15:31</td>
-       <td>A vulnerability, which was classified as problematic, has been found in Freeebird Hotel 酒店管理系统 API up to 1.2. Affected by this issue is some unknown functionality of the file /src/main/java/cn/mafangui/hotel/tool/SessionInterceptor.java. The manipulation leads to permissive cross-domain policy with untrusted domains. The attack may be launched remotely. The complexity of an attack is rather high. The exploitation is known to be difficult. The exploit has been disclosed to the public and may be used.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-4542">详情</a></td>
       </tr>
 
      </tbody>
