@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2025-06-26 09:10:14 -->
+<!-- RELEASE TIME : 2025-06-27 09:10:13 -->
 <html lang="zh-cn">
 
  <head>
@@ -282,9 +282,89 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>4661bc06d2cbb70aaa82729bf450f63c</td>
+       <td>CVE-2025-6703</td>
+       <td>2025-06-26 09:30:03 <img src="imgs/new.gif" /></td>
+       <td>Improper Input Validation vulnerability in Mozilla neqo leads to an unexploitable crash..This issue affects neqo: from 0.4.24 through 0.13.2.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-6703">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1d3623e947ea2e9c3b8c8bc4cd5e0486</td>
+       <td>CVE-2024-11584</td>
+       <td>2025-06-26 09:25:20 <img src="imgs/new.gif" /></td>
+       <td>cloud-init through 25.1.2 includes the systemd socket unit cloud-init-hotplugd.socket with default SocketMode that grants 0666 permissions, making it world-writable. This being used for the "/run/cloud-init/hook-hotplug-cmd" FIFO. An unprivelege user could trigger hotplug-hook commands.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-11584">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e4a81e7c7b2adff8410a3e24cdd84e6a</td>
+       <td>CVE-2025-6212</td>
+       <td>2025-06-26 09:22:03 <img src="imgs/new.gif" /></td>
+       <td>The Ultra Addons for Contact Form 7 plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the Database module in versions 3.5.11 to 3.5.19 due to insufficient input sanitization and output escaping. The unfiltered field names are stored alongside the sanitized values. Later, the admin-side AJAX endpoint ajax_get_table_data() returns those raw names as JSON column headers, and the client-side DataTables renderer injects them directly into the DOM without any HTML encoding. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-6212">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>65e616fed14cdf2b9c1c5dbaabb9c425</td>
+       <td>CVE-2025-5842</td>
+       <td>2025-06-26 09:22:02 <img src="imgs/new.gif" /></td>
+       <td>The Modern Design Library plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the ‘class’ parameter in all versions up to, and including, 1.1.4 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with Contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-5842">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>13e9ebb8f2260a304eb251ec7ce2cef6</td>
+       <td>CVE-2025-5338</td>
+       <td>2025-06-26 09:22:02 <img src="imgs/new.gif" /></td>
+       <td>The Royal Elementor Addons plugin for WordPress is vulnerable to Stored Cross-Site Scripting via multiple widgets in all versions up to, and including, 1.7.1024 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-5338">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ed168a992c2dd131b8e293ac00978760</td>
+       <td>CVE-2024-6174</td>
+       <td>2025-06-26 09:15:25 <img src="imgs/new.gif" /></td>
+       <td>When a non-x86 platform is detected, cloud-init grants root access to a hardcoded url with a local IP address. To prevent this, cloud-init default configurations disable platform enumeration.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-6174">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f47e7b2690b61589c950e9ee0edda3ab</td>
+       <td>CVE-2025-52934</td>
+       <td>2025-06-26 08:15:23 <img src="imgs/new.gif" /></td>
+       <td>Rejected reason: Not a vulnerability.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-52934">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>317cc7c86ab8ff93f11ed91bf7390b04</td>
+       <td>CVE-2025-5459</td>
+       <td>2025-06-26 07:15:27 <img src="imgs/new.gif" /></td>
+       <td>A user with specific node group editing permissions and a specially crafted class parameter could be used to execute commands as root on the primary host. It affects Puppet Enterprise versions 2018.1.8 through 2023.8.3 and 2025.3 and has been resolved in versions 2023.8.4 and 2025.4.0.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-5459">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>d59ba0011aff523ceaf6d5b64426aa4d</td>
+       <td>CVE-2025-5846</td>
+       <td>2025-06-26 06:15:24 <img src="imgs/new.gif" /></td>
+       <td>An issue has been discovered in GitLab EE affecting all versions from 16.10 before 17.11.5, 18.0 before 18.0.3, and 18.1 before 18.1.1 that could have allowed authenticated users to assign unrelated compliance frameworks to projects by sending crafted GraphQL mutations that bypassed framework-specific permission checks.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-5846">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b641c317cfdc9032aa56d4135c300bf0</td>
+       <td>CVE-2025-5315</td>
+       <td>2025-06-26 06:15:23 <img src="imgs/new.gif" /></td>
+       <td>An issue has been discovered in GitLab CE/EE affecting all versions from 17.2 before 17.11.5, 18.0 before 18.0.3, and 18.1 before 18.1.1 that could have allowed authenticated users with Guest role permissions to add child items to incident work items by sending crafted API requests that bypassed UI-enforced role restrictions.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-5315">详情</a></td>
+      </tr>
+
+      <tr>
        <td>63111705456d2c88cff124e97dd57285</td>
        <td>CVE-2024-51984</td>
-       <td>2025-06-25 08:15:33 <img src="imgs/new.gif" /></td>
+       <td>2025-06-25 08:15:33</td>
        <td>An authenticated attacker can reconfigure the target device to use an external service (such as LDAP or FTP) controlled by the attacker. If an existing password is present for an external service, the attacker can force the target device to authenticate to an attacker controlled device using the existing credentials for that external service. In the case of an external LDAP or FTP service, this will disclose the plaintext password for that external service to the attacker.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-51984">详情</a></td>
       </tr>
@@ -292,7 +372,7 @@
       <tr>
        <td>07419e5467ab7bd2585f6d955fbbf558</td>
        <td>CVE-2024-51983</td>
-       <td>2025-06-25 08:15:32 <img src="imgs/new.gif" /></td>
+       <td>2025-06-25 08:15:32</td>
        <td>An unauthenticated attacker who can connect to the Web Services feature (HTTP TCP port 80) can issue a WS-Scan SOAP request containing an unexpected JobToken value which will crash the target device. The device will reboot, after which the attacker can reissue the command to repeatedly crash the device.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-51983">详情</a></td>
       </tr>
@@ -300,7 +380,7 @@
       <tr>
        <td>9e580286d3f2a157068ebe2196748eff</td>
        <td>CVE-2024-51980</td>
-       <td>2025-06-25 08:15:31 <img src="imgs/new.gif" /></td>
+       <td>2025-06-25 08:15:31</td>
        <td>An unauthenticated attacker may perform a limited server side request forgery (SSRF), forcing the target device to open a TCP connection to an arbitrary port number on an arbitrary IP address. This SSRF leverages the WS-Addressing ReplyTo element in a Web service (HTTP TCP port 80) SOAP request. The attacker can not control the data sent in the SSRF connection, nor can the attacker receive any data back. This SSRF is suitable for TCP port scanning of an internal network when the Web service (HTTP TCP port 80) is exposed across a network segment.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-51980">详情</a></td>
       </tr>
@@ -308,7 +388,7 @@
       <tr>
        <td>7fd7719e603c983bfc13dc105458a817</td>
        <td>CVE-2024-51979</td>
-       <td>2025-06-25 08:15:31 <img src="imgs/new.gif" /></td>
+       <td>2025-06-25 08:15:31</td>
        <td>An authenticated attacker may trigger a stack based buffer overflow by performing a malformed request to either the HTTP service (TCP port 80), the HTTPS service (TCP port 443), or the IPP service (TCP port 631). The malformed request will contain an empty Origin header value and a malformed Referer header value. The Referer header value will trigger a stack based buffer overflow when the host value in the Referer header is processed and is greater than 64 bytes in length.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-51979">详情</a></td>
       </tr>
@@ -316,7 +396,7 @@
       <tr>
        <td>dd5f4be59822695a0a790418ba5e5cd1</td>
        <td>CVE-2024-51982</td>
-       <td>2025-06-25 07:25:00 <img src="imgs/new.gif" /></td>
+       <td>2025-06-25 07:25:00</td>
        <td>An unauthenticated attacker who can connect to TCP port 9100 can issue a Printer Job Language (PJL) command that will crash the target device. The device will reboot, after which the attacker can reissue the command to repeatedly crash the device. A malformed PJL variable FORMLINES is set to a non number value causing the target to crash.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-51982">详情</a></td>
       </tr>
@@ -324,7 +404,7 @@
       <tr>
        <td>d0b8865e3cd68225eeefd1f986b86797</td>
        <td>CVE-2024-51977</td>
-       <td>2025-06-25 07:15:16 <img src="imgs/new.gif" /></td>
+       <td>2025-06-25 07:15:16</td>
        <td>An unauthenticated attacker who can access either the HTTP service (TCP port 80), the HTTPS service (TCP port 443), or the IPP service (TCP port 631), can leak several pieces of sensitive information from a vulnerable device. The URI path /etc/mnt_info.csv can be accessed via a GET request and no authentication is required. The returned result is a comma separated value (CSV) table of information. The leaked information includes the device’s model, firmware version, IP address, and serial number.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-51977">详情</a></td>
       </tr>
@@ -332,7 +412,7 @@
       <tr>
        <td>3c389054a650b7af1cc33fc9e0188067</td>
        <td>CVE-2025-43880</td>
-       <td>2025-06-25 06:15:20 <img src="imgs/new.gif" /></td>
+       <td>2025-06-25 06:15:20</td>
        <td>Inefficient regular expression complexity issue exists in GROWI prior to v7.1.6. If exploited, a logged-in user may cause a denial of service (DoS) condition.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-43880">详情</a></td>
       </tr>
@@ -340,7 +420,7 @@
       <tr>
        <td>cd4f8c8232dea9dcdd857e0730f700c8</td>
        <td>CVE-2025-5585</td>
-       <td>2025-06-25 03:15:27 <img src="imgs/new.gif" /></td>
+       <td>2025-06-25 03:15:27</td>
        <td>The SiteOrigin Widgets Bundle plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the `data-url` DOM Element Attribute in all versions up to, and including, 1.68.4 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with Contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-5585">详情</a></td>
       </tr>
@@ -348,7 +428,7 @@
       <tr>
        <td>f9dc670f287229fe5707a88873033539</td>
        <td>CVE-2025-36004</td>
-       <td>2025-06-25 03:15:27 <img src="imgs/new.gif" /></td>
+       <td>2025-06-25 03:15:27</td>
        <td>IBM i 7.2, 7.3, 7.4, and 7.5 could allow a user to gain elevated privileges due to an unqualified library call in IBM Facsimile Support for i. A malicious actor could cause user-controlled code to run with administrator privilege.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-36004">详情</a></td>
       </tr>
@@ -356,7 +436,7 @@
       <tr>
        <td>c4a7852c0277c64cb1787aadfc01262f</td>
        <td>CVE-2025-0966</td>
-       <td>2025-06-25 03:15:26 <img src="imgs/new.gif" /></td>
+       <td>2025-06-25 03:15:26</td>
        <td>IBM InfoSphere Information Server 11.7 vulnerable to SQL injection. A remote attacker could send specially crafted SQL statements, which could allow the attacker to view, add, modify, or delete information in the back-end database.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-0966">详情</a></td>
       </tr>
@@ -439,86 +519,6 @@
        <td>2025-06-24 05:15:24</td>
        <td>WRC-1167GHBK2-S contains a stored cross-site scripting vulnerability in WebGUI. If exploited, an arbitrary script may be executed on the web browser of the user who accessed WebGUI of the product.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-43877">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>09959bc559443a226ac7527e3e04e4d4</td>
-       <td>CVE-2025-6503</td>
-       <td>2025-06-23 04:15:42</td>
-       <td>A vulnerability was found in code-projects Inventory Management System 1.0 and classified as critical. This issue affects some unknown processing of the file /php_action/fetchSelectedCategories.php. The manipulation of the argument categoriesId leads to sql injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-6503">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9508003780d4e67c72592ee5a0b6fabb</td>
-       <td>CVE-2025-6502</td>
-       <td>2025-06-23 04:15:24</td>
-       <td>A vulnerability has been found in code-projects Inventory Management System 1.0 and classified as critical. This vulnerability affects unknown code of the file /php_action/changePassword.php. The manipulation of the argument user_id leads to sql injection. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-6502">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>45709dc574256a6eaadc6c4748fa69fd</td>
-       <td>CVE-2025-6501</td>
-       <td>2025-06-23 03:15:27</td>
-       <td>A vulnerability, which was classified as critical, was found in code-projects Inventory Management System 1.0. This affects an unknown part of the file /php_action/createCategories.php. The manipulation of the argument categoriesStatus leads to sql injection. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-6501">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>bd7822111eedbb4e782f9fe263623b42</td>
-       <td>CVE-2025-6500</td>
-       <td>2025-06-23 03:15:26</td>
-       <td>A vulnerability, which was classified as critical, has been found in code-projects Inventory Management System 1.0. Affected by this issue is some unknown functionality of the file /php_action/editCategories.php. The manipulation of the argument editCategoriesName leads to sql injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-6500">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3df867ed2c52847db7af09e5ec054ebf</td>
-       <td>CVE-2025-6499</td>
-       <td>2025-06-23 03:15:26</td>
-       <td>A vulnerability classified as problematic was found in vstakhov libucl up to 0.9.2. Affected by this vulnerability is the function ucl_parse_multiline_string of the file src/ucl_parser.c. The manipulation leads to heap-based buffer overflow. The attack needs to be approached locally. The exploit has been disclosed to the public and may be used.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-6499">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d717bb924f9090164900b792b760d19e</td>
-       <td>CVE-2025-6498</td>
-       <td>2025-06-23 02:15:20</td>
-       <td>A vulnerability classified as problematic has been found in HTACG tidy-html5 5.8.0. Affected is the function defaultAlloc of the file src/alloc.c. The manipulation leads to memory leak. It is possible to launch the attack on the local host. The exploit has been disclosed to the public and may be used.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-6498">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4c26cdd5f28c5fd4d2564c00a712c7ea</td>
-       <td>CVE-2025-6497</td>
-       <td>2025-06-23 01:15:22</td>
-       <td>A vulnerability was found in HTACG tidy-html5 5.8.0. It has been rated as problematic. This issue affects the function prvTidyParseNamespace of the file src/parser.c. The manipulation leads to reachable assertion. Attacking locally is a requirement. The exploit has been disclosed to the public and may be used.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-6497">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d9c8ae20696079cc8ef3f836d8cbee4f</td>
-       <td>CVE-2025-52926</td>
-       <td>2025-06-23 01:15:21</td>
-       <td>In scan.rs in spytrap-adb before 0.3.5, matches for known stalkerware are not rendered in the interactive user interface.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-52926">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9f530b1895a1e9d4214f49e1370b8d96</td>
-       <td>CVE-2025-6496</td>
-       <td>2025-06-23 00:15:23</td>
-       <td>A vulnerability was found in HTACG tidy-html5 5.8.0. It has been declared as problematic. This vulnerability affects the function InsertNodeAsParent of the file src/parser.c. The manipulation leads to null pointer dereference. Local access is required to approach this attack. The exploit has been disclosed to the public and may be used.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-6496">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>76c3c5e8d20685faaaa0b42e06ebc6a2</td>
-       <td>CVE-2025-6494</td>
-       <td>2025-06-22 23:15:20</td>
-       <td>A vulnerability was found in sparklemotion nokogiri up to 1.18.7. It has been classified as problematic. This affects the function hashmap_get_with_hash of the file gumbo-parser/src/hashmap.c. The manipulation leads to heap-based buffer overflow. An attack has to be approached locally. The exploit has been disclosed to the public and may be used.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-6494">详情</a></td>
       </tr>
 
      </tbody>
