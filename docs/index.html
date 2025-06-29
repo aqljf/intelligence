@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2025-06-28 09:10:14 -->
+<!-- RELEASE TIME : 2025-06-29 09:10:14 -->
 <html lang="zh-cn">
 
  <head>
@@ -282,9 +282,89 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>55c4a45fa724e17c21f85f1e62876ba3</td>
+       <td>CVE-2025-6816</td>
+       <td>2025-06-28 08:15:25 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability classified as problematic was found in HDF5 1.14.6. This vulnerability affects the function H5O__fsinfo_encode of the file /src/H5Ofsinfo.c. The manipulation leads to heap-based buffer overflow. It is possible to launch the attack on the local host. The exploit has been disclosed to the public and may be used.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-6816">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9c4113529a8a92ec30af69de833e1da8</td>
+       <td>CVE-2025-5937</td>
+       <td>2025-06-28 08:15:25 <img src="imgs/new.gif" /></td>
+       <td>The MicroPayments – Fans Paysite: Paid Creator Subscriptions, Digital Assets, Wallet plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 3.2.0. This is due to missing or incorrect nonce validation on the adminOptions() function. This makes it possible for unauthenticated attackers to reset the plugin's settings via a forged request granted they can trick a site administrator into performing an action such as clicking on a link.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-5937">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ac5589801fe8c2a56e24a52019045f9f</td>
+       <td>CVE-2025-38086</td>
+       <td>2025-06-28 08:15:24 <img src="imgs/new.gif" /></td>
+       <td>In the Linux kernel, the following vulnerability has been resolved: net: ch9200: fix uninitialised access during mii_nway_restart In mii_nway_restart() the code attempts to call mii->mdio_read which is ch9200_mdio_read(). ch9200_mdio_read() utilises a local buffer called "buff", which is initialised with control_read(). However "buff" is conditionally initialised inside control_read(): if (err == size) { memcpy(data, buf, size); } If the condition of "err == size" is not met, then "buff" remains uninitialised. Once this happens the uninitialised "buff" is accessed and returned during ch9200_mdio_read(): return (buff[0] | buff[1] << 8); The problem stems from the fact that ch9200_mdio_read() ignores the return value of control_read(), leading to uinit-access of "buff". To fix this we should check the return value of control_read() and return early on error.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-38086">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f92aa7d7b2f16038fcc79b724b86c25e</td>
+       <td>CVE-2025-38085</td>
+       <td>2025-06-28 08:15:24 <img src="imgs/new.gif" /></td>
+       <td>In the Linux kernel, the following vulnerability has been resolved: mm/hugetlb: fix huge_pmd_unshare() vs GUP-fast race huge_pmd_unshare() drops a reference on a page table that may have previously been shared across processes, potentially turning it into a normal page table used in another process in which unrelated VMAs can afterwards be installed. If this happens in the middle of a concurrent gup_fast(), gup_fast() could end up walking the page tables of another process. While I don't see any way in which that immediately leads to kernel memory corruption, it is really weird and unexpected. Fix it with an explicit broadcast IPI through tlb_remove_table_sync_one(), just like we do in khugepaged when removing page tables for a THP collapse.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-38085">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>54c5c0d983407f769b0f91ad3c288356</td>
+       <td>CVE-2025-38084</td>
+       <td>2025-06-28 08:15:23 <img src="imgs/new.gif" /></td>
+       <td>In the Linux kernel, the following vulnerability has been resolved: mm/hugetlb: unshare page tables during VMA split, not before Currently, __split_vma() triggers hugetlb page table unsharing through vm_ops->may_split(). This happens before the VMA lock and rmap locks are taken - which is too early, it allows racing VMA-locked page faults in our process and racing rmap walks from other processes to cause page tables to be shared again before we actually perform the split. Fix it by explicitly calling into the hugetlb unshare logic from __split_vma() in the same place where THP splitting also happens. At that point, both the VMA and the rmap(s) are write-locked. An annoying detail is that we can now call into the helper hugetlb_unshare_pmds() from two different locking contexts: 1. from hugetlb_split(), holding: - mmap lock (exclusively) - VMA lock - file rmap lock (exclusively) 2. hugetlb_unshare_all_pmds(), which I think is designed to be able to call us with only the mmap lock held (in shared mode), but currently only runs while holding mmap lock (exclusively) and VMA lock Backporting note: This commit fixes a racy protection that was introduced in commit b30c14cd6102 ("hugetlb: unshare some PMDs when splitting VMAs"); that commit claimed to fix an issue introduced in 5.13, but it should actually also go all the way back. [jannh@google.com: v2]</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-38084">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9b93673a1873b5a12f9cf4393de16a8b</td>
+       <td>CVE-2025-6755</td>
+       <td>2025-06-28 06:15:23 <img src="imgs/new.gif" /></td>
+       <td>The Game Users Share Buttons plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the ajaxDeleteTheme() function in all versions up to, and including, 1.3.0. This makes it possible for Subscriber-level attackers to add arbitrary file paths (such as ../../../../wp-config.php) to the themeNameId parameter of the AJAX request, which can lead to remote code execution.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-6755">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>71290ffbef5793d02ed0109a47e9f84e</td>
+       <td>CVE-2025-5304</td>
+       <td>2025-06-28 06:15:22 <img src="imgs/new.gif" /></td>
+       <td>The PT Project Notebooks plugin for WordPress is vulnerable to Privilege Escalation due to missing authorization in the wpnb_pto_new_users_add() function in versions 1.0.0 through 1.1.3. This makes it possible for unauthenticated attackers to elevate their privileges to that of an administrator.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-5304">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>420d2e0f274e7c3888c15152bbf9aab5</td>
+       <td>CVE-2025-6252</td>
+       <td>2025-06-28 05:15:24 <img src="imgs/new.gif" /></td>
+       <td>The Qi Addons For Elementor plugin for WordPress is vulnerable to Stored Cross-Site Scripting via several parameters in all versions up to, and including, 1.9.1 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with Contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-6252">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>dd4e30b6cbbca8110155d70cc75dd8d5</td>
+       <td>CVE-2025-6381</td>
+       <td>2025-06-28 04:15:46 <img src="imgs/new.gif" /></td>
+       <td>The BeeTeam368 Extensions plugin for WordPress is vulnerable to Directory Traversal in all versions up to, and including, 2.3.4 via the handle_remove_temp_file() function. This makes it possible for authenticated attackers, with Subscriber-level access and above, to perform actions on files outside of the originally intended directory. This vulnerability can be used to delete the wp-config.php file, which can be leveraged into a site takeover.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-6381">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>09be8bb6a36131ef58e0e92d1cee7efc</td>
+       <td>CVE-2025-6379</td>
+       <td>2025-06-28 04:15:45 <img src="imgs/new.gif" /></td>
+       <td>The BeeTeam368 Extensions Pro plugin for WordPress is vulnerable to Directory Traversal in all versions up to, and including, 2.3.4 via the handle_live_fn() function. This makes it possible for authenticated attackers, with Subscriber-level access and above, to perform actions on files outside of the originally intended directory. This vulnerability can be used to delete the wp-config.php file, which can be leveraged into a site takeover.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-6379">详情</a></td>
+      </tr>
+
+      <tr>
        <td>73261eb4217004945a8404dd15ae98cb</td>
        <td>CVE-2025-5398</td>
-       <td>2025-06-27 09:23:19 <img src="imgs/new.gif" /></td>
+       <td>2025-06-27 09:23:19</td>
        <td>The Ninja Forms – The Contact Form Builder That Grows With You plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the use of a templating engine in all versions up to, and including, 3.10.2.1 due to insufficient output escaping on user data passed through the template. This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-5398">详情</a></td>
       </tr>
@@ -292,7 +372,7 @@
       <tr>
        <td>e99b30919420160994e20107977ccaf7</td>
        <td>CVE-2025-2940</td>
-       <td>2025-06-27 09:15:25 <img src="imgs/new.gif" /></td>
+       <td>2025-06-27 09:15:25</td>
        <td>The Ninja Tables – Easy Data Table Builder plugin for WordPress is vulnerable to Server-Side Request Forgery in all versions up to, and including, 5.0.18 via the args[url] parameter. This makes it possible for unauthenticated attackers to make web requests to arbitrary locations originating from the web application and can be used to query and modify information from internal services.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-2940">详情</a></td>
       </tr>
@@ -300,7 +380,7 @@
       <tr>
        <td>a0f1fcdf31876986e527ac9a2b1c9110</td>
        <td>CVE-2024-12827</td>
-       <td>2025-06-27 09:15:24 <img src="imgs/new.gif" /></td>
+       <td>2025-06-27 09:15:24</td>
        <td>The DWT - Directory & Listing WordPress Theme theme for WordPress is vulnerable to privilege escalation via account takeover in all versions up to, and including, 3.3.6. This is due to the plugin not properly checking for an empty token value prior to resetting a user's password through the dwt_listing_reset_password() function. This makes it possible for unauthenticated attackers to change arbitrary user's passwords, including administrators, and leverage that to gain access to their account.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-12827">详情</a></td>
       </tr>
@@ -308,7 +388,7 @@
       <tr>
        <td>53acc5fbfde89945d966fcf17dc7f2bc</td>
        <td>CVE-2025-6689</td>
-       <td>2025-06-27 08:15:23 <img src="imgs/new.gif" /></td>
+       <td>2025-06-27 08:15:23</td>
        <td>The FL3R Accessibility Suite plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin's fl3raccessibilitysuite shortcode in all versions up to, and including, 1.4 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-6689">详情</a></td>
       </tr>
@@ -316,7 +396,7 @@
       <tr>
        <td>87a429e31b34122c34c0b2d6f7c78cd3</td>
        <td>CVE-2025-6688</td>
-       <td>2025-06-27 08:15:23 <img src="imgs/new.gif" /></td>
+       <td>2025-06-27 08:15:23</td>
        <td>The Simple Payment plugin for WordPress is vulnerable to Authentication Bypass in versions 1.3.6 to 2.3.8. This is due to the plugin not properly verifying a user's identity prior to logging them in through the create_user() function. This makes it possible for unauthenticated attackers to log in as administrative users.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-6688">详情</a></td>
       </tr>
@@ -324,7 +404,7 @@
       <tr>
        <td>67ce7affeaf7b22746150835b37c8114</td>
        <td>CVE-2025-6550</td>
-       <td>2025-06-27 08:15:23 <img src="imgs/new.gif" /></td>
+       <td>2025-06-27 08:15:23</td>
        <td>The The Pack Elementor addon plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the ‘slider_options’ parameter in all versions up to, and including, 2.1.3 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with Contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-6550">详情</a></td>
       </tr>
@@ -332,7 +412,7 @@
       <tr>
        <td>8bd5c24dd079610934424bf830702845</td>
        <td>CVE-2025-5940</td>
-       <td>2025-06-27 08:15:22 <img src="imgs/new.gif" /></td>
+       <td>2025-06-27 08:15:22</td>
        <td>The Osom Blocks – Custom Post Type listing block plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the ‘class_name’ parameter in all versions up to, and including, 1.2.1 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with Contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-5940">详情</a></td>
       </tr>
@@ -340,7 +420,7 @@
       <tr>
        <td>2b44bad195dcd1e971cb59de91901be0</td>
        <td>CVE-2025-5936</td>
-       <td>2025-06-27 08:15:22 <img src="imgs/new.gif" /></td>
+       <td>2025-06-27 08:15:22</td>
        <td>The VR Calendar plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 2.4.7. This is due to missing or incorrect nonce validation on the syncCalendar() function. This makes it possible for unauthenticated attackers to trigger a calendar sync via a forged request granted they can trick a site administrator into performing an action such as clicking on a link.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-5936">详情</a></td>
       </tr>
@@ -348,7 +428,7 @@
       <tr>
        <td>052d89785356fb781d0618906109f904</td>
        <td>CVE-2025-5306</td>
-       <td>2025-06-27 08:15:22 <img src="imgs/new.gif" /></td>
+       <td>2025-06-27 08:15:22</td>
        <td>Improper Neutralization of Special Elements in the Netflow directory field may allow OS command injection. This issue affects Pandora FMS 774 through 778</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-5306">详情</a></td>
       </tr>
@@ -356,7 +436,7 @@
       <tr>
        <td>facde5b440eec5de784ef678d0628b02</td>
        <td>CVE-2025-4587</td>
-       <td>2025-06-27 08:15:22 <img src="imgs/new.gif" /></td>
+       <td>2025-06-27 08:15:22</td>
        <td>The A/B Testing for WordPress plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin's 'ab-testing-for-wp/ab-test-block' block in all versions up to, and including, 1.18.2 due to insufficient input sanitization and output escaping on the 'id' parameter. This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-4587">详情</a></td>
       </tr>
@@ -439,86 +519,6 @@
        <td>2025-06-26 06:15:23</td>
        <td>An issue has been discovered in GitLab CE/EE affecting all versions from 17.2 before 17.11.5, 18.0 before 18.0.3, and 18.1 before 18.1.1 that could have allowed authenticated users with Guest role permissions to add child items to incident work items by sending crafted API requests that bypassed UI-enforced role restrictions.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-5315">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>63111705456d2c88cff124e97dd57285</td>
-       <td>CVE-2024-51984</td>
-       <td>2025-06-25 08:15:33</td>
-       <td>An authenticated attacker can reconfigure the target device to use an external service (such as LDAP or FTP) controlled by the attacker. If an existing password is present for an external service, the attacker can force the target device to authenticate to an attacker controlled device using the existing credentials for that external service. In the case of an external LDAP or FTP service, this will disclose the plaintext password for that external service to the attacker.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-51984">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>07419e5467ab7bd2585f6d955fbbf558</td>
-       <td>CVE-2024-51983</td>
-       <td>2025-06-25 08:15:32</td>
-       <td>An unauthenticated attacker who can connect to the Web Services feature (HTTP TCP port 80) can issue a WS-Scan SOAP request containing an unexpected JobToken value which will crash the target device. The device will reboot, after which the attacker can reissue the command to repeatedly crash the device.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-51983">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9e580286d3f2a157068ebe2196748eff</td>
-       <td>CVE-2024-51980</td>
-       <td>2025-06-25 08:15:31</td>
-       <td>An unauthenticated attacker may perform a limited server side request forgery (SSRF), forcing the target device to open a TCP connection to an arbitrary port number on an arbitrary IP address. This SSRF leverages the WS-Addressing ReplyTo element in a Web service (HTTP TCP port 80) SOAP request. The attacker can not control the data sent in the SSRF connection, nor can the attacker receive any data back. This SSRF is suitable for TCP port scanning of an internal network when the Web service (HTTP TCP port 80) is exposed across a network segment.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-51980">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7fd7719e603c983bfc13dc105458a817</td>
-       <td>CVE-2024-51979</td>
-       <td>2025-06-25 08:15:31</td>
-       <td>An authenticated attacker may trigger a stack based buffer overflow by performing a malformed request to either the HTTP service (TCP port 80), the HTTPS service (TCP port 443), or the IPP service (TCP port 631). The malformed request will contain an empty Origin header value and a malformed Referer header value. The Referer header value will trigger a stack based buffer overflow when the host value in the Referer header is processed and is greater than 64 bytes in length.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-51979">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>dd5f4be59822695a0a790418ba5e5cd1</td>
-       <td>CVE-2024-51982</td>
-       <td>2025-06-25 07:25:00</td>
-       <td>An unauthenticated attacker who can connect to TCP port 9100 can issue a Printer Job Language (PJL) command that will crash the target device. The device will reboot, after which the attacker can reissue the command to repeatedly crash the device. A malformed PJL variable FORMLINES is set to a non number value causing the target to crash.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-51982">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d0b8865e3cd68225eeefd1f986b86797</td>
-       <td>CVE-2024-51977</td>
-       <td>2025-06-25 07:15:16</td>
-       <td>An unauthenticated attacker who can access either the HTTP service (TCP port 80), the HTTPS service (TCP port 443), or the IPP service (TCP port 631), can leak several pieces of sensitive information from a vulnerable device. The URI path /etc/mnt_info.csv can be accessed via a GET request and no authentication is required. The returned result is a comma separated value (CSV) table of information. The leaked information includes the device’s model, firmware version, IP address, and serial number.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-51977">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3c389054a650b7af1cc33fc9e0188067</td>
-       <td>CVE-2025-43880</td>
-       <td>2025-06-25 06:15:20</td>
-       <td>Inefficient regular expression complexity issue exists in GROWI prior to v7.1.6. If exploited, a logged-in user may cause a denial of service (DoS) condition.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-43880">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>cd4f8c8232dea9dcdd857e0730f700c8</td>
-       <td>CVE-2025-5585</td>
-       <td>2025-06-25 03:15:27</td>
-       <td>The SiteOrigin Widgets Bundle plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the `data-url` DOM Element Attribute in all versions up to, and including, 1.68.4 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with Contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-5585">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f9dc670f287229fe5707a88873033539</td>
-       <td>CVE-2025-36004</td>
-       <td>2025-06-25 03:15:27</td>
-       <td>IBM i 7.2, 7.3, 7.4, and 7.5 could allow a user to gain elevated privileges due to an unqualified library call in IBM Facsimile Support for i. A malicious actor could cause user-controlled code to run with administrator privilege.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-36004">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c4a7852c0277c64cb1787aadfc01262f</td>
-       <td>CVE-2025-0966</td>
-       <td>2025-06-25 03:15:26</td>
-       <td>IBM InfoSphere Information Server 11.7 vulnerable to SQL injection. A remote attacker could send specially crafted SQL statements, which could allow the attacker to view, add, modify, or delete information in the back-end database.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-0966">详情</a></td>
       </tr>
 
      </tbody>
