@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2025-07-19 09:09:15 -->
+<!-- RELEASE TIME : 2025-07-20 09:09:14 -->
 <html lang="zh-cn">
 
  <head>
@@ -282,9 +282,89 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>b636c9bd6946e990a5dc2de8532f0f06</td>
+       <td>CVE-2025-38350</td>
+       <td>2025-07-19 07:15:22 <img src="imgs/new.gif" /></td>
+       <td>In the Linux kernel, the following vulnerability has been resolved: net/sched: Always pass notifications when child class becomes empty Certain classful qdiscs may invoke their classes' dequeue handler on an enqueue operation. This may unexpectedly empty the child qdisc and thus make an in-flight class passive via qlen_notify(). Most qdiscs do not expect such behaviour at this point in time and may re-activate the class eventually anyways which will lead to a use-after-free. The referenced fix commit attempted to fix this behavior for the HFSC case by moving the backlog accounting around, though this turned out to be incomplete since the parent's parent may run into the issue too. The following reproducer demonstrates this use-after-free: tc qdisc add dev lo root handle 1: drr tc filter add dev lo parent 1: basic classid 1:1 tc class add dev lo parent 1: classid 1:1 drr tc qdisc add dev lo parent 1:1 handle 2: hfsc def 1 tc class add dev lo parent 2: classid 2:1 hfsc rt m1 8 d 1 m2 0 tc qdisc add dev lo parent 2:1 handle 3: netem tc qdisc add dev lo parent 3:1 handle 4: blackhole echo 1 | socat -u STDIN UDP4-DATAGRAM:127.0.0.1:8888 tc class delete dev lo classid 1:1 echo 1 | socat -u STDIN UDP4-DATAGRAM:127.0.0.1:8888 Since backlog accounting issues leading to a use-after-frees on stale class pointers is a recurring pattern at this point, this patch takes a different approach. Instead of trying to fix the accounting, the patch ensures that qdisc_tree_reduce_backlog always calls qlen_notify when the child qdisc is empty. This solves the problem because deletion of qdiscs always involves a call to qdisc_reset() and / or qdisc_purge_queue() which ultimately resets its qlen to 0 thus causing the following qdisc_tree_reduce_backlog() to report to the parent. Note that this may call qlen_notify on passive classes multiple times. This is not a problem after the recent patch series that made all the classful qdiscs qlen_notify() handlers idempotent.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-38350">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>791dab22d207ca0a1f9a63c5f05923bc</td>
+       <td>CVE-2025-6721</td>
+       <td>2025-07-19 06:15:24 <img src="imgs/new.gif" /></td>
+       <td>The Vchasno Kasa plugin for WordPress is vulnerable to unauthorized access of data due to a missing capability check on the mrkv_vchasno_kasa_wc_do_metabox_action() function in all versions up to, and including, 1.0.3. This makes it possible for unauthenticated attackers to generate invoices for arbitrary orders.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-6721">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9c304a43df5049bdf9b6ce9a3bb69da8</td>
+       <td>CVE-2025-6720</td>
+       <td>2025-07-19 06:15:24 <img src="imgs/new.gif" /></td>
+       <td>The Vchasno Kasa plugin for WordPress is vulnerable to unauthorized loss of data due to a missing capability check on the clear_all_log() function in all versions up to, and including, 1.0.3. This makes it possible for unauthenticated attackers to clear log files.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-6720">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3d10434b2c37f514a18eafa8a348cdd6</td>
+       <td>CVE-2025-29757</td>
+       <td>2025-07-19 06:15:23 <img src="imgs/new.gif" /></td>
+       <td>An incorrect authorisation check in the the 'plant transfer' function of the Growatt cloud service allowed a malicous attacker with a valid account to transfer any plant into his/her account.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-29757">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9041b74098efb0b3ba56584b475b58cd</td>
+       <td>CVE-2025-7697</td>
+       <td>2025-07-19 05:15:22 <img src="imgs/new.gif" /></td>
+       <td>The Integration for Google Sheets and Contact Form 7, WPForms, Elementor, Ninja Forms plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 1.1.1 via deserialization of untrusted input within the verify_field_val() function. This makes it possible for unauthenticated attackers to inject a PHP Object. The additional presence of a POP chain in the Contact Form 7 plugin, which is likely to be used alongside, allows attackers to delete arbitrary files, leading to a denial of service or remote code execution when the wp-config.php file is deleted.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-7697">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>45651edcedb1be33b864f71ff66b00fd</td>
+       <td>CVE-2025-7696</td>
+       <td>2025-07-19 05:15:22 <img src="imgs/new.gif" /></td>
+       <td>The Integration for Pipedrive and Contact Form 7, WPForms, Elementor, Ninja Forms plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 1.2.3 via deserialization of untrusted input within the verify_field_val() function. This makes it possible for unauthenticated attackers to inject a PHP Object. The additional presence of a POP chain in the Contact Form 7 plugin, which is likely to be used alongside, allows attackers to delete arbitrary files, leading to a denial of service or remote code execution when the wp-config.php file is deleted.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-7696">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c24c40d32af645094eec3bc810b8218c</td>
+       <td>CVE-2025-7669</td>
+       <td>2025-07-19 03:15:23 <img src="imgs/new.gif" /></td>
+       <td>The Avishi WP PayPal Payment Button plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 2.0. This is due to missing or incorrect nonce validation on the 'avishi-wp-paypal-payment-button/index.php' page. This makes it possible for unauthenticated attackers to update settings and inject malicious web scripts via a forged request granted they can trick a site administrator into performing an action such as clicking on a link.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-7669">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ad398514e83315333e0e652526cab162</td>
+       <td>CVE-2025-7661</td>
+       <td>2025-07-19 03:15:23 <img src="imgs/new.gif" /></td>
+       <td>The Partnerský systém Martinus plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin's 'martinus' shortcode in all versions up to, and including, 1.7.1 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-7661">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>77a79f43633595b735d0b69290df7148</td>
+       <td>CVE-2025-7658</td>
+       <td>2025-07-19 03:15:23 <img src="imgs/new.gif" /></td>
+       <td>The Temporarily Hidden Content plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin's 'temphc-start' shortcode in all versions up to, and including, 1.0.6 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-7658">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>429001d4a26187eae3286e1fcd935524</td>
+       <td>CVE-2025-7655</td>
+       <td>2025-07-19 03:15:23 <img src="imgs/new.gif" /></td>
+       <td>The Live Stream Badger plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin's 'livestream' shortcode in all versions up to, and including, 1.4.3 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-7655">详情</a></td>
+      </tr>
+
+      <tr>
        <td>d7058508f882e3085c8996b810da58f5</td>
        <td>CVE-2025-7438</td>
-       <td>2025-07-18 07:15:24 <img src="imgs/new.gif" /></td>
+       <td>2025-07-18 07:15:24</td>
        <td>The MasterStudy LMS Pro plugin for WordPress is vulnerable to arbitrary file uploads due to insufficient file type validation in the 'install_and_activate_plugin' function in all versions up to, and including, 4.7.9. This makes it possible for authenticated attackers, with Subscriber-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible. The vulnerability is difficult to exploit due to timing requirements and environmental factors.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-7438">详情</a></td>
       </tr>
@@ -292,7 +372,7 @@
       <tr>
        <td>1688ed9c54fa41eabea612d7229e1f83</td>
        <td>CVE-2025-7643</td>
-       <td>2025-07-18 06:30:25 <img src="imgs/new.gif" /></td>
+       <td>2025-07-18 06:30:25</td>
        <td>The Attachment Manager plugin for WordPress is vulnerable to arbitrary file deletion due to...</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-7643">详情</a></td>
       </tr>
@@ -300,7 +380,7 @@
       <tr>
        <td>01bd5cd7771483086dfa79bbd1b14005</td>
        <td>CVE-2025-6726</td>
-       <td>2025-07-18 06:30:25 <img src="imgs/new.gif" /></td>
+       <td>2025-07-18 06:30:25</td>
        <td>The Block Editor Gallery Slider plugin for WordPress is vulnerable to unauthorized modification...</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-6726">详情</a></td>
       </tr>
@@ -308,7 +388,7 @@
       <tr>
        <td>48d716a893789432203de9020b1db1c2</td>
        <td>CVE-2025-6719</td>
-       <td>2025-07-18 06:30:24 <img src="imgs/new.gif" /></td>
+       <td>2025-07-18 06:30:24</td>
        <td>The Terms descriptions plugin for WordPress is vulnerable to Stored Cross-Site Scripting via...</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-6719">详情</a></td>
       </tr>
@@ -316,7 +396,7 @@
       <tr>
        <td>e66a025b824c043b0c24fca97a4760c7</td>
        <td>CVE-2025-6717</td>
-       <td>2025-07-18 06:30:24 <img src="imgs/new.gif" /></td>
+       <td>2025-07-18 06:30:24</td>
        <td>The B1.lt plugin for WordPress is vulnerable to SQL Injection via the 'id' parameter in all...</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-6717">详情</a></td>
       </tr>
@@ -324,7 +404,7 @@
       <tr>
        <td>05e874fc2351c346f2ac6af31982f0a5</td>
        <td>CVE-2025-6222</td>
-       <td>2025-07-18 06:30:24 <img src="imgs/new.gif" /></td>
+       <td>2025-07-18 06:30:24</td>
        <td>The WooCommerce Refund And Exchange with RMA - Warranty Management, Refund Policy, Manage User...</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-6222">详情</a></td>
       </tr>
@@ -332,7 +412,7 @@
       <tr>
        <td>500f680d29d9984aa94ccbe35edb8b62</td>
        <td>CVE-2025-5811</td>
-       <td>2025-07-18 06:30:24 <img src="imgs/new.gif" /></td>
+       <td>2025-07-18 06:30:24</td>
        <td>The Listly: Listicles For WordPress plugin for WordPress is vulnerable to unauthorized...</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-5811">详情</a></td>
       </tr>
@@ -340,7 +420,7 @@
       <tr>
        <td>13217151859d621b736c6976d4f0cd45</td>
        <td>CVE-2025-5800</td>
-       <td>2025-07-18 06:30:24 <img src="imgs/new.gif" /></td>
+       <td>2025-07-18 06:30:24</td>
        <td>The Testimonial Post type plugin for WordPress is vulnerable to Stored Cross-Site Scripting via...</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-5800">详情</a></td>
       </tr>
@@ -348,7 +428,7 @@
       <tr>
        <td>ac198828b877b271cc87f52df19488e9</td>
        <td>CVE-2025-5767</td>
-       <td>2025-07-18 06:30:24 <img src="imgs/new.gif" /></td>
+       <td>2025-07-18 06:30:24</td>
        <td>The Crowdfunding for WooCommerce plugin for WordPress is vulnerable to Stored Cross-Site...</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-5767">详情</a></td>
       </tr>
@@ -356,7 +436,7 @@
       <tr>
        <td>52a5dce913bdcfbf2b8f498e3cf7ee23</td>
        <td>CVE-2025-5754</td>
-       <td>2025-07-18 06:30:24 <img src="imgs/new.gif" /></td>
+       <td>2025-07-18 06:30:24</td>
        <td>The Useful Tab Block – Responsive & AMP-Compatible plugin for WordPress is vulnerable to Stored...</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-5754">详情</a></td>
       </tr>
@@ -439,86 +519,6 @@
        <td>2025-07-17 21:14:08</td>
        <td>A vulnerability, which was classified as critical, has been found in TOTOLINK T6 up to 4.1.5cu.748_B20211015. Affected by this issue is the function setDiagnosisCfg of the file /cgi-bin/cstecgi.cgi of the component HTTP POST Request Handler. The manipulation of the argument ip leads to buffer overflow. The attack may be launched remotely. The exploit has been disclosed to the public and may be used.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-7758">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>64a1fac2417d881343b7531b5ef3d92e</td>
-       <td>CVE-2025-34132</td>
-       <td>2025-07-16 21:26:51</td>
-       <td>A command injection vulnerability exists in LILIN Digital Video Recorder (DVR) devices prior to firmware version 2.0b60_20200207 via the Server field in the NTPUpdate configuration. The web service at /z/zbin/dvr_box fails to properly sanitize input, allowing remote attackers to inject and execute arbitrary commands as root by supplying specially crafted XML data to the DVRPOST interface. 777</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-34132">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5120e8dd35f910209e849d6497d7f7d3</td>
-       <td>CVE-2025-34130</td>
-       <td>2025-07-16 21:26:42</td>
-       <td>An unauthenticated arbitrary file read exists in LILIN Digital Video Recorder (DVR) devices prior to firmware version 2.0b60_20200207 via the /z/zbin/net_html.cgi endpoint. This vulnerability allows attackers to read sensitive configuration files, such as /zconf/service.xml, which can then be used to facilitate further attacks including command injection. The vulnerability has been exploited in the wild in conjunction with other issues by botnets like FBot and Moobot.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-34130">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8dfd26f9de5f6c68eb0d058ed08eb681</td>
-       <td>CVE-2025-34129</td>
-       <td>2025-07-16 21:26:32</td>
-       <td>A command injection vulnerability exists in LILIN LILIN Digital Video Recorder (DVR) devices prior to firmware version 2.0b60_20200207 due to insufficient sanitization of the FTP and NTP Server fields in the service configuration. An attacker with access to the configuration interface can upload a malicious XML file with injected shell commands in these fields. Upon subsequent configuration syncs, these commands are executed with elevated privileges. This vulnerability was exploited in the wild by the Moobot botnets.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-34129">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9bc25c1e7ab31186ad61a92b87f07f4e</td>
-       <td>CVE-2025-34123</td>
-       <td>2025-07-16 21:15:27</td>
-       <td>A stack-based buffer overflow vulnerability exists in VideoCharge Studio 2.12.3.685 when processing a specially crafted .VSC configuration file. The issue occurs due to improper handling of user-supplied data in the XML 'Name' attribute, leading to an SEH overwrite condition. An attacker can exploit this vulnerability by convincing a user to open a malicious .VSC file, resulting in arbitrary code execution under the context of the user.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-34123">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1c6220702abc9e62380b821ae0fd7811</td>
-       <td>CVE-2025-34121</td>
-       <td>2025-07-16 21:15:27</td>
-       <td>An unauthenticated arbitrary file upload vulnerability exists in Idera Up.Time Monitoring Station versions up to and including 7.2. The `wizards/post2file.php` script accepts arbitrary POST parameters, allowing attackers to upload crafted PHP files to the webroot. Successful exploitation results in remote code execution as the web server user. NOTE: The bypass for this vulnerability is tracked as CVE-2015-9263.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-34121">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>42abb64052277885ddfd22b4306759bb</td>
-       <td>CVE-2025-34120</td>
-       <td>2025-07-16 21:15:26</td>
-       <td>An unauthenticated file download vulnerability exists in LimeSurvey versions from 2.0+ up to and including 2.06+ Build 151014. The application fails to validate serialized input to the admin backup endpoint (`index.php/admin/update/sa/backup`), allowing attackers to specify arbitrary file paths using a crafted `datasupdateinfo` payload. The files are packaged in a ZIP archive and made available for download without authentication. This vulnerability can be exploited to read arbitrary files on the host system, including sensitive OS and configuration files.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-34120">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a6b357545bdb59003266bedd864fc28b</td>
-       <td>CVE-2025-34119</td>
-       <td>2025-07-16 21:15:26</td>
-       <td>A remote file disclosure vulnerability exists in EasyCafe Server 2.2.14, exploitable by unauthenticated remote attackers via TCP port 831. The server listens for a custom protocol where opcode 0x43 can be used to request arbitrary files by absolute path. If the file exists and is accessible, its content is returned without authentication. This flaw allows attackers to retrieve sensitive files such as system configuration, password files, or application data.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-34119">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>72b40df0938009bca507aaae6595ec0a</td>
-       <td>CVE-2025-34118</td>
-       <td>2025-07-16 21:15:26</td>
-       <td>A path traversal vulnerability exists in Linknat VOS Manager versions prior to 2.1.9.07, including VOS2009 and early VOS3000 builds, that allows unauthenticated remote attackers to read arbitrary files on the server. The vulnerability is accessible via multiple localized subpaths such as '/eng/', '/chs/', or '/cht/', where the 'js/lang_en_us.js' or equivalent files are loaded. By injecting encoded traversal sequences such as '%c0%ae%c0%ae' into the request path, attackers can bypass input validation and disclose sensitive files.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-34118">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>37842bdaae96d07aed37c0e33e41dddf</td>
-       <td>CVE-2025-34117</td>
-       <td>2025-07-16 21:15:26</td>
-       <td>A remote code execution vulnerability exists in multiple Netcore and Netis routers models with firmware released prior to August 2014 due to the presence of an undocumented backdoor listener on UDP port 53413. Exact version boundaries remain undocumented. An unauthenticated remote attacker can send specially crafted UDP packets to execute arbitrary commands on the affected device. This backdoor uses a hardcoded authentication mechanism and accepts shell commands post-authentication. Some device models include a non-standard implementation of the `echo` command, which may affect exploitability.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-34117">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2d37dc90a019694d285d14a534085959</td>
-       <td>CVE-2025-34128</td>
-       <td>2025-07-16 21:10:31</td>
-       <td>A buffer overflow vulnerability exists in the X360 VideoPlayer ActiveX control (VideoPlayer.ocx) version 2.6 when handling overly long arguments to the ConvertFile() method. An attacker can exploit this vulnerability by supplying crafted input to cause memory corruption and execute arbitrary code within the context of the current process.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-34128">详情</a></td>
       </tr>
 
      </tbody>
