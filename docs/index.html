@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2025-08-19 09:09:08 -->
+<!-- RELEASE TIME : 2025-08-20 09:10:07 -->
 <html lang="zh-cn">
 
  <head>
@@ -282,9 +282,89 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>9d07f9e19f83f71f937c67ffab183cd2</td>
+       <td>CVE-2025-9148</td>
+       <td>2025-08-19 17:15:41 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability was found in CodePhiliaX Chat2DB up to 0.3.7. This affects an unknown function of the file ai/chat2db/server/web/api/controller/data/source/DataSourceController.java of the component JDBC Connection Handler. The manipulation results in sql injection. The attack can be executed remotely. The exploit has been made public and could be used. The vendor was contacted early about this disclosure but did not respond in any way.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-9148">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>20cb575d9eb5f2f6064de7f50071503c</td>
+       <td>CVE-2025-9147</td>
+       <td>2025-08-19 17:15:41 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability has been found in jasonclark getsemantic up to 040c96eb8cf9947488bd01b8de99b607b0519f7d. The impacted element is an unknown function of the file /index.php. The manipulation of the argument view leads to cross site scripting. Remote exploitation of the attack is possible. The exploit has been disclosed to the public and may be used. This product follows a rolling release approach for continuous delivery, so version details for affected or updated releases are not provided. The vendor was contacted early about this disclosure but did not respond in any way.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-9147">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>319b4732d47aa237446e8965b9bd7fb3</td>
+       <td>CVE-2025-54880</td>
+       <td>2025-08-19 17:15:41 <img src="imgs/new.gif" /></td>
+       <td>Mermaid is a JavaScript based diagramming and charting tool that uses Markdown-inspired text definitions and a renderer to create and modify complex diagrams. In the default configuration of mermaid 11.9.0 and earlier, user supplied input for architecture diagram icons is passed to the d3 html() method, creating a sink for cross site scripting. This vulnerability is fixed in 11.10.0.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-54880">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>98527613b2127925537b7c11193aab05</td>
+       <td>CVE-2025-54411</td>
+       <td>2025-08-19 17:15:40 <img src="imgs/new.gif" /></td>
+       <td>Discourse is an open-source discussion platform. Welcome banner user name string for logged in users can be vulnerable to XSS attacks, which affect the user themselves or an admin impersonating them. Admins can temporarily alter the welcome_banner.header.logged_in_members site text to remove the preferred_display_name placeholder, or not impersonate any users for the time being. This vulnerability is fixed in 3.5.0.beta8.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-54411">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>79362a1fedaa1a0ea9a35f47f2eb9477</td>
+       <td>CVE-2025-52478</td>
+       <td>2025-08-19 17:15:40 <img src="imgs/new.gif" /></td>
+       <td>n8n is a workflow automation platform. From 1.77.0 to before 1.98.2, a stored Cross-Site Scripting (XSS) vulnerability was identified in n8n, specifically in the Form Trigger node's HTML form element. An authenticated attacker can inject malicious HTML via an <iframe> with a srcdoc payload that includes arbitrary JavaScript execution. The attacker can also inject malicious Javascript by using <video> coupled <source> using an onerror event. While using iframe or a combination of video and source tag, this vulnerability allows for Account Takeover (ATO) by exfiltrating n8n-browserId and session cookies from authenticated users who visit a maliciously crafted form. Using these tokens and cookies, an attacker can impersonate the victim and change account details such as email addresses, enabling full control over the account—especially if 2FA is not enabled. Users should upgrade to version >= 1.98.2.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-52478">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>766da9a09ae92850ecde8c70a48d0a55</td>
+       <td>CVE-2025-51506</td>
+       <td>2025-08-19 17:15:40 <img src="imgs/new.gif" /></td>
+       <td>In the smartLibrary component of the HRForecast Suite 0.4.3, a SQL injection vulnerability was discovered in the valueKey parameter. This flaw enables any authenticated user to execute arbitrary SQL queries, via crafted payloads to valueKey to the api/smartlibrary/v2/en/dictionaries/options/lookup endpoint.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-51506">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>f0ffb96eaef67ab68237e9f8055fe522</td>
+       <td>CVE-2025-38614</td>
+       <td>2025-08-19 17:15:40 <img src="imgs/new.gif" /></td>
+       <td>In the Linux kernel, the following vulnerability has been resolved: eventpoll: Fix semi-unbounded recursion Ensure that epoll instances can never form a graph deeper than EP_MAX_NESTS+1 links. Currently, ep_loop_check_proc() ensures that the graph is loop-free and does some recursion depth checks, but those recursion depth checks don't limit the depth of the resulting tree for two reasons: - They don't look upwards in the tree. - If there are multiple downwards paths of different lengths, only one of the paths is actually considered for the depth check since commit 28d82dc1c4ed ("epoll: limit paths"). Essentially, the current recursion depth check in ep_loop_check_proc() just serves to prevent it from recursing too deeply while checking for loops. A more thorough check is done in reverse_path_check() after the new graph edge has already been created; this checks, among other things, that no paths going upwards from any non-epoll file with a length of more than 5 edges exist. However, this check does not apply to non-epoll files. As a result, it is possible to recurse to a depth of at least roughly 500, tested on v6.15. (I am unsure if deeper recursion is possible; and this may have changed with commit 8c44dac8add7 ("eventpoll: Fix priority inversion problem").) To fix it: 1. In ep_loop_check_proc(), note the subtree depth of each visited node, and use subtree depths for the total depth calculation even when a subtree has already been visited. 2. Add ep_get_upwards_depth_proc() for similarly determining the maximum depth of an upwards walk. 3. In ep_loop_check(), use these values to limit the total path length between epoll nodes to EP_MAX_NESTS edges.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-38614">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>162205ff882ced17c3cdead84537d5c6</td>
+       <td>CVE-2025-38613</td>
+       <td>2025-08-19 17:15:39 <img src="imgs/new.gif" /></td>
+       <td>In the Linux kernel, the following vulnerability has been resolved: staging: gpib: fix unset padding field copy back to userspace The introduction of a padding field in the gpib_board_info_ioctl is showing up as initialized data on the stack frame being copyied back to userspace in function board_info_ioctl. The simplest fix is to initialize the entire struct to zero to ensure all unassigned padding fields are zero'd before being copied back to userspace.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-38613">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>4e0aa9dce1aa4f39181071464c1efe73</td>
+       <td>CVE-2025-38608</td>
+       <td>2025-08-19 17:15:39 <img src="imgs/new.gif" /></td>
+       <td>In the Linux kernel, the following vulnerability has been resolved: bpf, ktls: Fix data corruption when using bpf_msg_pop_data() in ktls When sending plaintext data, we initially calculated the corresponding ciphertext length. However, if we later reduced the plaintext data length via socket policy, we failed to recalculate the ciphertext length. This results in transmitting buffers containing uninitialized data during ciphertext transmission. This causes uninitialized bytes to be appended after a complete "Application Data" packet, leading to errors on the receiving end when parsing TLS record.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-38608">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9a56915eeb76d31f0039eb2c4264d87a</td>
+       <td>CVE-2025-38607</td>
+       <td>2025-08-19 17:15:39 <img src="imgs/new.gif" /></td>
+       <td>In the Linux kernel, the following vulnerability has been resolved: bpf: handle jset (if a & b ...) as a jump in CFG computation BPF_JSET is a conditional jump and currently verifier.c:can_jump() does not know about that. This can lead to incorrect live registers and SCC computation. E.g. in the following example: 1: r0 = 1; 2: r2 = 2; 3: if r1 & 0x7 goto +1; 4: exit; 5: r0 = r2; 6: exit; W/o this fix insn_successors(3) will return only (4), a jump to (5) would be missed and r2 won't be marked as alive at (3).</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-38607">详情</a></td>
+      </tr>
+
+      <tr>
        <td>d7b31498917af2e9d6aaffb21684c8c2</td>
        <td>CVE-2025-54421</td>
-       <td>2025-08-18 16:15:29 <img src="imgs/new.gif" /></td>
+       <td>2025-08-18 16:15:29</td>
        <td>NamelessMC is a free, easy to use & powerful website software for Minecraft servers. Cross-site scripting (XSS) vulnerability in NamelessMC before 2.2.4 allows remote authenticated attackers to inject arbitrary web script or HTML via the default_keywords crafted parameter. This vulnerability is fixed in 2.2.4.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-54421">详情</a></td>
       </tr>
@@ -292,7 +372,7 @@
       <tr>
        <td>186c362890fa9a216676c777d51d6f0e</td>
        <td>CVE-2025-54118</td>
-       <td>2025-08-18 16:15:29 <img src="imgs/new.gif" /></td>
+       <td>2025-08-18 16:15:29</td>
        <td>NamelessMC is a free, easy to use & powerful website software for Minecraft servers. Sensitive information disclosure in NamelessMC before 2.2.4 allows unauthenticated remote attacker to gain sensitive information such as absolute path of the source code via list parameter. This vulnerability is fixed in 2.2.4.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-54118">详情</a></td>
       </tr>
@@ -300,7 +380,7 @@
       <tr>
        <td>9b450d7e86d27ab967c7602a6ce63476</td>
        <td>CVE-2025-54117</td>
-       <td>2025-08-18 16:15:29 <img src="imgs/new.gif" /></td>
+       <td>2025-08-18 16:15:29</td>
        <td>NamelessMC is a free, easy to use & powerful website software for Minecraft servers. Cross-site scripting (XSS) vulnerability in NamelessMC before 2.2.3 allows remote authenticated attackers to inject arbitrary web script or HTML via the dashboard text editor component. This vulnerability is fixed in 2.2.4.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-54117">详情</a></td>
       </tr>
@@ -308,7 +388,7 @@
       <tr>
        <td>83e31b46c2d0eb33f671f8142e9b0adb</td>
        <td>CVE-2025-4962</td>
-       <td>2025-08-18 14:15:30 <img src="imgs/new.gif" /></td>
+       <td>2025-08-18 14:15:30</td>
        <td>An Insecure Direct Object Reference (IDOR) vulnerability was identified in the `POST /v1/templates` endpoint of the Lunary API, affecting versions up to 0.8.8. This vulnerability allows authenticated users to create templates in another user's project by altering the `projectId` query parameter. The root cause of this issue is the absence of server-side validation to ensure that the authenticated user owns the specified `projectId`. The vulnerability has been addressed in version 1.9.23.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-4962">详情</a></td>
       </tr>
@@ -316,7 +396,7 @@
       <tr>
        <td>df45cdb683fee44300d1b8271d040172</td>
        <td>CVE-2025-43732</td>
-       <td>2025-08-18 14:15:29 <img src="imgs/new.gif" /></td>
+       <td>2025-08-18 14:15:29</td>
        <td>Liferay Portal 7.4.0 through 7.4.3.132, and Liferay DXP 2025.Q1.0 through 2025.Q1.10, 2024.Q4.0 through 2024.Q4.7, 2024.Q3.1 through 2024.Q3.13, 2024.Q2.1 through 2024.Q2.13, 2024.Q1.1 through 2024.Q1.17 and 7.4 GA through update 92 is vulnerable to Insecure Direct Object Reference (IDOR) in the groupId parameter of the _com_liferay_roles_selector_web_portlet_RolesSelectorPortlet_groupId. When an organization administrator modifies this parameter id value, they can gain unauthorized access to user lists from other organizations.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-43732">详情</a></td>
       </tr>
@@ -324,7 +404,7 @@
       <tr>
        <td>bff131a6e4ab7d9b3cf4be15ba4e01e1</td>
        <td>CVE-2025-36120</td>
-       <td>2025-08-18 14:15:29 <img src="imgs/new.gif" /></td>
+       <td>2025-08-18 14:15:29</td>
        <td>IBM Storage Virtualize 8.4, 8.5, 8.6, and 8.7 could allow an authenticated user to escalate their privileges in an SSH session due to incorrect authorization checks to access resources.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-36120">详情</a></td>
       </tr>
@@ -332,7 +412,7 @@
       <tr>
        <td>69b42c898a008c7107cfcc9b9e664f2e</td>
        <td>CVE-2025-33100</td>
-       <td>2025-08-18 14:15:29 <img src="imgs/new.gif" /></td>
+       <td>2025-08-18 14:15:29</td>
        <td>IBM Concert Software 1.0.0 through 1.1.0 contains hard-coded credentials, such as a password or cryptographic key, which it uses for its own inbound authentication, outbound communication to external components, or encryption of internal data.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-33100">详情</a></td>
       </tr>
@@ -340,7 +420,7 @@
       <tr>
        <td>43e32f30fdf91f92a259484a24e5c318</td>
        <td>CVE-2025-33090</td>
-       <td>2025-08-18 14:15:28 <img src="imgs/new.gif" /></td>
+       <td>2025-08-18 14:15:28</td>
        <td>IBM Concert Software 1.0.0 through 1.1.0 could allow a remote attacker to cause a denial of service using a specially crafted regular expression that would cause excessive resource consumption.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-33090">详情</a></td>
       </tr>
@@ -348,7 +428,7 @@
       <tr>
        <td>4e3a21cb1d1511c493418a8a6c1e7454</td>
        <td>CVE-2025-27909</td>
-       <td>2025-08-18 14:15:28 <img src="imgs/new.gif" /></td>
+       <td>2025-08-18 14:15:28</td>
        <td>IBM Concert Software 1.0.0 through 1.1.0 uses cross-origin resource sharing (CORS) which could allow an attacker to carry out privileged actions as the domain name is not being limited to only trusted domains.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-27909">详情</a></td>
       </tr>
@@ -356,7 +436,7 @@
       <tr>
        <td>b611b856d48736970a484753a14f1430</td>
        <td>CVE-2025-1759</td>
-       <td>2025-08-18 14:15:28 <img src="imgs/new.gif" /></td>
+       <td>2025-08-18 14:15:28</td>
        <td>IBM Concert Software 1.0.0 through 1.1.0 could allow a remote attacker to obtain sensitive information from allocated memory due to improper clearing of heap memory.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-1759">详情</a></td>
       </tr>
@@ -439,86 +519,6 @@
        <td>2025-08-16 14:15:27</td>
        <td>In the Linux kernel, the following vulnerability has been resolved: ksmbd: fix out-of-bound read in smb2_write ksmbd_smb2_check_message doesn't validate hdr->NextCommand. If ->NextCommand is bigger than Offset + Length of smb2 write, It will allow oversized smb2 write length. It will cause OOB read in smb2_write.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-3865">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>cd1bb3e011f4ca313998acc276c9d375</td>
-       <td>CVE-2023-32249</td>
-       <td>2025-08-16 14:15:27</td>
-       <td>In the Linux kernel, the following vulnerability has been resolved: ksmbd: not allow guest user on multichannel This patch return STATUS_NOT_SUPPORTED if binding session is guest.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-32249">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>bdf851eefa44e129e04553318d53bcac</td>
-       <td>CVE-2023-32246</td>
-       <td>2025-08-16 14:15:26</td>
-       <td>In the Linux kernel, the following vulnerability has been resolved: ksmbd: call rcu_barrier() in ksmbd_server_exit() racy issue is triggered the bug by racing between closing a connection and rmmod. In ksmbd, rcu_barrier() is not called at module unload time, so nothing prevents ksmbd from getting unloaded while it still has RCU callbacks pending. It leads to trigger unintended execution of kernel code locally and use to defeat protections such as Kernel Lockdown</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2023-32246">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4110d17fcc4d8fd5d29a3abc981963c6</td>
-       <td>CVE-2025-8878</td>
-       <td>2025-08-16 12:15:32</td>
-       <td>The The Paid Membership Plugin, Ecommerce, User Registration Form, Login Form, User Profile & Restrict Content – ProfilePress plugin for WordPress is vulnerable to arbitrary shortcode execution in all versions up to, and including, 4.16.4. This is due to the software allowing users to execute an action that does not properly validate a value before running do_shortcode. This makes it possible for unauthenticated attackers to execute arbitrary shortcodes.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-8878">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>925eb8ed64ee4171aae32a1f99fb9516</td>
-       <td>CVE-2025-8143</td>
-       <td>2025-08-16 12:15:31</td>
-       <td>The Soledad theme for WordPress is vulnerable to Stored Cross-Site Scripting via the ‘pcsml_smartlists_h’ parameter in all versions up to, and including, 8.6.7 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with Contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-8143">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>e53d67e5da06b1a7e3db7d49e1097f6b</td>
-       <td>CVE-2025-8142</td>
-       <td>2025-08-16 12:15:31</td>
-       <td>The Soledad theme for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 8.6.7 via the 'header_layout' parameter. This makes it possible for authenticated attackers, with Contributor-level access and above, to include and execute arbitrary .php files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where .php file types can be uploaded and included.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-8142">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>8a61c8174aac55a580fb71f1208edf76</td>
-       <td>CVE-2025-55285</td>
-       <td>2025-08-15 18:15:27</td>
-       <td>@backstage/plugin-scaffolder-backend is the backend for the default Backstage software templates. Prior to version 2.1.1, duplicate logging of the input values in the fetch:template action in the Scaffolder meant that some of the secrets were not properly redacted. If ${{ secrets.x }} is not passed through to fetch:template there is no impact. This issue has been resolved in 2.1.1 of the scaffolder-backend plugin. A workaround for this issue involves Template Authors removing the use of ${{ secrets }} being used as an argument to fetch:template.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-55285">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9fb31f0b7b2dea3475c125886420d5de</td>
-       <td>CVE-2025-9060</td>
-       <td>2025-08-15 17:15:34</td>
-       <td>A vulnerability has been found in the MSoft MFlash application that allows execution of arbitrary code on the server. The issue occurs in the integration configuration functionality that is only available to MFlash administrators. The vulnerability is related to insufficient validation of parameters when setting up security components. This issue affects MFlash v. 8.0 and possibly others. To mitigate apply 8.2-653 hotfix 11.06.2025 and above.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-9060">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c3e8b50c177ae1f1d15f8394e21c8ad3</td>
-       <td>CVE-2025-8996</td>
-       <td>2025-08-15 17:15:34</td>
-       <td>Missing Authorization vulnerability in Drupal Layout Builder Advanced Permissions allows Forceful Browsing.This issue affects Layout Builder Advanced Permissions: from 0.0.0 before 2.2.0.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-8996">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>72133a721787321b951a3cfc17b29010</td>
-       <td>CVE-2025-8995</td>
-       <td>2025-08-15 17:15:34</td>
-       <td>Authentication Bypass Using an Alternate Path or Channel vulnerability in Drupal Authenticator Login allows Authentication Bypass.This issue affects Authenticator Login: from 0.0.0 before 2.1.4.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-8995">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c982d5f3a7d040d4f317d18de4647252</td>
-       <td>CVE-2025-8675</td>
-       <td>2025-08-15 17:15:33</td>
-       <td>Server-Side Request Forgery (SSRF) vulnerability in Drupal AI SEO Link Advisor allows Server Side Request Forgery.This issue affects AI SEO Link Advisor: from 0.0.0 before 1.0.6.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-8675">详情</a></td>
       </tr>
 
      </tbody>
