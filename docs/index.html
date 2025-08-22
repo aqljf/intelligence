@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2025-08-21 09:09:10 -->
+<!-- RELEASE TIME : 2025-08-22 09:10:09 -->
 <html lang="zh-cn">
 
  <head>
@@ -282,9 +282,89 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>2a8dfc9328b3ac60be2c63c664a602d7</td>
+       <td>CVE-2025-7051</td>
+       <td>2025-08-21 18:15:37 <img src="imgs/new.gif" /></td>
+       <td>On N-central, it is possible for any authenticated user to read, write and modify syslog configuration across customers on an N-central server. This vulnerability is present in all deployments of N-central prior to 2025.2.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-7051">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3369832a73d452aee11ed1156a83bacb</td>
+       <td>CVE-2025-57768</td>
+       <td>2025-08-21 18:15:36 <img src="imgs/new.gif" /></td>
+       <td>Phproject is a high performance full-featured project management system. From 1.8.0 to before 1.8.3, a Stored Cross-Site Scripting (XSS) vulnerability exists in the Planned Hours field when creating a new project. When sending a POST request to /issues/new/, the value provided in the Planned Hours field is included in the server response without any HTML encoding or sanitization. Because of this, an attacker can craft a malicious payload such as <script>alert(1)</script> and include it in the planned_hours parameter. The server reflects the input directly in the HTML of the project creation page, causing the browser to interpret and execute it. This vulnerability is fixed in 1.8.3.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-57768">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>1813f7815a15c1014c604e3cb338020c</td>
+       <td>CVE-2025-55524</td>
+       <td>2025-08-21 18:15:35 <img src="imgs/new.gif" /></td>
+       <td>Insecure permissions in Agent-Zero v0.8.* allow attackers to arbitrarily reset the system via unspecified vectors.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-55524">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7735e524b46521c62cb9b299a9f3b43d</td>
+       <td>CVE-2025-55523</td>
+       <td>2025-08-21 18:15:34 <img src="imgs/new.gif" /></td>
+       <td>An issue in the component /api/download_work_dir_file.py of Agent-Zero v0.8.* allows attackers to execute a directory traversal.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-55523">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>909580688ff81c3a7e07cff82ba1912f</td>
+       <td>CVE-2025-52352</td>
+       <td>2025-08-21 18:15:34 <img src="imgs/new.gif" /></td>
+       <td>Aikaan IoT management platform v3.25.0325-5-g2e9c59796 provides a configuration to disable user sign-up in distributed deployments by hiding the sign-up option on the login page UI. However, the sign-up API endpoint remains publicly accessible and functional, allowing unauthenticated users to register accounts via APIs even when the feature is disabled. This leads to authentication bypass and unauthorized access to admin portals, violating intended access controls.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-52352">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>7e69ff7c5731eeceba294e14466f50db</td>
+       <td>CVE-2025-52351</td>
+       <td>2025-08-21 18:15:34 <img src="imgs/new.gif" /></td>
+       <td>Aikaan IoT management platform v3.25.0325-5-g2e9c59796 sends a newly generated password to users in plaintext via email and also includes the same password as a query parameter in the account activation URL (e.g., https://domain.com/activate=xyz). This practice can result in password exposure via browser history, proxy logs, referrer headers, and email caching. The vulnerability impacts user credential confidentiality during initial onboarding.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-52351">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>72e5fb849ccd40e24ec2081dcdd159eb</td>
+       <td>CVE-2025-43754</td>
+       <td>2025-08-21 18:15:33 <img src="imgs/new.gif" /></td>
+       <td>Username enumeration vulnerability in Liferay Portal 7.4.0 through 7.4.3.132, and Liferay DXP 2024.Q4.0 through 2024.Q4.7, 2024.Q3.0 through 2024.Q3.13, 2024.Q2.0 through 2024.Q2.13, 2024.Q1.1 through 2024.Q1.14 and 7.4 GA through update 92 allows attackers to determine if an account exist in the application by inspecting the server processing time of the login request.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-43754">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>60b0f7f95348130d7887bc54e00d9636</td>
+       <td>CVE-2024-50641</td>
+       <td>2025-08-21 18:15:33 <img src="imgs/new.gif" /></td>
+       <td>An authentication bypass vulnerability in PandoraNext-TokensTool v0.6.8 and before. An attacker can exploit this vulnerability to access API without any token.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-50641">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9426aba11be65fe695229c6d938fed57</td>
+       <td>CVE-2025-9311</td>
+       <td>2025-08-21 17:15:33 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability was identified in itsourcecode Apartment Management System 1.0. Affected by this issue is some unknown functionality of the file /fair/addfair.php. The manipulation of the argument ID leads to sql injection. Remote exploitation of the attack is possible. The exploit is publicly available and might be used.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-9311">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>55db618c7733f49574e1f8c045619952</td>
+       <td>CVE-2025-9310</td>
+       <td>2025-08-21 17:15:33 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability was determined in yeqifu carRental up to 3fabb7eae93d209426638863980301d6f99866b3. Affected by this vulnerability is an unknown functionality of the file /carRental_war/druid/login.html of the component Druid. Executing manipulation can lead to hard-coded credentials. The attack may be launched remotely. The exploit has been publicly disclosed and may be utilized. This product operates on a rolling release basis, ensuring continuous delivery. Consequently, there are no version details for either affected or updated releases.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-9310">详情</a></td>
+      </tr>
+
+      <tr>
        <td>58bb7fc4d2bbc341a51d794a4804cffc</td>
        <td>CVE-2025-9239</td>
-       <td>2025-08-20 18:30:23 <img src="imgs/new.gif" /></td>
+       <td>2025-08-20 18:30:23</td>
        <td>A vulnerability was identified in elunez eladmin up to 2.7. Affected by this vulnerability is the...</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-9239">详情</a></td>
       </tr>
@@ -292,7 +372,7 @@
       <tr>
        <td>2241a8aa9b8b0e6388276f7e4f37af6a</td>
        <td>CVE-2025-9238</td>
-       <td>2025-08-20 18:30:22 <img src="imgs/new.gif" /></td>
+       <td>2025-08-20 18:30:22</td>
        <td>A vulnerability was determined in Swatadru Exam-Seating-Arrangement up to...</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-9238">详情</a></td>
       </tr>
@@ -300,7 +380,7 @@
       <tr>
        <td>8946d5bb9baf6d528f9dd57bf94c7ece</td>
        <td>CVE-2025-9237</td>
-       <td>2025-08-20 18:30:22 <img src="imgs/new.gif" /></td>
+       <td>2025-08-20 18:30:22</td>
        <td>A vulnerability was found in CodeAstro Ecommerce Website 1.0. This impacts an unknown function of...</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-9237">详情</a></td>
       </tr>
@@ -308,7 +388,7 @@
       <tr>
        <td>03d7d11df5ddadec7bb315fbc3424254</td>
        <td>CVE-2025-9236</td>
-       <td>2025-08-20 18:30:22 <img src="imgs/new.gif" /></td>
+       <td>2025-08-20 18:30:22</td>
        <td>A vulnerability has been found in Portabilis i-Diario up to 2.10. This affects an unknown...</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-9236">详情</a></td>
       </tr>
@@ -316,7 +396,7 @@
       <tr>
        <td>9657b1d38e19275b985bae0431d2557c</td>
        <td>CVE-2025-47054</td>
-       <td>2025-08-20 18:30:22 <img src="imgs/new.gif" /></td>
+       <td>2025-08-20 18:30:22</td>
        <td>Adobe Experience Manager versions 6.5.22 and earlier are affected by a DOM-based Cross-Site...</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-47054">详情</a></td>
       </tr>
@@ -324,7 +404,7 @@
       <tr>
        <td>761327f8dd9a8ecd5fdee4d7819ea6f1</td>
        <td>CVE-2024-53495</td>
-       <td>2025-08-20 18:30:22 <img src="imgs/new.gif" /></td>
+       <td>2025-08-20 18:30:22</td>
        <td>Incorrect access control in the preHandle function of my-site v1.0.2.RELEASE allows attackers to...</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-53495">详情</a></td>
       </tr>
@@ -332,7 +412,7 @@
       <tr>
        <td>00dacc0fe8cac72cb0ed273c20173a82</td>
        <td>CVE-2025-55746</td>
-       <td>2025-08-20 17:58:06 <img src="imgs/new.gif" /></td>
+       <td>2025-08-20 17:58:06</td>
        <td>Directus is a real-time API and App dashboard for managing SQL database content. From 10.8.0 to before 11.9.3, a vulnerability exists in the file update mechanism which allows an unauthenticated actor to modify existing files with arbitrary contents (without changes being applied to the files' database-resident metadata) and / or upload new files, with arbitrary content and extensions, which won't show up in the Directus UI. This vulnerability is fixed in 11.9.3.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-55746">详情</a></td>
       </tr>
@@ -340,7 +420,7 @@
       <tr>
        <td>7bde20f76f563b131b903041e8da8dce</td>
        <td>CVE-2025-9235</td>
-       <td>2025-08-20 17:15:39 <img src="imgs/new.gif" /></td>
+       <td>2025-08-20 17:15:39</td>
        <td>A flaw has been found in Scada-LTS up to 2.7.8.1. The impacted element is an unknown function of the file compound_events.shtm. This manipulation of the argument Name causes cross site scripting. The attack is possible to be carried out remotely. The exploit has been published and may be used.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-9235">详情</a></td>
       </tr>
@@ -348,7 +428,7 @@
       <tr>
        <td>cc2443c36130c305b072553abbb029ef</td>
        <td>CVE-2025-9234</td>
-       <td>2025-08-20 17:15:38 <img src="imgs/new.gif" /></td>
+       <td>2025-08-20 17:15:38</td>
        <td>A vulnerability was detected in Scada-LTS up to 2.7.8.1. The affected element is an unknown function of the file maintenance_events.shtm. The manipulation of the argument Alias results in cross site scripting. The attack can be executed remotely. The exploit is now public and may be used.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-9234">详情</a></td>
       </tr>
@@ -356,7 +436,7 @@
       <tr>
        <td>bd579ee0aed36575467e82cbd8e1406e</td>
        <td>CVE-2025-8612</td>
-       <td>2025-08-20 17:15:38 <img src="imgs/new.gif" /></td>
+       <td>2025-08-20 17:15:38</td>
        <td>AOMEI Backupper Workstation Link Following Local Privilege Escalation Vulnerability. This vulnerability allows local attackers to escalate privileges on affected installations of AOMEI Backupper Workstation. An attacker must first obtain the ability to execute low-privileged code on the target system in order to exploit this vulnerability. User interaction on the part of an administrator is needed additionally. The specific flaw exists within the restore functionality. By creating a junction, an attacker can abuse the service to create arbitrary files. An attacker can leverage this vulnerability to escalate privileges and execute arbitrary code in the context of SYSTEM. Was ZDI-CAN-27059.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-8612">详情</a></td>
       </tr>
@@ -439,86 +519,6 @@
        <td>2025-08-19 17:15:39</td>
        <td>In the Linux kernel, the following vulnerability has been resolved: bpf: handle jset (if a & b ...) as a jump in CFG computation BPF_JSET is a conditional jump and currently verifier.c:can_jump() does not know about that. This can lead to incorrect live registers and SCC computation. E.g. in the following example: 1: r0 = 1; 2: r2 = 2; 3: if r1 & 0x7 goto +1; 4: exit; 5: r0 = r2; 6: exit; W/o this fix insn_successors(3) will return only (4), a jump to (5) would be missed and r2 won't be marked as alive at (3).</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-38607">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d7b31498917af2e9d6aaffb21684c8c2</td>
-       <td>CVE-2025-54421</td>
-       <td>2025-08-18 16:15:29</td>
-       <td>NamelessMC is a free, easy to use & powerful website software for Minecraft servers. Cross-site scripting (XSS) vulnerability in NamelessMC before 2.2.4 allows remote authenticated attackers to inject arbitrary web script or HTML via the default_keywords crafted parameter. This vulnerability is fixed in 2.2.4.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-54421">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>186c362890fa9a216676c777d51d6f0e</td>
-       <td>CVE-2025-54118</td>
-       <td>2025-08-18 16:15:29</td>
-       <td>NamelessMC is a free, easy to use & powerful website software for Minecraft servers. Sensitive information disclosure in NamelessMC before 2.2.4 allows unauthenticated remote attacker to gain sensitive information such as absolute path of the source code via list parameter. This vulnerability is fixed in 2.2.4.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-54118">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9b450d7e86d27ab967c7602a6ce63476</td>
-       <td>CVE-2025-54117</td>
-       <td>2025-08-18 16:15:29</td>
-       <td>NamelessMC is a free, easy to use & powerful website software for Minecraft servers. Cross-site scripting (XSS) vulnerability in NamelessMC before 2.2.3 allows remote authenticated attackers to inject arbitrary web script or HTML via the dashboard text editor component. This vulnerability is fixed in 2.2.4.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-54117">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>83e31b46c2d0eb33f671f8142e9b0adb</td>
-       <td>CVE-2025-4962</td>
-       <td>2025-08-18 14:15:30</td>
-       <td>An Insecure Direct Object Reference (IDOR) vulnerability was identified in the `POST /v1/templates` endpoint of the Lunary API, affecting versions up to 0.8.8. This vulnerability allows authenticated users to create templates in another user's project by altering the `projectId` query parameter. The root cause of this issue is the absence of server-side validation to ensure that the authenticated user owns the specified `projectId`. The vulnerability has been addressed in version 1.9.23.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-4962">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>df45cdb683fee44300d1b8271d040172</td>
-       <td>CVE-2025-43732</td>
-       <td>2025-08-18 14:15:29</td>
-       <td>Liferay Portal 7.4.0 through 7.4.3.132, and Liferay DXP 2025.Q1.0 through 2025.Q1.10, 2024.Q4.0 through 2024.Q4.7, 2024.Q3.1 through 2024.Q3.13, 2024.Q2.1 through 2024.Q2.13, 2024.Q1.1 through 2024.Q1.17 and 7.4 GA through update 92 is vulnerable to Insecure Direct Object Reference (IDOR) in the groupId parameter of the _com_liferay_roles_selector_web_portlet_RolesSelectorPortlet_groupId. When an organization administrator modifies this parameter id value, they can gain unauthorized access to user lists from other organizations.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-43732">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>bff131a6e4ab7d9b3cf4be15ba4e01e1</td>
-       <td>CVE-2025-36120</td>
-       <td>2025-08-18 14:15:29</td>
-       <td>IBM Storage Virtualize 8.4, 8.5, 8.6, and 8.7 could allow an authenticated user to escalate their privileges in an SSH session due to incorrect authorization checks to access resources.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-36120">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>69b42c898a008c7107cfcc9b9e664f2e</td>
-       <td>CVE-2025-33100</td>
-       <td>2025-08-18 14:15:29</td>
-       <td>IBM Concert Software 1.0.0 through 1.1.0 contains hard-coded credentials, such as a password or cryptographic key, which it uses for its own inbound authentication, outbound communication to external components, or encryption of internal data.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-33100">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>43e32f30fdf91f92a259484a24e5c318</td>
-       <td>CVE-2025-33090</td>
-       <td>2025-08-18 14:15:28</td>
-       <td>IBM Concert Software 1.0.0 through 1.1.0 could allow a remote attacker to cause a denial of service using a specially crafted regular expression that would cause excessive resource consumption.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-33090">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4e3a21cb1d1511c493418a8a6c1e7454</td>
-       <td>CVE-2025-27909</td>
-       <td>2025-08-18 14:15:28</td>
-       <td>IBM Concert Software 1.0.0 through 1.1.0 uses cross-origin resource sharing (CORS) which could allow an attacker to carry out privileged actions as the domain name is not being limited to only trusted domains.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-27909">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b611b856d48736970a484753a14f1430</td>
-       <td>CVE-2025-1759</td>
-       <td>2025-08-18 14:15:28</td>
-       <td>IBM Concert Software 1.0.0 through 1.1.0 could allow a remote attacker to obtain sensitive information from allocated memory due to improper clearing of heap memory.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-1759">详情</a></td>
       </tr>
 
      </tbody>
