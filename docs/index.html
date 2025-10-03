@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2025-10-02 09:10:07 -->
+<!-- RELEASE TIME : 2025-10-03 09:09:08 -->
 <html lang="zh-cn">
 
  <head>
@@ -282,6 +282,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>6583b6d5b07e9368e4526e247b3a2631</td>
+       <td>CVE-2025-54468</td>
+       <td>2025-10-02 10:00:18 <img src="imgs/new.gif" /></td>
+       <td>A vulnerability has been identified within Rancher Manager whereby `Impersonate-Extra-*` headers are being sent to an external entity, for example `amazonaws.com`, via the `/meta/proxy` Rancher endpoint. These headers may contain identifiable and/or sensitive information e.g. email addresses.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-54468">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2866c6161f86f2d2f10e470d2379f598</td>
+       <td>CVE-2025-61735</td>
+       <td>2025-10-02 09:47:49 <img src="imgs/new.gif" /></td>
+       <td>Server-Side Request Forgery (SSRF) vulnerability in Apache Kylin. This issue affects Apache Kylin: from 4.0.0 through 5.0.2. You are fine as long as the Kylin's system and project admin access is well protected. Users are recommended to upgrade to version 5.0.3, which fixes the issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-61735">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>4b13df52e22d9d28f7096566b545c116</td>
+       <td>CVE-2025-61733</td>
+       <td>2025-10-02 09:47:39 <img src="imgs/new.gif" /></td>
+       <td>Authentication Bypass Using an Alternate Path or Channel vulnerability in Apache Kylin. This issue affects Apache Kylin: from 4.0.0 through 5.0.2. Users are recommended to upgrade to version 5.0.3, which fixes the issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-61733">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9fdcdd0fe8f1f333cd5ea8976823f266</td>
+       <td>CVE-2025-61734</td>
+       <td>2025-10-02 09:47:15 <img src="imgs/new.gif" /></td>
+       <td>Files or Directories Accessible to External Parties vulnerability in Apache Kylin. You are fine as long as the Kylin's system and project admin access is well protected. This issue affects Apache Kylin: from 4.0.0 through 5.0.2. Users are recommended to upgrade to version 5.0.3, which fixes the issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-61734">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e28c7f141d68525438b14a84565294be</td>
+       <td>CVE-2025-40646</td>
+       <td>2025-10-02 09:42:30 <img src="imgs/new.gif" /></td>
+       <td>Exposure of sensitive information in Viday. This vulnerability could allow an attacker to obtain sensitive information about customers by intercepting HTTP requests and searching for the JWT containing sensitive user information in the JWT payload.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-40646">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b161b501c973d20620f12371f6009ea8</td>
+       <td>CVE-2025-40645</td>
+       <td>2025-10-02 09:41:36 <img src="imgs/new.gif" /></td>
+       <td>Exposure of sensitive information in Viday. This vulnerability could allow an unauthenticated attacker to obtain sensitive information about customers by sending an HTTP GET request to “/api/reserva/web/clients” using the “phone” parameter.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-40645">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>16b24656233ebc2907310dc114111b35</td>
+       <td>CVE-2025-54292</td>
+       <td>2025-10-02 09:26:39 <img src="imgs/new.gif" /></td>
+       <td>Path traversal in Canonical LXD LXD-UI versions before 6.5 and 5.21.4 on all platforms allows remote authenticated attackers to access or modify unintended resources via crafted resource names embedded in URL paths.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-54292">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>aaa3afb7cafb73ab26c167a7f7e67f70</td>
+       <td>CVE-2025-54291</td>
+       <td>2025-10-02 09:25:42 <img src="imgs/new.gif" /></td>
+       <td>Information disclosure in images API in Canonical LXD before 6.5 and 5.21.4 on all platforms allows unauthenticated remote attackers to determine project existence via differing HTTP status code responses.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-54291">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6a36192c6b38ea4dd2f53354fb502cfb</td>
+       <td>CVE-2025-54290</td>
+       <td>2025-10-02 09:24:12 <img src="imgs/new.gif" /></td>
+       <td>Information disclosure in image export API in Canonical LXD before 6.5 and 5.21.4 on Linux allows network attackers to determine project existence without authentication via crafted requests using wildcard fingerprints.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-54290">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>56250fe271f5155b11641ca3e9c8c002</td>
+       <td>CVE-2025-54289</td>
+       <td>2025-10-02 09:23:03 <img src="imgs/new.gif" /></td>
+       <td>Privilege Escalation in operations API in Canonical LXD 6.5 on multiple platforms allows attacker with read permissions to hijack terminal or console sessions and execute arbitrary commands via WebSocket connection hijacking format</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-54289">详情</a></td>
+      </tr>
+
+      <tr>
        <td>fac24adb8b704d1a12c1555112c35280</td>
        <td>CVE-2025-56392</td>
        <td>2025-09-30 20:15:39</td>
@@ -439,86 +519,6 @@
        <td>2025-09-30 04:27:06</td>
        <td>The LatePoint – Calendar Booking Plugin for Appointments and Events plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the ‘service[name]’ parameter in all versions up to, and including, 5.1.94 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with administrator-level access, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page. This only affects multi-site installations and installations where unfiltered_html has been disabled.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-6815">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5ccd4d2dbec8f1b767c2b82d0a69e84d</td>
-       <td>CVE-2024-5200</td>
-       <td>2025-09-29 06:15:34</td>
-       <td>The Postie WordPress plugin before 1.9.71 does not sanitise and escape some of its settings, which could allow high privilege users such as admin to perform Stored Cross-Site Scripting attacks even when the unfiltered_html capability is disallowed (for example in multisite setup).</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2024-5200">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>29c90c5616b282161bbf8a7b24d0e9fb</td>
-       <td>CVE-2025-11141</td>
-       <td>2025-09-29 05:15:33</td>
-       <td>A security flaw has been discovered in Ruijie NBR2100G-E up to 20250919. Affected by this issue is the function listAction of the file /itbox_pi/branch_passw.php?a=list. Performing manipulation of the argument city results in os command injection. The attack is possible to be carried out remotely. The exploit has been released to the public and may be exploited. Other parameters might be affected as well. The vendor was contacted early about this disclosure but did not respond in any way.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-11141">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6d728e8211025533af059b0972d20578</td>
-       <td>CVE-2025-10504</td>
-       <td>2025-09-29 05:15:32</td>
-       <td>Heap-based Buffer Overflow vulnerability in ABB Terra AC wallbox.This issue affects Terra AC wallbox: through 1.8.33.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-10504">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0abb0a26c66333042d3f2baefb8cd2a4</td>
-       <td>CVE-2025-11140</td>
-       <td>2025-09-29 04:15:40</td>
-       <td>A vulnerability was identified in Bjskzy Zhiyou ERP up to 11.0. Affected by this vulnerability is the function openForm of the component com.artery.richclient.RichClientService. Such manipulation of the argument contentString leads to xml external entity reference. The attack can be executed remotely. The exploit is publicly available and might be used. The vendor was contacted early about this disclosure but did not respond in any way.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-11140">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c1f0223d34376c3f3d08d746da295b33</td>
-       <td>CVE-2025-11139</td>
-       <td>2025-09-29 04:15:38</td>
-       <td>A vulnerability was determined in Bjskzy Zhiyou ERP up to 11.0. Affected is the function uploadStudioFile of the component com.artery.form.services.FormStudioUpdater. This manipulation of the argument filepath causes path traversal. Remote exploitation of the attack is possible. The exploit has been publicly disclosed and may be utilized. The vendor was contacted early about this disclosure but did not respond in any way.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-11139">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b7cbf43af56ac84b103d6637e94cecf5</td>
-       <td>CVE-2025-11134</td>
-       <td>2025-09-29 03:30:19</td>
-       <td>A security vulnerability has been detected in Cudy TR1200 1.16.3-20230804-164635. Impacted is an...</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-11134">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0330b4b1206f8059df4465b9710549ce</td>
-       <td>CVE-2025-11138</td>
-       <td>2025-09-29 03:15:42</td>
-       <td>A vulnerability was found in mirweiye wenkucms up to 3.4. This impacts the function createPathOne of the file app/common/common.php. The manipulation results in os command injection. The attack may be launched remotely. The exploit has been made public and could be used.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-11138">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>1562bedf43660106ed580078c0e3627d</td>
-       <td>CVE-2025-11137</td>
-       <td>2025-09-29 03:15:42</td>
-       <td>A vulnerability has been found in Gstarsoft GstarCAD up to 9.4.0. This affects an unknown function of the component File Renaming Handler. The manipulation leads to cross site scripting. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. Applying a patch is the recommended action to fix this issue.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-11137">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>105d497adbc09f0ffebe5f73fa4cc4a0</td>
-       <td>CVE-2025-11135</td>
-       <td>2025-09-29 02:15:31</td>
-       <td>A vulnerability was detected in pmTicket Project-Management-Software up to 2ef379da2075f4761a2c9029cf91d073474e7486. The affected element is the function loadLanguage of the file classes/class.database.php of the component Cookie Handler. Performing manipulation of the argument user_id results in deserialization. The attack can be initiated remotely. The exploit is now public and may be used. Continious delivery with rolling releases is used by this product. Therefore, no version details of affected nor updated releases are available. The vendor was contacted early about this disclosure but did not respond in any way.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-11135">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a3a6b6240384caf89cb7935626c27682</td>
-       <td>CVE-2025-11136</td>
-       <td>2025-09-29 02:02:05</td>
-       <td>A flaw has been found in YiFang CMS up to 2.0.2. The impacted element is the function webUploader of the file app/app/controller/File.php of the component Backend. Executing manipulation of the argument uploadpath can lead to unrestricted upload. The attack can be launched remotely. The exploit has been published and may be used.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-11136">详情</a></td>
       </tr>
 
      </tbody>
