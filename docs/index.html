@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2025-10-09 09:09:08 -->
+<!-- RELEASE TIME : 2025-10-10 09:09:09 -->
 <html lang="zh-cn">
 
  <head>
@@ -282,9 +282,89 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>620dc235a0dda28e220bb7a3518355e6</td>
+       <td>CVE-2025-9371</td>
+       <td>2025-10-09 12:15:35 <img src="imgs/new.gif" /></td>
+       <td>The Betheme theme for WordPress is vulnerable to Stored Cross-Site Scripting via the ‘page_title’ parameter in all versions up to, and including, 28.1.6 due to insufficient input sanitization and output escaping of theme breadcrumbs. This makes it possible for authenticated attackers, with Contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-9371">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5d5d6abad75feec5575b1ae684eadbb9</td>
+       <td>CVE-2025-2934</td>
+       <td>2025-10-09 12:15:35 <img src="imgs/new.gif" /></td>
+       <td>GitLab has remediated an issue in GitLab CE/EE affecting all versions from 5.2 prior to 18.2.8, 18.3 prior to 18.3.4, and 18.4 prior to 18.4.2 that could have allowed an authenticated attacker to create a denial of service condition by configuring malicious webhook endpoints that send crafted HTTP responses.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-2934">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8aefa15836b97a3238a6d43cd7c0d4f0</td>
+       <td>CVE-2025-11340</td>
+       <td>2025-10-09 12:15:35 <img src="imgs/new.gif" /></td>
+       <td>GitLab has remediated an issue in GitLab EE affecting all versions from 18.3 to 18.3.4, 18.4 to 18.4.2 that, under certain conditions, could have allowed authenticated users with read-only API tokens to perform unauthorized write operations on vulnerability records by exploiting incorrectly scoped GraphQL mutations.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-11340">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c3c82b4996d7c5239031d600094e8e56</td>
+       <td>CVE-2025-10249</td>
+       <td>2025-10-09 12:15:34 <img src="imgs/new.gif" /></td>
+       <td>The Slider Revolution plugin for WordPress is vulnerable to unauthorized access and modification of data due to a missing capability check on several functions in all versions up to, and including, 6.7.37. This makes it possible for authenticated attackers, with Contributor-level access and above, to install and activate plugin add-ons, create sliders, and download arbitrary files.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-10249">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>231cb2a6360d3f2f2aab7864317557bf</td>
+       <td>CVE-2025-10004</td>
+       <td>2025-10-09 12:15:34 <img src="imgs/new.gif" /></td>
+       <td>GitLab has remediated an issue in GitLab CE/EE affecting all versions from 13.12 to 18.2.8, 18.3 to 18.3.4, and 18.4 to 18.4.2 that could make the GitLab instance unresponsive or severely degraded by sending crafted GraphQL queries requesting large repository blobs.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-10004">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ca6b307a2849ab99b5668ddd28508413</td>
+       <td>CVE-2025-39959</td>
+       <td>2025-10-09 10:15:38 <img src="imgs/new.gif" /></td>
+       <td>In the Linux kernel, the following vulnerability has been resolved: ASoC: amd: acp: Fix incorrect retrival of acp_chip_info Use dev_get_drvdata(dev->parent) instead of dev_get_platdata(dev) to correctly obtain acp_chip_info members in the acp I2S driver. Previously, some members were not updated properly due to incorrect data access, which could potentially lead to null pointer dereferences. This issue was missed in the earlier commit ("ASoC: amd: acp: Fix NULL pointer deref in acp_i2s_set_tdm_slot"), which only addressed set_tdm_slot(). This change ensures that all relevant functions correctly retrieve acp_chip_info, preventing further null pointer dereference issues.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-39959">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6fe00e940d45f21b875931cba45b483c</td>
+       <td>CVE-2025-39958</td>
+       <td>2025-10-09 10:15:37 <img src="imgs/new.gif" /></td>
+       <td>In the Linux kernel, the following vulnerability has been resolved: iommu/s390: Make attach succeed when the device was surprise removed When a PCI device is removed with surprise hotplug, there may still be attempts to attach the device to the default domain as part of tear down via (__iommu_release_dma_ownership()), or because the removal happens during probe (__iommu_probe_device()). In both cases zpci_register_ioat() fails with a cc value indicating that the device handle is invalid. This is because the device is no longer part of the instance as far as the hypervisor is concerned. Currently this leads to an error return and s390_iommu_attach_device() fails. This triggers the WARN_ON() in __iommu_group_set_domain_nofail() because attaching to the default domain must never fail. With the device fenced by the hypervisor no DMAs to or from memory are possible and the IOMMU translations have no effect. Proceed as if the registration was successful and let the hotplug event handling clean up the device. This is similar to how devices in the error state are handled since commit 59bbf596791b ("iommu/s390: Make attach succeed even if the device is in error state") except that for removal the domain will not be registered later. This approach was also previously discussed at the link. Handle both cases, error state and removal, in a helper which checks if the error needs to be propagated or ignored. Avoid magic number condition codes by using the pre-existing, but never used, defines for PCI load/store condition codes and rename them to reflect that they apply to all PCI instructions.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-39958">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>062670ee2b8c6956874a38b6180f7c6f</td>
+       <td>CVE-2025-39957</td>
+       <td>2025-10-09 10:15:37 <img src="imgs/new.gif" /></td>
+       <td>In the Linux kernel, the following vulnerability has been resolved: wifi: mac80211: increase scan_ies_len for S1G Currently the S1G capability element is not taken into account for the scan_ies_len, which leads to a buffer length validation failure in ieee80211_prep_hw_scan() and subsequent WARN in __ieee80211_start_scan(). This prevents hw scanning from functioning. To fix ensure we accommodate for the S1G capability length.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-39957">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>934d9ee90259aa1328f70fa4bcfc5d46</td>
+       <td>CVE-2025-39956</td>
+       <td>2025-10-09 10:15:36 <img src="imgs/new.gif" /></td>
+       <td>In the Linux kernel, the following vulnerability has been resolved: igc: don't fail igc_probe() on LED setup error When igc_led_setup() fails, igc_probe() fails and triggers kernel panic in free_netdev() since unregister_netdev() is not called. [1] This behavior can be tested using fault-injection framework, especially the failslab feature. [2] Since LED support is not mandatory, treat LED setup failures as non-fatal and continue probe with a warning message, consequently avoiding the kernel panic. [1] kernel BUG at net/core/dev.c:12047! Oops: invalid opcode: 0000 [#1] SMP NOPTI CPU: 0 UID: 0 PID: 937 Comm: repro-igc-led-e Not tainted 6.17.0-rc4-enjuk-tnguy-00865-gc4940196ab02 #64 PREEMPT(voluntary) Hardware name: QEMU Standard PC (Q35 + ICH9, 2009), BIOS 1.16.3-debian-1.16.3-2 04/01/2014 RIP: 0010:free_netdev+0x278/0x2b0 [...] Call Trace: <TASK> igc_probe+0x370/0x910 local_pci_probe+0x3a/0x80 pci_device_probe+0xd1/0x200 [...] [2] #!/bin/bash -ex FAILSLAB_PATH=/sys/kernel/debug/failslab/ DEVICE=0000:00:05.0 START_ADDR=$(grep " igc_led_setup" /proc/kallsyms \ | awk '{printf("0x%s", $1)}') END_ADDR=$(printf "0x%x" $((START_ADDR + 0x100))) echo $START_ADDR > $FAILSLAB_PATH/require-start echo $END_ADDR > $FAILSLAB_PATH/require-end echo 1 > $FAILSLAB_PATH/times echo 100 > $FAILSLAB_PATH/probability echo N > $FAILSLAB_PATH/ignore-gfp-wait echo $DEVICE > /sys/bus/pci/drivers/igc/bind</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-39956">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>83564f164a862b456efd44757e6d242a</td>
+       <td>CVE-2025-39955</td>
+       <td>2025-10-09 10:15:36 <img src="imgs/new.gif" /></td>
+       <td>In the Linux kernel, the following vulnerability has been resolved: tcp: Clear tcp_sk(sk)->fastopen_rsk in tcp_disconnect(). syzbot reported the splat below where a socket had tcp_sk(sk)->fastopen_rsk in the TCP_ESTABLISHED state. [0] syzbot reused the server-side TCP Fast Open socket as a new client before the TFO socket completes 3WHS: 1. accept() 2. connect(AF_UNSPEC) 3. connect() to another destination As of accept(), sk->sk_state is TCP_SYN_RECV, and tcp_disconnect() changes it to TCP_CLOSE and makes connect() possible, which restarts timers. Since tcp_disconnect() forgot to clear tcp_sk(sk)->fastopen_rsk, the retransmit timer triggered the warning and the intended packet was not retransmitted. Let's call reqsk_fastopen_remove() in tcp_disconnect(). [0]: WARNING: CPU: 2 PID: 0 at net/ipv4/tcp_timer.c:542 tcp_retransmit_timer (net/ipv4/tcp_timer.c:542 (discriminator 7)) Modules linked in: CPU: 2 UID: 0 PID: 0 Comm: swapper/2 Not tainted 6.17.0-rc5-g201825fb4278 #62 PREEMPT(voluntary) Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS 1.16.3-debian-1.16.3-2 04/01/2014 RIP: 0010:tcp_retransmit_timer (net/ipv4/tcp_timer.c:542 (discriminator 7)) Code: 41 55 41 54 55 53 48 8b af b8 08 00 00 48 89 fb 48 85 ed 0f 84 55 01 00 00 0f b6 47 12 3c 03 74 0c 0f b6 47 12 3c 04 74 04 90 <0f> 0b 90 48 8b 85 c0 00 00 00 48 89 ef 48 8b 40 30 e8 6a 4f 06 3e RSP: 0018:ffffc900002f8d40 EFLAGS: 00010293 RAX: 0000000000000002 RBX: ffff888106911400 RCX: 0000000000000017 RDX: 0000000002517619 RSI: ffffffff83764080 RDI: ffff888106911400 RBP: ffff888106d5c000 R08: 0000000000000001 R09: ffffc900002f8de8 R10: 00000000000000c2 R11: ffffc900002f8ff8 R12: ffff888106911540 R13: ffff888106911480 R14: ffff888106911840 R15: ffffc900002f8de0 FS: 0000000000000000(0000) GS:ffff88907b768000(0000) knlGS:0000000000000000 CS: 0010 DS: 0000 ES: 0000 CR0: 0000000080050033 CR2: 00007f8044d69d90 CR3: 0000000002c30003 CR4: 0000000000370ef0 Call Trace: <IRQ> tcp_write_timer (net/ipv4/tcp_timer.c:738) call_timer_fn (kernel/time/timer.c:1747) __run_timers (kernel/time/timer.c:1799 kernel/time/timer.c:2372) timer_expire_remote (kernel/time/timer.c:2385 kernel/time/timer.c:2376 kernel/time/timer.c:2135) tmigr_handle_remote_up (kernel/time/timer_migration.c:944 kernel/time/timer_migration.c:1035) __walk_groups.isra.0 (kernel/time/timer_migration.c:533 (discriminator 1)) tmigr_handle_remote (kernel/time/timer_migration.c:1096) handle_softirqs (./arch/x86/include/asm/jump_label.h:36 ./include/trace/events/irq.h:142 kernel/softirq.c:580) irq_exit_rcu (kernel/softirq.c:614 kernel/softirq.c:453 kernel/softirq.c:680 kernel/softirq.c:696) sysvec_apic_timer_interrupt (arch/x86/kernel/apic/apic.c:1050 (discriminator 35) arch/x86/kernel/apic/apic.c:1050 (discriminator 35)) </IRQ></td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-39955">详情</a></td>
+      </tr>
+
+      <tr>
        <td>0617b2490359a81405f1cca927843f7c</td>
        <td>CVE-2025-11474</td>
-       <td>2025-10-08 12:32:06 <img src="imgs/new.gif" /></td>
+       <td>2025-10-08 12:32:06</td>
        <td>A vulnerability was found in SourceCodester Hotel and Lodge Management System 1.0. Affected by this vulnerability is an unknown functionality of the file /edit_booking.php. Performing manipulation of the argument Name results in sql injection. The attack can be initiated remotely. The exploit has been made public and could be used.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-11474">详情</a></td>
       </tr>
@@ -292,7 +372,7 @@
       <tr>
        <td>df876a7b18f52d3b6399434cebbf920d</td>
        <td>CVE-2025-11473</td>
-       <td>2025-10-08 12:30:26 <img src="imgs/new.gif" /></td>
+       <td>2025-10-08 12:30:26</td>
        <td>A vulnerability has been found in SourceCodester Hotel and Lodge Management System 1.0. Affected...</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-11473">详情</a></td>
       </tr>
@@ -300,7 +380,7 @@
       <tr>
        <td>8233af682d4080a3a5d828c76b4b1071</td>
        <td>CVE-2025-11472</td>
-       <td>2025-10-08 12:30:26 <img src="imgs/new.gif" /></td>
+       <td>2025-10-08 12:30:26</td>
        <td>A flaw has been found in SourceCodester Hotel and Lodge Management System 1.0. This impacts an...</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-11472">详情</a></td>
       </tr>
@@ -308,7 +388,7 @@
       <tr>
        <td>918ff0be68c26a36633f4954f16dca91</td>
        <td>CVE-2025-11471</td>
-       <td>2025-10-08 12:30:26 <img src="imgs/new.gif" /></td>
+       <td>2025-10-08 12:30:26</td>
        <td>A vulnerability was detected in SourceCodester Hotel and Lodge Management System 1.0. This...</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-11471">详情</a></td>
       </tr>
@@ -316,7 +396,7 @@
       <tr>
        <td>7333a39bd8660b7dade08d3d474307ea</td>
        <td>CVE-2025-10649</td>
-       <td>2025-10-08 12:15:36 <img src="imgs/new.gif" /></td>
+       <td>2025-10-08 12:15:36</td>
        <td>The Welcart e-Commerce plugin for WordPress is vulnerable to SQL Injection via the cookie in all versions up to, and including, 2.11.21 due to insufficient escaping on the user supplied value and lack of sufficient preparation on the existing SQL query. This makes it possible for authenticated attackers, with Author-level access and above, to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-10649">详情</a></td>
       </tr>
@@ -324,7 +404,7 @@
       <tr>
        <td>b73eb34f279097c6f296d18ec5aa8f1c</td>
        <td>CVE-2025-10353</td>
-       <td>2025-10-08 11:15:34 <img src="imgs/new.gif" /></td>
+       <td>2025-10-08 11:15:34</td>
        <td>File upload leading to remote code execution (RCE) in the “melis-cms-slider” module of Melis Technology's Melis Platform. This vulnerability allows an attacker to upload a malicious file via a POST request to '/melis/MelisCmsSlider/MelisCmsSliderDetails/saveDetailsForm' using the 'mcsdetail_img' parameter.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-10353">详情</a></td>
       </tr>
@@ -332,7 +412,7 @@
       <tr>
        <td>2a53fb51543a3f1b1e2eb45fda580f8f</td>
        <td>CVE-2025-10352</td>
-       <td>2025-10-08 11:15:34 <img src="imgs/new.gif" /></td>
+       <td>2025-10-08 11:15:34</td>
        <td>Vulnerability in the melis-core module of Melis Technology's Melis Platform, which, if exploited, allows an unauthenticated attacker to create an administrator account via a request to '/melis/MelisCore/ToolUser/addNewUser'.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-10352">详情</a></td>
       </tr>
@@ -340,7 +420,7 @@
       <tr>
        <td>f7d9fb366f731f3ed99c773b14d6bbfc</td>
        <td>CVE-2025-10351</td>
-       <td>2025-10-08 10:45:36 <img src="imgs/new.gif" /></td>
+       <td>2025-10-08 10:45:36</td>
        <td>SQL injection vulnerability based on the melis-cms module of the Melis platform from Melis Technology. This vulnerability allows an attacker to retrieve, create, update, and delete databases through the 'idPage' parameter in the '/melis/MelisCms/PageEdition/getTinyTemplates' endpoint.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-10351">详情</a></td>
       </tr>
@@ -348,7 +428,7 @@
       <tr>
        <td>ca8498ccc2cdf94969cb9ca77d8174a3</td>
        <td>CVE-2025-11470</td>
-       <td>2025-10-08 10:15:37 <img src="imgs/new.gif" /></td>
+       <td>2025-10-08 10:15:37</td>
        <td>A security vulnerability has been detected in SourceCodester Hotel and Lodge Management System up to 1.0. The impacted element is an unknown function of the file /manage_website.php. The manipulation of the argument website_image/back_login_image leads to unrestricted upload. The attack is possible to be carried out remotely. The exploit has been disclosed publicly and may be used.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-11470">详情</a></td>
       </tr>
@@ -356,7 +436,7 @@
       <tr>
        <td>f5effb7e80d25c72958e3d9ca6e8618a</td>
        <td>CVE-2025-11469</td>
-       <td>2025-10-08 10:15:37 <img src="imgs/new.gif" /></td>
+       <td>2025-10-08 10:15:37</td>
        <td>A weakness has been identified in SourceCodester Hotel and Lodge Management System 1.0. The affected element is an unknown function of the file /pages/save_customer.php. Executing manipulation of the argument Contact can lead to sql injection. The attack can be executed remotely. The exploit has been made available to the public and could be exploited.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-11469">详情</a></td>
       </tr>
@@ -439,86 +519,6 @@
        <td>2025-10-06 03:15:32</td>
        <td>A vulnerability was identified in Tipray 厦门天锐科技股份有限公司 Data Leakage Prevention System 天锐数据泄露防护系统 1.0. This affects the function findRolePage of the file findSingConfigPage.do. The manipulation of the argument sort leads to sql injection. The attack is possible to be carried out remotely. The exploit is publicly available and might be used. The vendor was contacted early about this disclosure but did not respond in any way.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-11317">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>25b8b84f6edf228538ef7b4f94cab2a5</td>
-       <td>CVE-2025-39950</td>
-       <td>2025-10-04 08:15:48</td>
-       <td>In the Linux kernel, the following vulnerability has been resolved: net/tcp: Fix a NULL pointer dereference when using TCP-AO with TCP_REPAIR A NULL pointer dereference can occur in tcp_ao_finish_connect() during a connect() system call on a socket with a TCP-AO key added and TCP_REPAIR enabled. The function is called with skb being NULL and attempts to dereference it on tcp_hdr(skb)->seq without a prior skb validation. Fix this by checking if skb is NULL before dereferencing it. The commentary is taken from bpf_skops_established(), which is also called in the same flow. Unlike the function being patched, bpf_skops_established() validates the skb before dereferencing it. int main(void){ struct sockaddr_in sockaddr; struct tcp_ao_add tcp_ao; int sk; int one = 1; memset(&sockaddr,'\0',sizeof(sockaddr)); memset(&tcp_ao,'\0',sizeof(tcp_ao)); sk = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP); sockaddr.sin_family = AF_INET; memcpy(tcp_ao.alg_name,"cmac(aes128)",12); memcpy(tcp_ao.key,"ABCDEFGHABCDEFGH",16); tcp_ao.keylen = 16; memcpy(&tcp_ao.addr,&sockaddr,sizeof(sockaddr)); setsockopt(sk, IPPROTO_TCP, TCP_AO_ADD_KEY, &tcp_ao, sizeof(tcp_ao)); setsockopt(sk, IPPROTO_TCP, TCP_REPAIR, &one, sizeof(one)); sockaddr.sin_family = AF_INET; sockaddr.sin_port = htobe16(123); inet_aton("127.0.0.1", &sockaddr.sin_addr); connect(sk,(struct sockaddr *)&sockaddr,sizeof(sockaddr)); return 0; } $ gcc tcp-ao-nullptr.c -o tcp-ao-nullptr -Wall $ unshare -Urn BUG: kernel NULL pointer dereference, address: 00000000000000b6 PGD 1f648d067 P4D 1f648d067 PUD 1982e8067 PMD 0 Oops: Oops: 0000 [#1] SMP NOPTI Hardware name: VMware, Inc. VMware Virtual Platform/440BX Desktop Reference Platform, BIOS 6.00 11/12/2020 RIP: 0010:tcp_ao_finish_connect (net/ipv4/tcp_ao.c:1182)</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-39950">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>96b605d8c6082daabf08cd1751bcdea5</td>
-       <td>CVE-2025-39949</td>
-       <td>2025-10-04 08:15:48</td>
-       <td>In the Linux kernel, the following vulnerability has been resolved: qed: Don't collect too many protection override GRC elements In the protection override dump path, the firmware can return far too many GRC elements, resulting in attempting to write past the end of the previously-kmalloc'ed dump buffer. This will result in a kernel panic with reason: BUG: unable to handle kernel paging request at ADDRESS where "ADDRESS" is just past the end of the protection override dump buffer. The start address of the buffer is: p_hwfn->cdev->dbg_features[DBG_FEATURE_PROTECTION_OVERRIDE].dump_buf and the size of the buffer is buf_size in the same data structure. The panic can be arrived at from either the qede Ethernet driver path: [exception RIP: qed_grc_dump_addr_range+0x108] qed_protection_override_dump at ffffffffc02662ed [qed] qed_dbg_protection_override_dump at ffffffffc0267792 [qed] qed_dbg_feature at ffffffffc026aa8f [qed] qed_dbg_all_data at ffffffffc026b211 [qed] qed_fw_fatal_reporter_dump at ffffffffc027298a [qed] devlink_health_do_dump at ffffffff82497f61 devlink_health_report at ffffffff8249cf29 qed_report_fatal_error at ffffffffc0272baf [qed] qede_sp_task at ffffffffc045ed32 [qede] process_one_work at ffffffff81d19783 or the qedf storage driver path: [exception RIP: qed_grc_dump_addr_range+0x108] qed_protection_override_dump at ffffffffc068b2ed [qed] qed_dbg_protection_override_dump at ffffffffc068c792 [qed] qed_dbg_feature at ffffffffc068fa8f [qed] qed_dbg_all_data at ffffffffc0690211 [qed] qed_fw_fatal_reporter_dump at ffffffffc069798a [qed] devlink_health_do_dump at ffffffff8aa95e51 devlink_health_report at ffffffff8aa9ae19 qed_report_fatal_error at ffffffffc0697baf [qed] qed_hw_err_notify at ffffffffc06d32d7 [qed] qed_spq_post at ffffffffc06b1011 [qed] qed_fcoe_destroy_conn at ffffffffc06b2e91 [qed] qedf_cleanup_fcport at ffffffffc05e7597 [qedf] qedf_rport_event_handler at ffffffffc05e7bf7 [qedf] fc_rport_work at ffffffffc02da715 [libfc] process_one_work at ffffffff8a319663 Resolve this by clamping the firmware's return value to the maximum number of legal elements the firmware should return.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-39949">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a41eb487cea3386d82fe6b0512d627bb</td>
-       <td>CVE-2025-39940</td>
-       <td>2025-10-04 08:15:46</td>
-       <td>In the Linux kernel, the following vulnerability has been resolved: dm-stripe: fix a possible integer overflow There's a possible integer overflow in stripe_io_hints if we have too large chunk size. Test if the overflow happened, and if it did, don't set limits->io_min and limits->io_opt;</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-39940">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d864614b168d9c9e3cb9f78101c19102</td>
-       <td>CVE-2025-39946</td>
-       <td>2025-10-04 07:31:07</td>
-       <td>In the Linux kernel, the following vulnerability has been resolved: tls: make sure to abort the stream if headers are bogus Normally we wait for the socket to buffer up the whole record before we service it. If the socket has a tiny buffer, however, we read out the data sooner, to prevent connection stalls. Make sure that we abort the connection when we find out late that the record is actually invalid. Retrying the parsing is fine in itself but since we copy some more data each time before we parse we can overflow the allocated skb space. Constructing a scenario in which we're under pressure without enough data in the socket to parse the length upfront is quite hard. syzbot figured out a way to do this by serving us the header in small OOB sends, and then filling in the recvbuf with a large normal send. Make sure that tls_rx_msg_size() aborts strp, if we reach an invalid record there's really no way to recover.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-39946">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b1fcc294b04d1d66c7c4654db609bbbe</td>
-       <td>CVE-2025-39945</td>
-       <td>2025-10-04 07:31:07</td>
-       <td>In the Linux kernel, the following vulnerability has been resolved: cnic: Fix use-after-free bugs in cnic_delete_task The original code uses cancel_delayed_work() in cnic_cm_stop_bnx2x_hw(), which does not guarantee that the delayed work item 'delete_task' has fully completed if it was already running. Additionally, the delayed work item is cyclic, the flush_workqueue() in cnic_cm_stop_bnx2x_hw() only blocks and waits for work items that were already queued to the workqueue prior to its invocation. Any work items submitted after flush_workqueue() is called are not included in the set of tasks that the flush operation awaits. This means that after the cyclic work items have finished executing, a delayed work item may still exist in the workqueue. This leads to use-after-free scenarios where the cnic_dev is deallocated by cnic_free_dev(), while delete_task remains active and attempt to dereference cnic_dev in cnic_delete_task(). A typical race condition is illustrated below: CPU 0 (cleanup) | CPU 1 (delayed work callback) cnic_netdev_event() | cnic_stop_hw() | cnic_delete_task() cnic_cm_stop_bnx2x_hw() | ... cancel_delayed_work() | /* the queue_delayed_work() flush_workqueue() | executes after flush_workqueue()*/ | queue_delayed_work() cnic_free_dev(dev)//free | cnic_delete_task() //new instance | dev = cp->dev; //use Replace cancel_delayed_work() with cancel_delayed_work_sync() to ensure that the cyclic delayed work item is properly canceled and that any ongoing execution of the work item completes before the cnic_dev is deallocated. Furthermore, since cancel_delayed_work_sync() uses __flush_work(work, true) to synchronously wait for any currently executing instance of the work item to finish, the flush_workqueue() becomes redundant and should be removed. This bug was identified through static analysis. To reproduce the issue and validate the fix, I simulated the cnic PCI device in QEMU and introduced intentional delays — such as inserting calls to ssleep() within the cnic_delete_task() function — to increase the likelihood of triggering the bug.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-39945">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>046b00d447e54f8ce6e00115f9310f1b</td>
-       <td>CVE-2025-39937</td>
-       <td>2025-10-04 07:31:00</td>
-       <td>In the Linux kernel, the following vulnerability has been resolved: net: rfkill: gpio: Fix crash due to dereferencering uninitialized pointer Since commit 7d5e9737efda ("net: rfkill: gpio: get the name and type from device property") rfkill_find_type() gets called with the possibly uninitialized "const char *type_name;" local variable. On x86 systems when rfkill-gpio binds to a "BCM4752" or "LNV4752" acpi_device, the rfkill->type is set based on the ACPI acpi_device_id: rfkill->type = (unsigned)id->driver_data; and there is no "type" property so device_property_read_string() will fail and leave type_name uninitialized, leading to a potential crash. rfkill_find_type() does accept a NULL pointer, fix the potential crash by initializing type_name to NULL. Note likely sofar this has not been caught because: 1. Not many x86 machines actually have a "BCM4752"/"LNV4752" acpi_device 2. The stack happened to contain NULL where type_name is stored</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-39937">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>f45173b19e46d05c7accd513606c5f20</td>
-       <td>CVE-2025-39931</td>
-       <td>2025-10-04 07:30:55</td>
-       <td>In the Linux kernel, the following vulnerability has been resolved: crypto: af_alg - Set merge to zero early in af_alg_sendmsg If an error causes af_alg_sendmsg to abort, ctx->merge may contain a garbage value from the previous loop. This may then trigger a crash on the next entry into af_alg_sendmsg when it attempts to do a merge that can't be done. Fix this by setting ctx->merge to zero near the start of the loop.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-39931">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2ef6c40df9f9c750c409422f9ac7aa0c</td>
-       <td>CVE-2025-9886</td>
-       <td>2025-10-04 03:33:32</td>
-       <td>The Trinity Audio – Text to Speech AI audio player to convert content into audio plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 5.20.2. This is due to missing or incorrect nonce validation in the '/admin/inc/post-management.php' file. This makes it possible for unauthenticated attackers to activate/deactivate posts via a forged request granted they can trick a site administrator into performing an action such as clicking on a link.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-9886">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>265ebc954c8b3f18fc05af2ea5f4df49</td>
-       <td>CVE-2025-61962</td>
-       <td>2025-10-04 03:32:59</td>
-       <td>In fetchmail before 6.5.6, the SMTP client can crash when authenticating upon receiving a 334...</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-61962">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>523c19397854600bc61d35d9a8a02d05</td>
-       <td>CVE-2025-61894</td>
-       <td>2025-10-04 03:32:58</td>
-       <td>Rejected reason: Not used</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-61894">详情</a></td>
       </tr>
 
      </tbody>
