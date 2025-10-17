@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2025-10-16 09:09:07 -->
+<!-- RELEASE TIME : 2025-10-17 09:10:07 -->
 <html lang="zh-cn">
 
  <head>
@@ -282,9 +282,89 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>c845405ecda321219b414f6674412b5d</td>
+       <td>CVE-2025-53950</td>
+       <td>2025-10-16 14:00:05 <img src="imgs/new.gif" /></td>
+       <td>An Exposure of Private Personal Information ('Privacy Violation') vulnerability [CWE-359] in Fortinet FortiDLP Agent's Outlookproxy plugin for MacOS and Windows 11.5.1 and 11.4.2 through 11.4.6 and 11.3.2 through 11.3.4 and 11.2.0 through 11.2.3 and 11.1.1. through 11.1.2 and 11.0.1 and 10.5.1 and 10.4.0, and 10.3.1 may allow an authenticated administrator to collect current user's email information.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-53950">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>51ca467a3ef4af5d6e0ca3c64967a6fb</td>
+       <td>CVE-2025-54658</td>
+       <td>2025-10-16 13:55:28 <img src="imgs/new.gif" /></td>
+       <td>An Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability [CWE-22] in Fortinet FortiDLP Agent's Outlookproxy plugin for MacOS 11.5.1 and 11.4.2 through 11.4.6 and 11.3.2 through 11.3.4 and 11.2.0 through 11.2.3 and 11.1.1 through 11.1.2 and 11.0.1 and 10.5.1 and 10.4.0, and 10.3.1 may allow an authenticated attacker to escalate their privilege to Root via sending a crafted request to a local listening port.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-54658">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b37b15ac229704345c44ceff85d0d370</td>
+       <td>CVE-2025-9955</td>
+       <td>2025-10-16 13:15:42 <img src="imgs/new.gif" /></td>
+       <td>An improper access control vulnerability exists in WSO2 Enterprise Integrator product due to insufficient permission restrictions on internal SOAP admin services related to system logs and user-store configuration. A low-privileged user can access log data and user-store configuration details that are not intended to be exposed at that privilege level. While no credentials or sensitive user information are exposed, this vulnerability may allow unauthorized visibility into internal operational details, which could aid in further exploitation or reconnaissance.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-9955">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>87bfcf622af667755d9a3b9c7943ffb7</td>
+       <td>CVE-2025-10611</td>
+       <td>2025-10-16 13:15:40 <img src="imgs/new.gif" /></td>
+       <td>Due to an insufficient access control implementation in multiple WSO2 Products, authentication and authorization checks for certain REST APIs can be bypassed, allowing them to be invoked without proper validation. Successful exploitation of this vulnerability could lead to a malicious actor gaining administrative access and performing unauthenticated and unauthorized administrative operations.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-10611">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c9bb1451fd941483f3ed7c43ab0ce096</td>
+       <td>CVE-2025-9804</td>
+       <td>2025-10-16 12:33:45 <img src="imgs/new.gif" /></td>
+       <td>An improper access control vulnerability exists in multiple WSO2 products due to insufficient permission enforcement in certain internal SOAP Admin Services and System REST APIs. A low-privileged user may exploit this flaw to perform unauthorized operations, including accessing server-level information. This vulnerability affects only internal administrative interfaces. APIs exposed through the WSO2 API Manager's API Gateway remain unaffected.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-9804">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>e03198e20a8fcff32cc533335f595ac3</td>
+       <td>CVE-2025-3930</td>
+       <td>2025-10-16 11:15:29 <img src="imgs/new.gif" /></td>
+       <td>Strapi uses JSON Web Tokens (JWT) for authentication. After logout or account deactivation, the JWT is not invalidated, which allows an attacker who has stolen or intercepted the token to freely reuse it until its expiration date (which is set to 30 days by default, but can be changed). The existence of /admin/renew-token endpoint allows anyone to renew near-expiration tokens indefinitely, further increasing the impact of this attack. This issue has been fixed in version 5.24.1.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-3930">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9761cf563a4e7be91e6cc9527c26cf73</td>
+       <td>CVE-2025-6338</td>
+       <td>2025-10-16 10:15:44 <img src="imgs/new.gif" /></td>
+       <td>There is an incomplete cleanup vulnerability in Qt Network's Schannel support on Windows which can lead to a Denial of Service over a long period.This issue affects Qt from 5.15.0 through 6.8.3, from 6.9.0 before 6.9.2.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-6338">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>81db7b971183f071744ddb6a729dc0b8</td>
+       <td>CVE-2025-58426</td>
+       <td>2025-10-16 10:15:43 <img src="imgs/new.gif" /></td>
+       <td>desknet's NEO V4.0R1.0 to V9.0R2.0 contains a hard-coded cryptographic key, which allows an attacker to create malicious AppSuite applications.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-58426">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>c188d009f45e256d4ef21265ecf47a9d</td>
+       <td>CVE-2025-58079</td>
+       <td>2025-10-16 10:15:43 <img src="imgs/new.gif" /></td>
+       <td>Improper Protection of Alternate Path (CWE-424) in the AppSuite of desknet's NEO V4.0R1.0 to V9.0R2.0 allows an attacker to create malicious AppSuite applications.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-58079">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>bee774194516c74501f41f8e78b17960</td>
+       <td>CVE-2025-55072</td>
+       <td>2025-10-16 10:15:43 <img src="imgs/new.gif" /></td>
+       <td>Stored cross-site scripting (XSS) vulnerability in desknet's NEO V2.0R1.0 to V9.0R2.0 allow execution of arbitrary JavaScript in a user’s web browser.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-55072">详情</a></td>
+      </tr>
+
+      <tr>
        <td>21767fe15427e54bdf01ad4b0ea78a9d</td>
        <td>CVE-2025-11568</td>
-       <td>2025-10-15 19:37:11 <img src="imgs/new.gif" /></td>
+       <td>2025-10-15 19:37:11</td>
        <td>A data corruption vulnerability has been identified in the luksmeta utility when used with the LUKS1 disk encryption format. An attacker with the necessary permissions can exploit this flaw by writing a large amount of metadata to an encrypted device. The utility fails to correctly validate the available space, causing the metadata to overwrite and corrupt the user's encrypted data. This action leads to a permanent loss of the stored information. Devices using the LUKS formats other than LUKS1 are not affected by this issue.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-11568">详情</a></td>
       </tr>
@@ -292,7 +372,7 @@
       <tr>
        <td>c2d2b718b7b7bb91564ae7a554b85b72</td>
        <td>CVE-2025-62375</td>
-       <td>2025-10-15 19:23:24 <img src="imgs/new.gif" /></td>
+       <td>2025-10-15 19:23:24</td>
        <td>go-witness and witness are Go modules for generating attestations. In go-witness versions 0.8.6 and earlier and witness versions 0.9.2 and earlier the AWS attestor improperly verifies AWS EC2 instance identity documents. Verification can incorrectly succeed when a signature is not present or is empty, and when RSA signature verification fails. The attestor also embeds a single legacy global AWS public certificate and does not account for newer region specific certificates issued in 2024, making detection of forged documents difficult without additional trusted region data. An attacker able to supply or intercept instance identity document data (such as through Instance Metadata Service impersonation) can cause a forged identity document to be accepted, leading to incorrect trust decisions based on the attestation. This is fixed in go-witness 0.9.1 and witness 0.10.1. As a workaround, manually verify the included identity document, signature, and public key with standard tools (for example openssl) following AWS’s verification guidance, or disable use of the AWS attestor until upgraded.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-62375">详情</a></td>
       </tr>
@@ -300,7 +380,7 @@
       <tr>
        <td>c594c1a20fffb4948727fb1c040e7ec6</td>
        <td>CVE-2025-11832</td>
-       <td>2025-10-15 19:15:31 <img src="imgs/new.gif" /></td>
+       <td>2025-10-15 19:15:31</td>
        <td>Allocation of Resources Without Limits or Throttling vulnerability in Azure Access Technology BLU-IC2, Azure Access Technology BLU-IC4 allows Flooding.This issue affects BLU-IC2: through 1.19.5; BLU-IC4: through 1.19.5.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-11832">详情</a></td>
       </tr>
@@ -308,7 +388,7 @@
       <tr>
        <td>bbe4a3f794f46eca60100283788f2a7f</td>
        <td>CVE-2025-62410</td>
-       <td>2025-10-15 18:15:40 <img src="imgs/new.gif" /></td>
+       <td>2025-10-15 18:15:40</td>
        <td>In versions before 20.0.2, it was found that --disallow-code-generation-from-strings is not sufficient for isolating untrusted JavaScript in happy-dom. The untrusted script and the rest of the application still run in the same Isolate/process, so attackers can deploy prototype pollution payloads to hijack important references like "process" in the example below, or to hijack control flow via flipping checks of undefined property. This vulnerability is due to an incomplete fix for CVE-2025-61927. The vulnerability is fixed in 20.0.2.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-62410">详情</a></td>
       </tr>
@@ -316,7 +396,7 @@
       <tr>
        <td>e3551b921bc81844cef7be96df467a00</td>
        <td>CVE-2025-62382</td>
-       <td>2025-10-15 18:15:40 <img src="imgs/new.gif" /></td>
+       <td>2025-10-15 18:15:40</td>
        <td>Frigate is a network video recorder (NVR) with realtime local object detection for IP cameras. Prior to 0.16.2, Frigate's export workflow allows an authenticated operator to nominate any filesystem location as the thumbnail source for a video export. Because that path is copied verbatim into the publicly served clips directory, the feature can be abused to read arbitrary files that reside on the host running Frigate. In practice, a low-privilege user with API access can pivot from viewing camera footage to exfiltrating sensitive configuration files, secrets, or user data from the appliance itself. This behavior violates the principle of least privilege for the export subsystem and turns a convenience feature into a direct information disclosure vector, with exploitation hinging on a short race window while the background exporter copies the chosen file into place before cleanup runs. This vulnerability is fixed in 0.16.2.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-62382">详情</a></td>
       </tr>
@@ -324,7 +404,7 @@
       <tr>
        <td>a6a7cd37d798091112d6f3052f77cd9b</td>
        <td>CVE-2025-62381</td>
-       <td>2025-10-15 18:15:40 <img src="imgs/new.gif" /></td>
+       <td>2025-10-15 18:15:40</td>
        <td>sveltekit-superforms makes SvelteKit forms a pleasure to use. sveltekit-superforms v2.27.3 and prior are susceptible to a prototype pollution vulnerability within the parseFormData function of formData.js. An attacker can inject string and array properties into Object.prototype, leading to denial of service, type confusion, and potential remote code execution in downstream applications that rely on polluted objects. This vulnerability is fixed in 2.27.4.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-62381">详情</a></td>
       </tr>
@@ -332,7 +412,7 @@
       <tr>
        <td>5341afb0c38289fdc8482a88c976e25e</td>
        <td>CVE-2025-62371</td>
-       <td>2025-10-15 18:15:39 <img src="imgs/new.gif" /></td>
+       <td>2025-10-15 18:15:39</td>
        <td>OpenSearch Data Prepper as an open source data collector for observability data. In versions prior to 2.12.2, the OpenSearch sink and source plugins in Data Prepper trust all SSL certificates by default when no certificate path is provided. Prior to this fix, the OpenSearch sink and source plugins would automatically use a trust all SSL strategy when connecting to OpenSearch clusters if no certificate path was explicitly configured. This behavior bypasses SSL certificate validation, potentially allowing attackers to intercept and modify data in transit through man-in-the-middle attacks. The vulnerability affects connections to OpenSearch when the cert parameter is not explicitly provided. This issue has been patched in version 2.12.2. As a workaround, users can add the cert parameter to their OpenSearch sink or source configuration with the path to the cluster's CA certificate.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-62371">详情</a></td>
       </tr>
@@ -340,7 +420,7 @@
       <tr>
        <td>b52bb0461639e8cfc629097089624b50</td>
        <td>CVE-2025-62380</td>
-       <td>2025-10-15 17:16:00 <img src="imgs/new.gif" /></td>
+       <td>2025-10-15 17:16:00</td>
        <td>mailgen is a Node.js package that generates responsive HTML e-mails for sending transactional mail. Mailgen versions through 2.0.31 contain an HTML injection vulnerability in plaintext emails generated with the generatePlaintext method when user generated content is supplied. The plaintext generation code attempts to strip HTML tags using a regular expression and then decodes HTML entities, but tags that include certain Unicode line separator characters are not matched and removed. These encoded tags are later decoded into valid HTML content, allowing unexpected HTML to remain in output intended to be plaintext. Projects are affected if they call Mailgen.generatePlaintext with untrusted input and then render or otherwise process the returned string in a context where HTML is interpreted. This can lead to execution of attacker supplied script in the victim’s browser. Version 2.0.32 fixes the issue.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-62380">详情</a></td>
       </tr>
@@ -348,7 +428,7 @@
       <tr>
        <td>8077780d6cb88f5abe1012b4de39005f</td>
        <td>CVE-2025-62378</td>
-       <td>2025-10-15 17:16:00 <img src="imgs/new.gif" /></td>
+       <td>2025-10-15 17:16:00</td>
        <td>CommandKit is the discord.js meta-framework for building Discord bots. In versions 1.2.0-rc.1 through 1.2.0-rc.11, a logic flaw exists in the message command handler that affects how the commandName property is exposed to both middleware functions and command execution contexts when handling command aliases. When a message command is invoked using an alias, the ctx.commandName value reflects the alias rather than the canonical command name. This occurs in both middleware functions and within the command's own run function. Although not explicitly documented, CommandKit's examples and guidance around middleware usage implicitly convey that ctx.commandName represents the canonical command identifier. Middleware examples in the documentation consistently use ctx.commandName to reference the command being executed. Developers who assume ctx.commandName is canonical may introduce unintended behavior when relying on it for logic such as permission checks, rate limiting, or audit logging. This could allow unauthorized command execution or inaccurate access control decisions. Slash commands and context menu commands are not affected. This issue has been patched in version 1.2.0-rc.12, where ctx.commandName now consistently returns the actual canonical command name regardless of the alias used to invoke it.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-62378">详情</a></td>
       </tr>
@@ -356,7 +436,7 @@
       <tr>
        <td>598dd8fb3fdffb71e1bf240a297c88df</td>
        <td>CVE-2025-58133</td>
-       <td>2025-10-15 17:16:00 <img src="imgs/new.gif" /></td>
+       <td>2025-10-15 17:16:00</td>
        <td>Authentication bypass in some Zoom Rooms Clients before version 6.5.1 may allow an unauthenticated user to conduct a disclosure of information via network access.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-58133">详情</a></td>
       </tr>
@@ -439,86 +519,6 @@
        <td>2025-10-14 19:07:35</td>
        <td>Substance3D - Viewer versions 0.25.2 and earlier are affected by an out-of-bounds write vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-54280">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>584333f24f1940488a2e26894bcc7475</td>
-       <td>CVE-2025-62242</td>
-       <td>2025-10-13 20:15:34</td>
-       <td>Insecure Direct Object Reference (IDOR) vulnerability with account addresses in Liferay Portal 7.4.3.4 through 7.4.3.111, and Liferay DXP 2023.Q4.0 through 2023.Q4.5, 2023.Q3.1 through 2023.Q3.8, and 7.4 GA through update 92 allows remote authenticated users to from one account to view addresses from a different account via the _com_liferay_account_admin_web_internal_portlet_AccountEntriesAdminPortlet_addressId parameter.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-62242">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c8aca49a6f22e2304fa1f5f0d999b949</td>
-       <td>CVE-2025-58084</td>
-       <td>2025-10-13 20:15:33</td>
-       <td>Mattermost Desktop App versions <= 5.13.0 fail to validate URLs external to the configured Mattermost servers, allowing an attacker on a server the user has configured to crash the user's application by sending the user a malformed URL.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-58084">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b7b727b8d32bb9b28447b006296bd965</td>
-       <td>CVE-2025-61688</td>
-       <td>2025-10-13 20:09:53</td>
-       <td>Omni vulnerable to information leak via API</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-61688">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2511a9d251923f386b797b5d20f9935e</td>
-       <td>CVE-2025-59836</td>
-       <td>2025-10-13 19:59:17</td>
-       <td>Omni is Vulnerable to DoS via Empty Create/Update Resource Requests</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-59836">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>d1b857f9b6227f4ba0ca89483abccf47</td>
-       <td>CVE-2025-62241</td>
-       <td>2025-10-13 19:32:15</td>
-       <td>Insecure Direct Object Reference (IDOR) vulnerability with shipment addresses in Liferay DXP 2023.Q4.1 through 2023.Q4.5 allows remote authenticated users to from one virtual instance to view the shipment addresses of different virtual instance via the _com_liferay_commerce_order_web_internal_portlet_CommerceOrderPortlet_commerceOrderId parameter.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-62241">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ba81c19424cf875e4eacd79d12d3137e</td>
-       <td>CVE-2025-62243</td>
-       <td>2025-10-13 18:15:35</td>
-       <td>Insecure direct object reference (IDOR) vulnerability in Publications in Liferay Portal 7.4.1 through 7.4.3.112, and Liferay DXP 2023.Q4.0 through 2023.Q4.5, 2023.Q3.1 through 2023.Q3.8, and 7.4 GA through update 92 allows remote authenticated attackers to view publication comments via the _com_liferay_change_tracking_web_portlet_PublicationsPortlet_value parameter. Publications comments in Liferay Portal 7.4.1 through 7.4.3.112, and Liferay DXP 2023.Q4.0 through 2023.Q4.5, 2023.Q3.1 through 2023.Q3.8, and 7.4 GA through update 92 does not properly check user permissions, which allows remote authenticated users to edit publication comments via crafted URLs.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-62243">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>6770bd5eb2f3e7a5ff61238a8af8eafd</td>
-       <td>CVE-2025-62170</td>
-       <td>2025-10-13 18:15:34</td>
-       <td>rAthena is an open-source cross-platform MMORPG server. A use-after-free vulnerability exists in the RODEX functionality of rAthena's map-server in versions prior to commit af2f3ba. An unauthenticated attacker can exploit this vulnerability via a specific attacking scenario to cause a denial of service by crashing the map-server. This issue has been patched in commit af2f3ba. There are no known workarounds aside from manually applying the patch.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-62170">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>53a3558280fe1e13cbd9fa186d9b34e6</td>
-       <td>CVE-2025-61775</td>
-       <td>2025-10-13 18:15:34</td>
-       <td>Vickey is a Misskey-based microblogging platform. A vulnerability exists in Vickey prior to version 2025.10.0 where unexpired email confirmation links can be reused multiple times to send repeated confirmation emails to a verified email address. Under certain conditions, a verified email address could receive repeated confirmation messages if the verification link was accessed multiple times. This issue may result in unintended email traffic but does not expose user data. The issue was addressed in version 2025.10.0 by improving validation logic to ensure verification links behave as expected after completion.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-61775">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>fd14b28d7787e6213491e7838fbe645c</td>
-       <td>CVE-2025-7707</td>
-       <td>2025-10-13 17:15:35</td>
-       <td>The llama_index library version 0.12.33 sets the NLTK data directory to a subdirectory of the codebase by default, which is world-writable in multi-user environments. This configuration allows local users to overwrite, delete, or corrupt NLTK data files, leading to potential denial of service, data tampering, or privilege escalation. The vulnerability arises from the use of a shared cache directory instead of a user-specific one, making it susceptible to local data tampering and denial of service.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-7707">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c4cf84dc27c09f2f70624f68c77b66d4</td>
-       <td>CVE-2025-62244</td>
-       <td>2025-10-13 17:15:34</td>
-       <td>Insecure direct object reference (IDOR) vulnerability in Publications in Liferay Portal 7.3.1 through 7.4.3.111, and Liferay DXP 2023.Q4.0 through 2023.Q4.5, 2023.Q3.1 through 2023.Q3.8, and 7.4 GA through update 92, and 7.3 GA through update 36 allows remote authenticated attackers to view the edit page of a publication via the _com_liferay_change_tracking_web_portlet_PublicationsPortlet_ctCollectionId parameter.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-62244">详情</a></td>
       </tr>
 
      </tbody>
