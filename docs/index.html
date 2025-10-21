@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2025-10-20 09:09:07 -->
+<!-- RELEASE TIME : 2025-10-21 09:09:08 -->
 <html lang="zh-cn">
 
  <head>
@@ -282,9 +282,89 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>3d896f3335f528e9e4a822d060a3e002</td>
+       <td>CVE-2025-8349</td>
+       <td>2025-10-20 10:15:33 <img src="imgs/new.gif" /></td>
+       <td>Cross-site Scripting (XSS) stored vulnerability in Tawk Live Chat. This vulnerability allows an attacker to execute JavaScript code in the victim's browser by uploading a malicious PDF with JavaScript payload through the chatbot. The PDF is stored by the application and subsequently displayed without proper sanitisation when other users access it. This vulnerability can be exploited to steal sensitive user data, such as session cookies, or to perform actions on behalf of the user.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-8349">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6b1dc9229c95eb5b126e89dd727b8048</td>
+       <td>CVE-2025-57837</td>
+       <td>2025-10-20 09:15:33 <img src="imgs/new.gif" /></td>
+       <td>Tileservice module is affected by information leak vulnerability, successful exploitation of this vulnerability may affect service confidentiality.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-57837">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>cd7c75e357e2f640ae451fde011d730c</td>
+       <td>CVE-2025-41028</td>
+       <td>2025-10-20 09:15:32 <img src="imgs/new.gif" /></td>
+       <td>A SQL Injection vulnerability has been found in Epsilon RH by Grupo Castilla. This vulnerability allows an attacker to retrieve, create, update and delete database via sending a POST request using the parameter ‘sEstadoUsr’ in ‘/epsilonnetws/WSAvisos.asmx’.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-41028">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>900c65bd8baa488f9269601cb4f0fad1</td>
+       <td>CVE-2025-61932</td>
+       <td>2025-10-20 08:15:33 <img src="imgs/new.gif" /></td>
+       <td>Lanscope Endpoint Manager (On-Premises) (Client program (MR) and Detection agent (DA)) improperly verifies the origin of incoming requests, allowing an attacker to execute arbitrary code by sending specially crafted packets.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-61932">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>01f33c7fb0217fc928a5ff668e9d21be</td>
+       <td>CVE-2025-57839</td>
+       <td>2025-10-20 08:15:32 <img src="imgs/new.gif" /></td>
+       <td>Photo module is affected by information leak vulnerability, successful exploitation of this vulnerability may affect service confidentiality.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-57839">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>9cb551f750228840ba899073797af0fb</td>
+       <td>CVE-2025-57838</td>
+       <td>2025-10-20 08:15:32 <img src="imgs/new.gif" /></td>
+       <td>Some Honor products are affected by information leak vulnerability, successful exploitation of this vulnerability may affect service confidentiality.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-57838">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0dccf2c8551a291c1f255a061e1ca68f</td>
+       <td>CVE-2025-31342</td>
+       <td>2025-10-20 08:15:32 <img src="imgs/new.gif" /></td>
+       <td>An unrestricted upload of file with dangerous type vulnerability in the upload file function of Galaxy Software Services Corporation Vitals ESP Forum Module through 1.3 version allows remote authenticated users to execute arbitrary system commands via a malicious file.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-31342">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>46e105ece017d67ff098939904d2b4c6</td>
+       <td>CVE-2025-62577</td>
+       <td>2025-10-20 06:15:36 <img src="imgs/new.gif" /></td>
+       <td>ETERNUS SF provided by Fsas Technologies Inc. contains an incorrect default permissions vulnerability. A low-privileged user with access to the management server may obtain database credentials, potentially allowing execution of OS commands with administrator privileges.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-62577">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>13d0ffc1cd86512b3c81a93a3303c1a3</td>
+       <td>CVE-2025-40004</td>
+       <td>2025-10-20 06:15:36 <img src="imgs/new.gif" /></td>
+       <td>In the Linux kernel, the following vulnerability has been resolved: net/9p: Fix buffer overflow in USB transport layer A buffer overflow vulnerability exists in the USB 9pfs transport layer where inconsistent size validation between packet header parsing and actual data copying allows a malicious USB host to overflow heap buffers. The issue occurs because: - usb9pfs_rx_header() validates only the declared size in packet header - usb9pfs_rx_complete() uses req->actual (actual received bytes) for memcpy This allows an attacker to craft packets with small declared size (bypassing validation) but large actual payload (triggering overflow in memcpy). Add validation in usb9pfs_rx_complete() to ensure req->actual does not exceed the buffer capacity before copying data.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-40004">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b56314b4625b58494bde5953df5a3f13</td>
+       <td>CVE-2025-11948</td>
+       <td>2025-10-20 04:15:36 <img src="imgs/new.gif" /></td>
+       <td>Document Management System developed by Excellent Infotek has an Arbitrary File Upload vulnerability, allowing unauthenticated remote attackers to upload and execute web shell backdoors, thereby enabling arbitrary code execution on the server.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-11948">详情</a></td>
+      </tr>
+
+      <tr>
        <td>79f3c51c00f8e9613de2fb0792c5eeff</td>
        <td>CVE-2025-11941</td>
-       <td>2025-10-19 15:32:10 <img src="imgs/new.gif" /></td>
+       <td>2025-10-19 15:32:10</td>
        <td>A vulnerability was detected in e107 CMS up to 2.3.3. This impacts an unknown function of the file /e107_admin/image.php?mode=main&action=avatar of the component Avatar Handler. Performing manipulation of the argument multiaction[] results in path traversal. It is possible to initiate the attack remotely. The exploit is now public and may be used. The vendor was contacted early about this disclosure but did not respond in any way.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-11941">详情</a></td>
       </tr>
@@ -292,7 +372,7 @@
       <tr>
        <td>acac1f44382f2919a88560a913dce7ee</td>
        <td>CVE-2025-11940</td>
-       <td>2025-10-19 09:15:32 <img src="imgs/new.gif" /></td>
+       <td>2025-10-19 09:15:32</td>
        <td>A security vulnerability has been detected in LibreWolf up to 143.0.4-1 on Windows. This affects an unknown function of the file assets/setup.nsi of the component Installer. Such manipulation leads to uncontrolled search path. The attack must be carried out locally. Attacks of this nature are highly complex. The exploitability is reported as difficult. Upgrading to version 144.0-1 mitigates this issue. The name of the patch is dd10e31dd873e9cb309fad8aed921d45bf905a55. It is suggested to upgrade the affected component.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-11940">详情</a></td>
       </tr>
@@ -300,7 +380,7 @@
       <tr>
        <td>4a7392a330bb8caa4b6455b5ca59808a</td>
        <td>CVE-2025-11939</td>
-       <td>2025-10-19 08:15:33 <img src="imgs/new.gif" /></td>
+       <td>2025-10-19 08:15:33</td>
        <td>A vulnerability was determined in ChurchCRM up to 5.18.0. This issue affects some unknown processing of the file src/ChurchCRM/Backup/RestoreJob.php of the component Backup Restore Handler. Executing manipulation of the argument restoreFile can lead to path traversal. The attack may be launched remotely. The exploit has been publicly disclosed and may be utilized. The vendor was contacted early about this disclosure but did not respond in any way.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-11939">详情</a></td>
       </tr>
@@ -308,7 +388,7 @@
       <tr>
        <td>70cbd25de90b44b645d1034b2d3b468b</td>
        <td>CVE-2025-11938</td>
-       <td>2025-10-19 08:15:32 <img src="imgs/new.gif" /></td>
+       <td>2025-10-19 08:15:32</td>
        <td>A vulnerability was found in ChurchCRM up to 5.18.0. This vulnerability affects unknown code of the file setup/routes/setup.php. Performing manipulation of the argument DB_PASSWORD/ROOT_PATH/URL results in deserialization. The attack may be initiated remotely. The attack's complexity is rated as high. It is stated that the exploitability is difficult. The exploit has been made public and could be used. The vendor was contacted early about this disclosure but did not respond in any way.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-11938">详情</a></td>
       </tr>
@@ -316,7 +396,7 @@
       <tr>
        <td>dcfc12bb05a66cc33710e4d4d6ad4038</td>
        <td>CVE-2025-62672</td>
-       <td>2025-10-19 01:15:35 <img src="imgs/new.gif" /></td>
+       <td>2025-10-19 01:15:35</td>
        <td>rplay through 3.3.2 allows attackers to cause a denial of service (SIGSEGV and daemon crash) or possibly have unspecified other impact. This occurs in memcpy in the RPLAY_DATA case in rplay_unpack in librplay/rplay.c, potentially reachable via packet data with no authentication.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-62672">详情</a></td>
       </tr>
@@ -439,86 +519,6 @@
        <td>2025-10-17 06:15:36</td>
        <td>In USBX before 6.4.3, the USB support module for Eclipse Foundation ThreadX, there was a potential out of bound read issue in _ux_host_class_audio10_sam_parse_func() when parsing a list of sampling frequencies.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-55100">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3782c4c76d474625ce1cc5479e1e5227</td>
-       <td>CVE-2025-55099</td>
-       <td>2025-10-17 06:15:36</td>
-       <td>In USBX before 6.4.3, the USB support module for Eclipse Foundation ThreadX, there was a potential out of bound read issue in _ux_host_class_audio_alternate_setting_locate() when parsing a descriptor with attacker-controlled frequency fields.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-55099">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>24bd0ea48f6c683612a880dd43cb9267</td>
-       <td>CVE-2025-55098</td>
-       <td>2025-10-17 06:15:35</td>
-       <td>In USBX before 6.4.3, the USB support module for Eclipse Foundation ThreadX, there was a potential out of bound read issue in _ux_host_class_audio_device_type_get() when parsing a descriptor of an USB audio device.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-55098">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>913c19ecc0ed5ebe52e70dadac56859a</td>
-       <td>CVE-2025-55097</td>
-       <td>2025-10-17 06:15:35</td>
-       <td>In USBX before 6.4.3, the USB support module for Eclipse Foundation ThreadX, there was a potential out of bound read issue in _ux_host_class_audio_streaming_sampling_get() when parsing a descriptor of an USB streaming device.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-55097">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>7b183192fc7b71c47b768987c01f9d66</td>
-       <td>CVE-2025-55096</td>
-       <td>2025-10-17 06:15:35</td>
-       <td>In USBX before 6.4.3, the USB support module for Eclipse Foundation ThreadX, there was a potential out of bound read issue in _ux_host_class_hid_report_descriptor_get() when parsing a descriptor of an USB HID device.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-55096">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ac881bd6f3879da569654f0f5c692641</td>
-       <td>CVE-2025-55094</td>
-       <td>2025-10-17 06:15:35</td>
-       <td>In NetX Duo before 6.4.4, the networking support module for Eclipse Foundation ThreadX, there was a potential out of bound read issue in _nx_icmpv6_validate_options() when handling a packet with ICMP6 options.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-55094">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c845405ecda321219b414f6674412b5d</td>
-       <td>CVE-2025-53950</td>
-       <td>2025-10-16 14:00:05</td>
-       <td>An Exposure of Private Personal Information ('Privacy Violation') vulnerability [CWE-359] in Fortinet FortiDLP Agent's Outlookproxy plugin for MacOS and Windows 11.5.1 and 11.4.2 through 11.4.6 and 11.3.2 through 11.3.4 and 11.2.0 through 11.2.3 and 11.1.1. through 11.1.2 and 11.0.1 and 10.5.1 and 10.4.0, and 10.3.1 may allow an authenticated administrator to collect current user's email information.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-53950">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>51ca467a3ef4af5d6e0ca3c64967a6fb</td>
-       <td>CVE-2025-54658</td>
-       <td>2025-10-16 13:55:28</td>
-       <td>An Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability [CWE-22] in Fortinet FortiDLP Agent's Outlookproxy plugin for MacOS 11.5.1 and 11.4.2 through 11.4.6 and 11.3.2 through 11.3.4 and 11.2.0 through 11.2.3 and 11.1.1 through 11.1.2 and 11.0.1 and 10.5.1 and 10.4.0, and 10.3.1 may allow an authenticated attacker to escalate their privilege to Root via sending a crafted request to a local listening port.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-54658">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b37b15ac229704345c44ceff85d0d370</td>
-       <td>CVE-2025-9955</td>
-       <td>2025-10-16 13:15:42</td>
-       <td>An improper access control vulnerability exists in WSO2 Enterprise Integrator product due to insufficient permission restrictions on internal SOAP admin services related to system logs and user-store configuration. A low-privileged user can access log data and user-store configuration details that are not intended to be exposed at that privilege level. While no credentials or sensitive user information are exposed, this vulnerability may allow unauthorized visibility into internal operational details, which could aid in further exploitation or reconnaissance.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-9955">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>87bfcf622af667755d9a3b9c7943ffb7</td>
-       <td>CVE-2025-10611</td>
-       <td>2025-10-16 13:15:40</td>
-       <td>Due to an insufficient access control implementation in multiple WSO2 Products, authentication and authorization checks for certain REST APIs can be bypassed, allowing them to be invoked without proper validation. Successful exploitation of this vulnerability could lead to a malicious actor gaining administrative access and performing unauthenticated and unauthorized administrative operations.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-10611">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>c9bb1451fd941483f3ed7c43ab0ce096</td>
-       <td>CVE-2025-9804</td>
-       <td>2025-10-16 12:33:45</td>
-       <td>An improper access control vulnerability exists in multiple WSO2 products due to insufficient permission enforcement in certain internal SOAP Admin Services and System REST APIs. A low-privileged user may exploit this flaw to perform unauthorized operations, including accessing server-level information. This vulnerability affects only internal administrative interfaces. APIs exposed through the WSO2 API Manager's API Gateway remain unaffected.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-9804">详情</a></td>
       </tr>
 
      </tbody>
