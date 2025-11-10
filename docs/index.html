@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2025-11-09 09:09:09 -->
+<!-- RELEASE TIME : 2025-11-10 09:09:08 -->
 <html lang="zh-cn">
 
  <head>
@@ -282,9 +282,89 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>a947f23cd1a1d5ccba9e1cef3e4c4da4</td>
+       <td>CVE-2025-12399</td>
+       <td>2025-11-08 09:28:11</td>
+       <td>The Alex Reservations: Smart Restaurant Booking plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the /wp-json/srr/v1/app/upload/file REST endpoint in all versions up to, and including, 2.2.3. This makes it possible for authenticated attackers, with Administrator-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-12399">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b1aedb27954b54e29a499847280f4a5c</td>
+       <td>CVE-2025-11967</td>
+       <td>2025-11-08 09:28:11</td>
+       <td>The Mail Mint plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the process_contact_attribute_import function in all versions up to, and including, 1.18.10. This makes it possible for authenticated attackers, with Administrator-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-11967">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>2d049dca354deca0d106e056ba74674c</td>
+       <td>CVE-2025-11448</td>
+       <td>2025-11-08 09:28:11</td>
+       <td>The Gallery Plugin for WordPress – Envira Photo Gallery plugin for WordPress is vulnerable to unauthorized modification of data due to a missing capability check on the '/envira-convert/v1/bulk-convert' REST API endpoint in all versions up to, and including, 1.11.0. This makes it possible for authenticated attackers, with contributor-level access and above, to convert galleries to Envira galleries.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-11448">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>69077ede354ba4c70546e68c7a022b0d</td>
+       <td>CVE-2025-12837</td>
+       <td>2025-11-08 09:28:10</td>
+       <td>The aThemes Addons for Elementor plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the Call To Action widget in versions up to, and including, 1.1.5 due to insufficient input sanitization and output escaping on user-supplied values. This makes it possible for authenticated attackers with contributor-level and above permissions to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-12837">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>b743ae31bce61fbb36122cfeff618e1b</td>
+       <td>CVE-2025-12643</td>
+       <td>2025-11-08 09:28:10</td>
+       <td>The Saphali LiqPay for donate plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'saphali_liqpay' shortcode in all versions up to, and including, 1.0.2. This is due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-12643">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>4eeb26aca11ede5a7e86f37ae1eaafd3</td>
+       <td>CVE-2025-12092</td>
+       <td>2025-11-08 09:28:09</td>
+       <td>The CYAN Backup plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the 'delete' functionality in all versions up to, and including, 2.5.4. This makes it possible for authenticated attackers, with Administrator-level access and above, to delete arbitrary files on the server, which can easily lead to remote code execution when the right file is deleted (such as wp-config.php).</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-12092">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>ff3b54967a531afaaeef6490514e7bdc</td>
+       <td>CVE-2025-12099</td>
+       <td>2025-11-08 09:15:34</td>
+       <td>The Academy LMS – WordPress LMS Plugin for Complete eLearning Solution plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 3.3.8 via deserialization of untrusted input in the 'import_all_courses' function. This makes it possible for authenticated attackers, with Administrator-level access and above, to inject a PHP Object. No known POP chain is present in the vulnerable software, which means this vulnerability has no impact unless another plugin or theme containing a POP chain is installed on the site. If a POP chain is present via an additional plugin or theme installed on the target system, it may allow the attacker to perform actions like delete arbitrary files, retrieve sensitive data, or execute code depending on the POP chain present.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-12099">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>afcff96482a3952dbd2cc86f9f9d4790</td>
+       <td>CVE-2025-12098</td>
+       <td>2025-11-08 09:15:33</td>
+       <td>The Academy LMS – WordPress LMS Plugin for Complete eLearning Solution plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 3.3.8 via the 'enqueue_social_login_script' function. This makes it possible for unauthenticated attackers to extract sensitive data including the Facebook App Secret if Facebook Social Login is enabled.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-12098">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>33e77c871311da0fa8ddd446cf15b513</td>
+       <td>CVE-2025-12498</td>
+       <td>2025-11-08 07:15:36</td>
+       <td>The EventPrime – Events Calendar, Bookings and Tickets plugin for WordPress is vulnerable to unauthorized booking note creation due to a missing capability check on the 'booking_add_notes' function in all versions up to, and including, 4.2.0.0. This makes it possible for authenticated attackers, with Subscriber-level access and above, to add a note to the backend view of any booking.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-12498">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>0296579eb10669475c783b46cf3ab57d</td>
+       <td>CVE-2025-9334</td>
+       <td>2025-11-08 06:15:41</td>
+       <td>The Better Find and Replace – AI-Powered Suggestions plugin for WordPress is vulnerable to Limited Code Injection in all versions up to, and including, 1.7.7. This is due to insufficient input validation and restriction on the 'rtafar_ajax' function. This makes it possible for authenticated attackers, with Subscriber-level access and above, to call arbitrary plugin functions and execute code within those functions.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-9334">详情</a></td>
+      </tr>
+
+      <tr>
        <td>7c5c282c3b1c36cd83214c0f5fa7bbc8</td>
        <td>CVE-2025-64486</td>
-       <td>2025-11-08 00:15:36 <img src="imgs/new.gif" /></td>
+       <td>2025-11-08 00:15:36</td>
        <td>calibre is an e-book manager. In versions 8.13.0 and prior, calibre does not validate filenames when handling binary assets in FB2 files, allowing an attacker to write arbitrary files on the filesystem when viewing or converting a malicious FictionBook file. This can be leveraged to achieve arbitrary code execution. This issue is fixed in version 8.14.0.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-64486">详情</a></td>
       </tr>
@@ -292,7 +372,7 @@
       <tr>
        <td>84cfce215d2c0a5928e5ea9f508b4737</td>
        <td>CVE-2025-64485</td>
-       <td>2025-11-08 00:15:36 <img src="imgs/new.gif" /></td>
+       <td>2025-11-08 00:15:36</td>
        <td>CVAT is an open source interactive video and image annotation tool for computer vision. In versions 2.4.0 through 2.48.1, a malicious CVAT user with at least the User global role may create files in the root of the mounted file share, or overwrite existing files. If no file share is mounted, the user will be able to create files in the share directory of the import worker container, potentially filling up disk space. This issue is fixed in version 2.49.0.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-64485">详情</a></td>
       </tr>
@@ -300,7 +380,7 @@
       <tr>
        <td>76e22f49844f9ef73bbd3869c8901d36</td>
        <td>CVE-2025-12910</td>
-       <td>2025-11-08 00:15:35 <img src="imgs/new.gif" /></td>
+       <td>2025-11-08 00:15:35</td>
        <td>Inappropriate implementation in Passkeys in Google Chrome prior to 140.0.7339.80 allowed a local attacker to obtain potentially sensitive information via debug logs. (Chromium security severity: Low)</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-12910">详情</a></td>
       </tr>
@@ -308,7 +388,7 @@
       <tr>
        <td>80b484de660eae799e19e4d79d8500ff</td>
        <td>CVE-2025-12908</td>
-       <td>2025-11-08 00:15:35 <img src="imgs/new.gif" /></td>
+       <td>2025-11-08 00:15:35</td>
        <td>Insufficient validation of untrusted input in Downloads in Google Chrome on Android prior to 140.0.7339.80 allowed a remote attacker to perform domain spoofing via a crafted HTML page. (Chromium security severity: Low)</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-12908">详情</a></td>
       </tr>
@@ -316,7 +396,7 @@
       <tr>
        <td>ea1b44e1997c76f078e036597f8d7012</td>
        <td>CVE-2025-12907</td>
-       <td>2025-11-08 00:15:35 <img src="imgs/new.gif" /></td>
+       <td>2025-11-08 00:15:35</td>
        <td>Insufficient validation of untrusted input in Devtools in Google Chrome prior to 140.0.7339.80 allowed a remote attacker to execute arbitrary code via user action in Devtools. (Chromium security severity: Low)</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-12907">详情</a></td>
       </tr>
@@ -439,86 +519,6 @@
        <td>2025-11-06 04:15:33</td>
        <td>Rejected reason: Not used</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-64480">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>5ae1904b76fe722a40bfb28a70faefd7</td>
-       <td>CVE-2025-63334</td>
-       <td>2025-11-05 20:15:36</td>
-       <td>PocketVJ CP PocketVJ-CP-v3 pvj version 3.9.1 contains an unauthenticated remote code execution vulnerability in the submit_opacity.php component. The application fails to sanitize user input in the opacityValue POST parameter before passing it to a shell command, allowing remote attackers to execute arbitrary commands with root privileges on the underlying system.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-63334">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3721176f9c9607d14e74d522cfea67ed</td>
-       <td>CVE-2025-10853</td>
-       <td>2025-11-05 20:15:32</td>
-       <td>A reflected cross-site scripting (XSS) vulnerability exists in the management console of multiple WSO2 products due to improper output encoding. By tampering with specific parameters, a malicious actor can inject arbitrary JavaScript into the response, leading to reflected XSS. Successful exploitation could result in UI manipulation, redirection to malicious websites, or data theft from the browser. However, session-related sensitive cookies are protected with the httpOnly flag, which mitigates the risk of session hijacking.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-10853">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>bd5a5ed4e801ec07bfd5203140618f57</td>
-       <td>CVE-2025-63418</td>
-       <td>2025-11-05 19:16:04</td>
-       <td>A DOM-based Cross-Site Scripting (XSS) vulnerability in the SelfBest platform 2023.3 allows attackers to execute arbitrary JavaScript in the context of a logged-in user's session by injecting payloads via the browser's developer console. The vulnerability arises from the application's client-side code being susceptible to direct DOM manipulation without adequate sanitization or a Content Security Policy (CSP), potentially leading to account takeover and data theft.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-63418">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0d1119c995bd5dec11717ae3ad25dafb</td>
-       <td>CVE-2025-63417</td>
-       <td>2025-11-05 19:16:04</td>
-       <td>A Stored Cross-Site Scripting (XSS) vulnerability in the chat functionality of the SelfBest platform 2023.3 allows authenticated attackers to inject arbitrary web scripts or HTML via the chat message input field. This malicious content is stored and then executed in the context of other users' browsers when they view the malicious message, potentially leading to session hijacking, account takeover, or other client-side attacks.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-63417">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>bb8e3aa81d13117a82b34f815b412846</td>
-       <td>CVE-2025-63416</td>
-       <td>2025-11-05 19:16:02</td>
-       <td>** exclusively-hosted-service ** A Stored Cross-Site Scripting (XSS) vulnerability in the chat functionality of the SelfBest platform 2023.3 allows authenticated low-privileged attackers to execute arbitrary JavaScript in the context of other users' sessions. This can be exploited to access administrative data and functions, leading to privilege escalation and full compromise of sensitive user data, as demonstrated by the ability to fetch and exfiltrate the contents of the /admin/users endpoint.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-63416">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>9d9012dfef6b9fec44cd44e2203ebf71</td>
-       <td>CVE-2025-5770</td>
-       <td>2025-11-05 19:16:01</td>
-       <td>A reflected cross-site scripting (XSS) vulnerability exists in the authentication endpoints of multiple WSO2 products due to a lack of output encoding. A malicious actor can inject arbitrary JavaScript payloads into the authentication endpoint, which are reflected back in the response, enabling browser-based attacks. Exploitation may result in redirection to malicious websites, UI manipulation, or unauthorized data access from the victim’s browser. However, session-related cookies are protected with the httpOnly flag, which mitigates session hijacking via this vector.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-5770">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>19e185ba5675fe1d8af80bfc88df25a3</td>
-       <td>CVE-2025-56232</td>
-       <td>2025-11-05 19:16:01</td>
-       <td>GOG Galaxy 2.0.0.2 suffers from Missing SSL Certificate Validation. An attacker who controls the local network, DNS, or a proxy can perform a man-in-the-middle (MitM) attack to intercept update requests and replace installer or update packages with malicious files.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-56232">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>3e12bcf5ae44e28913cb0e29658a1d55</td>
-       <td>CVE-2025-55343</td>
-       <td>2025-11-05 19:16:01</td>
-       <td>Quipux 4.0.1 through e1774ac allows authenticated users to conduct SQL injection attacks via busqueda/busqueda.php txt_depe_codi, busqueda/busqueda.php txt_usua_codi, anexos_lista.php radi_temp, Administracion/listas/formArea_ajax.php codDepe, Administracion/listas/formDepeHijo_ajax.php codDepe, Administracion/listas/formDepePadre_ajax.php codInst, asociar_documentos/asociar_borrar_referencia.php radi_nume, asociar_documentos/asociar_documento_buscar_query.php radi_nume, asociar_documentos/asociar_documento_grabar.php txt_radi_nume, asociar_documentos/asociar_documento radi_nume, radicacion/buscar_usuario.php buscar_tipo, radicacion/formArea_ajax.php codDepe, radicacion/formDepeHijo_ajax.php codDepe, radicacion/formDepePadre_ajax.php codInst, radicacion/ver_datos_usuario.php destinatorio, reportes/reporte_TraspasoDocFisico.php verrad, tx/datos_imprimir_sobre.php txt_usua_codi, tx/datos_imprimir_sobre.php nume_radi_temp, tx/revertir_firma_digital_grabar.php txt_radi_nume, tx/tx_borrar_opcion_imp.php codigo_opc, tx/tx_realizar_tx.php txt_radicados, tx/tx_seguridad_documentos.php txt_radicados, or uploadFiles/cargar_doc_digitalizado_paginador.php txt_depe_codi.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-55343">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>feda1689f3b88daa235126110f11d7f1</td>
-       <td>CVE-2025-55342</td>
-       <td>2025-11-05 19:16:01</td>
-       <td>Quipux 4.0.1 through e1774ac allows enumeration of usernames, and accessing the Ecuadorean identification number for all registered users via the Administracion/usuarios/cambiar_password_olvido_validar.php txt_login parameter.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-55342">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>31dbf420d76e659a8c949b668ce1f2ac</td>
-       <td>CVE-2025-55341</td>
-       <td>2025-11-05 19:16:01</td>
-       <td>Cross Site Scripting vulnerability in Quipux 4.0.1 through e1774ac allows anexos/anexos_nuevo.php asocImgRad.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-55341">详情</a></td>
       </tr>
 
      </tbody>
