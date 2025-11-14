@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2025-11-13 09:10:07 -->
+<!-- RELEASE TIME : 2025-11-14 09:10:07 -->
 <html lang="zh-cn">
 
  <head>
@@ -282,6 +282,86 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>4a1c2a92f80ec8895c3ba8769a8d2407</td>
+       <td>CVE-2025-12979</td>
+       <td>2025-11-13 04:15:46 <img src="imgs/new.gif" /></td>
+       <td>The Welcart e-Commerce plugin for WordPress is vulnerable to unauthorized access of data due to a missing capability check on the 'usces_export' action in all versions up to, and including, 2.11.24. This makes it possible for unauthenticated attackers to access configured payment credentials (ex. PayPal api secret) , as well as business contact details, mail templates, and other operational settings tied to the store.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-12979">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>3eb55e9ce1dc77b577ccdaa489855b42</td>
+       <td>CVE-2025-12892</td>
+       <td>2025-11-13 04:15:46 <img src="imgs/new.gif" /></td>
+       <td>The Survey Maker plugin for WordPress is vulnerable to unauthorized modification of data due to a missing capability check on the deactivate_plugin_option() function in all versions up to, and including, 5.1.9.4. This makes it possible for unauthenticated attackers to update the ays_survey_maker_upgrade_plugin option.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-12892">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>6fb545ab027af476d8d0803a64301789</td>
+       <td>CVE-2025-12733</td>
+       <td>2025-11-13 04:15:46 <img src="imgs/new.gif" /></td>
+       <td>The Import any XML, CSV or Excel File to WordPress (WP All Import) plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 3.9.6. This is due to the use of eval() on unsanitized user-supplied input in the pmxi_if function within helpers/functions.php. This makes it possible for authenticated attackers, with import capabilities (typically administrators), to inject and execute arbitrary PHP code on the server via crafted import templates. This can lead to remote code execution.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-12733">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>8e91963c5daff1df892e3c3ff7a9b115</td>
+       <td>CVE-2025-12536</td>
+       <td>2025-11-13 04:15:46 <img src="imgs/new.gif" /></td>
+       <td>The SureForms plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 1.13.1 via the '_srfm_email_notification' post meta registration. This is due to setting the 'auth_callback' parameter to '__return_true', which allows unauthenticated access to the metadata. This makes it possible for unauthenticated attackers to extract sensitive data including email notification configurations, which frequently contain vendor-provided CRM/help desk dropbox addresses, CC/BCC recipients, and notification templates that can be abused to inject malicious data into downstream systems.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-12536">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>21e9e3287687f88b3243dab5f40066ff</td>
+       <td>CVE-2025-12366</td>
+       <td>2025-11-13 04:15:45 <img src="imgs/new.gif" /></td>
+       <td>The Page Builder: Pagelayer – Drag and Drop website builder plugin for WordPress is vulnerable to Insecure Direct Object Reference in all versions up to, and including, 2.0.5 via the pagelayer_replace_page function due to missing validation on a user controlled key. This makes it possible for authenticated attackers, with Author-level access and above, to replace media files belonging to other users, including administrators.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-12366">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>5c2127688eeb94c5a28b2ccf713b4bce</td>
+       <td>CVE-2025-12089</td>
+       <td>2025-11-13 04:15:45 <img src="imgs/new.gif" /></td>
+       <td>The Data Tables Generator by Supsystic plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the cleanCache() function in all versions up to, and including, 1.10.45. This makes it possible for authenticated attackers, with Administrator-level access and above, to delete arbitrary files on the server, which can easily lead to remote code execution when the right file is deleted (such as wp-config.php).</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-12089">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>01f4031c244d20989bc4a77769b4e276</td>
+       <td>CVE-2025-11923</td>
+       <td>2025-11-13 04:15:44 <img src="imgs/new.gif" /></td>
+       <td>The LifterLMS – WP LMS for eLearning, Online Courses, & Quizzes plugin for WordPress is vulnerable to privilege escalation. This is due to the plugin not properly validating a user's identity prior to allowing them to modify their own role via the REST API. The permission check in the update_item_permissions_check() function returns true when a user updates their own account without verifying the role changes. This makes it possible for authenticated attackers, with student-level access and above, to escalate their privileges to administrator by updating their own roles array via a crafted REST API request. Another endpoint intended for instructors also provides an attack vector. Affected version ranges are 3.5.3-3.41.2, 4.0.0-4.21.3, 5.0.0-5.10.0, 6.0.0-6.11.0, 7.0.0-7.8.7, 8.0.0-8.0.7, 9.0.0-9.0.7, 9.1.0.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-11923">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>da7be1eb22b5c0f4719b26ac296c1bdc</td>
+       <td>CVE-2025-64716</td>
+       <td>2025-11-13 03:16:29 <img src="imgs/new.gif" /></td>
+       <td>Anubis is a Web AI Firewall Utility that challenges users' connections in order to protect upstream resources from scraper bots. Prior to version 1.23.0, when using subrequest authentication, Anubis did not perform validation of the redirect URL and redirects user to any URL scheme. While most modern browsers do not allow a redirect to `javascript:` URLs, it could still trigger dangerous behavior in some cases. Anybody with a subrequest authentication may be affected. Version 1.23.0 contains a fix for the issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-64716">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>85cdda632387c2e0705b3f58b2f6d3d2</td>
+       <td>CVE-2025-64711</td>
+       <td>2025-11-13 03:16:29 <img src="imgs/new.gif" /></td>
+       <td>PrivateBin is an online pastebin where the server has zero knowledge of pasted data. Starting in version 1.7.7 and prior to version 2.0.3, dragging a file whose filename contains HTML is reflected verbatim into the page via the drag-and-drop helper, so any user who drops a crafted file on PrivateBin will execute arbitrary JavaScript within their own session (self-XSS). This allows an attacker who can entice a victim to drag or otherwise attach such a file to exfiltrate plaintext, encryption keys, or stored pastes before they are encrypted or sent. Certain conditions must exist for the vulnerability to be exploitable. Only macOS or Linux users are affected, due to the way the `>` character is treated in a file name on Windows. The PrivateBin instance needs to have file upload enabled. An attacker needs to have access to the local file system or somehow convince the user to create (or download) a malicious file (name). An attacker needs to convince the user to attach that malicious file to PrivateBin. Any Mac / Linux user who can be tricked into dragging a maliciously named file into the editor is impacted; code runs in the origin of the PrivateBin instance they are using. Attackers can steal plaintext, passphrases, or manipulate the UI before data is encrypted, defeating the zero-knowledge guarantees for that victim session, assuming counter-measures like Content-Security-Policy (CSP) have been disabled. If CSP is not disabled, HTML injection attacks may be possible - like redirecting to a foreign website, phishing etc. As the whole exploit needs to be included in the file name of the attached file and only affects the local session of the user (aka it is neither persistent nor remotely executable) and that user needs to interact and actively attach that file to the paste, the impact is considered to be practically low. Version 2.0.3 patches the issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-64711">详情</a></td>
+      </tr>
+
+      <tr>
+       <td>a7b0d12554e721433984657f81e1ff72</td>
+       <td>CVE-2025-64710</td>
+       <td>2025-11-13 03:16:28 <img src="imgs/new.gif" /></td>
+       <td>Bitplatform Boilerplate is a Visual studio and .NET project template. Versions prior to 9.11.3 are affected by a cross-site scripting (XSS) vulnerability in the WebInteropApp/WebAppInterop, potentially allowing attackers to inject malicious scripts that compromise the security and integrity of web applications. Applications based on this Bitplatform Boilerplate might also be vulnerable. Version 9.11.3 fixes the issue.</td>
+       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-64710">详情</a></td>
+      </tr>
+
+      <tr>
        <td>352beee253c1cf6fdd0b9d36ce222326</td>
        <td>CVE-2025-40815</td>
        <td>2025-11-11 21:30:28</td>
@@ -439,86 +519,6 @@
        <td>2025-11-11 01:15:37</td>
        <td>SQL Anywhere Monitor (Non-GUI) baked credentials into the code,exposing the resources or functionality to unintended users and providing attackers with the possibility of arbitrary code execution.This could cause high impact on confidentiality integrity and availability of the system.</td>
        <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-42890">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>a947f23cd1a1d5ccba9e1cef3e4c4da4</td>
-       <td>CVE-2025-12399</td>
-       <td>2025-11-08 09:28:11</td>
-       <td>The Alex Reservations: Smart Restaurant Booking plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the /wp-json/srr/v1/app/upload/file REST endpoint in all versions up to, and including, 2.2.3. This makes it possible for authenticated attackers, with Administrator-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-12399">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b1aedb27954b54e29a499847280f4a5c</td>
-       <td>CVE-2025-11967</td>
-       <td>2025-11-08 09:28:11</td>
-       <td>The Mail Mint plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the process_contact_attribute_import function in all versions up to, and including, 1.18.10. This makes it possible for authenticated attackers, with Administrator-level access and above, to upload arbitrary files on the affected site's server which may make remote code execution possible.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-11967">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>2d049dca354deca0d106e056ba74674c</td>
-       <td>CVE-2025-11448</td>
-       <td>2025-11-08 09:28:11</td>
-       <td>The Gallery Plugin for WordPress – Envira Photo Gallery plugin for WordPress is vulnerable to unauthorized modification of data due to a missing capability check on the '/envira-convert/v1/bulk-convert' REST API endpoint in all versions up to, and including, 1.11.0. This makes it possible for authenticated attackers, with contributor-level access and above, to convert galleries to Envira galleries.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-11448">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>69077ede354ba4c70546e68c7a022b0d</td>
-       <td>CVE-2025-12837</td>
-       <td>2025-11-08 09:28:10</td>
-       <td>The aThemes Addons for Elementor plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the Call To Action widget in versions up to, and including, 1.1.5 due to insufficient input sanitization and output escaping on user-supplied values. This makes it possible for authenticated attackers with contributor-level and above permissions to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-12837">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>b743ae31bce61fbb36122cfeff618e1b</td>
-       <td>CVE-2025-12643</td>
-       <td>2025-11-08 09:28:10</td>
-       <td>The Saphali LiqPay for donate plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'saphali_liqpay' shortcode in all versions up to, and including, 1.0.2. This is due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-12643">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>4eeb26aca11ede5a7e86f37ae1eaafd3</td>
-       <td>CVE-2025-12092</td>
-       <td>2025-11-08 09:28:09</td>
-       <td>The CYAN Backup plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the 'delete' functionality in all versions up to, and including, 2.5.4. This makes it possible for authenticated attackers, with Administrator-level access and above, to delete arbitrary files on the server, which can easily lead to remote code execution when the right file is deleted (such as wp-config.php).</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-12092">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>ff3b54967a531afaaeef6490514e7bdc</td>
-       <td>CVE-2025-12099</td>
-       <td>2025-11-08 09:15:34</td>
-       <td>The Academy LMS – WordPress LMS Plugin for Complete eLearning Solution plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 3.3.8 via deserialization of untrusted input in the 'import_all_courses' function. This makes it possible for authenticated attackers, with Administrator-level access and above, to inject a PHP Object. No known POP chain is present in the vulnerable software, which means this vulnerability has no impact unless another plugin or theme containing a POP chain is installed on the site. If a POP chain is present via an additional plugin or theme installed on the target system, it may allow the attacker to perform actions like delete arbitrary files, retrieve sensitive data, or execute code depending on the POP chain present.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-12099">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>afcff96482a3952dbd2cc86f9f9d4790</td>
-       <td>CVE-2025-12098</td>
-       <td>2025-11-08 09:15:33</td>
-       <td>The Academy LMS – WordPress LMS Plugin for Complete eLearning Solution plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 3.3.8 via the 'enqueue_social_login_script' function. This makes it possible for unauthenticated attackers to extract sensitive data including the Facebook App Secret if Facebook Social Login is enabled.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-12098">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>33e77c871311da0fa8ddd446cf15b513</td>
-       <td>CVE-2025-12498</td>
-       <td>2025-11-08 07:15:36</td>
-       <td>The EventPrime – Events Calendar, Bookings and Tickets plugin for WordPress is vulnerable to unauthorized booking note creation due to a missing capability check on the 'booking_add_notes' function in all versions up to, and including, 4.2.0.0. This makes it possible for authenticated attackers, with Subscriber-level access and above, to add a note to the backend view of any booking.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-12498">详情</a></td>
-      </tr>
-
-      <tr>
-       <td>0296579eb10669475c783b46cf3ab57d</td>
-       <td>CVE-2025-9334</td>
-       <td>2025-11-08 06:15:41</td>
-       <td>The Better Find and Replace – AI-Powered Suggestions plugin for WordPress is vulnerable to Limited Code Injection in all versions up to, and including, 1.7.7. This is due to insufficient input validation and restriction on the 'rtafar_ajax' function. This makes it possible for authenticated attackers, with Subscriber-level access and above, to call arbitrary plugin functions and execute code within those functions.</td>
-       <td><a target="_blank" href="https://www.tenable.com/cve/CVE-2025-9334">详情</a></td>
       </tr>
 
      </tbody>
